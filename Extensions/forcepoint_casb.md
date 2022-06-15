@@ -1,0 +1,37 @@
+forcepoint casb
+===============
+
+```JSON
+{"expression":"product = \"forcepoint casb\"",
+"activity_type":{"app-login":{"fields":{"privileges":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"}}},
+"app-activity":{"fields":{"privileges":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"object":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"}}}},
+"description":"",
+"fields":{"src_ip":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"result":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"domain":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"dest_ip":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"user":{"core":"1",
+"detection":"1",
+"informational":"0"},
+"user_agent":{"core":"0",
+"detection":"1",
+"informational":"0"}}}
+```
