@@ -2,7 +2,7 @@ juniper pulse secure
 ====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"juniper pulse secure\"",
 "activity_type":{"user-delete":{"fields":{"role":{"core":"0",
 "detection":"0",
 "informational":"1"},
@@ -57,7 +57,7 @@ juniper pulse secure
 "core":"0",
 "detection":"1",
 "informational":"0"}}},
-"http-request":{"fields":{"app":{"Status":"Default",
+"http-request":{"fields":{"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -101,7 +101,6 @@ juniper pulse secure
 "dest_port":{"core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

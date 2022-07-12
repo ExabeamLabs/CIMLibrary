@@ -37,6 +37,5 @@ fireeye (trellix) endpoint security (hx)
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,23 +1,27 @@
 disk-read
 =========
 
-```JSON
-{"pretty_name":"Disk Read",
-"activity":"read",
-"subject":"disk",
-"activity_type":"disk-read",
-"description":"The content of a disk\\volume object was read",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Disk Read",
-"activity":"read",
-"subject":"disk",
-"activity_type":"disk-read",
-"description":"The content of a disk\\volume object was read",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The content of a disk\volume object was read
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-readsuccess) or a [fail](#disk-readfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | disk      |
+| Activity      | read      |
+| Activity Type | disk-read |
+| Pretty Name   | Disk Read |
+| Legacy Name   |           |
+
+disk-read:success
+-----------------
+
+There are no fields for this activity type.
+
+
+disk-read:fail
+--------------
+
+There are no fields for this activity type.

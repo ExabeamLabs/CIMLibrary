@@ -5,7 +5,6 @@ securenet
 {"expression":"product = \"securenet\"",
 "activity_type":{"vpn-login":{"fields":{}},
 "vpn-logout":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

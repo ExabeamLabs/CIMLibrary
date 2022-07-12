@@ -7,9 +7,6 @@ lastline (vmware) lastline defender
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "protocol":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -18,6 +15,9 @@ lastline (vmware) lastline defender
 "core":"0",
 "detection":"0",
 "informational":"1"},
+"additional_info":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "alert_id":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -45,6 +45,5 @@ lastline (vmware) lastline defender
 "hash_type":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

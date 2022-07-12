@@ -1,25 +1,27 @@
 peripheral_storage-remove
 =========================
 
-```JSON
-{"pretty_name":"Peripheral_storage Remove",
-"activity":"remove",
-"subject":"peripheral_storage",
-"activity_type":"peripheral_storage-remove",
-"legacy_event_name":["NA"],
-"description":"A peripheral storage device was removed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Peripheral_storage Remove",
-"activity":"remove",
-"subject":"peripheral_storage",
-"activity_type":"peripheral_storage-remove",
-"legacy_event_name":["NA"],
-"description":"A peripheral storage device was removed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A peripheral storage device was removed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#peripheral_storage-removesuccess) or a [fail](#peripheral_storage-removefail).
+
+| Parameter     | Value                     |
+| ------------- | ------------------------- |
+| Subject       | peripheral_storage        |
+| Activity      | remove                    |
+| Activity Type | peripheral_storage-remove |
+| Pretty Name   | Peripheral_storage Remove |
+| Legacy Name   |                           |
+
+peripheral_storage-remove:success
+---------------------------------
+
+There are no fields for this activity type.
+
+
+peripheral_storage-remove:fail
+------------------------------
+
+There are no fields for this activity type.

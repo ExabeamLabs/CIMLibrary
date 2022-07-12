@@ -2,7 +2,7 @@ kaspersky av
 ============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"kaspersky av\"",
 "activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -29,6 +29,5 @@ kaspersky av
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

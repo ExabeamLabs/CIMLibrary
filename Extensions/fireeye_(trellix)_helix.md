@@ -6,9 +6,6 @@ fireeye (trellix) helix
 "activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -17,6 +14,9 @@ fireeye (trellix) helix
 "detection":"0",
 "informational":"0"},
 "malware_name":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "file_name":{"Status":"Legacy",
@@ -43,6 +43,5 @@ fireeye (trellix) helix
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

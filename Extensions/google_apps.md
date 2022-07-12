@@ -2,7 +2,7 @@ google apps
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"google apps\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -27,6 +27,5 @@ google apps
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

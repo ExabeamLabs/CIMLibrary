@@ -1,25 +1,27 @@
 user-create
 ===========
 
-```JSON
-{"pretty_name":"User Create",
-"activity":"create",
-"subject":"user",
-"activity_type":"user-create",
-"legacy_event_name":["account-creation"],
-"description":"A user account was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Create",
-"activity":"create",
-"subject":"user",
-"activity_type":"user-create",
-"legacy_event_name":["account-creation"],
-"description":"A user account was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user account was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-createsuccess) or a [fail](#user-createfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | create      |
+| Activity Type | user-create |
+| Pretty Name   | User Create |
+| Legacy Name   |             |
+
+user-create:success
+-------------------
+
+There are no fields for this activity type.
+
+
+user-create:fail
+----------------
+
+There are no fields for this activity type.

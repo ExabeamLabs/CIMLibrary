@@ -1,23 +1,27 @@
 app-start
 =========
 
-```JSON
-{"pretty_name":"App Start",
-"activity":"start",
-"subject":"app",
-"activity_type":"app-start",
-"description":"The application was initiazlied",
-"fields":{},
-"outcome":"success"}{"pretty_name":"App Start",
-"activity":"start",
-"subject":"app",
-"activity_type":"app-start",
-"description":"The application was initiazlied",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The application was initiazlied
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-startsuccess) or a [fail](#app-startfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | app       |
+| Activity      | start     |
+| Activity Type | app-start |
+| Pretty Name   | App Start |
+| Legacy Name   |           |
+
+app-start:success
+-----------------
+
+There are no fields for this activity type.
+
+
+app-start:fail
+--------------
+
+There are no fields for this activity type.

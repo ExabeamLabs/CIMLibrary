@@ -1,25 +1,27 @@
 configuration-modify
 ====================
 
-```JSON
-{"pretty_name":"Configuration Modify",
-"activity":"modify",
-"subject":"configuration",
-"activity_type":"configuration-modify",
-"legacy_event_name":["config-change"],
-"description":"The global configuration of an application or a program was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Configuration Modify",
-"activity":"modify",
-"subject":"configuration",
-"activity_type":"configuration-modify",
-"legacy_event_name":["config-change"],
-"description":"The global configuration of an application or a program was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The global configuration of an application or a program was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-modifysuccess) or a [fail](#configuration-modifyfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | configuration        |
+| Activity      | modify               |
+| Activity Type | configuration-modify |
+| Pretty Name   | Configuration Modify |
+| Legacy Name   |                      |
+
+configuration-modify:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+configuration-modify:fail
+-------------------------
+
+There are no fields for this activity type.

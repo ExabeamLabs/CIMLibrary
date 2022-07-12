@@ -2,7 +2,7 @@ megaflex
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"megaflex\"",
 "activity_type":{"physical_location-access":{"fields":{"src_location_area":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -27,6 +27,5 @@ megaflex
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

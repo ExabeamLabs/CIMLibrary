@@ -2,7 +2,7 @@ nokia vitalqip
 ==============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"nokia vitalqip\"",
 "activity_type":{"dhcp-session":{"fields":{"dest_mac":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -16,6 +16,5 @@ nokia vitalqip
 "core":"1",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

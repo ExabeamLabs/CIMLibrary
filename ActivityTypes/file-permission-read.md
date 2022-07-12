@@ -1,23 +1,27 @@
 file-permission-read
 ====================
 
-```JSON
-{"pretty_name":"File Permission Read",
-"activity":"permission-read",
-"subject":"file",
-"activity_type":"file-permission-read",
-"description":"A request was made to read the permissions of a file",
-"fields":{},
-"outcome":"success"}{"pretty_name":"File Permission Read",
-"activity":"permission-read",
-"subject":"file",
-"activity_type":"file-permission-read",
-"description":"A request was made to read the permissions of a file",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A request was made to read the permissions of a file
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-permission-readsuccess) or a [fail](#file-permission-readfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | file                 |
+| Activity      | permission-read      |
+| Activity Type | file-permission-read |
+| Pretty Name   | File Permission Read |
+| Legacy Name   |                      |
+
+file-permission-read:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+file-permission-read:fail
+-------------------------
+
+There are no fields for this activity type.

@@ -4,7 +4,6 @@ proxysg
 ```JSON
 {"expression":"product = \"proxysg\"",
 "activity_type":{"endpoint-authentication":{"fields":{}}},
-"description":"",
 "fields":{"user_ou":{"core":"0",
 "detection":"0",
 "informational":"1"},

@@ -2,8 +2,8 @@ adaxes
 ======
 
 ```JSON
-{"expression":"",
-"activity_type":{"app-activity":{"fields":{"app":{"Status":"Default",
+{"expression":"product = \"adaxes\"",
+"activity_type":{"app-activity":{"fields":{"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -23,6 +23,5 @@ adaxes
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

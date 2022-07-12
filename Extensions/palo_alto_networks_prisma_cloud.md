@@ -7,9 +7,6 @@ palo alto networks prisma cloud
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -18,6 +15,9 @@ palo alto networks prisma cloud
 "detection":"0",
 "informational":"0"},
 "malware_file_name":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "file_name":{"Status":"Legacy",
@@ -38,6 +38,5 @@ palo alto networks prisma cloud
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

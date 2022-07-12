@@ -1,23 +1,27 @@
 report-create
 =============
 
-```JSON
-{"pretty_name":"Report Create",
-"activity":"create",
-"subject":"report",
-"activity_type":"report-create",
-"description":"A report was created on an app",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Report Create",
-"activity":"create",
-"subject":"report",
-"activity_type":"report-create",
-"description":"A report was created on an app",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A report was created on an app
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#report-createsuccess) or a [fail](#report-createfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | report        |
+| Activity      | create        |
+| Activity Type | report-create |
+| Pretty Name   | Report Create |
+| Legacy Name   |               |
+
+report-create:success
+---------------------
+
+There are no fields for this activity type.
+
+
+report-create:fail
+------------------
+
+There are no fields for this activity type.

@@ -1,23 +1,27 @@
 driver-load
 ===========
 
-```JSON
-{"pretty_name":"Driver Load",
-"activity":"load",
-"subject":"driver",
-"activity_type":"driver-load",
-"description":"A driver object was loaded into the systems' kernel",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Driver Load",
-"activity":"load",
-"subject":"driver",
-"activity_type":"driver-load",
-"description":"A driver object was loaded into the systems' kernel",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A driver object was loaded into the systems' kernel
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#driver-loadsuccess) or a [fail](#driver-loadfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | driver      |
+| Activity      | load        |
+| Activity Type | driver-load |
+| Pretty Name   | Driver Load |
+| Legacy Name   |             |
+
+driver-load:success
+-------------------
+
+There are no fields for this activity type.
+
+
+driver-load:fail
+----------------
+
+There are no fields for this activity type.

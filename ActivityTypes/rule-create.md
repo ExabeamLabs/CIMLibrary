@@ -1,23 +1,27 @@
 rule-create
 ===========
 
-```JSON
-{"pretty_name":"Rule Create",
-"activity":"create",
-"subject":"rule",
-"activity_type":"rule-create",
-"description":"A security rule was created on a security product or program",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Rule Create",
-"activity":"create",
-"subject":"rule",
-"activity_type":"rule-create",
-"description":"A security rule was created on a security product or program",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A security rule was created on a security product or program
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#rule-createsuccess) or a [fail](#rule-createfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | rule        |
+| Activity      | create      |
+| Activity Type | rule-create |
+| Pretty Name   | Rule Create |
+| Legacy Name   |             |
+
+rule-create:success
+-------------------
+
+There are no fields for this activity type.
+
+
+rule-create:fail
+----------------
+
+There are no fields for this activity type.

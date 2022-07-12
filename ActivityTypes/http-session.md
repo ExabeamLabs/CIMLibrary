@@ -1,78 +1,46 @@
 http-session
 ============
 
-```JSON
-{"pretty_name":"Http Session",
-"activity":"session",
-"subject":"http",
-"activity_type":"http-session",
-"legacy_event_name":["web-activity-allowed"],
-"description":"A summary of a complete HTTP web session",
-"fields":{"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"http_response_code":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Http Session",
-"activity":"session",
-"subject":"http",
-"activity_type":"http-session",
-"legacy_event_name":["web-activity-denied"],
-"description":"A summary of a complete HTTP web session",
-"fields":{"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"http_response_code":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A summary of a complete HTTP web session
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-sessionsuccess) or a [fail](#http-sessionfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | http         |
+| Activity      | session      |
+| Activity Type | http-session |
+| Pretty Name   | Http Session |
+| Legacy Name   |              |
+
+http-session:success
+--------------------
+
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| referrer           |      |           | &#10003;      |
+| method             |      | &#10003;  |               |
+| bytes_out          |      | &#10003;  |               |
+| bytes_in           |      | &#10003;  |               |
+| mime               |      | &#10003;  |               |
+| action             |      |           | &#10003;      |
+| category           |      | &#10003;  |               |
+| user_agent         |      |           | &#10003;      |
+| http_response_code |      | &#10003;  |               |
+
+http-session:fail
+-----------------
+
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| referrer           |      |           | &#10003;      |
+| method             |      | &#10003;  |               |
+| bytes_out          |      | &#10003;  |               |
+| bytes_in           |      | &#10003;  |               |
+| mime               |      | &#10003;  |               |
+| action             |      |           | &#10003;      |
+| category           |      | &#10003;  |               |
+| user_agent         |      |           | &#10003;      |
+| http_response_code |      | &#10003;  |               |

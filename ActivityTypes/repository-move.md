@@ -1,23 +1,27 @@
 repository-move
 ===============
 
-```JSON
-{"pretty_name":"Repository Move",
-"activity":"move",
-"subject":"repository",
-"activity_type":"repository-move",
-"description":"The location of a git repository was changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Repository Move",
-"activity":"move",
-"subject":"repository",
-"activity_type":"repository-move",
-"description":"The location of a git repository was changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The location of a git repository was changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-movesuccess) or a [fail](#repository-movefail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | repository      |
+| Activity      | move            |
+| Activity Type | repository-move |
+| Pretty Name   | Repository Move |
+| Legacy Name   |                 |
+
+repository-move:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+repository-move:fail
+--------------------
+
+There are no fields for this activity type.

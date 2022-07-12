@@ -1,25 +1,27 @@
 dns-request
 ===========
 
-```JSON
-{"pretty_name":"Dns Request",
-"activity":"request",
-"subject":"dns",
-"activity_type":"dns-request",
-"legacy_event_name":["dns-query"],
-"description":"A DNS query was sent",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dns Request",
-"activity":"request",
-"subject":"dns",
-"activity_type":"dns-request",
-"legacy_event_name":["dns-query"],
-"description":"A DNS query was sent",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A DNS query was sent
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-requestsuccess) or a [fail](#dns-requestfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | dns         |
+| Activity      | request     |
+| Activity Type | dns-request |
+| Pretty Name   | Dns Request |
+| Legacy Name   |             |
+
+dns-request:success
+-------------------
+
+There are no fields for this activity type.
+
+
+dns-request:fail
+----------------
+
+There are no fields for this activity type.

@@ -2,7 +2,7 @@ lexmark
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"lexmark\"",
 "activity_type":{"printer-activity":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -27,6 +27,5 @@ lexmark
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

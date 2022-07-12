@@ -2,7 +2,7 @@ airwatch
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"airwatch\"",
 "activity_type":{"endpoint-authentication":{"fields":{"device_name":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -11,6 +11,5 @@ airwatch
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -2,7 +2,7 @@ lanscope cat
 ============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"lanscope cat\"",
 "activity_type":{"peripheral_storage-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -52,15 +52,15 @@ lanscope cat
 "detection":"0",
 "informational":"0"}}},
 "http-session":{"fields":{}},
-"app-activity":{"fields":{"app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
+"app-activity":{"fields":{"file_path":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
 "file_ext":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -117,6 +117,5 @@ lanscope cat
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,23 +1,27 @@
 ds_object-read
 ==============
 
-```JSON
-{"pretty_name":"Ds_object Read",
-"activity":"read",
-"subject":"ds_object",
-"activity_type":"ds_object-read",
-"description":"A request was made to read the information of a directory service object ",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ds_object Read",
-"activity":"read",
-"subject":"ds_object",
-"activity_type":"ds_object-read",
-"description":"A request was made to read the information of a directory service object ",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A request was made to read the information of a directory service object 
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds_object-readsuccess) or a [fail](#ds_object-readfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | ds_object      |
+| Activity      | read           |
+| Activity Type | ds_object-read |
+| Pretty Name   | Ds_object Read |
+| Legacy Name   |                |
+
+ds_object-read:success
+----------------------
+
+There are no fields for this activity type.
+
+
+ds_object-read:fail
+-------------------
+
+There are no fields for this activity type.

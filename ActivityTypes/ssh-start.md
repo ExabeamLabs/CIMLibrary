@@ -1,23 +1,27 @@
 ssh-start
 =========
 
-```JSON
-{"pretty_name":"Ssh Start",
-"activity":"start",
-"subject":"ssh",
-"activity_type":"ssh-start",
-"description":"A SSH sesssion was initiated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ssh Start",
-"activity":"start",
-"subject":"ssh",
-"activity_type":"ssh-start",
-"description":"A SSH sesssion was initiated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A SSH sesssion was initiated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssh-startsuccess) or a [fail](#ssh-startfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | ssh       |
+| Activity      | start     |
+| Activity Type | ssh-start |
+| Pretty Name   | Ssh Start |
+| Legacy Name   |           |
+
+ssh-start:success
+-----------------
+
+There are no fields for this activity type.
+
+
+ssh-start:fail
+--------------
+
+There are no fields for this activity type.

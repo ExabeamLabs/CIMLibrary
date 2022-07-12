@@ -1,23 +1,27 @@
 script-execute
 ==============
 
-```JSON
-{"pretty_name":"Script Execute",
-"activity":"execute",
-"subject":"script",
-"activity_type":"script-execute",
-"description":"Scripting commands were executed on the system",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Script Execute",
-"activity":"execute",
-"subject":"script",
-"activity_type":"script-execute",
-"description":"Scripting commands were executed on the system",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+Scripting commands were executed on the system
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#script-executesuccess) or a [fail](#script-executefail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | script         |
+| Activity      | execute        |
+| Activity Type | script-execute |
+| Pretty Name   | Script Execute |
+| Legacy Name   |                |
+
+script-execute:success
+----------------------
+
+There are no fields for this activity type.
+
+
+script-execute:fail
+-------------------
+
+There are no fields for this activity type.

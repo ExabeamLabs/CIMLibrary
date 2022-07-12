@@ -4,7 +4,6 @@ cisco secure web appliance
 ```JSON
 {"expression":"product = \"cisco secure web appliance\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"protocol":{"core":"0",
 "detection":"1",
 "informational":"0"},

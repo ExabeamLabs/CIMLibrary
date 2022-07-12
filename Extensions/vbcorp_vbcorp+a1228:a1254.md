@@ -27,6 +27,5 @@ vbcorp vbcorp+a1228:a1254
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

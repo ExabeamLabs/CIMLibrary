@@ -1,30 +1,30 @@
 peripheral_storage-activity
 ===========================
 
-```JSON
-{"pretty_name":"Peripheral_storage Activity",
-"activity":"activity",
-"subject":"peripheral_storage",
-"activity_type":"peripheral_storage-activity",
-"legacy_event_name":["usb-activity"],
-"description":"An activity on a peripheral storage device",
-"fields":{"operation":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Peripheral_storage Activity",
-"activity":"activity",
-"subject":"peripheral_storage",
-"activity_type":"peripheral_storage-activity",
-"legacy_event_name":["failed-usb-activity"],
-"description":"An activity on a peripheral storage device",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An activity on a peripheral storage device
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#peripheral_storage-activitysuccess) or a [fail](#peripheral_storage-activityfail).
+
+| Parameter     | Value                       |
+| ------------- | --------------------------- |
+| Subject       | peripheral_storage          |
+| Activity      | activity                    |
+| Activity Type | peripheral_storage-activity |
+| Pretty Name   | Peripheral_storage Activity |
+| Legacy Name   |                             |
+
+peripheral_storage-activity:success
+-----------------------------------
+
+| Field     | Core     | Detection | Informational |
+| --------- | -------- | --------- | ------------- |
+| operation | &#10003; | &#10003;  |               |
+
+peripheral_storage-activity:fail
+--------------------------------
+
+| Field     | Core     | Detection | Informational |
+| --------- | -------- | --------- | ------------- |
+| operation | &#10003; | &#10003;  |               |

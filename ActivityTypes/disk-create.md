@@ -1,23 +1,27 @@
 disk-create
 ===========
 
-```JSON
-{"pretty_name":"Disk Create",
-"activity":"create",
-"subject":"disk",
-"activity_type":"disk-create",
-"description":"A disk volume object was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Disk Create",
-"activity":"create",
-"subject":"disk",
-"activity_type":"disk-create",
-"description":"A disk volume object was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A disk volume object was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-createsuccess) or a [fail](#disk-createfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | disk        |
+| Activity      | create      |
+| Activity Type | disk-create |
+| Pretty Name   | Disk Create |
+| Legacy Name   |             |
+
+disk-create:success
+-------------------
+
+There are no fields for this activity type.
+
+
+disk-create:fail
+----------------
+
+There are no fields for this activity type.

@@ -1,23 +1,27 @@
 function-modify
 ===============
 
-```JSON
-{"pretty_name":"Function Modify",
-"activity":"modify",
-"subject":"function",
-"activity_type":"function-modify",
-"description":"An automation cloud function's code or configuration was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Function Modify",
-"activity":"modify",
-"subject":"function",
-"activity_type":"function-modify",
-"description":"An automation cloud function's code or configuration was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An automation cloud function's code or configuration was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#function-modifysuccess) or a [fail](#function-modifyfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | function        |
+| Activity      | modify          |
+| Activity Type | function-modify |
+| Pretty Name   | Function Modify |
+| Legacy Name   |                 |
+
+function-modify:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+function-modify:fail
+--------------------
+
+There are no fields for this activity type.

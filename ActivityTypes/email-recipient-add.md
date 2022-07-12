@@ -1,52 +1,38 @@
 email-recipient-add
 ===================
 
-```JSON
-{"pretty_name":"Email Recipient Add",
-"activity":"recipient-add",
-"subject":"email",
-"activity_type":"email-recipient-add",
-"description":"A recipient was added to an email message",
-"fields":{"dest_email_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_address":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Email Recipient Add",
-"activity":"recipient-add",
-"subject":"email",
-"activity_type":"email-recipient-add",
-"description":"A recipient was added to an email message",
-"fields":{"dest_email_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_email_address":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A recipient was added to an email message
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-recipient-addsuccess) or a [fail](#email-recipient-addfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | email               |
+| Activity      | recipient-add       |
+| Activity Type | email-recipient-add |
+| Pretty Name   | Email Recipient Add |
+| Legacy Name   |                     |
+
+email-recipient-add:success
+---------------------------
+
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| dest_email_domain  |      |           | &#10003;      |
+| dest_email_user    |      |           | &#10003;      |
+| dest_email_address |      |           | &#10003;      |
+| dest_domain        |      |           | &#10003;      |
+| dest_user          |      |           | &#10003;      |
+
+email-recipient-add:fail
+------------------------
+
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| dest_email_domain  |      |           | &#10003;      |
+| dest_email_user    |      |           | &#10003;      |
+| dest_email_address |      |           | &#10003;      |
+| dest_domain        |      |           | &#10003;      |
+| dest_user          |      |           | &#10003;      |

@@ -2,7 +2,7 @@ hp laserjet printer
 ===================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"hp laserjet printer\"",
 "activity_type":{"printer-activity":{"fields":{"src_port":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -32,6 +32,5 @@ hp laserjet printer
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -281,7 +281,6 @@ airlock web application firewall
 "dest_port":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"action":{"core":"0",
 "detection":"0",
 "informational":"1"}}}

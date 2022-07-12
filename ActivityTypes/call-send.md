@@ -1,23 +1,27 @@
 call-send
 =========
 
-```JSON
-{"pretty_name":"Call Send",
-"activity":"send",
-"subject":"call",
-"activity_type":"call-send",
-"description":"A user has called another user",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Call Send",
-"activity":"send",
-"subject":"call",
-"activity_type":"call-send",
-"description":"A user has called another user",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user has called another user
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#call-sendsuccess) or a [fail](#call-sendfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | call      |
+| Activity      | send      |
+| Activity Type | call-send |
+| Pretty Name   | Call Send |
+| Legacy Name   |           |
+
+call-send:success
+-----------------
+
+There are no fields for this activity type.
+
+
+call-send:fail
+--------------
+
+There are no fields for this activity type.

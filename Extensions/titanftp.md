@@ -17,7 +17,6 @@ titanftp
 "informational":"1"}}},
 "file-read":{"fields":{}},
 "file-delete":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

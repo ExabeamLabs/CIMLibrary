@@ -10,10 +10,10 @@ ibm sense
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
+"sense_value":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"sense_value":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process_name":{"Status":"Legacy",
@@ -42,6 +42,5 @@ ibm sense
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

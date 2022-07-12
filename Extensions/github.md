@@ -2,7 +2,7 @@ github
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"github\"",
 "activity_type":{"branch-protection-enable":{"fields":{"resource":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -491,7 +491,6 @@ github
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

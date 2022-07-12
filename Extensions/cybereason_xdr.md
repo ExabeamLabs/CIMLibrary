@@ -3,7 +3,7 @@ cybereason xdr
 
 ```JSON
 {"expression":"product = cybereason xdr",
-"activity_type":{"alert-trigger":{"fields":{"additional_information":{"core":"0",
+"activity_type":{"alert-trigger":{"fields":{"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "domain":{"core":"0",
@@ -24,6 +24,5 @@ cybereason xdr
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

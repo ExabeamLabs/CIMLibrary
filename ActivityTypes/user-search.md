@@ -1,23 +1,27 @@
 user-search
 ===========
 
-```JSON
-{"pretty_name":"User Search",
-"activity":"search",
-"subject":"user",
-"activity_type":"user-search",
-"description":"A search was performed on user accounts",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Search",
-"activity":"search",
-"subject":"user",
-"activity_type":"user-search",
-"description":"A search was performed on user accounts",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A search was performed on user accounts
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-searchsuccess) or a [fail](#user-searchfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | search      |
+| Activity Type | user-search |
+| Pretty Name   | User Search |
+| Legacy Name   |             |
+
+user-search:success
+-------------------
+
+There are no fields for this activity type.
+
+
+user-search:fail
+----------------
+
+There are no fields for this activity type.

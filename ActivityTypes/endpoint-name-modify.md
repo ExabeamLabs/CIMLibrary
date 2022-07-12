@@ -1,23 +1,27 @@
 endpoint-name-modify
 ====================
 
-```JSON
-{"pretty_name":"Endpoint Name Modify",
-"activity":"name-modify",
-"subject":"endpoint",
-"activity_type":"endpoint-name-modify",
-"description":"The host name of an endpoint was changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint Name Modify",
-"activity":"name-modify",
-"subject":"endpoint",
-"activity_type":"endpoint-name-modify",
-"description":"The host name of an endpoint was changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The host name of an endpoint was changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-name-modifysuccess) or a [fail](#endpoint-name-modifyfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | endpoint             |
+| Activity      | name-modify          |
+| Activity Type | endpoint-name-modify |
+| Pretty Name   | Endpoint Name Modify |
+| Legacy Name   |                      |
+
+endpoint-name-modify:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+endpoint-name-modify:fail
+-------------------------
+
+There are no fields for this activity type.

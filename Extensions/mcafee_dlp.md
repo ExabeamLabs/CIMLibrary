@@ -2,7 +2,7 @@ mcafee dlp
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mcafee dlp\"",
 "activity_type":{"alert-trigger":{"fields":{"num_pages":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -89,6 +89,5 @@ mcafee dlp
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

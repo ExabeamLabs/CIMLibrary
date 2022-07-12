@@ -1,23 +1,27 @@
 endpoint-scan
 =============
 
-```JSON
-{"pretty_name":"Endpoint Scan",
-"activity":"scan",
-"subject":"endpoint",
-"activity_type":"endpoint-scan",
-"description":"A scan that targeted endpoints took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint Scan",
-"activity":"scan",
-"subject":"endpoint",
-"activity_type":"endpoint-scan",
-"description":"A scan that targeted endpoints took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A scan that targeted endpoints took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-scansuccess) or a [fail](#endpoint-scanfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | endpoint      |
+| Activity      | scan          |
+| Activity Type | endpoint-scan |
+| Pretty Name   | Endpoint Scan |
+| Legacy Name   |               |
+
+endpoint-scan:success
+---------------------
+
+There are no fields for this activity type.
+
+
+endpoint-scan:fail
+------------------
+
+There are no fields for this activity type.

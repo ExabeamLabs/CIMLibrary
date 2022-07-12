@@ -1,23 +1,27 @@
 configuration-routing-modify
 ============================
 
-```JSON
-{"pretty_name":"Configuration Routing Modify",
-"activity":"routing-modify",
-"subject":"configuration",
-"activity_type":"configuration-routing-modify",
-"description":"The global routing configuration of an application or a program was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Configuration Routing Modify",
-"activity":"routing-modify",
-"subject":"configuration",
-"activity_type":"configuration-routing-modify",
-"description":"The global routing configuration of an application or a program was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The global routing configuration of an application or a program was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-routing-modifysuccess) or a [fail](#configuration-routing-modifyfail).
+
+| Parameter     | Value                        |
+| ------------- | ---------------------------- |
+| Subject       | configuration                |
+| Activity      | routing-modify               |
+| Activity Type | configuration-routing-modify |
+| Pretty Name   | Configuration Routing Modify |
+| Legacy Name   |                              |
+
+configuration-routing-modify:success
+------------------------------------
+
+There are no fields for this activity type.
+
+
+configuration-routing-modify:fail
+---------------------------------
+
+There are no fields for this activity type.

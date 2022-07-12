@@ -2,7 +2,7 @@ opendj ldap
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"opendj ldap\"",
 "activity_type":{"endpoint-authentication":{"fields":{"src_port":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -35,6 +35,5 @@ opendj ldap
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

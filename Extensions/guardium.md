@@ -4,7 +4,6 @@ guardium
 ```JSON
 {"expression":"product =\"guardium\"",
 "activity_type":{"database-activity":{"fields":{}}},
-"description":"",
 "fields":{"process_name":{"core":"0",
 "detection":"0",
 "informational":"1"},

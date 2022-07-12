@@ -1,23 +1,27 @@
 user-invite
 ===========
 
-```JSON
-{"pretty_name":"User Invite",
-"activity":"invite",
-"subject":"user",
-"activity_type":"user-invite",
-"description":"A user account was invited to a workspace",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Invite",
-"activity":"invite",
-"subject":"user",
-"activity_type":"user-invite",
-"description":"A user account was invited to a workspace",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user account was invited to a workspace
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-invitesuccess) or a [fail](#user-invitefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | invite      |
+| Activity Type | user-invite |
+| Pretty Name   | User Invite |
+| Legacy Name   |             |
+
+user-invite:success
+-------------------
+
+There are no fields for this activity type.
+
+
+user-invite:fail
+----------------
+
+There are no fields for this activity type.

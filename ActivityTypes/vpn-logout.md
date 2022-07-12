@@ -1,36 +1,32 @@
 vpn-logout
 ==========
 
-```JSON
-{"pretty_name":"Vpn Logout",
-"activity":"logout",
-"subject":"vpn",
-"activity_type":"vpn-logout",
-"legacy_event_name":["vpn-logout"],
-"description":"A user logged out from a VPN",
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Vpn Logout",
-"activity":"logout",
-"subject":"vpn",
-"activity_type":"vpn-logout",
-"legacy_event_name":["vpn-logout"],
-"description":"A user logged out from a VPN",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user logged out from a VPN
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vpn-logoutsuccess) or a [fail](#vpn-logoutfail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | vpn        |
+| Activity      | logout     |
+| Activity Type | vpn-logout |
+| Pretty Name   | Vpn Logout |
+| Legacy Name   |            |
+
+vpn-logout:success
+------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+vpn-logout:fail
+---------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |

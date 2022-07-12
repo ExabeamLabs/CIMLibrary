@@ -1,23 +1,27 @@
 user-name-modify
 ================
 
-```JSON
-{"pretty_name":"User Name Modify",
-"activity":"name-modify",
-"subject":"user",
-"activity_type":"user-name-modify",
-"description":"The name of a user account was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Name Modify",
-"activity":"name-modify",
-"subject":"user",
-"activity_type":"user-name-modify",
-"description":"The name of a user account was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The name of a user account was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-name-modifysuccess) or a [fail](#user-name-modifyfail).
+
+| Parameter     | Value            |
+| ------------- | ---------------- |
+| Subject       | user             |
+| Activity      | name-modify      |
+| Activity Type | user-name-modify |
+| Pretty Name   | User Name Modify |
+| Legacy Name   |                  |
+
+user-name-modify:success
+------------------------
+
+There are no fields for this activity type.
+
+
+user-name-modify:fail
+---------------------
+
+There are no fields for this activity type.

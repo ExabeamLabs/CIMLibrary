@@ -20,10 +20,10 @@ symamtec (broadcom) email security.cloud
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
+"is_outbound":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"is_outbound":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "sender":{"Status":"Legacy",
@@ -70,6 +70,5 @@ symamtec (broadcom) email security.cloud
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

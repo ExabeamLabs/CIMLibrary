@@ -2,7 +2,7 @@ digital guardian network dlp
 ============================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"digital guardian network dlp\"",
 "activity_type":{"email-send":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -48,6 +48,5 @@ digital guardian network dlp
 "target":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

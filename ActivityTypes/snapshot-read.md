@@ -1,23 +1,27 @@
 snapshot-read
 =============
 
-```JSON
-{"pretty_name":"Snapshot Read",
-"activity":"read",
-"subject":"snapshot",
-"activity_type":"snapshot-read",
-"description":"A request to read the content of a snapshot was made",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Snapshot Read",
-"activity":"read",
-"subject":"snapshot",
-"activity_type":"snapshot-read",
-"description":"A request to read the content of a snapshot was made",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A request to read the content of a snapshot was made
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-readsuccess) or a [fail](#snapshot-readfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | snapshot      |
+| Activity      | read          |
+| Activity Type | snapshot-read |
+| Pretty Name   | Snapshot Read |
+| Legacy Name   |               |
+
+snapshot-read:success
+---------------------
+
+There are no fields for this activity type.
+
+
+snapshot-read:fail
+------------------
+
+There are no fields for this activity type.

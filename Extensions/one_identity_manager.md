@@ -2,7 +2,7 @@ one identity manager
 ====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"one identity manager\"",
 "activity_type":{"user-password-modify":{"fields":{"dest_host":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -26,6 +26,5 @@ one identity manager
 "user-switch":{"fields":{"dest_host":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

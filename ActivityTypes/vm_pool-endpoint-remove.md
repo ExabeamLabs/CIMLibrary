@@ -1,28 +1,30 @@
 vm_pool-endpoint-remove
 =======================
 
-```JSON
-{"pretty_name":"Vm_pool Endpoint Remove",
-"activity":"endpoint-remove",
-"subject":"vm_pool",
-"activity_type":"vm_pool-endpoint-remove",
-"description":"An endpoint instance was removed from the VM pool",
-"fields":{"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Vm_pool Endpoint Remove",
-"activity":"endpoint-remove",
-"subject":"vm_pool",
-"activity_type":"vm_pool-endpoint-remove",
-"description":"An endpoint instance was removed from the VM pool",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An endpoint instance was removed from the VM pool
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-endpoint-removesuccess) or a [fail](#vm_pool-endpoint-removefail).
+
+| Parameter     | Value                   |
+| ------------- | ----------------------- |
+| Subject       | vm_pool                 |
+| Activity      | endpoint-remove         |
+| Activity Type | vm_pool-endpoint-remove |
+| Pretty Name   | Vm_pool Endpoint Remove |
+| Legacy Name   |                         |
+
+vm_pool-endpoint-remove:success
+-------------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      |           | &#10003;      |
+
+vm_pool-endpoint-remove:fail
+----------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      |           | &#10003;      |

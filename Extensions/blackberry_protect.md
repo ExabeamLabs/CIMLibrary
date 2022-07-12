@@ -2,11 +2,8 @@ blackberry protect
 ==================
 
 ```JSON
-{"expression":"",
-"activity_type":{"alert-trigger":{"fields":{"sha256_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
+{"expression":"product = \"blackberry protect\"",
+"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -14,9 +11,6 @@ blackberry protect
 "detection":"0",
 "informational":"0"},
 "device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sha256":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "name_at":{"core":"0",
@@ -44,6 +38,9 @@ blackberry protect
 "detection":"1",
 "informational":"0"},
 "result":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"hash_sha256":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "file_ext":{"core":"0",
@@ -74,6 +71,9 @@ blackberry protect
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"hash_sha256_at":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "user":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -97,6 +97,5 @@ blackberry protect
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

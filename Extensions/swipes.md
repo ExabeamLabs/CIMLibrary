@@ -4,7 +4,6 @@ swipes
 ```JSON
 {"expression":"product = \"swipes\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{"location_area":{"core":"0",
 "detection":"0",
 "informational":"1"},

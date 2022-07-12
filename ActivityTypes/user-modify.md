@@ -1,30 +1,30 @@
 user-modify
 ===========
 
-```JSON
-{"pretty_name":"User Modify",
-"activity":"modify",
-"subject":"user",
-"activity_type":"user-modify",
-"legacy_event_name":["NA"],
-"description":"The attributes of a user were changed",
-"fields":{"properties":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"User Modify",
-"activity":"modify",
-"subject":"user",
-"activity_type":"user-modify",
-"legacy_event_name":["NA"],
-"description":"The attributes of a user were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"properties":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The attributes of a user were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-modifysuccess) or a [fail](#user-modifyfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | modify      |
+| Activity Type | user-modify |
+| Pretty Name   | User Modify |
+| Legacy Name   |             |
+
+user-modify:success
+-------------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| properties |      |           | &#10003;      |
+
+user-modify:fail
+----------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| properties |      |           | &#10003;      |

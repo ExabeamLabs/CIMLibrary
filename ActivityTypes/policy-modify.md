@@ -1,23 +1,27 @@
 policy-modify
 =============
 
-```JSON
-{"pretty_name":"Policy Modify",
-"activity":"modify",
-"subject":"policy",
-"activity_type":"policy-modify",
-"description":"The content of a security policy document was changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Policy Modify",
-"activity":"modify",
-"subject":"policy",
-"activity_type":"policy-modify",
-"description":"The content of a security policy document was changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The content of a security policy document was changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-modifysuccess) or a [fail](#policy-modifyfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | policy        |
+| Activity      | modify        |
+| Activity Type | policy-modify |
+| Pretty Name   | Policy Modify |
+| Legacy Name   |               |
+
+policy-modify:success
+---------------------
+
+There are no fields for this activity type.
+
+
+policy-modify:fail
+------------------
+
+There are no fields for this activity type.

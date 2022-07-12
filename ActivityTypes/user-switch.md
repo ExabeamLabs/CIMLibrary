@@ -1,36 +1,32 @@
 user-switch
 ===========
 
-```JSON
-{"pretty_name":"User Switch",
-"activity":"switch",
-"subject":"user",
-"activity_type":"user-switch",
-"legacy_event_name":["account-switch"],
-"description":"A user switched into another user account",
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"User Switch",
-"activity":"switch",
-"subject":"user",
-"activity_type":"user-switch",
-"legacy_event_name":["account-switch"],
-"description":"A user switched into another user account",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user switched into another user account
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-switchsuccess) or a [fail](#user-switchfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | switch      |
+| Activity Type | user-switch |
+| Pretty Name   | User Switch |
+| Legacy Name   |             |
+
+user-switch:success
+-------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          |           | &#10003;      |
+| user   | &#10003; | &#10003;  |               |
+
+user-switch:fail
+----------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          |           | &#10003;      |
+| user   | &#10003; | &#10003;  |               |

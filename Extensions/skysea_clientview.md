@@ -2,12 +2,12 @@ skysea clientview
 =================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"skysea clientview\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
-"app":{"Status":"Default",
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -31,6 +31,5 @@ skysea clientview
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

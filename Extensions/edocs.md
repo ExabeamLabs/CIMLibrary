@@ -2,7 +2,7 @@ edocs
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"edocs\"",
 "activity_type":{"app-activity":{"fields":{"user_id":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -27,6 +27,5 @@ edocs
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -2,12 +2,8 @@ leap
 ====
 
 ```JSON
-{"expression":"",
-"activity_type":{"app-activity":{"fields":{"app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
+{"expression":"product = \"leap\"",
+"activity_type":{"app-activity":{"fields":{"resource":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -24,6 +20,10 @@ leap
 "detection":"0",
 "informational":"1"},
 "field_name":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -55,6 +55,5 @@ leap
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

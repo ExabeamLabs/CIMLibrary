@@ -32,6 +32,5 @@ mcafee enterprise security manager
 "threat_category":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

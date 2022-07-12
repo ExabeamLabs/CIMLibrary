@@ -2,7 +2,7 @@ eyeinspect
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"eyeinspect\"",
 "activity_type":{"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -11,6 +11,5 @@ eyeinspect
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

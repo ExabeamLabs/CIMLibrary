@@ -2,8 +2,7 @@ lenel onguard
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"lenel onguard\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

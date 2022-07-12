@@ -4,7 +4,6 @@ cisco cloud web security
 ```JSON
 {"expression":"product = \"cisco cloud web security\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"method":{"core":"0",
 "detection":"1",
 "informational":"0"},

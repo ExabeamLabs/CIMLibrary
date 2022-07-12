@@ -2,7 +2,7 @@ unix
 ====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"unix\"",
 "activity_type":{"email-receive":{"fields":{"protocol":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -512,6 +512,5 @@ unix
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

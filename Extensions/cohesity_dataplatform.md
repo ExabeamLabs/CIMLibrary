@@ -2,7 +2,7 @@ cohesity dataplatform
 =====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cohesity dataplatform\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -19,6 +19,5 @@ cohesity dataplatform
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

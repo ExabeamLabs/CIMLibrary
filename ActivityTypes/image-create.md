@@ -1,23 +1,27 @@
 image-create
 ============
 
-```JSON
-{"pretty_name":"Image Create",
-"activity":"create",
-"subject":"image",
-"activity_type":"image-create",
-"description":"A VM image was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Image Create",
-"activity":"create",
-"subject":"image",
-"activity_type":"image-create",
-"description":"A VM image was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A VM image was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#image-createsuccess) or a [fail](#image-createfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | image        |
+| Activity      | create       |
+| Activity Type | image-create |
+| Pretty Name   | Image Create |
+| Legacy Name   |              |
+
+image-create:success
+--------------------
+
+There are no fields for this activity type.
+
+
+image-create:fail
+-----------------
+
+There are no fields for this activity type.

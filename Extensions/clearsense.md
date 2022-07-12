@@ -2,7 +2,7 @@ clearsense
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"clearsense\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -27,11 +27,7 @@ clearsense
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"app-activity":{"fields":{"app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"Status":"Default",
+"app-activity":{"fields":{"result":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -40,6 +36,10 @@ clearsense
 "detection":"1",
 "informational":"0"},
 "method":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -63,6 +63,5 @@ clearsense
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

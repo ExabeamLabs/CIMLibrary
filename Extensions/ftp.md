@@ -2,7 +2,7 @@ ftp
 ===
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ftp\"",
 "activity_type":{"app-activity":{"fields":{"bytes":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -20,7 +20,6 @@ ftp
 "detection":"0",
 "informational":"1"}}},
 "file-delete":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"1",
 "detection":"1",
 "informational":"0"},

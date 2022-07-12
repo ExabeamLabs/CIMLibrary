@@ -1,25 +1,27 @@
 dcom-activate
 =============
 
-```JSON
-{"pretty_name":"Dcom Activate",
-"activity":"activate",
-"subject":"dcom",
-"activity_type":"dcom-activate",
-"legacy_event_name":["NA"],
-"description":"An activation of DCOM application",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dcom Activate",
-"activity":"activate",
-"subject":"dcom",
-"activity_type":"dcom-activate",
-"legacy_event_name":["dcom-activation-failed"],
-"description":"An activation of DCOM application",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An activation of DCOM application
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dcom-activatesuccess) or a [fail](#dcom-activatefail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | dcom          |
+| Activity      | activate      |
+| Activity Type | dcom-activate |
+| Pretty Name   | Dcom Activate |
+| Legacy Name   |               |
+
+dcom-activate:success
+---------------------
+
+There are no fields for this activity type.
+
+
+dcom-activate:fail
+------------------
+
+There are no fields for this activity type.

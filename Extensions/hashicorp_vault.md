@@ -2,7 +2,7 @@ hashicorp vault
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"hashicorp vault\"",
 "activity_type":{"user-password-reset":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -73,6 +73,5 @@ hashicorp vault
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

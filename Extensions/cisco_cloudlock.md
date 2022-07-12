@@ -2,7 +2,7 @@ cisco cloudlock
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cisco cloudlock\"",
 "activity_type":{"alert-trigger":{"fields":{"full_name":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -27,6 +27,5 @@ cisco cloudlock
 "target":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

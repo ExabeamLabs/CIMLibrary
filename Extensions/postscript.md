@@ -4,7 +4,6 @@ postscript
 ```JSON
 {"expression":"product = \"postscript\"",
 "activity_type":{"printer-activity":{"fields":{}}},
-"description":"",
 "fields":{"printer_name":{"core":"0",
 "detection":"0",
 "informational":"1"},

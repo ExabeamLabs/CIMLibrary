@@ -1,23 +1,27 @@
 folder-modify
 =============
 
-```JSON
-{"pretty_name":"Folder Modify",
-"activity":"modify",
-"subject":"folder",
-"activity_type":"folder-modify",
-"description":"A folder properties or configuration were modified on an app",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Folder Modify",
-"activity":"modify",
-"subject":"folder",
-"activity_type":"folder-modify",
-"description":"A folder properties or configuration were modified on an app",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A folder properties or configuration were modified on an app
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#folder-modifysuccess) or a [fail](#folder-modifyfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | folder        |
+| Activity      | modify        |
+| Activity Type | folder-modify |
+| Pretty Name   | Folder Modify |
+| Legacy Name   |               |
+
+folder-modify:success
+---------------------
+
+There are no fields for this activity type.
+
+
+folder-modify:fail
+------------------
+
+There are no fields for this activity type.

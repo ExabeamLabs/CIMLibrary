@@ -1,23 +1,27 @@
 endpoint-list
 =============
 
-```JSON
-{"pretty_name":"Endpoint List",
-"activity":"list",
-"subject":"endpoint",
-"activity_type":"endpoint-list",
-"description":"Multiple endpoint objects have been enumerated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint List",
-"activity":"list",
-"subject":"endpoint",
-"activity_type":"endpoint-list",
-"description":"Multiple endpoint objects have been enumerated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+Multiple endpoint objects have been enumerated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-listsuccess) or a [fail](#endpoint-listfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | endpoint      |
+| Activity      | list          |
+| Activity Type | endpoint-list |
+| Pretty Name   | Endpoint List |
+| Legacy Name   |               |
+
+endpoint-list:success
+---------------------
+
+There are no fields for this activity type.
+
+
+endpoint-list:fail
+------------------
+
+There are no fields for this activity type.

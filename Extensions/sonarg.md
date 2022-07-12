@@ -4,7 +4,6 @@ sonarg
 ```JSON
 {"expression":"product = \"sonarg\"",
 "activity_type":{"database-login":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

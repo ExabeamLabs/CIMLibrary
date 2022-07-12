@@ -1,23 +1,27 @@
 file-property-delete
 ====================
 
-```JSON
-{"pretty_name":"File Property Delete",
-"activity":"property-delete",
-"subject":"file",
-"activity_type":"file-property-delete",
-"description":"A property of a file was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"File Property Delete",
-"activity":"property-delete",
-"subject":"file",
-"activity_type":"file-property-delete",
-"description":"A property of a file was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A property of a file was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-property-deletesuccess) or a [fail](#file-property-deletefail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | file                 |
+| Activity      | property-delete      |
+| Activity Type | file-property-delete |
+| Pretty Name   | File Property Delete |
+| Legacy Name   |                      |
+
+file-property-delete:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+file-property-delete:fail
+-------------------------
+
+There are no fields for this activity type.

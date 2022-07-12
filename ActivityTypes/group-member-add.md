@@ -1,30 +1,30 @@
 group-member-add
 ================
 
-```JSON
-{"pretty_name":"Group Member Add",
-"activity":"member-add",
-"subject":"group",
-"activity_type":"group-member-add",
-"legacy_event_name":["member-added"],
-"description":"A group member was added to a group",
-"fields":{"member":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Group Member Add",
-"activity":"member-add",
-"subject":"group",
-"activity_type":"group-member-add",
-"legacy_event_name":["member-added"],
-"description":"A group member was added to a group",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"member":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A group member was added to a group
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-member-addsuccess) or a [fail](#group-member-addfail).
+
+| Parameter     | Value            |
+| ------------- | ---------------- |
+| Subject       | group            |
+| Activity      | member-add       |
+| Activity Type | group-member-add |
+| Pretty Name   | Group Member Add |
+| Legacy Name   |                  |
+
+group-member-add:success
+------------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| member | &#10003; | &#10003;  |               |
+
+group-member-add:fail
+---------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| member | &#10003; | &#10003;  |               |

@@ -1,0 +1,37 @@
+bloxone ddi
+===========
+
+```JSON
+{"expression":"product = \"bloxone ddi\"",
+"activity_type":{"dhcp-session":{"fields":{"dest_mac":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"dest_interface":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"dest_host":{"core":"0",
+"detection":"1",
+"informational":"1"}}},
+"dns-request":{"fields":{}},
+"network-session":{"fields":{"rule_id":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"alert_severity":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"dest_host":{"Status":"Default",
+"core":"0",
+"detection":"1",
+"informational":"0"},
+"src_host":{"Status":"Default",
+"core":"0",
+"detection":"1",
+"informational":"0"},
+"alert_name":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"}}}},
+"fields":{}}
+```

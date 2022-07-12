@@ -1,32 +1,30 @@
 app-login
 =========
 
-```JSON
-{"pretty_name":"App Login",
-"activity":"login",
-"subject":"app",
-"activity_type":"app-login",
-"legacy_event_name":["app-login",
-"webconference-login"],
-"description":"A user logged in to an application",
-"fields":{"user":{"core":"1",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"App Login",
-"activity":"login",
-"subject":"app",
-"activity_type":"app-login",
-"legacy_event_name":["failed-app-login",
-"webconference-login"],
-"description":"A user logged in to an application",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"0",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user logged in to an application
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-loginsuccess) or a [fail](#app-loginfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | app       |
+| Activity      | login     |
+| Activity Type | app-login |
+| Pretty Name   | App Login |
+| Legacy Name   |           |
+
+app-login:success
+-----------------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; |           |               |
+
+app-login:fail
+--------------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; |           |               |

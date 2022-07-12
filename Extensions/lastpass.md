@@ -2,7 +2,7 @@ lastpass
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"lastpass\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -11,14 +11,14 @@ lastpass
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"app-activity":{"fields":{"app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
+"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"application":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
 "additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -35,6 +35,5 @@ lastpass
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

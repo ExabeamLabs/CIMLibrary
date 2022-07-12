@@ -2,7 +2,7 @@ fireeye endpoint security (hx)
 ==============================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"fireeye endpoint security (hx)\"",
 "activity_type":{"alert-trigger":{"fields":{"process_name":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -18,6 +18,9 @@ fireeye endpoint security (hx)
 "domain":{"core":"0",
 "detection":"0",
 "informational":"0"},
+"hash_md5":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "event_name":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -27,9 +30,6 @@ fireeye endpoint security (hx)
 "user":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
-"informational":"0"},
-"md5":{"core":"0",
-"detection":"0",
 "informational":"0"}}},
 "http-session":{"fields":{}},
 "file-write":{"fields":{"event_code":{"core":"0",
@@ -55,6 +55,5 @@ fireeye endpoint security (hx)
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

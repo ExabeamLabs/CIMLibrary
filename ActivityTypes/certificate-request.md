@@ -1,23 +1,27 @@
 certificate-request
 ===================
 
-```JSON
-{"pretty_name":"Certificate Request",
-"activity":"request",
-"subject":"certificate",
-"activity_type":"certificate-request",
-"description":"A digital certificate enrollment or creation was requested by an entity",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Certificate Request",
-"activity":"request",
-"subject":"certificate",
-"activity_type":"certificate-request",
-"description":"A digital certificate enrollment or creation was requested by an entity",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A digital certificate enrollment or creation was requested by an entity
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-requestsuccess) or a [fail](#certificate-requestfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | certificate         |
+| Activity      | request             |
+| Activity Type | certificate-request |
+| Pretty Name   | Certificate Request |
+| Legacy Name   |                     |
+
+certificate-request:success
+---------------------------
+
+There are no fields for this activity type.
+
+
+certificate-request:fail
+------------------------
+
+There are no fields for this activity type.

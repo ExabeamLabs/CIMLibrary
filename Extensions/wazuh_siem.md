@@ -41,7 +41,7 @@ wazuh siem
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "decoder_name":{"core":"0",
@@ -50,6 +50,5 @@ wazuh siem
 "wazuh_manager":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

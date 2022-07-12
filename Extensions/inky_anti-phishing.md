@@ -7,13 +7,13 @@ inky anti-phishing
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "threat_level":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "email_address":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "sender":{"Status":"Legacy",
@@ -37,6 +37,5 @@ inky anti-phishing
 "email_subject":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

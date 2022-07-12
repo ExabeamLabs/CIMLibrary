@@ -23,7 +23,6 @@ namespace rdirectory
 "detection":"1",
 "informational":"0"}}},
 "user-password-modify":{"fields":{}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"1",
 "informational":"0"},

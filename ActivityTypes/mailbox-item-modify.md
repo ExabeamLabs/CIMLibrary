@@ -1,23 +1,27 @@
 mailbox-item-modify
 ===================
 
-```JSON
-{"pretty_name":"Mailbox Item Modify",
-"activity":"item-modify",
-"subject":"mailbox",
-"activity_type":"mailbox-item-modify",
-"description":"The properties or content of an item contained in an email mailbox were changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Mailbox Item Modify",
-"activity":"item-modify",
-"subject":"mailbox",
-"activity_type":"mailbox-item-modify",
-"description":"The properties or content of an item contained in an email mailbox were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties or content of an item contained in an email mailbox were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-item-modifysuccess) or a [fail](#mailbox-item-modifyfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | mailbox             |
+| Activity      | item-modify         |
+| Activity Type | mailbox-item-modify |
+| Pretty Name   | Mailbox Item Modify |
+| Legacy Name   |                     |
+
+mailbox-item-modify:success
+---------------------------
+
+There are no fields for this activity type.
+
+
+mailbox-item-modify:fail
+------------------------
+
+There are no fields for this activity type.

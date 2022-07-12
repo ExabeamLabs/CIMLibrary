@@ -1,23 +1,27 @@
 process-token-modify
 ====================
 
-```JSON
-{"pretty_name":"Process Token Modify",
-"activity":"token-modify",
-"subject":"process",
-"activity_type":"process-token-modify",
-"description":"A process token was changed in a process",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Process Token Modify",
-"activity":"token-modify",
-"subject":"process",
-"activity_type":"process-token-modify",
-"description":"A process token was changed in a process",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A process token was changed in a process
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-token-modifysuccess) or a [fail](#process-token-modifyfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | process              |
+| Activity      | token-modify         |
+| Activity Type | process-token-modify |
+| Pretty Name   | Process Token Modify |
+| Legacy Name   |                      |
+
+process-token-modify:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+process-token-modify:fail
+-------------------------
+
+There are no fields for this activity type.

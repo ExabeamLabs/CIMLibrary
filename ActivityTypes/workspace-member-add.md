@@ -1,23 +1,27 @@
 workspace-member-add
 ====================
 
-```JSON
-{"pretty_name":"Workspace Member Add",
-"activity":"member-add",
-"subject":"workspace",
-"activity_type":"workspace-member-add",
-"description":"A member was added to a workspace",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Workspace Member Add",
-"activity":"member-add",
-"subject":"workspace",
-"activity_type":"workspace-member-add",
-"description":"A member was added to a workspace",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A member was added to a workspace
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-member-addsuccess) or a [fail](#workspace-member-addfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | workspace            |
+| Activity      | member-add           |
+| Activity Type | workspace-member-add |
+| Pretty Name   | Workspace Member Add |
+| Legacy Name   |                      |
+
+workspace-member-add:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+workspace-member-add:fail
+-------------------------
+
+There are no fields for this activity type.

@@ -2,7 +2,7 @@ citrix gateway connector for exchange activesync
 ================================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"citrix gateway connector for exchange activesync\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -31,6 +31,5 @@ citrix gateway connector for exchange activesync
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

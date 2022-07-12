@@ -4,7 +4,6 @@ rightcrowd
 ```JSON
 {"expression":"product = \"rightcrowd\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

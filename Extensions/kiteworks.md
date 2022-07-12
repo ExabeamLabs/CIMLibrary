@@ -2,7 +2,7 @@ kiteworks
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"kiteworks\"",
 "activity_type":{"email-send":{"fields":{"additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -295,7 +295,6 @@ kiteworks
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

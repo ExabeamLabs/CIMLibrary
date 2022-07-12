@@ -1,23 +1,27 @@
 user-invite-cancel
 ==================
 
-```JSON
-{"pretty_name":"User Invite Cancel",
-"activity":"invite-cancel",
-"subject":"user",
-"activity_type":"user-invite-cancel",
-"description":"A user account invitation to workspace was canceled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Invite Cancel",
-"activity":"invite-cancel",
-"subject":"user",
-"activity_type":"user-invite-cancel",
-"description":"A user account invitation to workspace was canceled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user account invitation to workspace was canceled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-invite-cancelsuccess) or a [fail](#user-invite-cancelfail).
+
+| Parameter     | Value              |
+| ------------- | ------------------ |
+| Subject       | user               |
+| Activity      | invite-cancel      |
+| Activity Type | user-invite-cancel |
+| Pretty Name   | User Invite Cancel |
+| Legacy Name   |                    |
+
+user-invite-cancel:success
+--------------------------
+
+There are no fields for this activity type.
+
+
+user-invite-cancel:fail
+-----------------------
+
+There are no fields for this activity type.

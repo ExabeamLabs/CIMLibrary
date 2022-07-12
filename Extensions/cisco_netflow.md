@@ -4,7 +4,6 @@ cisco netflow
 ```JSON
 {"expression":"product = \"cisco netflow\"",
 "activity_type":{"network-session":{"fields":{}}},
-"description":"",
 "fields":{"result":{"core":"0",
 "detection":"1",
 "informational":"0"},

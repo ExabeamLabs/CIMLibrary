@@ -1,21 +1,30 @@
 ds_object-restore
 =================
 
-```JSON
-{"pretty_name":"Ds_object Restore",
-"activity":"restore",
-"subject":"ds_object",
-"activity_type":"ds_object-restore",
-"legacy_event_name":["ds-access"],
-"description":"A directory service object was restored",
-"fields":{"src_ds_object_ou":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ds_object_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ds_object_dn":{"core":"0",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}
-```
+Description
+-----------
+A directory service object was restored
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds_object-restoresuccess) or a [fail](#ds_object-restorefail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | ds_object         |
+| Activity      | restore           |
+| Activity Type | ds_object-restore |
+| Pretty Name   | Ds_object Restore |
+| Legacy Name   |                   |
+
+ds_object-restore:success
+-------------------------
+
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| src_ds_object_ou   |      |           |               |
+| src_ds_object_name |      |           |               |
+| src_ds_object_dn   |      |           |               |
+
+ds_object-restore:fail
+----------------------
+
+There are no fields for this activity type.

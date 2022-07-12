@@ -2,10 +2,9 @@ azure resource log (keyvault)
 =============================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"azure resource log (keyvault)\"",
 "activity_type":{"key-read":{"fields":{}},
 "key-write":{"fields":{}}},
-"description":"",
 "fields":{"tenant_id":{"core":"0",
 "detection":"0",
 "informational":"1"},

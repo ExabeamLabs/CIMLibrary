@@ -2,15 +2,12 @@ tripwire enterprise
 ===================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"tripwire enterprise\"",
 "activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
 "informational":"1"},
 "access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"os":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "file_name":{"Status":"Legacy",
@@ -41,6 +38,9 @@ tripwire enterprise
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"operating_system":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "process_path":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -55,6 +55,5 @@ tripwire enterprise
 "new_hash":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -14,7 +14,7 @@ contrast security secure code platform
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"additional_information":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process_name":{"Status":"Legacy",
@@ -24,6 +24,5 @@ contrast security secure code platform
 "malware_url":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

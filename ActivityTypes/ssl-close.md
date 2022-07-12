@@ -1,23 +1,27 @@
 ssl-close
 =========
 
-```JSON
-{"pretty_name":"Ssl Close",
-"activity":"close",
-"subject":"ssl",
-"activity_type":"ssl-close",
-"description":"A SSL session was terminated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ssl Close",
-"activity":"close",
-"subject":"ssl",
-"activity_type":"ssl-close",
-"description":"A SSL session was terminated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A SSL session was terminated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-closesuccess) or a [fail](#ssl-closefail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | ssl       |
+| Activity      | close     |
+| Activity Type | ssl-close |
+| Pretty Name   | Ssl Close |
+| Legacy Name   |           |
+
+ssl-close:success
+-----------------
+
+There are no fields for this activity type.
+
+
+ssl-close:fail
+--------------
+
+There are no fields for this activity type.

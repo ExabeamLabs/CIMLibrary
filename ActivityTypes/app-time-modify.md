@@ -1,23 +1,27 @@
 app-time-modify
 ===============
 
-```JSON
-{"pretty_name":"App Time Modify",
-"activity":"time-modify",
-"subject":"app",
-"activity_type":"app-time-modify",
-"description":"The internal time of the application was updated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"App Time Modify",
-"activity":"time-modify",
-"subject":"app",
-"activity_type":"app-time-modify",
-"description":"The internal time of the application was updated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The internal time of the application was updated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-time-modifysuccess) or a [fail](#app-time-modifyfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | app             |
+| Activity      | time-modify     |
+| Activity Type | app-time-modify |
+| Pretty Name   | App Time Modify |
+| Legacy Name   |                 |
+
+app-time-modify:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+app-time-modify:fail
+--------------------
+
+There are no fields for this activity type.

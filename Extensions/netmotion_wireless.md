@@ -2,7 +2,7 @@ netmotion wireless
 ==================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"netmotion wireless\"",
 "activity_type":{"vpn-authentication":{"fields":{"auth_method":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -31,14 +31,14 @@ netmotion wireless
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"os":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
 "dest_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"operating_system":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
 "dest_host":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -64,10 +64,10 @@ netmotion wireless
 "protocol":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"os":{"core":"0",
+"dest_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"dest_ip":{"core":"0",
+"operating_system":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "dest_host":{"Status":"Legacy",
@@ -83,6 +83,5 @@ netmotion wireless
 "dest_port":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

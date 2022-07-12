@@ -2,7 +2,7 @@ netdocs
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"netdocs\"",
 "activity_type":{"file-upload":{"fields":{"cabinet_name":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -54,6 +54,10 @@ netdocs
 "core":"0",
 "detection":"0",
 "informational":"1"},
+"file_ext":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
 "corp_matter":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -78,10 +82,6 @@ netdocs
 "core":"0",
 "detection":"1",
 "informational":"0"},
-"file_extension":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
 "user":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -200,6 +200,5 @@ netdocs
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

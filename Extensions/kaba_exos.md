@@ -2,8 +2,7 @@ kaba exos
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"kaba exos\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

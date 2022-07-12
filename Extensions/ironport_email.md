@@ -2,7 +2,7 @@ ironport email
 ==============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ironport email\"",
 "activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -59,6 +59,5 @@ ironport email
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,23 +1,27 @@
 log-download
 ============
 
-```JSON
-{"pretty_name":"Log Download",
-"activity":"download",
-"subject":"log",
-"activity_type":"log-download",
-"description":"An audit log was downloaded from a remote site",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Log Download",
-"activity":"download",
-"subject":"log",
-"activity_type":"log-download",
-"description":"An audit log was downloaded from a remote site",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An audit log was downloaded from a remote site
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-downloadsuccess) or a [fail](#log-downloadfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | log          |
+| Activity      | download     |
+| Activity Type | log-download |
+| Pretty Name   | Log Download |
+| Legacy Name   |              |
+
+log-download:success
+--------------------
+
+There are no fields for this activity type.
+
+
+log-download:fail
+-----------------
+
+There are no fields for this activity type.

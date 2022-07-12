@@ -2,16 +2,16 @@ eset endpoint security
 ======================
 
 ```JSON
-{"expression":"",
-"activity_type":{"app-login":{"fields":{"sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
+{"expression":"product = \"eset endpoint security\"",
+"activity_type":{"app-login":{"fields":{"process_dir":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
 "url":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"hash_sha256":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -63,7 +63,7 @@ eset endpoint security
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"http-session":{"fields":{"sha256":{"Status":"Default",
+"http-session":{"fields":{"hash_sha256":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -127,6 +127,5 @@ eset endpoint security
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

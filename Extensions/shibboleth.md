@@ -17,7 +17,6 @@ shibboleth
 "detection":"0",
 "informational":"1"}}},
 "user-password-modify":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"}}}

@@ -1,25 +1,27 @@
 port-block
 ==========
 
-```JSON
-{"pretty_name":"Port Block",
-"activity":"block",
-"subject":"port",
-"activity_type":"port-block",
-"description":"A port was blocked,
- dropping traffic that comes throug",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Port Block",
-"activity":"block",
-"subject":"port",
-"activity_type":"port-block",
-"description":"A port was blocked,
- dropping traffic that comes throug",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A port was blocked, dropping traffic that comes throug
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#port-blocksuccess) or a [fail](#port-blockfail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | port       |
+| Activity      | block      |
+| Activity Type | port-block |
+| Pretty Name   | Port Block |
+| Legacy Name   |            |
+
+port-block:success
+------------------
+
+There are no fields for this activity type.
+
+
+port-block:fail
+---------------
+
+There are no fields for this activity type.

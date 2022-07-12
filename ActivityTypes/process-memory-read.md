@@ -1,40 +1,34 @@
 process-memory-read
 ===================
 
-```JSON
-{"pretty_name":"Process Memory Read",
-"activity":"memory-read",
-"subject":"process",
-"activity_type":"process-memory-read",
-"description":"Virtual memory was read from a process",
-"fields":{"memory_address":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"memory_size":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"memory_protection":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Process Memory Read",
-"activity":"memory-read",
-"subject":"process",
-"activity_type":"process-memory-read",
-"description":"Virtual memory was read from a process",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"memory_address":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"memory_size":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"memory_protection":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+Virtual memory was read from a process
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-memory-readsuccess) or a [fail](#process-memory-readfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | process             |
+| Activity      | memory-read         |
+| Activity Type | process-memory-read |
+| Pretty Name   | Process Memory Read |
+| Legacy Name   |                     |
+
+process-memory-read:success
+---------------------------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| memory_address    |      |           | &#10003;      |
+| memory_size       |      |           | &#10003;      |
+| memory_protection |      |           | &#10003;      |
+
+process-memory-read:fail
+------------------------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| memory_address    |      |           | &#10003;      |
+| memory_size       |      |           | &#10003;      |
+| memory_protection |      |           | &#10003;      |

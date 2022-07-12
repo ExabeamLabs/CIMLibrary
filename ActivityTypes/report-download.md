@@ -1,34 +1,32 @@
 report-download
 ===============
 
-```JSON
-{"pretty_name":"Report Download",
-"activity":"download",
-"subject":"report",
-"activity_type":"report-download",
-"description":"A report was downloaded from an app",
-"fields":{"file_ext":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Report Download",
-"activity":"download",
-"subject":"report",
-"activity_type":"report-download",
-"description":"A report was downloaded from an app",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A report was downloaded from an app
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#report-downloadsuccess) or a [fail](#report-downloadfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | report          |
+| Activity      | download        |
+| Activity Type | report-download |
+| Pretty Name   | Report Download |
+| Legacy Name   |                 |
+
+report-download:success
+-----------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| file_ext  |      |           | &#10003;      |
+| file_name |      |           | &#10003;      |
+
+report-download:fail
+--------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| file_ext  |      |           | &#10003;      |
+| file_name |      |           | &#10003;      |

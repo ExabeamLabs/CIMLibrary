@@ -14,10 +14,10 @@ amazon aws guardduty
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"additional_information":{"core":"0",
+"application":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"application":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "alert_id":{"Status":"Legacy",
@@ -40,6 +40,5 @@ amazon aws guardduty
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

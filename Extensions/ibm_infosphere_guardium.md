@@ -2,7 +2,7 @@ ibm infosphere guardium
 =======================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ibm infosphere guardium\"",
 "activity_type":{"alert-trigger":{"fields":{"server_group":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -57,6 +57,5 @@ ibm infosphere guardium
 "account":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

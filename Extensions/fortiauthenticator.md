@@ -2,7 +2,7 @@ fortiauthenticator
 ==================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"fortiauthenticator\"",
 "activity_type":{"app-authentication":{"fields":{"additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -15,6 +15,5 @@ fortiauthenticator
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

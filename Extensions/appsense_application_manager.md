@@ -2,7 +2,7 @@ appsense application manager
 ============================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"appsense application manager\"",
 "activity_type":{"alert-trigger":{"fields":{"account_id":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -11,6 +11,9 @@ appsense application manager
 "detection":"1",
 "informational":"0"},
 "domain":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"hash_md5":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "user_sid":{"core":"0",
@@ -33,10 +36,6 @@ appsense application manager
 "informational":"0"},
 "process_vendor":{"core":"0",
 "detection":"0",
-"informational":"0"},
-"md5":{"core":"0",
-"detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

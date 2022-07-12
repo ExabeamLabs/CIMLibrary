@@ -1,23 +1,27 @@
 hook-create
 ===========
 
-```JSON
-{"pretty_name":"Hook Create",
-"activity":"create",
-"subject":"hook",
-"activity_type":"hook-create",
-"description":"A hook object was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Hook Create",
-"activity":"create",
-"subject":"hook",
-"activity_type":"hook-create",
-"description":"A hook object was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A hook object was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#hook-createsuccess) or a [fail](#hook-createfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | hook        |
+| Activity      | create      |
+| Activity Type | hook-create |
+| Pretty Name   | Hook Create |
+| Legacy Name   |             |
+
+hook-create:success
+-------------------
+
+There are no fields for this activity type.
+
+
+hook-create:fail
+----------------
+
+There are no fields for this activity type.

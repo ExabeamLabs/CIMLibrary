@@ -4,7 +4,6 @@ microsoft web application proxy
 ```JSON
 {"expression":"product = \"microsoft web application proxy\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"bytes_out":{"core":"0",
 "detection":"0",
 "informational":"1"},

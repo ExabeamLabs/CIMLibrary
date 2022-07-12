@@ -1,23 +1,27 @@
 email-modify
 ============
 
-```JSON
-{"pretty_name":"Email Modify",
-"activity":"modify",
-"subject":"email",
-"activity_type":"email-modify",
-"description":"The properties of an email in an inbox were modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Email Modify",
-"activity":"modify",
-"subject":"email",
-"activity_type":"email-modify",
-"description":"The properties of an email in an inbox were modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties of an email in an inbox were modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-modifysuccess) or a [fail](#email-modifyfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | email        |
+| Activity      | modify       |
+| Activity Type | email-modify |
+| Pretty Name   | Email Modify |
+| Legacy Name   |              |
+
+email-modify:success
+--------------------
+
+There are no fields for this activity type.
+
+
+email-modify:fail
+-----------------
+
+There are no fields for this activity type.

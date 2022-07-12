@@ -1,40 +1,34 @@
 process-memory-allocate
 =======================
 
-```JSON
-{"pretty_name":"Process Memory Allocate",
-"activity":"memory-allocate",
-"subject":"process",
-"activity_type":"process-memory-allocate",
-"description":"Virtual memory was allocated in a process",
-"fields":{"memory_address":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"memory_size":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"memory_protection":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Process Memory Allocate",
-"activity":"memory-allocate",
-"subject":"process",
-"activity_type":"process-memory-allocate",
-"description":"Virtual memory was allocated in a process",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"memory_address":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"memory_size":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"memory_protection":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+Virtual memory was allocated in a process
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-memory-allocatesuccess) or a [fail](#process-memory-allocatefail).
+
+| Parameter     | Value                   |
+| ------------- | ----------------------- |
+| Subject       | process                 |
+| Activity      | memory-allocate         |
+| Activity Type | process-memory-allocate |
+| Pretty Name   | Process Memory Allocate |
+| Legacy Name   |                         |
+
+process-memory-allocate:success
+-------------------------------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| memory_address    |      |           | &#10003;      |
+| memory_size       |      |           | &#10003;      |
+| memory_protection |      |           | &#10003;      |
+
+process-memory-allocate:fail
+----------------------------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| memory_address    |      |           | &#10003;      |
+| memory_size       |      |           | &#10003;      |
+| memory_protection |      |           | &#10003;      |

@@ -4,11 +4,13 @@ solaris
 ```JSON
 {"expression":"product = \"solaris\"",
 "activity_type":{"process-create":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},
 "login_id":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"process_permission":{"core":"0",
 "detection":"0",
 "informational":"1"},
 "event_code":{"core":"0",
@@ -24,9 +26,6 @@ solaris
 "detection":"0",
 "informational":"1"},
 "user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication":{"core":"0",
 "detection":"0",
 "informational":"1"}}}
 ```

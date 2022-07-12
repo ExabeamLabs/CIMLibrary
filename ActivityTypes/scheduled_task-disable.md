@@ -1,25 +1,27 @@
 scheduled_task-disable
 ======================
 
-```JSON
-{"pretty_name":"Scheduled_task Disable",
-"activity":"disable",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-disable",
-"description":"A scheduled task was disabled,
- blocking it from triggering",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Scheduled_task Disable",
-"activity":"disable",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-disable",
-"description":"A scheduled task was disabled,
- blocking it from triggering",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A scheduled task was disabled, blocking it from triggering
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-disablesuccess) or a [fail](#scheduled_task-disablefail).
+
+| Parameter     | Value                  |
+| ------------- | ---------------------- |
+| Subject       | scheduled_task         |
+| Activity      | disable                |
+| Activity Type | scheduled_task-disable |
+| Pretty Name   | Scheduled_task Disable |
+| Legacy Name   |                        |
+
+scheduled_task-disable:success
+------------------------------
+
+There are no fields for this activity type.
+
+
+scheduled_task-disable:fail
+---------------------------
+
+There are no fields for this activity type.

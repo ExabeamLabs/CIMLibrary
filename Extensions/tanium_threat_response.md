@@ -2,11 +2,8 @@ tanium threat response
 ======================
 
 ```JSON
-{"expression":"",
-"activity_type":{"alert-trigger":{"fields":{"os":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
+{"expression":"product = \"tanium threat response\"",
+"activity_type":{"alert-trigger":{"fields":{"process_name":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
 "informational":"0"},
@@ -19,6 +16,12 @@ tanium threat response
 "detection":"1",
 "informational":"0"},
 "domain":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"hash_md5":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"operating_system":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process_dir":{"core":"0",
@@ -34,10 +37,6 @@ tanium threat response
 "user":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
-"informational":"0"},
-"md5":{"core":"0",
-"detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

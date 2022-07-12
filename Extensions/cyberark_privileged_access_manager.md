@@ -7,7 +7,7 @@ cyberark privileged access manager
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "alert_id":{"Status":"Legacy",
@@ -22,6 +22,5 @@ cyberark privileged access manager
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

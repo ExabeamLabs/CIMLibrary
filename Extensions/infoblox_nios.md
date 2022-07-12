@@ -2,8 +2,7 @@ infoblox nios
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"infoblox nios\"",
 "activity_type":{"dns-request":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

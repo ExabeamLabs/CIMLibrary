@@ -4,7 +4,6 @@ websense security gateway
 ```JSON
 {"expression":"product = \"websense security gateway\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"user_ou":{"core":"0",
 "detection":"0",
 "informational":"1"},

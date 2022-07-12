@@ -7,7 +7,7 @@ ivanti mobileiron
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "domain":{"core":"0",
@@ -24,6 +24,5 @@ ivanti mobileiron
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,28 +1,30 @@
 group-member-move
 =================
 
-```JSON
-{"pretty_name":"Group Member Move",
-"activity":"member-move",
-"subject":"group",
-"activity_type":"group-member-move",
-"description":"A group member was moved from one group to another",
-"fields":{"src_group_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Group Member Move",
-"activity":"member-move",
-"subject":"group",
-"activity_type":"group-member-move",
-"description":"A group member was moved from one group to another",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_group_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A group member was moved from one group to another
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-member-movesuccess) or a [fail](#group-member-movefail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | group             |
+| Activity      | member-move       |
+| Activity Type | group-member-move |
+| Pretty Name   | Group Member Move |
+| Legacy Name   |                   |
+
+group-member-move:success
+-------------------------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| src_group_name |      |           | &#10003;      |
+
+group-member-move:fail
+----------------------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| src_group_name |      |           | &#10003;      |

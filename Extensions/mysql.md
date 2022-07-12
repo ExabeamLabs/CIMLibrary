@@ -2,12 +2,8 @@ mysql
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mysql\"",
 "activity_type":{"database-activity":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"os":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -23,6 +19,10 @@ mysql
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"operating_system":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
 "dest_host":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -61,6 +61,5 @@ mysql
 "operation":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -2,7 +2,7 @@ skyhigh networks casb
 =====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"skyhigh networks casb\"",
 "activity_type":{"app-activity":{"fields":{"domain":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -15,6 +15,5 @@ skyhigh networks casb
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

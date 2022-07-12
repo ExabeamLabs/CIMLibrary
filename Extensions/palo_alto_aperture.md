@@ -3,12 +3,10 @@ palo alto aperture
 
 ```JSON
 {"expression":"product = \"palo alto aperture\"",
-"activity_type":{"audit_policy-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
+"activity_type":{"audit_policy-modify":{"fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
+"operation":{"core":"0",
 "detection":"0",
 "informational":"1"}}},
 "app-login":{"fields":{"src_ip":{"Status":"Default",
@@ -73,7 +71,6 @@ palo alto aperture
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

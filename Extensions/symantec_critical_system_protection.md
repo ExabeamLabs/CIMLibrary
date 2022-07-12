@@ -40,7 +40,6 @@ symantec critical system protection
 "new_attribute":{"core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -73,7 +73,6 @@ check point identity awareness
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

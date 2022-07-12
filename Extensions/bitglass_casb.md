@@ -2,7 +2,7 @@ bitglass casb
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"bitglass casb\"",
 "activity_type":{"alert-trigger":{"fields":{"file_ext":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -24,6 +24,5 @@ bitglass casb
 "target":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

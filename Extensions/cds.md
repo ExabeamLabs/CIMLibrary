@@ -2,7 +2,7 @@ cds
 ===
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cds\"",
 "activity_type":{"endpoint-login":{"fields":{"user_id":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -19,6 +19,5 @@ cds
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

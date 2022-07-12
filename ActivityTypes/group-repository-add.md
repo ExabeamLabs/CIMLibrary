@@ -1,28 +1,30 @@
 group-repository-add
 ====================
 
-```JSON
-{"pretty_name":"Group Repository Add",
-"activity":"repository-add",
-"subject":"group",
-"activity_type":"group-repository-add",
-"description":"A git repository was associated with the group",
-"fields":{"repository_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Group Repository Add",
-"activity":"repository-add",
-"subject":"group",
-"activity_type":"group-repository-add",
-"description":"A git repository was associated with the group",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"repository_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A git repository was associated with the group
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-repository-addsuccess) or a [fail](#group-repository-addfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | group                |
+| Activity      | repository-add       |
+| Activity Type | group-repository-add |
+| Pretty Name   | Group Repository Add |
+| Legacy Name   |                      |
+
+group-repository-add:success
+----------------------------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| repository_name |      |           | &#10003;      |
+
+group-repository-add:fail
+-------------------------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| repository_name |      |           | &#10003;      |

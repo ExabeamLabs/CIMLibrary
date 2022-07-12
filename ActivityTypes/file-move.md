@@ -1,46 +1,36 @@
 file-move
 =========
 
-```JSON
-{"pretty_name":"File Move",
-"activity":"move",
-"subject":"file",
-"activity_type":"file-move",
-"description":"A file was moved to another location",
-"fields":{"src_file_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_ext":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_file_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"File Move",
-"activity":"move",
-"subject":"file",
-"activity_type":"file-move",
-"description":"A file was moved to another location",
-"fields":{"src_file_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_ext":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A file was moved to another location
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-movesuccess) or a [fail](#file-movefail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | file      |
+| Activity      | move      |
+| Activity Type | file-move |
+| Pretty Name   | File Move |
+| Legacy Name   |           |
+
+file-move:success
+-----------------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| src_file_name |      | &#10003;  |               |
+| src_file_ext  |      | &#10003;  |               |
+| src_file_dir  |      |           | &#10003;      |
+| src_file_path |      | &#10003;  |               |
+
+file-move:fail
+--------------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| src_file_name |      | &#10003;  |               |
+| src_file_ext  |      | &#10003;  |               |
+| src_file_dir  |      |           | &#10003;      |
+| src_file_path |      | &#10003;  |               |

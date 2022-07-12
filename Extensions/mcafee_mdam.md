@@ -2,7 +2,7 @@ mcafee mdam
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mcafee mdam\"",
 "activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
@@ -29,6 +29,5 @@ mcafee mdam
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

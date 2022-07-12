@@ -1,38 +1,32 @@
 app-authentication
 ==================
 
-```JSON
-{"pretty_name":"App Authentication",
-"activity":"authentication",
-"subject":"app",
-"activity_type":"app-authentication",
-"legacy_event_name":["app-login",
-"authentication-successful"],
-"description":"A part of an identification process to an app that is not the login",
-"fields":{"user":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"App Authentication",
-"activity":"authentication",
-"subject":"app",
-"activity_type":"app-authentication",
-"legacy_event_name":["app-login",
-"authentication-failed"],
-"description":"A part of an identification process to an app that is not the login",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A part of an identification process to an app that is not the login
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-authenticationsuccess) or a [fail](#app-authenticationfail).
+
+| Parameter     | Value              |
+| ------------- | ------------------ |
+| Subject       | app                |
+| Activity      | authentication     |
+| Activity Type | app-authentication |
+| Pretty Name   | App Authentication |
+| Legacy Name   |                    |
+
+app-authentication:success
+--------------------------
+
+| Field               | Core     | Detection | Informational |
+| ------------------- | -------- | --------- | ------------- |
+| user                | &#10003; |           |               |
+| authentication_type |          |           |               |
+
+app-authentication:fail
+-----------------------
+
+| Field               | Core     | Detection | Informational |
+| ------------------- | -------- | --------- | ------------- |
+| user                | &#10003; |           |               |
+| authentication_type |          |           |               |

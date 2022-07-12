@@ -1,23 +1,27 @@
 user-mfa-enable
 ===============
 
-```JSON
-{"pretty_name":"User Mfa Enable",
-"activity":"mfa-enable",
-"subject":"user",
-"activity_type":"user-mfa-enable",
-"description":"The MFA configuration for a user account was set to enabled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Mfa Enable",
-"activity":"mfa-enable",
-"subject":"user",
-"activity_type":"user-mfa-enable",
-"description":"The MFA configuration for a user account was set to enabled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The MFA configuration for a user account was set to enabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-mfa-enablesuccess) or a [fail](#user-mfa-enablefail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | user            |
+| Activity      | mfa-enable      |
+| Activity Type | user-mfa-enable |
+| Pretty Name   | User Mfa Enable |
+| Legacy Name   |                 |
+
+user-mfa-enable:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+user-mfa-enable:fail
+--------------------
+
+There are no fields for this activity type.
