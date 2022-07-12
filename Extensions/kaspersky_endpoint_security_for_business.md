@@ -2,7 +2,7 @@ kaspersky endpoint security for business
 ========================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"kaspersky endpoint security for business\"",
 "activity_type":{"alert-trigger":{"fields":{"device_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -47,6 +47,5 @@ kaspersky endpoint security for business
 "operation":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

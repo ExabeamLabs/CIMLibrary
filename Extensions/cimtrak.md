@@ -2,7 +2,7 @@ cimtrak
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cimtrak\"",
 "activity_type":{"file-write":{"fields":{"process_id":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -49,6 +49,5 @@ cimtrak
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

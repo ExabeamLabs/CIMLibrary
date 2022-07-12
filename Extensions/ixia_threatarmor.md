@@ -2,8 +2,7 @@ ixia threatarmor
 ================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ixia threatarmor\"",
 "activity_type":{"network-session":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,34 +1,32 @@
 message-receive
 ===============
 
-```JSON
-{"pretty_name":"Message Receive",
-"activity":"receive",
-"subject":"message",
-"activity_type":"message-receive",
-"description":"A chat messaged was received by a user",
-"fields":{"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Message Receive",
-"activity":"receive",
-"subject":"message",
-"activity_type":"message-receive",
-"description":"A chat messaged was received by a user",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A chat messaged was received by a user
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#message-receivesuccess) or a [fail](#message-receivefail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | message         |
+| Activity      | receive         |
+| Activity Type | message-receive |
+| Pretty Name   | Message Receive |
+| Legacy Name   |                 |
+
+message-receive:success
+-----------------------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| dest_domain |      |           | &#10003;      |
+| dest_user   |      |           | &#10003;      |
+
+message-receive:fail
+--------------------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| dest_domain |      |           | &#10003;      |
+| dest_user   |      |           | &#10003;      |

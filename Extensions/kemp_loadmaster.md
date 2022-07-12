@@ -2,7 +2,7 @@ kemp loadmaster
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"kemp loadmaster\"",
 "activity_type":{"app-authentication":{"fields":{"dest_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -67,6 +67,5 @@ kemp loadmaster
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

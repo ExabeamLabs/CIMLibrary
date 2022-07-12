@@ -2,7 +2,7 @@ safend data protection suite (dps)
 ==================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"safend data protection suite (dps)\"",
 "activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -11,9 +11,6 @@ safend data protection suite (dps)
 "detection":"1",
 "informational":"0"},
 "device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"os":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "additional_info":{"core":"0",
@@ -30,10 +27,12 @@ safend data protection suite (dps)
 "domain":{"core":"0",
 "detection":"0",
 "informational":"0"},
+"operating_system":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "user":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

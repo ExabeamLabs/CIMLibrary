@@ -1,23 +1,27 @@
 function-create
 ===============
 
-```JSON
-{"pretty_name":"Function Create",
-"activity":"create",
-"subject":"function",
-"activity_type":"function-create",
-"description":"An automation cloud function was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Function Create",
-"activity":"create",
-"subject":"function",
-"activity_type":"function-create",
-"description":"An automation cloud function was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An automation cloud function was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#function-createsuccess) or a [fail](#function-createfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | function        |
+| Activity      | create          |
+| Activity Type | function-create |
+| Pretty Name   | Function Create |
+| Legacy Name   |                 |
+
+function-create:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+function-create:fail
+--------------------
+
+There are no fields for this activity type.

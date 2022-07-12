@@ -105,7 +105,7 @@ fortinet utm
 "core":"0",
 "detection":"1",
 "informational":"0"}}},
-"http-request":{"fields":{"app":{"Status":"Default",
+"http-request":{"fields":{"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -133,6 +133,5 @@ fortinet utm
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

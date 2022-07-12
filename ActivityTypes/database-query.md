@@ -1,30 +1,30 @@
 database-query
 ==============
 
-```JSON
-{"pretty_name":"Database Query",
-"activity":"query",
-"subject":"database",
-"activity_type":"database-query",
-"legacy_event_name":["database-query"],
-"description":"A database resource was queried",
-"fields":{"db_query":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Database Query",
-"activity":"query",
-"subject":"database",
-"activity_type":"database-query",
-"legacy_event_name":["database-query"],
-"description":"A database resource was queried",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"db_query":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A database resource was queried
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-querysuccess) or a [fail](#database-queryfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | database       |
+| Activity      | query          |
+| Activity Type | database-query |
+| Pretty Name   | Database Query |
+| Legacy Name   |                |
+
+database-query:success
+----------------------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| db_query |      | &#10003;  |               |
+
+database-query:fail
+-------------------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| db_query |      | &#10003;  |               |

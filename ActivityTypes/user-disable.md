@@ -1,13 +1,27 @@
 user-disable
 ============
 
-```JSON
-{"pretty_name":"User Disable",
-"activity":"disable",
-"subject":"user",
-"activity_type":"user-disable",
-"legacy_event_name":["account-disabled"],
-"description":"A user account was disabled",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A user account was disabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-disablesuccess) or a [fail](#user-disablefail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | user         |
+| Activity      | disable      |
+| Activity Type | user-disable |
+| Pretty Name   | User Disable |
+| Legacy Name   |              |
+
+user-disable:success
+--------------------
+
+There are no fields for this activity type.
+
+
+user-disable:fail
+-----------------
+
+There are no fields for this activity type.

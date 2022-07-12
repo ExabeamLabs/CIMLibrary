@@ -1,23 +1,27 @@
 dns_record-delete
 =================
 
-```JSON
-{"pretty_name":"Dns_record Delete",
-"activity":"delete",
-"subject":"dns_record",
-"activity_type":"dns_record-delete",
-"description":"A DNS record was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dns_record Delete",
-"activity":"delete",
-"subject":"dns_record",
-"activity_type":"dns_record-delete",
-"description":"A DNS record was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A DNS record was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-deletesuccess) or a [fail](#dns_record-deletefail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | dns_record        |
+| Activity      | delete            |
+| Activity Type | dns_record-delete |
+| Pretty Name   | Dns_record Delete |
+| Legacy Name   |                   |
+
+dns_record-delete:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+dns_record-delete:fail
+----------------------
+
+There are no fields for this activity type.

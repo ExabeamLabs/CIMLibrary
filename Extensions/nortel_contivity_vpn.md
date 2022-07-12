@@ -2,7 +2,7 @@ nortel contivity vpn
 ====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"nortel contivity vpn\"",
 "activity_type":{"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -18,6 +18,5 @@ nortel contivity vpn
 "vpn-logout":{"fields":{"contivity_session_id":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -4,7 +4,6 @@ ruid
 ```JSON
 {"expression":"product = \"ruid\"",
 "activity_type":{"endpoint-authentication":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

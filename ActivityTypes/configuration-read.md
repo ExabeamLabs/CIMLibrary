@@ -1,23 +1,27 @@
 configuration-read
 ==================
 
-```JSON
-{"pretty_name":"Configuration Read",
-"activity":"read",
-"subject":"configuration",
-"activity_type":"configuration-read",
-"description":"The global configuration of an application or a program was read",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Configuration Read",
-"activity":"read",
-"subject":"configuration",
-"activity_type":"configuration-read",
-"description":"The global configuration of an application or a program was read",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The global configuration of an application or a program was read
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-readsuccess) or a [fail](#configuration-readfail).
+
+| Parameter     | Value              |
+| ------------- | ------------------ |
+| Subject       | configuration      |
+| Activity      | read               |
+| Activity Type | configuration-read |
+| Pretty Name   | Configuration Read |
+| Legacy Name   |                    |
+
+configuration-read:success
+--------------------------
+
+There are no fields for this activity type.
+
+
+configuration-read:fail
+-----------------------
+
+There are no fields for this activity type.

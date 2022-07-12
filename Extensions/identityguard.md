@@ -2,7 +2,7 @@ identityguard
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"identityguard\"",
 "activity_type":{"user-lock":{"fields":{"event_name":{"core":"0",
 "detection":"0",
 "informational":"0"}}},
@@ -18,6 +18,5 @@ identityguard
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

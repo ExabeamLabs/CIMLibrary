@@ -1,23 +1,27 @@
 key-create
 ==========
 
-```JSON
-{"pretty_name":"Key Create",
-"activity":"create",
-"subject":"key",
-"activity_type":"key-create",
-"description":"A global key object was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Key Create",
-"activity":"create",
-"subject":"key",
-"activity_type":"key-create",
-"description":"A global key object was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A global key object was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#key-createsuccess) or a [fail](#key-createfail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | key        |
+| Activity      | create     |
+| Activity Type | key-create |
+| Pretty Name   | Key Create |
+| Legacy Name   |            |
+
+key-create:success
+------------------
+
+There are no fields for this activity type.
+
+
+key-create:fail
+---------------
+
+There are no fields for this activity type.

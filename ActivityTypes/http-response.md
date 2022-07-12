@@ -1,58 +1,40 @@
 http-response
 =============
 
-```JSON
-{"pretty_name":"Http Response",
-"activity":"response",
-"subject":"http",
-"activity_type":"http-response",
-"description":"A web response was provided from a destination using the HTTP protocol",
-"fields":{"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Http Response",
-"activity":"response",
-"subject":"http",
-"activity_type":"http-response",
-"description":"A web response was provided from a destination using the HTTP protocol",
-"fields":{"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A web response was provided from a destination using the HTTP protocol
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-responsesuccess) or a [fail](#http-responsefail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | http          |
+| Activity      | response      |
+| Activity Type | http-response |
+| Pretty Name   | Http Response |
+| Legacy Name   |               |
+
+http-response:success
+---------------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| referrer   |      |           | &#10003;      |
+| method     |      | &#10003;  |               |
+| mime       |      | &#10003;  |               |
+| action     |      |           | &#10003;      |
+| category   |      | &#10003;  |               |
+| user_agent |      |           | &#10003;      |
+
+http-response:fail
+------------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| referrer   |      |           | &#10003;      |
+| method     |      | &#10003;  |               |
+| mime       |      | &#10003;  |               |
+| action     |      |           | &#10003;      |
+| category   |      | &#10003;  |               |
+| user_agent |      |           | &#10003;      |

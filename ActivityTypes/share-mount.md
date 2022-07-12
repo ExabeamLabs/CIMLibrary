@@ -1,23 +1,27 @@
 share-mount
 ===========
 
-```JSON
-{"pretty_name":"Share Mount",
-"activity":"mount",
-"subject":"share",
-"activity_type":"share-mount",
-"description":"A network share was mounted as a volume on an endpoint or an app",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Share Mount",
-"activity":"mount",
-"subject":"share",
-"activity_type":"share-mount",
-"description":"A network share was mounted as a volume on an endpoint or an app",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A network share was mounted as a volume on an endpoint or an app
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#share-mountsuccess) or a [fail](#share-mountfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | share       |
+| Activity      | mount       |
+| Activity Type | share-mount |
+| Pretty Name   | Share Mount |
+| Legacy Name   |             |
+
+share-mount:success
+-------------------
+
+There are no fields for this activity type.
+
+
+share-mount:fail
+----------------
+
+There are no fields for this activity type.

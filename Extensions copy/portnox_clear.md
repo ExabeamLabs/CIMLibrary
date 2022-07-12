@@ -1,0 +1,37 @@
+portnox clear
+=============
+
+```JSON
+{"expression":"product = \"portnox clear\"",
+"activity_type":{"endpoint-policy-verify":{"fields":{"domain":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"user":{"Status":"Default",
+"core":"0",
+"detection":"1",
+"informational":"0"}}},
+"endpoint-authentication":{"fields":{}}},
+"description":"",
+"fields":{"src_ip":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"auth_method":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"additional_info":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"event_code":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"dest_ip":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"event_name":{"core":"0",
+"detection":"0",
+"informational":"1"},
+"policy":{"core":"0",
+"detection":"0",
+"informational":"1"}}}
+```

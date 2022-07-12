@@ -2,12 +2,12 @@ apache subversion (svn)
 =======================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"apache subversion (svn)\"",
 "activity_type":{"http-request":{"fields":{"result":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"app":{"Status":"Default",
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -31,6 +31,5 @@ apache subversion (svn)
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

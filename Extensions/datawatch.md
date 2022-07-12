@@ -2,8 +2,7 @@ datawatch
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"datawatch\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

@@ -2,7 +2,7 @@ filesite
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"filesite\"",
 "activity_type":{"app-activity":{"fields":{"file_path":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -35,6 +35,5 @@ filesite
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

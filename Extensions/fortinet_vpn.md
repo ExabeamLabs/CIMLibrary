@@ -2,7 +2,7 @@ fortinet vpn
 ============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"fortinet vpn\"",
 "activity_type":{"vpn-authentication":{"fields":{"additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -29,7 +29,6 @@ fortinet vpn
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"}}}

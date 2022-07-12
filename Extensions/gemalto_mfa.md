@@ -2,7 +2,7 @@ gemalto mfa
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"gemalto mfa\"",
 "activity_type":{"app-authentication":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -15,6 +15,5 @@ gemalto mfa
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,23 +1,27 @@
 process-pipe-create
 ===================
 
-```JSON
-{"pretty_name":"Process Pipe Create",
-"activity":"pipe-create",
-"subject":"process",
-"activity_type":"process-pipe-create",
-"description":"An inter-process communication pipe was created in a process",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Process Pipe Create",
-"activity":"pipe-create",
-"subject":"process",
-"activity_type":"process-pipe-create",
-"description":"An inter-process communication pipe was created in a process",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An inter-process communication pipe was created in a process
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-pipe-createsuccess) or a [fail](#process-pipe-createfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | process             |
+| Activity      | pipe-create         |
+| Activity Type | process-pipe-create |
+| Pretty Name   | Process Pipe Create |
+| Legacy Name   |                     |
+
+process-pipe-create:success
+---------------------------
+
+There are no fields for this activity type.
+
+
+process-pipe-create:fail
+------------------------
+
+There are no fields for this activity type.

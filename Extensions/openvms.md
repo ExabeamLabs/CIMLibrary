@@ -2,7 +2,7 @@ openvms
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"openvms\"",
 "activity_type":{"endpoint-login":{"fields":{"process_id":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -61,6 +61,5 @@ openvms
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

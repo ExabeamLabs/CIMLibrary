@@ -1,23 +1,27 @@
 log_source-add
 ==============
 
-```JSON
-{"pretty_name":"Log_source Add",
-"activity":"add",
-"subject":"log_source",
-"activity_type":"log_source-add",
-"description":"A log source was added to a program or an app",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Log_source Add",
-"activity":"add",
-"subject":"log_source",
-"activity_type":"log_source-add",
-"description":"A log source was added to a program or an app",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A log source was added to a program or an app
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log_source-addsuccess) or a [fail](#log_source-addfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | log_source     |
+| Activity      | add            |
+| Activity Type | log_source-add |
+| Pretty Name   | Log_source Add |
+| Legacy Name   |                |
+
+log_source-add:success
+----------------------
+
+There are no fields for this activity type.
+
+
+log_source-add:fail
+-------------------
+
+There are no fields for this activity type.

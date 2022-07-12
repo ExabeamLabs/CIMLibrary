@@ -2,7 +2,7 @@ data security platform
 ======================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"data security platform\"",
 "activity_type":{"file-permission-modify":{"fields":{"access":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -75,6 +75,5 @@ data security platform
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

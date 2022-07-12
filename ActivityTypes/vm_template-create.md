@@ -1,23 +1,27 @@
 vm_template-create
 ==================
 
-```JSON
-{"pretty_name":"Vm_template Create",
-"activity":"create",
-"subject":"vm_template",
-"activity_type":"vm_template-create",
-"description":"A VM template was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Vm_template Create",
-"activity":"create",
-"subject":"vm_template",
-"activity_type":"vm_template-create",
-"description":"A VM template was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A VM template was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_template-createsuccess) or a [fail](#vm_template-createfail).
+
+| Parameter     | Value              |
+| ------------- | ------------------ |
+| Subject       | vm_template        |
+| Activity      | create             |
+| Activity Type | vm_template-create |
+| Pretty Name   | Vm_template Create |
+| Legacy Name   |                    |
+
+vm_template-create:success
+--------------------------
+
+There are no fields for this activity type.
+
+
+vm_template-create:fail
+-----------------------
+
+There are no fields for this activity type.

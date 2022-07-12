@@ -4,7 +4,6 @@ rs2 technologies
 ```JSON
 {"expression":"product = \"rs2 technologies\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{"location_building":{"core":"0",
 "detection":"0",
 "informational":"1"},

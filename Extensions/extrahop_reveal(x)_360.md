@@ -34,6 +34,5 @@ extrahop reveal(x) 360
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

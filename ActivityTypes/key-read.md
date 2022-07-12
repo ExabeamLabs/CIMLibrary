@@ -1,23 +1,27 @@
 key-read
 ========
 
-```JSON
-{"pretty_name":"Key Read",
-"activity":"read",
-"subject":"key",
-"activity_type":"key-read",
-"description":"A request was made to read the content or properties of a key",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Key Read",
-"activity":"read",
-"subject":"key",
-"activity_type":"key-read",
-"description":"A request was made to read the content or properties of a key",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A request was made to read the content or properties of a key
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#key-readsuccess) or a [fail](#key-readfail).
+
+| Parameter     | Value    |
+| ------------- | -------- |
+| Subject       | key      |
+| Activity      | read     |
+| Activity Type | key-read |
+| Pretty Name   | Key Read |
+| Legacy Name   |          |
+
+key-read:success
+----------------
+
+There are no fields for this activity type.
+
+
+key-read:fail
+-------------
+
+There are no fields for this activity type.

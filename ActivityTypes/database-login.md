@@ -1,36 +1,32 @@
 database-login
 ==============
 
-```JSON
-{"pretty_name":"Database Login",
-"activity":"login",
-"subject":"database",
-"activity_type":"database-login",
-"legacy_event_name":["database-login"],
-"description":"A user logged in to a database",
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Database Login",
-"activity":"login",
-"subject":"database",
-"activity_type":"database-login",
-"legacy_event_name":["database-failed-login"],
-"description":"A user logged in to a database",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user logged in to a database
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-loginsuccess) or a [fail](#database-loginfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | database       |
+| Activity      | login          |
+| Activity Type | database-login |
+| Pretty Name   | Database Login |
+| Legacy Name   |                |
+
+database-login:success
+----------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+database-login:fail
+-------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |

@@ -1,23 +1,27 @@
 role-permission-modify
 ======================
 
-```JSON
-{"pretty_name":"Role Permission Modify",
-"activity":"permission-modify",
-"subject":"role",
-"activity_type":"role-permission-modify",
-"description":"The permissions associated with a security role were changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Role Permission Modify",
-"activity":"permission-modify",
-"subject":"role",
-"activity_type":"role-permission-modify",
-"description":"The permissions associated with a security role were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The permissions associated with a security role were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-permission-modifysuccess) or a [fail](#role-permission-modifyfail).
+
+| Parameter     | Value                  |
+| ------------- | ---------------------- |
+| Subject       | role                   |
+| Activity      | permission-modify      |
+| Activity Type | role-permission-modify |
+| Pretty Name   | Role Permission Modify |
+| Legacy Name   |                        |
+
+role-permission-modify:success
+------------------------------
+
+There are no fields for this activity type.
+
+
+role-permission-modify:fail
+---------------------------
+
+There are no fields for this activity type.

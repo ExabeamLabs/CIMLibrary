@@ -1,23 +1,27 @@
 vm_pool-modify
 ==============
 
-```JSON
-{"pretty_name":"Vm_pool Modify",
-"activity":"modify",
-"subject":"vm_pool",
-"activity_type":"vm_pool-modify",
-"description":"The properties or configuration of a VM pool were modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Vm_pool Modify",
-"activity":"modify",
-"subject":"vm_pool",
-"activity_type":"vm_pool-modify",
-"description":"The properties or configuration of a VM pool were modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties or configuration of a VM pool were modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-modifysuccess) or a [fail](#vm_pool-modifyfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | vm_pool        |
+| Activity      | modify         |
+| Activity Type | vm_pool-modify |
+| Pretty Name   | Vm_pool Modify |
+| Legacy Name   |                |
+
+vm_pool-modify:success
+----------------------
+
+There are no fields for this activity type.
+
+
+vm_pool-modify:fail
+-------------------
+
+There are no fields for this activity type.

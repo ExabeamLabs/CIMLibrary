@@ -1,25 +1,27 @@
 policy-write
 ============
 
-```JSON
-{"pretty_name":"Policy Write",
-"activity":"write",
-"subject":"policy",
-"activity_type":"policy-write",
-"description":"A policy document was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Policy Write",
-"activity":"write",
-"subject":"policy",
-"activity_type":"policy-write",
-"description":"A policy document was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A policy document was created or modified, only used as a catch all if create or modify cannot be determined
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-writesuccess) or a [fail](#policy-writefail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | policy       |
+| Activity      | write        |
+| Activity Type | policy-write |
+| Pretty Name   | Policy Write |
+| Legacy Name   |              |
+
+policy-write:success
+--------------------
+
+There are no fields for this activity type.
+
+
+policy-write:fail
+-----------------
+
+There are no fields for this activity type.

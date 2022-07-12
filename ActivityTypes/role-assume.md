@@ -1,25 +1,27 @@
 role-assume
 ===========
 
-```JSON
-{"pretty_name":"Role Assume",
-"activity":"assume",
-"subject":"role",
-"activity_type":"role-assume",
-"description":"A security role identity was assumed by another identity,
- granting itself this roles' permissions.",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Role Assume",
-"activity":"assume",
-"subject":"role",
-"activity_type":"role-assume",
-"description":"A security role identity was assumed by another identity,
- granting itself this roles' permissions.",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A security role identity was assumed by another identity, granting itself this roles' permissions.
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-assumesuccess) or a [fail](#role-assumefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | role        |
+| Activity      | assume      |
+| Activity Type | role-assume |
+| Pretty Name   | Role Assume |
+| Legacy Name   |             |
+
+role-assume:success
+-------------------
+
+There are no fields for this activity type.
+
+
+role-assume:fail
+----------------
+
+There are no fields for this activity type.

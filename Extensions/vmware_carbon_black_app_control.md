@@ -15,7 +15,7 @@ vmware carbon black app control
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process_name":{"Status":"Legacy",
@@ -50,6 +50,5 @@ vmware carbon black app control
 "direction":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

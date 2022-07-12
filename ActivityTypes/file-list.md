@@ -1,23 +1,27 @@
 file-list
 =========
 
-```JSON
-{"pretty_name":"File List",
-"activity":"list",
-"subject":"file",
-"activity_type":"file-list",
-"description":"A file enumeration took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"File List",
-"activity":"list",
-"subject":"file",
-"activity_type":"file-list",
-"description":"A file enumeration took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A file enumeration took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-listsuccess) or a [fail](#file-listfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | file      |
+| Activity      | list      |
+| Activity Type | file-list |
+| Pretty Name   | File List |
+| Legacy Name   |           |
+
+file-list:success
+-----------------
+
+There are no fields for this activity type.
+
+
+file-list:fail
+--------------
+
+There are no fields for this activity type.

@@ -1,34 +1,32 @@
 email-move
 ==========
 
-```JSON
-{"pretty_name":"Email Move",
-"activity":"move",
-"subject":"email",
-"activity_type":"email-move",
-"description":"An email in an inbox folder was moved to another inbox folder",
-"fields":{"dest_email_folder":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_email_folder":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Email Move",
-"activity":"move",
-"subject":"email",
-"activity_type":"email-move",
-"description":"An email in an inbox folder was moved to another inbox folder",
-"fields":{"dest_email_folder":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_email_folder":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An email in an inbox folder was moved to another inbox folder
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-movesuccess) or a [fail](#email-movefail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | email      |
+| Activity      | move       |
+| Activity Type | email-move |
+| Pretty Name   | Email Move |
+| Legacy Name   |            |
+
+email-move:success
+------------------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| dest_email_folder |      |           | &#10003;      |
+| src_email_folder  |      |           | &#10003;      |
+
+email-move:fail
+---------------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| dest_email_folder |      |           | &#10003;      |
+| src_email_folder  |      |           | &#10003;      |

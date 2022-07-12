@@ -1,15 +1,28 @@
 meeting-member-join
 ===================
 
-```JSON
-{"pretty_name":"Meeting Member Join",
-"activity":"member-join",
-"subject":"meeting",
-"activity_type":"meeting-member-join",
-"legacy_event_name":["web-meeting-participant-joined"],
-"description":"A user joined a web meeting",
-"fields":{"member":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}
-```
+Description
+-----------
+A user joined a web meeting
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#meeting-member-joinsuccess) or a [fail](#meeting-member-joinfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | meeting             |
+| Activity      | member-join         |
+| Activity Type | meeting-member-join |
+| Pretty Name   | Meeting Member Join |
+| Legacy Name   |                     |
+
+meeting-member-join:success
+---------------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| member | &#10003; | &#10003;  |               |
+
+meeting-member-join:fail
+------------------------
+
+There are no fields for this activity type.

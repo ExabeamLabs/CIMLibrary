@@ -2,7 +2,7 @@ virtru
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"virtru\"",
 "activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
@@ -28,6 +28,5 @@ virtru
 "user_agent":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -2,7 +2,7 @@ nasuni
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"nasuni\"",
 "activity_type":{"file-permission-modify":{"fields":{"access":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -15,7 +15,6 @@ nasuni
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

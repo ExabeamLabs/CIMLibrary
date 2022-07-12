@@ -2,7 +2,7 @@ atlassian bitbucket
 ===================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"atlassian bitbucket\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -15,7 +15,6 @@ atlassian bitbucket
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

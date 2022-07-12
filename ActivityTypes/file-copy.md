@@ -1,46 +1,36 @@
 file-copy
 =========
 
-```JSON
-{"pretty_name":"File Copy",
-"activity":"copy",
-"subject":"file",
-"activity_type":"file-copy",
-"description":"A file was copied",
-"fields":{"src_file_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_ext":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_file_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"File Copy",
-"activity":"copy",
-"subject":"file",
-"activity_type":"file-copy",
-"description":"A file was copied",
-"fields":{"src_file_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_ext":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A file was copied
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-copysuccess) or a [fail](#file-copyfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | file      |
+| Activity      | copy      |
+| Activity Type | file-copy |
+| Pretty Name   | File Copy |
+| Legacy Name   |           |
+
+file-copy:success
+-----------------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| src_file_name |      | &#10003;  |               |
+| src_file_ext  |      | &#10003;  |               |
+| src_file_dir  |      |           | &#10003;      |
+| src_file_path |      | &#10003;  |               |
+
+file-copy:fail
+--------------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| src_file_name |      | &#10003;  |               |
+| src_file_ext  |      | &#10003;  |               |
+| src_file_dir  |      |           | &#10003;      |
+| src_file_path |      | &#10003;  |               |

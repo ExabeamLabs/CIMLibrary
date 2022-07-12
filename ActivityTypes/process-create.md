@@ -1,54 +1,38 @@
 process-create
 ==============
 
-```JSON
-{"pretty_name":"Process Create",
-"activity":"create",
-"subject":"process",
-"activity_type":"process-create",
-"legacy_event_name":["process-created"],
-"description":"A process was executed",
-"fields":{"parent_process_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Process Create",
-"activity":"create",
-"subject":"process",
-"activity_type":"process-create",
-"legacy_event_name":["process-created-failed"],
-"description":"A process was executed",
-"fields":{"parent_process_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A process was executed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-createsuccess) or a [fail](#process-createfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | process        |
+| Activity      | create         |
+| Activity Type | process-create |
+| Pretty Name   | Process Create |
+| Legacy Name   |                |
+
+process-create:success
+----------------------
+
+| Field                       | Core | Detection | Informational |
+| --------------------------- | ---- | --------- | ------------- |
+| parent_process_id           |      | &#10003;  |               |
+| parent_process_command_line |      | &#10003;  |               |
+| parent_process_name         |      | &#10003;  |               |
+| parent_process_dir          |      | &#10003;  |               |
+| parent_process_path         |      | &#10003;  |               |
+
+process-create:fail
+-------------------
+
+| Field                       | Core | Detection | Informational |
+| --------------------------- | ---- | --------- | ------------- |
+| parent_process_id           |      | &#10003;  |               |
+| parent_process_command_line |      | &#10003;  |               |
+| parent_process_name         |      | &#10003;  |               |
+| parent_process_dir          |      | &#10003;  |               |
+| parent_process_path         |      | &#10003;  |               |

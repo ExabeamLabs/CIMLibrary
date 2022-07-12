@@ -2,7 +2,7 @@ lumension
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"lumension\"",
 "activity_type":{"peripheral_storage-activity":{"fields":{"file_path":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -26,7 +26,6 @@ lumension
 "informational":"0"}}},
 "file-write":{"fields":{}},
 "file-read":{"fields":{}}},
-"description":"",
 "fields":{"device_id":{"core":"0",
 "detection":"0",
 "informational":"1"},

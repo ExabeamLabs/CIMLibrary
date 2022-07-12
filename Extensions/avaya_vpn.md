@@ -2,7 +2,7 @@ avaya vpn
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"avaya vpn\"",
 "activity_type":{"vpn-login":{"fields":{"dest_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -11,6 +11,5 @@ avaya vpn
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

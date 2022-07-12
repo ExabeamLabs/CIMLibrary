@@ -2,7 +2,7 @@ bind
 ====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"bind\"",
 "activity_type":{"dns-request":{"fields":{"action":{"core":"0",
 "detection":"0",
 "informational":"1"},
@@ -12,6 +12,5 @@ bind
 "triggers":{"core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

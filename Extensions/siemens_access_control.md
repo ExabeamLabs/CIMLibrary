@@ -4,7 +4,6 @@ siemens access control
 ```JSON
 {"expression":"product = \"siemens access control\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{"location_building":{"core":"0",
 "detection":"0",
 "informational":"1"},

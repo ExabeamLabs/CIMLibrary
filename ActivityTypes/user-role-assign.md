@@ -1,28 +1,30 @@
 user-role-assign
 ================
 
-```JSON
-{"pretty_name":"User Role Assign",
-"activity":"role-assign",
-"subject":"user",
-"activity_type":"user-role-assign",
-"description":"A user account was assigned a security role",
-"fields":{"role_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"User Role Assign",
-"activity":"role-assign",
-"subject":"user",
-"activity_type":"user-role-assign",
-"description":"A user account was assigned a security role",
-"fields":{"role_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user account was assigned a security role
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-role-assignsuccess) or a [fail](#user-role-assignfail).
+
+| Parameter     | Value            |
+| ------------- | ---------------- |
+| Subject       | user             |
+| Activity      | role-assign      |
+| Activity Type | user-role-assign |
+| Pretty Name   | User Role Assign |
+| Legacy Name   |                  |
+
+user-role-assign:success
+------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| role_name |      |           | &#10003;      |
+
+user-role-assign:fail
+---------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| role_name |      |           | &#10003;      |

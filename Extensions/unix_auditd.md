@@ -2,7 +2,7 @@ unix auditd
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"unix auditd\"",
 "activity_type":{"user-delete":{"fields":{"user_id":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -163,7 +163,7 @@ unix auditd
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"auth_process":{"Status":"Default",
+"authentication_process":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
@@ -225,6 +225,5 @@ unix auditd
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

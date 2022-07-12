@@ -30,7 +30,6 @@ splunk stream
 "router_ip_flow":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_mac":{"core":"0",
 "detection":"0",
 "informational":"1"},

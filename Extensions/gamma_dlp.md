@@ -3,13 +3,13 @@ gamma dlp
 
 ```JSON
 {"expression":"product = gamma dlp",
-"activity_type":{"alert-trigger":{"fields":{"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
+"activity_type":{"alert-trigger":{"fields":{"email_address":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "application":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "user_id":{"core":"0",
@@ -22,6 +22,5 @@ gamma dlp
 "event_name_name":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

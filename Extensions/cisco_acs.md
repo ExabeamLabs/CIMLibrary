@@ -4,7 +4,6 @@ cisco acs
 ```JSON
 {"expression":"product = \"cisco acs\"",
 "activity_type":{"app-login":{"fields":{}}},
-"description":"",
 "fields":{"device_version":{"core":"0",
 "detection":"1",
 "informational":"0"},

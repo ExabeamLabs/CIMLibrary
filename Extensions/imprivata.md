@@ -2,7 +2,7 @@ imprivata
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"imprivata\"",
 "activity_type":{"user-password-reset":{"fields":{"operation":{"core":"0",
 "detection":"0",
 "informational":"0"}}},
@@ -19,7 +19,6 @@ imprivata
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

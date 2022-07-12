@@ -1,25 +1,27 @@
 group-modify
 ============
 
-```JSON
-{"pretty_name":"Group Modify",
-"activity":"modify",
-"subject":"group",
-"activity_type":"group-modify",
-"legacy_event_name":["NA"],
-"description":"A group was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Group Modify",
-"activity":"modify",
-"subject":"group",
-"activity_type":"group-modify",
-"legacy_event_name":["NA"],
-"description":"A group was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A group was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-modifysuccess) or a [fail](#group-modifyfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | group        |
+| Activity      | modify       |
+| Activity Type | group-modify |
+| Pretty Name   | Group Modify |
+| Legacy Name   |              |
+
+group-modify:success
+--------------------
+
+There are no fields for this activity type.
+
+
+group-modify:fail
+-----------------
+
+There are no fields for this activity type.

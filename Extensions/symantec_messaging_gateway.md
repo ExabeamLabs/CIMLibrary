@@ -5,6 +5,5 @@ symantec messaging gateway
 {"expression":"product = \"smg\"",
 "activity_type":{"email-receive":{"fields":{}},
 "email-send":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

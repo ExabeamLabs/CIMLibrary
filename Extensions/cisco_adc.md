@@ -4,7 +4,6 @@ cisco adc
 ```JSON
 {"expression":"product = \"cisco adc\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"protocol":{"core":"0",
 "detection":"1",
 "informational":"0"},

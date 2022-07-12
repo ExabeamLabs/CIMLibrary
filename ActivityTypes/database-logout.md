@@ -1,34 +1,32 @@
 database-logout
 ===============
 
-```JSON
-{"pretty_name":"Database Logout",
-"activity":"logout",
-"subject":"database",
-"activity_type":"database-logout",
-"description":"A user logged out of a database",
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Database Logout",
-"activity":"logout",
-"subject":"database",
-"activity_type":"database-logout",
-"description":"A user logged out of a database",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user logged out of a database
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-logoutsuccess) or a [fail](#database-logoutfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | database        |
+| Activity      | logout          |
+| Activity Type | database-logout |
+| Pretty Name   | Database Logout |
+| Legacy Name   |                 |
+
+database-logout:success
+-----------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+database-logout:fail
+--------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |

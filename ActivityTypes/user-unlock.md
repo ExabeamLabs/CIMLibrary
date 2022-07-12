@@ -1,25 +1,27 @@
 user-unlock
 ===========
 
-```JSON
-{"pretty_name":"User Unlock",
-"activity":"unlock",
-"subject":"user",
-"activity_type":"user-unlock",
-"legacy_event_name":["account-unlocked"],
-"description":"A user account was unlocked",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Unlock",
-"activity":"unlock",
-"subject":"user",
-"activity_type":"user-unlock",
-"legacy_event_name":["account-unlocked"],
-"description":"A user account was unlocked",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user account was unlocked
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-unlocksuccess) or a [fail](#user-unlockfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | unlock      |
+| Activity Type | user-unlock |
+| Pretty Name   | User Unlock |
+| Legacy Name   |             |
+
+user-unlock:success
+-------------------
+
+There are no fields for this activity type.
+
+
+user-unlock:fail
+----------------
+
+There are no fields for this activity type.

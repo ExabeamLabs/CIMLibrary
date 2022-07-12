@@ -2,7 +2,7 @@ imss
 ====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"imss\"",
 "activity_type":{"alert-trigger":{"fields":{"external_address":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -29,6 +29,5 @@ imss
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -3,10 +3,10 @@ fireeye (trellix) network security (nx)
 
 ```JSON
 {"expression":"product = fireeye (trellix) network security (nx)",
-"activity_type":{"alert-trigger":{"fields":{"additional_information":{"core":"0",
+"activity_type":{"alert-trigger":{"fields":{"email_address":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"email_address":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process_name":{"Status":"Legacy",
@@ -31,6 +31,5 @@ fireeye (trellix) network security (nx)
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

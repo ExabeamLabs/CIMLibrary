@@ -1,23 +1,27 @@
 ds-replication-modify
 =====================
 
-```JSON
-{"pretty_name":"Ds Replication Modify",
-"activity":"replication-modify",
-"subject":"ds",
-"activity_type":"ds-replication-modify",
-"description":"The configuration of the replication process of the directory service was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ds Replication Modify",
-"activity":"replication-modify",
-"subject":"ds",
-"activity_type":"ds-replication-modify",
-"description":"The configuration of the replication process of the directory service was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The configuration of the replication process of the directory service was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-modifysuccess) or a [fail](#ds-replication-modifyfail).
+
+| Parameter     | Value                 |
+| ------------- | --------------------- |
+| Subject       | ds                    |
+| Activity      | replication-modify    |
+| Activity Type | ds-replication-modify |
+| Pretty Name   | Ds Replication Modify |
+| Legacy Name   |                       |
+
+ds-replication-modify:success
+-----------------------------
+
+There are no fields for this activity type.
+
+
+ds-replication-modify:fail
+--------------------------
+
+There are no fields for this activity type.

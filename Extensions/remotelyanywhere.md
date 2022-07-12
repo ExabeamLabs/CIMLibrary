@@ -4,7 +4,6 @@ remotelyanywhere
 ```JSON
 {"expression":"product = \"remotelyanywhere\"",
 "activity_type":{"endpoint-login":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

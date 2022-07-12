@@ -2,7 +2,7 @@ imsva
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"imsva\"",
 "activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -27,6 +27,5 @@ imsva
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

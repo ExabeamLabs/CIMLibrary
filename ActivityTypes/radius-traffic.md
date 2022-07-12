@@ -1,25 +1,27 @@
 radius-traffic
 ==============
 
-```JSON
-{"pretty_name":"Radius Traffic",
-"activity":"traffic",
-"subject":"radius",
-"activity_type":"radius-traffic",
-"legacy_event_name":["nac-logon"],
-"description":"A representation of a single RADIUS packet",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Radius Traffic",
-"activity":"traffic",
-"subject":"radius",
-"activity_type":"radius-traffic",
-"legacy_event_name":["nac-failed-logon"],
-"description":"A representation of a single RADIUS packet",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A representation of a single RADIUS packet
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#radius-trafficsuccess) or a [fail](#radius-trafficfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | radius         |
+| Activity      | traffic        |
+| Activity Type | radius-traffic |
+| Pretty Name   | Radius Traffic |
+| Legacy Name   |                |
+
+radius-traffic:success
+----------------------
+
+There are no fields for this activity type.
+
+
+radius-traffic:fail
+-------------------
+
+There are no fields for this activity type.

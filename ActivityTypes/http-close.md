@@ -1,23 +1,27 @@
 http-close
 ==========
 
-```JSON
-{"pretty_name":"Http Close",
-"activity":"close",
-"subject":"http",
-"activity_type":"http-close",
-"description":"A HTTP session was closed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Http Close",
-"activity":"close",
-"subject":"http",
-"activity_type":"http-close",
-"description":"A HTTP session was closed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A HTTP session was closed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-closesuccess) or a [fail](#http-closefail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | http       |
+| Activity      | close      |
+| Activity Type | http-close |
+| Pretty Name   | Http Close |
+| Legacy Name   |            |
+
+http-close:success
+------------------
+
+There are no fields for this activity type.
+
+
+http-close:fail
+---------------
+
+There are no fields for this activity type.

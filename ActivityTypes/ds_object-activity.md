@@ -1,25 +1,27 @@
 ds_object-activity
 ==================
 
-```JSON
-{"pretty_name":"Ds_object Activity",
-"activity":"activity",
-"subject":"ds_object",
-"activity_type":"ds_object-activity",
-"legacy_event_name":["ds-access"],
-"description":"An activity on a directory service object",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ds_object Activity",
-"activity":"activity",
-"subject":"ds_object",
-"activity_type":"ds_object-activity",
-"legacy_event_name":["failed-ds-access"],
-"description":"An activity on a directory service object",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An activity on a directory service object
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds_object-activitysuccess) or a [fail](#ds_object-activityfail).
+
+| Parameter     | Value              |
+| ------------- | ------------------ |
+| Subject       | ds_object          |
+| Activity      | activity           |
+| Activity Type | ds_object-activity |
+| Pretty Name   | Ds_object Activity |
+| Legacy Name   |                    |
+
+ds_object-activity:success
+--------------------------
+
+There are no fields for this activity type.
+
+
+ds_object-activity:fail
+-----------------------
+
+There are no fields for this activity type.

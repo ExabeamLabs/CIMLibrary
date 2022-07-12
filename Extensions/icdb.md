@@ -2,7 +2,7 @@ icdb
 ====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"icdb\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -23,6 +23,5 @@ icdb
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

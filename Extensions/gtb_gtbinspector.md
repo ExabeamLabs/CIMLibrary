@@ -2,7 +2,7 @@ gtb gtbinspector
 ================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"gtb gtbinspector\"",
 "activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
@@ -41,6 +41,5 @@ gtb gtbinspector
 "target":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

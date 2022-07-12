@@ -1,25 +1,27 @@
 role-write
 ==========
 
-```JSON
-{"pretty_name":"Role Write",
-"activity":"write",
-"subject":"role",
-"activity_type":"role-write",
-"description":"A role identity was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Role Write",
-"activity":"write",
-"subject":"role",
-"activity_type":"role-write",
-"description":"A role identity was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A role identity was created or modified, only used as a catch all if create or modify cannot be determined
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-writesuccess) or a [fail](#role-writefail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | role       |
+| Activity      | write      |
+| Activity Type | role-write |
+| Pretty Name   | Role Write |
+| Legacy Name   |            |
+
+role-write:success
+------------------
+
+There are no fields for this activity type.
+
+
+role-write:fail
+---------------
+
+There are no fields for this activity type.

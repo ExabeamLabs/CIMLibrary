@@ -1,29 +1,27 @@
 network-session
 ===============
 
-```JSON
-{"pretty_name":"Network Session",
-"activity":"session",
-"subject":"network",
-"activity_type":"network-session",
-"legacy_event_name":["netflow-connection",
-"network-connection-successful",
-"process-network"],
-"description":"A representation of an entire network session",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Network Session",
-"activity":"session",
-"subject":"network",
-"activity_type":"network-session",
-"legacy_event_name":["netflow-connection",
-"network-connection-failed",
-"process-network-failed"],
-"description":"A representation of an entire network session",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A representation of an entire network session
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#network-sessionsuccess) or a [fail](#network-sessionfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | network         |
+| Activity      | session         |
+| Activity Type | network-session |
+| Pretty Name   | Network Session |
+| Legacy Name   |                 |
+
+network-session:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+network-session:fail
+--------------------
+
+There are no fields for this activity type.

@@ -1,30 +1,30 @@
 file-permission-modify
 ======================
 
-```JSON
-{"pretty_name":"File Permission Modify",
-"activity":"permission-modify",
-"subject":"file",
-"activity_type":"file-permission-modify",
-"legacy_event_name":["file-permission-change"],
-"description":"The permissions that apply to a file were changed",
-"fields":{"permissions":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"File Permission Modify",
-"activity":"permission-modify",
-"subject":"file",
-"activity_type":"file-permission-modify",
-"legacy_event_name":["file-permission-change"],
-"description":"The permissions that apply to a file were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"permissions":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The permissions that apply to a file were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-permission-modifysuccess) or a [fail](#file-permission-modifyfail).
+
+| Parameter     | Value                  |
+| ------------- | ---------------------- |
+| Subject       | file                   |
+| Activity      | permission-modify      |
+| Activity Type | file-permission-modify |
+| Pretty Name   | File Permission Modify |
+| Legacy Name   |                        |
+
+file-permission-modify:success
+------------------------------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| permissions |      | &#10003;  |               |
+
+file-permission-modify:fail
+---------------------------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| permissions |      | &#10003;  |               |

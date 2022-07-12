@@ -4,7 +4,6 @@ zebra wireless lan management
 ```JSON
 {"expression":"product = \"zebra wlan management\"",
 "activity_type":{"app-login":{"fields":{}}},
-"description":"",
 "fields":{"protocol":{"core":"0",
 "detection":"0",
 "informational":"1"},

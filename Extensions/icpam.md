@@ -2,8 +2,7 @@ icpam
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"icpam\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

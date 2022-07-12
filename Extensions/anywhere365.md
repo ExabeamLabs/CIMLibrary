@@ -2,7 +2,7 @@ anywhere365
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"anywhere365\"",
 "activity_type":{"call-receive":{"fields":{"recipients":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -31,7 +31,6 @@ anywhere365
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"event_id":{"core":"0",
 "detection":"0",
 "informational":"1"}}}

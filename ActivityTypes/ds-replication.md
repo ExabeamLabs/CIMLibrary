@@ -1,23 +1,27 @@
 ds-replication
 ==============
 
-```JSON
-{"pretty_name":"Ds Replication",
-"activity":"replication",
-"subject":"ds",
-"activity_type":"ds-replication",
-"description":"A part of a directory service replication process is taking place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ds Replication",
-"activity":"replication",
-"subject":"ds",
-"activity_type":"ds-replication",
-"description":"A part of a directory service replication process is taking place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A part of a directory service replication process is taking place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replicationsuccess) or a [fail](#ds-replicationfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | ds             |
+| Activity      | replication    |
+| Activity Type | ds-replication |
+| Pretty Name   | Ds Replication |
+| Legacy Name   |                |
+
+ds-replication:success
+----------------------
+
+There are no fields for this activity type.
+
+
+ds-replication:fail
+-------------------
+
+There are no fields for this activity type.

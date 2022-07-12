@@ -1,23 +1,27 @@
 scheduled_task-delete
 =====================
 
-```JSON
-{"pretty_name":"Scheduled_task Delete",
-"activity":"delete",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-delete",
-"description":"A scheduled task was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Scheduled_task Delete",
-"activity":"delete",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-delete",
-"description":"A scheduled task was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A scheduled task was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-deletesuccess) or a [fail](#scheduled_task-deletefail).
+
+| Parameter     | Value                 |
+| ------------- | --------------------- |
+| Subject       | scheduled_task        |
+| Activity      | delete                |
+| Activity Type | scheduled_task-delete |
+| Pretty Name   | Scheduled_task Delete |
+| Legacy Name   |                       |
+
+scheduled_task-delete:success
+-----------------------------
+
+There are no fields for this activity type.
+
+
+scheduled_task-delete:fail
+--------------------------
+
+There are no fields for this activity type.

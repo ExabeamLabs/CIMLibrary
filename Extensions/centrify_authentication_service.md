@@ -2,7 +2,7 @@ centrify authentication service
 ===============================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"centrify authentication service\"",
 "activity_type":{"user-password-reset":{"fields":{"user_id":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -78,6 +78,5 @@ centrify authentication service
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

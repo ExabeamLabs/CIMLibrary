@@ -2,7 +2,7 @@ trend micro officescan
 ======================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"trend micro officescan\"",
 "activity_type":{"alert-trigger":{"fields":{"protocol":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -18,6 +18,5 @@ trend micro officescan
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

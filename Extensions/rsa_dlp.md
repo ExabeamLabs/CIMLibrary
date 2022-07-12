@@ -2,7 +2,7 @@ rsa dlp
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"rsa dlp\"",
 "activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -28,6 +28,5 @@ rsa dlp
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

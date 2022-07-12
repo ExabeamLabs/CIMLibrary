@@ -1,27 +1,27 @@
 password-checkout
 =================
 
-```JSON
-{"pretty_name":"Password Checkout",
-"activity":"checkout",
-"subject":"password",
-"activity_type":"password-checkout",
-"description":"A password was checked out from a vault,
- a checkout is a one timed access of a password,
- that blocks other users from accessing it at that time",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Password Checkout",
-"activity":"checkout",
-"subject":"password",
-"activity_type":"password-checkout",
-"description":"A password was checked out from a vault,
- a checkout is a one timed access of a password,
- that blocks other users from accessing it at that time",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A password was checked out from a vault, a checkout is a one timed access of a password, that blocks other users from accessing it at that time
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-checkoutsuccess) or a [fail](#password-checkoutfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | password          |
+| Activity      | checkout          |
+| Activity Type | password-checkout |
+| Pretty Name   | Password Checkout |
+| Legacy Name   |                   |
+
+password-checkout:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+password-checkout:fail
+----------------------
+
+There are no fields for this activity type.

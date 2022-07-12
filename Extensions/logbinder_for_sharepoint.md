@@ -6,7 +6,6 @@ logbinder for sharepoint
 "activity_type":{"file-write":{"fields":{}},
 "file-read":{"fields":{}},
 "file-search":{"fields":{}}},
-"description":"",
 "fields":{"access":{"core":"0",
 "detection":"0",
 "informational":"1"},

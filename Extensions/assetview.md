@@ -2,7 +2,7 @@ assetview
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"assetview\"",
 "activity_type":{"file-download":{"fields":{"process_name":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -38,7 +38,6 @@ assetview
 "asset_id":{"core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

@@ -4,7 +4,6 @@ secure computing safeword
 ```JSON
 {"expression":"product = \"secure computing safeword\"",
 "activity_type":{"app-authentication":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

@@ -2,7 +2,7 @@ endpoint
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"endpoint\"",
 "activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
@@ -40,6 +40,5 @@ endpoint
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

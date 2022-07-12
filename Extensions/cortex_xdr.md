@@ -2,7 +2,7 @@ cortex xdr
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cortex xdr\"",
 "activity_type":{"app-activity":{"fields":{"domain":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -11,6 +11,5 @@ cortex xdr
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

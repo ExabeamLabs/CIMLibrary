@@ -20,13 +20,13 @@ microsoft azure eventhub
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "email_address":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "application":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "azure_resource_type":{"core":"0",
@@ -58,6 +58,5 @@ microsoft azure eventhub
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -4,7 +4,6 @@ pfsense
 ```JSON
 {"expression":"product = \"pfsense\"",
 "activity_type":{"network-traffic":{"fields":{}}},
-"description":"",
 "fields":{"dest_interface":{"core":"0",
 "detection":"0",
 "informational":"1"},

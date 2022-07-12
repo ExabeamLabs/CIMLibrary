@@ -29,13 +29,13 @@ symamtec (broadcom) endpoint security
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "file_ext":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "full_name":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process_name":{"Status":"Legacy",
@@ -74,6 +74,5 @@ symamtec (broadcom) endpoint security
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

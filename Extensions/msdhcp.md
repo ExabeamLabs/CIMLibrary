@@ -2,7 +2,7 @@ msdhcp
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"msdhcp\"",
 "activity_type":{"dhcp-session":{"fields":{"dest_mac":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -13,6 +13,5 @@ msdhcp
 "dest_host":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

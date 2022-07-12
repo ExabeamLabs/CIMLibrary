@@ -1,23 +1,27 @@
 dns_record-modify
 =================
 
-```JSON
-{"pretty_name":"Dns_record Modify",
-"activity":"modify",
-"subject":"dns_record",
-"activity_type":"dns_record-modify",
-"description":"The content of a DNS record was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dns_record Modify",
-"activity":"modify",
-"subject":"dns_record",
-"activity_type":"dns_record-modify",
-"description":"The content of a DNS record was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The content of a DNS record was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-modifysuccess) or a [fail](#dns_record-modifyfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | dns_record        |
+| Activity      | modify            |
+| Activity Type | dns_record-modify |
+| Pretty Name   | Dns_record Modify |
+| Legacy Name   |                   |
+
+dns_record-modify:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+dns_record-modify:fail
+----------------------
+
+There are no fields for this activity type.

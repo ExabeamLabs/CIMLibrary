@@ -1,23 +1,27 @@
 disk-scan
 =========
 
-```JSON
-{"pretty_name":"Disk Scan",
-"activity":"scan",
-"subject":"disk",
-"activity_type":"disk-scan",
-"description":"A scan that targeted disk objecs took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Disk Scan",
-"activity":"scan",
-"subject":"disk",
-"activity_type":"disk-scan",
-"description":"A scan that targeted disk objecs took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A scan that targeted disk objecs took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-scansuccess) or a [fail](#disk-scanfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | disk      |
+| Activity      | scan      |
+| Activity Type | disk-scan |
+| Pretty Name   | Disk Scan |
+| Legacy Name   |           |
+
+disk-scan:success
+-----------------
+
+There are no fields for this activity type.
+
+
+disk-scan:fail
+--------------
+
+There are no fields for this activity type.

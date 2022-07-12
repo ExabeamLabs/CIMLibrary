@@ -2,7 +2,7 @@ microsoft sysmon
 ================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"microsoft sysmon\"",
 "activity_type":{"alert-trigger":{"fields":{"process_id":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -30,6 +30,5 @@ microsoft sysmon
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

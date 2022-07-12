@@ -2,7 +2,7 @@ sunone ldap
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"sunone ldap\"",
 "activity_type":{"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -12,10 +12,6 @@ sunone ldap
 "detection":"0",
 "informational":"1"},
 "src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_type":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -43,6 +39,5 @@ sunone ldap
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

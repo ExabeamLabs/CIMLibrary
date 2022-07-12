@@ -1,28 +1,30 @@
 repository-member-remove
 ========================
 
-```JSON
-{"pretty_name":"Repository Member Remove",
-"activity":"member-remove",
-"subject":"repository",
-"activity_type":"repository-member-remove",
-"description":"A repository member was removed from a git repositry",
-"fields":{"member":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Repository Member Remove",
-"activity":"member-remove",
-"subject":"repository",
-"activity_type":"repository-member-remove",
-"description":"A repository member was removed from a git repositry",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"member":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A repository member was removed from a git repositry
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-member-removesuccess) or a [fail](#repository-member-removefail).
+
+| Parameter     | Value                    |
+| ------------- | ------------------------ |
+| Subject       | repository               |
+| Activity      | member-remove            |
+| Activity Type | repository-member-remove |
+| Pretty Name   | Repository Member Remove |
+| Legacy Name   |                          |
+
+repository-member-remove:success
+--------------------------------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| member |      |           | &#10003;      |
+
+repository-member-remove:fail
+-----------------------------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| member |      |           | &#10003;      |

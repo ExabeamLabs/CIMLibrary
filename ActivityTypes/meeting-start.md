@@ -1,13 +1,27 @@
 meeting-start
 =============
 
-```JSON
-{"pretty_name":"Meeting Start",
-"activity":"start",
-"subject":"meeting",
-"activity_type":"meeting-start",
-"legacy_event_name":["web-meeting-started"],
-"description":"A web meeting was started",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A web meeting was started
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#meeting-startsuccess) or a [fail](#meeting-startfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | meeting       |
+| Activity      | start         |
+| Activity Type | meeting-start |
+| Pretty Name   | Meeting Start |
+| Legacy Name   |               |
+
+meeting-start:success
+---------------------
+
+There are no fields for this activity type.
+
+
+meeting-start:fail
+------------------
+
+There are no fields for this activity type.

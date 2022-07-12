@@ -2,7 +2,7 @@ emc isilon
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"emc isilon\"",
 "activity_type":{"file-permission-modify":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -155,6 +155,5 @@ emc isilon
 "create_result":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

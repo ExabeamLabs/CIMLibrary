@@ -1,23 +1,27 @@
 disk-remove
 ===========
 
-```JSON
-{"pretty_name":"Disk Remove",
-"activity":"remove",
-"subject":"disk",
-"activity_type":"disk-remove",
-"description":"A disk attachment was reversed and a disk was removed from a machine",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Disk Remove",
-"activity":"remove",
-"subject":"disk",
-"activity_type":"disk-remove",
-"description":"A disk attachment was reversed and a disk was removed from a machine",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A disk attachment was reversed and a disk was removed from a machine
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-removesuccess) or a [fail](#disk-removefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | disk        |
+| Activity      | remove      |
+| Activity Type | disk-remove |
+| Pretty Name   | Disk Remove |
+| Legacy Name   |             |
+
+disk-remove:success
+-------------------
+
+There are no fields for this activity type.
+
+
+disk-remove:fail
+----------------
+
+There are no fields for this activity type.

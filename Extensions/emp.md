@@ -2,7 +2,7 @@ emp
 ===
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"emp\"",
 "activity_type":{"app-login":{"fields":{"additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -15,7 +15,6 @@ emp
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"location":{"core":"0",
 "detection":"0",
 "informational":"1"},

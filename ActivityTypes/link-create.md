@@ -1,23 +1,27 @@
 link-create
 ===========
 
-```JSON
-{"pretty_name":"Link Create",
-"activity":"create",
-"subject":"link",
-"activity_type":"link-create",
-"description":"A link was created between two endpoint objects",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Link Create",
-"activity":"create",
-"subject":"link",
-"activity_type":"link-create",
-"description":"A link was created between two endpoint objects",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A link was created between two endpoint objects
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#link-createsuccess) or a [fail](#link-createfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | link        |
+| Activity      | create      |
+| Activity Type | link-create |
+| Pretty Name   | Link Create |
+| Legacy Name   |             |
+
+link-create:success
+-------------------
+
+There are no fields for this activity type.
+
+
+link-create:fail
+----------------
+
+There are no fields for this activity type.

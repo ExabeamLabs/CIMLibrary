@@ -3,7 +3,7 @@ okta adaptive mfa
 
 ```JSON
 {"expression":"product = \"okta adaptive mfa\"",
-"activity_type":{"user-password-reset":{"fields":{"app":{"core":"0",
+"activity_type":{"user-password-reset":{"fields":{"application":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "object_type":{"core":"0",
@@ -138,7 +138,7 @@ okta adaptive mfa
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"user-create":{"fields":{"app":{"core":"0",
+"user-create":{"fields":{"application":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "object_type":{"core":"0",
@@ -162,7 +162,6 @@ okta adaptive mfa
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

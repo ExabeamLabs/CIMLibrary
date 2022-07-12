@@ -2,7 +2,7 @@ ironport web security
 =====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ironport web security\"",
 "activity_type":{"http-session":{"fields":{"auth_method":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -15,6 +15,5 @@ ironport web security
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

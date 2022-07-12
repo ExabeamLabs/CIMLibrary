@@ -1,23 +1,27 @@
 vm_host-enable
 ==============
 
-```JSON
-{"pretty_name":"Vm_host Enable",
-"activity":"enable",
-"subject":"vm_host",
-"activity_type":"vm_host-enable",
-"description":"The usage configuration of a VM host was set to enabled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Vm_host Enable",
-"activity":"enable",
-"subject":"vm_host",
-"activity_type":"vm_host-enable",
-"description":"The usage configuration of a VM host was set to enabled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The usage configuration of a VM host was set to enabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-enablesuccess) or a [fail](#vm_host-enablefail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | vm_host        |
+| Activity      | enable         |
+| Activity Type | vm_host-enable |
+| Pretty Name   | Vm_host Enable |
+| Legacy Name   |                |
+
+vm_host-enable:success
+----------------------
+
+There are no fields for this activity type.
+
+
+vm_host-enable:fail
+-------------------
+
+There are no fields for this activity type.

@@ -1,13 +1,27 @@
 database-modify
 ===============
 
-```JSON
-{"pretty_name":"Database Modify",
-"activity":"modify",
-"subject":"database",
-"activity_type":"database-modify",
-"legacy_event_name":["database-update"],
-"description":"A database resource was updated",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A database resource was updated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-modifysuccess) or a [fail](#database-modifyfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | database        |
+| Activity      | modify          |
+| Activity Type | database-modify |
+| Pretty Name   | Database Modify |
+| Legacy Name   |                 |
+
+database-modify:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+database-modify:fail
+--------------------
+
+There are no fields for this activity type.

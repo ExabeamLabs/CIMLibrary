@@ -1,28 +1,30 @@
 vm_pool-endpoint-add
 ====================
 
-```JSON
-{"pretty_name":"Vm_pool Endpoint Add",
-"activity":"endpoint-add",
-"subject":"vm_pool",
-"activity_type":"vm_pool-endpoint-add",
-"description":"An endpoint instance was added to the VM pool",
-"fields":{"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Vm_pool Endpoint Add",
-"activity":"endpoint-add",
-"subject":"vm_pool",
-"activity_type":"vm_pool-endpoint-add",
-"description":"An endpoint instance was added to the VM pool",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An endpoint instance was added to the VM pool
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-endpoint-addsuccess) or a [fail](#vm_pool-endpoint-addfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | vm_pool              |
+| Activity      | endpoint-add         |
+| Activity Type | vm_pool-endpoint-add |
+| Pretty Name   | Vm_pool Endpoint Add |
+| Legacy Name   |                      |
+
+vm_pool-endpoint-add:success
+----------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      |           | &#10003;      |
+
+vm_pool-endpoint-add:fail
+-------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      |           | &#10003;      |

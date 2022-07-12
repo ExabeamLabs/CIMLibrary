@@ -2,7 +2,7 @@ honeywell siama
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"honeywell siama\"",
 "activity_type":{"physical_location-access":{"fields":{"src_location_id":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -23,6 +23,5 @@ honeywell siama
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

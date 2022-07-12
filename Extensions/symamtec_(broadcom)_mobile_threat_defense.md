@@ -3,10 +3,7 @@ symamtec (broadcom) mobile threat defense
 
 ```JSON
 {"expression":"product = symamtec (broadcom) mobile threat defense",
-"activity_type":{"alert-trigger":{"fields":{"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
+"activity_type":{"alert-trigger":{"fields":{"device_name":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "email_address":{"core":"0",
@@ -16,6 +13,9 @@ symamtec (broadcom) mobile threat defense
 "detection":"0",
 "informational":"0"},
 "device_model":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "alert_id":{"Status":"Legacy",
@@ -35,6 +35,5 @@ symamtec (broadcom) mobile threat defense
 "product_name":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

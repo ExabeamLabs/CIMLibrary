@@ -1,23 +1,27 @@
 mailbox-item-read
 =================
 
-```JSON
-{"pretty_name":"Mailbox Item Read",
-"activity":"item-read",
-"subject":"mailbox",
-"activity_type":"mailbox-item-read",
-"description":"The content of an item contained in an email mailbox was read",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Mailbox Item Read",
-"activity":"item-read",
-"subject":"mailbox",
-"activity_type":"mailbox-item-read",
-"description":"The content of an item contained in an email mailbox was read",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The content of an item contained in an email mailbox was read
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-item-readsuccess) or a [fail](#mailbox-item-readfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | mailbox           |
+| Activity      | item-read         |
+| Activity Type | mailbox-item-read |
+| Pretty Name   | Mailbox Item Read |
+| Legacy Name   |                   |
+
+mailbox-item-read:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+mailbox-item-read:fail
+----------------------
+
+There are no fields for this activity type.

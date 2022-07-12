@@ -50,7 +50,6 @@ sybase
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"db_name":{"core":"0",
 "detection":"0",
 "informational":"1"},

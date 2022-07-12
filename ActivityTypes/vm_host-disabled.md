@@ -1,23 +1,27 @@
 vm_host-disabled
 ================
 
-```JSON
-{"pretty_name":"Vm_host Disabled",
-"activity":"disabled",
-"subject":"vm_host",
-"activity_type":"vm_host-disabled",
-"description":"The usage configuration of a VM host was set to disabled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Vm_host Disabled",
-"activity":"disabled",
-"subject":"vm_host",
-"activity_type":"vm_host-disabled",
-"description":"The usage configuration of a VM host was set to disabled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The usage configuration of a VM host was set to disabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-disabledsuccess) or a [fail](#vm_host-disabledfail).
+
+| Parameter     | Value            |
+| ------------- | ---------------- |
+| Subject       | vm_host          |
+| Activity      | disabled         |
+| Activity Type | vm_host-disabled |
+| Pretty Name   | Vm_host Disabled |
+| Legacy Name   |                  |
+
+vm_host-disabled:success
+------------------------
+
+There are no fields for this activity type.
+
+
+vm_host-disabled:fail
+---------------------
+
+There are no fields for this activity type.

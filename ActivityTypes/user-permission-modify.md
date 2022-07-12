@@ -1,30 +1,30 @@
 user-permission-modify
 ======================
 
-```JSON
-{"pretty_name":"User Permission Modify",
-"activity":"permission-modify",
-"subject":"user",
-"activity_type":"user-permission-modify",
-"legacy_event_name":["NA"],
-"description":"The permissions of a user were changed",
-"fields":{"permissions":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"User Permission Modify",
-"activity":"permission-modify",
-"subject":"user",
-"activity_type":"user-permission-modify",
-"legacy_event_name":["NA"],
-"description":"The permissions of a user were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"permissions":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The permissions of a user were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-permission-modifysuccess) or a [fail](#user-permission-modifyfail).
+
+| Parameter     | Value                  |
+| ------------- | ---------------------- |
+| Subject       | user                   |
+| Activity      | permission-modify      |
+| Activity Type | user-permission-modify |
+| Pretty Name   | User Permission Modify |
+| Legacy Name   |                        |
+
+user-permission-modify:success
+------------------------------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| permissions |      |           | &#10003;      |
+
+user-permission-modify:fail
+---------------------------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| permissions |      |           | &#10003;      |

@@ -2,7 +2,7 @@ varonis data security platform
 ==============================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"varonis data security platform\"",
 "activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -51,6 +51,5 @@ varonis data security platform
 "first_name":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

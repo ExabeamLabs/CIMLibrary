@@ -1,25 +1,27 @@
 scheduled_task-start
 ====================
 
-```JSON
-{"pretty_name":"Scheduled_task Start",
-"activity":"start",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-start",
-"description":"A scheduled task was configured to start,
- marking the moment where it would start searching for its triggers.",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Scheduled_task Start",
-"activity":"start",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-start",
-"description":"A scheduled task was configured to start,
- marking the moment where it would start searching for its triggers.",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A scheduled task was configured to start, marking the moment where it would start searching for its triggers.
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-startsuccess) or a [fail](#scheduled_task-startfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | scheduled_task       |
+| Activity      | start                |
+| Activity Type | scheduled_task-start |
+| Pretty Name   | Scheduled_task Start |
+| Legacy Name   |                      |
+
+scheduled_task-start:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+scheduled_task-start:fail
+-------------------------
+
+There are no fields for this activity type.

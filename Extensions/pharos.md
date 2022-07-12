@@ -4,7 +4,6 @@ pharos
 ```JSON
 {"expression":"product = \"pharos\"",
 "activity_type":{"printer-activity":{"fields":{}}},
-"description":"",
 "fields":{"bytes":{"core":"0",
 "detection":"0",
 "informational":"1"},

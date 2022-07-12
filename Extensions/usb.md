@@ -4,7 +4,6 @@ usb
 ```JSON
 {"expression":"product = \"usb\"",
 "activity_type":{"peripheral_storage-activity":{"fields":{}}},
-"description":"",
 "fields":{"file_name":{"core":"0",
 "detection":"0",
 "informational":"1"},

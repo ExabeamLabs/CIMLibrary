@@ -2,7 +2,7 @@ google calendar
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"google calendar\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -27,6 +27,5 @@ google calendar
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

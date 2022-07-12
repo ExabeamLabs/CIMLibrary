@@ -14,7 +14,6 @@ snowflake
 "db_schema":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"query_id":{"core":"0",
 "detection":"0",
 "informational":"1"},

@@ -6,9 +6,6 @@ elastic endpoint security
 "activity_type":{"alert-trigger":{"fields":{"process_id":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"hash_hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "process":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -53,6 +50,9 @@ elastic endpoint security
 "domain":{"core":"0",
 "detection":"0",
 "informational":"0"},
+"hash_md5":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "process_directory":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -69,6 +69,5 @@ elastic endpoint security
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

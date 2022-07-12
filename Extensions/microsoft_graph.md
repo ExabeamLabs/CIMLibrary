@@ -19,9 +19,6 @@ microsoft graph
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "token_issuer_type":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -32,6 +29,9 @@ microsoft graph
 "detection":"0",
 "informational":"0"},
 "application":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "sender":{"Status":"Legacy",
@@ -68,6 +68,5 @@ microsoft graph
 "user_agent":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

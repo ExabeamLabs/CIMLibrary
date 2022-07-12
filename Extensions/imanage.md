@@ -2,8 +2,8 @@ imanage
 =======
 
 ```JSON
-{"expression":"",
-"activity_type":{"alert-trigger":{"fields":{"app":{"core":"0",
+{"expression":"product = \"imanage\"",
+"activity_type":{"alert-trigger":{"fields":{"application":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "file_name":{"Status":"Legacy",
@@ -74,6 +74,5 @@ imanage
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

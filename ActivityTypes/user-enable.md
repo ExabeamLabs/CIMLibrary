@@ -1,13 +1,27 @@
 user-enable
 ===========
 
-```JSON
-{"pretty_name":"User Enable",
-"activity":"enable",
-"subject":"user",
-"activity_type":"user-enable",
-"legacy_event_name":["account-enabled"],
-"description":"A user account was enabled",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A user account was enabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-enablesuccess) or a [fail](#user-enablefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | user        |
+| Activity      | enable      |
+| Activity Type | user-enable |
+| Pretty Name   | User Enable |
+| Legacy Name   |             |
+
+user-enable:success
+-------------------
+
+There are no fields for this activity type.
+
+
+user-enable:fail
+----------------
+
+There are no fields for this activity type.

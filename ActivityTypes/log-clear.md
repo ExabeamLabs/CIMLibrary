@@ -1,25 +1,27 @@
 log-clear
 =========
 
-```JSON
-{"pretty_name":"Log Clear",
-"activity":"clear",
-"subject":"log",
-"activity_type":"log-clear",
-"legacy_event_name":["audit-log-clear"],
-"description":"An audit log was cleared",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Log Clear",
-"activity":"clear",
-"subject":"log",
-"activity_type":"log-clear",
-"legacy_event_name":["audit-log-clear"],
-"description":"An audit log was cleared",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An audit log was cleared
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-clearsuccess) or a [fail](#log-clearfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | log       |
+| Activity      | clear     |
+| Activity Type | log-clear |
+| Pretty Name   | Log Clear |
+| Legacy Name   |           |
+
+log-clear:success
+-----------------
+
+There are no fields for this activity type.
+
+
+log-clear:fail
+--------------
+
+There are no fields for this activity type.

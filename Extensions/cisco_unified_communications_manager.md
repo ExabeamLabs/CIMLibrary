@@ -4,7 +4,6 @@ cisco unified communications manager
 ```JSON
 {"expression":"product = \"cisco unified cm\"",
 "activity_type":{"app-login":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

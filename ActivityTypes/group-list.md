@@ -1,23 +1,27 @@
 group-list
 ==========
 
-```JSON
-{"pretty_name":"Group List",
-"activity":"list",
-"subject":"group",
-"activity_type":"group-list",
-"description":"An enumeration of multiple groups took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Group List",
-"activity":"list",
-"subject":"group",
-"activity_type":"group-list",
-"description":"An enumeration of multiple groups took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An enumeration of multiple groups took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-listsuccess) or a [fail](#group-listfail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | group      |
+| Activity      | list       |
+| Activity Type | group-list |
+| Pretty Name   | Group List |
+| Legacy Name   |            |
+
+group-list:success
+------------------
+
+There are no fields for this activity type.
+
+
+group-list:fail
+---------------
+
+There are no fields for this activity type.

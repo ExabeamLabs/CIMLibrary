@@ -66,6 +66,5 @@ sentinelone singularity
 "src_host_type":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

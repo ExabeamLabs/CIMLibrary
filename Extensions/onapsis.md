@@ -2,7 +2,7 @@ onapsis
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"onapsis\"",
 "activity_type":{"app-login":{"fields":{"src_port":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -59,6 +59,5 @@ onapsis
 "operation":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

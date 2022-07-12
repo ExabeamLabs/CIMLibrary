@@ -2,9 +2,8 @@ microsoft iis
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"microsoft iis\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"1",
 "informational":"0"},

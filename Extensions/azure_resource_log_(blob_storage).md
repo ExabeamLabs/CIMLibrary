@@ -2,12 +2,11 @@ azure resource log (blob storage)
 =================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"azure resource log (blob storage)\"",
 "activity_type":{"file-permission-modify":{"fields":{}},
 "file-list":{"fields":{}},
 "file-write":{"fields":{}},
 "file-read":{"fields":{}}},
-"description":"",
 "fields":{"tenant_id":{"core":"0",
 "detection":"0",
 "informational":"1"},

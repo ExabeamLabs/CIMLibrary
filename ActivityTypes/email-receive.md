@@ -1,102 +1,54 @@
 email-receive
 =============
 
-```JSON
-{"pretty_name":"Email Receive",
-"activity":"receive",
-"subject":"email",
-"activity_type":"email-receive",
-"legacy_event_name":["dlp-email-alert-in"],
-"description":"A user received an email message",
-"fields":{"email_recipients":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_attachment":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"email_attachments":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_address":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_address":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Email Receive",
-"activity":"receive",
-"subject":"email",
-"activity_type":"email-receive",
-"legacy_event_name":["dlp-email-alert-in-failed"],
-"description":"A user received an email message",
-"fields":{"email_recipients":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_attachment":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_user":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"email_attachments":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_address":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email_address":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user received an email message
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-receivesuccess) or a [fail](#email-receivefail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | email         |
+| Activity      | receive       |
+| Activity Type | email-receive |
+| Pretty Name   | Email Receive |
+| Legacy Name   |               |
+
+email-receive:success
+---------------------
+
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| email_recipients   |          |           | &#10003;      |
+| email_attachment   |          |           | &#10003;      |
+| dest_email_user    |          |           | &#10003;      |
+| dest_user          | &#10003; |           |               |
+| email_attachments  |          |           | &#10003;      |
+| dest_email_domain  |          |           | &#10003;      |
+| email_address      | &#10003; |           |               |
+| file_ext           |          |           | &#10003;      |
+| email_user         |          |           | &#10003;      |
+| dest_email_address | &#10003; |           |               |
+| dest_domain        |          |           | &#10003;      |
+| email_domain       |          |           | &#10003;      |
+| email_subject      |          |           | &#10003;      |
+
+email-receive:fail
+------------------
+
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| email_recipients   |          |           | &#10003;      |
+| email_attachment   |          |           | &#10003;      |
+| dest_email_user    |          |           | &#10003;      |
+| dest_user          | &#10003; |           |               |
+| email_attachments  |          |           | &#10003;      |
+| dest_email_domain  |          |           | &#10003;      |
+| email_address      | &#10003; |           |               |
+| file_ext           |          |           | &#10003;      |
+| email_user         |          |           | &#10003;      |
+| dest_email_address | &#10003; |           |               |
+| dest_domain        |          |           | &#10003;      |
+| email_domain       |          |           | &#10003;      |
+| email_subject      |          |           | &#10003;      |

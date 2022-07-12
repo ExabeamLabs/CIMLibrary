@@ -5,7 +5,6 @@ sterling b2b integrator
 {"expression":"product = \"Sterling B2B Integrator\"",
 "activity_type":{"group-member-add":{"fields":{}},
 "group-member-remove":{"fields":{}}},
-"description":"",
 "fields":{"sub_category":{"core":"0",
 "detection":"0",
 "informational":"1"},

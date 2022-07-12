@@ -1,25 +1,27 @@
 endpoint-modify
 ===============
 
-```JSON
-{"pretty_name":"Endpoint Modify",
-"activity":"modify",
-"subject":"endpoint",
-"activity_type":"endpoint-modify",
-"legacy_event_name":["NA"],
-"description":"An endpoint object or instance properties\\configuration were modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint Modify",
-"activity":"modify",
-"subject":"endpoint",
-"activity_type":"endpoint-modify",
-"legacy_event_name":["NA"],
-"description":"An endpoint object or instance properties\\configuration were modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An endpoint object or instance properties\configuration were modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-modifysuccess) or a [fail](#endpoint-modifyfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | endpoint        |
+| Activity      | modify          |
+| Activity Type | endpoint-modify |
+| Pretty Name   | Endpoint Modify |
+| Legacy Name   |                 |
+
+endpoint-modify:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+endpoint-modify:fail
+--------------------
+
+There are no fields for this activity type.

@@ -1,23 +1,27 @@
 dns_record-create
 =================
 
-```JSON
-{"pretty_name":"Dns_record Create",
-"activity":"create",
-"subject":"dns_record",
-"activity_type":"dns_record-create",
-"description":"A DNS record was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dns_record Create",
-"activity":"create",
-"subject":"dns_record",
-"activity_type":"dns_record-create",
-"description":"A DNS record was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A DNS record was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-createsuccess) or a [fail](#dns_record-createfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | dns_record        |
+| Activity      | create            |
+| Activity Type | dns_record-create |
+| Pretty Name   | Dns_record Create |
+| Legacy Name   |                   |
+
+dns_record-create:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+dns_record-create:fail
+----------------------
+
+There are no fields for this activity type.

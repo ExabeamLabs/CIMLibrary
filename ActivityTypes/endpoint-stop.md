@@ -1,23 +1,27 @@
 endpoint-stop
 =============
 
-```JSON
-{"pretty_name":"Endpoint Stop",
-"activity":"stop",
-"subject":"endpoint",
-"activity_type":"endpoint-stop",
-"description":"An endpoint was shutdown",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint Stop",
-"activity":"stop",
-"subject":"endpoint",
-"activity_type":"endpoint-stop",
-"description":"An endpoint was shutdown",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An endpoint was shutdown
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-stopsuccess) or a [fail](#endpoint-stopfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | endpoint      |
+| Activity      | stop          |
+| Activity Type | endpoint-stop |
+| Pretty Name   | Endpoint Stop |
+| Legacy Name   |               |
+
+endpoint-stop:success
+---------------------
+
+There are no fields for this activity type.
+
+
+endpoint-stop:fail
+------------------
+
+There are no fields for this activity type.

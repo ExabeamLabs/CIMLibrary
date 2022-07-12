@@ -2,7 +2,7 @@ oracle access manager
 =====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"oracle access manager\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -39,7 +39,6 @@ oracle access manager
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

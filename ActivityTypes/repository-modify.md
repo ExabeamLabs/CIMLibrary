@@ -1,23 +1,27 @@
 repository-modify
 =================
 
-```JSON
-{"pretty_name":"Repository Modify",
-"activity":"modify",
-"subject":"repository",
-"activity_type":"repository-modify",
-"description":"The properties or configuration of a git repository were modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Repository Modify",
-"activity":"modify",
-"subject":"repository",
-"activity_type":"repository-modify",
-"description":"The properties or configuration of a git repository were modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties or configuration of a git repository were modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-modifysuccess) or a [fail](#repository-modifyfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | repository        |
+| Activity      | modify            |
+| Activity Type | repository-modify |
+| Pretty Name   | Repository Modify |
+| Legacy Name   |                   |
+
+repository-modify:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+repository-modify:fail
+----------------------
+
+There are no fields for this activity type.

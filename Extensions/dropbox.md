@@ -2,7 +2,7 @@ dropbox
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"dropbox\"",
 "activity_type":{"user-modify":{"fields":{"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -106,7 +106,6 @@ dropbox
 "file-delete":{"fields":{"additional_info":{"core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -1,23 +1,27 @@
 endpoint-screenshot
 ===================
 
-```JSON
-{"pretty_name":"Endpoint Screenshot",
-"activity":"screenshot",
-"subject":"endpoint",
-"activity_type":"endpoint-screenshot",
-"description":"A screenshot of an endpoint was taken",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint Screenshot",
-"activity":"screenshot",
-"subject":"endpoint",
-"activity_type":"endpoint-screenshot",
-"description":"A screenshot of an endpoint was taken",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A screenshot of an endpoint was taken
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-screenshotsuccess) or a [fail](#endpoint-screenshotfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | endpoint            |
+| Activity      | screenshot          |
+| Activity Type | endpoint-screenshot |
+| Pretty Name   | Endpoint Screenshot |
+| Legacy Name   |                     |
+
+endpoint-screenshot:success
+---------------------------
+
+There are no fields for this activity type.
+
+
+endpoint-screenshot:fail
+------------------------
+
+There are no fields for this activity type.

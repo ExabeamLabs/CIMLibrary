@@ -1,23 +1,27 @@
 process-modify
 ==============
 
-```JSON
-{"pretty_name":"Process Modify",
-"activity":"modify",
-"subject":"process",
-"activity_type":"process-modify",
-"description":"The properties of a process were changed as it was running",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Process Modify",
-"activity":"modify",
-"subject":"process",
-"activity_type":"process-modify",
-"description":"The properties of a process were changed as it was running",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties of a process were changed as it was running
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-modifysuccess) or a [fail](#process-modifyfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | process        |
+| Activity      | modify         |
+| Activity Type | process-modify |
+| Pretty Name   | Process Modify |
+| Legacy Name   |                |
+
+process-modify:success
+----------------------
+
+There are no fields for this activity type.
+
+
+process-modify:fail
+-------------------
+
+There are no fields for this activity type.

@@ -1,23 +1,27 @@
 user-key-create
 ===============
 
-```JSON
-{"pretty_name":"User Key Create",
-"activity":"key-create",
-"subject":"user",
-"activity_type":"user-key-create",
-"description":"A user security key was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Key Create",
-"activity":"key-create",
-"subject":"user",
-"activity_type":"user-key-create",
-"description":"A user security key was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user security key was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-key-createsuccess) or a [fail](#user-key-createfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | user            |
+| Activity      | key-create      |
+| Activity Type | user-key-create |
+| Pretty Name   | User Key Create |
+| Legacy Name   |                 |
+
+user-key-create:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+user-key-create:fail
+--------------------
+
+There are no fields for this activity type.

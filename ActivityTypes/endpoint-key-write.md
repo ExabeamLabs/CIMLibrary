@@ -1,25 +1,27 @@
 endpoint-key-write
 ==================
 
-```JSON
-{"pretty_name":"Endpoint Key Write",
-"activity":"key-write",
-"subject":"endpoint",
-"activity_type":"endpoint-key-write",
-"description":"An endpoint security key was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Endpoint Key Write",
-"activity":"key-write",
-"subject":"endpoint",
-"activity_type":"endpoint-key-write",
-"description":"An endpoint security key was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An endpoint security key was created or modified, only used as a catch all if create or modify cannot be determined
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-key-writesuccess) or a [fail](#endpoint-key-writefail).
+
+| Parameter     | Value              |
+| ------------- | ------------------ |
+| Subject       | endpoint           |
+| Activity      | key-write          |
+| Activity Type | endpoint-key-write |
+| Pretty Name   | Endpoint Key Write |
+| Legacy Name   |                    |
+
+endpoint-key-write:success
+--------------------------
+
+There are no fields for this activity type.
+
+
+endpoint-key-write:fail
+-----------------------
+
+There are no fields for this activity type.

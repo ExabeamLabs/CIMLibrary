@@ -1,25 +1,27 @@
 hook-modify
 ===========
 
-```JSON
-{"pretty_name":"Hook Modify",
-"activity":"modify",
-"subject":"hook",
-"activity_type":"hook-modify",
-"description":"The properties,
- configuration or content of a hook object were changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Hook Modify",
-"activity":"modify",
-"subject":"hook",
-"activity_type":"hook-modify",
-"description":"The properties,
- configuration or content of a hook object were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties, configuration or content of a hook object were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#hook-modifysuccess) or a [fail](#hook-modifyfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | hook        |
+| Activity      | modify      |
+| Activity Type | hook-modify |
+| Pretty Name   | Hook Modify |
+| Legacy Name   |             |
+
+hook-modify:success
+-------------------
+
+There are no fields for this activity type.
+
+
+hook-modify:fail
+----------------
+
+There are no fields for this activity type.

@@ -2,15 +2,11 @@ nnt changetracker
 =================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"nnt changetracker\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
-"auth_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
 "additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -22,7 +18,10 @@ nnt changetracker
 "event_name":{"Status":"Default",
 "core":"0",
 "detection":"0",
+"informational":"1"},
+"authentication_type":{"Status":"Default",
+"core":"0",
+"detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```
