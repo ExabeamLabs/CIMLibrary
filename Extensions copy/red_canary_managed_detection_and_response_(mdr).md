@@ -1,0 +1,37 @@
+red canary managed detection and response (mdr)
+===============================================
+
+```JSON
+{"expression":"product = red canary managed detection and response (mdr)",
+"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
+"core":"1",
+"detection":"1",
+"informational":"0"},
+"additional_information":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"process_name":{"Status":"Legacy",
+"core":"0",
+"detection":"1",
+"informational":"0"},
+"dest_ip":{"Status":"Legacy",
+"core":"1",
+"detection":"1",
+"informational":"0"},
+"dest_host":{"Status":"Legacy",
+"core":"0",
+"detection":"1",
+"informational":"0"},
+"threat_type":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"malware_url":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"src_host":{"Status":"Legacy",
+"core":"1",
+"detection":"1",
+"informational":"0"}}}},
+"description":"",
+"fields":{}}
+```

@@ -1,0 +1,36 @@
+vpn-logout
+==========
+
+```JSON
+{"pretty_name":"Vpn Logout",
+"activity":"logout",
+"subject":"vpn",
+"activity_type":"vpn-logout",
+"legacy_event_name":["vpn-logout"],
+"description":"A user logged out from a VPN",
+"fields":{"domain":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"user":{"core":"1",
+"detection":"1",
+"informational":"0"}},
+"outcome":"success"}{"pretty_name":"Vpn Logout",
+"activity":"logout",
+"subject":"vpn",
+"activity_type":"vpn-logout",
+"legacy_event_name":["vpn-logout"],
+"description":"A user logged out from a VPN",
+"fields":{"failure_code":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"domain":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"failure_reason":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"user":{"core":"1",
+"detection":"1",
+"informational":"0"}},
+"outcome":"fail"}
+```

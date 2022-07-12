@@ -1,0 +1,36 @@
+database-login
+==============
+
+```JSON
+{"pretty_name":"Database Login",
+"activity":"login",
+"subject":"database",
+"activity_type":"database-login",
+"legacy_event_name":["database-login"],
+"description":"A user logged in to a database",
+"fields":{"domain":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"user":{"core":"1",
+"detection":"1",
+"informational":"0"}},
+"outcome":"success"}{"pretty_name":"Database Login",
+"activity":"login",
+"subject":"database",
+"activity_type":"database-login",
+"legacy_event_name":["database-failed-login"],
+"description":"A user logged in to a database",
+"fields":{"failure_code":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"domain":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"failure_reason":{"core":"0",
+"detection":"1",
+"informational":"0"},
+"user":{"core":"1",
+"detection":"1",
+"informational":"0"}},
+"outcome":"fail"}
+```
