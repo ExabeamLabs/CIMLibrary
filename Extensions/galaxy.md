@@ -2,8 +2,7 @@ galaxy
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"galaxy\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

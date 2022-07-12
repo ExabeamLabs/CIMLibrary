@@ -2,7 +2,7 @@ onguard
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"onguard\"",
 "activity_type":{"physical_location-access":{"fields":{"devid":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -27,6 +27,5 @@ onguard
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

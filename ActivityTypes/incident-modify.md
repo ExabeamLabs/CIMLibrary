@@ -1,23 +1,27 @@
 incident-modify
 ===============
 
-```JSON
-{"pretty_name":"Incident Modify",
-"activity":"modify",
-"subject":"incident",
-"activity_type":"incident-modify",
-"description":"The properties or content of a security incident were changed on a security product",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Incident Modify",
-"activity":"modify",
-"subject":"incident",
-"activity_type":"incident-modify",
-"description":"The properties or content of a security incident were changed on a security product",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties or content of a security incident were changed on a security product
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#incident-modifysuccess) or a [fail](#incident-modifyfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | incident        |
+| Activity      | modify          |
+| Activity Type | incident-modify |
+| Pretty Name   | Incident Modify |
+| Legacy Name   |                 |
+
+incident-modify:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+incident-modify:fail
+--------------------
+
+There are no fields for this activity type.

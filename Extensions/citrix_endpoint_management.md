@@ -4,7 +4,6 @@ citrix endpoint management
 ```JSON
 {"expression":"product = \"citrix endpoint management\"",
 "activity_type":{"app-login":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -2,7 +2,7 @@ netapp
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"netapp\"",
 "activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -172,6 +172,5 @@ netapp
 "file_permissions":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

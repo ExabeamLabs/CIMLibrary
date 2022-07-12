@@ -4,7 +4,6 @@ ricoh printer
 ```JSON
 {"expression":"product = \"ricoh printer\"",
 "activity_type":{"printer-activity":{"fields":{}}},
-"description":"",
 "fields":{"bytes":{"core":"0",
 "detection":"0",
 "informational":"1"},

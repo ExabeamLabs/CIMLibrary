@@ -5,7 +5,6 @@ cisco secure email
 {"expression":"product = \"cisco secure email\"",
 "activity_type":{"email-receive":{"fields":{}},
 "email-send":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

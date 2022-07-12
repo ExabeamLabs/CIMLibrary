@@ -2,7 +2,7 @@ forcepoint insider threat
 =========================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"forcepoint insider threat\"",
 "activity_type":{"alert-trigger":{"fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -17,6 +17,5 @@ forcepoint insider threat
 "target":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

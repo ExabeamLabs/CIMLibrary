@@ -1,23 +1,27 @@
 email_rule-create
 =================
 
-```JSON
-{"pretty_name":"Email_rule Create",
-"activity":"create",
-"subject":"email_rule",
-"activity_type":"email_rule-create",
-"description":"An email rule was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Email_rule Create",
-"activity":"create",
-"subject":"email_rule",
-"activity_type":"email_rule-create",
-"description":"An email rule was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An email rule was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email_rule-createsuccess) or a [fail](#email_rule-createfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | email_rule        |
+| Activity      | create            |
+| Activity Type | email_rule-create |
+| Pretty Name   | Email_rule Create |
+| Legacy Name   |                   |
+
+email_rule-create:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+email_rule-create:fail
+----------------------
+
+There are no fields for this activity type.

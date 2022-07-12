@@ -2,7 +2,7 @@ gmail
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"gmail\"",
 "activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -23,6 +23,5 @@ gmail
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

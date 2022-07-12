@@ -1,58 +1,40 @@
 http-request
 ============
 
-```JSON
-{"pretty_name":"Http Request",
-"activity":"request",
-"subject":"http",
-"activity_type":"http-request",
-"description":"A web query was made using the HTTP protocol",
-"fields":{"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Http Request",
-"activity":"request",
-"subject":"http",
-"activity_type":"http-request",
-"description":"A web query was made using the HTTP protocol",
-"fields":{"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A web query was made using the HTTP protocol
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-requestsuccess) or a [fail](#http-requestfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | http         |
+| Activity      | request      |
+| Activity Type | http-request |
+| Pretty Name   | Http Request |
+| Legacy Name   |              |
+
+http-request:success
+--------------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| referrer   |      |           | &#10003;      |
+| method     |      | &#10003;  |               |
+| mime       |      | &#10003;  |               |
+| action     |      |           | &#10003;      |
+| category   |      | &#10003;  |               |
+| user_agent |      |           | &#10003;      |
+
+http-request:fail
+-----------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| referrer   |      |           | &#10003;      |
+| method     |      | &#10003;  |               |
+| mime       |      | &#10003;  |               |
+| action     |      |           | &#10003;      |
+| category   |      | &#10003;  |               |
+| user_agent |      |           | &#10003;      |

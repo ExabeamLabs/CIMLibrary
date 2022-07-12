@@ -3,7 +3,7 @@ f-secure elements
 
 ```JSON
 {"expression":"product = f-secure elements",
-"activity_type":{"alert-trigger":{"fields":{"additional_information":{"core":"0",
+"activity_type":{"alert-trigger":{"fields":{"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "domain":{"core":"0",
@@ -23,6 +23,5 @@ f-secure elements
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

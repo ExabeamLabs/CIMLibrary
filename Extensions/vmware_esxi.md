@@ -11,7 +11,6 @@ vmware esxi
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"event_name":{"core":"0",
 "detection":"0",
 "informational":"1"}}}

@@ -2,7 +2,7 @@ axway sftp
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"axway sftp\"",
 "activity_type":{"file-upload":{"fields":{}},
 "app-authentication":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
@@ -16,11 +16,10 @@ axway sftp
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"endpoint-login":{"fields":{"auth_package":{"Status":"Default",
+"endpoint-login":{"fields":{"authentication_package":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

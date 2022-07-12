@@ -1,23 +1,27 @@
 group-permission-modify
 =======================
 
-```JSON
-{"pretty_name":"Group Permission Modify",
-"activity":"permission-modify",
-"subject":"group",
-"activity_type":"group-permission-modify",
-"description":"The permissions of a group were changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Group Permission Modify",
-"activity":"permission-modify",
-"subject":"group",
-"activity_type":"group-permission-modify",
-"description":"The permissions of a group were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The permissions of a group were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-permission-modifysuccess) or a [fail](#group-permission-modifyfail).
+
+| Parameter     | Value                   |
+| ------------- | ----------------------- |
+| Subject       | group                   |
+| Activity      | permission-modify       |
+| Activity Type | group-permission-modify |
+| Pretty Name   | Group Permission Modify |
+| Legacy Name   |                         |
+
+group-permission-modify:success
+-------------------------------
+
+There are no fields for this activity type.
+
+
+group-permission-modify:fail
+----------------------------
+
+There are no fields for this activity type.

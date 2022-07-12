@@ -1,15 +1,28 @@
 printer-activity
 ================
 
-```JSON
-{"pretty_name":"Printer Activity",
-"activity":"activity",
-"subject":"printer",
-"activity_type":"printer-activity",
-"legacy_event_name":["print-activity"],
-"description":"An activity in a printer",
-"fields":{"operation":{"core":"1",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}
-```
+Description
+-----------
+An activity in a printer
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#printer-activitysuccess) or a [fail](#printer-activityfail).
+
+| Parameter     | Value            |
+| ------------- | ---------------- |
+| Subject       | printer          |
+| Activity      | activity         |
+| Activity Type | printer-activity |
+| Pretty Name   | Printer Activity |
+| Legacy Name   |                  |
+
+printer-activity:success
+------------------------
+
+| Field     | Core     | Detection | Informational |
+| --------- | -------- | --------- | ------------- |
+| operation | &#10003; |           |               |
+
+printer-activity:fail
+---------------------
+
+There are no fields for this activity type.

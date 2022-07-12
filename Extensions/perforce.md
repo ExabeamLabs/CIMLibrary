@@ -2,7 +2,7 @@ perforce
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"perforce\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -31,6 +31,5 @@ perforce
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

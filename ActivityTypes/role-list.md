@@ -1,23 +1,27 @@
 role-list
 =========
 
-```JSON
-{"pretty_name":"Role List",
-"activity":"list",
-"subject":"role",
-"activity_type":"role-list",
-"description":"An enumeration of security roles took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Role List",
-"activity":"list",
-"subject":"role",
-"activity_type":"role-list",
-"description":"An enumeration of security roles took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An enumeration of security roles took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-listsuccess) or a [fail](#role-listfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | role      |
+| Activity      | list      |
+| Activity Type | role-list |
+| Pretty Name   | Role List |
+| Legacy Name   |           |
+
+role-list:success
+-----------------
+
+There are no fields for this activity type.
+
+
+role-list:fail
+--------------
+
+There are no fields for this activity type.

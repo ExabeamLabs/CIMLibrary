@@ -2,14 +2,14 @@ cyberark endpoint privilege management
 ======================================
 
 ```JSON
-{"expression":"",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
+{"expression":"product = \"cyberark endpoint privilege management\"",
+"activity_type":{"alert-trigger":{"fields":{"hash_sha256":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "file_name":{"Status":"Legacy",
 "core":"1",
 "detection":"0",
@@ -40,6 +40,5 @@ cyberark endpoint privilege management
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

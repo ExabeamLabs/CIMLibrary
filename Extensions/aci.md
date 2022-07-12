@@ -13,6 +13,5 @@ aci
 "user":{"core":"1",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

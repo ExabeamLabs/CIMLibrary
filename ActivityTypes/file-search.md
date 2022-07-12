@@ -1,23 +1,27 @@
 file-search
 ===========
 
-```JSON
-{"pretty_name":"File Search",
-"activity":"search",
-"subject":"file",
-"activity_type":"file-search",
-"description":"A search was performed on files",
-"fields":{},
-"outcome":"success"}{"pretty_name":"File Search",
-"activity":"search",
-"subject":"file",
-"activity_type":"file-search",
-"description":"A search was performed on files",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A search was performed on files
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-searchsuccess) or a [fail](#file-searchfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | file        |
+| Activity      | search      |
+| Activity Type | file-search |
+| Pretty Name   | File Search |
+| Legacy Name   |             |
+
+file-search:success
+-------------------
+
+There are no fields for this activity type.
+
+
+file-search:fail
+----------------
+
+There are no fields for this activity type.

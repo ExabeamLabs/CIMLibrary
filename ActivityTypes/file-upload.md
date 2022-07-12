@@ -1,54 +1,38 @@
 file-upload
 ===========
 
-```JSON
-{"pretty_name":"File Upload",
-"activity":"upload",
-"subject":"file",
-"activity_type":"file-upload",
-"legacy_event_name":["file-upload"],
-"description":"A file was uploaded to a website",
-"fields":{"file_url":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_ext":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_file_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"File Upload",
-"activity":"upload",
-"subject":"file",
-"activity_type":"file-upload",
-"legacy_event_name":["file-upload"],
-"description":"A file was uploaded to a website",
-"fields":{"file_url":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_ext":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_path":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A file was uploaded to a website
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-uploadsuccess) or a [fail](#file-uploadfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | file        |
+| Activity      | upload      |
+| Activity Type | file-upload |
+| Pretty Name   | File Upload |
+| Legacy Name   |             |
+
+file-upload:success
+-------------------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| file_url      |      | &#10003;  |               |
+| src_file_name |      | &#10003;  |               |
+| src_file_ext  |      | &#10003;  |               |
+| src_file_dir  |      |           | &#10003;      |
+| src_file_path |      | &#10003;  |               |
+
+file-upload:fail
+----------------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| file_url      |      | &#10003;  |               |
+| src_file_name |      | &#10003;  |               |
+| src_file_ext  |      | &#10003;  |               |
+| src_file_dir  |      |           | &#10003;      |
+| src_file_path |      | &#10003;  |               |

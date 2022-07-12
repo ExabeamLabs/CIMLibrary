@@ -1,23 +1,27 @@
 vm_host-delete
 ==============
 
-```JSON
-{"pretty_name":"Vm_host Delete",
-"activity":"delete",
-"subject":"vm_host",
-"activity_type":"vm_host-delete",
-"description":"A VM host was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Vm_host Delete",
-"activity":"delete",
-"subject":"vm_host",
-"activity_type":"vm_host-delete",
-"description":"A VM host was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A VM host was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-deletesuccess) or a [fail](#vm_host-deletefail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | vm_host        |
+| Activity      | delete         |
+| Activity Type | vm_host-delete |
+| Pretty Name   | Vm_host Delete |
+| Legacy Name   |                |
+
+vm_host-delete:success
+----------------------
+
+There are no fields for this activity type.
+
+
+vm_host-delete:fail
+-------------------
+
+There are no fields for this activity type.

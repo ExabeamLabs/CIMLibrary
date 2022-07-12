@@ -2,8 +2,7 @@ generic badge access
 ====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"generic badge access\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

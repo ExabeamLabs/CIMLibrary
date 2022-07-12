@@ -2,12 +2,12 @@ webmail owa
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"webmail owa\"",
 "activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
-"app":{"Status":"Default",
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -31,6 +31,5 @@ webmail owa
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

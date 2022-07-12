@@ -2,7 +2,7 @@ microsoft windows defender
 ==========================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"microsoft windows defender\"",
 "activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -69,6 +69,5 @@ microsoft windows defender
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

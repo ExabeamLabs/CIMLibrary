@@ -1,23 +1,27 @@
 channel-modify
 ==============
 
-```JSON
-{"pretty_name":"Channel Modify",
-"activity":"modify",
-"subject":"channel",
-"activity_type":"channel-modify",
-"description":"The properties of a communication channel were changed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Channel Modify",
-"activity":"modify",
-"subject":"channel",
-"activity_type":"channel-modify",
-"description":"The properties of a communication channel were changed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The properties of a communication channel were changed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-modifysuccess) or a [fail](#channel-modifyfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | channel        |
+| Activity      | modify         |
+| Activity Type | channel-modify |
+| Pretty Name   | Channel Modify |
+| Legacy Name   |                |
+
+channel-modify:success
+----------------------
+
+There are no fields for this activity type.
+
+
+channel-modify:fail
+-------------------
+
+There are no fields for this activity type.

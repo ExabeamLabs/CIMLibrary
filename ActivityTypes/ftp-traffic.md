@@ -1,23 +1,27 @@
 ftp-traffic
 ===========
 
-```JSON
-{"pretty_name":"Ftp Traffic",
-"activity":"traffic",
-"subject":"ftp",
-"activity_type":"ftp-traffic",
-"description":"A representation of a single FTP packet",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ftp Traffic",
-"activity":"traffic",
-"subject":"ftp",
-"activity_type":"ftp-traffic",
-"description":"A representation of a single FTP packet",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A representation of a single FTP packet
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ftp-trafficsuccess) or a [fail](#ftp-trafficfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | ftp         |
+| Activity      | traffic     |
+| Activity Type | ftp-traffic |
+| Pretty Name   | Ftp Traffic |
+| Legacy Name   |             |
+
+ftp-traffic:success
+-------------------
+
+There are no fields for this activity type.
+
+
+ftp-traffic:fail
+----------------
+
+There are no fields for this activity type.

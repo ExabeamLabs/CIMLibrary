@@ -6,13 +6,13 @@ eset
 "activity_type":{"alert-trigger":{"fields":{"process":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "url":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "result":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"hash_sha256":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "src_ip":{"Status":"Legacy",
@@ -62,6 +62,5 @@ eset
 "direction":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

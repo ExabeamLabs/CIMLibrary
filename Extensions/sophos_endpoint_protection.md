@@ -81,7 +81,6 @@ sophos endpoint protection
 "detection":"1",
 "informational":"0"}}},
 "network-session":{"fields":{}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -6,10 +6,10 @@ abnormal inbound email protection
 "activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"additional_information":{"core":"0",
+"email_address":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"email_address":{"core":"0",
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "sender":{"Status":"Legacy",
@@ -32,6 +32,5 @@ abnormal inbound email protection
 "email_subject":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

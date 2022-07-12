@@ -2,7 +2,7 @@ cloudflare waf
 ==============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cloudflare waf\"",
 "activity_type":{"http-session":{"fields":{"src_country":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -75,6 +75,5 @@ cloudflare waf
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

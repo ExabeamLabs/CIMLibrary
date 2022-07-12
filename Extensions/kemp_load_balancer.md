@@ -2,7 +2,7 @@ kemp load balancer
 ==================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"kemp load balancer\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -39,6 +39,5 @@ kemp load balancer
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

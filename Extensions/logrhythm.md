@@ -2,7 +2,7 @@ logrhythm
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"logrhythm\"",
 "activity_type":{"process-create":{"fields":{"src_port":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -35,6 +35,5 @@ logrhythm
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

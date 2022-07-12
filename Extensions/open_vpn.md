@@ -3,14 +3,14 @@ open vpn
 
 ```JSON
 {"expression":"product = \"open vpn\"",
-"activity_type":{"app-activity":{"fields":{"app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
+"activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"application":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
 "additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -97,7 +97,6 @@ open vpn
 "dest_port":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"}}}

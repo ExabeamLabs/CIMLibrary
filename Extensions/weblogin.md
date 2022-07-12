@@ -4,7 +4,6 @@ weblogin
 ```JSON
 {"expression":"product = \"weblogin\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{"request_cookie":{"core":"0",
 "detection":"0",
 "informational":"1"},

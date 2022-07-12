@@ -2,7 +2,7 @@ mvision
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mvision\"",
 "activity_type":{"alert-trigger":{"fields":{"rule":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -58,6 +58,5 @@ mvision
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

@@ -1,28 +1,30 @@
 endpoint-activity
 =================
 
-```JSON
-{"pretty_name":"Endpoint Activity",
-"activity":"activity",
-"subject":"endpoint",
-"activity_type":"endpoint-activity",
-"description":"A generic activity took place in an endpoint (catch all)",
-"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Endpoint Activity",
-"activity":"activity",
-"subject":"endpoint",
-"activity_type":"endpoint-activity",
-"description":"A generic activity took place in an endpoint (catch all)",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A generic activity took place in an endpoint (catch all)
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-activitysuccess) or a [fail](#endpoint-activityfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | endpoint          |
+| Activity      | activity          |
+| Activity Type | endpoint-activity |
+| Pretty Name   | Endpoint Activity |
+| Legacy Name   |                   |
+
+endpoint-activity:success
+-------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| operation |      |           | &#10003;      |
+
+endpoint-activity:fail
+----------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| operation |      |           | &#10003;      |

@@ -1,25 +1,27 @@
 file-delete
 ===========
 
-```JSON
-{"pretty_name":"File Delete",
-"activity":"delete",
-"subject":"file",
-"activity_type":"file-delete",
-"legacy_event_name":["file-delete"],
-"description":"A file was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"File Delete",
-"activity":"delete",
-"subject":"file",
-"activity_type":"file-delete",
-"legacy_event_name":["file-delete"],
-"description":"A file was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A file was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-deletesuccess) or a [fail](#file-deletefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | file        |
+| Activity      | delete      |
+| Activity Type | file-delete |
+| Pretty Name   | File Delete |
+| Legacy Name   |             |
+
+file-delete:success
+-------------------
+
+There are no fields for this activity type.
+
+
+file-delete:fail
+----------------
+
+There are no fields for this activity type.

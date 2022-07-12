@@ -1,23 +1,27 @@
 user-read
 =========
 
-```JSON
-{"pretty_name":"User Read",
-"activity":"read",
-"subject":"user",
-"activity_type":"user-read",
-"description":"A request to read the properties or configuration of a user was made",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Read",
-"activity":"read",
-"subject":"user",
-"activity_type":"user-read",
-"description":"A request to read the properties or configuration of a user was made",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A request to read the properties or configuration of a user was made
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-readsuccess) or a [fail](#user-readfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | user      |
+| Activity      | read      |
+| Activity Type | user-read |
+| Pretty Name   | User Read |
+| Legacy Name   |           |
+
+user-read:success
+-----------------
+
+There are no fields for this activity type.
+
+
+user-read:fail
+--------------
+
+There are no fields for this activity type.

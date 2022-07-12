@@ -1,32 +1,30 @@
 file-write
 ==========
 
-```JSON
-{"pretty_name":"File Write",
-"activity":"write",
-"subject":"file",
-"activity_type":"file-write",
-"legacy_event_name":["file-write",
-"usb-write"],
-"description":"A file was created or edited",
-"fields":{"is_dok":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"File Write",
-"activity":"write",
-"subject":"file",
-"activity_type":"file-write",
-"legacy_event_name":["file-write",
-"usb-write"],
-"description":"A file was created or edited",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"is_dok":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A file was created or edited
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-writesuccess) or a [fail](#file-writefail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | file       |
+| Activity      | write      |
+| Activity Type | file-write |
+| Pretty Name   | File Write |
+| Legacy Name   |            |
+
+file-write:success
+------------------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| is_dok |      | &#10003;  |               |
+
+file-write:fail
+---------------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| is_dok |      | &#10003;  |               |

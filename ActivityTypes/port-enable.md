@@ -1,23 +1,27 @@
 port-enable
 ===========
 
-```JSON
-{"pretty_name":"Port Enable",
-"activity":"enable",
-"subject":"port",
-"activity_type":"port-enable",
-"description":"A port was enabled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Port Enable",
-"activity":"enable",
-"subject":"port",
-"activity_type":"port-enable",
-"description":"A port was enabled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A port was enabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#port-enablesuccess) or a [fail](#port-enablefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | port        |
+| Activity      | enable      |
+| Activity Type | port-enable |
+| Pretty Name   | Port Enable |
+| Legacy Name   |             |
+
+port-enable:success
+-------------------
+
+There are no fields for this activity type.
+
+
+port-enable:fail
+----------------
+
+There are no fields for this activity type.

@@ -2,8 +2,7 @@ cloud akamai
 ============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cloud akamai\"",
 "activity_type":{"http-session":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

@@ -2,7 +2,7 @@ vmware app control
 ==================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"vmware app control\"",
 "activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -60,6 +60,9 @@ vmware app control
 "domain":{"core":"0",
 "detection":"0",
 "informational":"0"},
+"hash_md5":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "dest_host":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -80,10 +83,6 @@ vmware app control
 "informational":"0"},
 "new_hash":{"core":"0",
 "detection":"0",
-"informational":"0"},
-"md5":{"core":"0",
-"detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

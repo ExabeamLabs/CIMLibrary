@@ -1,25 +1,27 @@
 group-create
 ============
 
-```JSON
-{"pretty_name":"Group Create",
-"activity":"create",
-"subject":"group",
-"activity_type":"group-create",
-"legacy_event_name":["NA"],
-"description":"A group was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Group Create",
-"activity":"create",
-"subject":"group",
-"activity_type":"group-create",
-"legacy_event_name":["NA"],
-"description":"A group was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A group was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-createsuccess) or a [fail](#group-createfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | group        |
+| Activity      | create       |
+| Activity Type | group-create |
+| Pretty Name   | Group Create |
+| Legacy Name   |              |
+
+group-create:success
+--------------------
+
+There are no fields for this activity type.
+
+
+group-create:fail
+-----------------
+
+There are no fields for this activity type.

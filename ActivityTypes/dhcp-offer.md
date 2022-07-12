@@ -1,23 +1,27 @@
 dhcp-offer
 ==========
 
-```JSON
-{"pretty_name":"Dhcp Offer",
-"activity":"offer",
-"subject":"dhcp",
-"activity_type":"dhcp-offer",
-"description":"A DHCP offer packet",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dhcp Offer",
-"activity":"offer",
-"subject":"dhcp",
-"activity_type":"dhcp-offer",
-"description":"A DHCP offer packet",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A DHCP offer packet
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-offersuccess) or a [fail](#dhcp-offerfail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | dhcp       |
+| Activity      | offer      |
+| Activity Type | dhcp-offer |
+| Pretty Name   | Dhcp Offer |
+| Legacy Name   |            |
+
+dhcp-offer:success
+------------------
+
+There are no fields for this activity type.
+
+
+dhcp-offer:fail
+---------------
+
+There are no fields for this activity type.

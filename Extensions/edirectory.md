@@ -2,13 +2,12 @@ edirectory
 ==========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"edirectory\"",
 "activity_type":{"user-enable":{"fields":{}},
 "user-disable":{"fields":{}},
 "user-password-modify":{"fields":{}},
 "endpoint-authentication":{"fields":{}},
 "user-unlock":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -2,7 +2,7 @@ imperva counterbreach
 =====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"imperva counterbreach\"",
 "activity_type":{"alert-trigger":{"fields":{"file_name":{"Status":"Legacy",
 "core":"1",
 "detection":"0",
@@ -51,6 +51,5 @@ imperva counterbreach
 "account":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

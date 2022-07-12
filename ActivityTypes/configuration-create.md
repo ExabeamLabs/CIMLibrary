@@ -1,23 +1,27 @@
 configuration-create
 ====================
 
-```JSON
-{"pretty_name":"Configuration Create",
-"activity":"create",
-"subject":"configuration",
-"activity_type":"configuration-create",
-"description":"A global configuration definition was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Configuration Create",
-"activity":"create",
-"subject":"configuration",
-"activity_type":"configuration-create",
-"description":"A global configuration definition was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A global configuration definition was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-createsuccess) or a [fail](#configuration-createfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | configuration        |
+| Activity      | create               |
+| Activity Type | configuration-create |
+| Pretty Name   | Configuration Create |
+| Legacy Name   |                      |
+
+configuration-create:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+configuration-create:fail
+-------------------------
+
+There are no fields for this activity type.

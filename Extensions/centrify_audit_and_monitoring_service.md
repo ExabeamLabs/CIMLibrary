@@ -2,7 +2,7 @@ centrify audit and monitoring service
 =====================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"centrify audit and monitoring service\"",
 "activity_type":{"file-write":{"fields":{"process_id":{"core":"0",
 "detection":"0",
 "informational":"1"},
@@ -51,6 +51,5 @@ centrify audit and monitoring service
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

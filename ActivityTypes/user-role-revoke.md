@@ -1,28 +1,30 @@
 user-role-revoke
 ================
 
-```JSON
-{"pretty_name":"User Role Revoke",
-"activity":"role-revoke",
-"subject":"user",
-"activity_type":"user-role-revoke",
-"description":"A user account was revoked a security role",
-"fields":{"role_name":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"User Role Revoke",
-"activity":"role-revoke",
-"subject":"user",
-"activity_type":"user-role-revoke",
-"description":"A user account was revoked a security role",
-"fields":{"role_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user account was revoked a security role
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-role-revokesuccess) or a [fail](#user-role-revokefail).
+
+| Parameter     | Value            |
+| ------------- | ---------------- |
+| Subject       | user             |
+| Activity      | role-revoke      |
+| Activity Type | user-role-revoke |
+| Pretty Name   | User Role Revoke |
+| Legacy Name   |                  |
+
+user-role-revoke:success
+------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| role_name |      |           | &#10003;      |
+
+user-role-revoke:fail
+---------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| role_name |      |           | &#10003;      |

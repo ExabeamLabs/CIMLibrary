@@ -2,7 +2,7 @@ mcafee endpoint security
 ========================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mcafee endpoint security\"",
 "activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -60,6 +60,5 @@ mcafee endpoint security
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

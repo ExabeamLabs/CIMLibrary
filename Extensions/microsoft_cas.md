@@ -2,7 +2,7 @@ microsoft cas
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"microsoft cas\"",
 "activity_type":{"email-send":{"fields":{"operation":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -59,7 +59,7 @@ microsoft cas
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"email-alert":{"fields":{"operation":{"Status":"Default",
+"mailbox-item-modify":{"fields":{"operation":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
@@ -67,10 +67,9 @@ microsoft cas
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"email-item-modify":{"fields":{"operation":{"Status":"Default",
-"core":"0",
+"alert-trigger":{"fields":{"operation":{"core":"0",
 "detection":"0",
-"informational":"1"}}},
+"informational":"0"}}},
 "user-role-assign":{"fields":{"operation":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -95,7 +94,6 @@ microsoft cas
 "group-modify":{"fields":{"operation":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

@@ -1,23 +1,27 @@
 disk-delete
 ===========
 
-```JSON
-{"pretty_name":"Disk Delete",
-"activity":"delete",
-"subject":"disk",
-"activity_type":"disk-delete",
-"description":"A disk volume object was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Disk Delete",
-"activity":"delete",
-"subject":"disk",
-"activity_type":"disk-delete",
-"description":"A disk volume object was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A disk volume object was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-deletesuccess) or a [fail](#disk-deletefail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | disk        |
+| Activity      | delete      |
+| Activity Type | disk-delete |
+| Pretty Name   | Disk Delete |
+| Legacy Name   |             |
+
+disk-delete:success
+-------------------
+
+There are no fields for this activity type.
+
+
+disk-delete:fail
+----------------
+
+There are no fields for this activity type.

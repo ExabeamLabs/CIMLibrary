@@ -1,23 +1,27 @@
 policy-apply
 ============
 
-```JSON
-{"pretty_name":"Policy Apply",
-"activity":"apply",
-"subject":"policy",
-"activity_type":"policy-apply",
-"description":"A security policy was enforced on the system or the object",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Policy Apply",
-"activity":"apply",
-"subject":"policy",
-"activity_type":"policy-apply",
-"description":"A security policy was enforced on the system or the object",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A security policy was enforced on the system or the object
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-applysuccess) or a [fail](#policy-applyfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | policy       |
+| Activity      | apply        |
+| Activity Type | policy-apply |
+| Pretty Name   | Policy Apply |
+| Legacy Name   |              |
+
+policy-apply:success
+--------------------
+
+There are no fields for this activity type.
+
+
+policy-apply:fail
+-----------------
+
+There are no fields for this activity type.

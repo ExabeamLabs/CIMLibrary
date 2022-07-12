@@ -2,7 +2,7 @@ forescout counteract
 ====================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"forescout counteract\"",
 "activity_type":{"configuration-modify":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -45,6 +45,5 @@ forescout counteract
 "detection":"1",
 "informational":"0"}}},
 "network-session":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

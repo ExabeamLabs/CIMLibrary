@@ -1,13 +1,27 @@
 share-create
 ============
 
-```JSON
-{"pretty_name":"Share Create",
-"activity":"create",
-"subject":"share",
-"activity_type":"share-create",
-"legacy_event_name":["share-access"],
-"description":"A network share was created",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A network share was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#share-createsuccess) or a [fail](#share-createfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | share        |
+| Activity      | create       |
+| Activity Type | share-create |
+| Pretty Name   | Share Create |
+| Legacy Name   |              |
+
+share-create:success
+--------------------
+
+There are no fields for this activity type.
+
+
+share-create:fail
+-----------------
+
+There are no fields for this activity type.

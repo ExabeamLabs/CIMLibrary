@@ -1,13 +1,27 @@
 share-delete
 ============
 
-```JSON
-{"pretty_name":"Share Delete",
-"activity":"delete",
-"subject":"share",
-"activity_type":"share-delete",
-"legacy_event_name":["share-access"],
-"description":"A network share was deleted",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A network share was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#share-deletesuccess) or a [fail](#share-deletefail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | share        |
+| Activity      | delete       |
+| Activity Type | share-delete |
+| Pretty Name   | Share Delete |
+| Legacy Name   |              |
+
+share-delete:success
+--------------------
+
+There are no fields for this activity type.
+
+
+share-delete:fail
+-----------------
+
+There are no fields for this activity type.

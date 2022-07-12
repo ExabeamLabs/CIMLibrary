@@ -1,23 +1,27 @@
 scheduled_task-finish
 =====================
 
-```JSON
-{"pretty_name":"Scheduled_task Finish",
-"activity":"finish",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-finish",
-"description":"An occurance of a scheduled task was done executing",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Scheduled_task Finish",
-"activity":"finish",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-finish",
-"description":"An occurance of a scheduled task was done executing",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An occurance of a scheduled task was done executing
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-finishsuccess) or a [fail](#scheduled_task-finishfail).
+
+| Parameter     | Value                 |
+| ------------- | --------------------- |
+| Subject       | scheduled_task        |
+| Activity      | finish                |
+| Activity Type | scheduled_task-finish |
+| Pretty Name   | Scheduled_task Finish |
+| Legacy Name   |                       |
+
+scheduled_task-finish:success
+-----------------------------
+
+There are no fields for this activity type.
+
+
+scheduled_task-finish:fail
+--------------------------
+
+There are no fields for this activity type.

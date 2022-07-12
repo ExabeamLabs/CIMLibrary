@@ -2,7 +2,7 @@ apache guacamole
 ================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"apache guacamole\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -11,6 +11,5 @@ apache guacamole
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

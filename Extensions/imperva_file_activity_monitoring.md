@@ -2,12 +2,11 @@ imperva file activity monitoring
 ================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"imperva file activity monitoring\"",
 "activity_type":{"file-permission-modify":{"fields":{}},
 "file-write":{"fields":{}},
 "file-read":{"fields":{}},
 "file-delete":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -1,23 +1,27 @@
 ftp-start
 =========
 
-```JSON
-{"pretty_name":"Ftp Start",
-"activity":"start",
-"subject":"ftp",
-"activity_type":"ftp-start",
-"description":"A FTP network session was initiated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ftp Start",
-"activity":"start",
-"subject":"ftp",
-"activity_type":"ftp-start",
-"description":"A FTP network session was initiated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A FTP network session was initiated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ftp-startsuccess) or a [fail](#ftp-startfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | ftp       |
+| Activity      | start     |
+| Activity Type | ftp-start |
+| Pretty Name   | Ftp Start |
+| Legacy Name   |           |
+
+ftp-start:success
+-----------------
+
+There are no fields for this activity type.
+
+
+ftp-start:fail
+--------------
+
+There are no fields for this activity type.

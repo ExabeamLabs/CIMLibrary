@@ -6,7 +6,6 @@ seclore
 "activity_type":{"file-permission-modify":{"fields":{}},
 "file-write":{"fields":{}},
 "file-read":{"fields":{}}},
-"description":"",
 "fields":{"access":{"core":"0",
 "detection":"0",
 "informational":"1"},

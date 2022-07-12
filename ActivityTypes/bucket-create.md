@@ -1,23 +1,27 @@
 bucket-create
 =============
 
-```JSON
-{"pretty_name":"Bucket Create",
-"activity":"create",
-"subject":"bucket",
-"activity_type":"bucket-create",
-"description":"A bucket was created on the cloud application",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Bucket Create",
-"activity":"create",
-"subject":"bucket",
-"activity_type":"bucket-create",
-"description":"A bucket was created on the cloud application",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A bucket was created on the cloud application
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-createsuccess) or a [fail](#bucket-createfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | bucket        |
+| Activity      | create        |
+| Activity Type | bucket-create |
+| Pretty Name   | Bucket Create |
+| Legacy Name   |               |
+
+bucket-create:success
+---------------------
+
+There are no fields for this activity type.
+
+
+bucket-create:fail
+------------------
+
+There are no fields for this activity type.

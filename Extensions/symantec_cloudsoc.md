@@ -2,7 +2,7 @@ symantec cloudsoc
 =================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"symantec cloudsoc\"",
 "activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
@@ -45,11 +45,7 @@ symantec cloudsoc
 "user_agent":{"core":"0",
 "detection":"0",
 "informational":"0"}}},
-"app-activity":{"fields":{"app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
+"app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
@@ -58,6 +54,10 @@ symantec cloudsoc
 "detection":"0",
 "informational":"1"},
 "file_ext":{"Status":"Default",
+"core":"0",
+"detection":"0",
+"informational":"1"},
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -93,6 +93,5 @@ symantec cloudsoc
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

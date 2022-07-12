@@ -1,23 +1,27 @@
 call-receive
 ============
 
-```JSON
-{"pretty_name":"Call Receive",
-"activity":"receive",
-"subject":"call",
-"activity_type":"call-receive",
-"description":"A user has recived a call from another user",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Call Receive",
-"activity":"receive",
-"subject":"call",
-"activity_type":"call-receive",
-"description":"A user has recived a call from another user",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user has recived a call from another user
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#call-receivesuccess) or a [fail](#call-receivefail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | call         |
+| Activity      | receive      |
+| Activity Type | call-receive |
+| Pretty Name   | Call Receive |
+| Legacy Name   |              |
+
+call-receive:success
+--------------------
+
+There are no fields for this activity type.
+
+
+call-receive:fail
+-----------------
+
+There are no fields for this activity type.

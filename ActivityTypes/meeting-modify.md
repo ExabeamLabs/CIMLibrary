@@ -1,25 +1,27 @@
 meeting-modify
 ==============
 
-```JSON
-{"pretty_name":"Meeting Modify",
-"activity":"modify",
-"subject":"meeting",
-"activity_type":"meeting-modify",
-"legacy_event_name":["web-meeting-updated"],
-"description":"A web meeting's information was updated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Meeting Modify",
-"activity":"modify",
-"subject":"meeting",
-"activity_type":"meeting-modify",
-"legacy_event_name":["web-meeting-updated"],
-"description":"A web meeting's information was updated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A web meeting's information was updated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#meeting-modifysuccess) or a [fail](#meeting-modifyfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | meeting        |
+| Activity      | modify         |
+| Activity Type | meeting-modify |
+| Pretty Name   | Meeting Modify |
+| Legacy Name   |                |
+
+meeting-modify:success
+----------------------
+
+There are no fields for this activity type.
+
+
+meeting-modify:fail
+-------------------
+
+There are no fields for this activity type.

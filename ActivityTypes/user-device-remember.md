@@ -1,23 +1,27 @@
 user-device-remember
 ====================
 
-```JSON
-{"pretty_name":"User Device Remember",
-"activity":"device-remember",
-"subject":"user",
-"activity_type":"user-device-remember",
-"description":"A user has requested that his device configuration will be remembered on future usage in this system",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Device Remember",
-"activity":"device-remember",
-"subject":"user",
-"activity_type":"user-device-remember",
-"description":"A user has requested that his device configuration will be remembered on future usage in this system",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user has requested that his device configuration will be remembered on future usage in this system
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-device-remembersuccess) or a [fail](#user-device-rememberfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | user                 |
+| Activity      | device-remember      |
+| Activity Type | user-device-remember |
+| Pretty Name   | User Device Remember |
+| Legacy Name   |                      |
+
+user-device-remember:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+user-device-remember:fail
+-------------------------
+
+There are no fields for this activity type.

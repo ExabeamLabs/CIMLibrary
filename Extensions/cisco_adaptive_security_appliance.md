@@ -321,7 +321,6 @@ cisco adaptive security appliance
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"event_code":{"core":"0",
 "detection":"1",
 "informational":"0"}}}

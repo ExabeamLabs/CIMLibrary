@@ -1,23 +1,27 @@
 incident-create
 ===============
 
-```JSON
-{"pretty_name":"Incident Create",
-"activity":"create",
-"subject":"incident",
-"activity_type":"incident-create",
-"description":"A security incident was created on a security product",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Incident Create",
-"activity":"create",
-"subject":"incident",
-"activity_type":"incident-create",
-"description":"A security incident was created on a security product",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A security incident was created on a security product
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#incident-createsuccess) or a [fail](#incident-createfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | incident        |
+| Activity      | create          |
+| Activity Type | incident-create |
+| Pretty Name   | Incident Create |
+| Legacy Name   |                 |
+
+incident-create:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+incident-create:fail
+--------------------
+
+There are no fields for this activity type.

@@ -2,7 +2,7 @@ cassandra
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cassandra\"",
 "activity_type":{"database-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -59,6 +59,5 @@ cassandra
 "dest_user":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

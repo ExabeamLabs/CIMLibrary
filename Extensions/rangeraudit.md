@@ -13,7 +13,7 @@ rangeraudit
 "resource":{"core":"0",
 "detection":"0",
 "informational":"0"}}},
-"app-activity":{"fields":{"app":{"Status":"Default",
+"app-activity":{"fields":{"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -53,7 +53,6 @@ rangeraudit
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"}}}

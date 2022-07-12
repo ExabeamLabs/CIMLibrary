@@ -1,23 +1,27 @@
 secret-copy
 ===========
 
-```JSON
-{"pretty_name":"Secret Copy",
-"activity":"copy",
-"subject":"secret",
-"activity_type":"secret-copy",
-"description":"A secret credentials object was copied",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Secret Copy",
-"activity":"copy",
-"subject":"secret",
-"activity_type":"secret-copy",
-"description":"A secret credentials object was copied",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A secret credentials object was copied
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-copysuccess) or a [fail](#secret-copyfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | secret      |
+| Activity      | copy        |
+| Activity Type | secret-copy |
+| Pretty Name   | Secret Copy |
+| Legacy Name   |             |
+
+secret-copy:success
+-------------------
+
+There are no fields for this activity type.
+
+
+secret-copy:fail
+----------------
+
+There are no fields for this activity type.

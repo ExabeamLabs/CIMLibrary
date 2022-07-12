@@ -15,6 +15,5 @@ vectra cognito
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

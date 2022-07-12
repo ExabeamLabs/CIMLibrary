@@ -1,23 +1,27 @@
 policy-create
 =============
 
-```JSON
-{"pretty_name":"Policy Create",
-"activity":"create",
-"subject":"policy",
-"activity_type":"policy-create",
-"description":"A security policy document was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Policy Create",
-"activity":"create",
-"subject":"policy",
-"activity_type":"policy-create",
-"description":"A security policy document was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A security policy document was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-createsuccess) or a [fail](#policy-createfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | policy        |
+| Activity      | create        |
+| Activity Type | policy-create |
+| Pretty Name   | Policy Create |
+| Legacy Name   |               |
+
+policy-create:success
+---------------------
+
+There are no fields for this activity type.
+
+
+policy-create:fail
+------------------
+
+There are no fields for this activity type.

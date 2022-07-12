@@ -2,10 +2,9 @@ auth0
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"auth0\"",
 "activity_type":{"app-login":{"fields":{}},
 "user-password-modify":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

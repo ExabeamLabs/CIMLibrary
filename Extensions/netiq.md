@@ -2,7 +2,7 @@ netiq
 =====
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"netiq\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -11,6 +11,5 @@ netiq
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

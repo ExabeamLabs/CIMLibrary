@@ -1,23 +1,27 @@
 email_rule-delete
 =================
 
-```JSON
-{"pretty_name":"Email_rule Delete",
-"activity":"delete",
-"subject":"email_rule",
-"activity_type":"email_rule-delete",
-"description":"An email rule was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Email_rule Delete",
-"activity":"delete",
-"subject":"email_rule",
-"activity_type":"email_rule-delete",
-"description":"An email rule was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An email rule was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email_rule-deletesuccess) or a [fail](#email_rule-deletefail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | email_rule        |
+| Activity      | delete            |
+| Activity Type | email_rule-delete |
+| Pretty Name   | Email_rule Delete |
+| Legacy Name   |                   |
+
+email_rule-delete:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+email_rule-delete:fail
+----------------------
+
+There are no fields for this activity type.

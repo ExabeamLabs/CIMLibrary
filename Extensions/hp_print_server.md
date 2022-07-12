@@ -4,7 +4,6 @@ hp print server
 ```JSON
 {"expression":"product = \"hp print server\"",
 "activity_type":{"printer-activity":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

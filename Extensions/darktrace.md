@@ -2,7 +2,7 @@ darktrace
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"darktrace\"",
 "activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -15,6 +15,5 @@ darktrace
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

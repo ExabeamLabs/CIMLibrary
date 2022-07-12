@@ -51,11 +51,11 @@ cisco meraki mx appliances
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"http-session":{"fields":{"protocol":{"Status":"Default",
+"http-session":{"fields":{"src_mac":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"mac_address":{"Status":"Default",
+"protocol":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
@@ -66,6 +66,5 @@ cisco meraki mx appliances
 "vpn-logout":{"fields":{"src_translated_ip":{"core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

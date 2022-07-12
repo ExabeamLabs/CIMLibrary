@@ -12,7 +12,6 @@ portnox clear
 "detection":"1",
 "informational":"0"}}},
 "endpoint-authentication":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

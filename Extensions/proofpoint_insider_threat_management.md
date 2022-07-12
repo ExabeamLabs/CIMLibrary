@@ -25,9 +25,6 @@ proofpoint insider threat management
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "email_address":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -35,6 +32,9 @@ proofpoint insider threat management
 "detection":"0",
 "informational":"0"},
 "application":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "state":{"core":"0",
@@ -56,6 +56,5 @@ proofpoint insider threat management
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

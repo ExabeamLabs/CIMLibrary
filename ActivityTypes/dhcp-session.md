@@ -1,13 +1,27 @@
 dhcp-session
 ============
 
-```JSON
-{"pretty_name":"Dhcp Session",
-"activity":"session",
-"subject":"dhcp",
-"activity_type":"dhcp-session",
-"legacy_event_name":["computer-logon"],
-"description":"A summary of a DHCP session",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A summary of a DHCP session
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-sessionsuccess) or a [fail](#dhcp-sessionfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | dhcp         |
+| Activity      | session      |
+| Activity Type | dhcp-session |
+| Pretty Name   | Dhcp Session |
+| Legacy Name   |              |
+
+dhcp-session:success
+--------------------
+
+There are no fields for this activity type.
+
+
+dhcp-session:fail
+-----------------
+
+There are no fields for this activity type.

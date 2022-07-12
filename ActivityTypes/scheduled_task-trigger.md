@@ -1,23 +1,27 @@
 scheduled_task-trigger
 ======================
 
-```JSON
-{"pretty_name":"Scheduled_task Trigger",
-"activity":"trigger",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-trigger",
-"description":"An occurance of a scheduled task was executed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Scheduled_task Trigger",
-"activity":"trigger",
-"subject":"scheduled_task",
-"activity_type":"scheduled_task-trigger",
-"description":"An occurance of a scheduled task was executed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An occurance of a scheduled task was executed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-triggersuccess) or a [fail](#scheduled_task-triggerfail).
+
+| Parameter     | Value                  |
+| ------------- | ---------------------- |
+| Subject       | scheduled_task         |
+| Activity      | trigger                |
+| Activity Type | scheduled_task-trigger |
+| Pretty Name   | Scheduled_task Trigger |
+| Legacy Name   |                        |
+
+scheduled_task-trigger:success
+------------------------------
+
+There are no fields for this activity type.
+
+
+scheduled_task-trigger:fail
+---------------------------
+
+There are no fields for this activity type.

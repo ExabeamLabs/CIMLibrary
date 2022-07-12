@@ -2,7 +2,7 @@ cloudflare insights
 ===================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"cloudflare insights\"",
 "activity_type":{"app-login":{"fields":{"additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -33,7 +33,6 @@ cloudflare insights
 "group-member-remove":{"fields":{"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -4,7 +4,6 @@ secureauth login
 ```JSON
 {"expression":"product = \"secureauth login\"",
 "activity_type":{"app-login":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

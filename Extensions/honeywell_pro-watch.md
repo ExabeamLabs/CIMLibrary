@@ -2,7 +2,7 @@ honeywell pro-watch
 ===================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"honeywell pro-watch\"",
 "activity_type":{"physical_location-access":{"fields":{"card_status":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -15,6 +15,5 @@ honeywell pro-watch
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

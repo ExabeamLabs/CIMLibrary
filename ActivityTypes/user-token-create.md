@@ -1,23 +1,27 @@
 user-token-create
 =================
 
-```JSON
-{"pretty_name":"User Token Create",
-"activity":"token-create",
-"subject":"user",
-"activity_type":"user-token-create",
-"description":"A user switched into another user account",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Token Create",
-"activity":"token-create",
-"subject":"user",
-"activity_type":"user-token-create",
-"description":"A user switched into another user account",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user switched into another user account
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-token-createsuccess) or a [fail](#user-token-createfail).
+
+| Parameter     | Value             |
+| ------------- | ----------------- |
+| Subject       | user              |
+| Activity      | token-create      |
+| Activity Type | user-token-create |
+| Pretty Name   | User Token Create |
+| Legacy Name   |                   |
+
+user-token-create:success
+-------------------------
+
+There are no fields for this activity type.
+
+
+user-token-create:fail
+----------------------
+
+There are no fields for this activity type.

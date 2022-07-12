@@ -1,23 +1,27 @@
 vm_pool-delete
 ==============
 
-```JSON
-{"pretty_name":"Vm_pool Delete",
-"activity":"delete",
-"subject":"vm_pool",
-"activity_type":"vm_pool-delete",
-"description":"A VM pool was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Vm_pool Delete",
-"activity":"delete",
-"subject":"vm_pool",
-"activity_type":"vm_pool-delete",
-"description":"A VM pool was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A VM pool was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-deletesuccess) or a [fail](#vm_pool-deletefail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | vm_pool        |
+| Activity      | delete         |
+| Activity Type | vm_pool-delete |
+| Pretty Name   | Vm_pool Delete |
+| Legacy Name   |                |
+
+vm_pool-delete:success
+----------------------
+
+There are no fields for this activity type.
+
+
+vm_pool-delete:fail
+-------------------
+
+There are no fields for this activity type.

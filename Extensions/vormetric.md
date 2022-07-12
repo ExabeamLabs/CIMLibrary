@@ -2,7 +2,7 @@ vormetric
 =========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"vormetric\"",
 "activity_type":{"alert-trigger":{"fields":{"access":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -40,6 +40,5 @@ vormetric
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

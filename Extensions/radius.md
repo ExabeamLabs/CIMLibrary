@@ -19,7 +19,6 @@ radius
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{"src_host":{"core":"0",
 "detection":"0",
 "informational":"1"}}}

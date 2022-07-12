@@ -1,28 +1,30 @@
 app-register
 ============
 
-```JSON
-{"pretty_name":"App Register",
-"activity":"register",
-"subject":"app",
-"activity_type":"app-register",
-"description":"A user has registered to an app",
-"fields":{"user":{"core":"1",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"App Register",
-"activity":"register",
-"subject":"app",
-"activity_type":"app-register",
-"description":"A user has registered to an app",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"0",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user has registered to an app
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-registersuccess) or a [fail](#app-registerfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | app          |
+| Activity      | register     |
+| Activity Type | app-register |
+| Pretty Name   | App Register |
+| Legacy Name   |              |
+
+app-register:success
+--------------------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; |           |               |
+
+app-register:fail
+-----------------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; |           |               |

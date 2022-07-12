@@ -1,23 +1,27 @@
 bucket-list
 ===========
 
-```JSON
-{"pretty_name":"Bucket List",
-"activity":"list",
-"subject":"bucket",
-"activity_type":"bucket-list",
-"description":"Buckets were enumerated on the application",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Bucket List",
-"activity":"list",
-"subject":"bucket",
-"activity_type":"bucket-list",
-"description":"Buckets were enumerated on the application",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+Buckets were enumerated on the application
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-listsuccess) or a [fail](#bucket-listfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | bucket      |
+| Activity      | list        |
+| Activity Type | bucket-list |
+| Pretty Name   | Bucket List |
+| Legacy Name   |             |
+
+bucket-list:success
+-------------------
+
+There are no fields for this activity type.
+
+
+bucket-list:fail
+----------------
+
+There are no fields for this activity type.

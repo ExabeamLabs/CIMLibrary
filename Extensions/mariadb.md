@@ -2,7 +2,7 @@ mariadb
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mariadb\"",
 "activity_type":{"database-login":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -120,6 +120,5 @@ mariadb
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

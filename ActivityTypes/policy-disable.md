@@ -1,23 +1,27 @@
 policy-disable
 ==============
 
-```JSON
-{"pretty_name":"Policy Disable",
-"activity":"disable",
-"subject":"policy",
-"activity_type":"policy-disable",
-"description":"The enforcement status of a security policy was changed to disabled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Policy Disable",
-"activity":"disable",
-"subject":"policy",
-"activity_type":"policy-disable",
-"description":"The enforcement status of a security policy was changed to disabled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The enforcement status of a security policy was changed to disabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-disablesuccess) or a [fail](#policy-disablefail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | policy         |
+| Activity      | disable        |
+| Activity Type | policy-disable |
+| Pretty Name   | Policy Disable |
+| Legacy Name   |                |
+
+policy-disable:success
+----------------------
+
+There are no fields for this activity type.
+
+
+policy-disable:fail
+-------------------
+
+There are no fields for this activity type.

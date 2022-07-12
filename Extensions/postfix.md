@@ -5,7 +5,6 @@ postfix
 {"expression":"product = \"postfix\"",
 "activity_type":{"email-receive":{"fields":{}},
 "email-send":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

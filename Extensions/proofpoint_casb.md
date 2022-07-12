@@ -2,7 +2,7 @@ proofpoint casb
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"proofpoint casb\"",
 "activity_type":{"alert-trigger":{"fields":{"email_attachment":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -54,6 +54,5 @@ proofpoint casb
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

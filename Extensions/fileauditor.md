@@ -2,7 +2,7 @@ fileauditor
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"fileauditor\"",
 "activity_type":{"file-write":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -47,6 +47,5 @@ fileauditor
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

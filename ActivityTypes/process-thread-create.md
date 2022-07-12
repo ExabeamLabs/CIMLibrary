@@ -1,28 +1,30 @@
 process-thread-create
 =====================
 
-```JSON
-{"pretty_name":"Process Thread Create",
-"activity":"thread-create",
-"subject":"process",
-"activity_type":"process-thread-create",
-"description":"A thread was created in a process",
-"fields":{"thread_id":{"core":"0",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Process Thread Create",
-"activity":"thread-create",
-"subject":"process",
-"activity_type":"process-thread-create",
-"description":"A thread was created in a process",
-"fields":{"thread_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A thread was created in a process
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-thread-createsuccess) or a [fail](#process-thread-createfail).
+
+| Parameter     | Value                 |
+| ------------- | --------------------- |
+| Subject       | process               |
+| Activity      | thread-create         |
+| Activity Type | process-thread-create |
+| Pretty Name   | Process Thread Create |
+| Legacy Name   |                       |
+
+process-thread-create:success
+-----------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| thread_id |      |           |               |
+
+process-thread-create:fail
+--------------------------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| thread_id |      |           |               |

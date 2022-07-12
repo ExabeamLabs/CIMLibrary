@@ -37,7 +37,6 @@ synology nas
 "bytes_unit":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

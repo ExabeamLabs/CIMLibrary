@@ -2,7 +2,7 @@ asupim
 ======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"asupim\"",
 "activity_type":{"printer-activity":{"fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},
@@ -35,6 +35,5 @@ asupim
 "device_type":{"core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

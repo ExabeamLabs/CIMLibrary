@@ -62,7 +62,6 @@ microsoft 365 audit logs
 "detection":"1",
 "informational":"0"}}},
 "share_link-open":{"fields":{}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

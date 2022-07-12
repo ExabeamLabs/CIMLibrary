@@ -6,6 +6,9 @@ check point threat prevention
 "activity_type":{"alert-trigger":{"fields":{"dest_dns_hostname":{"core":"0",
 "detection":"0",
 "informational":"0"},
+"confidence_level":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "rule":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -83,9 +86,6 @@ check point threat prevention
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"cinfidence_level":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "product_name":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -131,6 +131,5 @@ check point threat prevention
 "origin_ip":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

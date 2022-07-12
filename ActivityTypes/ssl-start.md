@@ -1,23 +1,27 @@
 ssl-start
 =========
 
-```JSON
-{"pretty_name":"Ssl Start",
-"activity":"start",
-"subject":"ssl",
-"activity_type":"ssl-start",
-"description":"A SSL session was initiated",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Ssl Start",
-"activity":"start",
-"subject":"ssl",
-"activity_type":"ssl-start",
-"description":"A SSL session was initiated",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A SSL session was initiated
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-startsuccess) or a [fail](#ssl-startfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | ssl       |
+| Activity      | start     |
+| Activity Type | ssl-start |
+| Pretty Name   | Ssl Start |
+| Legacy Name   |           |
+
+ssl-start:success
+-----------------
+
+There are no fields for this activity type.
+
+
+ssl-start:fail
+--------------
+
+There are no fields for this activity type.

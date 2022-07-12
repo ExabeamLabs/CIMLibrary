@@ -13,6 +13,9 @@ sentinel ips outpost
 "src_interface":{"core":"0",
 "detection":"0",
 "informational":"0"},
+"src_mac":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "process":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -59,9 +62,6 @@ sentinel ips outpost
 "hash_md5":{"core":"0",
 "detection":"0",
 "informational":"0"},
-"src_mac_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "src_fqdn":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -72,6 +72,5 @@ sentinel ips outpost
 "src_host_type":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

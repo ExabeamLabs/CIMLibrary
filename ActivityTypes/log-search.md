@@ -1,23 +1,27 @@
 log-search
 ==========
 
-```JSON
-{"pretty_name":"Log Search",
-"activity":"search",
-"subject":"log",
-"activity_type":"log-search",
-"description":"A search was performed on an audit log or audit logs entries",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Log Search",
-"activity":"search",
-"subject":"log",
-"activity_type":"log-search",
-"description":"A search was performed on an audit log or audit logs entries",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A search was performed on an audit log or audit logs entries
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-searchsuccess) or a [fail](#log-searchfail).
+
+| Parameter     | Value      |
+| ------------- | ---------- |
+| Subject       | log        |
+| Activity      | search     |
+| Activity Type | log-search |
+| Pretty Name   | Log Search |
+| Legacy Name   |            |
+
+log-search:success
+------------------
+
+There are no fields for this activity type.
+
+
+log-search:fail
+---------------
+
+There are no fields for this activity type.

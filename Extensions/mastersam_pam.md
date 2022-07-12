@@ -2,7 +2,7 @@ mastersam pam
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"mastersam pam\"",
 "activity_type":{"user-password-reset":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -17,7 +17,6 @@ mastersam pam
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{"protocol":{"core":"0",
 "detection":"0",
 "informational":"1"},

@@ -1,23 +1,27 @@
 policy-enable
 =============
 
-```JSON
-{"pretty_name":"Policy Enable",
-"activity":"enable",
-"subject":"policy",
-"activity_type":"policy-enable",
-"description":"The enforcement status of a security policy was changed to enabled",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Policy Enable",
-"activity":"enable",
-"subject":"policy",
-"activity_type":"policy-enable",
-"description":"The enforcement status of a security policy was changed to enabled",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The enforcement status of a security policy was changed to enabled
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-enablesuccess) or a [fail](#policy-enablefail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | policy        |
+| Activity      | enable        |
+| Activity Type | policy-enable |
+| Pretty Name   | Policy Enable |
+| Legacy Name   |               |
+
+policy-enable:success
+---------------------
+
+There are no fields for this activity type.
+
+
+policy-enable:fail
+------------------
+
+There are no fields for this activity type.

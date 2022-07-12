@@ -1,30 +1,30 @@
 endpoint-policy-verify
 ======================
 
-```JSON
-{"pretty_name":"Endpoint Policy Verify",
-"activity":"policy-verify",
-"subject":"endpoint",
-"activity_type":"endpoint-policy-verify",
-"legacy_event_name":["nac-logon"],
-"description":"An endpoint policy was verified",
-"fields":{"src_ip":{"core":"1",
-"detection":"0",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Endpoint Policy Verify",
-"activity":"policy-verify",
-"subject":"endpoint",
-"activity_type":"endpoint-policy-verify",
-"legacy_event_name":["nac-failed-logon"],
-"description":"An endpoint policy was verified",
-"fields":{"src_ip":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An endpoint policy was verified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-policy-verifysuccess) or a [fail](#endpoint-policy-verifyfail).
+
+| Parameter     | Value                  |
+| ------------- | ---------------------- |
+| Subject       | endpoint               |
+| Activity      | policy-verify          |
+| Activity Type | endpoint-policy-verify |
+| Pretty Name   | Endpoint Policy Verify |
+| Legacy Name   |                        |
+
+endpoint-policy-verify:success
+------------------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip | &#10003; |           |               |
+
+endpoint-policy-verify:fail
+---------------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip | &#10003; |           |               |

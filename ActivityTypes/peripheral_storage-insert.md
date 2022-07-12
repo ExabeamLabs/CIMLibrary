@@ -1,25 +1,27 @@
 peripheral_storage-insert
 =========================
 
-```JSON
-{"pretty_name":"Peripheral_storage Insert",
-"activity":"insert",
-"subject":"peripheral_storage",
-"activity_type":"peripheral_storage-insert",
-"legacy_event_name":["usb-insert"],
-"description":"A peripheral storage device was inserted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Peripheral_storage Insert",
-"activity":"insert",
-"subject":"peripheral_storage",
-"activity_type":"peripheral_storage-insert",
-"legacy_event_name":["usb-insert"],
-"description":"A peripheral storage device was inserted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A peripheral storage device was inserted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#peripheral_storage-insertsuccess) or a [fail](#peripheral_storage-insertfail).
+
+| Parameter     | Value                     |
+| ------------- | ------------------------- |
+| Subject       | peripheral_storage        |
+| Activity      | insert                    |
+| Activity Type | peripheral_storage-insert |
+| Pretty Name   | Peripheral_storage Insert |
+| Legacy Name   |                           |
+
+peripheral_storage-insert:success
+---------------------------------
+
+There are no fields for this activity type.
+
+
+peripheral_storage-insert:fail
+------------------------------
+
+There are no fields for this activity type.

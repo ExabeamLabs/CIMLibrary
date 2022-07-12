@@ -2,8 +2,7 @@ net2door
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"net2door\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

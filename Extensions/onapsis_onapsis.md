@@ -7,9 +7,6 @@ onapsis onapsis
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"hash_hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "hash_sha1":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -28,10 +25,12 @@ onapsis onapsis
 "core":"0",
 "detection":"0",
 "informational":"1"},
+"hash_md5":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "dest_host":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

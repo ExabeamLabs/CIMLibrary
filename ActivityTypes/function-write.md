@@ -1,25 +1,27 @@
 function-write
 ==============
 
-```JSON
-{"pretty_name":"Function Write",
-"activity":"write",
-"subject":"function",
-"activity_type":"function-write",
-"description":"An automation cloud function was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Function Write",
-"activity":"write",
-"subject":"function",
-"activity_type":"function-write",
-"description":"An automation cloud function was created or modified,
- only used as a catch all if create or modify cannot be determined",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An automation cloud function was created or modified, only used as a catch all if create or modify cannot be determined
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#function-writesuccess) or a [fail](#function-writefail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | function       |
+| Activity      | write          |
+| Activity Type | function-write |
+| Pretty Name   | Function Write |
+| Legacy Name   |                |
+
+function-write:success
+----------------------
+
+There are no fields for this activity type.
+
+
+function-write:fail
+-------------------
+
+There are no fields for this activity type.

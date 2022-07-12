@@ -2,7 +2,7 @@ ca privileged access manager server control
 ===========================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ca privileged access manager server control\"",
 "activity_type":{"endpoint-authentication":{"fields":{"user_ou":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -83,6 +83,5 @@ ca privileged access manager server control
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

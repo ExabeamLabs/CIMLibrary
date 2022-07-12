@@ -2,7 +2,7 @@ dtex intercept
 ==============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"dtex intercept\"",
 "activity_type":{"endpoint-unlock":{"fields":{"event_code":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
@@ -10,7 +10,7 @@ dtex intercept
 "endpoint-lock":{"fields":{"event_code":{"core":"0",
 "detection":"0",
 "informational":"1"}}},
-"http-session":{"fields":{"os":{"Status":"Default",
+"http-session":{"fields":{"operating_system":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
@@ -78,7 +78,6 @@ dtex intercept
 "detection":"0",
 "informational":"1"}}},
 "process-create":{"fields":{}}},
-"description":"",
 "fields":{"domain":{"core":"0",
 "detection":"0",
 "informational":"1"},

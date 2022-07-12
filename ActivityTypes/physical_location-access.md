@@ -1,34 +1,30 @@
 physical_location-access
 ========================
 
-```JSON
-{"pretty_name":"Physical_location Access",
-"activity":"access",
-"subject":"physical_location",
-"activity_type":"physical_location-access",
-"legacy_event_name":["physical-access"],
-"description":"A user opened a door,
- gate,
- or any other entrance using their badge",
-"fields":{"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Physical_location Access",
-"activity":"access",
-"subject":"physical_location",
-"activity_type":"physical_location-access",
-"legacy_event_name":["failed-physical-access"],
-"description":"A user opened a door,
- gate,
- or any other entrance using their badge",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user opened a door, gate, or any other entrance using their badge
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#physical_location-accesssuccess) or a [fail](#physical_location-accessfail).
+
+| Parameter     | Value                    |
+| ------------- | ------------------------ |
+| Subject       | physical_location        |
+| Activity      | access                   |
+| Activity Type | physical_location-access |
+| Pretty Name   | Physical_location Access |
+| Legacy Name   |                          |
+
+physical_location-access:success
+--------------------------------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; | &#10003;  |               |
+
+physical_location-access:fail
+-----------------------------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; | &#10003;  |               |

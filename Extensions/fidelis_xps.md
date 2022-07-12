@@ -2,7 +2,7 @@ fidelis xps
 ===========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"fidelis xps\"",
 "activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -43,6 +43,5 @@ fidelis xps
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

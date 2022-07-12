@@ -1,23 +1,27 @@
 registry-modify
 ===============
 
-```JSON
-{"pretty_name":"Registry Modify",
-"activity":"modify",
-"subject":"registry",
-"activity_type":"registry-modify",
-"description":"The content or configuration of a registry object was modified",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Registry Modify",
-"activity":"modify",
-"subject":"registry",
-"activity_type":"registry-modify",
-"description":"The content or configuration of a registry object was modified",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+The content or configuration of a registry object was modified
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-modifysuccess) or a [fail](#registry-modifyfail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | registry        |
+| Activity      | modify          |
+| Activity Type | registry-modify |
+| Pretty Name   | Registry Modify |
+| Legacy Name   |                 |
+
+registry-modify:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+registry-modify:fail
+--------------------
+
+There are no fields for this activity type.

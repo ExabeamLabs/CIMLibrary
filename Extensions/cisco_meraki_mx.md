@@ -3,7 +3,7 @@ cisco meraki mx
 
 ```JSON
 {"expression":"product = cisco meraki mx",
-"activity_type":{"alert-trigger":{"fields":{"app":{"core":"0",
+"activity_type":{"alert-trigger":{"fields":{"src_mac":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "process":{"core":"0",
@@ -27,15 +27,15 @@ cisco meraki mx
 "core":"0",
 "detection":"1",
 "informational":"0"},
+"application":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "dest_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
-"informational":"0"},
-"src_mac_address":{"core":"0",
-"detection":"0",
 "informational":"0"},
 "dest_host":{"Status":"Legacy",
 "core":"0",
@@ -51,6 +51,5 @@ cisco meraki mx
 "direction":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

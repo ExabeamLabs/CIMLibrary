@@ -1,42 +1,34 @@
 dns-response
 ============
 
-```JSON
-{"pretty_name":"Dns Response",
-"activity":"response",
-"subject":"dns",
-"activity_type":"dns-response",
-"legacy_event_name":["dns-response"],
-"description":"A DNS response was recevied",
-"fields":{"dns_response":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"dns_response_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dns_response_flags":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Dns Response",
-"activity":"response",
-"subject":"dns",
-"activity_type":"dns-response",
-"legacy_event_name":["dns-response"],
-"description":"A DNS response was recevied",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dns_response":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"dns_response_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dns_response_flags":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A DNS response was recevied
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-responsesuccess) or a [fail](#dns-responsefail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | dns          |
+| Activity      | response     |
+| Activity Type | dns-response |
+| Pretty Name   | Dns Response |
+| Legacy Name   |              |
+
+dns-response:success
+--------------------
+
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| dns_response       | &#10003; | &#10003;  |               |
+| dns_response_code  |          | &#10003;  |               |
+| dns_response_flags |          | &#10003;  |               |
+
+dns-response:fail
+-----------------
+
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| dns_response       | &#10003; | &#10003;  |               |
+| dns_response_code  |          | &#10003;  |               |
+| dns_response_flags |          | &#10003;  |               |

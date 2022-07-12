@@ -1,23 +1,27 @@
 secret-create
 =============
 
-```JSON
-{"pretty_name":"Secret Create",
-"activity":"create",
-"subject":"secret",
-"activity_type":"secret-create",
-"description":"Secret credentials were created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Secret Create",
-"activity":"create",
-"subject":"secret",
-"activity_type":"secret-create",
-"description":"Secret credentials were created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+Secret credentials were created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-createsuccess) or a [fail](#secret-createfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | secret        |
+| Activity      | create        |
+| Activity Type | secret-create |
+| Pretty Name   | Secret Create |
+| Legacy Name   |               |
+
+secret-create:success
+---------------------
+
+There are no fields for this activity type.
+
+
+secret-create:fail
+------------------
+
+There are no fields for this activity type.

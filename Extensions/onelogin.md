@@ -2,7 +2,7 @@ onelogin
 ========
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"onelogin\"",
 "activity_type":{"policy-create":{"fields":{}},
 "user-delete":{"fields":{}},
 "app-login":{"fields":{}},
@@ -22,7 +22,6 @@ onelogin
 "user-role-assign":{"fields":{}},
 "user-create":{"fields":{}},
 "policy-delete":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"1"},

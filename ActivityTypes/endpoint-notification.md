@@ -1,12 +1,27 @@
 endpoint-notification
 =====================
 
-```JSON
-{"pretty_name":"Endpoint Notification",
-"activity":"notification",
-"subject":"endpoint",
-"activity_type":"endpoint-notification",
-"description":"An endpoint notification is an entirely informational notification that has popped up on an endpoint. This activity only represents informational events that are not \"activities\".",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+An endpoint notification is an entirely informational notification that has popped up on an endpoint. This activity only represents informational events that are not "activities".
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-notificationsuccess) or a [fail](#endpoint-notificationfail).
+
+| Parameter     | Value                 |
+| ------------- | --------------------- |
+| Subject       | endpoint              |
+| Activity      | notification          |
+| Activity Type | endpoint-notification |
+| Pretty Name   | Endpoint Notification |
+| Legacy Name   |                       |
+
+endpoint-notification:success
+-----------------------------
+
+There are no fields for this activity type.
+
+
+endpoint-notification:fail
+--------------------------
+
+There are no fields for this activity type.

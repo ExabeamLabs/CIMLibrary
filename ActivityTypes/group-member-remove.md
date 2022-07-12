@@ -1,15 +1,28 @@
 group-member-remove
 ===================
 
-```JSON
-{"pretty_name":"Group Member Remove",
-"activity":"member-remove",
-"subject":"group",
-"activity_type":"group-member-remove",
-"legacy_event_name":["member-removed"],
-"description":"A group member was removed from a group",
-"fields":{"member":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}
-```
+Description
+-----------
+A group member was removed from a group
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-member-removesuccess) or a [fail](#group-member-removefail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | group               |
+| Activity      | member-remove       |
+| Activity Type | group-member-remove |
+| Pretty Name   | Group Member Remove |
+| Legacy Name   |                     |
+
+group-member-remove:success
+---------------------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| member | &#10003; | &#10003;  |               |
+
+group-member-remove:fail
+------------------------
+
+There are no fields for this activity type.

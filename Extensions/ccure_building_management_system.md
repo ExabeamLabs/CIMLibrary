@@ -2,7 +2,7 @@ ccure building management system
 ================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ccure building management system\"",
 "activity_type":{"app-login":{"fields":{"event_name":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -47,6 +47,5 @@ ccure building management system
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

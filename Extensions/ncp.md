@@ -2,7 +2,7 @@ ncp
 ===
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"ncp\"",
 "activity_type":{"vpn-authentication":{"fields":{}},
 "vpn-login":{"fields":{"dest_ip":{"Status":"Default",
 "core":"0",
@@ -13,6 +13,5 @@ ncp
 "detection":"0",
 "informational":"1"}}},
 "vpn-logout":{"fields":{}}},
-"description":"",
 "fields":{}}
 ```

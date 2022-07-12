@@ -2,7 +2,7 @@ sailpoint fam
 =============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"sailpoint fam\"",
 "activity_type":{"file-permission-modify":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -87,6 +87,5 @@ sailpoint fam
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

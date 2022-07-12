@@ -4,7 +4,6 @@ timelox
 ```JSON
 {"expression":"product = \"timelox\"",
 "activity_type":{"physical_location-access":{"fields":{}}},
-"description":"",
 "fields":{"blocking_group_name":{"core":"0",
 "detection":"0",
 "informational":"1"},

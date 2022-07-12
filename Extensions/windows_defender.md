@@ -2,11 +2,8 @@ windows defender
 ================
 
 ```JSON
-{"expression":"",
-"activity_type":{"alert-trigger":{"fields":{"app":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
+{"expression":"product = \"windows defender\"",
+"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -24,6 +21,9 @@ windows defender
 "detection":"0",
 "informational":"0"},
 "result":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"application":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "additional_info":{"core":"0",
@@ -58,6 +58,5 @@ windows defender
 "object":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

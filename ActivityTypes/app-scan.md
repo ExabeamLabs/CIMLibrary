@@ -1,23 +1,27 @@
 app-scan
 ========
 
-```JSON
-{"pretty_name":"App Scan",
-"activity":"scan",
-"subject":"app",
-"activity_type":"app-scan",
-"description":"A scan that targeted apps took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"App Scan",
-"activity":"scan",
-"subject":"app",
-"activity_type":"app-scan",
-"description":"A scan that targeted apps took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A scan that targeted apps took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-scansuccess) or a [fail](#app-scanfail).
+
+| Parameter     | Value    |
+| ------------- | -------- |
+| Subject       | app      |
+| Activity      | scan     |
+| Activity Type | app-scan |
+| Pretty Name   | App Scan |
+| Legacy Name   |          |
+
+app-scan:success
+----------------
+
+There are no fields for this activity type.
+
+
+app-scan:fail
+-------------
+
+There are no fields for this activity type.

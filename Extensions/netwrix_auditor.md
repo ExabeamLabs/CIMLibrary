@@ -2,7 +2,7 @@ netwrix auditor
 ===============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"netwrix auditor\"",
 "activity_type":{"ds_object-modify":{"fields":{"event_id":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -99,11 +99,11 @@ netwrix auditor
 "core":"1",
 "detection":"1",
 "informational":"0"}}},
-"app-activity":{"fields":{"app":{"Status":"Default",
+"app-activity":{"fields":{"event_id":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"event_id":{"Status":"Default",
+"application":{"Status":"Default",
 "core":"0",
 "detection":"0",
 "informational":"1"},
@@ -515,6 +515,5 @@ netwrix auditor
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

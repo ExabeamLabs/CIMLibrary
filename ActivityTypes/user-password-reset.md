@@ -1,25 +1,27 @@
 user-password-reset
 ===================
 
-```JSON
-{"pretty_name":"User Password Reset",
-"activity":"password-reset",
-"subject":"user",
-"activity_type":"user-password-reset",
-"legacy_event_name":["account-password-reset"],
-"description":"A user accounts' password was reset",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Password Reset",
-"activity":"password-reset",
-"subject":"user",
-"activity_type":"user-password-reset",
-"legacy_event_name":["account-password-reset"],
-"description":"A user accounts' password was reset",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user accounts' password was reset
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-resetsuccess) or a [fail](#user-password-resetfail).
+
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Subject       | user                |
+| Activity      | password-reset      |
+| Activity Type | user-password-reset |
+| Pretty Name   | User Password Reset |
+| Legacy Name   |                     |
+
+user-password-reset:success
+---------------------------
+
+There are no fields for this activity type.
+
+
+user-password-reset:fail
+------------------------
+
+There are no fields for this activity type.

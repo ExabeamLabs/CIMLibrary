@@ -1,25 +1,27 @@
 share-access
 ============
 
-```JSON
-{"pretty_name":"Share Access",
-"activity":"access",
-"subject":"share",
-"activity_type":"share-access",
-"legacy_event_name":["share-access"],
-"description":"A network share was accessed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Share Access",
-"activity":"access",
-"subject":"share",
-"activity_type":"share-access",
-"legacy_event_name":["share-access-denied"],
-"description":"A network share was accessed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A network share was accessed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#share-accesssuccess) or a [fail](#share-accessfail).
+
+| Parameter     | Value        |
+| ------------- | ------------ |
+| Subject       | share        |
+| Activity      | access       |
+| Activity Type | share-access |
+| Pretty Name   | Share Access |
+| Legacy Name   |              |
+
+share-access:success
+--------------------
+
+There are no fields for this activity type.
+
+
+share-access:fail
+-----------------
+
+There are no fields for this activity type.

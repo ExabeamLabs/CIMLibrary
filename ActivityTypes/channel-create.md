@@ -1,23 +1,27 @@
 channel-create
 ==============
 
-```JSON
-{"pretty_name":"Channel Create",
-"activity":"create",
-"subject":"channel",
-"activity_type":"channel-create",
-"description":"A communication channel was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Channel Create",
-"activity":"create",
-"subject":"channel",
-"activity_type":"channel-create",
-"description":"A communication channel was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A communication channel was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-createsuccess) or a [fail](#channel-createfail).
+
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | channel        |
+| Activity      | create         |
+| Activity Type | channel-create |
+| Pretty Name   | Channel Create |
+| Legacy Name   |                |
+
+channel-create:success
+----------------------
+
+There are no fields for this activity type.
+
+
+channel-create:fail
+-------------------
+
+There are no fields for this activity type.

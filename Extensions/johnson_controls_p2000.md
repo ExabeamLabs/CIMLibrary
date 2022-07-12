@@ -2,7 +2,7 @@ johnson controls p2000
 ======================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"johnson controls p2000\"",
 "activity_type":{"physical_location-access":{"fields":{"additional_info":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -11,6 +11,5 @@ johnson controls p2000
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

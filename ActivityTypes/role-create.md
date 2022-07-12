@@ -1,23 +1,27 @@
 role-create
 ===========
 
-```JSON
-{"pretty_name":"Role Create",
-"activity":"create",
-"subject":"role",
-"activity_type":"role-create",
-"description":"A security role was created",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Role Create",
-"activity":"create",
-"subject":"role",
-"activity_type":"role-create",
-"description":"A security role was created",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A security role was created
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-createsuccess) or a [fail](#role-createfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | role        |
+| Activity      | create      |
+| Activity Type | role-create |
+| Pretty Name   | Role Create |
+| Legacy Name   |             |
+
+role-create:success
+-------------------
+
+There are no fields for this activity type.
+
+
+role-create:fail
+----------------
+
+There are no fields for this activity type.

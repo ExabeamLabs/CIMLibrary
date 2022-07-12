@@ -1,23 +1,27 @@
 user-list
 =========
 
-```JSON
-{"pretty_name":"User List",
-"activity":"list",
-"subject":"user",
-"activity_type":"user-list",
-"description":"An enumeration of multiple users took place",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User List",
-"activity":"list",
-"subject":"user",
-"activity_type":"user-list",
-"description":"An enumeration of multiple users took place",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+An enumeration of multiple users took place
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-listsuccess) or a [fail](#user-listfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | user      |
+| Activity      | list      |
+| Activity Type | user-list |
+| Pretty Name   | User List |
+| Legacy Name   |           |
+
+user-list:success
+-----------------
+
+There are no fields for this activity type.
+
+
+user-list:fail
+--------------
+
+There are no fields for this activity type.

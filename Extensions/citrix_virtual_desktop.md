@@ -4,7 +4,6 @@ citrix virtual desktop
 ```JSON
 {"expression":"product = \"citrix virtual desktop\"",
 "activity_type":{"endpoint-login":{"fields":{}}},
-"description":"",
 "fields":{"src_ip":{"core":"0",
 "detection":"1",
 "informational":"0"},

@@ -1,13 +1,27 @@
 ssh-traffic
 ===========
 
-```JSON
-{"pretty_name":"Ssh Traffic",
-"activity":"traffic",
-"subject":"ssh",
-"activity_type":"ssh-traffic",
-"legacy_event_name":["remote-logon"],
-"description":"A representation of a single SSH packet",
-"fields":{},
-"outcome":"success"}
-```
+Description
+-----------
+A representation of a single SSH packet
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssh-trafficsuccess) or a [fail](#ssh-trafficfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | ssh         |
+| Activity      | traffic     |
+| Activity Type | ssh-traffic |
+| Pretty Name   | Ssh Traffic |
+| Legacy Name   |             |
+
+ssh-traffic:success
+-------------------
+
+There are no fields for this activity type.
+
+
+ssh-traffic:fail
+----------------
+
+There are no fields for this activity type.

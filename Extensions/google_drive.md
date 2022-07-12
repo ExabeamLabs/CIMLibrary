@@ -2,7 +2,7 @@ google drive
 ============
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"google drive\"",
 "activity_type":{"file-download":{"fields":{"src_ip":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -182,6 +182,5 @@ google drive
 "core":"1",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

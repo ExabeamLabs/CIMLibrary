@@ -1,46 +1,34 @@
 endpoint-authentication
 =======================
 
-```JSON
-{"pretty_name":"Endpoint Authentication",
-"activity":"authentication",
-"subject":"endpoint",
-"activity_type":"endpoint-authentication",
-"legacy_event_name":["authentication-successful",
-"kerberos-logon",
-"nac-logon"],
-"description":"A part of an identification process to an endpoint that is not the login",
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"authentication_type":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Endpoint Authentication",
-"activity":"authentication",
-"subject":"endpoint",
-"activity_type":"endpoint-authentication",
-"legacy_event_name":["authentication-failed",
-"kerberos-logon",
-"nac-failed-logon"],
-"description":"A part of an identification process to an endpoint that is not the login",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"authentication_type":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A part of an identification process to an endpoint that is not the login
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-authenticationsuccess) or a [fail](#endpoint-authenticationfail).
+
+| Parameter     | Value                   |
+| ------------- | ----------------------- |
+| Subject       | endpoint                |
+| Activity      | authentication          |
+| Activity Type | endpoint-authentication |
+| Pretty Name   | Endpoint Authentication |
+| Legacy Name   |                         |
+
+endpoint-authentication:success
+-------------------------------
+
+| Field               | Core     | Detection | Informational |
+| ------------------- | -------- | --------- | ------------- |
+| domain              |          |           |               |
+| user                | &#10003; | &#10003;  |               |
+| authentication_type |          | &#10003;  |               |
+
+endpoint-authentication:fail
+----------------------------
+
+| Field               | Core     | Detection | Informational |
+| ------------------- | -------- | --------- | ------------- |
+| domain              |          |           |               |
+| user                | &#10003; | &#10003;  |               |
+| authentication_type |          | &#10003;  |               |

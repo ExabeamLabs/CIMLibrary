@@ -1,40 +1,32 @@
 vpn-login
 =========
 
-```JSON
-{"pretty_name":"Vpn Login",
-"activity":"login",
-"subject":"vpn",
-"activity_type":"vpn-login",
-"legacy_event_name":["vpn-login",
-"vpn-connection",
-"authentication-successful"],
-"description":"A user logged in to a VPN",
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"success"}{"pretty_name":"Vpn Login",
-"activity":"login",
-"subject":"vpn",
-"activity_type":"vpn-login",
-"legacy_event_name":["failed-vpn-login",
-"vpn-connection",
-"authentication-failed"],
-"description":"A user logged in to a VPN",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A user logged in to a VPN
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vpn-loginsuccess) or a [fail](#vpn-loginfail).
+
+| Parameter     | Value     |
+| ------------- | --------- |
+| Subject       | vpn       |
+| Activity      | login     |
+| Activity Type | vpn-login |
+| Pretty Name   | Vpn Login |
+| Legacy Name   |           |
+
+vpn-login:success
+-----------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+vpn-login:fail
+--------------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |

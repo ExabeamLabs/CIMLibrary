@@ -25,13 +25,13 @@ kaspersky enterprise security
 "core":"1",
 "detection":"1",
 "informational":"0"},
-"additional_information":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "file_ext":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "application":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"additional_info":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "alert_id":{"Status":"Legacy",
@@ -57,6 +57,5 @@ kaspersky enterprise security
 "core":"0",
 "detection":"1",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

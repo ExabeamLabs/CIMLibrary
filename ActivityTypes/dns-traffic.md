@@ -1,23 +1,27 @@
 dns-traffic
 ===========
 
-```JSON
-{"pretty_name":"Dns Traffic",
-"activity":"traffic",
-"subject":"dns",
-"activity_type":"dns-traffic",
-"description":"A representation of a single DNS packet",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Dns Traffic",
-"activity":"traffic",
-"subject":"dns",
-"activity_type":"dns-traffic",
-"description":"A representation of a single DNS packet",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A representation of a single DNS packet
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-trafficsuccess) or a [fail](#dns-trafficfail).
+
+| Parameter     | Value       |
+| ------------- | ----------- |
+| Subject       | dns         |
+| Activity      | traffic     |
+| Activity Type | dns-traffic |
+| Pretty Name   | Dns Traffic |
+| Legacy Name   |             |
+
+dns-traffic:success
+-------------------
+
+There are no fields for this activity type.
+
+
+dns-traffic:fail
+----------------
+
+There are no fields for this activity type.

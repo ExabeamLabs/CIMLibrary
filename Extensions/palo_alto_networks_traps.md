@@ -3,7 +3,10 @@ palo alto networks traps
 
 ```JSON
 {"expression":"product = palo alto networks traps",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
+"activity_type":{"alert-trigger":{"fields":{"dest_translated_ip":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"src_ip":{"Status":"Legacy",
 "core":"1",
 "detection":"1",
 "informational":"0"},
@@ -42,9 +45,6 @@ palo alto networks traps
 "core":"0",
 "detection":"0",
 "informational":"1"},
-"dest_translate_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
 "user":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
@@ -56,6 +56,5 @@ palo alto networks traps
 "direction":{"core":"0",
 "detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

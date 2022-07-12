@@ -1,25 +1,27 @@
 database-delete
 ===============
 
-```JSON
-{"pretty_name":"Database Delete",
-"activity":"delete",
-"subject":"database",
-"activity_type":"database-delete",
-"legacy_event_name":["database-delete"],
-"description":"A database resource was deleted",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Database Delete",
-"activity":"delete",
-"subject":"database",
-"activity_type":"database-delete",
-"legacy_event_name":["database-delete"],
-"description":"A database resource was deleted",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A database resource was deleted
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-deletesuccess) or a [fail](#database-deletefail).
+
+| Parameter     | Value           |
+| ------------- | --------------- |
+| Subject       | database        |
+| Activity      | delete          |
+| Activity Type | database-delete |
+| Pretty Name   | Database Delete |
+| Legacy Name   |                 |
+
+database-delete:success
+-----------------------
+
+There are no fields for this activity type.
+
+
+database-delete:fail
+--------------------
+
+There are no fields for this activity type.

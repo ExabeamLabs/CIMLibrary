@@ -1,23 +1,27 @@
 service-start
 =============
 
-```JSON
-{"pretty_name":"Service Start",
-"activity":"start",
-"subject":"service",
-"activity_type":"service-start",
-"description":"A service was executed",
-"fields":{},
-"outcome":"success"}{"pretty_name":"Service Start",
-"activity":"start",
-"subject":"service",
-"activity_type":"service-start",
-"description":"A service was executed",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A service was executed
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#service-startsuccess) or a [fail](#service-startfail).
+
+| Parameter     | Value         |
+| ------------- | ------------- |
+| Subject       | service       |
+| Activity      | start         |
+| Activity Type | service-start |
+| Pretty Name   | Service Start |
+| Legacy Name   |               |
+
+service-start:success
+---------------------
+
+There are no fields for this activity type.
+
+
+service-start:fail
+------------------
+
+There are no fields for this activity type.

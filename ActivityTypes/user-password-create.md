@@ -1,23 +1,27 @@
 user-password-create
 ====================
 
-```JSON
-{"pretty_name":"User Password Create",
-"activity":"password-create",
-"subject":"user",
-"activity_type":"user-password-create",
-"description":"A password was created for a user account",
-"fields":{},
-"outcome":"success"}{"pretty_name":"User Password Create",
-"activity":"password-create",
-"subject":"user",
-"activity_type":"user-password-create",
-"description":"A password was created for a user account",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A password was created for a user account
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-createsuccess) or a [fail](#user-password-createfail).
+
+| Parameter     | Value                |
+| ------------- | -------------------- |
+| Subject       | user                 |
+| Activity      | password-create      |
+| Activity Type | user-password-create |
+| Pretty Name   | User Password Create |
+| Legacy Name   |                      |
+
+user-password-create:success
+----------------------------
+
+There are no fields for this activity type.
+
+
+user-password-create:fail
+-------------------------
+
+There are no fields for this activity type.

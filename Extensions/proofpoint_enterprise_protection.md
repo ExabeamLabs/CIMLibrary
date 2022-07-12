@@ -2,11 +2,8 @@ proofpoint enterprise protection
 ================================
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"proofpoint enterprise protection\"",
 "activity_type":{"alert-trigger":{"fields":{"email_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sha256":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "file_name":{"Status":"Legacy",
@@ -21,6 +18,9 @@ proofpoint enterprise protection
 "detection":"0",
 "informational":"0"},
 "threat_url":{"core":"0",
+"detection":"0",
+"informational":"0"},
+"hash_sha256":{"core":"0",
 "detection":"0",
 "informational":"0"},
 "src_ip":{"Status":"Legacy",
@@ -45,6 +45,9 @@ proofpoint enterprise protection
 "core":"1",
 "detection":"1",
 "informational":"0"},
+"hash_md5":{"core":"0",
+"detection":"0",
+"informational":"0"},
 "recipient":{"core":"0",
 "detection":"0",
 "informational":"0"},
@@ -58,10 +61,6 @@ proofpoint enterprise protection
 "user":{"Status":"Legacy",
 "core":"0",
 "detection":"1",
-"informational":"0"},
-"md5":{"core":"0",
-"detection":"0",
 "informational":"0"}}}},
-"description":"",
 "fields":{}}
 ```

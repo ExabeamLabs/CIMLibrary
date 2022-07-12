@@ -1,28 +1,30 @@
 repository-member-add
 =====================
 
-```JSON
-{"pretty_name":"Repository Member Add",
-"activity":"member-add",
-"subject":"repository",
-"activity_type":"repository-member-add",
-"description":"A repository member was added to a git repositry",
-"fields":{"member":{"core":"0",
-"detection":"0",
-"informational":"1"}},
-"outcome":"success"}{"pretty_name":"Repository Member Add",
-"activity":"member-add",
-"subject":"repository",
-"activity_type":"repository-member-add",
-"description":"A repository member was added to a git repositry",
-"fields":{"failure_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"member":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"failure_reason":{"core":"0",
-"detection":"1",
-"informational":"0"}},
-"outcome":"fail"}
-```
+Description
+-----------
+A repository member was added to a git repositry
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-member-addsuccess) or a [fail](#repository-member-addfail).
+
+| Parameter     | Value                 |
+| ------------- | --------------------- |
+| Subject       | repository            |
+| Activity      | member-add            |
+| Activity Type | repository-member-add |
+| Pretty Name   | Repository Member Add |
+| Legacy Name   |                       |
+
+repository-member-add:success
+-----------------------------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| member |      |           | &#10003;      |
+
+repository-member-add:fail
+--------------------------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| member |      |           | &#10003;      |

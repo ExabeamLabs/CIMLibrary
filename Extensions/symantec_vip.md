@@ -40,7 +40,8 @@ symantec vip
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"user-password-forgot":{"fields":{"src_ip":{"Status":"Default",
+"app-authentication":{"fields":{}},
+"user-search":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
@@ -60,7 +61,6 @@ symantec vip
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"app-authentication":{"fields":{}},
 "app-activity":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
@@ -77,7 +77,7 @@ symantec vip
 "core":"0",
 "detection":"0",
 "informational":"1"}}},
-"user-password-search":{"fields":{"src_ip":{"Status":"Default",
+"user-password-forget":{"fields":{"src_ip":{"Status":"Default",
 "core":"0",
 "detection":"1",
 "informational":"0"},
@@ -109,6 +109,5 @@ symantec vip
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```

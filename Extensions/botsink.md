@@ -2,7 +2,7 @@ botsink
 =======
 
 ```JSON
-{"expression":"",
+{"expression":"product = \"botsink\"",
 "activity_type":{"network-session":{"fields":{"src_interface":{"Status":"Default",
 "core":"0",
 "detection":"0",
@@ -23,6 +23,5 @@ botsink
 "core":"0",
 "detection":"0",
 "informational":"1"}}}},
-"description":"",
 "fields":{}}
 ```
