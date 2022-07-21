@@ -1,67 +1,34 @@
 clearsense
 ==========
 
-```JSON
-{"expression":"product = \"clearsense\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "clearsense"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | result          | Default |      |           | &#10003;      |
+|               | src_ip          | Default |      | &#10003;  |               |
+|               | method          | Default |      |           | &#10003;      |
+|               | application     | Default |      |           | &#10003;      |
+|               | resource        | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+|               | user            | Default |      | &#10003;  |               |
+|               | user_agent      | Default |      |           | &#10003;      |
+|               | object          | Default |      |           | &#10003;      |
+| app-login     | src_ip          | Default |      | &#10003;  |               |
+|               | method          | Default |      |           | &#10003;      |
+|               | resource        | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+|               | user_agent      | Default |      |           | &#10003;      |
+|               | object          | Default |      |           | &#10003;      |
+

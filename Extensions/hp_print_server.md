@@ -1,40 +1,32 @@
 hp print server
 ===============
 
-```JSON
-{"expression":"product = \"hp print server\"",
-"activity_type":{"printer-activity":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"num_pages":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"printer_sn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"printer_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"printer_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "hp print server"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| src_ip       |      |           | &#10003;      |
+| num_pages    |      |           | &#10003;      |
+| domain       |      |           | &#10003;      |
+| dest_ip      |      |           | &#10003;      |
+| dest_host    |      |           | &#10003;      |
+| printer_sn   |      |           | &#10003;      |
+| printer_id   |      |           | &#10003;      |
+| printer_name |      |           | &#10003;      |
+| src_host     |      |           | &#10003;      |
+| user         |      |           | &#10003;      |
+| object       |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type    | Field | Status | Core | Detection | Informational |
+| ---------------- | ----- | ------ | ---- | --------- | ------------- |
+| printer-activity |       |        |      |           |               |
+

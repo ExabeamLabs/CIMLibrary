@@ -1,519 +1,157 @@
 netwrix auditor
 ===============
 
-```JSON
-{"expression":"product = \"netwrix auditor\"",
-"activity_type":{"ds_object-modify":{"fields":{"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"monitoring_plan":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{"event_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"monitoring_plan":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"group-member-add":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"monitoring_plan":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"ds_object-create":{"fields":{"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"monitoring_plan":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"user-unlock":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"role-create":{"fields":{"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"monitoring_plan":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-modify":{"fields":{"event_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"monitoring_plan":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"database-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-password-reset":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-disable":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"ds_object-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-lock":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"database-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-create":{"fields":{"event_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"monitoring_plan":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"ds_object-delete":{"fields":{"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"monitoring_plan":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-remove":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "netwrix auditor"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type       | Field           | Status  | Core     | Detection | Informational |
+| ------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity        | event_id        | Default |          |           | &#10003;      |
+|                     | application     | Default |          |           | &#10003;      |
+|                     | resource        | Default |          |           | &#10003;      |
+|                     | object_type     | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | event_code      | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+|                     | src_host        | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+|                     | monitoring_plan | Default |          |           | &#10003;      |
+|                     | object          | Default |          |           | &#10003;      |
+| app-login           | additional_info | Default |          |           | &#10003;      |
+|                     | src_host        | Default |          | &#10003;  |               |
+| database-activity   | src_ip          | Default |          | &#10003;  |               |
+|                     | db_name         | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | service_name    | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+| database-login      | src_ip          | Default |          | &#10003;  |               |
+|                     | db_name         | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | service_name    | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+| ds_object-activity  | additional_info | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | src_host        | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+| ds_object-create    | event_id        | Default |          |           | &#10003;      |
+|                     | resource        | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | event_code      | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+|                     | operation       | Default |          |           | &#10003;      |
+|                     | monitoring_plan | Default |          |           | &#10003;      |
+|                     | object          | Default |          |           | &#10003;      |
+| ds_object-delete    | event_id        | Default |          |           | &#10003;      |
+|                     | resource        | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | event_code      | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+|                     | operation       | Default |          |           | &#10003;      |
+|                     | monitoring_plan | Default |          |           | &#10003;      |
+|                     | object          | Default |          |           | &#10003;      |
+| ds_object-modify    | event_id        | Default |          |           | &#10003;      |
+|                     | resource        | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | event_code      | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+|                     | operation       | Default |          |           | &#10003;      |
+|                     | monitoring_plan | Default |          |           | &#10003;      |
+|                     | object          | Default |          |           | &#10003;      |
+| file-delete         | src_ip          |         |          |           |               |
+|                     | access          | Legacy  |          | &#10003;  |               |
+|                     | event_id        |         |          |           |               |
+|                     | file_type       | Legacy  |          |           | &#10003;      |
+|                     | event_code      |         |          |           |               |
+|                     | domain          |         |          |           |               |
+|                     | src_host        | Legacy  |          | &#10003;  |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+| file-write          | src_ip          |         |          |           |               |
+|                     | access          | Legacy  |          | &#10003;  |               |
+|                     | event_id        |         |          |           |               |
+|                     | file_type       | Legacy  |          |           | &#10003;      |
+|                     | event_code      |         |          |           |               |
+|                     | domain          |         |          |           |               |
+|                     | src_host        |         |          |           |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+| group-member-add    | additional_info |         |          |           |               |
+|                     | domain          | Legacy  |          |           | &#10003;      |
+|                     | src_host        | Legacy  |          | &#10003;  |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+| group-member-remove | additional_info |         |          |           |               |
+|                     | domain          | Legacy  |          |           | &#10003;      |
+|                     | src_host        | Legacy  |          | &#10003;  |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+| role-create         | event_id        | Default |          |           | &#10003;      |
+|                     | resource        | Default |          |           | &#10003;      |
+|                     | additional_info | Default |          |           | &#10003;      |
+|                     | event_code      | Default |          |           | &#10003;      |
+|                     | domain          | Default |          |           | &#10003;      |
+|                     | dest_host       | Default |          | &#10003;  |               |
+|                     | user            | Default |          | &#10003;  |               |
+|                     | operation       | Default |          |           | &#10003;      |
+|                     | monitoring_plan | Default |          |           | &#10003;      |
+|                     | object          | Default |          |           | &#10003;      |
+| user-create         | event_id        |         |          |           |               |
+|                     | resource        |         |          |           |               |
+|                     | additional_info |         |          |           |               |
+|                     | event_code      |         |          |           |               |
+|                     | domain          | Legacy  |          |           | &#10003;      |
+|                     | dest_host       | Legacy  |          | &#10003;  |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+|                     | operation       |         |          |           |               |
+|                     | monitoring_plan |         |          |           |               |
+|                     | object          |         |          |           |               |
+| user-delete         | event_id        |         |          |           |               |
+|                     | resource        |         |          |           |               |
+|                     | additional_info |         |          |           |               |
+|                     | event_code      |         |          |           |               |
+|                     | domain          | Legacy  |          |           | &#10003;      |
+|                     | dest_host       | Legacy  |          |           | &#10003;      |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+|                     | operation       |         |          |           |               |
+|                     | monitoring_plan |         |          |           |               |
+|                     | object          |         |          |           |               |
+| user-disable        | additional_info |         |          |           |               |
+|                     | domain          | Legacy  |          |           | &#10003;      |
+|                     | src_host        |         |          |           |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+| user-lock           | additional_info |         |          |           |               |
+|                     | domain          |         |          |           |               |
+|                     | src_host        | Legacy  | &#10003; | &#10003;  |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+| user-modify         | event_id        |         |          |           |               |
+|                     | resource        |         |          |           |               |
+|                     | additional_info |         |          |           |               |
+|                     | event_code      | Legacy  |          |           | &#10003;      |
+|                     | domain          | Legacy  |          |           | &#10003;      |
+|                     | dest_host       | Legacy  |          |           | &#10003;      |
+|                     | user            | Legacy  | &#10003; |           |               |
+|                     | operation       |         |          |           |               |
+|                     | monitoring_plan |         |          |           |               |
+|                     | object          |         |          |           |               |
+| user-password-reset | additional_info |         |          |           |               |
+|                     | src_host        |         |          |           |               |
+| user-unlock         | additional_info |         |          |           |               |
+|                     | domain          |         |          |           |               |
+|                     | src_host        |         |          |           |               |
+|                     | user            | Legacy  | &#10003; | &#10003;  |               |
+

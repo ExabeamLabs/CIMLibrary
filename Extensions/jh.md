@@ -1,29 +1,26 @@
 jh
 ==
 
-```JSON
-{"expression":"product = \"jh\"",
-"activity_type":{"file-download":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"download_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"order_num":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"contact_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "jh"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| file-download | src_ip          |        |          |           |               |
+|               | access          |        |          |           |               |
+|               | download_source |        |          |           |               |
+|               | domain          |        |          |           |               |
+|               | order_num       |        |          |           |               |
+|               | contact_id      |        |          |           |               |
+|               | user            | Legacy | &#10003; | &#10003;  |               |
+

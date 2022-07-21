@@ -1,35 +1,27 @@
 microsoft advanced threat protection
 ====================================
 
-```JSON
-{"expression":"product = microsoft advanced threat protection",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft advanced threat protection
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result          |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | additional_info |        |          |           |               |
+|               | service_name    |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | malware_url     |        |          |           |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | user            | Legacy |          | &#10003;  |               |
+

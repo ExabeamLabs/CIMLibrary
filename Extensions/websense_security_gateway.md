@@ -1,49 +1,35 @@
 websense security gateway
 =========================
 
-```JSON
-{"expression":"product = \"websense security gateway\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"user_ou":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"sub_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"disposition":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "websense security gateway"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| user_ou      |      |           | &#10003;      |
+| method       |      |           | &#10003;      |
+| bytes_in     |      |           | &#10003;      |
+| sub_category |      |           | &#10003;      |
+| mime         |      |           | &#10003;      |
+| src_host     |      |           | &#10003;      |
+| disposition  |      |           | &#10003;      |
+| bytes_out    |      |           | &#10003;      |
+| category_id  |      |           | &#10003;      |
+| domain       |      |           | &#10003;      |
+| action       |      |           | &#10003;      |
+| result_code  |      |           | &#10003;      |
+| category     |      |           | &#10003;      |
+| user         |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

@@ -1,36 +1,27 @@
 onapsis onapsis
 ===============
 
-```JSON
-{"expression":"product = onapsis onapsis",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha1":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = onapsis onapsis
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status | Core     | Detection | Informational |
+| ------------- | --------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path | Legacy |          |           | &#10003;      |
+|               | hash_sha1 |        |          |           |               |
+|               | file_ext  |        |          |           |               |
+|               | file_name | Legacy | &#10003; |           |               |
+|               | dest_ip   | Legacy | &#10003; | &#10003;  |               |
+|               | file_dir  | Legacy |          |           | &#10003;      |
+|               | hash_md5  |        |          |           |               |
+|               | dest_host | Legacy |          | &#10003;  |               |
+

@@ -1,91 +1,40 @@
 cylance protect
 ===============
 
-```JSON
-{"expression":"product = \"cylance protect\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"login_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-notification":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"login_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"login_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cylance protect"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type    | Field           | Status  | Core | Detection | Informational |
+| ---------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity     | src_ip          | Default |      | &#10003;  |               |
+|                  | application     | Default |      |           | &#10003;      |
+|                  | login_type      | Default |      |           | &#10003;      |
+|                  | additional_info | Default |      |           | &#10003;      |
+|                  | domain          | Default |      |           | &#10003;      |
+|                  | user            | Default |      | &#10003;  |               |
+|                  | object          | Default |      |           | &#10003;      |
+| app-login        | src_ip          | Default |      | &#10003;  |               |
+|                  | application     | Default |      |           | &#10003;      |
+|                  | login_type      | Default |      |           | &#10003;      |
+|                  | additional_info | Default |      |           | &#10003;      |
+|                  | operation       | Default |      |           | &#10003;      |
+|                  | object          | Default |      |           | &#10003;      |
+| app-notification | src_ip          | Default |      | &#10003;  |               |
+|                  | application     | Default |      |           | &#10003;      |
+|                  | login_type      | Default |      |           | &#10003;      |
+|                  | additional_info | Default |      |           | &#10003;      |
+|                  | domain          | Default |      |           | &#10003;      |
+|                  | operation       | Default |      |           | &#10003;      |
+|                  | user            | Default |      | &#10003;  |               |
+|                  | object          | Default |      |           | &#10003;      |
+

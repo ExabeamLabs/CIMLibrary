@@ -1,16 +1,24 @@
 xps
 ===
 
-```JSON
-{"expression":"product = \"xps\"",
-"activity_type":{"printer-activity":{"fields":{}}},
-"fields":{"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"printer_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "xps"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| bytes        |      |           | &#10003;      |
+| printer_name |      |           | &#10003;      |
+| object       |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type    | Field | Status | Core | Detection | Informational |
+| ---------------- | ----- | ------ | ---- | --------- | ------------- |
+| printer-activity |       |        |      |           |               |
+

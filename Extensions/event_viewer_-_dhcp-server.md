@@ -1,8 +1,20 @@
 event viewer - dhcp-server
 ==========================
 
-```JSON
-{"expression":"product = \"event viewer - dhcp-server\"",
-"activity_type":{"endpoint-login":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "event viewer - dhcp-server"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field | Status | Core | Detection | Informational |
+| -------------- | ----- | ------ | ---- | --------- | ------------- |
+| endpoint-login |       |        |      |           |               |
+

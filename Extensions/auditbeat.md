@@ -1,159 +1,57 @@
 auditbeat
 =========
 
-```JSON
-{"expression":"product = \"auditbeat\"",
-"activity_type":{"process-modify":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"audit_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"tags":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"parent_process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"syscall":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"tag":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"account":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "auditbeat"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field                | Status  | Core     | Detection | Informational |
+| ----------------------- | -------------------- | ------- | -------- | --------- | ------------- |
+| app-activity            | parent_process_id    | Default |          |           | &#10003;      |
+|                         | process_id           | Default |          |           | &#10003;      |
+|                         | syscall              | Default |          |           | &#10003;      |
+|                         | operation_type       | Default |          |           | &#10003;      |
+|                         | process_command_line | Default |          |           | &#10003;      |
+|                         | group_id             | Default |          |           | &#10003;      |
+|                         | process_name         | Default |          |           | &#10003;      |
+|                         | domain               | Default |          |           | &#10003;      |
+|                         | operating_system     | Default |          |           | &#10003;      |
+|                         | process_path         | Default |          |           | &#10003;      |
+|                         | tag                  | Default |          |           | &#10003;      |
+|                         | user                 | Default | &#10003; | &#10003;  |               |
+|                         | account              | Default |          | &#10003;  |               |
+| endpoint-authentication | src_ip               | Default |          | &#10003;  |               |
+|                         | additional_info      | Default |          |           | &#10003;      |
+|                         | event_name           | Default |          |           | &#10003;      |
+| network-session         | process_id           | Default |          |           | &#10003;      |
+|                         | process_name         | Default |          |           | &#10003;      |
+|                         | domain               | Default |          |           | &#10003;      |
+|                         | process_dir          | Default |          |           | &#10003;      |
+|                         | process_path         | Default |          |           | &#10003;      |
+|                         | user                 | Default |          | &#10003;  |               |
+|                         | direction            | Default |          |           | &#10003;      |
+| process-create          | user_id              | Default |          |           | &#10003;      |
+|                         | additional_info      | Default |          |           | &#10003;      |
+|                         | domain               | Default |          |           | &#10003;      |
+|                         | hash_md5             | Default |          |           | &#10003;      |
+|                         | user                 | Default |          | &#10003;  |               |
+| process-modify          | result               | Default |          |           | &#10003;      |
+|                         | audit_id             | Default |          |           | &#10003;      |
+|                         | operation_type       | Default |          |           | &#10003;      |
+|                         | application          | Default |          |           | &#10003;      |
+|                         | group_id             | Default |          |           | &#10003;      |
+|                         | operating_system     | Default |          |           | &#10003;      |
+|                         | event_category       | Default |          |           | &#10003;      |
+|                         | user                 | Default |          | &#10003;  |               |
+|                         | operation            | Default |          |           | &#10003;      |
+|                         | tags                 | Default |          |           | &#10003;      |
+

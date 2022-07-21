@@ -1,78 +1,37 @@
 imanage
 =======
 
-```JSON
-{"expression":"product = \"imanage\"",
-"activity_type":{"alert-trigger":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"client_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operator_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"client_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"secured":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "imanage"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core     | Detection | Informational |
+| ------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger | application     |         |          |           |               |
+|               | file_name       | Legacy  | &#10003; |           |               |
+|               | user            | Legacy  |          | &#10003;  |               |
+| app-activity  | file_path       | Default |          |           | &#10003;      |
+|               | resource        | Default |          |           | &#10003;      |
+|               | file_name       | Default |          |           | &#10003;      |
+|               | file_dir        | Default |          |           | &#10003;      |
+|               | src_host        | Default |          | &#10003;  |               |
+|               | client_id       | Default |          |           | &#10003;      |
+|               | src_ip          | Default |          | &#10003;  |               |
+|               | operator_name   | Default |          |           | &#10003;      |
+|               | user_id         | Default |          |           | &#10003;      |
+|               | additional_info | Default |          |           | &#10003;      |
+|               | dest_host       | Default |          | &#10003;  |               |
+|               | user            | Default |          | &#10003;  |               |
+|               | client_name     | Default |          |           | &#10003;      |
+|               | secured         | Default |          |           | &#10003;      |
+|               | object          | Default |          |           | &#10003;      |
+

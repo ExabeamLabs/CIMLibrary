@@ -1,35 +1,26 @@
 citrix gateway connector for exchange activesync
 ================================================
 
-```JSON
-{"expression":"product = \"citrix gateway connector for exchange activesync\"",
-"activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"device_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "citrix gateway connector for exchange activesync"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip      | Default |      | &#10003;  |               |
+|               | device_id   | Default |      |           | &#10003;      |
+|               | group_name  | Default |      |           | &#10003;      |
+|               | domain      | Default |      |           | &#10003;      |
+|               | device_type | Default |      |           | &#10003;      |
+|               | user        | Default |      | &#10003;  |               |
+|               | user_agent  | Default |      |           | &#10003;      |
+

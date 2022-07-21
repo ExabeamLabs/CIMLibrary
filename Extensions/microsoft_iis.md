@@ -1,16 +1,24 @@
 microsoft iis
 =============
 
-```JSON
-{"expression":"product = \"microsoft iis\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "microsoft iis"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| domain   |      | &#10003;  |               |
+| src_host |      | &#10003;  |               |
+| user     |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

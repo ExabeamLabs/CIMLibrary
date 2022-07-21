@@ -1,40 +1,32 @@
 secureauth login
 ================
 
-```JSON
-{"expression":"product = \"secureauth login\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"severity":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "secureauth login"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      |           | &#10003;      |
+| severity   |      |           | &#10003;      |
+| process_id |      |           | &#10003;      |
+| event_code |      |           | &#10003;      |
+| dest_ip    |      |           | &#10003;      |
+| dest_host  |      |           | &#10003;      |
+| event_name |      |           | &#10003;      |
+| realm      |      |           | &#10003;      |
+| priority   |      |           | &#10003;      |
+| category   |      |           | &#10003;      |
+| user_agent |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

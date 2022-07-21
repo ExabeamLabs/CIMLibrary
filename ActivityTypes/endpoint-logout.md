@@ -24,7 +24,4 @@ endpoint-logout:success
 | domain     |          |           |               |
 | user       | &#10003; | &#10003;  |               |
 
-endpoint-logout:fail
---------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

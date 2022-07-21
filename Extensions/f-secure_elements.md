@@ -1,27 +1,25 @@
 f-secure elements
 =================
 
-```JSON
-{"expression":"product = f-secure elements",
-"activity_type":{"alert-trigger":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = f-secure elements
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | additional_info |        |          |           |               |
+|               | domain          |        |          |           |               |
+|               | threat_type     |        |          |           |               |
+|               | malware_url     |        |          |           |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | user            | Legacy |          | &#10003;  |               |
+

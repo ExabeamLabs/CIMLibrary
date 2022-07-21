@@ -1,95 +1,51 @@
 targeted attack platform
 ========================
 
-```JSON
-{"expression":"product = proofpoint tap\"",
-"activity_type":{"email-receive":{"fields":{}},
-"email-send":{"fields":{}}},
-"fields":{"country":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"query_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"malware_score":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"threat_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"page_count":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"creator":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"phishing_score":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"message_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"num_recipients":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"return_path":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"is_consolidated":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"spam_score":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = proofpoint tap"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| country         |      |           | &#10003;      |
+| query_id        |      |           | &#10003;      |
+| mime            |      |           | &#10003;      |
+| rule            |      |           | &#10003;      |
+| malware_score   |      |           | &#10003;      |
+| threat_id       |      |           | &#10003;      |
+| alert_type      |      |           | &#10003;      |
+| src_ip          |      |           | &#10003;      |
+| result          |      |           | &#10003;      |
+| protocol        |      |           | &#10003;      |
+| alert_id        |      |           | &#10003;      |
+| hash_md5        |      |           | &#10003;      |
+| page_count      |      |           | &#10003;      |
+| direction       |      |           | &#10003;      |
+| creator         |      |           | &#10003;      |
+| phishing_score  |      |           | &#10003;      |
+| message_id      |      |           | &#10003;      |
+| num_recipients  |      |           | &#10003;      |
+| hash_sha256     |      |           | &#10003;      |
+| auth_method     |      |           | &#10003;      |
+| return_path     |      |           | &#10003;      |
+| bytes           |      |           | &#10003;      |
+| dest_ip         |      |           | &#10003;      |
+| is_consolidated |      |           | &#10003;      |
+| log_source      |      |           | &#10003;      |
+| malware_url     |      |           | &#10003;      |
+| spam_score      |      |           | &#10003;      |
+| category        |      |           | &#10003;      |
+| alert_name      |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| email-receive |       |        |      |           |               |
+| email-send    |       |        |      |           |               |
+

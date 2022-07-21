@@ -1,49 +1,33 @@
 teradata rdbms
 ==============
 
-```JSON
-{"expression":"product = \"teradata rdbms\"",
-"activity_type":{"database-login":{"fields":{"db_query":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-query":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"error_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_operation":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"error_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"db_object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"query_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"site_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"task_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "teradata rdbms"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      |           | &#10003;      |
+| query_id   |      |           | &#10003;      |
+| site_id    |      |           | &#10003;      |
+| session_id |      |           | &#10003;      |
+| task_id    |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type  | Field        | Status  | Core     | Detection | Informational |
+| -------------- | ------------ | ------- | -------- | --------- | ------------- |
+| database-login | db_query     | Default |          |           | &#10003;      |
+|                | user         | Default |          | &#10003;  |               |
+| database-query | db_name      |         |          |           |               |
+|                | error_info   |         |          |           |               |
+|                | db_operation | Legacy  | &#10003; | &#10003;  |               |
+|                | error_code   |         |          |           |               |
+|                | user         | Legacy  | &#10003; | &#10003;  |               |
+|                | db_object    |         |          |           |               |
+

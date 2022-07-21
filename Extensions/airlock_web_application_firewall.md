@@ -1,287 +1,103 @@
 airlock web application firewall
 ================================
 
-```JSON
-{"expression":"product = \"airlock waf\"",
-"activity_type":{"file-download":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-upload":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"network-session":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"vpn-logout":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"action":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "airlock waf"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| action |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type   | Field           | Status  | Core     | Detection | Informational |
+| --------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-login       | file_path       | Default |          |           | &#10003;      |
+|                 | file_name       | Default |          |           | &#10003;      |
+|                 | alert_severity  | Default |          |           | &#10003;      |
+|                 | file_dir        | Default |          |           | &#10003;      |
+|                 | session_id      | Default |          |           | &#10003;      |
+|                 | src_port        | Default |          |           | &#10003;      |
+|                 | src_ip          | Default |          | &#10003;  |               |
+|                 | file_ext        | Default |          |           | &#10003;      |
+|                 | event_code      | Default |          |           | &#10003;      |
+|                 | bytes           | Default |          |           | &#10003;      |
+|                 | dest_ip         | Default |          | &#10003;  |               |
+|                 | event_name      | Default |          |           | &#10003;      |
+|                 | dest_port       | Default |          |           | &#10003;      |
+| file-delete     | src_port        |         |          |           |               |
+|                 | src_ip          |         |          |           |               |
+|                 | event_code      |         |          |           |               |
+|                 | bytes           |         |          |           |               |
+|                 | alert_severity  |         |          |           |               |
+|                 | dest_ip         |         |          |           |               |
+|                 | domain          |         |          |           |               |
+|                 | session_id      |         |          |           |               |
+|                 | event_name      |         |          |           |               |
+|                 | user            | Legacy  | &#10003; | &#10003;  |               |
+|                 | dest_port       |         |          |           |               |
+| file-download   | src_port        |         |          |           |               |
+|                 | src_ip          |         |          |           |               |
+|                 | event_code      |         |          |           |               |
+|                 | bytes           | Legacy  |          | &#10003;  |               |
+|                 | alert_severity  |         |          |           |               |
+|                 | dest_ip         |         |          |           |               |
+|                 | domain          |         |          |           |               |
+|                 | session_id      |         |          |           |               |
+|                 | event_name      |         |          |           |               |
+|                 | user            | Legacy  | &#10003; | &#10003;  |               |
+|                 | dest_port       |         |          |           |               |
+| file-upload     | src_port        |         |          |           |               |
+|                 | src_ip          |         |          |           |               |
+|                 | event_code      |         |          |           |               |
+|                 | bytes           |         |          |           |               |
+|                 | alert_severity  |         |          |           |               |
+|                 | dest_ip         |         |          |           |               |
+|                 | domain          |         |          |           |               |
+|                 | session_id      |         |          |           |               |
+|                 | event_name      |         |          |           |               |
+|                 | user            | Legacy  | &#10003; | &#10003;  |               |
+|                 | dest_port       |         |          |           |               |
+| file-write      | src_port        |         |          |           |               |
+|                 | src_ip          |         |          |           |               |
+|                 | event_code      |         |          |           |               |
+|                 | bytes           | Legacy  |          | &#10003;  |               |
+|                 | alert_severity  |         |          |           |               |
+|                 | dest_ip         |         |          |           |               |
+|                 | domain          |         |          |           |               |
+|                 | session_id      |         |          |           |               |
+|                 | event_name      |         |          |           |               |
+|                 | user            | Legacy  | &#10003; | &#10003;  |               |
+|                 | dest_port       |         |          |           |               |
+| http-session    | additional_info | Default |          |           | &#10003;      |
+|                 | result_code     | Default |          |           | &#10003;      |
+| network-session | file_path       | Default |          |           | &#10003;      |
+|                 | file_ext        | Default |          |           | &#10003;      |
+|                 | event_code      | Default |          |           | &#10003;      |
+|                 | file_name       | Default |          |           | &#10003;      |
+|                 | alert_severity  | Default |          |           | &#10003;      |
+|                 | domain          | Default |          |           | &#10003;      |
+|                 | file_dir        | Default |          |           | &#10003;      |
+|                 | session_id      | Default |          |           | &#10003;      |
+|                 | event_name      | Default |          |           | &#10003;      |
+|                 | operation       | Default |          |           | &#10003;      |
+|                 | user            | Default |          | &#10003;  |               |
+| vpn-logout      | src_port        |         |          |           |               |
+|                 | file_path       |         |          |           |               |
+|                 | file_ext        |         |          |           |               |
+|                 | event_code      |         |          |           |               |
+|                 | bytes           |         |          |           |               |
+|                 | file_name       |         |          |           |               |
+|                 | alert_severity  |         |          |           |               |
+|                 | dest_ip         |         |          |           |               |
+|                 | file_dir        |         |          |           |               |
+|                 | session_id      |         |          |           |               |
+|                 | event_name      |         |          |           |               |
+|                 | dest_port       |         |          |           |               |
+

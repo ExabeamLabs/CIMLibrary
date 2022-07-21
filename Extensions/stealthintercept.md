@@ -1,65 +1,39 @@
 stealthintercept
 ================
 
-```JSON
-{"expression":"product = \"stealthintercept\"",
-"activity_type":{"ds_object-modify":{"fields":{"old_attribute":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_attribute":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-enable":{"fields":{}},
-"user-disable":{"fields":{}},
-"file-permission-modify":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{}},
-"file-write":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"ds_object_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-remove":{"fields":{}},
-"file-read":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "stealthintercept"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_ip   |      | &#10003;  |               |
+| dest_ip  |      | &#10003;  |               |
+| domain   |      | &#10003;  |               |
+| src_host |      | &#10003;  |               |
+| user     |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field         | Status  | Core | Detection | Informational |
+| ---------------------- | ------------- | ------- | ---- | --------- | ------------- |
+| ds_object-modify       | old_attribute | Default |      |           | &#10003;      |
+|                        | new_attribute | Default |      |           | &#10003;      |
+| endpoint-login         | auth_method   | Default |      |           | &#10003;      |
+|                        | ds_object_out | Default |      |           | &#10003;      |
+| file-permission-modify | access        | Legacy  |      | &#10003;  |               |
+|                        | process_name  | Legacy  |      |           | &#10003;      |
+| file-read              | access        | Legacy  |      | &#10003;  |               |
+|                        | process_name  | Legacy  |      |           | &#10003;      |
+| file-write             | access        | Legacy  |      | &#10003;  |               |
+|                        | process_name  | Legacy  |      |           | &#10003;      |
+| group-member-add       |               |         |      |           |               |
+| group-member-remove    |               |         |      |           |               |
+| user-disable           |               |         |      |           |               |
+| user-enable            |               |         |      |           |               |
+

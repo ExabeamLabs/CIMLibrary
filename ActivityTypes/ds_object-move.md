@@ -24,7 +24,4 @@ ds_object-move:success
 | src_ds_object_name |      |           | &#10003;      |
 | src_ds_object_dn   |      | &#10003;  |               |
 
-ds_object-move:fail
--------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

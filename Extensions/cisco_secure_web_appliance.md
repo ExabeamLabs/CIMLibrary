@@ -1,43 +1,33 @@
 cisco secure web appliance
 ==========================
 
-```JSON
-{"expression":"product = \"cisco secure web appliance\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"protocol":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"result_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"proxy_action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco secure web appliance"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| protocol     |      | &#10003;  |               |
+| bytes_out    |      | &#10003;  |               |
+| method       |      | &#10003;  |               |
+| bytes_in     |      | &#10003;  |               |
+| domain       |      | &#10003;  |               |
+| mime         |      | &#10003;  |               |
+| action       |      | &#10003;  |               |
+| result_code  |      | &#10003;  |               |
+| category     |      | &#10003;  |               |
+| user         |      | &#10003;  |               |
+| proxy_action |      | &#10003;  |               |
+| user_agent   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

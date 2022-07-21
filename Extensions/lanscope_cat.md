@@ -1,121 +1,50 @@
 lanscope cat
 ============
 
-```JSON
-{"expression":"product = \"lanscope cat\"",
-"activity_type":{"peripheral_storage-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"num_pages":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"http-session":{"fields":{}},
-"app-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"printer-activity":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"num_pages":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "lanscope cat"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type               | Field        | Status  | Core     | Detection | Informational |
+| --------------------------- | ------------ | ------- | -------- | --------- | ------------- |
+| alert-trigger               | src_ip       | Legacy  | &#10003; | &#10003;  |               |
+|                             | dest_ip      | Legacy  | &#10003; | &#10003;  |               |
+|                             | num_pages    |         |          |           |               |
+|                             | dest_host    | Legacy  |          | &#10003;  |               |
+|                             | printer_name |         |          |           |               |
+|                             | src_host     | Legacy  | &#10003; | &#10003;  |               |
+|                             | operation    |         |          |           |               |
+|                             | user         | Legacy  |          | &#10003;  |               |
+|                             | object       |         |          |           |               |
+| app-activity                | file_path    | Default |          |           | &#10003;      |
+|                             | file_ext     | Default |          |           | &#10003;      |
+|                             | application  | Default |          |           | &#10003;      |
+|                             | file_name    | Default |          |           | &#10003;      |
+|                             | bytes        | Default |          |           | &#10003;      |
+|                             | file_dir     | Default |          |           | &#10003;      |
+|                             | user         | Default |          | &#10003;  |               |
+|                             | object       | Default |          |           | &#10003;      |
+| endpoint-login              | src_ip       | Default |          | &#10003;  |               |
+| file-read                   | bytes        | Legacy  |          |           | &#10003;      |
+| file-write                  | bytes        | Legacy  |          | &#10003;  |               |
+| http-session                |              |         |          |           |               |
+| peripheral_storage-activity | src_ip       | Default |          | &#10003;  |               |
+|                             | process_name | Default |          |           | &#10003;      |
+|                             | bytes        | Default |          |           | &#10003;      |
+|                             | user         | Default |          | &#10003;  |               |
+| printer-activity            | src_ip       |         |          | &#10003;  |               |
+|                             | num_pages    | Legacy  |          | &#10003;  |               |
+|                             | dest_ip      |         |          | &#10003;  |               |
+|                             | dest_host    |         |          | &#10003;  |               |
+|                             | printer_name | Legacy  | &#10003; | &#10003;  |               |
+|                             | src_host     | Legacy  |          |           | &#10003;      |
+

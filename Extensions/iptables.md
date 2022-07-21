@@ -1,15 +1,21 @@
 iptables
 ========
 
-```JSON
-{"expression":"product = \"iptables\"",
-"activity_type":{"network-session":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "iptables"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field          | Status  | Core | Detection | Informational |
+| --------------- | -------------- | ------- | ---- | --------- | ------------- |
+| network-session | src_interface  | Default |      |           | &#10003;      |
+|                 | dest_interface | Default |      |           | &#10003;      |
+

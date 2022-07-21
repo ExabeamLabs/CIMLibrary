@@ -1,33 +1,26 @@
 damballa failsafe
 =================
 
-```JSON
-{"expression":"product = damballa failsafe",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = damballa failsafe
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status | Core     | Detection | Informational |
+| ------------- | ----------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip      | Legacy | &#10003; | &#10003;  |               |
+|               | alert_id    | Legacy |          |           | &#10003;      |
+|               | dest_ip     | Legacy | &#10003; | &#10003;  |               |
+|               | dest_host   | Legacy |          | &#10003;  |               |
+|               | event_name  |        |          |           |               |
+|               | malware_url |        |          |           |               |
+|               | src_host    | Legacy | &#10003; | &#10003;  |               |
+

@@ -1,27 +1,26 @@
 emp
 ===
 
-```JSON
-{"expression":"product = \"emp\"",
-"activity_type":{"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"location":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "emp"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| location  |      |           | &#10003;      |
+| user      |      | &#10003;  |               |
+| operation |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | additional_info | Default |      |           | &#10003;      |
+|               | object          | Default |      |           | &#10003;      |
+| app-login     | additional_info | Default |      |           | &#10003;      |
+

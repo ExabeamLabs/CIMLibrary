@@ -1,67 +1,34 @@
 aruba wireless controller
 =========================
 
-```JSON
-{"expression":"product = \"aruba wireless controller\"",
-"activity_type":{"app-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"network":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"network":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "aruba wireless controller"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field       | Status  | Core | Detection | Informational |
+| ------------------ | ----------- | ------- | ---- | --------- | ------------- |
+| app-authentication | src_ip      | Default |      | &#10003;  |               |
+|                    | access_type | Default |      |           | &#10003;      |
+|                    | user_type   | Default |      |           | &#10003;      |
+|                    | dest_mac    | Default |      |           | &#10003;      |
+|                    | domain      | Default |      |           | &#10003;      |
+|                    | dest_ip     | Default |      | &#10003;  |               |
+|                    | session_id  | Default |      |           | &#10003;      |
+|                    | network     | Default |      |           | &#10003;      |
+| endpoint-login     | src_ip      | Default |      | &#10003;  |               |
+|                    | access_type | Default |      |           | &#10003;      |
+|                    | user_type   | Default |      |           | &#10003;      |
+|                    | dest_mac    | Default |      |           | &#10003;      |
+|                    | dest_ip     | Default |      | &#10003;  |               |
+|                    | session_id  | Default |      |           | &#10003;      |
+|                    | network     | Default |      |           | &#10003;      |
+

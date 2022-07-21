@@ -1,8 +1,20 @@
 tufin securetrack
 =================
 
-```JSON
-{"expression":"product = \"tufin securetrack\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "tufin securetrack"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

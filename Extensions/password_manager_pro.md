@@ -1,28 +1,27 @@
 password manager pro
 ====================
 
-```JSON
-{"expression":"product = \"password manager pro\"",
-"activity_type":{"user-password-read":{"fields":{"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"safe_value":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"safe_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "password manager pro"
+
+Fields
+------
+
+| Field    | Core     | Detection | Informational |
+| -------- | -------- | --------- | ------------- |
+| src_ip   |          | &#10003;  |               |
+| domain   |          | &#10003;  |               |
+| src_host |          | &#10003;  |               |
+| user     | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type        | Field      | Status  | Core | Detection | Informational |
+| -------------------- | ---------- | ------- | ---- | --------- | ------------- |
+| user-password-modify | safe_value | Default |      |           | &#10003;      |
+| user-password-read   | dest_ip    |         |      | &#10003;  |               |
+|                      | safe_value |         |      |           | &#10003;      |
+

@@ -1,275 +1,94 @@
 salesforce
 ==========
 
-```JSON
-{"expression":"product = \"salesforce\"",
-"activity_type":{"group-member-move":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-delete":{"fields":{"role_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"old_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-logout":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-expire":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-unlock":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"role-create":{"fields":{"role_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-modify":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"new_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-password-reset":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-enable":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-disable":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-lock":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"configuration-modify":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-role-assign":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-modify":{"fields":{"role_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-notification":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"role-permission-modify":{"fields":{"role_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"permission":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-property-modify":{"fields":{"old_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "salesforce"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field            | Status  | Core     | Detection | Informational |
+| ---------------------- | ---------------- | ------- | -------- | --------- | ------------- |
+| app-activity           | src_ip           | Default |          | &#10003;  |               |
+|                        | additional_info  | Default |          |           | &#10003;      |
+|                        | bytes            | Default |          |           | &#10003;      |
+|                        | dest_user        | Default |          | &#10003;  |               |
+|                        | old_value        | Default |          |           | &#10003;      |
+|                        | new_value        | Default |          |           | &#10003;      |
+|                        | user_agent       | Default |          |           | &#10003;      |
+|                        | object           | Default |          |           | &#10003;      |
+| app-login              | src_ip           | Default |          | &#10003;  |               |
+|                        | browser          | Default |          |           | &#10003;      |
+|                        | dest_host        | Default |          | &#10003;  |               |
+|                        | operating_system | Default |          |           | &#10003;      |
+|                        | user_agent       | Default |          |           | &#10003;      |
+| app-logout             | additional_info  | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| app-notification       | resource         | Default |          |           | &#10003;      |
+|                        | additional_info  | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+|                        | object           | Default |          |           | &#10003;      |
+| configuration-modify   | additional_info  |         |          |           |               |
+|                        | operation        |         |          |           |               |
+|                        | object           |         |          |           |               |
+| file-delete            | additional_info  |         |          |           |               |
+|                        | dest_user        |         |          |           |               |
+|                        | operation        |         |          |           |               |
+| file-property-modify   | old_value        | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+|                        | new_value        | Default |          |           | &#10003;      |
+| group-member-add       | additional_info  |         |          |           |               |
+|                        | operation        |         |          |           |               |
+| group-member-move      | additional_info  | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| role-create            | role_type        | Default |          |           | &#10003;      |
+|                        | additional_info  | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| role-delete            | role_type        | Default |          |           | &#10003;      |
+|                        | additional_info  | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| role-modify            | role_type        | Default |          |           | &#10003;      |
+|                        | additional_info  | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| role-permission-modify | role_type        | Default |          |           | &#10003;      |
+|                        | additional_info  | Default |          |           | &#10003;      |
+|                        | permission       | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| user-create            | additional_info  |         |          |           |               |
+| user-disable           | additional_info  |         |          |           |               |
+|                        | operation        |         |          |           |               |
+| user-enable            | additional_info  |         |          |           |               |
+|                        | operation        |         |          |           |               |
+| user-lock              | src_ip           |         |          |           |               |
+|                        | additional_info  |         |          |           |               |
+|                        | dest_host        | Legacy  |          |           | &#10003;      |
+|                        | src_host         | Legacy  | &#10003; | &#10003;  |               |
+|                        | operation        |         |          |           |               |
+| user-modify            | additional_info  |         |          |           |               |
+|                        | old_value        |         |          |           |               |
+|                        | operation        |         |          |           |               |
+|                        | new_value        |         |          |           |               |
+|                        | object           |         |          |           |               |
+| user-password-expire   | additional_info  | Default |          |           | &#10003;      |
+|                        | resource         | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+|                        | object           | Default |          |           | &#10003;      |
+| user-password-modify   | operation        | Default |          |           | &#10003;      |
+| user-password-reset    | additional_info  |         |          |           |               |
+|                        | operation        |         |          |           |               |
+| user-role-assign       | additional_info  | Default |          |           | &#10003;      |
+|                        | resource         | Default |          |           | &#10003;      |
+|                        | operation        | Default |          |           | &#10003;      |
+| user-unlock            | additional_info  |         |          |           |               |
+|                        | operation        |         |          |           |               |
+

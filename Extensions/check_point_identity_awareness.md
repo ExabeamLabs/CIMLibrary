@@ -1,106 +1,49 @@
 check point identity awareness
 ==============================
 
-```JSON
-{"expression":"product = \"check point identity awareness\"",
-"activity_type":{"network-traffic":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_uid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_duration":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"user_ou":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_group_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_duration":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_uid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"origin_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "check point identity awareness"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      | &#10003;  |               |
+| src_port  |      | &#10003;  |               |
+| protocol  |      | &#10003;  |               |
+| event_id  |      |           | &#10003;      |
+| log_uid   |      |           | &#10003;      |
+| dest_ip   |      | &#10003;  |               |
+| action    |      | &#10003;  |               |
+| dest_port |      | &#10003;  |               |
+| origin_ip |      | &#10003;  |               |
+| direction |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field            | Status  | Core     | Detection | Informational |
+| --------------- | ---------------- | ------- | -------- | --------- | ------------- |
+| network-traffic | src_interface    | Default |          |           | &#10003;      |
+|                 | user             | Default | &#10003; | &#10003;  |               |
+|                 | user_uid         | Default |          |           | &#10003;      |
+| vpn-login       | user_ou          | Default |          |           | &#10003;      |
+|                 | auth_method      | Default |          |           | &#10003;      |
+|                 | additional_info  | Default |          |           | &#10003;      |
+|                 | dest_host        | Default |          | &#10003;  |               |
+|                 | src_host         | Default |          | &#10003;  |               |
+|                 | user_group_name  | Default |          |           | &#10003;      |
+|                 | operation        | Default |          |           | &#10003;      |
+|                 | session_duration | Default |          |           | &#10003;      |
+| vpn-logout      | user_ou          |         |          | &#10003;  |               |
+|                 | auth_method      |         |          | &#10003;  |               |
+|                 | additional_info  |         |          |           | &#10003;      |
+|                 | dest_host        | Legacy  |          |           | &#10003;      |
+|                 | src_host         |         |          | &#10003;  |               |
+|                 | user_group_name  |         |          | &#10003;  |               |
+|                 | operation        |         |          | &#10003;  |               |
+|                 | session_duration | Legacy  |          | &#10003;  |               |
+

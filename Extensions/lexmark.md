@@ -1,31 +1,26 @@
 lexmark
 =======
 
-```JSON
-{"expression":"product = \"lexmark\"",
-"activity_type":{"printer-activity":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"num_pages":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "lexmark"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type    | Field        | Status | Core     | Detection | Informational |
+| ---------------- | ------------ | ------ | -------- | --------- | ------------- |
+| printer-activity | src_ip       |        |          |           |               |
+|                  | num_pages    | Legacy |          | &#10003;  |               |
+|                  | dest_ip      |        |          |           |               |
+|                  | dest_host    |        |          |           |               |
+|                  | printer_name | Legacy | &#10003; | &#10003;  |               |
+|                  | user         | Legacy | &#10003; | &#10003;  |               |
+|                  | object       |        |          |           |               |
+

@@ -1,71 +1,35 @@
 kemp loadmaster
 ===============
 
-```JSON
-{"expression":"product = \"kemp loadmaster\"",
-"activity_type":{"app-authentication":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-request":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "kemp loadmaster"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field     | Status  | Core | Detection | Informational |
+| ------------------ | --------- | ------- | ---- | --------- | ------------- |
+| app-activity       | src_port  | Default |      |           | &#10003;      |
+|                    | src_ip    | Default |      | &#10003;  |               |
+|                    | dest_ip   | Default |      | &#10003;  |               |
+|                    | domain    | Default |      |           | &#10003;      |
+|                    | user      | Default |      | &#10003;  |               |
+|                    | dest_port | Default |      |           | &#10003;      |
+|                    | object    | Default |      |           | &#10003;      |
+| app-authentication | dest_ip   | Default |      | &#10003;  |               |
+|                    | operation | Default |      |           | &#10003;      |
+| app-login          | src_ip    | Default |      | &#10003;  |               |
+|                    | dest_ip   | Default |      | &#10003;  |               |
+|                    | dest_host | Default |      | &#10003;  |               |
+|                    | src_host  | Default |      | &#10003;  |               |
+| http-request       | domain    | Default |      |           | &#10003;      |
+|                    | operation | Default |      |           | &#10003;      |
+|                    | object    | Default |      |           | &#10003;      |
+

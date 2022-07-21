@@ -1,59 +1,35 @@
 fireeye endpoint security (hx)
 ==============================
 
-```JSON
-{"expression":"product = \"fireeye endpoint security (hx)\"",
-"activity_type":{"alert-trigger":{"fields":{"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"http-session":{"fields":{}},
-"file-write":{"fields":{"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "fireeye endpoint security (hx)"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | process_name         | Legacy |          | &#10003;  |               |
+|               | alert_id             | Legacy |          |           | &#10003;      |
+|               | dest_ip              | Legacy | &#10003; | &#10003;  |               |
+|               | domain               |        |          |           |               |
+|               | hash_md5             |        |          |           |               |
+|               | event_name           |        |          |           |               |
+|               | process_command_line |        |          |           |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+| file-write    | event_code           |        |          |           | &#10003;      |
+|               | process_name         | Legacy |          |           | &#10003;      |
+|               | dest_ip              |        | &#10003; | &#10003;  |               |
+|               | domain               |        |          |           | &#10003;      |
+|               | event_name           |        |          |           | &#10003;      |
+|               | operation            |        |          |           | &#10003;      |
+|               | user                 | Legacy | &#10003; | &#10003;  |               |
+| http-session  |                      |        |          |           |               |
+

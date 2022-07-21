@@ -1,74 +1,38 @@
 symamtec (broadcom) email security.cloud
 ========================================
 
-```JSON
-{"expression":"product = symamtec (broadcom) email security.cloud",
-"activity_type":{"alert-trigger":{"fields":{"email_attachment":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"is_outbound":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"threat_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = symamtec (broadcom) email security.cloud
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status | Core     | Detection | Informational |
+| ------------- | ---------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | email_attachment |        |          |           |               |
+|               | process          |        |          |           |               |
+|               | src_host         | Legacy | &#10003; | &#10003;  |               |
+|               | result           |        |          |           |               |
+|               | src_ip           | Legacy | &#10003; | &#10003;  |               |
+|               | is_outbound      |        |          |           |               |
+|               | additional_info  |        |          |           |               |
+|               | sender           | Legacy | &#10003; |           |               |
+|               | bytes            | Legacy |          | &#10003;  |               |
+|               | process_name     | Legacy |          | &#10003;  |               |
+|               | recipients       |        |          |           |               |
+|               | dest_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | recipient        |        |          |           |               |
+|               | action           | Legacy |          |           | &#10003;      |
+|               | dest_host        | Legacy |          | &#10003;  |               |
+|               | threat_type      |        |          |           |               |
+|               | email_subject    |        |          |           |               |
+|               | user             | Legacy |          | &#10003;  |               |
+|               | dest_port        | Legacy |          | &#10003;  |               |
+

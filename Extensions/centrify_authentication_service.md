@@ -1,82 +1,39 @@
 centrify authentication service
 ===============================
 
-```JSON
-{"expression":"product = \"centrify authentication service\"",
-"activity_type":{"user-password-reset":{"fields":{"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-authentication":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "centrify authentication service"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field           | Status  | Core | Detection | Informational |
+| ----------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | process_id      | Default |      |           | &#10003;      |
+|                         | protocol        | Default |      |           | &#10003;      |
+|                         | user_id         | Default |      |           | &#10003;      |
+|                         | additional_info | Default |      |           | &#10003;      |
+|                         | event_code      | Default |      |           | &#10003;      |
+|                         | dest_ip         | Default |      | &#10003;  |               |
+|                         | event_name      | Default |      |           | &#10003;      |
+| endpoint-login          | src_ip          | Default |      | &#10003;  |               |
+|                         | process_id      | Default |      |           | &#10003;      |
+|                         | protocol        | Default |      |           | &#10003;      |
+|                         | additional_info | Default |      |           | &#10003;      |
+|                         | user_id         | Default |      |           | &#10003;      |
+|                         | process_name    | Default |      |           | &#10003;      |
+|                         | event_name      | Default |      |           | &#10003;      |
+|                         | src_host        | Default |      | &#10003;  |               |
+| user-password-reset     | user_id         |         |      |           |               |
+|                         | additional_info |         |      |           |               |
+|                         | event_code      |         |      |           |               |
+|                         | event_name      |         |      |           |               |
+|                         | src_host        |         |      |           |               |
+

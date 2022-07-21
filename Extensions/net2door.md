@@ -1,8 +1,20 @@
 net2door
 ========
 
-```JSON
-{"expression":"product = \"net2door\"",
-"activity_type":{"physical_location-access":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "net2door"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field | Status | Core | Detection | Informational |
+| ------------------------ | ----- | ------ | ---- | --------- | ------------- |
+| physical_location-access |       |        |      |           |               |
+

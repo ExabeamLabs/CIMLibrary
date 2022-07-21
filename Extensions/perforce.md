@@ -1,35 +1,26 @@
 perforce
 ========
 
-```JSON
-{"expression":"product = \"perforce\"",
-"activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "perforce"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip          | Default |      | &#10003;  |               |
+|               | process_id      | Default |      |           | &#10003;      |
+|               | resource        | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+|               | dest_ip         | Default |      | &#10003;  |               |
+|               | user            | Default |      | &#10003;  |               |
+|               | object          | Default |      |           | &#10003;      |
+

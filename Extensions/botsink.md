@@ -1,27 +1,24 @@
 botsink
 =======
 
-```JSON
-{"expression":"product = \"botsink\"",
-"activity_type":{"network-session":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "botsink"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field         | Status  | Core | Detection | Informational |
+| --------------- | ------------- | ------- | ---- | --------- | ------------- |
+| network-session | src_interface | Default |      |           | &#10003;      |
+|                 | dest_host     | Default |      | &#10003;  |               |
+|                 | rule          | Default |      |           | &#10003;      |
+|                 | src_host      | Default |      | &#10003;  |               |
+|                 | direction     | Default |      |           | &#10003;      |
+

@@ -1,56 +1,33 @@
 microsoft azure
 ===============
 
-```JSON
-{"expression":"product = microsoft azure",
-"activity_type":{"alert-trigger":{"fields":{"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_hub_namespace":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_hub_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_upn":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft azure
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field               | Status | Core     | Detection | Informational |
+| ------------- | ------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | url                 |        |          |           |               |
+|               | src_ip              | Legacy | &#10003; | &#10003;  |               |
+|               | src_port            | Legacy |          |           | &#10003;      |
+|               | event_hub_namespace |        |          |           |               |
+|               | event_hub_name      |        |          |           |               |
+|               | email_address       |        |          |           |               |
+|               | full_name           |        |          |           |               |
+|               | dest_ip             | Legacy | &#10003; | &#10003;  |               |
+|               | action              | Legacy |          |           | &#10003;      |
+|               | dest_host           | Legacy |          | &#10003;  |               |
+|               | user_upn            |        |          |           |               |
+|               | user                | Legacy |          | &#10003;  |               |
+|               | dest_port           | Legacy |          | &#10003;  |               |
+|               | object              |        |          |           |               |
+

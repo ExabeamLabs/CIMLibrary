@@ -1,8 +1,20 @@
 ixia threatarmor
 ================
 
-```JSON
-{"expression":"product = \"ixia threatarmor\"",
-"activity_type":{"network-session":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "ixia threatarmor"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field | Status | Core | Detection | Informational |
+| --------------- | ----- | ------ | ---- | --------- | ------------- |
+| network-session |       |        |      |           |               |
+

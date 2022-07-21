@@ -1,37 +1,29 @@
 zscaler private access
 ======================
 
-```JSON
-{"expression":"product = \"zscaler private access\"",
-"activity_type":{"vpn-login":{"fields":{"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"connection_status":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"connection_status":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "zscaler private access"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip |          | &#10003;  |               |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status  | Core | Detection | Informational |
+| ------------- | ----------------- | ------- | ---- | --------- | ------------- |
+| vpn-login     | bytes_out         | Default |      |           | &#10003;      |
+|               | bytes_in          | Default |      |           | &#10003;      |
+|               | connection_status | Default |      |           | &#10003;      |
+| vpn-logout    | bytes_out         | Legacy  |      | &#10003;  |               |
+|               | bytes_in          |         |      | &#10003;  |               |
+|               | connection_status |         |      | &#10003;  |               |
+

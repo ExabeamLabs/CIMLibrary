@@ -1,17 +1,23 @@
 vmware esxi
 ===========
 
-```JSON
-{"expression":"product = \"vmware esxi\"",
-"activity_type":{"endpoint-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "vmware esxi"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| event_name |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type  | Field           | Status  | Core | Detection | Informational |
+| -------------- | --------------- | ------- | ---- | --------- | ------------- |
+| endpoint-login | additional_info | Default |      |           | &#10003;      |
+|                | user_agent      | Default |      |           | &#10003;      |
+

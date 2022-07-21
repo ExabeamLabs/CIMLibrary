@@ -1,159 +1,65 @@
 emc isilon
 ==========
 
-```JSON
-{"expression":"product = \"emc isilon\"",
-"activity_type":{"file-permission-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"inode":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"zone_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"desire_access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"create_result":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"inode":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"zone_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"desire_access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"create_result":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"zone_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"inode":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"zone_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"desire_access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"create_result":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"inode":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"zone_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"desire_access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"create_result":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "emc isilon"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field         | Status  | Core | Detection | Informational |
+| ---------------------- | ------------- | ------- | ---- | --------- | ------------- |
+| endpoint-login         | src_ip        | Default |      | &#10003;  |               |
+|                        | zone_id       | Default |      |           | &#10003;      |
+|                        | protocol      | Default |      |           | &#10003;      |
+|                        | user_id       | Default |      |           | &#10003;      |
+|                        | event_name    | Default |      |           | &#10003;      |
+|                        | src_host      | Default |      | &#10003;  |               |
+| file-delete            | src_ip        |         |      |           |               |
+|                        | inode         |         |      |           |               |
+|                        | zone_id       |         |      |           |               |
+|                        | server_name   |         |      |           |               |
+|                        | desire_access |         |      |           |               |
+|                        | protocol      |         |      |           |               |
+|                        | access        | Legacy  |      | &#10003;  |               |
+|                        | user_id       |         |      |           |               |
+|                        | file_type     | Legacy  |      |           | &#10003;      |
+|                        | create_result |         |      |           |               |
+| file-permission-modify | src_ip        |         |      |           |               |
+|                        | inode         |         |      |           |               |
+|                        | zone_id       |         |      |           |               |
+|                        | server_name   |         |      |           |               |
+|                        | desire_access |         |      |           |               |
+|                        | protocol      |         |      |           |               |
+|                        | access        | Legacy  |      | &#10003;  |               |
+|                        | user_id       |         |      |           |               |
+|                        | file_type     | Legacy  |      |           | &#10003;      |
+|                        | create_result |         |      |           |               |
+| file-read              | src_ip        |         |      |           |               |
+|                        | inode         |         |      |           |               |
+|                        | zone_id       |         |      |           |               |
+|                        | server_name   |         |      |           |               |
+|                        | desire_access |         |      |           |               |
+|                        | protocol      |         |      |           |               |
+|                        | access        | Legacy  |      | &#10003;  |               |
+|                        | user_id       |         |      |           |               |
+|                        | file_type     | Legacy  |      |           | &#10003;      |
+|                        | create_result |         |      |           |               |
+| file-write             | src_ip        |         |      |           |               |
+|                        | inode         |         |      |           |               |
+|                        | zone_id       |         |      |           |               |
+|                        | server_name   |         |      |           |               |
+|                        | desire_access |         |      |           |               |
+|                        | protocol      |         |      |           |               |
+|                        | access        | Legacy  |      | &#10003;  |               |
+|                        | user_id       |         |      |           |               |
+|                        | file_type     | Legacy  |      |           | &#10003;      |
+|                        | create_result |         |      |           |               |
+

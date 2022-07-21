@@ -1,16 +1,24 @@
 proxysg
 =======
 
-```JSON
-{"expression":"product = \"proxysg\"",
-"activity_type":{"endpoint-authentication":{"fields":{}}},
-"fields":{"user_ou":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "proxysg"
+
+Fields
+------
+
+| Field   | Core | Detection | Informational |
+| ------- | ---- | --------- | ------------- |
+| user_ou |      |           | &#10003;      |
+| src_ip  |      |           | &#10003;      |
+| realm   |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field | Status | Core | Detection | Informational |
+| ----------------------- | ----- | ------ | ---- | --------- | ------------- |
+| endpoint-authentication |       |        |      |           |               |
+

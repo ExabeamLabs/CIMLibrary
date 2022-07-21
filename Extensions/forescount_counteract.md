@@ -1,36 +1,27 @@
 forescount counteract
 =====================
 
-```JSON
-{"expression":"product = forescount counteract",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"host_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = forescount counteract
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result          |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | src_port        | Legacy |          |           | &#10003;      |
+|               | host_ip         |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | dest_port       | Legacy |          | &#10003;  |               |
+

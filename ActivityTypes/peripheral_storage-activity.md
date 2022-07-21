@@ -25,6 +25,8 @@ peripheral_storage-activity:success
 peripheral_storage-activity:fail
 --------------------------------
 
-| Field     | Core     | Detection | Informational |
-| --------- | -------- | --------- | ------------- |
-| operation | &#10003; | &#10003;  |               |
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| failure_code   |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |
+| operation      | &#10003; | &#10003;  |               |

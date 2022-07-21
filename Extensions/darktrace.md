@@ -1,19 +1,22 @@
 darktrace
 =========
 
-```JSON
-{"expression":"product = \"darktrace\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "darktrace"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-login     | src_ip          | Default |      | &#10003;  |               |
+|               | method          | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+

@@ -1,27 +1,24 @@
 gmail
 =====
 
-```JSON
-{"expression":"product = \"gmail\"",
-"activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-send":{"fields":{"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"message_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "gmail"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field      | Status  | Core | Detection | Informational |
+| ------------- | ---------- | ------- | ---- | --------- | ------------- |
+| email-receive | src_ip     | Default |      | &#10003;  |               |
+|               | bytes      | Default |      |           | &#10003;      |
+| email-send    | bytes      | Default |      |           | &#10003;      |
+|               | dest_ip    | Default |      | &#10003;  |               |
+|               | message_id | Default |      |           | &#10003;      |
+

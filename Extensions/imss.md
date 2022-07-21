@@ -1,33 +1,27 @@
 imss
 ====
 
-```JSON
-{"expression":"product = \"imss\"",
-"activity_type":{"alert-trigger":{"fields":{"external_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_attachments":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "imss"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status | Core | Detection | Informational |
+| ------------- | ----------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | external_address  |        |      |           |               |
+|               | bytes             | Legacy |      | &#10003;  |               |
+|               | recipients        |        |      |           |               |
+|               | recipient         |        |      |           |               |
+|               | rule              |        |      |           |               |
+|               | email_attachments |        |      |           |               |
+|               | email_subject     |        |      |           |               |
+|               | user              | Legacy |      | &#10003;  |               |
+

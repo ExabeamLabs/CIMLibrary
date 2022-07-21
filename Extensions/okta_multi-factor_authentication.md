@@ -1,54 +1,32 @@
 okta multi-factor authentication
 ================================
 
-```JSON
-{"expression":"product = okta multi-factor authentication",
-"activity_type":{"alert-trigger":{"fields":{"event_name_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"tag":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = okta multi-factor authentication
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | event_name_name |        |          |           |               |
+|               | failure_reason  |        |          |           |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | src_port        | Legacy |          |           | &#10003;      |
+|               | protocol        | Legacy |          | &#10003;  |               |
+|               | application     |        |          |           |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | dest_host       | Legacy |          | &#10003;  |               |
+|               | tag             |        |          |           |               |
+|               | category        |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | dest_port       | Legacy |          | &#10003;  |               |
+

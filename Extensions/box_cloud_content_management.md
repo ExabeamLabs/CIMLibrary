@@ -1,167 +1,67 @@
 box cloud content management
 ============================
 
-```JSON
-{"expression":"product = \"box cloud content\"",
-"activity_type":{"file-download":{"fields":{"owned_user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-upload":{"fields":{"owned_user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-login":{"fields":{"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"owned_user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"owned_user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"owned_user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "box cloud content"
+
+Fields
+------
+
+| Field           | Core     | Detection | Informational |
+| --------------- | -------- | --------- | ------------- |
+| src_ip          |          | &#10003;  |               |
+| additional_info |          |           | &#10003;      |
+| domain          |          | &#10003;  |               |
+| user            | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status  | Core | Detection | Informational |
+| ------------- | ------------ | ------- | ---- | --------- | ------------- |
+| app-activity  | application  | Default |      |           | &#10003;      |
+|               | resource     | Default |      |           | &#10003;      |
+|               | service_name | Default |      |           | &#10003;      |
+|               | dest_user    | Default |      | &#10003;  |               |
+| app-login     | process_name | Default |      |           | &#10003;      |
+|               | event_name   | Default |      |           | &#10003;      |
+| file-delete   | owned_user   |         |      | &#10003;  |               |
+|               | access_type  |         |      | &#10003;  |               |
+|               | access       | Legacy  |      | &#10003;  |               |
+|               | file_type    | Legacy  |      |           | &#10003;      |
+|               | bytes        |         |      | &#10003;  |               |
+|               | object       |         |      | &#10003;  |               |
+| file-download | owned_user   |         |      | &#10003;  |               |
+|               | access_type  |         |      | &#10003;  |               |
+|               | access       |         |      | &#10003;  |               |
+|               | file_type    | Legacy  |      |           | &#10003;      |
+|               | bytes        | Legacy  |      | &#10003;  |               |
+|               | file_dir     | Legacy  |      |           | &#10003;      |
+|               | object       |         |      | &#10003;  |               |
+| file-read     | owned_user   |         |      | &#10003;  |               |
+|               | access_type  |         |      | &#10003;  |               |
+|               | access       | Legacy  |      | &#10003;  |               |
+|               | file_type    | Legacy  |      |           | &#10003;      |
+|               | bytes        | Legacy  |      |           | &#10003;      |
+|               | object       |         |      | &#10003;  |               |
+| file-upload   | owned_user   |         |      | &#10003;  |               |
+|               | access_type  |         |      | &#10003;  |               |
+|               | access       |         |      | &#10003;  |               |
+|               | application  |         |      |           |               |
+|               | resource     |         |      |           |               |
+|               | file_type    | Legacy  |      |           | &#10003;      |
+|               | bytes        |         |      | &#10003;  |               |
+|               | process_name | Legacy  |      |           | &#10003;      |
+|               | service_name |         |      |           |               |
+|               | dest_user    |         |      |           |               |
+|               | object       |         |      | &#10003;  |               |
+| file-write    | owned_user   |         |      | &#10003;  |               |
+|               | access_type  |         |      | &#10003;  |               |
+|               | access       | Legacy  |      | &#10003;  |               |
+|               | file_type    | Legacy  |      |           | &#10003;      |
+|               | bytes        | Legacy  |      | &#10003;  |               |
+|               | process_name | Legacy  |      |           | &#10003;      |
+|               | object       |         |      | &#10003;  |               |
+

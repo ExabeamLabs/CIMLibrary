@@ -1,239 +1,86 @@
 symantec dlp
 ============
 
-```JSON
-{"expression":"product = \"symantec dlp\"",
-"activity_type":{"peripheral_storage-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"email_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"external_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"occured_time":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_attachment":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"original_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"recorded_time":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"peripheral_storage-insert":{"fields":{"operation_details":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"device_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "symantec dlp"
+
+Fields
+------
+
+| Field    | Core     | Detection | Informational |
+| -------- | -------- | --------- | ------------- |
+| src_ip   |          | &#10003;  |               |
+| domain   |          | &#10003;  |               |
+| src_host | &#10003; | &#10003;  |               |
+| user     | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type               | Field             | Status  | Core     | Detection | Informational |
+| --------------------------- | ----------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger               | email_id          |         |          |           |               |
+|                             | file_path         | Legacy  |          |           | &#10003;      |
+|                             | device_type       |         |          |           |               |
+|                             | result            |         |          |           |               |
+|                             | src_ip            | Legacy  | &#10003; | &#10003;  |               |
+|                             | external_address  |         |          |           |               |
+|                             | protocol          | Legacy  |          | &#10003;  |               |
+|                             | process_name      | Legacy  |          | &#10003;  |               |
+|                             | alert_id          | Legacy  |          |           | &#10003;      |
+|                             | occured_time      |         |          |           |               |
+|                             | operating_system  |         |          |           |               |
+|                             | direction         |         |          |           |               |
+|                             | email_attachment  |         |          |           |               |
+|                             | device_id         |         |          |           |               |
+|                             | file_name         | Legacy  | &#10003; |           |               |
+|                             | file_dir          | Legacy  |          |           | &#10003;      |
+|                             | original_user     |         |          |           |               |
+|                             | process_dir       |         |          |           |               |
+|                             | src_host          | Legacy  | &#10003; | &#10003;  |               |
+|                             | url               |         |          |           |               |
+|                             | recorded_time     |         |          |           |               |
+|                             | target            |         |          |           |               |
+|                             | file_ext          |         |          |           |               |
+|                             | additional_info   |         |          |           |               |
+|                             | sender            | Legacy  | &#10003; |           |               |
+|                             | web_domain        |         |          |           |               |
+|                             | bytes             | Legacy  |          | &#10003;  |               |
+|                             | recipients        |         |          |           |               |
+|                             | dest_ip           | Legacy  | &#10003; | &#10003;  |               |
+|                             | recipient         |         |          |           |               |
+|                             | dest_host         | Legacy  |          | &#10003;  |               |
+|                             | process_path      | Legacy  |          | &#10003;  |               |
+|                             | operation         |         |          |           |               |
+|                             | email_subject     |         |          |           |               |
+|                             | user              | Legacy  |          | &#10003;  |               |
+| file-delete                 | device_id         |         |          |           | &#10003;      |
+|                             | bytes_in          |         |          | &#10003;  |               |
+|                             | process_name      | Legacy  |          |           | &#10003;      |
+|                             | process_dir       | Legacy  |          |           | &#10003;      |
+|                             | device_type       |         |          | &#10003;  |               |
+|                             | process_path      | Legacy  |          |           | &#10003;      |
+| file-read                   | device_id         | Legacy  |          | &#10003;  |               |
+|                             | bytes_in          |         |          | &#10003;  |               |
+|                             | process_name      | Legacy  |          |           | &#10003;      |
+|                             | process_dir       | Legacy  |          |           | &#10003;      |
+|                             | device_type       | Legacy  |          |           | &#10003;      |
+|                             | process_path      | Legacy  |          | &#10003;  |               |
+| file-write                  | device_id         | Legacy  |          | &#10003;  |               |
+|                             | bytes_in          |         |          | &#10003;  |               |
+|                             | process_name      | Legacy  |          |           | &#10003;      |
+|                             | process_dir       | Legacy  |          |           | &#10003;      |
+|                             | device_type       | Legacy  |          |           | &#10003;      |
+|                             | process_path      | Legacy  |          | &#10003;  |               |
+| peripheral_storage-activity | file_path         | Default |          |           | &#10003;      |
+|                             | file_ext          | Default |          |           | &#10003;      |
+|                             | process_name      | Default |          |           | &#10003;      |
+|                             | file_name         | Default |          |           | &#10003;      |
+|                             | bytes             | Default |          |           | &#10003;      |
+|                             | file_dir          | Default |          |           | &#10003;      |
+|                             | process_dir       | Default |          |           | &#10003;      |
+|                             | process_path      | Default |          |           | &#10003;      |
+| peripheral_storage-insert   | operation_details |         |          |           | &#10003;      |
+

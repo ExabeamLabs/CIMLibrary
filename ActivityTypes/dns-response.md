@@ -29,6 +29,8 @@ dns-response:fail
 
 | Field              | Core     | Detection | Informational |
 | ------------------ | -------- | --------- | ------------- |
+| failure_code       |          | &#10003;  |               |
 | dns_response       | &#10003; | &#10003;  |               |
 | dns_response_code  |          | &#10003;  |               |
 | dns_response_flags |          | &#10003;  |               |
+| failure_reason     |          | &#10003;  |               |

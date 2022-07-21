@@ -1,35 +1,26 @@
 apache subversion (svn)
 =======================
 
-```JSON
-{"expression":"product = \"apache subversion (svn)\"",
-"activity_type":{"http-request":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "apache subversion (svn)"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| http-request  | result          | Default |      |           | &#10003;      |
+|               | application     | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+|               | bytes           | Default |      |           | &#10003;      |
+|               | domain          | Default |      |           | &#10003;      |
+|               | operation       | Default |      |           | &#10003;      |
+|               | object          | Default |      |           | &#10003;      |
+

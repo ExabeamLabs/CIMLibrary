@@ -42,7 +42,9 @@ email-receive:fail
 | email_recipients   |          |           | &#10003;      |
 | email_attachment   |          |           | &#10003;      |
 | dest_email_user    |          |           | &#10003;      |
+| failure_code       |          | &#10003;  |               |
 | dest_user          | &#10003; |           |               |
+| failure_reason     |          | &#10003;  |               |
 | email_attachments  |          |           | &#10003;      |
 | dest_email_domain  |          |           | &#10003;      |
 | email_address      | &#10003; |           |               |

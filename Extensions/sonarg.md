@@ -1,31 +1,29 @@
 sonarg
 ======
 
-```JSON
-{"expression":"product = \"sonarg\"",
-"activity_type":{"database-login":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "sonarg"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| src_ip       |      |           | &#10003;      |
+| db_name      |      |           | &#10003;      |
+| service_name |      |           | &#10003;      |
+| db_domain    |      |           | &#10003;      |
+| db_user      |      |           | &#10003;      |
+| dest_ip      |      |           | &#10003;      |
+| dest_host    |      |           | &#10003;      |
+| src_host     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type  | Field | Status | Core | Detection | Informational |
+| -------------- | ----- | ------ | ---- | --------- | ------------- |
+| database-login |       |        |      |           |               |
+

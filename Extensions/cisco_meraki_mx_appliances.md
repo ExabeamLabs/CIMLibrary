@@ -1,70 +1,35 @@
 cisco meraki mx appliances
 ==========================
 
-```JSON
-{"expression":"product = \"cisco meraki mx appliance\"",
-"activity_type":{"network-traffic":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"duration":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"channel":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dhcp_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"aid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cisco meraki mx appliance"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field                | Status  | Core | Detection | Informational |
+| --------------- | -------------------- | ------- | ---- | --------- | ------------- |
+| http-session    | src_mac              | Default |      |           | &#10003;      |
+|                 | protocol             | Default |      |           | &#10003;      |
+| network-traffic | result               | Default |      |           | &#10003;      |
+|                 | duration             | Default |      |           | &#10003;      |
+|                 | src_translated_ip    | Default |      |           | &#10003;      |
+|                 | domain               | Default |      |           | &#10003;      |
+|                 | channel              | Default |      |           | &#10003;      |
+|                 | dest_translated_port | Default |      |           | &#10003;      |
+|                 | dhcp_ip              | Default |      |           | &#10003;      |
+|                 | src_translated_port  | Default |      |           | &#10003;      |
+|                 | operation            | Default |      |           | &#10003;      |
+|                 | aid                  | Default |      |           | &#10003;      |
+|                 | user                 | Default |      | &#10003;  |               |
+|                 | dest_translated_ip   | Default |      |           | &#10003;      |
+| vpn-login       | src_translated_ip    | Default |      |           | &#10003;      |
+| vpn-logout      | src_translated_ip    |         |      | &#10003;  |               |
+

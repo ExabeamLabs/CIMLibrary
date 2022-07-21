@@ -1,52 +1,34 @@
 synology nas
 ============
 
-```JSON
-{"expression":"product = \"synology nas\"",
-"activity_type":{"share-access":{"fields":{"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_unit":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_unit":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_unit":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"share_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "synology nas"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      |           | &#10003;      |
+| share_name |      |           | &#10003;      |
+| domain     |      |           | &#10003;      |
+| user       |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field      | Status  | Core | Detection | Informational |
+| ------------- | ---------- | ------- | ---- | --------- | ------------- |
+| file-delete   | access     | Legacy  |      | &#10003;  |               |
+|               | bytes      |         |      |           |               |
+|               | bytes_unit |         |      |           |               |
+| file-read     | access     | Legacy  |      | &#10003;  |               |
+|               | bytes      |         |      |           |               |
+|               | bytes_unit |         |      |           |               |
+| file-write    | access     | Legacy  |      | &#10003;  |               |
+|               | bytes      |         |      |           |               |
+|               | bytes_unit |         |      |           |               |
+| share-access  | protocol   | Default |      |           | &#10003;      |
+

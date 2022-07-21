@@ -1,123 +1,53 @@
 crowdstrike falcon
 ==================
 
-```JSON
-{"expression":"product = \"crowdstrike falcon\"",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"falcon_host_link":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"sensor_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"image_file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"new_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"parent_process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"aid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "crowdstrike falcon"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path            | Legacy |          |           | &#10003;      |
+|               | process_id           |        |          |           |               |
+|               | falcon_host_link     |        |          |           |               |
+|               | src_ip               | Legacy | &#10003; | &#10003;  |               |
+|               | sensor_id            |        |          |           |               |
+|               | process_guid         |        |          |           |               |
+|               | event_code           |        |          |           |               |
+|               | process_name         | Legacy |          | &#10003;  |               |
+|               | alert_id             | Legacy |          |           | &#10003;      |
+|               | hash_md5             |        |          |           |               |
+|               | operating_system     |        |          |           |               |
+|               | image_file_name      |        |          |           |               |
+|               | dest_port            | Legacy |          | &#10003;  |               |
+|               | new_hash             |        |          |           |               |
+|               | file_name            | Legacy | &#10003; |           |               |
+|               | file_dir             | Legacy |          |           | &#10003;      |
+|               | src_host             | Legacy | &#10003; | &#10003;  |               |
+|               | process_command_line |        |          |           |               |
+|               | target               |        |          |           |               |
+|               | hash_sha256          |        |          |           |               |
+|               | src_port             | Legacy |          |           | &#10003;      |
+|               | file_ext             |        |          |           |               |
+|               | application          |        |          |           |               |
+|               | additional_info      |        |          |           |               |
+|               | old_hash             |        |          |           |               |
+|               | bytes                | Legacy |          | &#10003;  |               |
+|               | dest_ip              | Legacy | &#10003; | &#10003;  |               |
+|               | user_sid             |        |          |           |               |
+|               | dest_host            | Legacy |          | &#10003;  |               |
+|               | event_name           |        |          |           |               |
+|               | parent_process_guid  |        |          |           |               |
+|               | process_path         | Legacy |          | &#10003;  |               |
+|               | aid                  |        |          |           |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+

@@ -1,35 +1,33 @@
 edirectory
 ==========
 
-```JSON
-{"expression":"product = \"edirectory\"",
-"activity_type":{"user-enable":{"fields":{}},
-"user-disable":{"fields":{}},
-"user-password-modify":{"fields":{}},
-"endpoint-authentication":{"fields":{}},
-"user-unlock":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_ou":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "edirectory"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      | &#10003;  |               |
+| user_ou   |      |           | &#10003;      |
+| src_port  |      |           | &#10003;      |
+| protocol  |      |           | &#10003;      |
+| dest_ip   |      | &#10003;  |               |
+| src_host  |      | &#10003;  |               |
+| user      |      | &#10003;  |               |
+| dest_port |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field | Status | Core | Detection | Informational |
+| ----------------------- | ----- | ------ | ---- | --------- | ------------- |
+| endpoint-authentication |       |        |      |           |               |
+| user-disable            |       |        |      |           |               |
+| user-enable             |       |        |      |           |               |
+| user-password-modify    |       |        |      |           |               |
+| user-unlock             |       |        |      |           |               |
+

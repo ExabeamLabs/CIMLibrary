@@ -1,19 +1,25 @@
 postscript
 ==========
 
-```JSON
-{"expression":"product = \"postscript\"",
-"activity_type":{"printer-activity":{"fields":{}}},
-"fields":{"printer_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "postscript"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| printer_name |      |           | &#10003;      |
+| src_host     |      |           | &#10003;      |
+| user         |      |           | &#10003;      |
+| object       |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type    | Field | Status | Core | Detection | Informational |
+| ---------------- | ----- | ------ | ---- | --------- | ------------- |
+| printer-activity |       |        |      |           |               |
+

@@ -1,41 +1,29 @@
 inky anti-phishing
 ==================
 
-```JSON
-{"expression":"product = inky anti-phishing",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"threat_level":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = inky anti-phishing
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | threat_level    |        |          |           |               |
+|               | email_address   |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | sender          | Legacy | &#10003; |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | recipient       |        |          |           |               |
+|               | malware_url     |        |          |           |               |
+|               | email_subject   |        |          |           |               |
+

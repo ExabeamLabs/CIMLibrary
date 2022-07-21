@@ -1,19 +1,22 @@
 skyhigh networks casb
 =====================
 
-```JSON
-{"expression":"product = \"skyhigh networks casb\"",
-"activity_type":{"app-activity":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "skyhigh networks casb"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field  | Status  | Core | Detection | Informational |
+| ------------- | ------ | ------- | ---- | --------- | ------------- |
+| app-activity  | domain | Default |      |           | &#10003;      |
+|               | user   | Default |      | &#10003;  |               |
+|               | object | Default |      |           | &#10003;      |
+

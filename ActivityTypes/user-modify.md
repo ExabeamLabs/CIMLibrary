@@ -25,6 +25,8 @@ user-modify:success
 user-modify:fail
 ----------------
 
-| Field      | Core | Detection | Informational |
-| ---------- | ---- | --------- | ------------- |
-| properties |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
+| properties     |      |           | &#10003;      |

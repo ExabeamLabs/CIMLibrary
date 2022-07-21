@@ -1,13 +1,23 @@
 zebra wireless lan management
 =============================
 
-```JSON
-{"expression":"product = \"zebra wlan management\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "zebra wlan management"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| protocol   |      |           | &#10003;      |
+| event_code |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

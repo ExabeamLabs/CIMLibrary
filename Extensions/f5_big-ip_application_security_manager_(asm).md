@@ -1,8 +1,20 @@
 f5 big-ip application security manager (asm)
 ============================================
 
-```JSON
-{"expression":"product = \"f5 big-ip application security manager (asm)\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "f5 big-ip application security manager (asm)"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

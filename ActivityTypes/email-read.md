@@ -25,6 +25,8 @@ email-read:success
 email-read:fail
 ---------------
 
-| Field         | Core | Detection | Informational |
-| ------------- | ---- | --------- | ------------- |
-| email_subject |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
+| email_subject  |      |           | &#10003;      |

@@ -1,47 +1,29 @@
 fidelis xps
 ===========
 
-```JSON
-{"expression":"product = \"fidelis xps\"",
-"activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-send":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "fidelis xps"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status  | Core | Detection | Informational |
+| ------------- | --------- | ------- | ---- | --------- | ------------- |
+| email-receive | src_ip    | Default |      | &#10003;  |               |
+|               | src_port  | Default |      |           | &#10003;      |
+|               | protocol  | Default |      |           | &#10003;      |
+|               | dest_ip   | Default |      | &#10003;  |               |
+|               | dest_port | Default |      |           | &#10003;      |
+| email-send    | src_ip    | Default |      | &#10003;  |               |
+|               | src_port  | Default |      |           | &#10003;      |
+|               | protocol  | Default |      |           | &#10003;      |
+|               | dest_ip   | Default |      | &#10003;  |               |
+|               | dest_port | Default |      |           | &#10003;      |
+

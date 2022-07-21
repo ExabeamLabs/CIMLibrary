@@ -1,52 +1,35 @@
 event viewer - system
 =====================
 
-```JSON
-{"expression":"product = \"event viewer - system\"",
-"activity_type":{"service-create":{"fields":{"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_start_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"log_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "event viewer - system"
+
+Fields
+------
+
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| log_name   |          |           | &#10003;      |
+| event_code |          |           | &#10003;      |
+| domain     |          | &#10003;  |               |
+| event_name |          |           | &#10003;      |
+| dest_host  | &#10003; | &#10003;  |               |
+| user       | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type  | Field                | Status | Core | Detection | Informational |
+| -------------- | -------------------- | ------ | ---- | --------- | ------------- |
+| service-create | file_path            |        |      |           |               |
+|                | service_command_line |        |      |           |               |
+|                | service_type         |        |      |           |               |
+|                | file_ext             |        |      |           |               |
+|                | file_name            |        |      |           |               |
+|                | file_dir             |        |      |           |               |
+|                | dest_domain          |        |      |           |               |
+|                | service_start_type   | Legacy |      |           | &#10003;      |
+|                | dest_user            |        |      |           |               |
+

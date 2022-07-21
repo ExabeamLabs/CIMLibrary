@@ -1,121 +1,54 @@
 symantec advanced threat protection
 ===================================
 
-```JSON
-{"expression":"product = \"symantec edr\"",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "symantec edr"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      | &#10003;  |               |
+| event_code |      |           | &#10003;      |
+| domain     |      | &#10003;  |               |
+| dest_ip    |      | &#10003;  |               |
+| user       |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type  | Field                | Status  | Core     | Detection | Informational |
+| -------------- | -------------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger  | file_path            | Legacy  |          |           | &#10003;      |
+|                | file_name            | Legacy  | &#10003; |           |               |
+|                | file_dir             | Legacy  |          |           | &#10003;      |
+|                | process_command_line |         |          |           |               |
+|                | src_host             | Legacy  | &#10003; | &#10003;  |               |
+|                | src_ip               | Legacy  | &#10003; | &#10003;  |               |
+|                | src_port             | Legacy  |          |           | &#10003;      |
+|                | file_ext             |         |          |           |               |
+|                | additional_info      |         |          |           |               |
+|                | event_code           |         |          |           |               |
+|                | bytes                |         |          |           |               |
+|                | dest_ip              | Legacy  | &#10003; | &#10003;  |               |
+|                | hash_md5             |         |          |           |               |
+|                | user_sid             |         |          |           |               |
+|                | dest_port            | Legacy  |          | &#10003;  |               |
+| file-delete    | src_port             |         |          |           | &#10003;      |
+|                | bytes                |         |          | &#10003;  |               |
+|                | hash_md5             |         |          | &#10003;  |               |
+|                | src_host             | Legacy  |          | &#10003;  |               |
+|                | dest_port            |         |          |           | &#10003;      |
+| file-write     | src_port             |         |          |           | &#10003;      |
+|                | bytes                |         |          | &#10003;  |               |
+|                | hash_md5             |         |          | &#10003;  |               |
+|                | src_host             |         |          | &#10003;  |               |
+|                | dest_port            |         |          |           | &#10003;      |
+| process-create | src_port             | Default |          |           | &#10003;      |
+|                | bytes                | Default |          |           | &#10003;      |
+|                | hash_md5             | Default |          |           | &#10003;      |
+|                | dest_port            | Default |          |           | &#10003;      |
+

@@ -1,40 +1,41 @@
 onelogin
 ========
 
-```JSON
-{"expression":"product = \"onelogin\"",
-"activity_type":{"policy-create":{"fields":{}},
-"user-delete":{"fields":{}},
-"app-login":{"fields":{}},
-"role-delete":{"fields":{}},
-"policy-modify":{"fields":{}},
-"user-password-modify":{"fields":{}},
-"app-activity":{"fields":{"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-unlock":{"fields":{}},
-"role-create":{"fields":{}},
-"user-modify":{"fields":{}},
-"user-enable":{"fields":{}},
-"user-disable":{"fields":{}},
-"user-lock":{"fields":{}},
-"user-role-assign":{"fields":{}},
-"user-create":{"fields":{}},
-"policy-delete":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "onelogin"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+| event_code      |      |           | &#10003;      |
+| domain          |      |           | &#10003;      |
+| user            |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type        | Field     | Status  | Core | Detection | Informational |
+| -------------------- | --------- | ------- | ---- | --------- | ------------- |
+| app-activity         | dest_user | Default |      | &#10003;  |               |
+| app-login            |           |         |      |           |               |
+| policy-create        |           |         |      |           |               |
+| policy-delete        |           |         |      |           |               |
+| policy-modify        |           |         |      |           |               |
+| role-create          |           |         |      |           |               |
+| role-delete          |           |         |      |           |               |
+| user-create          |           |         |      |           |               |
+| user-delete          |           |         |      |           |               |
+| user-disable         |           |         |      |           |               |
+| user-enable          |           |         |      |           |               |
+| user-lock            |           |         |      |           |               |
+| user-modify          |           |         |      |           |               |
+| user-password-modify |           |         |      |           |               |
+| user-role-assign     |           |         |      |           |               |
+| user-unlock          |           |         |      |           |               |
+

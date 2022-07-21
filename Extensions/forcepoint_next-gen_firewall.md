@@ -1,23 +1,23 @@
 forcepoint next-gen firewall
 ============================
 
-```JSON
-{"expression":"product = \"forcepoint next-gen firewall\"",
-"activity_type":{"network-session":{"fields":{"rule_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "forcepoint next-gen firewall"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field           | Status  | Core | Detection | Informational |
+| --------------- | --------------- | ------- | ---- | --------- | ------------- |
+| network-session | rule_id         | Default |      |           | &#10003;      |
+|                 | bytes_out       | Default |      |           | &#10003;      |
+|                 | additional_info | Default |      |           | &#10003;      |
+|                 | bytes_in        | Default |      |           | &#10003;      |
+

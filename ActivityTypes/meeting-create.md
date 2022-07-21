@@ -21,7 +21,4 @@ meeting-create:success
 There are no fields for this activity type.
 
 
-meeting-create:fail
--------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

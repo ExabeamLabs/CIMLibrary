@@ -1,55 +1,31 @@
 cyberark privileged session manager
 ===================================
 
-```JSON
-{"expression":"product = \"cyberark psm\"",
-"activity_type":{"user-password-read":{"fields":{"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_subtype":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_group":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_subtype":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cyberark psm"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field           | Status  | Core     | Detection | Informational |
+| ------------------ | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity       | additional_info | Default |          |           | &#10003;      |
+|                    | app_group       | Default |          |           | &#10003;      |
+|                    | event_subtype   | Default |          |           | &#10003;      |
+|                    | user            | Default |          | &#10003;  |               |
+| app-login          | src_ip          | Default |          | &#10003;  |               |
+|                    | protocol        | Default |          |           | &#10003;      |
+|                    | event_code      | Default |          |           | &#10003;      |
+|                    | event_subtype   | Default |          |           | &#10003;      |
+|                    | url             | Default |          |           | &#10003;      |
+| user-password-read | event_code      | Legacy  |          |           | &#10003;      |
+|                    | domain          | Legacy  |          |           | &#10003;      |
+|                    | user            | Legacy  | &#10003; |           |               |
+

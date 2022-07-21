@@ -1,15 +1,21 @@
 eyeinspect
 ==========
 
-```JSON
-{"expression":"product = \"eyeinspect\"",
-"activity_type":{"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "eyeinspect"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field      | Status  | Core | Detection | Informational |
+| -------------- | ---------- | ------- | ---- | --------- | ------------- |
+| endpoint-login | src_ip     | Default |      | &#10003;  |               |
+|                | event_name | Default |      |           | &#10003;      |
+

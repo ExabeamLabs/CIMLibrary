@@ -29,4 +29,6 @@ mailbox-item-move:fail
 | Field             | Core | Detection | Informational |
 | ----------------- | ---- | --------- | ------------- |
 | dest_email_folder |      |           | &#10003;      |
+| failure_code      |      | &#10003;  |               |
 | src_email_folder  |      |           | &#10003;      |
+| failure_reason    |      | &#10003;  |               |

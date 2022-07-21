@@ -1,22 +1,23 @@
 trend micro officescan
 ======================
 
-```JSON
-{"expression":"product = \"trend micro officescan\"",
-"activity_type":{"alert-trigger":{"fields":{"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "trend micro officescan"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field    | Status | Core     | Detection | Informational |
+| ------------- | -------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | protocol | Legacy |          | &#10003;  |               |
+|               | domain   |        |          |           |               |
+|               | src_host | Legacy | &#10003; | &#10003;  |               |
+|               | user     | Legacy |          | &#10003;  |               |
+

@@ -1,20 +1,23 @@
 nokia vitalqip
 ==============
 
-```JSON
-{"expression":"product = \"nokia vitalqip\"",
-"activity_type":{"dhcp-session":{"fields":{"dest_mac":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "nokia vitalqip"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status | Core     | Detection | Informational |
+| ------------- | --------- | ------ | -------- | --------- | ------------- |
+| dhcp-session  | dest_mac  |        |          |           |               |
+|               | domain    |        |          |           |               |
+|               | dest_host |        |          |           |               |
+|               | user      | Legacy | &#10003; |           |               |
+

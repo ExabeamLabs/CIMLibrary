@@ -1,91 +1,43 @@
 sailpoint fam
 =============
 
-```JSON
-{"expression":"product = \"sailpoint fam\"",
-"activity_type":{"file-permission-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "sailpoint fam"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field      | Status | Core     | Detection | Informational |
+| ---------------------- | ---------- | ------ | -------- | --------- | ------------- |
+| file-delete            | src_ip     |        |          |           |               |
+|                        | access     | Legacy |          | &#10003;  |               |
+|                        | file_type  | Legacy |          |           | &#10003;      |
+|                        | domain     |        |          |           |               |
+|                        | event_name |        |          |           |               |
+|                        | user       | Legacy | &#10003; | &#10003;  |               |
+| file-permission-modify | src_ip     |        |          |           |               |
+|                        | access     | Legacy |          | &#10003;  |               |
+|                        | file_type  | Legacy |          |           | &#10003;      |
+|                        | domain     |        |          |           |               |
+|                        | event_name |        |          |           |               |
+|                        | user       | Legacy | &#10003; | &#10003;  |               |
+| file-read              | src_ip     |        |          |           |               |
+|                        | access     | Legacy |          | &#10003;  |               |
+|                        | file_type  | Legacy |          |           | &#10003;      |
+|                        | domain     |        |          |           |               |
+|                        | event_name |        |          |           |               |
+|                        | user       | Legacy | &#10003; | &#10003;  |               |
+| file-write             | src_ip     |        |          |           |               |
+|                        | access     | Legacy |          | &#10003;  |               |
+|                        | file_type  | Legacy |          |           | &#10003;      |
+|                        | domain     |        |          |           |               |
+|                        | event_name |        |          |           |               |
+|                        | user       | Legacy | &#10003; | &#10003;  |               |
+

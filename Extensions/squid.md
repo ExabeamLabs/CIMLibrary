@@ -1,52 +1,36 @@
 squid
 =====
 
-```JSON
-{"expression":"product = \"squid\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"hierarchy_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"scan_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"proxy_action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"duration":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"categories":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "squid"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| method         |      |           | &#10003;      |
+| hierarchy_code |      |           | &#10003;      |
+| bytes_in       |      |           | &#10003;      |
+| mime           |      |           | &#10003;      |
+| scan_type      |      |           | &#10003;      |
+| rule           |      |           | &#10003;      |
+| proxy_action   |      |           | &#10003;      |
+| duration       |      |           | &#10003;      |
+| result         |      |           | &#10003;      |
+| bytes_out      |      |           | &#10003;      |
+| action         |      |           | &#10003;      |
+| result_code    |      |           | &#10003;      |
+| categories     |      |           | &#10003;      |
+| category       |      |           | &#10003;      |
+| user           |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

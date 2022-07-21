@@ -1,11 +1,20 @@
 cognitas crosslink
 ==================
 
-```JSON
-{"expression":"product = \"cognitas crosslink\"",
-"activity_type":{"vpn-login":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cognitas crosslink"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field   | Status  | Core | Detection | Informational |
+| ------------- | ------- | ------- | ---- | --------- | ------------- |
+| vpn-login     | dest_ip | Default |      | &#10003;  |               |
+

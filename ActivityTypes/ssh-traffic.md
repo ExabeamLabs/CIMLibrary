@@ -21,7 +21,4 @@ ssh-traffic:success
 There are no fields for this activity type.
 
 
-ssh-traffic:fail
-----------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

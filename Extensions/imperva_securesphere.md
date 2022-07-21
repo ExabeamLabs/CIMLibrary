@@ -1,162 +1,67 @@
 imperva securesphere
 ====================
 
-```JSON
-{"expression":"product = imperva securesphere",
-"activity_type":{"database-login":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"server_group":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_schema":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"server_group":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"database_schema":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-query":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_group":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_schema":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"database-modify":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_group":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_schema":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"database-delete":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = imperva securesphere
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      | &#10003;  |               |
+| domain    |      | &#10003;  |               |
+| dest_ip   |      | &#10003;  |               |
+| dest_host |      |           | &#10003;      |
+| src_host  |      |           | &#10003;      |
+| user      |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field           | Status  | Core     | Detection | Informational |
+| --------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger   | server_group    |         |          |           |               |
+|                 | service_name    |         |          |           |               |
+|                 | src_host        | Legacy  | &#10003; | &#10003;  |               |
+|                 | src_ip          | Legacy  | &#10003; | &#10003;  |               |
+|                 | src_port        | Legacy  |          |           | &#10003;      |
+|                 | db_name         | Legacy  |          | &#10003;  |               |
+|                 | application     |         |          |           |               |
+|                 | additional_info |         |          |           |               |
+|                 | database_schema |         |          |           |               |
+|                 | alert_id        | Legacy  |          |           | &#10003;      |
+|                 | dest_ip         | Legacy  | &#10003; | &#10003;  |               |
+|                 | dest_host       | Legacy  |          | &#10003;  |               |
+|                 | user            | Legacy  |          | &#10003;  |               |
+| database-delete | src_port        |         |          |           |               |
+|                 | db_name         |         |          |           |               |
+|                 | service_name    |         |          |           |               |
+|                 | operation       |         |          |           |               |
+|                 | dest_port       |         |          |           |               |
+| database-login  | src_port        | Default |          |           | &#10003;      |
+|                 | server_group    | Default |          |           | &#10003;      |
+|                 | protocol        | Default |          |           | &#10003;      |
+|                 | db_name         | Default |          |           | &#10003;      |
+|                 | service_name    | Default |          |           | &#10003;      |
+|                 | db_schema       | Default |          |           | &#10003;      |
+|                 | dest_port       | Default |          |           | &#10003;      |
+| database-modify | src_port        |         |          |           |               |
+|                 | server_group    |         |          |           |               |
+|                 | bytes_out       |         |          |           |               |
+|                 | db_name         |         |          |           |               |
+|                 | service_name    |         |          |           |               |
+|                 | operation       |         |          |           |               |
+|                 | db_schema       |         |          |           |               |
+|                 | dest_port       |         |          |           |               |
+| database-query  | src_port        |         |          |           |               |
+|                 | server_group    |         |          |           |               |
+|                 | bytes_out       |         |          |           |               |
+|                 | db_name         |         |          |           |               |
+|                 | service_name    |         |          |           |               |
+|                 | operation       |         |          |           |               |
+|                 | db_schema       |         |          |           |               |
+|                 | dest_port       |         |          |           |               |
+

@@ -1,26 +1,27 @@
 swift
 =====
 
-```JSON
-{"expression":"product = \"swift\"",
-"activity_type":{"app-login":{"fields":{"profiles":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "swift"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+| alert_severity  |      |           | &#10003;      |
+| dest_ip         |      |           | &#10003;      |
+| event_name      |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type        | Field    | Status  | Core | Detection | Informational |
+| -------------------- | -------- | ------- | ---- | --------- | ------------- |
+| app-login            | profiles | Default |      |           | &#10003;      |
+| user-password-modify |          |         |      |           |               |
+

@@ -1,21 +1,23 @@
 forcepoint insider threat
 =========================
 
-```JSON
-{"expression":"product = \"forcepoint insider threat\"",
-"activity_type":{"alert-trigger":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "forcepoint insider threat"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field    | Status | Core     | Detection | Informational |
+| ------------- | -------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | domain   |        |          |           |               |
+|               | src_host | Legacy | &#10003; | &#10003;  |               |
+|               | user     | Legacy |          | &#10003;  |               |
+|               | target   |        |          |           |               |
+

@@ -1,16 +1,24 @@
 secureenvoy multi-factor authentication
 =======================================
 
-```JSON
-{"expression":"product = \"secure envoy\"",
-"activity_type":{"endpoint-authentication":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"server_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "secure envoy"
+
+Fields
+------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| src_ip      |      |           | &#10003;      |
+| server_name |      |           | &#10003;      |
+| dest_ip     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field | Status | Core | Detection | Informational |
+| ----------------------- | ----- | ------ | ---- | --------- | ------------- |
+| endpoint-authentication |       |        |      |           |               |
+

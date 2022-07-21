@@ -1,456 +1,135 @@
 vmware horizon
 ==============
 
-```JSON
-{"expression":"product = \"vmware horizon\"",
-"activity_type":{"folder-delete":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vm_pool-create":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vm_pool-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-delete":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"policy-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"folder-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-create":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"folder-create":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-modify":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"vm_pool-delete":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"configuration-modify":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"role-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-permission-modify":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"vm_pool-endpoint-add":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vm_pool-endpoint-remove":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"policy-delete":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "vmware horizon"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field           | Status  | Core     | Detection | Informational |
+| ----------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-authentication      | src_ip          | Default |          | &#10003;  |               |
+|                         | session_id      | Default |          |           | &#10003;      |
+| configuration-modify    | application     |         |          |           |               |
+|                         | additional_info |         |          |           |               |
+|                         | domain          |         |          |           |               |
+|                         | dest_host       |         |          |           |               |
+|                         | user            |         |          |           |               |
+|                         | operation       |         |          |           |               |
+|                         | object          |         |          |           |               |
+| endpoint-login          | user_id         | Default |          |           | &#10003;      |
+|                         | resource        | Default |          |           | &#10003;      |
+|                         | dest_ip         | Default |          | &#10003;  |               |
+|                         | object_id       | Default |          |           | &#10003;      |
+| folder-create           | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| folder-delete           | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| folder-modify           | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| policy-delete           | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| policy-modify           | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| role-create             | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| role-delete             | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| role-modify             | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| user-modify             | application     |         |          |           |               |
+|                         | additional_info |         |          |           |               |
+|                         | domain          | Legacy  |          |           | &#10003;      |
+|                         | dest_host       | Legacy  |          |           | &#10003;      |
+|                         | user            | Legacy  | &#10003; |           |               |
+|                         | operation       |         |          |           |               |
+|                         | object          |         |          |           |               |
+| user-permission-modify  | application     |         |          |           |               |
+|                         | additional_info |         |          |           |               |
+|                         | domain          | Legacy  |          |           | &#10003;      |
+|                         | dest_host       | Legacy  |          |           | &#10003;      |
+|                         | user            | Legacy  | &#10003; |           |               |
+|                         | operation       |         |          |           |               |
+|                         | object          |         |          |           |               |
+| vm_pool-create          | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| vm_pool-delete          | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| vm_pool-endpoint-add    | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| vm_pool-endpoint-remove | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+| vm_pool-modify          | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | domain          | Default |          |           | &#10003;      |
+|                         | dest_host       | Default |          | &#10003;  |               |
+|                         | user            | Default |          | &#10003;  |               |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | object          | Default |          |           | &#10003;      |
+

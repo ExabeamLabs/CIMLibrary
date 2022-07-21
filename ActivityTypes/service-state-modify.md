@@ -25,6 +25,8 @@ service-state-modify:success
 service-state-modify:fail
 -------------------------
 
-| Field         | Core | Detection | Informational |
-| ------------- | ---- | --------- | ------------- |
-| service_state |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| service_state  |      |           | &#10003;      |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

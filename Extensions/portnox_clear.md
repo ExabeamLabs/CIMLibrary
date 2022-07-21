@@ -1,36 +1,30 @@
 portnox clear
 =============
 
-```JSON
-{"expression":"product = \"portnox clear\"",
-"activity_type":{"endpoint-policy-verify":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-authentication":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "portnox clear"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      |           | &#10003;      |
+| auth_method     |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+| event_code      |      |           | &#10003;      |
+| dest_ip         |      |           | &#10003;      |
+| event_name      |      |           | &#10003;      |
+| policy          |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field  | Status  | Core | Detection | Informational |
+| ----------------------- | ------ | ------- | ---- | --------- | ------------- |
+| endpoint-authentication |        |         |      |           |               |
+| endpoint-policy-verify  | domain | Default |      |           | &#10003;      |
+|                         | user   | Default |      | &#10003;  |               |
+

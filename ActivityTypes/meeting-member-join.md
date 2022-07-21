@@ -22,7 +22,4 @@ meeting-member-join:success
 | ------ | -------- | --------- | ------------- |
 | member | &#10003; | &#10003;  |               |
 
-meeting-member-join:fail
-------------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

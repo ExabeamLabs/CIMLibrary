@@ -1,40 +1,32 @@
 symantec siteminder
 ===================
 
-```JSON
-{"expression":"product = \"siteminder\"",
-"activity_type":{"app-authentication":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_level":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"uri":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "siteminder"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| src_ip              |      |           | &#10003;      |
+| method              |      |           | &#10003;      |
+| group_name          |      |           | &#10003;      |
+| web_domain          |      |           | &#10003;      |
+| resource            |      |           | &#10003;      |
+| auth_level          |      |           | &#10003;      |
+| dest_ip             |      |           | &#10003;      |
+| dest_host           |      |           | &#10003;      |
+| src_host            |      |           | &#10003;      |
+| uri                 |      |           | &#10003;      |
+| authentication_type |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type      | Field | Status | Core | Detection | Informational |
+| ------------------ | ----- | ------ | ---- | --------- | ------------- |
+| app-authentication |       |        |      |           |               |
+

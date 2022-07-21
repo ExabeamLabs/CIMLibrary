@@ -1,213 +1,89 @@
 gcp cloud audit
 ===============
 
-```JSON
-{"expression":"product = \"gcp cloud audit\"",
-"activity_type":{"image-create":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-create":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"snapshot-list":{"fields":{}},
-"user-key-create":{"fields":{}},
-"endpoint-screenshot":{"fields":{}},
-"function-create":{"fields":{}},
-"file-permission-modify":{"fields":{"added_role_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_member":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_member_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_bindings":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"policy_delta":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"removed_role":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_role":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_role_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_member":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_member_type":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-list":{"fields":{}},
-"endpoint-list":{"fields":{}},
-"policy-modify":{"fields":{"added_role_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_member":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_member_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_bindings":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_delta":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_role_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_member":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_member_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-list":{"fields":{}},
-"file-list":{"fields":{}},
-"file-read":{"fields":{}},
-"endpoint-create":{"fields":{"machine_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"subnetwork":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"linked_service_account":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-create":{"fields":{"role_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-modify":{"fields":{"machine_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"modified_keys":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"added_keys":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"role-list":{"fields":{}},
-"role-modify":{"fields":{"role_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removed_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{}},
-"snapshot-create":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{}},
-"disk-attach":{"fields":{"device_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"disk_mode":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-create":{"fields":{}}},
-"fields":{"resource":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"resource_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_first":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"project_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"zone":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_path":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"region":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation_last":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "gcp cloud audit"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| resource        |      | &#10003;  |               |
+| service_name    |      | &#10003;  |               |
+| resource_type   |      |           | &#10003;      |
+| event_category  |      |           | &#10003;      |
+| operation_first |      |           | &#10003;      |
+| src_ip          |      | &#10003;  |               |
+| project_id      |      |           | &#10003;      |
+| zone            |      |           | &#10003;      |
+| domain          |      |           | &#10003;      |
+| resource_path   |      |           | &#10003;      |
+| result_code     |      |           | &#10003;      |
+| resource_name   |      |           | &#10003;      |
+| region          |      | &#10003;  |               |
+| operation_last  |      |           | &#10003;      |
+| user            |      | &#10003;  |               |
+| operation       |      | &#10003;  |               |
+| user_agent      |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field                  | Status  | Core | Detection | Informational |
+| ---------------------- | ---------------------- | ------- | ---- | --------- | ------------- |
+| bucket-create          |                        |         |      |           |               |
+| bucket-list            |                        |         |      |           |               |
+| disk-attach            | device_name            | Default |      |           | &#10003;      |
+|                        | disk_mode              | Default |      |           | &#10003;      |
+|                        | src_resource           | Default |      |           | &#10003;      |
+| disk-create            | src_resource           | Default |      |           | &#10003;      |
+| disk-list              |                        |         |      |           |               |
+| endpoint-create        | machine_type           | Default |      |           | &#10003;      |
+|                        | src_resource           | Default |      |           | &#10003;      |
+|                        | subnetwork             | Default |      |           | &#10003;      |
+|                        | linked_service_account | Default |      |           | &#10003;      |
+| endpoint-list          |                        |         |      |           |               |
+| endpoint-modify        | machine_type           |         |      |           | &#10003;      |
+|                        | modified_keys          |         |      | &#10003;  |               |
+|                        | added_keys             |         |      | &#10003;  |               |
+| endpoint-screenshot    |                        |         |      |           |               |
+| file-list              |                        |         |      |           |               |
+| file-permission-modify | added_role_name        |         |      |           | &#10003;      |
+|                        | added_member           |         |      |           | &#10003;      |
+|                        | added_member_type      |         |      |           | &#10003;      |
+|                        | policy_bindings        |         |      | &#10003;  |               |
+|                        | policy_delta           |         |      | &#10003;  |               |
+|                        | removed_role           |         |      |           | &#10003;      |
+|                        | added_role             |         |      |           | &#10003;      |
+|                        | removed_role_name      |         |      |           | &#10003;      |
+|                        | removed_member         |         |      |           | &#10003;      |
+|                        | removed_member_type    |         |      |           | &#10003;      |
+| file-read              |                        |         |      |           |               |
+| file-write             |                        |         |      |           |               |
+| function-create        |                        |         |      |           |               |
+| image-create           | src_resource           | Default |      |           | &#10003;      |
+| policy-modify          | added_role_name        | Default |      |           | &#10003;      |
+|                        | added_member           | Default |      |           | &#10003;      |
+|                        | added_member_type      | Default |      |           | &#10003;      |
+|                        | policy_bindings        | Default |      |           | &#10003;      |
+|                        | policy_delta           | Default |      |           | &#10003;      |
+|                        | removed_role           | Default |      |           | &#10003;      |
+|                        | added_role             | Default |      |           | &#10003;      |
+|                        | removed_role_name      | Default |      |           | &#10003;      |
+|                        | removed_member         | Default |      |           | &#10003;      |
+|                        | removed_member_type    | Default |      |           | &#10003;      |
+| role-create            | role_permissions       | Default |      |           | &#10003;      |
+|                        | removed_permissions    | Default |      |           | &#10003;      |
+|                        | added_permissions      | Default |      |           | &#10003;      |
+| role-list              |                        |         |      |           |               |
+| role-modify            | role_permissions       | Default |      |           | &#10003;      |
+|                        | removed_permissions    | Default |      |           | &#10003;      |
+|                        | added_permissions      | Default |      |           | &#10003;      |
+| snapshot-create        | src_resource           | Default |      |           | &#10003;      |
+| snapshot-list          |                        |         |      |           |               |
+| user-create            |                        |         |      |           |               |
+| user-key-create        |                        |         |      |           |               |
+

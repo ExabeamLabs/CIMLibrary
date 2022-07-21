@@ -25,6 +25,8 @@ user-role-revoke:success
 user-role-revoke:fail
 ---------------------
 
-| Field     | Core | Detection | Informational |
-| --------- | ---- | --------- | ------------- |
-| role_name |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| role_name      |      |           | &#10003;      |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

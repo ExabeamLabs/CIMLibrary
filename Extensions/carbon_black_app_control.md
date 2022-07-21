@@ -1,347 +1,118 @@
 carbon black app control
 ========================
 
-```JSON
-{"expression":"product = \"carbon black app control\"",
-"activity_type":{"endpoint-unlock":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-lock":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"email_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"peripheral_storage-insert":{"fields":{"activity_details":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"peripheral_storage-remove":{"fields":{"activity_details":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"policy":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{"parent_process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"sensor_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"sensor_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"arg":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"0",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "carbon black app control"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; |           |               |
+
+Activity Types
+--------------
+
+| Activity Type             | Field                       | Status  | Core | Detection | Informational |
+| ------------------------- | --------------------------- | ------- | ---- | --------- | ------------- |
+| app-login                 | src_ip                      | Default |      | &#10003;  |               |
+|                           | dest_ip                     | Default |      | &#10003;  |               |
+|                           | email_domain                | Default |      |           | &#10003;      |
+| endpoint-lock             | src_ip                      |         |      | &#10003;  |               |
+|                           | event_code                  |         |      |           | &#10003;      |
+|                           | dest_ip                     |         |      | &#10003;  |               |
+|                           | src_host                    |         |      | &#10003;  |               |
+| endpoint-login            | src_ip                      | Default |      | &#10003;  |               |
+|                           | event_code                  | Default |      |           | &#10003;      |
+|                           | dest_ip                     | Default |      | &#10003;  |               |
+|                           | src_host                    | Default |      | &#10003;  |               |
+| endpoint-unlock           | src_ip                      |         |      | &#10003;  |               |
+|                           | event_code                  | Legacy  |      |           | &#10003;      |
+|                           | dest_ip                     |         |      | &#10003;  |               |
+|                           | src_host                    |         |      | &#10003;  |               |
+| file-delete               | parent_process_id           |         |      |           | &#10003;      |
+|                           | process_id                  |         |      |           | &#10003;      |
+|                           | parent_process_command_line |         |      | &#10003;  |               |
+|                           | process_guid                |         |      |           | &#10003;      |
+|                           | process_name                | Legacy  |      |           | &#10003;      |
+|                           | alert_id                    |         |      |           | &#10003;      |
+|                           | action                      |         |      | &#10003;  |               |
+|                           | event_name                  |         |      | &#10003;  |               |
+|                           | process_dir                 | Legacy  |      |           | &#10003;      |
+|                           | parent_process_guid         |         |      |           | &#10003;      |
+|                           | process_path                | Legacy  |      |           | &#10003;      |
+|                           | process_command_line        |         |      | &#10003;  |               |
+| file-read                 | parent_process_id           |         |      |           | &#10003;      |
+|                           | process_id                  |         |      |           | &#10003;      |
+|                           | parent_process_command_line |         |      | &#10003;  |               |
+|                           | process_guid                |         |      |           | &#10003;      |
+|                           | process_name                | Legacy  |      |           | &#10003;      |
+|                           | alert_id                    |         |      |           | &#10003;      |
+|                           | action                      |         |      | &#10003;  |               |
+|                           | event_name                  |         |      | &#10003;  |               |
+|                           | process_dir                 | Legacy  |      |           | &#10003;      |
+|                           | parent_process_guid         |         |      |           | &#10003;      |
+|                           | process_path                | Legacy  |      | &#10003;  |               |
+|                           | process_command_line        |         |      | &#10003;  |               |
+| file-write                | parent_process_id           |         |      |           | &#10003;      |
+|                           | process_id                  |         |      |           | &#10003;      |
+|                           | parent_process_command_line |         |      | &#10003;  |               |
+|                           | alert_severity              |         |      | &#10003;  |               |
+|                           | process_dir                 | Legacy  |      |           | &#10003;      |
+|                           | process_command_line        |         |      | &#10003;  |               |
+|                           | src_host                    |         |      | &#10003;  |               |
+|                           | src_ip                      |         |      | &#10003;  |               |
+|                           | process_guid                |         |      |           | &#10003;      |
+|                           | file_hash                   |         |      | &#10003;  |               |
+|                           | additional_info             |         |      |           | &#10003;      |
+|                           | process_name                | Legacy  |      |           | &#10003;      |
+|                           | file_type                   | Legacy  |      |           | &#10003;      |
+|                           | event_code                  |         |      |           | &#10003;      |
+|                           | alert_id                    |         |      |           | &#10003;      |
+|                           | action                      |         |      | &#10003;  |               |
+|                           | event_name                  |         |      | &#10003;  |               |
+|                           | parent_process_guid         |         |      |           | &#10003;      |
+|                           | process_path                | Legacy  |      | &#10003;  |               |
+|                           | policy                      |         |      | &#10003;  |               |
+| network-session           | parent_process_id           | Default |      |           | &#10003;      |
+|                           | process_id                  | Default |      |           | &#10003;      |
+|                           | parent_process_command_line | Default |      |           | &#10003;      |
+|                           | process_dir                 | Default |      |           | &#10003;      |
+|                           | process_command_line        | Default |      |           | &#10003;      |
+|                           | sensor_id                   | Default |      |           | &#10003;      |
+|                           | process_guid                | Default |      |           | &#10003;      |
+|                           | web_domain                  | Default |      |           | &#10003;      |
+|                           | process_name                | Default |      |           | &#10003;      |
+|                           | alert_id                    | Default |      |           | &#10003;      |
+|                           | hash_md5                    | Default |      |           | &#10003;      |
+|                           | action                      | Default |      |           | &#10003;      |
+|                           | event_name                  | Default |      |           | &#10003;      |
+|                           | parent_process_guid         | Default |      |           | &#10003;      |
+|                           | process_path                | Default |      |           | &#10003;      |
+| peripheral_storage-insert | activity_details            |         |      |           | &#10003;      |
+|                           | event_code                  |         |      |           | &#10003;      |
+|                           | process_name                | Legacy  |      |           | &#10003;      |
+|                           | dest_ip                     |         |      | &#10003;  |               |
+|                           | event_name                  |         |      |           | &#10003;      |
+|                           | process_dir                 |         |      | &#10003;  |               |
+|                           | process_path                | Legacy  |      |           | &#10003;      |
+| peripheral_storage-remove | activity_details            |         |      |           | &#10003;      |
+|                           | dest_ip                     |         |      | &#10003;  |               |
+|                           | event_name                  |         |      |           | &#10003;      |
+| process-create            | sensor_id                   | Default |      |           | &#10003;      |
+|                           | file_path                   | Default |      |           | &#10003;      |
+|                           | process_guid                | Default |      |           | &#10003;      |
+|                           | additional_info             | Default |      |           | &#10003;      |
+|                           | file_name                   | Default |      |           | &#10003;      |
+|                           | alert_id                    | Default |      |           | &#10003;      |
+|                           | hash_md5                    | Default |      |           | &#10003;      |
+|                           | arg                         | Default |      |           | &#10003;      |
+|                           | dest_ip                     | Default |      | &#10003;  |               |
+|                           | action                      | Default |      |           | &#10003;      |
+|                           | event_name                  | Default |      |           | &#10003;      |
+|                           | policy                      | Default |      |           | &#10003;      |
+

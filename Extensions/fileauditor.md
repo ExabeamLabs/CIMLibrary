@@ -1,51 +1,31 @@
 fileauditor
 ===========
 
-```JSON
-{"expression":"product = \"fileauditor\"",
-"activity_type":{"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "fileauditor"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field    | Status | Core     | Detection | Informational |
+| ------------- | -------- | ------ | -------- | --------- | ------------- |
+| file-delete   | src_ip   |        |          |           |               |
+|               | access   | Legacy |          | &#10003;  |               |
+|               | src_host | Legacy |          | &#10003;  |               |
+|               | user     | Legacy | &#10003; | &#10003;  |               |
+| file-read     | src_ip   |        |          |           |               |
+|               | access   | Legacy |          | &#10003;  |               |
+|               | src_host | Legacy |          | &#10003;  |               |
+|               | user     | Legacy | &#10003; | &#10003;  |               |
+| file-write    | src_ip   |        |          |           |               |
+|               | access   | Legacy |          | &#10003;  |               |
+|               | src_host |        |          |           |               |
+|               | user     | Legacy | &#10003; | &#10003;  |               |
+

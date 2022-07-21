@@ -1,97 +1,43 @@
 symantec blue coat proxysg
 ==========================
 
-```JSON
-{"expression":"product = \"blue coat proxysg\"",
-"activity_type":{"network-traffic":{"fields":{"referrer":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"categories":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"proxy_action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_user":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"categories":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"proxy_action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"proxy_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "blue coat proxysg"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_host |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field           | Status  | Core | Detection | Informational |
+| --------------- | --------------- | ------- | ---- | --------- | ------------- |
+| http-session    | country         | Default |      |           | &#10003;      |
+|                 | protocol        | Default |      |           | &#10003;      |
+|                 | app_user        | Default |      |           | &#10003;      |
+|                 | additional_info | Default |      |           | &#10003;      |
+|                 | domain          | Default |      |           | &#10003;      |
+|                 | browser         | Default |      |           | &#10003;      |
+|                 | resource_id     | Default |      |           | &#10003;      |
+|                 | categories      | Default |      |           | &#10003;      |
+|                 | proxy_action    | Default |      |           | &#10003;      |
+|                 | proxy_ip        | Default |      |           | &#10003;      |
+| network-traffic | referrer        | Default |      |           | &#10003;      |
+|                 | method          | Default |      |           | &#10003;      |
+|                 | bytes_out       | Default |      |           | &#10003;      |
+|                 | bytes_in        | Default |      |           | &#10003;      |
+|                 | mime            | Default |      |           | &#10003;      |
+|                 | domain          | Default |      |           | &#10003;      |
+|                 | action          | Default |      |           | &#10003;      |
+|                 | result_code     | Default |      |           | &#10003;      |
+|                 | categories      | Default |      |           | &#10003;      |
+|                 | category        | Default |      |           | &#10003;      |
+|                 | user            | Default |      | &#10003;  |               |
+|                 | proxy_action    | Default |      |           | &#10003;      |
+

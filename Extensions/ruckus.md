@@ -1,19 +1,25 @@
 ruckus
 ======
 
-```JSON
-{"expression":"product = \"ruckus\"",
-"activity_type":{"endpoint-authentication":{"fields":{}}},
-"fields":{"src_mac":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"wifiap":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"ssid":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "ruckus"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_mac  |      |           | &#10003;      |
+| src_host |      |           | &#10003;      |
+| wifiap   |      |           | &#10003;      |
+| ssid     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field | Status | Core | Detection | Informational |
+| ----------------------- | ----- | ------ | ---- | --------- | ------------- |
+| endpoint-authentication |       |        |      |           |               |
+

@@ -1,21 +1,27 @@
 logbinder for sharepoint
 ========================
 
-```JSON
-{"expression":"product = \"logbinder for sharepoint\"",
-"activity_type":{"file-write":{"fields":{}},
-"file-read":{"fields":{}},
-"file-search":{"fields":{}}},
-"fields":{"access":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "logbinder for sharepoint"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| access          |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+| domain          |      |           | &#10003;      |
+| user            |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| file-read     |       |        |      |           |               |
+| file-search   |       |        |      |           |               |
+| file-write    |       |        |      |           |               |
+

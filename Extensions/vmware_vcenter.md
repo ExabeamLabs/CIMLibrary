@@ -1,19 +1,22 @@
 vmware vcenter
 ==============
 
-```JSON
-{"expression":"product = \"vmware vcenter\"",
-"activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "vmware vcenter"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field     | Status  | Core | Detection | Informational |
+| -------------- | --------- | ------- | ---- | --------- | ------------- |
+| app-activity   | src_ip    | Default |      | &#10003;  |               |
+|                | user      | Default |      | &#10003;  |               |
+| endpoint-login | operation | Default |      |           | &#10003;      |
+

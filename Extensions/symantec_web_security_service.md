@@ -1,23 +1,23 @@
 symantec web security service
 =============================
 
-```JSON
-{"expression":"product = \"symantec wss\"",
-"activity_type":{"http-session":{"fields":{"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"proxy_action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "symantec wss"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status  | Core | Detection | Informational |
+| ------------- | ------------ | ------- | ---- | --------- | ------------- |
+| http-session  | user_id      | Default |      |           | &#10003;      |
+|               | process_name | Default |      |           | &#10003;      |
+|               | domain       | Default |      |           | &#10003;      |
+|               | proxy_action | Default |      |           | &#10003;      |
+

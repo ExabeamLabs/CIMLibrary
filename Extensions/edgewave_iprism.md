@@ -1,11 +1,20 @@
 edgewave iprism
 ===============
 
-```JSON
-{"expression":"product = \"edgewave iprism\"",
-"activity_type":{"http-session":{"fields":{"proxy_action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "edgewave iprism"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status  | Core | Detection | Informational |
+| ------------- | ------------ | ------- | ---- | --------- | ------------- |
+| http-session  | proxy_action | Default |      |           | &#10003;      |
+

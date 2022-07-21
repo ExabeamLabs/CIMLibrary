@@ -1,59 +1,38 @@
 mssql
 =====
 
-```JSON
-{"expression":"product = \"mssql\"",
-"activity_type":{"database-login":{"fields":{}},
-"database-query":{"fields":{"schema_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"table_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-delete":{"fields":{"operation":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"db_name":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "mssql"
+
+Fields
+------
+
+| Field        | Core     | Detection | Informational |
+| ------------ | -------- | --------- | ------------- |
+| service_name |          |           | &#10003;      |
+| dest_user    |          | &#10003;  |               |
+| src_host     | &#10003; | &#10003;  |               |
+| src_ip       |          | &#10003;  |               |
+| result       |          | &#10003;  |               |
+| db_name      | &#10003; | &#10003;  |               |
+| user_id      |          |           | &#10003;      |
+| event_code   |          |           | &#10003;      |
+| dest_domain  |          | &#10003;  |               |
+| dest_host    |          | &#10003;  |               |
+| event_name   |          |           | &#10003;      |
+| dest_user_id |          |           | &#10003;      |
+| user         | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field       | Status | Core | Detection | Informational |
+| --------------- | ----------- | ------ | ---- | --------- | ------------- |
+| database-delete | operation   |        |      | &#10003;  |               |
+| database-login  |             |        |      |           |               |
+| database-query  | schema_name |        |      | &#10003;  |               |
+|                 | table_name  | Legacy |      |           | &#10003;      |
+|                 | operation   |        |      | &#10003;  |               |
+

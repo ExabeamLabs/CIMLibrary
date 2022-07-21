@@ -1,43 +1,29 @@
 juniper networks srx
 ====================
 
-```JSON
-{"expression":"product = juniper networks srx",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = juniper networks srx
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status | Core     | Detection | Informational |
+| ------------- | ------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger | result       |        |          |           |               |
+|               | rule_id      |        |          |           |               |
+|               | src_ip       | Legacy | &#10003; | &#10003;  |               |
+|               | src_port     | Legacy |          |           | &#10003;      |
+|               | protocol     | Legacy |          | &#10003;  |               |
+|               | application  |        |          |           |               |
+|               | service_name |        |          |           |               |
+|               | dest_ip      | Legacy | &#10003; | &#10003;  |               |
+|               | user         | Legacy |          | &#10003;  |               |
+|               | dest_port    | Legacy |          | &#10003;  |               |
+

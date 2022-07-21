@@ -29,6 +29,8 @@ process-memory-allocate:fail
 
 | Field             | Core | Detection | Informational |
 | ----------------- | ---- | --------- | ------------- |
+| failure_code      |      | &#10003;  |               |
 | memory_address    |      |           | &#10003;      |
+| failure_reason    |      | &#10003;  |               |
 | memory_size       |      |           | &#10003;      |
 | memory_protection |      |           | &#10003;      |

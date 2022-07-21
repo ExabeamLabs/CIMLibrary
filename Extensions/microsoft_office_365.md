@@ -1,33 +1,26 @@
 microsoft office 365
 ====================
 
-```JSON
-{"expression":"product = microsoft office 365",
-"activity_type":{"alert-trigger":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft office 365
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | additional_info |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | domain          |        |          |           |               |
+|               | dest_host       | Legacy |          | &#10003;  |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | user            | Legacy |          | &#10003;  |               |
+

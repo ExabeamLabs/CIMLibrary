@@ -1,39 +1,27 @@
 filesite
 ========
 
-```JSON
-{"expression":"product = \"filesite\"",
-"activity_type":{"app-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "filesite"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | file_path       | Default |      |           | &#10003;      |
+|               | resource        | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+|               | file_name       | Default |      |           | &#10003;      |
+|               | file_dir        | Default |      |           | &#10003;      |
+|               | dest_host       | Default |      | &#10003;  |               |
+|               | user            | Default |      | &#10003;  |               |
+|               | object          | Default |      |           | &#10003;      |
+

@@ -1,11 +1,20 @@
 sophos utm
 ==========
 
-```JSON
-{"expression":"product = \"sophos utm\"",
-"activity_type":{"http-session":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "sophos utm"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field  | Status  | Core | Detection | Informational |
+| ------------- | ------ | ------- | ---- | --------- | ------------- |
+| http-session  | domain | Default |      |           | &#10003;      |
+

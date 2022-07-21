@@ -1,72 +1,39 @@
 microsoft graph
 ===============
 
-```JSON
-{"expression":"product = microsoft graph",
-"activity_type":{"alert-trigger":{"fields":{"country":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"city":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"more_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"token_issuer_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"state":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft graph
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status | Core     | Detection | Informational |
+| ------------- | ----------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | country           |        |          |           |               |
+|               | city              |        |          |           |               |
+|               | more_info         |        |          |           |               |
+|               | result            |        |          |           |               |
+|               | src_ip            | Legacy | &#10003; | &#10003;  |               |
+|               | token_issuer_type |        |          |           |               |
+|               | email_address     |        |          |           |               |
+|               | full_name         |        |          |           |               |
+|               | application       |        |          |           |               |
+|               | additional_info   |        |          |           |               |
+|               | sender            | Legacy | &#10003; |           |               |
+|               | alert_id          | Legacy |          |           | &#10003;      |
+|               | action            | Legacy |          |           | &#10003;      |
+|               | email_domain      |        |          |           |               |
+|               | threat_type       |        |          |           |               |
+|               | state             |        |          |           |               |
+|               | operation         |        |          |           |               |
+|               | email_subject     |        |          |           |               |
+|               | user              | Legacy |          | &#10003;  |               |
+|               | user_agent        |        |          |           |               |
+

@@ -1,51 +1,32 @@
 kaspersky endpoint security for business
 ========================================
 
-```JSON
-{"expression":"product = \"kaspersky endpoint security for business\"",
-"activity_type":{"alert-trigger":{"fields":{"device_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"peripheral_storage-insert":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "kaspersky endpoint security for business"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type             | Field           | Status | Core     | Detection | Informational |
+| ------------------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger             | device_ip       |        |          |           |               |
+|                           | result          |        |          |           |               |
+|                           | additional_info |        |          |           |               |
+|                           | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|                           | domain          |        |          |           |               |
+|                           | action          | Legacy |          |           | &#10003;      |
+|                           | dest_host       | Legacy |          | &#10003;  |               |
+|                           | device_type     |        |          |           |               |
+|                           | operation       |        |          |           |               |
+|                           | user            | Legacy |          | &#10003;  |               |
+| peripheral_storage-insert | src_ip          |        |          |           |               |
+|                           | user            | Legacy | &#10003; | &#10003;  |               |
+|                           | operation       |        |          |           |               |
+

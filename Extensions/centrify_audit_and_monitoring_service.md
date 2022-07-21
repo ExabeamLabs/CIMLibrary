@@ -1,55 +1,34 @@
 centrify audit and monitoring service
 =====================================
 
-```JSON
-{"expression":"product = \"centrify audit and monitoring service\"",
-"activity_type":{"file-write":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "centrify audit and monitoring service"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field      | Status | Core     | Detection | Informational |
+| ------------- | ---------- | ------ | -------- | --------- | ------------- |
+| file-delete   | process_id |        |          |           | &#10003;      |
+|               | protocol   |        |          |           | &#10003;      |
+|               | domain     |        |          |           | &#10003;      |
+|               | event_name |        |          |           | &#10003;      |
+|               | user       | Legacy | &#10003; | &#10003;  |               |
+| file-read     | process_id |        |          |           | &#10003;      |
+|               | protocol   |        |          |           | &#10003;      |
+|               | domain     |        |          |           | &#10003;      |
+|               | event_name |        |          |           | &#10003;      |
+|               | user       | Legacy | &#10003; | &#10003;  |               |
+| file-write    | process_id |        |          |           | &#10003;      |
+|               | protocol   |        |          |           | &#10003;      |
+|               | domain     |        |          |           | &#10003;      |
+|               | event_name |        |          |           | &#10003;      |
+|               | user       | Legacy | &#10003; | &#10003;  |               |
+

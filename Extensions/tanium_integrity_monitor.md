@@ -1,71 +1,37 @@
 tanium integrity monitor
 ========================
 
-```JSON
-{"expression":"product = \"tanium integrity monitor\"",
-"activity_type":{"file-permission-modify":{"fields":{"proess_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"proess_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"proess_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "tanium integrity monitor"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field        | Status | Core     | Detection | Informational |
+| ---------------------- | ------------ | ------ | -------- | --------- | ------------- |
+| file-delete            | proess_path  |        |          |           |               |
+|                        | access       | Legacy |          | &#10003;  |               |
+|                        | process_name | Legacy |          |           | &#10003;      |
+|                        | event_name   |        |          |           |               |
+|                        | src_host     | Legacy |          | &#10003;  |               |
+|                        | user         | Legacy | &#10003; | &#10003;  |               |
+| file-permission-modify | proess_path  |        |          |           |               |
+|                        | access       | Legacy |          | &#10003;  |               |
+|                        | process_name | Legacy |          |           | &#10003;      |
+|                        | event_name   |        |          |           |               |
+|                        | src_host     |        |          |           |               |
+|                        | user         | Legacy | &#10003; | &#10003;  |               |
+| file-write             | proess_path  |        |          |           |               |
+|                        | access       | Legacy |          | &#10003;  |               |
+|                        | process_name | Legacy |          |           | &#10003;      |
+|                        | event_name   |        |          |           |               |
+|                        | src_host     |        |          |           |               |
+|                        | user         | Legacy | &#10003; | &#10003;  |               |
+

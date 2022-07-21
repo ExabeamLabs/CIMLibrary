@@ -29,6 +29,8 @@ endpoint-authentication:fail
 
 | Field               | Core     | Detection | Informational |
 | ------------------- | -------- | --------- | ------------- |
+| failure_code        |          | &#10003;  |               |
 | domain              |          |           |               |
+| failure_reason      |          | &#10003;  |               |
 | user                | &#10003; | &#10003;  |               |
 | authentication_type |          | &#10003;  |               |

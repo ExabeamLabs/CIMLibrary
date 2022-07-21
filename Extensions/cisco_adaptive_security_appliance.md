@@ -1,327 +1,106 @@
 cisco adaptive security appliance
 =================================
 
-```JSON
-{"expression":"product = \"cisco asa\"",
-"activity_type":{"dns-response":{"fields":{"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"priority":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-download":{"fields":{"priority":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"policy":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-traffic":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"duration":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"connection_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-authentication":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"client_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"client_system_version":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"priority":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"group_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_sec":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_min":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_hour":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_day":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"event_code":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco asa"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| event_code |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type           | Field                 | Status  | Core     | Detection | Informational |
+| ----------------------- | --------------------- | ------- | -------- | --------- | ------------- |
+| app-authentication      | result                | Default |          |           | &#10003;      |
+|                         | src_mac               | Default |          |           | &#10003;      |
+|                         | src_interface         | Default |          |           | &#10003;      |
+|                         | event_name            | Default |          |           | &#10003;      |
+| app-login               | src_ip                | Default |          | &#10003;  |               |
+|                         | auth                  | Default |          |           | &#10003;      |
+|                         | additional_info       | Default |          |           | &#10003;      |
+|                         | dest_ip               | Default | &#10003; | &#10003;  |               |
+|                         | dest_host             | Default |          | &#10003;  |               |
+|                         | event_name            | Default |          |           | &#10003;      |
+|                         | priority              | Default |          |           | &#10003;      |
+| database-login          | src_ip                | Default |          | &#10003;  |               |
+|                         | event_name            | Default |          |           | &#10003;      |
+|                         | priority              | Default |          |           | &#10003;      |
+| dns-response            | event_name            |         |          | &#10003;  |               |
+|                         | priority              |         |          | &#10003;  |               |
+| endpoint-authentication | src_ip                | Default |          | &#10003;  |               |
+|                         | dest_ip               | Default |          | &#10003;  |               |
+|                         | event_name            | Default |          |           | &#10003;      |
+|                         | priority              | Default |          |           | &#10003;      |
+| file-download           | priority              |         |          | &#10003;  |               |
+|                         | src_ip                |         |          | &#10003;  |               |
+|                         | src_port              |         |          | &#10003;  |               |
+|                         | protocol              |         |          | &#10003;  |               |
+|                         | web_domain            |         |          | &#10003;  |               |
+|                         | bytes                 | Legacy  |          | &#10003;  |               |
+|                         | dest_ip               |         | &#10003; | &#10003;  |               |
+|                         | action                |         |          | &#10003;  |               |
+|                         | user                  | Legacy  | &#10003; | &#10003;  |               |
+|                         | dest_port             |         |          | &#10003;  |               |
+|                         | user_agent            |         |          | &#10003;  |               |
+|                         | policy                |         |          | &#10003;  |               |
+|                         | direction             |         |          | &#10003;  |               |
+| http-session            | domain                | Default |          |           | &#10003;      |
+|                         | event_name            | Default |          |           | &#10003;      |
+| network-traffic         | src_interface         | Default |          |           | &#10003;      |
+|                         | dest_interface        | Default |          |           | &#10003;      |
+|                         | dest_translated_host  | Default |          |           | &#10003;      |
+|                         | src_translated_host   | Default |          |           | &#10003;      |
+|                         | src_host              | Default |          | &#10003;  |               |
+|                         | dest_translated_ip    | Default |          |           | &#10003;      |
+|                         | src_translated_ip     | Default |          |           | &#10003;      |
+|                         | duration              | Default |          |           | &#10003;      |
+|                         | connection_id         | Default |          |           | &#10003;      |
+|                         | domain                | Default |          |           | &#10003;      |
+|                         | dest_host             | Default |          | &#10003;  |               |
+|                         | dest_translated_port  | Default |          |           | &#10003;      |
+|                         | event_name            | Default |          |           | &#10003;      |
+|                         | src_translated_port   | Default |          |           | &#10003;      |
+|                         | user                  | Default |          | &#10003;  |               |
+|                         | operation             | Default |          |           | &#10003;      |
+|                         | direction             | Default |          |           | &#10003;      |
+| process-create          | src_ip                | Default |          | &#10003;  |               |
+|                         | event_name            | Default |          |           | &#10003;      |
+|                         | process_command_line  | Default |          |           | &#10003;      |
+|                         | priority              | Default |          |           | &#10003;      |
+|                         | user                  | Default | &#10003; | &#10003;  |               |
+| vpn-authentication      | dest_ip               | Default |          | &#10003;  |               |
+|                         | dest_host             | Default |          | &#10003;  |               |
+|                         | event_name            | Default |          |           | &#10003;      |
+| vpn-login               | src_mac               | Default |          |           | &#10003;      |
+|                         | src_interface         | Default |          |           | &#10003;      |
+|                         | client_system         | Default |          |           | &#10003;      |
+|                         | client_system_version | Default |          |           | &#10003;      |
+|                         | group_name            | Default |          |           | &#10003;      |
+|                         | src_host              | Default |          | &#10003;  |               |
+|                         | priority              | Default |          |           | &#10003;      |
+|                         | result                | Default |          |           | &#10003;      |
+|                         | src_translated_ip     | Default |          |           | &#10003;      |
+|                         | dest_ip               | Default |          | &#10003;  |               |
+|                         | dest_host             | Default |          | &#10003;  |               |
+|                         | event_name            | Default |          |           | &#10003;      |
+|                         | realm                 | Default |          |           | &#10003;      |
+| vpn-logout              | src_translated_ip     |         |          | &#10003;  |               |
+|                         | bytes_out             | Legacy  |          | &#10003;  |               |
+|                         | group_name            |         |          | &#10003;  |               |
+|                         | bytes_in              |         |          | &#10003;  |               |
+|                         | session_sec           |         |          |           | &#10003;      |
+|                         | dest_ip               |         |          | &#10003;  |               |
+|                         | session_min           |         |          |           | &#10003;      |
+|                         | dest_host             | Legacy  |          |           | &#10003;      |
+|                         | realm                 | Legacy  |          |           | &#10003;      |
+|                         | priority              |         |          | &#10003;  |               |
+|                         | session_hour          |         |          |           | &#10003;      |
+|                         | session_day           |         |          |           | &#10003;      |
+

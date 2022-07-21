@@ -1,51 +1,30 @@
 ccure building management system
 ================================
 
-```JSON
-{"expression":"product = \"ccure building management system\"",
-"activity_type":{"app-login":{"fields":{"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"physical_location-access":{"fields":{"employee_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"door_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"company":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"employee_status":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"department":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"employee_title":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "ccure building management system"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field           | Status  | Core | Detection | Informational |
+| ------------------------ | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity             | additional_info | Default |      |           | &#10003;      |
+|                          | user            | Default |      | &#10003;  |               |
+|                          | object          | Default |      |           | &#10003;      |
+| app-login                | event_name      | Default |      |           | &#10003;      |
+| physical_location-access | employee_type   | Default |      |           | &#10003;      |
+|                          | door_name       | Default |      |           | &#10003;      |
+|                          | event_name      | Default |      |           | &#10003;      |
+|                          | company         | Default |      |           | &#10003;      |
+|                          | employee_status | Default |      |           | &#10003;      |
+|                          | department      | Default |      |           | &#10003;      |
+|                          | employee_title  | Default |      |           | &#10003;      |
+

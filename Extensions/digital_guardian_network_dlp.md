@@ -1,52 +1,31 @@
 digital guardian network dlp
 ============================
 
-```JSON
-{"expression":"product = \"digital guardian network dlp\"",
-"activity_type":{"email-send":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "digital guardian network dlp"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core     | Detection | Informational |
+| ------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger | result          |         |          |           |               |
+|               | src_ip          | Legacy  | &#10003; | &#10003;  |               |
+|               | src_port        | Legacy  |          |           | &#10003;      |
+|               | protocol        | Legacy  |          | &#10003;  |               |
+|               | additional_info |         |          |           |               |
+|               | file_name       | Legacy  | &#10003; |           |               |
+|               | dest_ip         | Legacy  | &#10003; | &#10003;  |               |
+|               | user            | Legacy  |          | &#10003;  |               |
+|               | target          |         |          |           |               |
+| email-send    | src_ip          | Default |          | &#10003;  |               |
+|               | dest_ip         | Default |          | &#10003;  |               |
+|               | direction       | Default |          |           | &#10003;      |
+

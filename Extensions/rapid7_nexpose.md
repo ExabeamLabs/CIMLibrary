@@ -1,38 +1,28 @@
 rapid7 nexpose
 ==============
 
-```JSON
-{"expression":"product = rapid7 nexpose",
-"activity_type":{"alert-trigger":{"fields":{"sensor_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = rapid7 nexpose
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | sensor_id       |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | process         |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | process_name    | Legacy |          | &#10003;  |               |
+|               | hash_md5        |        |          |           |               |
+|               | malware_url     |        |          |           |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | user            | Legacy |          | &#10003;  |               |
+

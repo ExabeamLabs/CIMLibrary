@@ -1,38 +1,30 @@
 infowatch dlp
 =============
 
-```JSON
-{"expression":"product = \"infowatch dlp\"",
-"activity_type":{"app-login":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"http-session":{"fields":{}},
-"file-write":{"fields":{"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"printer-activity":{"fields":{"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "infowatch dlp"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      | &#10003;  |               |
+| domain |      | &#10003;  |               |
+| user   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type    | Field        | Status  | Core     | Detection | Informational |
+| ---------------- | ------------ | ------- | -------- | --------- | ------------- |
+| app-login        | dest_ip      | Default |          | &#10003;  |               |
+| file-write       | src_host     |         |          | &#10003;  |               |
+| http-session     |              |         |          |           |               |
+| printer-activity | file_name    | Legacy  | &#10003; | &#10003;  |               |
+|                  | dest_host    |         |          |           |               |
+|                  | src_host     | Legacy  |          |           | &#10003;      |
+|                  | printer_name | Legacy  | &#10003; | &#10003;  |               |
+

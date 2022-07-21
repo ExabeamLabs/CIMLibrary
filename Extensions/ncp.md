@@ -1,17 +1,23 @@
 ncp
 ===
 
-```JSON
-{"expression":"product = \"ncp\"",
-"activity_type":{"vpn-authentication":{"fields":{}},
-"vpn-login":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "ncp"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field   | Status  | Core | Detection | Informational |
+| ------------------ | ------- | ------- | ---- | --------- | ------------- |
+| vpn-authentication |         |         |      |           |               |
+| vpn-login          | dest_ip | Default |      | &#10003;  |               |
+|                    | realm   | Default |      |           | &#10003;      |
+| vpn-logout         |         |         |      |           |               |
+

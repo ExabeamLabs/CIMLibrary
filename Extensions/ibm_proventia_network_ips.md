@@ -1,31 +1,25 @@
 ibm proventia network ips
 =========================
 
-```JSON
-{"expression":"product = ibm proventia network ips",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = ibm proventia network ips
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status | Core     | Detection | Informational |
+| ------------- | --------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip    | Legacy | &#10003; | &#10003;  |               |
+|               | src_port  | Legacy |          |           | &#10003;      |
+|               | protocol  | Legacy |          | &#10003;  |               |
+|               | dest_ip   | Legacy | &#10003; | &#10003;  |               |
+|               | action    | Legacy |          |           | &#10003;      |
+|               | dest_port | Legacy |          | &#10003;  |               |
+

@@ -1,26 +1,24 @@
 imperva data  security
 ======================
 
-```JSON
-{"expression":"product = imperva data  security",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"data":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = imperva data  security
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status | Core     | Detection | Informational |
+| ------------- | ------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip       | Legacy | &#10003; | &#10003;  |               |
+|               | data         |        |          |           |               |
+|               | process_name | Legacy |          | &#10003;  |               |
+|               | dest_ip      | Legacy | &#10003; | &#10003;  |               |
+|               | user         | Legacy |          | &#10003;  |               |
+

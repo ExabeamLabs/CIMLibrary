@@ -1,62 +1,35 @@
 mvision
 =======
 
-```JSON
-{"expression":"product = \"mvision\"",
-"activity_type":{"alert-trigger":{"fields":{"rule":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"printer_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "mvision"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | rule            |        |          |           |               |
+|               | url             |        |          |           |               |
+|               | target          |        |          |           |               |
+|               | result          |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | additional_info |        |          |           |               |
+|               | sender          | Legacy | &#10003; |           |               |
+|               | bytes           | Legacy |          | &#10003;  |               |
+|               | process_name    | Legacy |          | &#10003;  |               |
+|               | recipients      |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | domain          |        |          |           |               |
+|               | printer_name    |        |          |           |               |
+|               | email_subject   |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+

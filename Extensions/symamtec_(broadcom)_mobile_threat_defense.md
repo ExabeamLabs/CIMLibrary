@@ -1,39 +1,29 @@
 symamtec (broadcom) mobile threat defense
 =========================================
 
-```JSON
-{"expression":"product = symamtec (broadcom) mobile threat defense",
-"activity_type":{"alert-trigger":{"fields":{"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_model":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"product_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = symamtec (broadcom) mobile threat defense
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status | Core     | Detection | Informational |
+| ------------- | ---------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | device_name      |        |          |           |               |
+|               | email_address    |        |          |           |               |
+|               | full_name        |        |          |           |               |
+|               | device_model     |        |          |           |               |
+|               | additional_info  |        |          |           |               |
+|               | alert_id         | Legacy |          |           | &#10003;      |
+|               | hash_md5         |        |          |           |               |
+|               | operating_system |        |          |           |               |
+|               | src_host         | Legacy | &#10003; | &#10003;  |               |
+|               | product_name     |        |          |           |               |
+

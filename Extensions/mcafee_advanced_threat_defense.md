@@ -1,46 +1,30 @@
 mcafee advanced threat defense
 ==============================
 
-```JSON
-{"expression":"product = \"mcafee advanced threat defense\"",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_unit":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "mcafee advanced threat defense"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result          |        |          |           |               |
+|               | file_path       | Legacy |          |           | &#10003;      |
+|               | device_id       |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | bytes           | Legacy |          | &#10003;  |               |
+|               | file_name       | Legacy | &#10003; |           |               |
+|               | process_name    | Legacy |          | &#10003;  |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | bytes_unit      |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | target          |        |          |           |               |
+

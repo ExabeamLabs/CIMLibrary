@@ -1,916 +1,308 @@
 code42 incydr
 =============
 
-```JSON
-{"expression":"product = \"code42 incydr\"",
-"activity_type":{"file-download":{"fields":{"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tab_title":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sync_destination":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_from":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_volume_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_created":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"directory_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"exposure_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"tab_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_capacity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_partition_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_modified":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_bus_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_policy_names":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_serial_number":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"cloud_drive_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_size":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"private_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared_with":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"detection_source_alias":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"actor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_exposure_changed_to":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_uid":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"email-send":{"fields":{"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_source":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-upload":{"fields":{"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tab_title":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sync_destination":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_from":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_volume_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_created":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"directory_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"exposure_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"tab_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_capacity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_partition_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_modified":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_bus_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_policy_names":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_serial_number":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"cloud_drive_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_size":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"private_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared_with":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"detection_source_alias":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"actor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_exposure_changed_to":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_uid":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"peripheral_storage-insert":{"fields":{"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"usb_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"drive_letter":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"vendor_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"usb_serial_number":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tab_title":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"sync_destination":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_from":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_volume_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_created":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"directory_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"exposure_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tab_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_capacity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_partition_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_modified":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_bus_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_policy_names":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_serial_number":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"cloud_drive_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_size":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"removable_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"private_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared_with":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"detection_source_alias":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"actor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_exposure_changed_to":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"removable_media_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_uid":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tab_title":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"sync_destination":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_from":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_volume_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_created":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"directory_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"exposure_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"tab_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_capacity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_partition_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_modified":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_bus_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_policy_names":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_serial_number":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"cloud_drive_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_size":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"removable_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"private_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared_with":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"detection_source_alias":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"actor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_exposure_changed_to":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"removable_media_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_uid":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"printer-activity":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tab_title":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sync_destination":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_from":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"removable_media_volume_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_created":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"directory_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"exposure_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"tab_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_capacity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_partition_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_modified":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_bus_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_source":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_dlp_policy_names":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"removable_media_serial_number":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"cloud_drive_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_size":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"removable_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"private_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"shared_with":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"detection_source_alias":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"actor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_exposure_changed_to":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"removable_media_media_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user_uid":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "code42 incydr"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type             | Field                         | Status  | Core     | Detection | Informational |
+| ------------------------- | ----------------------------- | ------- | -------- | --------- | ------------- |
+| email-send                | bytes                         | Default |          |           | &#10003;      |
+|                           | file_type                     | Default |          |           | &#10003;      |
+|                           | event_code                    | Default |          |           | &#10003;      |
+|                           | log_source                    | Default |          |           | &#10003;      |
+|                           | src_host                      | Default |          | &#10003;  |               |
+| file-delete               | mime                          |         |          |           |               |
+|                           | tab_title                     |         |          |           |               |
+|                           | device_type                   |         |          |           |               |
+|                           | sync_destination              |         |          |           |               |
+|                           | email_dlp_from                |         |          |           |               |
+|                           | file_category                 |         |          |           |               |
+|                           | process_name                  | Legacy  |          |           | &#10003;      |
+|                           | file_type                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_volume_name   |         |          |           |               |
+|                           | hash_md5                      |         |          |           |               |
+|                           | time_created                  |         |          |           |               |
+|                           | directory_id                  |         |          |           |               |
+|                           | device_id                     |         |          |           |               |
+|                           | service_name                  |         |          |           |               |
+|                           | exposure_type                 |         |          |           |               |
+|                           | file_owner                    |         |          |           |               |
+|                           | src_host                      | Legacy  |          | &#10003;  |               |
+|                           | tab_url                       |         |          |           |               |
+|                           | removable_media_capacity      |         |          |           |               |
+|                           | removable_media_partition_id  |         |          |           |               |
+|                           | time_modified                 |         |          |           |               |
+|                           | additional_info               |         |          |           |               |
+|                           | sender                        |         |          |           |               |
+|                           | removable_media_vendor        |         |          |           |               |
+|                           | domain                        |         |          |           |               |
+|                           | removable_media_bus_type      |         |          |           |               |
+|                           | log_source                    |         |          |           |               |
+|                           | file_id                       |         |          |           |               |
+|                           | email_dlp_policy_names        |         |          |           |               |
+|                           | removable_media_serial_number |         |          |           |               |
+|                           | cloud_drive_id                |         |          |           |               |
+|                           | shared                        |         |          |           |               |
+|                           | device_size                   |         |          |           |               |
+|                           | access                        | Legacy  |          | &#10003;  |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
+|                           | url                           |         |          |           |               |
+|                           | actor                         |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
+|                           | bytes                         |         |          |           |               |
+|                           | file_exposure_changed_to      |         |          |           |               |
+|                           | dest_host                     | Legacy  |          | &#10003;  |               |
+|                           | removable_media_media_name    |         |          |           |               |
+|                           | device_vendor                 |         |          |           |               |
+|                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | user_uid                      |         |          |           |               |
+| file-download             | mime                          |         |          |           |               |
+|                           | tab_title                     |         |          |           |               |
+|                           | device_type                   |         |          |           |               |
+|                           | sync_destination              |         |          |           |               |
+|                           | email_dlp_from                |         |          |           |               |
+|                           | file_category                 |         |          |           |               |
+|                           | process_name                  | Legacy  |          |           | &#10003;      |
+|                           | file_type                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_volume_name   |         |          |           |               |
+|                           | hash_md5                      |         |          |           |               |
+|                           | time_created                  |         |          |           |               |
+|                           | directory_id                  |         |          |           |               |
+|                           | device_id                     |         |          |           |               |
+|                           | service_name                  |         |          |           |               |
+|                           | exposure_type                 |         |          |           |               |
+|                           | file_owner                    |         |          |           |               |
+|                           | src_host                      | Legacy  |          |           | &#10003;      |
+|                           | tab_url                       |         |          |           |               |
+|                           | removable_media_capacity      |         |          |           |               |
+|                           | removable_media_partition_id  |         |          |           |               |
+|                           | time_modified                 |         |          |           |               |
+|                           | additional_info               |         |          |           |               |
+|                           | sender                        |         |          |           |               |
+|                           | removable_media_vendor        |         |          |           |               |
+|                           | domain                        |         |          |           |               |
+|                           | removable_media_bus_type      |         |          |           |               |
+|                           | log_source                    |         |          |           |               |
+|                           | file_id                       |         |          |           |               |
+|                           | email_dlp_policy_names        |         |          |           |               |
+|                           | removable_media_serial_number |         |          |           |               |
+|                           | cloud_drive_id                |         |          |           |               |
+|                           | shared                        |         |          |           |               |
+|                           | device_size                   |         |          |           |               |
+|                           | access                        |         |          |           |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
+|                           | url                           |         |          |           |               |
+|                           | actor                         |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
+|                           | bytes                         | Legacy  |          |           |               |
+|                           | file_exposure_changed_to      |         |          |           |               |
+|                           | dest_host                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_media_name    |         |          |           |               |
+|                           | device_vendor                 |         |          |           |               |
+|                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | user_uid                      |         |          |           |               |
+| file-read                 | mime                          |         |          |           |               |
+|                           | tab_title                     |         |          |           |               |
+|                           | device_type                   | Legacy  |          |           | &#10003;      |
+|                           | sync_destination              |         |          |           |               |
+|                           | email_dlp_from                |         |          |           |               |
+|                           | file_category                 |         |          |           |               |
+|                           | process_name                  | Legacy  |          |           | &#10003;      |
+|                           | file_type                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_volume_name   |         |          |           |               |
+|                           | hash_md5                      |         |          |           |               |
+|                           | time_created                  |         |          |           |               |
+|                           | directory_id                  |         |          |           |               |
+|                           | device_id                     | Legacy  |          | &#10003;  |               |
+|                           | service_name                  |         |          |           |               |
+|                           | exposure_type                 |         |          |           |               |
+|                           | file_owner                    |         |          |           |               |
+|                           | src_host                      | Legacy  |          | &#10003;  |               |
+|                           | tab_url                       |         |          |           |               |
+|                           | removable_media_capacity      |         |          |           |               |
+|                           | removable_media_partition_id  |         |          |           |               |
+|                           | time_modified                 |         |          |           |               |
+|                           | additional_info               |         |          |           |               |
+|                           | sender                        |         |          |           |               |
+|                           | removable_media_vendor        |         |          |           |               |
+|                           | domain                        |         |          |           |               |
+|                           | removable_media_bus_type      |         |          |           |               |
+|                           | log_source                    |         |          |           |               |
+|                           | file_id                       |         |          |           |               |
+|                           | email_dlp_policy_names        |         |          |           |               |
+|                           | removable_media_serial_number |         |          |           |               |
+|                           | cloud_drive_id                |         |          |           |               |
+|                           | shared                        |         |          |           |               |
+|                           | device_size                   |         |          |           |               |
+|                           | access                        | Legacy  |          | &#10003;  |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
+|                           | url                           |         |          |           |               |
+|                           | actor                         |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
+|                           | bytes                         | Legacy  |          |           |               |
+|                           | file_exposure_changed_to      |         |          |           |               |
+|                           | dest_host                     | Legacy  |          | &#10003;  |               |
+|                           | removable_media_media_name    |         |          |           |               |
+|                           | device_vendor                 |         |          |           |               |
+|                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | user_uid                      |         |          |           |               |
+| file-upload               | mime                          |         |          |           |               |
+|                           | tab_title                     |         |          |           |               |
+|                           | device_type                   |         |          |           |               |
+|                           | sync_destination              |         |          |           |               |
+|                           | email_dlp_from                |         |          |           |               |
+|                           | file_category                 |         |          |           |               |
+|                           | process_name                  | Legacy  |          |           | &#10003;      |
+|                           | file_type                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_volume_name   |         |          |           |               |
+|                           | hash_md5                      |         |          |           |               |
+|                           | time_created                  |         |          |           |               |
+|                           | directory_id                  |         |          |           |               |
+|                           | device_id                     |         |          |           |               |
+|                           | service_name                  |         |          |           |               |
+|                           | exposure_type                 |         |          |           |               |
+|                           | file_owner                    |         |          |           |               |
+|                           | src_host                      | Legacy  |          |           | &#10003;      |
+|                           | tab_url                       |         |          |           |               |
+|                           | removable_media_capacity      |         |          |           |               |
+|                           | removable_media_partition_id  |         |          |           |               |
+|                           | time_modified                 |         |          |           |               |
+|                           | additional_info               |         |          |           |               |
+|                           | sender                        |         |          |           |               |
+|                           | removable_media_vendor        |         |          |           |               |
+|                           | domain                        |         |          |           |               |
+|                           | removable_media_bus_type      |         |          |           |               |
+|                           | log_source                    |         |          |           |               |
+|                           | file_id                       |         |          |           |               |
+|                           | email_dlp_policy_names        |         |          |           |               |
+|                           | removable_media_serial_number |         |          |           |               |
+|                           | cloud_drive_id                |         |          |           |               |
+|                           | shared                        |         |          |           |               |
+|                           | device_size                   |         |          |           |               |
+|                           | access                        |         |          |           |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
+|                           | url                           |         |          |           |               |
+|                           | actor                         |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
+|                           | bytes                         |         |          |           |               |
+|                           | file_exposure_changed_to      |         |          |           |               |
+|                           | dest_host                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_media_name    |         |          |           |               |
+|                           | device_vendor                 |         |          |           |               |
+|                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | user_uid                      |         |          |           |               |
+| file-write                | mime                          |         |          |           |               |
+|                           | tab_title                     |         |          |           |               |
+|                           | device_type                   | Legacy  |          |           | &#10003;      |
+|                           | sync_destination              |         |          |           |               |
+|                           | email_dlp_from                |         |          |           |               |
+|                           | file_category                 |         |          |           |               |
+|                           | process_name                  | Legacy  |          |           | &#10003;      |
+|                           | file_type                     | Legacy  |          |           | &#10003;      |
+|                           | removable_media_volume_name   |         |          |           |               |
+|                           | hash_md5                      |         |          |           |               |
+|                           | time_created                  |         |          |           |               |
+|                           | directory_id                  |         |          |           |               |
+|                           | device_id                     | Legacy  |          | &#10003;  |               |
+|                           | service_name                  |         |          |           |               |
+|                           | exposure_type                 |         |          |           |               |
+|                           | file_owner                    |         |          |           |               |
+|                           | src_host                      |         |          |           |               |
+|                           | tab_url                       |         |          |           |               |
+|                           | removable_media_capacity      |         |          |           |               |
+|                           | removable_media_partition_id  |         |          |           |               |
+|                           | time_modified                 |         |          |           |               |
+|                           | additional_info               |         |          |           |               |
+|                           | sender                        |         |          |           |               |
+|                           | removable_media_vendor        |         |          |           |               |
+|                           | domain                        |         |          |           |               |
+|                           | removable_media_bus_type      |         |          |           |               |
+|                           | log_source                    |         |          |           |               |
+|                           | file_id                       |         |          |           |               |
+|                           | email_dlp_policy_names        |         |          |           |               |
+|                           | removable_media_serial_number |         |          |           |               |
+|                           | cloud_drive_id                |         |          |           |               |
+|                           | shared                        |         |          |           |               |
+|                           | device_size                   |         |          |           |               |
+|                           | access                        | Legacy  |          | &#10003;  |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
+|                           | url                           |         |          |           |               |
+|                           | actor                         |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
+|                           | bytes                         | Legacy  |          |           |               |
+|                           | file_exposure_changed_to      |         |          |           |               |
+|                           | dest_host                     | Legacy  |          | &#10003;  |               |
+|                           | removable_media_media_name    |         |          |           |               |
+|                           | device_vendor                 |         |          |           |               |
+|                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | user_uid                      |         |          |           |               |
+| peripheral_storage-insert | src_translated_ip             |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
+|                           | usb_vendor                    |         |          |           |               |
+|                           | drive_letter                  |         |          |           |               |
+|                           | user_id                       |         |          |           |               |
+|                           | vendor_name                   |         |          |           |               |
+|                           | usb_serial_number             |         |          |           |               |
+|                           | operation                     |         |          |           |               |
+| printer-activity          | src_ip                        |         |          |           |               |
+|                           | device_id                     |         |          |           |               |
+|                           | user_id                       |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
+|                           | dest_ip                       |         |          |           |               |
+|                           | log_source                    |         |          |           |               |
+|                           | printer_name                  | Legacy  | &#10003; | &#10003;  |               |
+|                           | src_host                      | Legacy  |          |           | &#10003;      |
+|                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | object                        |         |          |           |               |
+

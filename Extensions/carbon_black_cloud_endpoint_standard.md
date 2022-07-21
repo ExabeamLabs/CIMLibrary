@@ -1,259 +1,92 @@
 carbon black cloud endpoint standard
 ====================================
 
-```JSON
-{"expression":"product = \"carbon black ces\"",
-"activity_type":{"app-login":{"fields":{}},
-"file-write":{"fields":{"selected_hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"target_hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"target_md5hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"selected_md5hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_md5hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"selected_hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"target_hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"target_md5hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"selected_md5hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_md5hash":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"process-create":{"fields":{"selected_hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target_hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"selected_md5hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target_md5hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_md5hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"selected_hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target_hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target_md5hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"selected_md5hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_md5hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"0",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "carbon black ces"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip |          | &#10003;  |               |
+| domain |          | &#10003;  |               |
+| user   | &#10003; |           |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field                | Status  | Core | Detection | Informational |
+| --------------- | -------------------- | ------- | ---- | --------- | ------------- |
+| app-login       |                      |         |      |           |               |
+| file-read       | selected_hash_sha256 |         |      | &#10003;  |               |
+|                 | target_hash_sha256   |         |      | &#10003;  |               |
+|                 | alert_severity       |         |      | &#10003;  |               |
+|                 | target_md5hash       |         |      | &#10003;  |               |
+|                 | process_dir          | Legacy  |      |           | &#10003;      |
+|                 | src_host             | Legacy  |      | &#10003;  |               |
+|                 | alert_type           |         |      | &#10003;  |               |
+|                 | hash_sha256          |         |      | &#10003;  |               |
+|                 | selected_md5hash     |         |      | &#10003;  |               |
+|                 | web_domain           |         |      | &#10003;  |               |
+|                 | process_name         | Legacy  |      |           | &#10003;      |
+|                 | parent_hash_sha256   |         |      | &#10003;  |               |
+|                 | dest_ip              |         |      | &#10003;  |               |
+|                 | alert_id             |         |      |           | &#10003;      |
+|                 | hash_md5             |         |      | &#10003;  |               |
+|                 | process_path         | Legacy  |      | &#10003;  |               |
+|                 | parent_md5hash       |         |      | &#10003;  |               |
+|                 | alert_name           |         |      | &#10003;  |               |
+| file-write      | selected_hash_sha256 |         |      | &#10003;  |               |
+|                 | target_hash_sha256   |         |      | &#10003;  |               |
+|                 | alert_severity       |         |      | &#10003;  |               |
+|                 | target_md5hash       |         |      | &#10003;  |               |
+|                 | process_dir          | Legacy  |      |           | &#10003;      |
+|                 | src_host             |         |      | &#10003;  |               |
+|                 | alert_type           |         |      | &#10003;  |               |
+|                 | hash_sha256          |         |      | &#10003;  |               |
+|                 | selected_md5hash     |         |      | &#10003;  |               |
+|                 | web_domain           |         |      | &#10003;  |               |
+|                 | process_name         | Legacy  |      |           | &#10003;      |
+|                 | parent_hash_sha256   |         |      | &#10003;  |               |
+|                 | dest_ip              |         |      | &#10003;  |               |
+|                 | alert_id             |         |      |           | &#10003;      |
+|                 | hash_md5             |         |      | &#10003;  |               |
+|                 | process_path         | Legacy  |      | &#10003;  |               |
+|                 | parent_md5hash       |         |      | &#10003;  |               |
+|                 | alert_name           |         |      | &#10003;  |               |
+| network-session | selected_hash_sha256 | Default |      |           | &#10003;      |
+|                 | file_path            | Default |      |           | &#10003;      |
+|                 | target_hash_sha256   | Default |      |           | &#10003;      |
+|                 | file_name            | Default |      |           | &#10003;      |
+|                 | alert_severity       | Default |      |           | &#10003;      |
+|                 | file_dir             | Default |      |           | &#10003;      |
+|                 | target_md5hash       | Default |      |           | &#10003;      |
+|                 | process_dir          | Default |      |           | &#10003;      |
+|                 | src_host             | Default |      | &#10003;  |               |
+|                 | alert_type           | Default |      |           | &#10003;      |
+|                 | hash_sha256          | Default |      |           | &#10003;      |
+|                 | selected_md5hash     | Default |      |           | &#10003;      |
+|                 | web_domain           | Default |      |           | &#10003;      |
+|                 | process_name         | Default |      |           | &#10003;      |
+|                 | parent_hash_sha256   | Default |      |           | &#10003;      |
+|                 | alert_id             | Default |      |           | &#10003;      |
+|                 | hash_md5             | Default |      |           | &#10003;      |
+|                 | process_path         | Default |      |           | &#10003;      |
+|                 | parent_md5hash       | Default |      |           | &#10003;      |
+|                 | alert_name           | Default |      |           | &#10003;      |
+| process-create  | selected_hash_sha256 | Default |      |           | &#10003;      |
+|                 | hash_sha256          | Default |      |           | &#10003;      |
+|                 | file_path            | Default |      |           | &#10003;      |
+|                 | target_hash_sha256   | Default |      |           | &#10003;      |
+|                 | selected_md5hash     | Default |      |           | &#10003;      |
+|                 | file_name            | Default |      |           | &#10003;      |
+|                 | parent_hash_sha256   | Default |      |           | &#10003;      |
+|                 | dest_ip              | Default |      | &#10003;  |               |
+|                 | file_dir             | Default |      |           | &#10003;      |
+|                 | hash_md5             | Default |      |           | &#10003;      |
+|                 | target_md5hash       | Default |      |           | &#10003;      |
+|                 | parent_md5hash       | Default |      |           | &#10003;      |
+

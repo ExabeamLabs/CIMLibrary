@@ -1,237 +1,80 @@
 ping identity
 =============
 
-```JSON
-{"expression":"product = \"ping identity\"",
-"activity_type":{"user-password-reset":{"fields":{"local_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"role":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"response_time":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"attributes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"tracking_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"adopter_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-authentication":{"fields":{"local_user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"response_time":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"attributes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"tracking_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"adopter_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"requested_app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"requested_app_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"local_user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"response_time":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"attributes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"tracking_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"adopter_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"requested_app":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"requested_app_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"connection_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "ping identity"
+
+Fields
+------
+
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| src_ip        |      |           | &#10003;      |
+| protocol      |      |           | &#10003;      |
+| connection_id |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type        | Field            | Status  | Core | Detection | Informational |
+| -------------------- | ---------------- | ------- | ---- | --------- | ------------- |
+| app-activity         | additional_info  | Default |      |           | &#10003;      |
+|                      | domain           | Default |      |           | &#10003;      |
+|                      | event_name       | Default |      |           | &#10003;      |
+|                      | category         | Default |      |           | &#10003;      |
+|                      | user             | Default |      | &#10003;  |               |
+|                      | user_agent       | Default |      |           | &#10003;      |
+|                      | url              | Default |      |           | &#10003;      |
+|                      | alert_name       | Default |      |           | &#10003;      |
+| app-authentication   | local_user_id    | Default |      |           | &#10003;      |
+|                      | role             | Default |      |           | &#10003;      |
+|                      | src_host         | Default |      | &#10003;  |               |
+|                      | auth_method      | Default |      |           | &#10003;      |
+|                      | additional_info  | Default |      |           | &#10003;      |
+|                      | dest_ip          | Default |      | &#10003;  |               |
+|                      | browser          | Default |      |           | &#10003;      |
+|                      | dest_host        | Default |      | &#10003;  |               |
+|                      | event_name       | Default |      |           | &#10003;      |
+|                      | operating_system | Default |      |           | &#10003;      |
+|                      | response_time    | Default |      |           | &#10003;      |
+|                      | attributes       | Default |      |           | &#10003;      |
+|                      | device           | Default |      |           | &#10003;      |
+|                      | tracking_id      | Default |      |           | &#10003;      |
+|                      | user_agent       | Default |      |           | &#10003;      |
+|                      | adopter_id       | Default |      |           | &#10003;      |
+| app-login            | country          | Default |      |           | &#10003;      |
+|                      | requested_app    | Default |      |           | &#10003;      |
+|                      | src_host         | Default |      | &#10003;  |               |
+|                      | url              | Default |      |           | &#10003;      |
+|                      | src_ip           | Default |      | &#10003;  |               |
+|                      | auth_method      | Default |      |           | &#10003;      |
+|                      | additional_info  | Default |      |           | &#10003;      |
+|                      | dest_ip          | Default |      | &#10003;  |               |
+|                      | operating_system | Default |      |           | &#10003;      |
+|                      | dest_host        | Default |      | &#10003;  |               |
+|                      | event_name       | Default |      |           | &#10003;      |
+|                      | requested_app_id | Default |      |           | &#10003;      |
+|                      | category         | Default |      |           | &#10003;      |
+|                      | alert_name       | Default |      |           | &#10003;      |
+|                      | user_agent       | Default |      |           | &#10003;      |
+| user-password-modify | local_user_id    | Default |      |           | &#10003;      |
+|                      | role             | Default |      |           | &#10003;      |
+|                      | response_time    | Default |      |           | &#10003;      |
+|                      | attributes       | Default |      |           | &#10003;      |
+|                      | user             | Default |      | &#10003;  |               |
+|                      | tracking_id      | Default |      |           | &#10003;      |
+|                      | adopter_id       | Default |      |           | &#10003;      |
+| user-password-reset  | local_user_id    |         |      |           |               |
+|                      | role             |         |      |           |               |
+|                      | response_time    |         |      |           |               |
+|                      | attributes       |         |      |           |               |
+|                      | tracking_id      |         |      |           |               |
+|                      | adopter_id       |         |      |           |               |
+| vpn-login            | country          | Default |      |           | &#10003;      |
+|                      | requested_app    | Default |      |           | &#10003;      |
+|                      | operating_system | Default |      |           | &#10003;      |
+|                      | requested_app_id | Default |      |           | &#10003;      |
+|                      | device           | Default |      |           | &#10003;      |
+

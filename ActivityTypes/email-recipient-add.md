@@ -33,6 +33,8 @@ email-recipient-add:fail
 | ------------------ | ---- | --------- | ------------- |
 | dest_email_domain  |      |           | &#10003;      |
 | dest_email_user    |      |           | &#10003;      |
+| failure_code       |      | &#10003;  |               |
 | dest_email_address |      |           | &#10003;      |
 | dest_domain        |      |           | &#10003;      |
 | dest_user          |      |           | &#10003;      |
+| failure_reason     |      | &#10003;  |               |

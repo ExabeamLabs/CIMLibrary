@@ -1,19 +1,25 @@
 weblogin
 ========
 
-```JSON
-{"expression":"product = \"weblogin\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"request_cookie":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"sub_status":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"private_cookie":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "weblogin"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| request_cookie |      |           | &#10003;      |
+| sub_status     |      |           | &#10003;      |
+| private_cookie |      |           | &#10003;      |
+| action         |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

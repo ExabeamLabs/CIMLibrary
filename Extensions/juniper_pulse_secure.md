@@ -1,113 +1,49 @@
 juniper pulse secure
 ====================
 
-```JSON
-{"expression":"product = \"juniper pulse secure\"",
-"activity_type":{"user-delete":{"fields":{"role":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-authentication":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"http-session":{"fields":{"role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"firewall":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"http-request":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"src_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_duration":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "juniper pulse secure"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      | &#10003;  |               |
+| domain |      | &#10003;  |               |
+| user   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type      | Field            | Status  | Core | Detection | Informational |
+| ------------------ | ---------------- | ------- | ---- | --------- | ------------- |
+| app-activity       | bytes            | Default |      |           | &#10003;      |
+|                    | dest_ip          | Default |      | &#10003;  |               |
+|                    | dest_host        | Default |      | &#10003;  |               |
+|                    | src_host         | Default |      | &#10003;  |               |
+|                    | user_agent       | Default |      |           | &#10003;      |
+| http-request       | application      | Default |      |           | &#10003;      |
+|                    | additional_info  | Default |      |           | &#10003;      |
+|                    | bytes            | Default |      |           | &#10003;      |
+|                    | dest_host        | Default |      | &#10003;  |               |
+|                    | operation        | Default |      |           | &#10003;      |
+| http-session       | role             | Default |      |           | &#10003;      |
+|                    | firewall         | Default |      |           | &#10003;      |
+|                    | realm            | Default |      |           | &#10003;      |
+| user-delete        | role             |         |      |           | &#10003;      |
+|                    | realm            |         |      |           | &#10003;      |
+| vpn-authentication | dest_ip          | Default |      | &#10003;  |               |
+|                    | dest_host        | Default |      | &#10003;  |               |
+| vpn-login          | dest_ip          | Default |      | &#10003;  |               |
+|                    | dest_host        | Default |      | &#10003;  |               |
+| vpn-logout         | src_port         |         |      | &#10003;  |               |
+|                    | bytes_out        | Legacy  |      | &#10003;  |               |
+|                    | bytes_in         |         |      | &#10003;  |               |
+|                    | dest_ip          |         |      | &#10003;  |               |
+|                    | dest_host        | Legacy  |      |           | &#10003;      |
+|                    | session_duration | Legacy  |      | &#10003;  |               |
+|                    | dest_port        |         |      | &#10003;  |               |
+

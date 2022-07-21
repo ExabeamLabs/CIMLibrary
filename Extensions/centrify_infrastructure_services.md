@@ -1,11 +1,20 @@
 centrify infrastructure services
 ================================
 
-```JSON
-{"expression":"product = \"centrify infrastructure services\"",
-"activity_type":{"process-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "centrify infrastructure services"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field  | Status  | Core | Detection | Informational |
+| -------------- | ------ | ------- | ---- | --------- | ------------- |
+| process-create | src_ip | Default |      | &#10003;  |               |
+

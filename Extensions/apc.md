@@ -1,15 +1,21 @@
 apc
 ===
 
-```JSON
-{"expression":"product = apc",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = apc
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field  | Status  | Core     | Detection | Informational |
+| -------------- | ------ | ------- | -------- | --------- | ------------- |
+| alert-trigger  | src_ip | Legacy  | &#10003; | &#10003;  |               |
+| endpoint-login | src_ip | Default |          | &#10003;  |               |
+

@@ -1,118 +1,52 @@
 dropbox
 =======
 
-```JSON
-{"expression":"product = \"dropbox\"",
-"activity_type":{"user-modify":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-download":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"share-mount":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-permission-modify":{"fields":{"src_file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir_uri":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"report-export":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"src_file_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir_uri":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"src_file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir_uri":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "dropbox"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip |          | &#10003;  |               |
+| domain |          |           | &#10003;      |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field           | Status  | Core | Detection | Informational |
+| ---------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity           | additional_info | Default |      |           | &#10003;      |
+|                        | resource        | Default |      |           | &#10003;      |
+|                        | object          | Default |      |           | &#10003;      |
+| app-login              | additional_info | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+| file-delete            | additional_info |         |      |           | &#10003;      |
+| file-download          | additional_info |         |      |           | &#10003;      |
+| file-permission-modify | src_file_name   |         |      |           | &#10003;      |
+|                        | access          | Legacy  |      | &#10003;  |               |
+|                        | file_type       | Legacy  |      |           | &#10003;      |
+|                        | file_dir_uri    |         |      |           | &#10003;      |
+| file-read              | src_file_name   |         |      |           | &#10003;      |
+|                        | access          | Legacy  |      | &#10003;  |               |
+|                        | additional_info |         |      |           |               |
+|                        | file_type       | Legacy  |      |           | &#10003;      |
+|                        | file_dir_uri    |         |      |           | &#10003;      |
+|                        | operation       |         |      |           |               |
+| file-write             | src_file_name   | Legacy  |      | &#10003;  |               |
+|                        | access          | Legacy  |      | &#10003;  |               |
+|                        | additional_info |         |      |           |               |
+|                        | file_type       | Legacy  |      |           | &#10003;      |
+|                        | file_dir_uri    |         |      |           | &#10003;      |
+|                        | operation       |         |      |           |               |
+| report-export          | additional_info | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+| share-mount            | additional_info | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+| user-modify            | additional_info |         |      |           |               |
+|                        | operation       |         |      |           |               |
+

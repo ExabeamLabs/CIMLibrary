@@ -1,217 +1,81 @@
 digital guardian endpoint protection
 ====================================
 
-```JSON
-{"expression":"product = \"digital guardian endpoint protection\"",
-"activity_type":{"email-send":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-upload":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-copy":{"fields":{"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-login":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"printer-activity":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-download":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"peripheral_storage-insert":{"fields":{"rule_action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "digital guardian endpoint protection"
+
+Fields
+------
+
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| event_code |          |           | &#10003;      |
+| domain     |          |           | &#10003;      |
+| user       | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type             | Field            | Status  | Core     | Detection | Informational |
+| ------------------------- | ---------------- | ------- | -------- | --------- | ------------- |
+| app-login                 | application      | Default |          |           | &#10003;      |
+| email-send                | src_ip           | Default |          | &#10003;  |               |
+|                           | bytes            | Default |          |           | &#10003;      |
+|                           | dest_ip          | Default |          | &#10003;  |               |
+|                           | dest_host        | Default |          | &#10003;  |               |
+| endpoint-login            | process_name     | Default |          |           | &#10003;      |
+| file-copy                 | process_name     | Default |          |           | &#10003;      |
+|                           | src_host         | Default |          | &#10003;  |               |
+| file-delete               | src_ip           |         |          | &#10003;  |               |
+|                           | src_file_name    |         |          |           | &#10003;      |
+|                           | process_name     | Legacy  |          |           | &#10003;      |
+|                           | bytes            |         |          |           | &#10003;      |
+|                           | dest_ip          |         |          | &#10003;  |               |
+|                           | src_file_dir     |         |          |           | &#10003;      |
+|                           | src_host         | Legacy  |          | &#10003;  |               |
+| file-download             | src_ip           |         |          | &#10003;  |               |
+|                           | src_port         |         |          |           | &#10003;      |
+|                           | process_name     | Legacy  |          |           | &#10003;      |
+|                           | bytes            | Legacy  |          | &#10003;  |               |
+|                           | dest_ip          |         |          | &#10003;  |               |
+|                           | dest_host        | Legacy  |          |           | &#10003;      |
+|                           | dest_port        |         |          |           | &#10003;      |
+| file-read                 | src_ip           |         |          | &#10003;  |               |
+|                           | src_file_name    |         |          |           | &#10003;      |
+|                           | process_name     | Legacy  |          |           | &#10003;      |
+|                           | bytes            | Legacy  |          |           | &#10003;      |
+|                           | dest_ip          |         |          | &#10003;  |               |
+|                           | src_file_dir     |         |          |           | &#10003;      |
+|                           | src_host         | Legacy  |          | &#10003;  |               |
+| file-upload               | src_ip           |         |          | &#10003;  |               |
+|                           | src_port         |         |          |           | &#10003;      |
+|                           | process_name     | Legacy  |          |           | &#10003;      |
+|                           | bytes            |         |          |           | &#10003;      |
+|                           | dest_ip          |         |          | &#10003;  |               |
+|                           | src_host         | Legacy  |          |           | &#10003;      |
+|                           | dest_port        |         |          |           | &#10003;      |
+| file-write                | src_ip           |         |          | &#10003;  |               |
+|                           | src_file_name    | Legacy  |          | &#10003;  |               |
+|                           | process_name     | Legacy  |          |           | &#10003;      |
+|                           | bytes            | Legacy  |          | &#10003;  |               |
+|                           | dest_ip          |         |          | &#10003;  |               |
+|                           | src_file_dir     | Legacy  |          | &#10003;  |               |
+|                           | src_host         |         |          | &#10003;  |               |
+| network-session           | process_name     | Default |          |           | &#10003;      |
+| peripheral_storage-insert | rule_action      |         |          |           | &#10003;      |
+|                           | process_name     | Legacy  |          |           | &#10003;      |
+|                           | file_name        |         |          |           | &#10003;      |
+|                           | bytes            |         |          |           | &#10003;      |
+|                           | file_dir         |         |          |           | &#10003;      |
+|                           | rule             |         |          |           | &#10003;      |
+|                           | policy_name      |         |          |           | &#10003;      |
+|                           | operating_system |         |          |           | &#10003;      |
+| printer-activity          | bytes            | Legacy  |          | &#10003;  |               |
+|                           | dest_ip          |         |          | &#10003;  |               |
+|                           | printer_name     | Legacy  | &#10003; | &#10003;  |               |
+|                           | src_host         | Legacy  |          |           | &#10003;      |
+|                           | object           |         |          |           | &#10003;      |
+| process-create            | dest_ip          | Default |          | &#10003;  |               |
+

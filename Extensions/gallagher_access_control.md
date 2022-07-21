@@ -1,8 +1,20 @@
 gallagher access control
 ========================
 
-```JSON
-{"expression":"product = \"gallagher access control\"",
-"activity_type":{"physical_location-access":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "gallagher access control"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field | Status | Core | Detection | Informational |
+| ------------------------ | ----- | ------ | ---- | --------- | ------------- |
+| physical_location-access |       |        |      |           |               |
+

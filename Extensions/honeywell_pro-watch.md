@@ -1,19 +1,22 @@
 honeywell pro-watch
 ===================
 
-```JSON
-{"expression":"product = \"honeywell pro-watch\"",
-"activity_type":{"physical_location-access":{"fields":{"card_status":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"threat_level":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "honeywell pro-watch"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field           | Status  | Core | Detection | Informational |
+| ------------------------ | --------------- | ------- | ---- | --------- | ------------- |
+| physical_location-access | card_status     | Default |      |           | &#10003;      |
+|                          | threat_level    | Default |      |           | &#10003;      |
+|                          | additional_info | Default |      |           | &#10003;      |
+

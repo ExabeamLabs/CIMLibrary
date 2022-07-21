@@ -1,88 +1,43 @@
 vmware app control
 ==================
 
-```JSON
-{"expression":"product = \"vmware app control\"",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"host_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"host_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sensor_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"ioc":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"new_hash":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "vmware app control"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path            | Legacy |          |           | &#10003;      |
+|               | host_ip              |        |          |           |               |
+|               | access               |        |          |           |               |
+|               | file_name            | Legacy | &#10003; |           |               |
+|               | file_dir             | Legacy |          |           | &#10003;      |
+|               | parent_process_name  |        |          |           |               |
+|               | process_dir          |        |          |           |               |
+|               | process_command_line |        |          |           |               |
+|               | host_type            |        |          |           |               |
+|               | sensor_id            |        |          |           |               |
+|               | process_guid         |        |          |           |               |
+|               | old_hash             |        |          |           |               |
+|               | additional_info      |        |          |           |               |
+|               | process_name         | Legacy |          | &#10003;  |               |
+|               | alert_id             | Legacy |          |           | &#10003;      |
+|               | dest_ip              | Legacy | &#10003; | &#10003;  |               |
+|               | domain               |        |          |           |               |
+|               | hash_md5             |        |          |           |               |
+|               | dest_host            | Legacy |          | &#10003;  |               |
+|               | parent_process_guid  |        |          |           |               |
+|               | process_path         | Legacy |          | &#10003;  |               |
+|               | ioc                  |        |          |           |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+|               | new_hash             |        |          |           |               |
+

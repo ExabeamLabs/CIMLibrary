@@ -1,58 +1,34 @@
 proofpoint casb
 ===============
 
-```JSON
-{"expression":"product = \"proofpoint casb\"",
-"activity_type":{"alert-trigger":{"fields":{"email_attachment":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"email_attachments":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "proofpoint casb"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status | Core     | Detection | Informational |
+| ------------- | ----------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | email_attachment  |        |          |           |               |
+|               | file_name         | Legacy | &#10003; |           |               |
+|               | email_attachments |        |          |           |               |
+|               | target            |        |          |           |               |
+|               | result            |        |          |           |               |
+|               | src_ip            | Legacy | &#10003; | &#10003;  |               |
+|               | email_address     |        |          |           |               |
+|               | email_user        |        |          |           |               |
+|               | sender            | Legacy | &#10003; |           |               |
+|               | bytes             | Legacy |          | &#10003;  |               |
+|               | recipients        |        |          |           |               |
+|               | alert_id          | Legacy |          |           | &#10003;      |
+|               | recipient         |        |          |           |               |
+|               | email_subject     |        |          |           |               |
+|               | user              | Legacy |          | &#10003;  |               |
+

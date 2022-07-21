@@ -1,700 +1,199 @@
 check point ngfw
 ================
 
-```JSON
-{"expression":"product = \"check point ngfw\"",
-"activity_type":{"email-receive":{"fields":{"interface_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-send":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"message_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-traffic":{"fields":{"peer_gateway":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"interface_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_uid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"inzone":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"outzone":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"community":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_uid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"interface_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"full_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"company":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"department":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"interface_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"company":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"department":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"tunnel_protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"company":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"department":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"interface_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"product_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"company":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"department":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"origin_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"user_ou":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"rule":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"product_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"company":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"department":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"origin_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"origin_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "check point ngfw"
+
+Fields
+------
+
+| Field    | Core     | Detection | Informational |
+| -------- | -------- | --------- | ------------- |
+| src_ip   | &#10003; | &#10003;  |               |
+| dest_ip  | &#10003; | &#10003;  |               |
+| src_host |          | &#10003;  |               |
+| user     |          | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type           | Field                | Status  | Core | Detection | Informational |
+| ----------------------- | -------------------- | ------- | ---- | --------- | ------------- |
+| app-login               | additional_info      | Default |      |           | &#10003;      |
+|                         | user_agent           | Default |      |           | &#10003;      |
+| email-receive           | interface_name       | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | src_port             | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | rule_id              | Default |      |           | &#10003;      |
+|                         | protocol             | Default |      |           | &#10003;      |
+|                         | app_protocol         | Default |      |           | &#10003;      |
+|                         | action               | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | dest_host            | Default |      | &#10003;  |               |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | dest_port            | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+| email-send              | src_interface        | Default |      |           | &#10003;      |
+|                         | message_id           | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+| endpoint-authentication | user_ou              | Default |      |           | &#10003;      |
+|                         | bytes_in             | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | src_port             | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | protocol             | Default |      |           | &#10003;      |
+|                         | bytes_out            | Default |      |           | &#10003;      |
+|                         | operating_system     | Default |      |           | &#10003;      |
+|                         | action               | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | company              | Default |      |           | &#10003;      |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | department           | Default |      |           | &#10003;      |
+|                         | dest_port            | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+| endpoint-login          | user_ou              | Default |      |           | &#10003;      |
+|                         | bytes_in             | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | src_port             | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | protocol             | Default |      |           | &#10003;      |
+|                         | bytes_out            | Default |      |           | &#10003;      |
+|                         | additional_info      | Default |      |           | &#10003;      |
+|                         | process_name         | Default |      |           | &#10003;      |
+|                         | operating_system     | Default |      |           | &#10003;      |
+|                         | action               | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | company              | Default |      |           | &#10003;      |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | department           | Default |      |           | &#10003;      |
+|                         | dest_port            | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+| http-session            | service_name         | Default |      |           | &#10003;      |
+|                         | interface_name       | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | rule_id              | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | protocol             | Default |      |           | &#10003;      |
+|                         | full_name            | Default |      |           | &#10003;      |
+|                         | additional_info      | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | operating_system     | Default |      |           | &#10003;      |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+| network-session         | user_ou              | Default |      |           | &#10003;      |
+|                         | src_interface        | Default |      |           | &#10003;      |
+|                         | bytes_in             | Default |      |           | &#10003;      |
+|                         | alert_severity       | Default |      |           | &#10003;      |
+|                         | interface_name       | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | users                | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | rule_id              | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | bytes_out            | Default |      |           | &#10003;      |
+|                         | operating_system     | Default |      |           | &#10003;      |
+|                         | app_protocol         | Default |      |           | &#10003;      |
+|                         | action               | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | dest_host            | Default |      | &#10003;  |               |
+|                         | company              | Default |      |           | &#10003;      |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | department           | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | policy               | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+| network-traffic         | peer_gateway         | Default |      |           | &#10003;      |
+|                         | interface_name       | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | rule_uid             | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | result               | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | service_id           | Default |      |           | &#10003;      |
+|                         | app_protocol         | Default |      |           | &#10003;      |
+|                         | action               | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | policy               | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+|                         | inzone               | Default |      |           | &#10003;      |
+|                         | outzone              | Default |      |           | &#10003;      |
+|                         | community            | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | users                | Default |      |           | &#10003;      |
+|                         | rule_id              | Default |      |           | &#10003;      |
+|                         | additional_info      | Default |      |           | &#10003;      |
+|                         | log_uid              | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | dest_host            | Default |      | &#10003;  |               |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+| vpn-login               | src_interface        | Default |      |           | &#10003;      |
+|                         | bytes_in             | Default |      |           | &#10003;      |
+|                         | alert_severity       | Default |      |           | &#10003;      |
+|                         | interface_name       | Default |      |           | &#10003;      |
+|                         | rule                 | Default |      |           | &#10003;      |
+|                         | dest_translated_ip   | Default |      |           | &#10003;      |
+|                         | src_translated_ip    | Default |      |           | &#10003;      |
+|                         | protocol             | Default |      |           | &#10003;      |
+|                         | operating_system     | Default |      |           | &#10003;      |
+|                         | app_protocol         | Default |      |           | &#10003;      |
+|                         | action               | Default |      |           | &#10003;      |
+|                         | company              | Default |      |           | &#10003;      |
+|                         | department           | Default |      |           | &#10003;      |
+|                         | dest_port            | Default |      |           | &#10003;      |
+|                         | origin_name          | Default |      |           | &#10003;      |
+|                         | tunnel_protocol      | Default |      |           | &#10003;      |
+|                         | policy               | Default |      |           | &#10003;      |
+|                         | direction            | Default |      |           | &#10003;      |
+|                         | user_ou              | Default |      |           | &#10003;      |
+|                         | product_name         | Default |      |           | &#10003;      |
+|                         | rule_id              | Default |      |           | &#10003;      |
+|                         | src_port             | Default |      |           | &#10003;      |
+|                         | auth_method          | Default |      |           | &#10003;      |
+|                         | bytes_out            | Default |      |           | &#10003;      |
+|                         | dest_translated_port | Default |      |           | &#10003;      |
+|                         | dest_host            | Default |      | &#10003;  |               |
+|                         | src_translated_port  | Default |      |           | &#10003;      |
+|                         | origin_ip            | Default |      |           | &#10003;      |
+| vpn-logout              | user_ou              |         |      |           | &#10003;      |
+|                         | bytes_in             |         |      | &#10003;  |               |
+|                         | rule                 |         |      | &#10003;  |               |
+|                         | product_name         |         |      |           | &#10003;      |
+|                         | dest_translated_ip   |         |      | &#10003;  |               |
+|                         | src_port             |         |      | &#10003;  |               |
+|                         | src_translated_ip    |         |      | &#10003;  |               |
+|                         | protocol             |         |      | &#10003;  |               |
+|                         | bytes_out            | Legacy  |      | &#10003;  |               |
+|                         | operating_system     |         |      | &#10003;  |               |
+|                         | action               |         |      | &#10003;  |               |
+|                         | dest_translated_port |         |      | &#10003;  |               |
+|                         | dest_host            | Legacy  |      |           | &#10003;      |
+|                         | company              |         |      | &#10003;  |               |
+|                         | src_translated_port  |         |      | &#10003;  |               |
+|                         | department           |         |      | &#10003;  |               |
+|                         | dest_port            |         |      | &#10003;  |               |
+|                         | origin_ip            |         |      | &#10003;  |               |
+|                         | origin_name          |         |      | &#10003;  |               |
+|                         | direction            |         |      | &#10003;  |               |
+

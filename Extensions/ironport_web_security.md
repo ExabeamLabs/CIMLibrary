@@ -1,19 +1,22 @@
 ironport web security
 =====================
 
-```JSON
-{"expression":"product = \"ironport web security\"",
-"activity_type":{"http-session":{"fields":{"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"proxy_action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "ironport web security"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status  | Core | Detection | Informational |
+| ------------- | ------------ | ------- | ---- | --------- | ------------- |
+| http-session  | auth_method  | Default |      |           | &#10003;      |
+|               | domain       | Default |      |           | &#10003;      |
+|               | proxy_action | Default |      |           | &#10003;      |
+

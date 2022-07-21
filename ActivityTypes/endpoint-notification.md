@@ -21,7 +21,4 @@ endpoint-notification:success
 There are no fields for this activity type.
 
 
-endpoint-notification:fail
---------------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

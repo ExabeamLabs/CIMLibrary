@@ -1,11 +1,20 @@
 huawei enterprise network firewall
 ==================================
 
-```JSON
-{"expression":"product = \"huawei enterprise network firewall\"",
-"activity_type":{"network-session":{"fields":{"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "huawei enterprise network firewall"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field | Status  | Core | Detection | Informational |
+| --------------- | ----- | ------- | ---- | --------- | ------------- |
+| network-session | rule  | Default |      |           | &#10003;      |
+

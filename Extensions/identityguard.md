@@ -1,22 +1,23 @@
 identityguard
 =============
 
-```JSON
-{"expression":"product = \"identityguard\"",
-"activity_type":{"user-lock":{"fields":{"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "identityguard"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field           | Status  | Core | Detection | Informational |
+| ------------------ | --------------- | ------- | ---- | --------- | ------------- |
+| app-authentication | src_ip          | Default |      | &#10003;  |               |
+|                    | auth_method     | Default |      |           | &#10003;      |
+|                    | additional_info | Default |      |           | &#10003;      |
+| user-lock          | event_name      |         |      |           |               |
+

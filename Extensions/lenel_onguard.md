@@ -1,8 +1,20 @@
 lenel onguard
 =============
 
-```JSON
-{"expression":"product = \"lenel onguard\"",
-"activity_type":{"physical_location-access":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "lenel onguard"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field | Status | Core | Detection | Informational |
+| ------------------------ | ----- | ------ | ---- | --------- | ------------- |
+| physical_location-access |       |        |      |           |               |
+

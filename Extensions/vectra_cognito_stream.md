@@ -1,41 +1,31 @@
 vectra cognito stream
 =====================
 
-```JSON
-{"expression":"product = \"vectra cognito stream\"",
-"activity_type":{"rdp-traffic":{"fields":{}},
-"ssh-traffic":{"fields":{"cipher_algorithm":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"compression_algotithm":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"server_version":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"client_version":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "vectra cognito stream"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      |           | &#10003;      |
+| src_host  |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field                 | Status  | Core | Detection | Informational |
+| ------------- | --------------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip                | Default |      | &#10003;  |               |
+|               | result                | Default |      |           | &#10003;      |
+|               | application           | Default |      |           | &#10003;      |
+|               | dest_ip               | Default |      | &#10003;  |               |
+| rdp-traffic   |                       |         |      |           |               |
+| ssh-traffic   | cipher_algorithm      |         |      |           |               |
+|               | compression_algotithm |         |      |           |               |
+|               | server_version        |         |      |           |               |
+|               | client_version        |         |      |           |               |
+

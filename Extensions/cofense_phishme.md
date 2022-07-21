@@ -1,27 +1,25 @@
 cofense phishme
 ===============
 
-```JSON
-{"expression":"product = cofense phishme",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = cofense phishme
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | email_address   |        |          |           |               |
+|               | full_name       |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | event_name_name |        |          |           |               |
+

@@ -1,55 +1,33 @@
 workday
 =======
 
-```JSON
-{"expression":"product = \"workday\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"device_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "workday"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip |          | &#10003;  |               |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type      | Field           | Status  | Core | Detection | Informational |
+| ------------------ | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity       | src_ip          | Default |      | &#10003;  |               |
+|                    | additional_info | Default |      |           | &#10003;      |
+|                    | device_type     | Default |      |           | &#10003;      |
+|                    | user_agent      | Default |      |           | &#10003;      |
+|                    | object          | Default |      |           | &#10003;      |
+| app-authentication | auth_method     | Default |      |           | &#10003;      |
+|                    | dest_ip         | Default |      | &#10003;  |               |
+| app-login          | src_ip          | Default |      | &#10003;  |               |
+|                    | device_type     | Default |      |           | &#10003;      |
+|                    | user_agent      | Default |      |           | &#10003;      |
+

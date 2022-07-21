@@ -23,7 +23,4 @@ vpn-session:success
 | domain |          | &#10003;  |               |
 | user   | &#10003; | &#10003;  |               |
 
-vpn-session:fail
-----------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

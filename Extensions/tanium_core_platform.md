@@ -1,52 +1,31 @@
 tanium core platform
 ====================
 
-```JSON
-{"expression":"product = \"tanium core platform\"",
-"activity_type":{"dns-response":{"fields":{"process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "tanium core platform"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field        | Status  | Core | Detection | Informational |
+| ----------------------- | ------------ | ------- | ---- | --------- | ------------- |
+| dns-response            | process_name |         |      |           |               |
+|                         | process_dir  |         |      |           |               |
+|                         | src_host     | Legacy  |      |           | &#10003;      |
+|                         | process_path |         |      |           |               |
+| endpoint-authentication | src_ip       | Default |      | &#10003;  |               |
+|                         | auth_method  | Default |      |           | &#10003;      |
+|                         | process_name | Default |      |           | &#10003;      |
+|                         | process_dir  | Default |      |           | &#10003;      |
+|                         | process_path | Default |      |           | &#10003;      |
+| process-create          | domain       | Default |      |           | &#10003;      |
+|                         | hash_md5     | Default |      |           | &#10003;      |
+|                         | user         | Default |      | &#10003;  |               |
+

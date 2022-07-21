@@ -25,6 +25,8 @@ repository-member-remove:success
 repository-member-remove:fail
 -----------------------------
 
-| Field  | Core | Detection | Informational |
-| ------ | ---- | --------- | ------------- |
-| member |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| member         |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

@@ -1,65 +1,41 @@
 azure resource log (keyvault)
 =============================
 
-```JSON
-{"expression":"product = \"azure resource log (keyvault)\"",
-"activity_type":{"key-read":{"fields":{}},
-"key-write":{"fields":{}}},
-"fields":{"tenant_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_version":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"creds_path":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"subscription_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"key_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_group":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"creds_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_path":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"correlation_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "azure resource log (keyvault)"
+
+Fields
+------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| tenant_id         |      |           | &#10003;      |
+| operation_version |      |           | &#10003;      |
+| operation_type    |      |           | &#10003;      |
+| resource          |      |           | &#10003;      |
+| service_name      |      | &#10003;  |               |
+| event_category    |      |           | &#10003;      |
+| creds_path        |      |           | &#10003;      |
+| url               |      |           | &#10003;      |
+| subscription_id   |      |           | &#10003;      |
+| key_name          |      |           | &#10003;      |
+| resource_group    |      |           | &#10003;      |
+| creds_name        |      |           | &#10003;      |
+| resource_path     |      |           | &#10003;      |
+| correlation_id    |      |           | &#10003;      |
+| result_code       |      |           | &#10003;      |
+| resource_name     |      |           | &#10003;      |
+| operation         |      | &#10003;  |               |
+| user              |      | &#10003;  |               |
+| user_agent        |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| key-read      |       |        |      |           |               |
+| key-write     |       |        |      |           |               |
+

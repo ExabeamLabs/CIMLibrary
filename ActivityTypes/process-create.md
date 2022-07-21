@@ -32,7 +32,9 @@ process-create:fail
 | Field                       | Core | Detection | Informational |
 | --------------------------- | ---- | --------- | ------------- |
 | parent_process_id           |      | &#10003;  |               |
+| failure_code                |      | &#10003;  |               |
 | parent_process_command_line |      | &#10003;  |               |
 | parent_process_name         |      | &#10003;  |               |
+| failure_reason              |      | &#10003;  |               |
 | parent_process_dir          |      | &#10003;  |               |
 | parent_process_path         |      | &#10003;  |               |

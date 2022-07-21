@@ -1,23 +1,23 @@
 cds
 ===
 
-```JSON
-{"expression":"product = \"cds\"",
-"activity_type":{"endpoint-login":{"fields":{"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cds"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field        | Status  | Core | Detection | Informational |
+| -------------- | ------------ | ------- | ---- | --------- | ------------- |
+| endpoint-login | user_id      | Default |      |           | &#10003;      |
+|                | process_name | Default |      |           | &#10003;      |
+|                | process_dir  | Default |      |           | &#10003;      |
+|                | process_path | Default |      |           | &#10003;      |
+

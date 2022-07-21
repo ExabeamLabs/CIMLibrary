@@ -1,11 +1,20 @@
 oracle public cloud
 ===================
 
-```JSON
-{"expression":"product = \"oracle public cloud\"",
-"activity_type":{"network-session":{"fields":{"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "oracle public cloud"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field     | Status  | Core | Detection | Informational |
+| --------------- | --------- | ------- | ---- | --------- | ------------- |
+| network-session | bytes_out | Default |      |           | &#10003;      |
+

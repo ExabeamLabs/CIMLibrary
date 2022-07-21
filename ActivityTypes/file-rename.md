@@ -26,7 +26,9 @@ file-rename:success
 file-rename:fail
 ----------------
 
-| Field         | Core | Detection | Informational |
-| ------------- | ---- | --------- | ------------- |
-| new_file_name |      |           | &#10003;      |
-| old_file_name |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| new_file_name  |      |           | &#10003;      |
+| old_file_name  |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

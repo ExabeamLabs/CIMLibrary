@@ -1,8 +1,20 @@
 event viewer - powershell
 =========================
 
-```JSON
-{"expression":"product = \"event viewer - powershell\"",
-"activity_type":{"printer-activity":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "event viewer - powershell"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type    | Field | Status | Core | Detection | Informational |
+| ---------------- | ----- | ------ | ---- | --------- | ------------- |
+| printer-activity |       |        |      |           |               |
+

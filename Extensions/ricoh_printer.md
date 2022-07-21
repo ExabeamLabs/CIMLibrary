@@ -1,25 +1,27 @@
 ricoh printer
 =============
 
-```JSON
-{"expression":"product = \"ricoh printer\"",
-"activity_type":{"printer-activity":{"fields":{}}},
-"fields":{"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"num_pages":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"printer_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "ricoh printer"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| bytes        |      |           | &#10003;      |
+| num_pages    |      |           | &#10003;      |
+| src_host     |      |           | &#10003;      |
+| printer_name |      |           | &#10003;      |
+| user         |      |           | &#10003;      |
+| object       |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type    | Field | Status | Core | Detection | Informational |
+| ---------------- | ----- | ------ | ---- | --------- | ------------- |
+| printer-activity |       |        |      |           |               |
+

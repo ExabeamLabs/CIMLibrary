@@ -1,26 +1,28 @@
 event viewer - dnsserver
 ========================
 
-```JSON
-{"expression":"product = \"event viewer - dnsserver\"",
-"activity_type":{"dns-response":{"fields":{}},
-"dns-request":{"fields":{}}},
-"fields":{"result":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dns_query_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "event viewer - dnsserver"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| result       |      | &#10003;  |               |
+| process_id   |      |           | &#10003;      |
+| protocol     |      |           | &#10003;      |
+| bytes_out    |      |           | &#10003;      |
+| dns_query_id |      |           | &#10003;      |
+| operation    |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| dns-request   |       |        |      |           |               |
+| dns-response  |       |        |      |           |               |
+

@@ -1,55 +1,33 @@
 cisco meraki mx
 ===============
 
-```JSON
-{"expression":"product = cisco meraki mx",
-"activity_type":{"alert-trigger":{"fields":{"src_mac":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_subtype":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = cisco meraki mx
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_mac         |        |          |           |               |
+|               | process         |        |          |           |               |
+|               | event_subtype   |        |          |           |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | result          |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | protocol        | Legacy |          | &#10003;  |               |
+|               | application     |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | dest_host       | Legacy |          | &#10003;  |               |
+|               | category        |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | direction       |        |          |           |               |
+

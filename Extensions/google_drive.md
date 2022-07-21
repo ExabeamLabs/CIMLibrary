@@ -1,186 +1,74 @@
 google drive
 ============
 
-```JSON
-{"expression":"product = \"google drive\"",
-"activity_type":{"file-download":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"privileges":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-permission-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"privileges":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"privileges":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"privileges":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"privileges":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "google drive"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field           | Status | Core     | Detection | Informational |
+| ---------------------- | --------------- | ------ | -------- | --------- | ------------- |
+| file-delete            | src_ip          |        |          |           |               |
+|                        | privileges      |        |          |           |               |
+|                        | access_type     |        |          |           |               |
+|                        | access          | Legacy |          | &#10003;  |               |
+|                        | user_id         |        |          |           |               |
+|                        | additional_info |        |          |           |               |
+|                        | file_type       | Legacy |          |           | &#10003;      |
+|                        | bytes           |        |          |           |               |
+|                        | file_id         |        |          |           |               |
+|                        | file_owner      |        |          |           |               |
+|                        | user            | Legacy | &#10003; | &#10003;  |               |
+| file-download          | src_ip          |        |          |           |               |
+|                        | privileges      |        |          |           |               |
+|                        | access_type     |        |          |           |               |
+|                        | access          |        |          |           |               |
+|                        | user_id         |        |          |           |               |
+|                        | additional_info |        |          |           |               |
+|                        | file_type       | Legacy |          |           | &#10003;      |
+|                        | bytes           |        |          |           |               |
+|                        | file_id         |        |          |           |               |
+|                        | file_owner      |        |          |           |               |
+|                        | user            | Legacy | &#10003; | &#10003;  |               |
+| file-permission-modify | src_ip          |        |          |           |               |
+|                        | privileges      |        |          |           |               |
+|                        | access_type     |        |          |           |               |
+|                        | access          | Legacy |          | &#10003;  |               |
+|                        | user_id         |        |          |           |               |
+|                        | additional_info |        |          |           |               |
+|                        | file_type       | Legacy |          |           | &#10003;      |
+|                        | bytes           |        |          |           |               |
+|                        | file_id         |        |          |           |               |
+|                        | file_owner      |        |          |           |               |
+|                        | user            | Legacy | &#10003; | &#10003;  |               |
+| file-read              | src_ip          |        |          |           |               |
+|                        | privileges      |        |          |           |               |
+|                        | access_type     |        |          |           |               |
+|                        | access          | Legacy |          | &#10003;  |               |
+|                        | user_id         |        |          |           |               |
+|                        | additional_info |        |          |           |               |
+|                        | file_type       | Legacy |          |           | &#10003;      |
+|                        | bytes           |        |          |           |               |
+|                        | file_id         |        |          |           |               |
+|                        | file_owner      |        |          |           |               |
+|                        | user            | Legacy | &#10003; | &#10003;  |               |
+| file-write             | src_ip          |        |          |           |               |
+|                        | privileges      |        |          |           |               |
+|                        | access_type     |        |          |           |               |
+|                        | access          | Legacy |          | &#10003;  |               |
+|                        | user_id         |        |          |           |               |
+|                        | additional_info |        |          |           |               |
+|                        | file_type       | Legacy |          |           | &#10003;      |
+|                        | bytes           |        |          |           |               |
+|                        | file_id         |        |          |           |               |
+|                        | file_owner      |        |          |           |               |
+|                        | user            | Legacy | &#10003; | &#10003;  |               |
+

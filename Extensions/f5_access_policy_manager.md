@@ -1,51 +1,31 @@
 f5 access policy manager
 ========================
 
-```JSON
-{"expression":"product = \"f5 access policy manager\"",
-"activity_type":{"app-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "f5 access policy manager"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field             | Status  | Core | Detection | Informational |
+| ------------------ | ----------------- | ------- | ---- | --------- | ------------- |
+| app-authentication | src_ip            | Default |      | &#10003;  |               |
+|                    | auth_method       | Default |      |           | &#10003;      |
+|                    | dest_host         | Default |      | &#10003;  |               |
+|                    | event_name        | Default |      |           | &#10003;      |
+| vpn-login          | src_translated_ip | Default |      |           | &#10003;      |
+|                    | session_id        | Default |      |           | &#10003;      |
+|                    | src_host          | Default |      | &#10003;  |               |
+|                    | user_agent        | Default |      |           | &#10003;      |
+| vpn-logout         | src_translated_ip |         |      |           | &#10003;      |
+|                    | session_id        |         |      |           | &#10003;      |
+|                    | src_host          |         |      | &#10003;  |               |
+|                    | user_agent        |         |      |           | &#10003;      |
+

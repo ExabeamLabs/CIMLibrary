@@ -1,17 +1,22 @@
 msdhcp
 ======
 
-```JSON
-{"expression":"product = \"msdhcp\"",
-"activity_type":{"dhcp-session":{"fields":{"dest_mac":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "msdhcp"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field      | Status | Core | Detection | Informational |
+| ------------- | ---------- | ------ | ---- | --------- | ------------- |
+| dhcp-session  | dest_mac   |        |      |           |               |
+|               | event_code | Legacy |      |           | &#10003;      |
+|               | dest_host  |        |      |           |               |
+

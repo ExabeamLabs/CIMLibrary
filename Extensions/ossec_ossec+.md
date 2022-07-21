@@ -1,27 +1,25 @@
 ossec ossec+
 ============
 
-```JSON
-{"expression":"product = ossec ossec+",
-"activity_type":{"alert-trigger":{"fields":{"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_hash":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = ossec ossec+
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core | Detection | Informational |
+| ------------- | --------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | email_address   |        |      |           |               |
+|               | full_name       |        |      |           |               |
+|               | file_hash       | Legacy |      |           | &#10003;      |
+|               | additional_info |        |      |           |               |
+|               | alert_id        | Legacy |      |           | &#10003;      |
+|               | malware_url     |        |      |           |               |
+

@@ -1,44 +1,29 @@
 cyberark endpoint privilege management
 ======================================
 
-```JSON
-{"expression":"product = \"cyberark endpoint privilege management\"",
-"activity_type":{"alert-trigger":{"fields":{"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cyberark endpoint privilege management"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | hash_sha256          |        |          |           |               |
+|               | file_path            | Legacy |          |           | &#10003;      |
+|               | file_name            | Legacy | &#10003; |           |               |
+|               | process_name         | Legacy |          | &#10003;  |               |
+|               | file_dir             | Legacy |          |           | &#10003;      |
+|               | parent_process_name  |        |          |           |               |
+|               | dest_host            | Legacy |          | &#10003;  |               |
+|               | process_command_line |        |          |           |               |
+|               | process_path         | Legacy |          | &#10003;  |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+

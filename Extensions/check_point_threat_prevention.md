@@ -1,135 +1,59 @@
 check point threat prevention
 =============================
 
-```JSON
-{"expression":"product = check point threat prevention",
-"activity_type":{"alert-trigger":{"fields":{"dest_dns_hostname":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"confidence_level":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"attack_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule_uid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_family":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application_protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"attack":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"origin_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_ou":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"smartdefense_profile":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"profile":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protection_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"product_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protection_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"account":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"origin_ip":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = check point threat prevention
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | dest_dns_hostname    |        |          |           |               |
+|               | confidence_level     |        |          |           |               |
+|               | rule                 |        |          |           |               |
+|               | attack_info          |        |          |           |               |
+|               | rule_uid             |        |          |           |               |
+|               | dest_translated_ip   |        |          |           |               |
+|               | malware_family       |        |          |           |               |
+|               | result               |        |          |           |               |
+|               | src_ip               | Legacy | &#10003; | &#10003;  |               |
+|               | src_translated_ip    |        |          |           |               |
+|               | protocol             | Legacy |          | &#10003;  |               |
+|               | application_protocol |        |          |           |               |
+|               | attack               |        |          |           |               |
+|               | action               | Legacy |          |           | &#10003;      |
+|               | first_name           |        |          |           |               |
+|               | dest_port            | Legacy |          | &#10003;  |               |
+|               | origin_name          |        |          |           |               |
+|               | direction            |        |          |           |               |
+|               | user_ou              |        |          |           |               |
+|               | smartdefense_profile |        |          |           |               |
+|               | service_name         |        |          |           |               |
+|               | profile              |        |          |           |               |
+|               | last_name            |        |          |           |               |
+|               | protection_type      |        |          |           |               |
+|               | failure_reason       |        |          |           |               |
+|               | src_host             | Legacy | &#10003; | &#10003;  |               |
+|               | product_name         |        |          |           |               |
+|               | rule_id              |        |          |           |               |
+|               | src_port             | Legacy |          |           | &#10003;      |
+|               | full_name            |        |          |           |               |
+|               | application          |        |          |           |               |
+|               | additional_info      |        |          |           |               |
+|               | domain               |        |          |           |               |
+|               | protection_name      |        |          |           |               |
+|               | malware_action       |        |          |           |               |
+|               | dest_host            | Legacy |          | &#10003;  |               |
+|               | malware_url          |        |          |           |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+|               | account              |        |          |           |               |
+|               | origin_ip            |        |          |           |               |
+

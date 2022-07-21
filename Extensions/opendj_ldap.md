@@ -1,39 +1,27 @@
 opendj ldap
 ===========
 
-```JSON
-{"expression":"product = \"opendj ldap\"",
-"activity_type":{"endpoint-authentication":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"connection_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_dn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_uid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "opendj ldap"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field         | Status  | Core | Detection | Informational |
+| ----------------------- | ------------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | src_port      | Default |      |           | &#10003;      |
+|                         | src_ip        | Default |      | &#10003;  |               |
+|                         | auth_method   | Default |      |           | &#10003;      |
+|                         | connection_id | Default |      |           | &#10003;      |
+|                         | auth_dn       | Default |      |           | &#10003;      |
+|                         | dest_ip       | Default |      | &#10003;  |               |
+|                         | dest_port     | Default |      |           | &#10003;      |
+|                         | user_uid      | Default |      |           | &#10003;      |
+

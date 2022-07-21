@@ -1,60 +1,36 @@
 microsoft windows
 =================
 
-```JSON
-{"expression":"product = microsoft windows",
-"activity_type":{"alert-trigger":{"fields":{"login_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"provider_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"authentication_process":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft windows
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                  | Status | Core | Detection | Informational |
+| ------------- | ---------------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | login_id               |        |      |           |               |
+|               | process_id             |        |      |           |               |
+|               | event_name_code        |        |      |           |               |
+|               | event_name_name        |        |      |           |               |
+|               | threat_id              |        |      |           |               |
+|               | result                 |        |      |           |               |
+|               | event_id               |        |      |           |               |
+|               | additional_info        |        |      |           |               |
+|               | process_name           | Legacy |      | &#10003;  |               |
+|               | domain                 |        |      |           |               |
+|               | hash_md5               |        |      |           |               |
+|               | user_sid               |        |      |           |               |
+|               | operation_id           |        |      |           |               |
+|               | malware_url            |        |      |           |               |
+|               | provider_name          |        |      |           |               |
+|               | user                   | Legacy |      | &#10003;  |               |
+|               | authentication_process |        |      |           |               |
+

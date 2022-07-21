@@ -1,19 +1,22 @@
 fast enterprises gentax
 =======================
 
-```JSON
-{"expression":"product = \"fast enterprises gentax\"",
-"activity_type":{"app-login":{"fields":{"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "fast enterprises gentax"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field          | Status  | Core | Detection | Informational |
+| ------------- | -------------- | ------- | ---- | --------- | ------------- |
+| app-login     | user_id        | Default |      |           | &#10003;      |
+|               | event_category | Default |      |           | &#10003;      |
+|               | category       | Default |      |           | &#10003;      |
+

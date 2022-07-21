@@ -1,21 +1,23 @@
 netskope netskope
 =================
 
-```JSON
-{"expression":"product = netskope netskope",
-"activity_type":{"alert-trigger":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = netskope netskope
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status | Core     | Detection | Informational |
+| ------------- | ---------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | domain           |        |          |           |               |
+|               | operating_system |        |          |           |               |
+|               | src_host         | Legacy | &#10003; | &#10003;  |               |
+|               | user             | Legacy |          | &#10003;  |               |
+

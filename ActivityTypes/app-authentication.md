@@ -28,5 +28,7 @@ app-authentication:fail
 
 | Field               | Core     | Detection | Informational |
 | ------------------- | -------- | --------- | ------------- |
+| failure_code        |          | &#10003;  |               |
+| failure_reason      |          | &#10003;  |               |
 | user                | &#10003; |           |               |
 | authentication_type |          |           |               |

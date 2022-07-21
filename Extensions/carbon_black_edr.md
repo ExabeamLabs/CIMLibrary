@@ -1,112 +1,51 @@
 carbon black edr
 ================
 
-```JSON
-{"expression":"product = \"carbon black edr\"",
-"activity_type":{"file-write":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_path":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"process-create":{"fields":{"sensor_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{"parent_process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"parent_process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "carbon black edr"
+
+Fields
+------
+
+| Field                | Core     | Detection | Informational |
+| -------------------- | -------- | --------- | ------------- |
+| process_id           |          |           | &#10003;      |
+| device_id            |          |           | &#10003;      |
+| process_dir          |          | &#10003;  |               |
+| src_host             |          | &#10003;  |               |
+| process_command_line |          | &#10003;  |               |
+| process_guid         |          |           | &#10003;      |
+| process_name         |          | &#10003;  |               |
+| alert_id             |          |           | &#10003;      |
+| dest_ip              | &#10003; | &#10003;  |               |
+| domain               |          | &#10003;  |               |
+| parent_process_guid  |          |           | &#10003;      |
+| process_path         |          | &#10003;  |               |
+| user                 |          | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field                       | Status  | Core | Detection | Informational |
+| --------------- | --------------------------- | ------- | ---- | --------- | ------------- |
+| file-write      | parent_process_id           |         |      |           | &#10003;      |
+|                 | parent_process_command_line |         |      | &#10003;  |               |
+|                 | parent_process_name         |         |      | &#10003;  |               |
+|                 | parent_process_dir          |         |      | &#10003;  |               |
+|                 | parent_process_path         |         |      | &#10003;  |               |
+| network-session | parent_process_id           | Default |      |           | &#10003;      |
+|                 | parent_process_command_line | Default |      |           | &#10003;      |
+|                 | parent_process_name         | Default |      |           | &#10003;      |
+|                 | parent_process_dir          | Default |      |           | &#10003;      |
+|                 | parent_process_path         | Default |      |           | &#10003;      |
+| process-create  | sensor_id                   | Default |      |           | &#10003;      |
+|                 | device_id                   | Default |      |           | &#10003;      |
+|                 | domain                      | Default |      |           | &#10003;      |
+|                 | hash_md5                    | Default |      |           | &#10003;      |
+|                 | dest_host                   | Default |      | &#10003;  |               |
+|                 | parent_process_guid         | Default |      |           | &#10003;      |
+|                 | process_command_line        | Default |      |           | &#10003;      |
+|                 | user                        | Default |      | &#10003;  |               |
+

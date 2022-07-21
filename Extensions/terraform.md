@@ -1,22 +1,26 @@
 terraform
 =========
 
-```JSON
-{"expression":"product = \"terraform\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "terraform"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| method |      |           | &#10003;      |
+| bytes  |      |           | &#10003;      |
+| domain |      |           | &#10003;      |
+| action |      |           | &#10003;      |
+| user   |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

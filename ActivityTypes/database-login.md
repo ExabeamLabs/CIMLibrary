@@ -26,7 +26,9 @@ database-login:success
 database-login:fail
 -------------------
 
-| Field  | Core     | Detection | Informational |
-| ------ | -------- | --------- | ------------- |
-| domain |          | &#10003;  |               |
-| user   | &#10003; | &#10003;  |               |
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| failure_code   |          | &#10003;  |               |
+| domain         |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |
+| user           | &#10003; | &#10003;  |               |

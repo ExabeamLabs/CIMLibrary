@@ -1,41 +1,32 @@
 titanftp
 ========
 
-```JSON
-{"expression":"product = \"titanftp\"",
-"activity_type":{"ftp-traffic":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{}},
-"file-delete":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "titanftp"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      |           | &#10003;      |
+| src_port  |      |           | &#10003;      |
+| access    |      |           | &#10003;      |
+| bytes     |      |           | &#10003;      |
+| dest_ip   |      |           | &#10003;      |
+| user      |      |           | &#10003;      |
+| dest_port |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status  | Core | Detection | Informational |
+| ------------- | --------- | ------- | ---- | --------- | ------------- |
+| file-delete   |           |         |      |           |               |
+| file-read     |           |         |      |           |               |
+| ftp-traffic   | file_path | Default |      |           | &#10003;      |
+|               | file_ext  | Default |      |           | &#10003;      |
+|               | file_name | Default |      |           | &#10003;      |
+

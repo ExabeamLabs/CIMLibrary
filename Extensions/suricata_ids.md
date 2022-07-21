@@ -1,68 +1,37 @@
 suricata ids
 ============
 
-```JSON
-{"expression":"product = suricata ids",
-"activity_type":{"alert-trigger":{"fields":{"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"payload_printable":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application_protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = suricata ids
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | bytes_in             |        |          |           |               |
+|               | rule                 |        |          |           |               |
+|               | payload_printable    |        |          |           |               |
+|               | failure_reason       |        |          |           |               |
+|               | result               |        |          |           |               |
+|               | rule_id              |        |          |           |               |
+|               | src_ip               | Legacy | &#10003; | &#10003;  |               |
+|               | src_port             | Legacy |          |           | &#10003;      |
+|               | protocol             | Legacy |          | &#10003;  |               |
+|               | application_protocol |        |          |           |               |
+|               | bytes_out            |        |          |           |               |
+|               | additional_info      |        |          |           |               |
+|               | event_code           |        |          |           |               |
+|               | alert_id             | Legacy |          |           | &#10003;      |
+|               | dest_ip              | Legacy | &#10003; | &#10003;  |               |
+|               | action               | Legacy |          |           | &#10003;      |
+|               | category             |        |          |           |               |
+|               | dest_port            | Legacy |          | &#10003;  |               |
+

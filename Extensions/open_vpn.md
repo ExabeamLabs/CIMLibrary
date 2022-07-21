@@ -1,103 +1,47 @@
 open vpn
 ========
 
-```JSON
-{"expression":"product = \"open vpn\"",
-"activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"vpn-login":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"duration":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"login_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"duration":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"group_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"login_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "open vpn"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status  | Core | Detection | Informational |
+| ------------- | ----------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip            | Default |      | &#10003;  |               |
+|               | application       | Default |      |           | &#10003;      |
+|               | additional_info   | Default |      |           | &#10003;      |
+|               | bytes             | Default |      |           | &#10003;      |
+|               | src_host          | Default |      | &#10003;  |               |
+|               | user              | Default |      | &#10003;  |               |
+| vpn-login     | src_port          | Default |      |           | &#10003;      |
+|               | duration          | Default |      |           | &#10003;      |
+|               | src_translated_ip | Default |      |           | &#10003;      |
+|               | group_info        | Default |      |           | &#10003;      |
+|               | dest_ip           | Default |      | &#10003;  |               |
+|               | login_method      | Default |      |           | &#10003;      |
+|               | dest_host         | Default |      | &#10003;  |               |
+|               | session_id        | Default |      |           | &#10003;      |
+|               | dest_port         | Default |      |           | &#10003;      |
+| vpn-logout    | src_port          |         |      |           |               |
+|               | duration          |         |      |           |               |
+|               | src_translated_ip |         |      |           |               |
+|               | process_id        |         |      |           |               |
+|               | group_info        |         |      |           |               |
+|               | additional_info   |         |      |           |               |
+|               | login_method      |         |      |           |               |
+|               | event_name        |         |      |           |               |
+|               | dest_host         | Legacy  |      |           | &#10003;      |
+|               | session_id        |         |      |           |               |
+|               | dest_port         |         |      |           |               |
+

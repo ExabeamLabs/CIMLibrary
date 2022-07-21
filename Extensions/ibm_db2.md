@@ -1,125 +1,53 @@
 ibm db2
 =======
 
-```JSON
-{"expression":"product = ibm db2",
-"activity_type":{"database-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_schema":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-modify":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_user":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_schema":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = ibm db2
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_host |      |           | &#10003;      |
+| category |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type   | Field               | Status  | Core     | Detection | Informational |
+| --------------- | ------------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger   | result              |         |          |           |               |
+|                 | src_ip              | Legacy  | &#10003; | &#10003;  |               |
+|                 | additional_info     |         |          |           |               |
+|                 | alert_id            | Legacy  |          |           | &#10003;      |
+|                 | dest_ip             | Legacy  | &#10003; | &#10003;  |               |
+|                 | dest_host           | Legacy  |          | &#10003;  |               |
+|                 | malware_url         |         |          |           |               |
+|                 | user                | Legacy  |          | &#10003;  |               |
+| database-login  | src_ip              | Default |          | &#10003;  |               |
+|                 | db_name             | Default |          |           | &#10003;      |
+|                 | additional_info     | Default |          |           | &#10003;      |
+|                 | process_name        | Default |          |           | &#10003;      |
+|                 | event_code          | Default |          |           | &#10003;      |
+|                 | db_user             | Default |          | &#10003;  |               |
+|                 | event_name          | Default |          |           | &#10003;      |
+|                 | operation           | Default |          |           | &#10003;      |
+|                 | authentication_type | Default |          |           | &#10003;      |
+|                 | db_schema           | Default |          |           | &#10003;      |
+|                 | object              | Default |          |           | &#10003;      |
+| database-modify | src_ip              | Legacy  |          |           | &#10003;      |
+|                 | db_name             |         |          |           |               |
+|                 | event_code          |         |          |           |               |
+|                 | db_user             | Legacy  |          |           | &#10003;      |
+|                 | event_name          |         |          |           |               |
+|                 | authentication_type |         |          |           |               |
+|                 | db_schema           |         |          |           |               |
+|                 | object              |         |          |           |               |
+| file-read       | additional_info     |         |          |           |               |
+|                 | process_name        | Legacy  |          |           | &#10003;      |
+|                 | operation           |         |          |           |               |
+|                 | user                | Legacy  | &#10003; | &#10003;  |               |
+

@@ -24,7 +24,4 @@ vpn-authentication:success
 | user                | &#10003; | &#10003;  |               |
 | authentication_type | &#10003; | &#10003;  |               |
 
-vpn-authentication:fail
------------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

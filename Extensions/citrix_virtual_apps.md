@@ -1,31 +1,29 @@
 citrix virtual apps
 ===================
 
-```JSON
-{"expression":"product = \"citrix virtual apps\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "citrix virtual apps"
+
+Fields
+------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| src_ip            |      | &#10003;  |               |
+| src_translated_ip |      | &#10003;  |               |
+| protocol          |      | &#10003;  |               |
+| dest_ip           |      | &#10003;  |               |
+| alert_id          |      | &#10003;  |               |
+| operating_system  |      | &#10003;  |               |
+| event_name        |      | &#10003;  |               |
+| src_host          |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

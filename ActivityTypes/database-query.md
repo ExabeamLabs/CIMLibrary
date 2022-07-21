@@ -25,6 +25,8 @@ database-query:success
 database-query:fail
 -------------------
 
-| Field    | Core | Detection | Informational |
-| -------- | ---- | --------- | ------------- |
-| db_query |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| db_query       |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

@@ -1,131 +1,50 @@
 eset endpoint security
 ======================
 
-```JSON
-{"expression":"product = \"eset endpoint security\"",
-"activity_type":{"app-login":{"fields":{"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "eset endpoint security"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field           | Status  | Core | Detection | Informational |
+| ----------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-login               | process_dir     | Default |      |           | &#10003;      |
+|                         | url             | Default |      |           | &#10003;      |
+|                         | hash_sha256     | Default |      |           | &#10003;      |
+|                         | src_port        | Default |      |           | &#10003;      |
+|                         | src_ip          | Default |      | &#10003;  |               |
+|                         | protocol        | Default |      |           | &#10003;      |
+|                         | additional_info | Default |      |           | &#10003;      |
+|                         | process_name    | Default |      |           | &#10003;      |
+|                         | dest_ip         | Default |      | &#10003;  |               |
+|                         | event_name      | Default |      |           | &#10003;      |
+|                         | action          | Default |      |           | &#10003;      |
+|                         | process_path    | Default |      |           | &#10003;      |
+|                         | category        | Default |      |           | &#10003;      |
+|                         | dest_port       | Default |      |           | &#10003;      |
+|                         | direction       | Default |      |           | &#10003;      |
+| endpoint-authentication | src_ip          | Default |      | &#10003;  |               |
+|                         | additional_info | Default |      |           | &#10003;      |
+|                         | service_name    | Default |      |           | &#10003;      |
+|                         | alert_severity  | Default |      |           | &#10003;      |
+|                         | event_name      | Default |      |           | &#10003;      |
+|                         | category        | Default |      |           | &#10003;      |
+|                         | operation       | Default |      |           | &#10003;      |
+|                         | object          | Default |      |           | &#10003;      |
+| http-session            | hash_sha256     | Default |      |           | &#10003;      |
+|                         | additional_info | Default |      |           | &#10003;      |
+|                         | process_name    | Default |      |           | &#10003;      |
+|                         | domain          | Default |      |           | &#10003;      |
+|                         | event_name      | Default |      |           | &#10003;      |
+|                         | process_dir     | Default |      |           | &#10003;      |
+|                         | process_path    | Default |      |           | &#10003;      |
+|                         | direction       | Default |      |           | &#10003;      |
+

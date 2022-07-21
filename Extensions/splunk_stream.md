@@ -1,48 +1,34 @@
 splunk stream
 =============
 
-```JSON
-{"expression":"product = \"splunk stream\"",
-"activity_type":{"dns-response":{"fields":{"response_ttl":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"time_taken":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"dhcp-session":{"fields":{"ip_lease_time":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dns_ip_flow":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"trans_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"router_subnet":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"router_ip_flow":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_mac":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_mac":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "splunk stream"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_mac   |      |           | &#10003;      |
+| bytes_out |      |           | &#10003;      |
+| dest_mac  |      |           | &#10003;      |
+| bytes_in  |      |           | &#10003;      |
+| bytes     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field          | Status | Core | Detection | Informational |
+| ------------- | -------------- | ------ | ---- | --------- | ------------- |
+| dhcp-session  | ip_lease_time  |        |      |           |               |
+|               | domain         |        |      |           |               |
+|               | dns_ip_flow    |        |      |           |               |
+|               | event_name     |        |      |           |               |
+|               | trans_id       |        |      |           |               |
+|               | router_subnet  |        |      |           |               |
+|               | router_ip_flow |        |      |           |               |
+| dns-response  | response_ttl   |        |      |           |               |
+|               | time_taken     |        |      |           |               |
+

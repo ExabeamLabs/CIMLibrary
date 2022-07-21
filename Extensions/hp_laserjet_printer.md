@@ -1,36 +1,27 @@
 hp laserjet printer
 ===================
 
-```JSON
-{"expression":"product = \"hp laserjet printer\"",
-"activity_type":{"printer-activity":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"num_pages":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "hp laserjet printer"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type    | Field        | Status | Core     | Detection | Informational |
+| ---------------- | ------------ | ------ | -------- | --------- | ------------- |
+| printer-activity | src_port     |        |          |           |               |
+|                  | src_ip       |        |          |           |               |
+|                  | bytes        | Legacy |          | &#10003;  |               |
+|                  | num_pages    | Legacy |          | &#10003;  |               |
+|                  | printer_name | Legacy | &#10003; | &#10003;  |               |
+|                  | src_host     | Legacy |          |           | &#10003;      |
+|                  | user         | Legacy | &#10003; | &#10003;  |               |
+|                  | object       |        |          |           |               |
+

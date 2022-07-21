@@ -1,132 +1,57 @@
 moveit transfer
 ===============
 
-```JSON
-{"expression":"product = \"moveit transfer\"",
-"activity_type":{"file-download":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-upload":{"fields":{"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{}},
-"group-member-add":{"fields":{"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"dest_user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-remove":{"fields":{"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "moveit transfer"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      | &#10003;  |               |
+| operation |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type        | Field           | Status  | Core | Detection | Informational |
+| -------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity         | file_ext        | Default |      |           | &#10003;      |
+|                      | user_id         | Default |      |           | &#10003;      |
+|                      | additional_info | Default |      |           | &#10003;      |
+|                      | file_name       | Default |      |           | &#10003;      |
+|                      | dest_ip         | Default |      | &#10003;  |               |
+|                      | file_id         | Default |      |           | &#10003;      |
+|                      | file_dir        | Default |      |           | &#10003;      |
+|                      | dest_host       | Default |      | &#10003;  |               |
+|                      | user_agent      | Default |      |           | &#10003;      |
+| app-authentication   |                 |         |      |           |               |
+| app-login            | src_ip          | Default |      | &#10003;  |               |
+|                      | user_id         | Default |      |           | &#10003;      |
+|                      | src_host        | Default |      | &#10003;  |               |
+|                      | user_agent      | Default |      |           | &#10003;      |
+| file-delete          | bytes           |         |      |           |               |
+|                      | file_id         |         |      |           |               |
+| file-download        | bytes           | Legacy  |      | &#10003;  |               |
+|                      | file_id         |         |      |           |               |
+| file-read            | src_ip          |         |      |           |               |
+|                      | user_id         |         |      |           |               |
+|                      | additional_info |         |      |           |               |
+|                      | src_host        | Legacy  |      | &#10003;  |               |
+|                      | user_agent      |         |      |           |               |
+| file-upload          | bytes           |         |      |           |               |
+|                      | file_id         |         |      |           |               |
+| file-write           | src_ip          |         |      |           |               |
+|                      | user_id         |         |      |           |               |
+|                      | additional_info |         |      |           |               |
+|                      | bytes           | Legacy  |      | &#10003;  |               |
+|                      | file_id         |         |      |           |               |
+|                      | src_host        |         |      |           |               |
+|                      | user_agent      |         |      |           |               |
+| group-member-add     | dest_user_id    |         |      |           |               |
+| group-member-remove  | dest_user_id    |         |      |           |               |
+| user-password-modify | dest_user_id    | Default |      |           | &#10003;      |
+

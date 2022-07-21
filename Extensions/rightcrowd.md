@@ -1,40 +1,32 @@
 rightcrowd
 ==========
 
-```JSON
-{"expression":"product = \"rightcrowd\"",
-"activity_type":{"physical_location-access":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"site_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"badge_reader":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"site_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"badge_status":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"site_state":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"area_classification":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "rightcrowd"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| src_ip              |      |           | &#10003;      |
+| site_name           |      |           | &#10003;      |
+| badge_reader        |      |           | &#10003;      |
+| event_code          |      |           | &#10003;      |
+| site_id             |      |           | &#10003;      |
+| badge_status        |      |           | &#10003;      |
+| event_name          |      |           | &#10003;      |
+| last_name           |      |           | &#10003;      |
+| first_name          |      |           | &#10003;      |
+| site_state          |      |           | &#10003;      |
+| area_classification |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type            | Field | Status | Core | Detection | Informational |
+| ------------------------ | ----- | ------ | ---- | --------- | ------------- |
+| physical_location-access |       |        |      |           |               |
+

@@ -1,101 +1,45 @@
 symantec endpoint protection
 ============================
 
-```JSON
-{"expression":"product = symantec endpoint protection",
-"activity_type":{"endpoint-scan":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"scan_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"alert-trigger":{"fields":{"operating_system_revision":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_mac":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"product_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = symantec endpoint protection
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                     | Status  | Core     | Detection | Informational |
+| ------------- | ------------------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger | operating_system_revision |         |          |           |               |
+|               | process_id                |         |          |           |               |
+|               | dest_mac                  |         |          |           |               |
+|               | process_dir               |         |          |           |               |
+|               | src_host                  | Legacy  | &#10003; | &#10003;  |               |
+|               | product_name              |         |          |           |               |
+|               | src_ip                    | Legacy  | &#10003; | &#10003;  |               |
+|               | src_port                  | Legacy  |          |           | &#10003;      |
+|               | protocol                  | Legacy  |          | &#10003;  |               |
+|               | process_guid              |         |          |           |               |
+|               | additional_info           |         |          |           |               |
+|               | process_name              | Legacy  |          | &#10003;  |               |
+|               | dest_ip                   | Legacy  | &#10003; | &#10003;  |               |
+|               | domain                    |         |          |           |               |
+|               | action                    | Legacy  |          |           | &#10003;      |
+|               | dest_host                 | Legacy  |          | &#10003;  |               |
+|               | operating_system          |         |          |           |               |
+|               | process_path              | Legacy  |          | &#10003;  |               |
+|               | user                      | Legacy  |          | &#10003;  |               |
+|               | dest_port                 | Legacy  |          | &#10003;  |               |
+|               | user_agent                |         |          |           |               |
+| endpoint-scan | src_ip                    | Default |          | &#10003;  |               |
+|               | group_name                | Default |          |           | &#10003;      |
+|               | domain                    | Default |          |           | &#10003;      |
+|               | scan_id                   | Default |          |           | &#10003;      |
+|               | user                      | Default |          | &#10003;  |               |
+
