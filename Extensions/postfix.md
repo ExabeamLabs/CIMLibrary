@@ -1,29 +1,29 @@
 postfix
 =======
 
-```JSON
-{"expression":"product = \"postfix\"",
-"activity_type":{"email-receive":{"fields":{}},
-"email-send":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"msg_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"num_recipients":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "postfix"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| src_ip         |      |           | &#10003;      |
+| bytes          |      |           | &#10003;      |
+| dest_ip        |      |           | &#10003;      |
+| dest_host      |      |           | &#10003;      |
+| src_host       |      |           | &#10003;      |
+| msg_id         |      |           | &#10003;      |
+| num_recipients |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| email-receive |       |        |      |           |               |
+| email-send    |       |        |      |           |               |
+

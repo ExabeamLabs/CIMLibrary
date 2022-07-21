@@ -1,174 +1,67 @@
 okta adaptive mfa
 =================
 
-```JSON
-{"expression":"product = \"okta adaptive mfa\"",
-"activity_type":{"user-password-reset":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"browser":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"uri":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-lock":{"fields":{"group_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{"object_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_city":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"location_state":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"uri":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"group_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"object_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"location_state":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"uri":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_city":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"members":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"assigned_apps":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"browser":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"uri":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "okta adaptive mfa"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip |          | &#10003;  |               |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type       | Field            | Status  | Core | Detection | Informational |
+| ------------------- | ---------------- | ------- | ---- | --------- | ------------- |
+| app-activity        | object_type      | Default |      |           | &#10003;      |
+|                     | group_name       | Default |      |           | &#10003;      |
+|                     | location_country | Default |      |           | &#10003;      |
+|                     | dest_user        | Default |      | &#10003;  |               |
+|                     | location_state   | Default |      |           | &#10003;      |
+|                     | uri              | Default |      |           | &#10003;      |
+|                     | url              | Default |      |           | &#10003;      |
+|                     | additional_info  | Default |      |           | &#10003;      |
+|                     | location_city    | Default |      |           | &#10003;      |
+|                     | members          | Default |      |           | &#10003;      |
+|                     | assigned_apps    | Default |      |           | &#10003;      |
+|                     | user_agent       | Default |      |           | &#10003;      |
+|                     | object           | Default |      |           | &#10003;      |
+| app-authentication  | object_type      | Default |      |           | &#10003;      |
+|                     | additional_info  | Default |      |           | &#10003;      |
+|                     | location_country | Default |      |           | &#10003;      |
+|                     | location_city    | Default |      |           | &#10003;      |
+|                     | event_name       | Default |      |           | &#10003;      |
+|                     | dest_user        | Default |      | &#10003;  |               |
+|                     | location_state   | Default |      |           | &#10003;      |
+|                     | uri              | Default |      |           | &#10003;      |
+|                     | operation        | Default |      |           | &#10003;      |
+|                     | user_agent       | Default |      |           | &#10003;      |
+|                     | url              | Default |      |           | &#10003;      |
+|                     | object           | Default |      |           | &#10003;      |
+| app-login           | user_agent       | Default |      |           | &#10003;      |
+| group-member-add    | group_type       | Legacy  |      |           | &#10003;      |
+| user-create         | application      |         |      |           |               |
+|                     | object_type      |         |      |           |               |
+|                     | additional_info  |         |      |           |               |
+|                     | browser          |         |      |           |               |
+|                     | operation        |         |      |           |               |
+|                     | uri              |         |      |           |               |
+|                     | user_agent       |         |      |           |               |
+|                     | object           |         |      |           |               |
+| user-lock           | group_name       |         |      |           | &#10003;      |
+| user-password-reset | application      |         |      |           |               |
+|                     | object_type      |         |      |           |               |
+|                     | additional_info  |         |      |           |               |
+|                     | browser          |         |      |           |               |
+|                     | operation        |         |      |           |               |
+|                     | uri              |         |      |           |               |
+|                     | user_agent       |         |      |           |               |
+|                     | object           |         |      |           |               |
+

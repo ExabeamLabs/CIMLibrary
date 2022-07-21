@@ -1,17 +1,22 @@
 aci
 ===
 
-```JSON
-{"expression":"product = \"aci\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"configuration-modify":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "aci"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type        | Field           | Status  | Core     | Detection | Informational |
+| -------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-login            | src_ip          | Default |          | &#10003;  |               |
+| configuration-modify | additional_info |         |          |           | &#10003;      |
+|                      | user            |         | &#10003; |           |               |
+

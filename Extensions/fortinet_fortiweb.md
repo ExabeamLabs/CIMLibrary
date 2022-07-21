@@ -1,11 +1,20 @@
 fortinet fortiweb
 =================
 
-```JSON
-{"expression":"product = \"fortinet fortiweb\"",
-"activity_type":{"http-session":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "fortinet fortiweb"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field  | Status  | Core | Detection | Informational |
+| ------------- | ------ | ------- | ---- | --------- | ------------- |
+| http-session  | domain | Default |      |           | &#10003;      |
+

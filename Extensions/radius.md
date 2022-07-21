@@ -1,25 +1,25 @@
 radius
 ======
 
-```JSON
-{"expression":"product = \"radius\"",
-"activity_type":{"radius-session":{"fields":{"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"network":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "radius"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_host |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field    | Status  | Core | Detection | Informational |
+| ----------------------- | -------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | src_port | Default |      |           | &#10003;      |
+| radius-session          | src_mac  | Default |      |           | &#10003;      |
+|                         | user     | Default |      | &#10003;  |               |
+|                         | network  | Default |      |           | &#10003;      |
+

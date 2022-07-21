@@ -1,22 +1,23 @@
 nortel contivity vpn
 ====================
 
-```JSON
-{"expression":"product = \"nortel contivity vpn\"",
-"activity_type":{"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"contivity_session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"contivity_session_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "nortel contivity vpn"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status  | Core | Detection | Informational |
+| ------------- | -------------------- | ------- | ---- | --------- | ------------- |
+| vpn-login     | src_translated_ip    | Default |      |           | &#10003;      |
+|               | dest_host            | Default |      | &#10003;  |               |
+|               | contivity_session_id | Default |      |           | &#10003;      |
+| vpn-logout    | contivity_session_id |         |      |           |               |
+

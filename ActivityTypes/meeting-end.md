@@ -21,7 +21,4 @@ meeting-end:success
 There are no fields for this activity type.
 
 
-meeting-end:fail
-----------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

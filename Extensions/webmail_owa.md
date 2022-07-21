@@ -1,35 +1,26 @@
 webmail owa
 ===========
 
-```JSON
-{"expression":"product = \"webmail owa\"",
-"activity_type":{"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "webmail owa"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip          | Default |      | &#10003;  |               |
+|               | application     | Default |      |           | &#10003;      |
+|               | additional_info | Default |      |           | &#10003;      |
+|               | dest_ip         | Default |      | &#10003;  |               |
+|               | domain          | Default |      |           | &#10003;      |
+|               | src_host        | Default |      | &#10003;  |               |
+|               | user            | Default |      | &#10003;  |               |
+

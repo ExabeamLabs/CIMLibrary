@@ -1,45 +1,31 @@
 cloudflare insights
 ===================
 
-```JSON
-{"expression":"product = \"cloudflare insights\"",
-"activity_type":{"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"group-member-remove":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "cloudflare insights"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      | &#10003;  |               |
+| user      |      | &#10003;  |               |
+| operation |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type       | Field           | Status  | Core | Detection | Informational |
+| ------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity        | result          | Default |      |           | &#10003;      |
+|                     | additional_info | Default |      |           | &#10003;      |
+|                     | dest_ip         | Default |      | &#10003;  |               |
+|                     | dest_host       | Default |      | &#10003;  |               |
+|                     | src_host        | Default |      | &#10003;  |               |
+| app-login           | additional_info | Default |      |           | &#10003;      |
+| group-member-add    | additional_info |         |      |           |               |
+| group-member-remove | additional_info |         |      |           |               |
+

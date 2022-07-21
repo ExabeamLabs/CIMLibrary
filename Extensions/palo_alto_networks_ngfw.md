@@ -1,136 +1,58 @@
 palo alto networks ngfw
 =======================
 
-```JSON
-{"expression":"product = palo alto networks ngfw",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"miscellaneous":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"subtype":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_network_zone":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"profile":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_network_zone":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"sequence":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"network_application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_time":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = palo alto networks ngfw
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path            | Legacy |          |           | &#10003;      |
+|               | miscellaneous        |        |          |           |               |
+|               | bytes_in             |        |          |           |               |
+|               | src_user             |        |          |           |               |
+|               | dest_translated_ip   |        |          |           |               |
+|               | threat_category      |        |          |           |               |
+|               | src_ip               | Legacy | &#10003; | &#10003;  |               |
+|               | result               |        |          |           |               |
+|               | src_domain           |        |          |           |               |
+|               | src_translated_ip    |        |          |           |               |
+|               | protocol             | Legacy |          | &#10003;  |               |
+|               | subtype              |        |          |           |               |
+|               | process_name         | Legacy |          | &#10003;  |               |
+|               | alert_id             | Legacy |          |           | &#10003;      |
+|               | action               | Legacy |          |           | &#10003;      |
+|               | dest_port            | Legacy |          | &#10003;  |               |
+|               | direction            |        |          |           |               |
+|               | src_network_zone     |        |          |           |               |
+|               | file_name            | Legacy | &#10003; |           |               |
+|               | file_dir             | Legacy |          |           | &#10003;      |
+|               | profile              |        |          |           |               |
+|               | dest_network_zone    |        |          |           |               |
+|               | event_category       |        |          |           |               |
+|               | rule_id              |        |          |           |               |
+|               | src_port             | Legacy |          |           | &#10003;      |
+|               | sequence             |        |          |           |               |
+|               | file_ext             |        |          |           |               |
+|               | email_address        |        |          |           |               |
+|               | bytes_out            |        |          |           |               |
+|               | additional_info      |        |          |           |               |
+|               | domain               |        |          |           |               |
+|               | dest_domain          |        |          |           |               |
+|               | dest_host            | Legacy |          | &#10003;  |               |
+|               | dest_translated_port |        |          |           |               |
+|               | malware_url          |        |          |           |               |
+|               | network_application  |        |          |           |               |
+|               | category             |        |          |           |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+|               | event_time           |        |          |           |               |
+

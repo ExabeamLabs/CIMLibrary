@@ -1,21 +1,23 @@
 rsa netwitness endpoint
 =======================
 
-```JSON
-{"expression":"product = rsa netwitness endpoint",
-"activity_type":{"alert-trigger":{"fields":{"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"target_uri":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target_host":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = rsa netwitness endpoint
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status | Core     | Detection | Informational |
+| ------------- | ----------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | alert_id    | Legacy |          |           | &#10003;      |
+|               | dest_ip     | Legacy | &#10003; | &#10003;  |               |
+|               | target_uri  |        |          |           |               |
+|               | target_host |        |          |           |               |
+

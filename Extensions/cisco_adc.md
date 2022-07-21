@@ -1,22 +1,26 @@
 cisco adc
 =========
 
-```JSON
-{"expression":"product = \"cisco adc\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"protocol":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco adc"
+
+Fields
+------
+
+| Field                | Core | Detection | Informational |
+| -------------------- | ---- | --------- | ------------- |
+| protocol             |      | &#10003;  |               |
+| method               |      | &#10003;  |               |
+| dest_translated_port |      | &#10003;  |               |
+| user_agent           |      | &#10003;  |               |
+| dest_translated_ip   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

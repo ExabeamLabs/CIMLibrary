@@ -1,47 +1,30 @@
 fireeye (trellix) helix
 =======================
 
-```JSON
-{"expression":"product = fireeye (trellix) helix",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = fireeye (trellix) helix
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result          |        |          |           |               |
+|               | file_path       | Legacy |          |           | &#10003;      |
+|               | process         |        |          |           |               |
+|               | malware_name    |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | file_name       | Legacy | &#10003; |           |               |
+|               | process_name    | Legacy |          | &#10003;  |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | file_dir        | Legacy |          |           | &#10003;      |
+|               | dest_host       | Legacy |          | &#10003;  |               |
+|               | user            | Legacy |          | &#10003;  |               |
+

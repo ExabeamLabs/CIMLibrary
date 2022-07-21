@@ -1,25 +1,27 @@
 timelox
 =======
 
-```JSON
-{"expression":"product = \"timelox\"",
-"activity_type":{"physical_location-access":{"fields":{}}},
-"fields":{"blocking_group_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"door_group_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_group_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"version":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"registration_no":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "timelox"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| blocking_group_name |      |           | &#10003;      |
+| door_group_name     |      |           | &#10003;      |
+| user_id             |      |           | &#10003;      |
+| user_group_name     |      |           | &#10003;      |
+| version             |      |           | &#10003;      |
+| registration_no     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type            | Field | Status | Core | Detection | Informational |
+| ------------------------ | ----- | ------ | ---- | --------- | ------------- |
+| physical_location-access |       |        |      |           |               |
+

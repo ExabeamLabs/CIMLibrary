@@ -1,43 +1,33 @@
 cisco netflow
 =============
 
-```JSON
-{"expression":"product = \"cisco netflow\"",
-"activity_type":{"network-session":{"fields":{}}},
-"fields":{"result":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"flow_end_time":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"flow_start_time":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_interface":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"packets_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"tcp_flags":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"packets_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"packets":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco netflow"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| result          |      | &#10003;  |               |
+| flow_end_time   |      |           | &#10003;      |
+| flow_start_time |      |           | &#10003;      |
+| src_interface   |      | &#10003;  |               |
+| bytes_out       |      | &#10003;  |               |
+| bytes_in        |      | &#10003;  |               |
+| packets_out     |      | &#10003;  |               |
+| tcp_flags       |      | &#10003;  |               |
+| packets_in      |      | &#10003;  |               |
+| dest_host       |      | &#10003;  |               |
+| src_host        |      | &#10003;  |               |
+| packets         |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field | Status | Core | Detection | Informational |
+| --------------- | ----- | ------ | ---- | --------- | ------------- |
+| network-session |       |        |      |           |               |
+

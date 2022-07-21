@@ -1,33 +1,26 @@
 cato cloud
 ==========
 
-```JSON
-{"expression":"product = \"cato cloud\"",
-"activity_type":{"http-session":{"fields":{"src_country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cato cloud"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status  | Core | Detection | Informational |
+| ------------- | ---------------- | ------- | ---- | --------- | ------------- |
+| http-session  | src_country      | Default |      |           | &#10003;      |
+|               | src_host         | Default |      | &#10003;  |               |
+|               | dest_country     | Default |      |           | &#10003;      |
+| vpn-login     | dest_ip          | Default |      | &#10003;  |               |
+|               | operating_system | Default |      |           | &#10003;      |
+| vpn-logout    | dest_ip          |         |      | &#10003;  |               |
+|               | operating_system |         |      |           | &#10003;      |
+

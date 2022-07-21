@@ -1,46 +1,34 @@
 event viewer - nps
 ==================
 
-```JSON
-{"expression":"product = \"microsoft nps\"",
-"activity_type":{"endpoint-authentication":{"fields":{}}},
-"fields":{"src_mac":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"network":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_server":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "microsoft nps"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| src_mac             |      | &#10003;  |               |
+| access_type         |      |           | &#10003;      |
+| src_host            |      |           | &#10003;      |
+| authentication_type |      |           | &#10003;      |
+| network             |      |           | &#10003;      |
+| src_ip              |      |           | &#10003;      |
+| auth_method         |      | &#10003;  |               |
+| user_type           |      |           | &#10003;      |
+| additional_info     |      |           | &#10003;      |
+| event_code          |      |           | &#10003;      |
+| dest_ip             |      |           | &#10003;      |
+| location            |      | &#10003;  |               |
+| auth_server         |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field | Status | Core | Detection | Informational |
+| ----------------------- | ----- | ------ | ---- | --------- | ------------- |
+| endpoint-authentication |       |        |      |           |               |
+

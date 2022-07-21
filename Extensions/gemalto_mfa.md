@@ -1,19 +1,22 @@
 gemalto mfa
 ===========
 
-```JSON
-{"expression":"product = \"gemalto mfa\"",
-"activity_type":{"app-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "gemalto mfa"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field       | Status  | Core | Detection | Informational |
+| ------------------ | ----------- | ------- | ---- | --------- | ------------- |
+| app-authentication | src_ip      | Default |      | &#10003;  |               |
+|                    | auth_method | Default |      |           | &#10003;      |
+|                    | action      | Default |      |           | &#10003;      |
+

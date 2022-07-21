@@ -1,32 +1,26 @@
 hp safecom
 ==========
 
-```JSON
-{"expression":"product = \"hp safecom\"",
-"activity_type":{"printer-activity":{"fields":{"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"num_pages":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "hp safecom"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type    | Field         | Status | Core     | Detection | Informational |
+| ---------------- | ------------- | ------ | -------- | --------- | ------------- |
+| printer-activity | email_address |        |          |           |               |
+|                  | user_id       |        |          |           |               |
+|                  | bytes         | Legacy |          | &#10003;  |               |
+|                  | num_pages     | Legacy |          | &#10003;  |               |
+|                  | printer_name  | Legacy | &#10003; | &#10003;  |               |
+|                  | user          | Legacy | &#10003; | &#10003;  |               |
+|                  | object        |        |          |           |               |
+

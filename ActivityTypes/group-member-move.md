@@ -27,4 +27,6 @@ group-member-move:fail
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
 | src_group_name |      |           | &#10003;      |

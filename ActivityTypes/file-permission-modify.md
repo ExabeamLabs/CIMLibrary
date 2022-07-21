@@ -25,6 +25,8 @@ file-permission-modify:success
 file-permission-modify:fail
 ---------------------------
 
-| Field       | Core | Detection | Informational |
-| ----------- | ---- | --------- | ------------- |
-| permissions |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| permissions    |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

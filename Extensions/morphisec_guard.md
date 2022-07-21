@@ -1,38 +1,28 @@
 morphisec guard
 ===============
 
-```JSON
-{"expression":"product = morphisec guard",
-"activity_type":{"alert-trigger":{"fields":{"site_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"from_user_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"shared_with_at":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = morphisec guard
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | site_at         |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | email_address   |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | process_name    | Legacy |          | &#10003;  |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | from_user_at    |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | shared_with_at  |        |          |           |               |
+

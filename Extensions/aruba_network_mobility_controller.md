@@ -1,51 +1,31 @@
 aruba network mobility controller
 =================================
 
-```JSON
-{"expression":"product = aruba network mobility controller",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = aruba network mobility controller
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status | Core     | Detection | Informational |
+| ------------- | ----------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result      |        |          |           |               |
+|               | src_ip      | Legacy | &#10003; | &#10003;  |               |
+|               | file_path   | Legacy |          |           | &#10003;      |
+|               | file_ext    |        |          |           |               |
+|               | application |        |          |           |               |
+|               | event_code  |        |          |           |               |
+|               | file_name   | Legacy | &#10003; |           |               |
+|               | alert_id    | Legacy |          |           | &#10003;      |
+|               | file_dir    | Legacy |          |           | &#10003;      |
+|               | action      | Legacy |          |           | &#10003;      |
+|               | src_host    | Legacy | &#10003; | &#10003;  |               |
+|               | user        | Legacy |          | &#10003;  |               |
+

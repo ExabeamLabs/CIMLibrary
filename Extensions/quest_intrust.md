@@ -1,10 +1,22 @@
 quest intrust
 =============
 
-```JSON
-{"expression":"product = \"quest intrust\"",
-"activity_type":{"dhcp-session":{"fields":{}}},
-"fields":{"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "quest intrust"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| dhcp-session  |       |        |      |           |               |
+

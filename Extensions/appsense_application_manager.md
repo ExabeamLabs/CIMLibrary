@@ -1,41 +1,29 @@
 appsense application manager
 ============================
 
-```JSON
-{"expression":"product = \"appsense application manager\"",
-"activity_type":{"alert-trigger":{"fields":{"account_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_vendor":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "appsense application manager"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field          | Status | Core | Detection | Informational |
+| ------------- | -------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | account_id     |        |      |           |               |
+|               | process_name   | Legacy |      | &#10003;  |               |
+|               | domain         |        |      |           |               |
+|               | hash_md5       |        |      |           |               |
+|               | user_sid       |        |      |           |               |
+|               | dest_host      | Legacy |      | &#10003;  |               |
+|               | process_dir    |        |      |           |               |
+|               | process_path   | Legacy |      | &#10003;  |               |
+|               | user           | Legacy |      | &#10003;  |               |
+|               | process_vendor |        |      |           |               |
+

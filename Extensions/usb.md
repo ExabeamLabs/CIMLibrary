@@ -1,19 +1,25 @@
 usb
 ===
 
-```JSON
-{"expression":"product = \"usb\"",
-"activity_type":{"peripheral_storage-activity":{"fields":{}}},
-"fields":{"file_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "usb"
+
+Fields
+------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| file_name   |      |           | &#10003;      |
+| bytes       |      |           | &#10003;      |
+| device_type |      |           | &#10003;      |
+| user        |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type               | Field | Status | Core | Detection | Informational |
+| --------------------------- | ----- | ------ | ---- | --------- | ------------- |
+| peripheral_storage-activity |       |        |      |           |               |
+

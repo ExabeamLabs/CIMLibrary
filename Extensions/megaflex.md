@@ -1,31 +1,25 @@
 megaflex
 ========
 
-```JSON
-{"expression":"product = \"megaflex\"",
-"activity_type":{"physical_location-access":{"fields":{"src_location_area":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_location_full":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_area":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_location_door_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_door_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "megaflex"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field                | Status  | Core | Detection | Informational |
+| ------------------------ | -------------------- | ------- | ---- | --------- | ------------- |
+| physical_location-access | src_location_area    | Default |      |           | &#10003;      |
+|                          | src_location_full    | Default |      |           | &#10003;      |
+|                          | user_id              | Default |      |           | &#10003;      |
+|                          | location_area        | Default |      |           | &#10003;      |
+|                          | src_location_door_id | Default |      |           | &#10003;      |
+|                          | location_door_id     | Default |      |           | &#10003;      |
+

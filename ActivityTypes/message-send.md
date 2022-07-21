@@ -26,7 +26,9 @@ message-send:success
 message-send:fail
 -----------------
 
-| Field       | Core | Detection | Informational |
-| ----------- | ---- | --------- | ------------- |
-| dest_domain |      |           | &#10003;      |
-| dest_user   |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| dest_domain    |      |           | &#10003;      |
+| dest_user      |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

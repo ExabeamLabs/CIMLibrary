@@ -1,87 +1,41 @@
 ca privileged access manager server control
 ===========================================
 
-```JSON
-{"expression":"product = \"ca privileged access manager server control\"",
-"activity_type":{"endpoint-authentication":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-switch":{"fields":{"user_ou":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"group_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"group_ou":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "ca privileged access manager server control"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field      | Status  | Core | Detection | Informational |
+| ----------------------- | ---------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | user_ou    | Default |      |           | &#10003;      |
+|                         | src_ip     | Default |      | &#10003;  |               |
+|                         | protocol   | Default |      |           | &#10003;      |
+|                         | group_name | Default |      |           | &#10003;      |
+|                         | group_ou   | Default |      |           | &#10003;      |
+|                         | event_name | Default |      |           | &#10003;      |
+|                         | dest_port  | Default |      |           | &#10003;      |
+| endpoint-login          | user_ou    | Default |      |           | &#10003;      |
+|                         | src_ip     | Default |      | &#10003;  |               |
+|                         | protocol   | Default |      |           | &#10003;      |
+|                         | group_name | Default |      |           | &#10003;      |
+|                         | group_ou   | Default |      |           | &#10003;      |
+|                         | event_name | Default |      |           | &#10003;      |
+|                         | dest_port  | Default |      |           | &#10003;      |
+| user-switch             | user_ou    |         |      |           |               |
+|                         | src_ip     |         |      |           |               |
+|                         | protocol   |         |      |           |               |
+|                         | group_name |         |      |           |               |
+|                         | group_ou   |         |      |           |               |
+|                         | event_name |         |      |           |               |
+|                         | src_host   |         |      |           |               |
+|                         | dest_port  |         |      |           |               |
+

@@ -1,229 +1,77 @@
 unix auditd
 ===========
 
-```JSON
-{"expression":"product = \"unix auditd\"",
-"activity_type":{"user-delete":{"fields":{"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-add":{"fields":{"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-create":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-authentication":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"account_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"account":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_process":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-remove":{"fields":{"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"process-create":{"fields":{"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"account_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "unix auditd"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field                  | Status  | Core | Detection | Informational |
+| ----------------------- | ---------------------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | process_id             | Default |      |           | &#10003;      |
+|                         | operation_type         | Default |      |           | &#10003;      |
+|                         | service_name           | Default |      |           | &#10003;      |
+|                         | process_dir            | Default |      |           | &#10003;      |
+|                         | src_host               | Default |      | &#10003;  |               |
+|                         | src_port               | Default |      |           | &#10003;      |
+|                         | src_ip                 | Default |      | &#10003;  |               |
+|                         | account_id             | Default |      |           | &#10003;      |
+|                         | event_id               | Default |      |           | &#10003;      |
+|                         | user_id                | Default |      |           | &#10003;      |
+|                         | process_name           | Default |      |           | &#10003;      |
+|                         | dest_ip                | Default |      | &#10003;  |               |
+|                         | event_name             | Default |      |           | &#10003;      |
+|                         | process_path           | Default |      |           | &#10003;      |
+|                         | operation              | Default |      |           | &#10003;      |
+|                         | dest_port              | Default |      |           | &#10003;      |
+|                         | account                | Default |      | &#10003;  |               |
+| endpoint-login          | process_id             | Default |      |           | &#10003;      |
+|                         | service_name           | Default |      |           | &#10003;      |
+|                         | process_dir            | Default |      |           | &#10003;      |
+|                         | src_host               | Default |      | &#10003;  |               |
+|                         | result                 | Default |      |           | &#10003;      |
+|                         | src_port               | Default |      |           | &#10003;      |
+|                         | src_ip                 | Default |      | &#10003;  |               |
+|                         | event_id               | Default |      |           | &#10003;      |
+|                         | additional_info        | Default |      |           | &#10003;      |
+|                         | user_id                | Default |      |           | &#10003;      |
+|                         | event_code             | Default |      |           | &#10003;      |
+|                         | process_name           | Default |      |           | &#10003;      |
+|                         | dest_ip                | Default |      | &#10003;  |               |
+|                         | event_name             | Default |      |           | &#10003;      |
+|                         | process_path           | Default |      |           | &#10003;      |
+|                         | operation              | Default |      |           | &#10003;      |
+|                         | dest_port              | Default |      |           | &#10003;      |
+|                         | authentication_process | Default |      |           | &#10003;      |
+| group-member-add        | user_id                |         |      |           |               |
+|                         | session_id             |         |      |           |               |
+| group-member-remove     | user_id                |         |      |           |               |
+|                         | session_id             |         |      |           |               |
+| process-create          | service_name           | Default |      |           | &#10003;      |
+|                         | src_port               | Default |      |           | &#10003;      |
+|                         | src_ip                 | Default |      | &#10003;  |               |
+|                         | account_id             | Default |      |           | &#10003;      |
+|                         | event_id               | Default |      |           | &#10003;      |
+|                         | user_id                | Default |      |           | &#10003;      |
+|                         | additional_info        | Default |      |           | &#10003;      |
+|                         | event_code             | Default |      |           | &#10003;      |
+|                         | dest_ip                | Default |      | &#10003;  |               |
+|                         | event_name             | Default |      |           | &#10003;      |
+|                         | dest_host              | Default |      | &#10003;  |               |
+|                         | user                   | Default |      | &#10003;  |               |
+|                         | dest_port              | Default |      |           | &#10003;      |
+| user-create             | process_id             |         |      |           |               |
+|                         | user_id                |         |      |           |               |
+|                         | session_id             |         |      |           |               |
+| user-delete             | user_id                |         |      |           |               |
+|                         | session_id             |         |      |           |               |
+|                         | dest_user_id           |         |      |           |               |
+

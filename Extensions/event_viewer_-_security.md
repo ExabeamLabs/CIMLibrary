@@ -1,110 +1,53 @@
 event viewer - security
 =======================
 
-```JSON
-{"expression":"product = \"event viewer - security\"",
-"activity_type":{"ds_object-modify":{"fields":{"access":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"access_mask":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"attribute":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"attribute_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"ds_object-restore":{"fields":{}},
-"endpoint-modify":{"fields":{"old_attribute":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"new_attribute":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"attribute":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"share-access":{"fields":{"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_sid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"ds_object-create":{"fields":{}},
-"ds_object-move":{"fields":{}},
-"ds_object-delete":{"fields":{}},
-"endpoint-delete":{"fields":{}}},
-"fields":{"login_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"correlation_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "event viewer - security"
+
+Fields
+------
+
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| login_id       |          |           | &#10003;      |
+| event_id       |          |           | &#10003;      |
+| log_name       |          |           | &#10003;      |
+| user_id        |          |           | &#10003;      |
+| event_code     |          |           | &#10003;      |
+| domain         |          | &#10003;  |               |
+| event_name     |          |           | &#10003;      |
+| correlation_id |          |           | &#10003;      |
+| src_host       | &#10003; | &#10003;  |               |
+| user           | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type     | Field           | Status  | Core | Detection | Informational |
+| ----------------- | --------------- | ------- | ---- | --------- | ------------- |
+| ds_object-create  |                 |         |      |           |               |
+| ds_object-delete  |                 |         |      |           |               |
+| ds_object-modify  | access          | Default |      |           | &#10003;      |
+|                   | access_mask     | Default |      |           | &#10003;      |
+|                   | attribute       | Default |      |           | &#10003;      |
+|                   | attribute_value | Default |      |           | &#10003;      |
+|                   | operation       | Default |      |           | &#10003;      |
+| ds_object-move    |                 |         |      |           |               |
+| ds_object-restore |                 |         |      |           |               |
+| endpoint-delete   |                 |         |      |           |               |
+| endpoint-modify   | old_attribute   |         |      | &#10003;  |               |
+|                   | new_attribute   |         |      | &#10003;  |               |
+|                   | attribute       |         |      |           | &#10003;      |
+| share-access      | file_ext        | Default |      |           | &#10003;      |
+|                   | access          | Default |      |           | &#10003;      |
+|                   | additional_info | Default |      |           | &#10003;      |
+|                   | file_name       | Default |      |           | &#10003;      |
+|                   | process_name    | Default |      |           | &#10003;      |
+|                   | file_dir        | Default |      |           | &#10003;      |
+|                   | user_sid        | Default |      |           | &#10003;      |
+|                   | process_dir     | Default |      |           | &#10003;      |
+|                   | process_path    | Default |      |           | &#10003;      |
+|                   | object          | Default |      |           | &#10003;      |
+

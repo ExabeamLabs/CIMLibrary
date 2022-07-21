@@ -1,87 +1,42 @@
 dtex intercept
 ==============
 
-```JSON
-{"expression":"product = \"dtex intercept\"",
-"activity_type":{"endpoint-unlock":{"fields":{"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-lock":{"fields":{"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"printer-activity":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"num_pages":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{}}},
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "dtex intercept"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          |           | &#10003;      |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type    | Field            | Status  | Core     | Detection | Informational |
+| ---------------- | ---------------- | ------- | -------- | --------- | ------------- |
+| endpoint-lock    | event_code       |         |          |           | &#10003;      |
+| endpoint-login   | event_code       | Default |          |           | &#10003;      |
+| endpoint-unlock  | event_code       | Legacy  |          |           | &#10003;      |
+| file-delete      | access           | Legacy  |          | &#10003;  |               |
+|                  | process_name     | Legacy  |          |           | &#10003;      |
+|                  | bytes            |         |          |           | &#10003;      |
+|                  | process_dir      | Legacy  |          |           | &#10003;      |
+| file-read        | access           | Legacy  |          | &#10003;  |               |
+|                  | process_name     | Legacy  |          |           | &#10003;      |
+|                  | bytes            | Legacy  |          |           | &#10003;      |
+|                  | process_dir      | Legacy  |          |           | &#10003;      |
+| file-write       | access           | Legacy  |          | &#10003;  |               |
+|                  | process_name     | Legacy  |          |           | &#10003;      |
+|                  | bytes            | Legacy  |          | &#10003;  |               |
+|                  | process_dir      | Legacy  |          |           | &#10003;      |
+| http-session     | operating_system | Default |          |           | &#10003;      |
+| printer-activity | bytes            | Legacy  |          | &#10003;  |               |
+|                  | num_pages        | Legacy  |          | &#10003;  |               |
+|                  | printer_name     | Legacy  | &#10003; | &#10003;  |               |
+| process-create   |                  |         |          |           |               |
+

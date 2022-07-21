@@ -1,217 +1,83 @@
 servicenow
 ==========
 
-```JSON
-{"expression":"product = \"servicenow\"",
-"activity_type":{"file-download":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"new_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dproc":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-upload":{"fields":{"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"new_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dproc":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{}},
-"app-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"table_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dproc":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"new_value":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"table":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"new_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dproc":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"table":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"new_value":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dproc":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "servicenow"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      |           | &#10003;      |
+| resource   |      |           | &#10003;      |
+| event_name |      |           | &#10003;      |
+| object     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core     | Detection | Informational |
+| ------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity  | file_path       | Default |          |           | &#10003;      |
+|               | file_name       | Default |          |           | &#10003;      |
+|               | table_name      | Default |          |           | &#10003;      |
+|               | dproc           | Default |          |           | &#10003;      |
+|               | file_ext        | Default |          |           | &#10003;      |
+|               | application     | Default |          |           | &#10003;      |
+|               | additional_info | Default |          |           | &#10003;      |
+|               | bytes           | Default |          |           | &#10003;      |
+|               | file_type       | Default |          |           | &#10003;      |
+|               | domain          | Default |          |           | &#10003;      |
+|               | event_name      | Default |          |           | &#10003;      |
+|               | user            | Default |          | &#10003;  |               |
+|               | new_value       | Default |          |           | &#10003;      |
+|               | table           | Default |          |           | &#10003;      |
+| app-login     |                 |         |          |           |               |
+| file-delete   | bytes           |         |          |           |               |
+|               | file_type       | Legacy  |          |           | &#10003;      |
+|               | domain          |         |          |           |               |
+|               | action          |         |          |           |               |
+|               | old_value       |         |          |           |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | operation       |         |          |           |               |
+|               | table_name      |         |          |           |               |
+|               | table           |         |          |           |               |
+|               | new_value       |         |          |           |               |
+|               | dproc           |         |          |           |               |
+| file-download | bytes           | Legacy  |          | &#10003;  |               |
+|               | file_type       | Legacy  |          |           | &#10003;      |
+|               | domain          |         |          |           |               |
+|               | action          |         |          |           |               |
+|               | old_value       |         |          |           |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | operation       |         |          |           |               |
+|               | table_name      |         |          |           |               |
+|               | table           |         |          |           |               |
+|               | new_value       |         |          |           |               |
+|               | dproc           |         |          |           |               |
+| file-read     | bytes           | Legacy  |          |           | &#10003;      |
+|               | file_type       | Legacy  |          |           | &#10003;      |
+|               | domain          |         |          |           |               |
+|               | action          |         |          |           |               |
+|               | old_value       |         |          |           |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | operation       |         |          |           |               |
+|               | table_name      |         |          |           |               |
+|               | table           |         |          |           |               |
+|               | new_value       |         |          |           |               |
+|               | dproc           |         |          |           |               |
+| file-upload   | bytes           |         |          |           |               |
+|               | file_type       | Legacy  |          |           | &#10003;      |
+|               | domain          |         |          |           |               |
+|               | action          |         |          |           |               |
+|               | old_value       |         |          |           |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | operation       |         |          |           |               |
+|               | table_name      |         |          |           |               |
+|               | table           |         |          |           |               |
+|               | new_value       |         |          |           |               |
+|               | dproc           |         |          |           |               |
+

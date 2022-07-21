@@ -1,71 +1,39 @@
 duo access security
 ===================
 
-```JSON
-{"expression":"product = \"duo access security\"",
-"activity_type":{"app-authentication":{"fields":{"new_enrollment":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"factor":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_type":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"vpn-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"location_country":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_city":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_state":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "duo access security"
+
+Fields
+------
+
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| result           |      |           | &#10003;      |
+| src_ip           |      | &#10003;  |               |
+| location_country |      |           | &#10003;      |
+| location_city    |      |           | &#10003;      |
+| operating_system |      |           | &#10003;      |
+| location_state   |      |           | &#10003;      |
+| user_agent       |      |           | &#10003;      |
+| object           |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type      | Field           | Status  | Core     | Detection | Informational |
+| ------------------ | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity       | auth_method     | Default |          |           | &#10003;      |
+|                    | domain          | Default |          |           | &#10003;      |
+|                    | user            | Default | &#10003; | &#10003;  |               |
+| app-authentication | new_enrollment  | Default |          |           | &#10003;      |
+|                    | session_id      | Default |          |           | &#10003;      |
+| app-login          | additional_info | Default |          |           | &#10003;      |
+| user-create        | additional_info |         |          |           | &#10003;      |
+|                    | factor          |         |          |           | &#10003;      |
+|                    | alert_type      |         |          |           | &#10003;      |
+| vpn-login          | additional_info | Default |          |           | &#10003;      |
+|                    | service_name    | Default |          |           | &#10003;      |
+

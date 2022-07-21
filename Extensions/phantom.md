@@ -1,10 +1,22 @@
 phantom
 =======
 
-```JSON
-{"expression":"product = \"phantom\"",
-"activity_type":{"email-receive":{"fields":{}}},
-"fields":{"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "phantom"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| alert_severity |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| email-receive |       |        |      |           |               |
+

@@ -1,9 +1,21 @@
 clearswift secure email gateway
 ===============================
 
-```JSON
-{"expression":"product = \"clearswift secure email gateway\"",
-"activity_type":{"email-receive":{"fields":{}},
-"email-send":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "clearswift secure email gateway"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| email-receive |       |        |      |           |               |
+| email-send    |       |        |      |           |               |
+

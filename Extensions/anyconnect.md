@@ -1,118 +1,49 @@
 anyconnect
 ==========
 
-```JSON
-{"expression":"product = \"any connect\"",
-"activity_type":{"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"priority":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"realm":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_duration":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{"system_manufacturer":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"module_hash_names":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system_environment":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system_version":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"virtual_station_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"system_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"packet_rate":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"udid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "any connect"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_host |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field                        | Status  | Core | Detection | Informational |
+| --------------- | ---------------------------- | ------- | ---- | --------- | ------------- |
+| network-session | system_manufacturer          | Default |      |           | &#10003;      |
+|                 | bytes_in                     | Default |      |           | &#10003;      |
+|                 | module_hash_names            | Default |      |           | &#10003;      |
+|                 | parent_process_name          | Default |      |           | &#10003;      |
+|                 | parent_process_hash          | Default |      |           | &#10003;      |
+|                 | operating_system_environment | Default |      |           | &#10003;      |
+|                 | operating_system_version     | Default |      |           | &#10003;      |
+|                 | bytes_out                    | Default |      |           | &#10003;      |
+|                 | process_hash                 | Default |      |           | &#10003;      |
+|                 | virtual_station_name         | Default |      |           | &#10003;      |
+|                 | system_type                  | Default |      |           | &#10003;      |
+|                 | process_name                 | Default |      |           | &#10003;      |
+|                 | domain                       | Default |      |           | &#10003;      |
+|                 | packet_rate                  | Default |      |           | &#10003;      |
+|                 | operating_system             | Default |      |           | &#10003;      |
+|                 | udid                         | Default |      |           | &#10003;      |
+|                 | user                         | Default |      | &#10003;  |               |
+| vpn-login       | src_translated_ip            | Default |      |           | &#10003;      |
+|                 | event_code                   | Default |      |           | &#10003;      |
+|                 | dest_ip                      | Default |      | &#10003;  |               |
+|                 | operating_system             | Default |      |           | &#10003;      |
+|                 | realm                        | Default |      |           | &#10003;      |
+|                 | priority                     | Default |      |           | &#10003;      |
+| vpn-logout      | dest_ip                      |         |      | &#10003;  |               |
+|                 | realm                        | Legacy  |      |           | &#10003;      |
+|                 | src_host                     |         |      | &#10003;  |               |
+|                 | session_duration             | Legacy  |      | &#10003;  |               |
+|                 | dest_port                    |         |      | &#10003;  |               |
+

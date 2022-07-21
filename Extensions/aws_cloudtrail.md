@@ -1,669 +1,205 @@
 aws cloudtrail
 ==============
 
-```JSON
-{"expression":"product = \"aws cloudtrail\"",
-"activity_type":{"policy-create":{"fields":{"policy_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_content":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_group":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"set_as_defualt":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"denied_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_resources":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_version_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_resources":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-list":{"fields":{}},
-"disk-create":{"fields":{"volume_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"volume_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"volume_zone":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-key-create":{"fields":{"key_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"key_status":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"function-create":{"fields":{"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"code_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_runtime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-screenshot":{"fields":{"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-list":{"fields":{}},
-"endpoint-list":{"fields":{}},
-"disk-list":{"fields":{}},
-"policy-list":{"fields":{"dest_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_group":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-key-create":{"fields":{"key_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"key_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-list":{"fields":{}},
-"role-policy-modify":{"fields":{"policy_content":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-assume":{"fields":{"session_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"transistive_tags":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"role_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_expiration":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_tag":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"bucket_arn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_arn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-list":{"fields":{}},
-"image-modify":{"fields":{"removed_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-list":{"fields":{}},
-"user-create":{"fields":{"dest_user_arn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user_id":{"core":"1",
-"detection":"0",
-"informational":"0"}}},
-"group-create":{"fields":{"group_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_arn":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"bucket-create":{"fields":{"bucket_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-policy-modify":{"fields":{"allowed_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_resources":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_resources":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-attach":{"fields":{"instance_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"volume_device":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-permission-modify":{"fields":{"acl_content":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_ids":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_user_types":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_uris":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"owner_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"image-create":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"description":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"snapshot-list":{"fields":{}},
-"file-copy":{"fields":{"bucket_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_bucket_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_file_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-read":{"fields":{"resource_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-accessblock-modify":{"fields":{"block_public_policy":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"block_public_acls":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"ignore_public_acls":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"restrict_public_buckets":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-permission-modify":{"fields":{"acl_content":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"allowed_ids":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"allowed_user_types":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bucket_arn":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"allowed_uris":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"owner_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bucket_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_arn":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bucket_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"allowed_permissions":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mobile_version":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mfa":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"snapshot-modify":{"fields":{"removed_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"added_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{}},
-"image-list":{"fields":{}},
-"endpoint-create":{"fields":{"key_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_host":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"availabilty_zone":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"security_group":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"instance_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"instance_profile_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-create":{"fields":{"policy_content":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"role_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_users":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"policy-attach":{"fields":{"policy_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_group":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-modify":{"fields":{}},
-"endpoint-modify":{"fields":{"userdata":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"resource_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"function-modify":{"fields":{"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"code_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_arn":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_runtime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"function_role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-command":{"fields":{"document_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"playbook_files":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"snapshot-create":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"owner_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"description":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"bucket_arn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_arn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bucket_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-modify":{"fields":{"old_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"old_multiattach":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"volume_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_multiattach":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"service_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"aws_account":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"vpc":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mfa":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_arn":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"principal_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"readonly":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"region":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "aws cloudtrail"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| service_name   |      | &#10003;  |               |
+| aws_account    |      | &#10003;  |               |
+| vpc            |      |           | &#10003;      |
+| mfa            |      | &#10003;  |               |
+| user_arn       |      |           | &#10003;      |
+| src_host       |      |           | &#10003;      |
+| event_category |      | &#10003;  |               |
+| principal_id   |      |           | &#10003;      |
+| src_ip         |      | &#10003;  |               |
+| user_type      |      | &#10003;  |               |
+| readonly       |      | &#10003;  |               |
+| domain         |      |           | &#10003;      |
+| region         |      | &#10003;  |               |
+| operation      |      | &#10003;  |               |
+| user           |      | &#10003;  |               |
+| user_agent     |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type             | Field                   | Status  | Core     | Detection | Informational |
+| ------------------------- | ----------------------- | ------- | -------- | --------- | ------------- |
+| app-login                 | result                  | Default |          |           | &#10003;      |
+|                           | mobile_version          | Default |          |           | &#10003;      |
+|                           | mfa                     | Default |          |           | &#10003;      |
+|                           | url                     | Default |          |           | &#10003;      |
+| bucket-accessblock-modify | block_public_policy     | Default |          |           | &#10003;      |
+|                           | block_public_acls       | Default |          |           | &#10003;      |
+|                           | bucket_arn              | Default |          |           | &#10003;      |
+|                           | ignore_public_acls      | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
+|                           | restrict_public_buckets | Default |          |           | &#10003;      |
+| bucket-create             | bucket_host             | Default |          |           | &#10003;      |
+| bucket-list               |                         |         |          |           |               |
+| bucket-permission-modify  | acl_content             | Default |          |           | &#10003;      |
+|                           | allowed_ids             | Default |          |           | &#10003;      |
+|                           | allowed_user_types      | Default |          |           | &#10003;      |
+|                           | bucket_arn              | Default |          |           | &#10003;      |
+|                           | allowed_uris            | Default |          |           | &#10003;      |
+|                           | owner_id                | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
+|                           | allowed_permissions     | Default |          |           | &#10003;      |
+| bucket-policy-modify      | allowed_users           | Default |          |           | &#10003;      |
+|                           | bucket_arn              | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
+|                           | denied_permissions      | Default |          |           | &#10003;      |
+|                           | denied_users            | Default |          |           | &#10003;      |
+|                           | allowed_permissions     | Default |          |           | &#10003;      |
+|                           | allowed_resources       | Default |          |           | &#10003;      |
+|                           | denied_resources        | Default |          |           | &#10003;      |
+| disk-attach               | instance_id             | Default |          |           | &#10003;      |
+|                           | volume_device           | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+| disk-create               | volume_type             | Default |          |           | &#10003;      |
+|                           | src_resource            | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+|                           | volume_size             | Default |          |           | &#10003;      |
+|                           | volume_zone             | Default |          |           | &#10003;      |
+| disk-list                 |                         |         |          |           |               |
+| disk-modify               | old_size                | Default |          |           | &#10003;      |
+|                           | old_multiattach         | Default |          |           | &#10003;      |
+|                           | volume_type             | Default |          |           | &#10003;      |
+|                           | new_size                | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+|                           | new_multiattach         | Default |          |           | &#10003;      |
+| endpoint-command          | document_name           | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+|                           | playbook_files          | Default |          |           | &#10003;      |
+| endpoint-create           | key_name                | Default |          |           | &#10003;      |
+|                           | new_host                | Default |          |           | &#10003;      |
+|                           | availabilty_zone        | Default |          |           | &#10003;      |
+|                           | src_resource            | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+|                           | security_group          | Default |          |           | &#10003;      |
+|                           | instance_type           | Default |          |           | &#10003;      |
+|                           | new_ip                  | Default |          |           | &#10003;      |
+|                           | instance_profile_arn    | Default |          |           | &#10003;      |
+| endpoint-key-create       | key_name                | Default |          |           | &#10003;      |
+|                           | key_type                | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+| endpoint-list             |                         |         |          |           |               |
+| endpoint-login            | resource_id             | Default |          |           | &#10003;      |
+|                           | dest_user               | Default |          | &#10003;  |               |
+| endpoint-modify           | userdata                |         |          | &#10003;  |               |
+|                           | resource_id             |         |          |           | &#10003;      |
+| endpoint-screenshot       | resource_id             | Default |          |           | &#10003;      |
+| file-copy                 | bucket_arn              | Default |          |           | &#10003;      |
+|                           | bytes_out               | Default |          |           | &#10003;      |
+|                           | src_bucket_arn          | Default |          |           | &#10003;      |
+|                           | bytes_in                | Default |          |           | &#10003;      |
+|                           | bucket_name             | Default |          |           | &#10003;      |
+|                           | file_arn                | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
+|                           | src_file_arn            | Default |          |           | &#10003;      |
+| file-list                 |                         |         |          |           |               |
+| file-permission-modify    | acl_content             |         |          |           |               |
+|                           | allowed_ids             |         |          |           |               |
+|                           | allowed_user_types      |         |          |           |               |
+|                           | bucket_arn              |         |          |           |               |
+|                           | bytes_out               |         |          |           |               |
+|                           | allowed_uris            |         |          |           |               |
+|                           | owner_id                |         |          |           |               |
+|                           | bucket_name             |         |          |           |               |
+|                           | file_arn                |         |          |           |               |
+|                           | bucket_host             |         |          |           |               |
+|                           | allowed_permissions     |         |          |           |               |
+| file-read                 | bucket_arn              |         |          |           | &#10003;      |
+|                           | bytes_out               |         |          |           | &#10003;      |
+|                           | bucket_name             |         |          | &#10003;  |               |
+|                           | file_arn                |         |          |           | &#10003;      |
+|                           | bucket_host             |         |          |           | &#10003;      |
+| file-write                | bucket_arn              |         |          |           | &#10003;      |
+|                           | bytes_in                |         |          |           | &#10003;      |
+|                           | bucket_name             |         |          | &#10003;  |               |
+|                           | file_arn                |         |          |           | &#10003;      |
+|                           | bucket_host             |         |          |           | &#10003;      |
+| function-create           | hash_sha256             | Default |          |           | &#10003;      |
+|                           | code_size               | Default |          |           | &#10003;      |
+|                           | function_name           | Default |          |           | &#10003;      |
+|                           | function_arn            | Default |          |           | &#10003;      |
+|                           | function_runtime        | Default |          |           | &#10003;      |
+|                           | function_role           | Default |          |           | &#10003;      |
+| function-modify           | hash_sha256             | Default |          |           | &#10003;      |
+|                           | code_size               | Default |          |           | &#10003;      |
+|                           | function_name           | Default |          |           | &#10003;      |
+|                           | function_arn            | Default |          |           | &#10003;      |
+|                           | function_runtime        | Default |          |           | &#10003;      |
+|                           | function_role           | Default |          |           | &#10003;      |
+| group-create              | group_id                |         |          |           | &#10003;      |
+|                           | group_arn               |         |          |           | &#10003;      |
+| group-list                |                         |         |          |           |               |
+| group-member-add          |                         |         |          |           |               |
+| image-create              | src_resource            | Default |          |           | &#10003;      |
+|                           | description             | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+| image-list                |                         |         |          |           |               |
+| image-modify              | removed_users           | Default |          |           | &#10003;      |
+|                           | added_users             | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+| policy-attach             | policy_arn              | Default |          |           | &#10003;      |
+|                           | dest_role               | Default |          |           | &#10003;      |
+|                           | dest_group              | Default |          |           | &#10003;      |
+|                           | dest_user               | Default |          | &#10003;  |               |
+| policy-create             | policy_arn              | Default |          |           | &#10003;      |
+|                           | policy_content          | Default |          |           | &#10003;      |
+|                           | dest_role               | Default |          |           | &#10003;      |
+|                           | policy_id               | Default |          |           | &#10003;      |
+|                           | dest_group              | Default |          |           | &#10003;      |
+|                           | set_as_defualt          | Default |          |           | &#10003;      |
+|                           | dest_user               | Default |          | &#10003;  |               |
+|                           | denied_permissions      | Default |          |           | &#10003;      |
+|                           | allowed_permissions     | Default |          |           | &#10003;      |
+|                           | allowed_resources       | Default |          |           | &#10003;      |
+|                           | policy_version_id       | Default |          |           | &#10003;      |
+|                           | denied_resources        | Default |          |           | &#10003;      |
+| policy-list               | dest_role               | Default |          |           | &#10003;      |
+|                           | dest_group              | Default |          |           | &#10003;      |
+|                           | dest_user               | Default |          | &#10003;  |               |
+| role-assume               | session_name            | Default |          |           | &#10003;      |
+|                           | transistive_tags        | Default |          |           | &#10003;      |
+|                           | role_arn                | Default |          |           | &#10003;      |
+|                           | session_arn             | Default |          |           | &#10003;      |
+|                           | src_role                | Default |          |           | &#10003;      |
+|                           | session_expiration      | Default |          |           | &#10003;      |
+|                           | url                     | Default |          |           | &#10003;      |
+|                           | session_tag             | Default |          |           | &#10003;      |
+| role-create               | policy_content          | Default |          |           | &#10003;      |
+|                           | allowed_users           | Default |          |           | &#10003;      |
+|                           | role_arn                | Default |          |           | &#10003;      |
+|                           | denied_users            | Default |          |           | &#10003;      |
+| role-list                 |                         |         |          |           |               |
+| role-policy-modify        | policy_content          | Default |          |           | &#10003;      |
+|                           | dest_role               | Default |          |           | &#10003;      |
+|                           | allowed_users           | Default |          |           | &#10003;      |
+|                           | denied_users            | Default |          |           | &#10003;      |
+| snapshot-create           | src_resource            | Default |          |           | &#10003;      |
+|                           | owner_id                | Default |          |           | &#10003;      |
+|                           | description             | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+| snapshot-list             |                         |         |          |           |               |
+| snapshot-modify           | removed_users           | Default |          |           | &#10003;      |
+|                           | added_users             | Default |          |           | &#10003;      |
+|                           | resource_id             | Default |          |           | &#10003;      |
+| user-create               | dest_user_arn           |         |          |           | &#10003;      |
+|                           | dest_user_id            |         | &#10003; |           |               |
+| user-key-create           | key_id                  | Default |          |           | &#10003;      |
+|                           | dest_user_id            | Default |          |           | &#10003;      |
+|                           | key_status              | Default |          |           | &#10003;      |
+| user-list                 |                         |         |          |           |               |
+| user-modify               |                         |         |          |           |               |
+| user-password-read        | resource_id             |         |          |           | &#10003;      |
+

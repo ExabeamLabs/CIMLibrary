@@ -28,9 +28,11 @@ file-copy:success
 file-copy:fail
 --------------
 
-| Field         | Core | Detection | Informational |
-| ------------- | ---- | --------- | ------------- |
-| src_file_name |      | &#10003;  |               |
-| src_file_ext  |      | &#10003;  |               |
-| src_file_dir  |      |           | &#10003;      |
-| src_file_path |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| src_file_name  |      | &#10003;  |               |
+| failure_code   |      | &#10003;  |               |
+| src_file_ext   |      | &#10003;  |               |
+| src_file_dir   |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |
+| src_file_path  |      | &#10003;  |               |

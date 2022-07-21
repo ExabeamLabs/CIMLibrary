@@ -1,54 +1,33 @@
 mcafee (trellix) endpoint security
 ==================================
 
-```JSON
-{"expression":"product = mcafee (trellix) endpoint security",
-"activity_type":{"alert-trigger":{"fields":{"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = mcafee (trellix) endpoint security
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status | Core     | Detection | Informational |
+| ------------- | ----------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | process           |        |          |           |               |
+|               | malware_file_name |        |          |           |               |
+|               | file_name         | Legacy | &#10003; |           |               |
+|               | src_host          | Legacy | &#10003; | &#10003;  |               |
+|               | result            |        |          |           |               |
+|               | file_ext          |        |          |           |               |
+|               | additional_info   |        |          |           |               |
+|               | process_name      | Legacy |          | &#10003;  |               |
+|               | dest_ip           | Legacy | &#10003; | &#10003;  |               |
+|               | hash_md5          |        |          |           |               |
+|               | operating_system  |        |          |           |               |
+|               | threat_type       |        |          |           |               |
+|               | malware_url       |        |          |           |               |
+|               | user              | Legacy |          | &#10003;  |               |
+

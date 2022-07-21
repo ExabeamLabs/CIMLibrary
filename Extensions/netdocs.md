@@ -1,204 +1,76 @@
 netdocs
 =======
 
-```JSON
-{"expression":"product = \"netdocs\"",
-"activity_type":{"file-upload":{"fields":{"cabinet_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"corp_matter":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"corp_client":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"doc_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"corp_client":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"doc_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"cabinet_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"corp_matter":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"cabinet_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"corp_matter":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"corp_client":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"doc_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"cabinet_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"corp_matter":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"corp_client":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"doc_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"cabinet_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"corp_matter":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"corp_client":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"doc_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "netdocs"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core     | Detection | Informational |
+| ------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity  | file_name       | Default |          |           | &#10003;      |
+|               | corp_client     | Default |          |           | &#10003;      |
+|               | doc_id          | Default |          |           | &#10003;      |
+|               | cabinet_name    | Default |          |           | &#10003;      |
+|               | file_ext        | Default |          |           | &#10003;      |
+|               | corp_matter     | Default |          |           | &#10003;      |
+|               | user_id         | Default |          |           | &#10003;      |
+|               | additional_info | Default |          |           | &#10003;      |
+|               | bytes           | Default |          |           | &#10003;      |
+|               | domain          | Default |          |           | &#10003;      |
+|               | dest_host       | Default |          | &#10003;  |               |
+|               | user            | Default |          | &#10003;  |               |
+|               | object          | Default |          |           | &#10003;      |
+| file-delete   | cabinet_name    |         |          |           |               |
+|               | access          | Legacy  |          | &#10003;  |               |
+|               | corp_matter     |         |          |           |               |
+|               | user_id         |         |          |           |               |
+|               | additional_info |         |          |           |               |
+|               | bytes           |         |          |           |               |
+|               | corp_client     |         |          |           |               |
+|               | dest_host       | Legacy  |          | &#10003;  |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | doc_id          |         |          |           |               |
+|               | object          |         |          |           |               |
+| file-read     | cabinet_name    |         |          |           |               |
+|               | access          | Legacy  |          | &#10003;  |               |
+|               | corp_matter     |         |          |           |               |
+|               | user_id         |         |          |           |               |
+|               | additional_info |         |          |           |               |
+|               | bytes           | Legacy  |          |           | &#10003;      |
+|               | corp_client     |         |          |           |               |
+|               | dest_host       | Legacy  |          | &#10003;  |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | doc_id          |         |          |           |               |
+|               | object          |         |          |           |               |
+| file-upload   | cabinet_name    |         |          |           |               |
+|               | access          |         |          |           |               |
+|               | corp_matter     |         |          |           |               |
+|               | user_id         |         |          |           |               |
+|               | additional_info |         |          |           |               |
+|               | bytes           |         |          |           |               |
+|               | corp_client     |         |          |           |               |
+|               | dest_host       | Legacy  |          |           | &#10003;      |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | doc_id          |         |          |           |               |
+|               | object          |         |          |           |               |
+| file-write    | cabinet_name    |         |          |           |               |
+|               | access          | Legacy  |          | &#10003;  |               |
+|               | corp_matter     |         |          |           |               |
+|               | user_id         |         |          |           |               |
+|               | additional_info |         |          |           |               |
+|               | bytes           | Legacy  |          | &#10003;  |               |
+|               | corp_client     |         |          |           |               |
+|               | dest_host       | Legacy  |          | &#10003;  |               |
+|               | user            | Legacy  | &#10003; | &#10003;  |               |
+|               | doc_id          |         |          |           |               |
+|               | object          |         |          |           |               |
+

@@ -1,64 +1,35 @@
 mcafee endpoint security
 ========================
 
-```JSON
-{"expression":"product = \"mcafee endpoint security\"",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"peripheral_storage-insert":{"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"printer-activity":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "mcafee endpoint security"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type             | Field        | Status | Core     | Detection | Informational |
+| ------------------------- | ------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger             | result       |        |          |           |               |
+|                           | process_name | Legacy |          | &#10003;  |               |
+|                           | dest_ip      | Legacy | &#10003; | &#10003;  |               |
+|                           | domain       |        |          |           |               |
+|                           | dest_host    | Legacy |          | &#10003;  |               |
+|                           | process_dir  |        |          |           |               |
+|                           | process_path | Legacy |          | &#10003;  |               |
+|                           | user         | Legacy |          | &#10003;  |               |
+| peripheral_storage-insert | domain       |        |          | &#10003;  |               |
+|                           | dest_ip      |        |          | &#10003;  |               |
+|                           | user         | Legacy | &#10003; | &#10003;  |               |
+| printer-activity          | bytes        | Legacy |          | &#10003;  |               |
+|                           | domain       |        |          | &#10003;  |               |
+|                           | dest_ip      |        |          | &#10003;  |               |
+|                           | printer_name | Legacy | &#10003; | &#10003;  |               |
+|                           | user         | Legacy | &#10003; | &#10003;  |               |
+

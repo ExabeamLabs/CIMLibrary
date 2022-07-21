@@ -1,516 +1,165 @@
 unix
 ====
 
-```JSON
-{"expression":"product = \"unix\"",
-"activity_type":{"email-receive":{"fields":{"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"num_recipients":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-send":{"fields":{"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"group_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-permission-modify":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_subtype":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"group_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"account":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-add":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-password-modify":{"fields":{"parent_process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_owner":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"group_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_owner":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_subtype":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"group_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"account":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"process-create":{"fields":{"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-lock":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"group_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{}},
-"endpoint-login":{"fields":{"parent_process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"login_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_owner":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"group_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-remove":{"fields":{"parent_process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_owner":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"group_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "unix"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field                | Status  | Core     | Detection | Informational |
+| ----------------------- | -------------------- | ------- | -------- | --------- | ------------- |
+| email-receive           | protocol             | Default |          |           | &#10003;      |
+|                         | bytes                | Default |          |           | &#10003;      |
+|                         | num_recipients       | Default |          |           | &#10003;      |
+| email-send              | bytes                | Default |          |           | &#10003;      |
+| endpoint-authentication | src_ip               | Default |          | &#10003;  |               |
+|                         | process_id           | Default |          |           | &#10003;      |
+|                         | auth_method          | Default |          |           | &#10003;      |
+|                         | operation_type       | Default |          |           | &#10003;      |
+|                         | group_id             | Default |          |           | &#10003;      |
+|                         | process_name         | Default |          |           | &#10003;      |
+|                         | dest_ip              | Default |          | &#10003;  |               |
+|                         | file_owner           | Default |          |           | &#10003;      |
+|                         | src_host             | Default |          | &#10003;  |               |
+|                         | process_command_line | Default |          |           | &#10003;      |
+|                         | event_category       | Default |          |           | &#10003;      |
+| endpoint-login          | parent_process_id    | Default |          |           | &#10003;      |
+|                         | login_id             | Default |          |           | &#10003;      |
+|                         | file_path            | Default |          |           | &#10003;      |
+|                         | process_id           | Default |          |           | &#10003;      |
+|                         | operation_type       | Default |          |           | &#10003;      |
+|                         | auth                 | Default |          |           | &#10003;      |
+|                         | service_name         | Default |          |           | &#10003;      |
+|                         | file_owner           | Default |          |           | &#10003;      |
+|                         | session_id           | Default |          |           | &#10003;      |
+|                         | process_dir          | Default |          |           | &#10003;      |
+|                         | process_command_line | Default |          |           | &#10003;      |
+|                         | src_host             | Default |          | &#10003;  |               |
+|                         | event_category       | Default |          |           | &#10003;      |
+|                         | src_port             | Default |          |           | &#10003;      |
+|                         | src_ip               | Default |          | &#10003;  |               |
+|                         | group_id             | Default |          |           | &#10003;      |
+|                         | user_id              | Default |          |           | &#10003;      |
+|                         | event_code           | Default |          |           | &#10003;      |
+|                         | process_name         | Default |          |           | &#10003;      |
+|                         | dest_ip              | Default |          | &#10003;  |               |
+|                         | event_name           | Default |          |           | &#10003;      |
+|                         | dest_port            | Default |          |           | &#10003;      |
+| file-delete             | dest_ip              |         |          |           |               |
+| file-permission-modify  | parent_process_id    |         |          |           | &#10003;      |
+|                         | process_id           |         |          | &#10003;  |               |
+|                         | access               | Legacy  |          | &#10003;  |               |
+|                         | operation_type       |         |          |           | &#10003;      |
+|                         | service_name         |         |          |           | &#10003;      |
+|                         | file_owner           |         |          |           | &#10003;      |
+|                         | process_command_line |         |          |           | &#10003;      |
+|                         | src_host             |         |          | &#10003;  |               |
+|                         | event_subtype        |         |          |           | &#10003;      |
+|                         | event_category       |         |          |           | &#10003;      |
+|                         | src_ip               |         |          | &#10003;  |               |
+|                         | group_id             |         |          |           | &#10003;      |
+|                         | user_id              |         |          |           | &#10003;      |
+|                         | bytes                |         |          |           | &#10003;      |
+|                         | process_name         | Legacy  |          |           | &#10003;      |
+|                         | operation            |         |          |           | &#10003;      |
+|                         | user                 | Legacy  | &#10003; | &#10003;  |               |
+|                         | account              |         |          |           |               |
+| file-read               | parent_process_id    |         |          |           | &#10003;      |
+|                         | process_id           |         |          | &#10003;  |               |
+|                         | access               | Legacy  |          | &#10003;  |               |
+|                         | operation_type       |         |          |           | &#10003;      |
+|                         | service_name         |         |          |           | &#10003;      |
+|                         | file_owner           |         |          |           | &#10003;      |
+|                         | process_command_line |         |          |           | &#10003;      |
+|                         | src_host             | Legacy  |          | &#10003;  |               |
+|                         | event_subtype        |         |          |           | &#10003;      |
+|                         | event_category       |         |          |           | &#10003;      |
+|                         | src_ip               |         |          | &#10003;  |               |
+|                         | group_id             |         |          |           | &#10003;      |
+|                         | user_id              |         |          |           | &#10003;      |
+|                         | bytes                | Legacy  |          |           | &#10003;      |
+|                         | process_name         | Legacy  |          |           | &#10003;      |
+|                         | operation            |         |          |           | &#10003;      |
+|                         | user                 | Legacy  | &#10003; | &#10003;  |               |
+|                         | account              |         |          |           |               |
+| file-write              |                      |         |          |           |               |
+| group-member-add        | src_ip               |         |          |           |               |
+| group-member-remove     | parent_process_id    |         |          |           |               |
+|                         | file_path            |         |          |           |               |
+|                         | process_id           |         |          |           |               |
+|                         | operation_type       |         |          |           |               |
+|                         | service_name         |         |          |           |               |
+|                         | file_owner           |         |          |           |               |
+|                         | process_command_line |         |          |           |               |
+|                         | src_host             | Legacy  |          | &#10003;  |               |
+|                         | event_category       |         |          |           |               |
+|                         | src_ip               |         |          |           |               |
+|                         | group_id             | Legacy  |          | &#10003;  |               |
+|                         | user_id              |         |          |           |               |
+|                         | process_name         |         |          |           |               |
+|                         | dest_user_id         |         |          |           |               |
+|                         | user                 | Legacy  | &#10003; | &#10003;  |               |
+| process-create          | operation_type       | Default |          |           | &#10003;      |
+|                         | user_id              | Default |          |           | &#10003;      |
+|                         | group_id             | Default |          |           | &#10003;      |
+|                         | additional_info      | Default |          |           | &#10003;      |
+|                         | session_id           | Default |          |           | &#10003;      |
+|                         | object               | Default |          |           | &#10003;      |
+| user-create             | parent_process_id    |         |          |           |               |
+|                         | file_path            |         |          |           |               |
+|                         | process_id           |         |          |           |               |
+|                         | operation_type       |         |          |           |               |
+|                         | service_name         |         |          |           |               |
+|                         | file_owner           |         |          |           |               |
+|                         | process_command_line |         |          |           |               |
+|                         | src_host             | Legacy  |          | &#10003;  |               |
+|                         | event_category       |         |          |           |               |
+|                         | src_ip               |         |          |           |               |
+|                         | group_id             |         |          |           |               |
+|                         | user_id              |         |          |           |               |
+|                         | process_name         |         |          |           |               |
+|                         | dest_user_id         |         |          |           |               |
+|                         | user                 | Legacy  | &#10003; | &#10003;  |               |
+| user-delete             | parent_process_id    |         |          |           |               |
+|                         | file_path            |         |          |           |               |
+|                         | process_id           |         |          |           |               |
+|                         | operation_type       |         |          |           |               |
+|                         | service_name         |         |          |           |               |
+|                         | file_owner           |         |          |           |               |
+|                         | process_command_line |         |          |           |               |
+|                         | src_host             |         |          |           |               |
+|                         | event_category       |         |          |           |               |
+|                         | src_ip               |         |          |           |               |
+|                         | group_id             |         |          |           |               |
+|                         | user_id              |         |          |           |               |
+|                         | process_name         |         |          |           |               |
+|                         | dest_user_id         |         |          |           |               |
+|                         | user                 | Legacy  | &#10003; | &#10003;  |               |
+| user-lock               | src_ip               |         |          | &#10003;  |               |
+|                         | auth_method          |         |          |           | &#10003;      |
+|                         | event_code           |         |          |           | &#10003;      |
+| user-password-modify    | parent_process_id    | Default |          |           | &#10003;      |
+|                         | file_path            | Default |          |           | &#10003;      |
+|                         | process_id           | Default |          |           | &#10003;      |
+|                         | operation_type       | Default |          |           | &#10003;      |
+|                         | service_name         | Default |          |           | &#10003;      |
+|                         | file_owner           | Default |          |           | &#10003;      |
+|                         | process_command_line | Default |          |           | &#10003;      |
+|                         | src_host             | Default |          | &#10003;  |               |
+|                         | event_category       | Default |          |           | &#10003;      |
+|                         | src_ip               | Default |          | &#10003;  |               |
+|                         | group_id             | Default |          |           | &#10003;      |
+|                         | user_id              | Default |          |           | &#10003;      |
+|                         | process_name         | Default |          |           | &#10003;      |
+|                         | dest_ip              | Default |          | &#10003;  |               |
+|                         | dest_user_id         | Default |          |           | &#10003;      |
+|                         | user                 | Default |          | &#10003;  |               |
+

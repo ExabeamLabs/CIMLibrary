@@ -1,187 +1,69 @@
 clientview
 ==========
 
-```JSON
-{"expression":"product = \"clientview\"",
-"activity_type":{"email-send":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-download":{"fields":{"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_file_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-upload":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"http-session":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"printer-activity":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"num_pages":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"printer_name":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"process-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "clientview"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type    | Field           | Status  | Core     | Detection | Informational |
+| ---------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity     | src_ip          | Default |          | &#10003;  |               |
+|                  | additional_info | Default |          |           | &#10003;      |
+|                  | domain          | Default |          |           | &#10003;      |
+|                  | src_host        | Default |          | &#10003;  |               |
+|                  | user            | Default |          | &#10003;  |               |
+| email-send       | src_ip          | Default |          | &#10003;  |               |
+|                  | src_host        | Default |          | &#10003;  |               |
+| file-delete      | src_ip          |         |          |           |               |
+|                  | access          | Legacy  |          | &#10003;  |               |
+|                  | bytes           |         |          |           |               |
+|                  | hash_md5        |         |          |           |               |
+|                  | src_host        | Legacy  |          | &#10003;  |               |
+|                  | user            | Legacy  | &#10003; | &#10003;  |               |
+| file-download    | access          |         |          |           |               |
+|                  | dest_ip         |         |          |           |               |
+|                  | domain          |         |          |           |               |
+|                  | dest_host       | Legacy  |          |           | &#10003;      |
+|                  | dest_file_dir   |         |          |           |               |
+|                  | user            | Legacy  | &#10003; | &#10003;  |               |
+| file-read        | src_ip          |         |          |           |               |
+|                  | access_type     |         |          |           |               |
+|                  | access          | Legacy  |          | &#10003;  |               |
+|                  | bytes           | Legacy  |          |           | &#10003;      |
+|                  | hash_md5        |         |          |           |               |
+|                  | src_host        | Legacy  |          | &#10003;  |               |
+|                  | user            | Legacy  | &#10003; | &#10003;  |               |
+| file-upload      | src_ip          |         |          |           |               |
+|                  | access          |         |          |           |               |
+|                  | domain          |         |          |           |               |
+|                  | src_host        | Legacy  |          |           | &#10003;      |
+|                  | user            | Legacy  | &#10003; | &#10003;  |               |
+| file-write       | src_ip          |         |          |           |               |
+|                  | access          | Legacy  |          | &#10003;  |               |
+|                  | bytes           | Legacy  |          | &#10003;  |               |
+|                  | hash_md5        |         |          |           |               |
+|                  | src_host        |         |          |           |               |
+|                  | user            | Legacy  | &#10003; | &#10003;  |               |
+| http-session     | src_host        | Default |          | &#10003;  |               |
+| printer-activity | src_ip          |         |          |           |               |
+|                  | file_path       |         |          |           |               |
+|                  | dest_ip         |         |          |           |               |
+|                  | num_pages       | Legacy  |          | &#10003;  |               |
+|                  | printer_name    | Legacy  | &#10003; | &#10003;  |               |
+|                  | src_host        | Legacy  |          |           | &#10003;      |
+|                  | user            | Legacy  | &#10003; | &#10003;  |               |
+|                  | object          |         |          |           |               |
+| process-create   | src_ip          | Default |          | &#10003;  |               |
+|                  | hash_md5        | Default |          |           | &#10003;      |
+|                  | session_id      | Default |          |           | &#10003;      |
+|                  | user            | Default |          | &#10003;  |               |
+

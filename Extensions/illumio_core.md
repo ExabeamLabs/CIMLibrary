@@ -1,59 +1,32 @@
 illumio core
 ============
 
-```JSON
-{"expression":"product = \"illumio core\"",
-"activity_type":{"network-session":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"uri_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "illumio core"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field          | Status  | Core | Detection | Informational |
+| --------------- | -------------- | ------- | ---- | --------- | ------------- |
+| network-session | process_id     | Default |      |           | &#10003;      |
+|                 | alert_severity | Default |      |           | &#10003;      |
+|                 | src_host       | Default |      | &#10003;  |               |
+|                 | uri_path       | Default |      |           | &#10003;      |
+|                 | web_domain     | Default |      |           | &#10003;      |
+|                 | process_name   | Default |      |           | &#10003;      |
+|                 | domain         | Default |      |           | &#10003;      |
+|                 | dest_host      | Default |      | &#10003;  |               |
+|                 | action         | Default |      |           | &#10003;      |
+|                 | location       | Default |      |           | &#10003;      |
+|                 | category       | Default |      |           | &#10003;      |
+|                 | user           | Default |      | &#10003;  |               |
+|                 | direction      | Default |      |           | &#10003;      |
+

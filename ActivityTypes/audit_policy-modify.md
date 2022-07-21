@@ -24,4 +24,7 @@ There are no fields for this activity type.
 audit_policy-modify:fail
 ------------------------
 
-There are no fields for this activity type.
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

@@ -1,31 +1,29 @@
 citrix web app firewall
 =======================
 
-```JSON
-{"expression":"product = \"citrix appfw\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"result":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"interface_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"rule":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "citrix appfw"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| result       |      | &#10003;  |               |
+| event_code   |      | &#10003;  |               |
+| alert_id     |      | &#10003;  |               |
+| interface_in |      | &#10003;  |               |
+| event_name   |      | &#10003;  |               |
+| rule         |      | &#10003;  |               |
+| action       |      | &#10003;  |               |
+| alert_name   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

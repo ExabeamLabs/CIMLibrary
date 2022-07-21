@@ -1,77 +1,39 @@
 hashicorp vault
 ===============
 
-```JSON
-{"expression":"product = \"hashicorp vault\"",
-"activity_type":{"user-password-reset":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"client_token":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"role":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"vault_entity_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"accessor":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"policies":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"client_token":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"vault_entity_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"accessor":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"policies":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "hashicorp vault"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type       | Field           | Status  | Core | Detection | Informational |
+| ------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-login           | src_ip          | Default |      | &#10003;  |               |
+|                     | path            | Default |      |           | &#10003;      |
+|                     | client_token    | Default |      |           | &#10003;      |
+|                     | role            | Default |      |           | &#10003;      |
+|                     | vault_entity_id | Default |      |           | &#10003;      |
+|                     | accessor        | Default |      |           | &#10003;      |
+|                     | policies        | Default |      |           | &#10003;      |
+|                     | category        | Default |      |           | &#10003;      |
+|                     | operation       | Default |      |           | &#10003;      |
+|                     | user_agent      | Default |      |           | &#10003;      |
+| user-password-reset | src_ip          |         |      |           |               |
+|                     | path            |         |      |           |               |
+|                     | client_token    |         |      |           |               |
+|                     | role            |         |      |           |               |
+|                     | vault_entity_id |         |      |           |               |
+|                     | accessor        |         |      |           |               |
+|                     | policies        |         |      |           |               |
+|                     | category        |         |      |           |               |
+|                     | operation       |         |      |           |               |
+|                     | user_agent      |         |      |           |               |
+

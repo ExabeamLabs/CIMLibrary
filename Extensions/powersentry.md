@@ -1,23 +1,25 @@
 powersentry
 ===========
 
-```JSON
-{"expression":"product = \"powersentry\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"configuration-modify":{"fields":{"user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "powersentry"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_host |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type        | Field     | Status  | Core | Detection | Informational |
+| -------------------- | --------- | ------- | ---- | --------- | ------------- |
+| app-login            | src_ip    | Default |      | &#10003;  |               |
+|                      | protocol  | Default |      |           | &#10003;      |
+| configuration-modify | user      |         |      |           |               |
+|                      | operation |         |      |           |               |
+

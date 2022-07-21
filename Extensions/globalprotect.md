@@ -1,73 +1,40 @@
 globalprotect
 =============
 
-```JSON
-{"expression":"product = \"palo alto global protect\"",
-"activity_type":{"app-login":{"fields":{}},
-"configuration-modify":{"fields":{"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-authentication":{"fields":{}},
-"app-activity":{"fields":{"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"vpn_client":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"vpn_client":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"vpn_client":{"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_country":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "palo alto global protect"
+
+Fields
+------
+
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| src_ip           |          | &#10003;  |               |
+| src_country      |          |           | &#10003;      |
+| domain           |          | &#10003;  |               |
+| operating_system |          |           | &#10003;      |
+| user             | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type        | Field           | Status  | Core | Detection | Informational |
+| -------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity         | src_mac         | Default |      |           | &#10003;      |
+|                      | auth_method     | Default |      |           | &#10003;      |
+|                      | application     | Default |      |           | &#10003;      |
+|                      | additional_info | Default |      |           | &#10003;      |
+|                      | dest_ip         | Default |      | &#10003;  |               |
+|                      | vpn_client      | Default |      |           | &#10003;      |
+|                      | event_name      | Default |      |           | &#10003;      |
+|                      | device_type     | Default |      |           | &#10003;      |
+|                      | src_host        | Default |      | &#10003;  |               |
+|                      | object          | Default |      |           | &#10003;      |
+| app-login            |                 |         |      |           |               |
+| configuration-modify | object          |         |      |           | &#10003;      |
+| vpn-authentication   |                 |         |      |           |               |
+| vpn-login            | vpn_client      | Default |      |           | &#10003;      |
+| vpn-logout           | vpn_client      |         |      |           | &#10003;      |
+

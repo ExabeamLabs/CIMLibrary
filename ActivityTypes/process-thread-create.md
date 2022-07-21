@@ -25,6 +25,8 @@ process-thread-create:success
 process-thread-create:fail
 --------------------------
 
-| Field     | Core | Detection | Informational |
-| --------- | ---- | --------- | ------------- |
-| thread_id |      |           |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| thread_id      |      |           |               |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

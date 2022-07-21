@@ -1,102 +1,48 @@
 sophos endpoint protection
 ==========================
 
-```JSON
-{"expression":"product = sophos endpoint protection",
-"activity_type":{"peripheral_storage-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"peripheral_storage-insert":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"http-session":{"fields":{"malware_url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{}}},
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"alert_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = sophos endpoint protection
+
+Fields
+------
+
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| domain     |          | &#10003;  |               |
+| alert_id   |          |           | &#10003;      |
+| src_host   | &#10003; |           |               |
+| user       | &#10003; | &#10003;  |               |
+| alert_type |          |           | &#10003;      |
+| alert_name |          |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type               | Field           | Status  | Core     | Detection | Informational |
+| --------------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger               | file_path       | Legacy  |          |           | &#10003;      |
+|                             | access          |         |          |           |               |
+|                             | device_id       |         |          |           |               |
+|                             | file_name       | Legacy  | &#10003; |           |               |
+|                             | file_dir        | Legacy  |          |           | &#10003;      |
+|                             | src_host        | Legacy  | &#10003; | &#10003;  |               |
+|                             | result          |         |          |           |               |
+|                             | src_ip          | Legacy  | &#10003; | &#10003;  |               |
+|                             | additional_info |         |          |           |               |
+|                             | alert_id        | Legacy  |          |           | &#10003;      |
+|                             | dest_ip         | Legacy  | &#10003; | &#10003;  |               |
+|                             | domain          |         |          |           |               |
+|                             | dest_host       | Legacy  |          | &#10003;  |               |
+|                             | malware_url     |         |          |           |               |
+|                             | user            | Legacy  |          | &#10003;  |               |
+| http-session                | malware_url     | Default |          |           | &#10003;      |
+|                             | src_host        | Default |          | &#10003;  |               |
+| network-session             |                 |         |          |           |               |
+| peripheral_storage-activity | src_ip          | Default |          | &#10003;  |               |
+|                             | bytes           | Default |          |           | &#10003;      |
+|                             | file_name       | Default |          |           | &#10003;      |
+| peripheral_storage-insert   | src_ip          |         |          |           |               |
+

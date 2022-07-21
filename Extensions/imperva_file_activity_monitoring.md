@@ -1,43 +1,35 @@
 imperva file activity monitoring
 ================================
 
-```JSON
-{"expression":"product = \"imperva file activity monitoring\"",
-"activity_type":{"file-permission-modify":{"fields":{}},
-"file-write":{"fields":{}},
-"file-read":{"fields":{}},
-"file-delete":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"server_group":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "imperva file activity monitoring"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| src_ip       |      | &#10003;  |               |
+| src_port     |      |           | &#10003;      |
+| protocol     |      |           | &#10003;      |
+| access_type  |      |           | &#10003;      |
+| server_group |      |           | &#10003;      |
+| access       |      |           | &#10003;      |
+| service_name |      |           | &#10003;      |
+| domain       |      | &#10003;  |               |
+| dest_ip      |      | &#10003;  |               |
+| dest_host    |      | &#10003;  |               |
+| user         |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field | Status | Core | Detection | Informational |
+| ---------------------- | ----- | ------ | ---- | --------- | ------------- |
+| file-delete            |       |        |      |           |               |
+| file-permission-modify |       |        |      |           |               |
+| file-read              |       |        |      |           |               |
+| file-write             |       |        |      |           |               |
+

@@ -25,6 +25,8 @@ group-role-modify:success
 group-role-modify:fail
 ----------------------
 
-| Field     | Core | Detection | Informational |
-| --------- | ---- | --------- | ------------- |
-| role_name |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| role_name      |      |           | &#10003;      |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

@@ -1,63 +1,33 @@
 barracuda cloudgen firewall
 ===========================
 
-```JSON
-{"expression":"product = \"barracuda cloudgen firewall\"",
-"activity_type":{"vpn-login":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{"duration":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_external_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "barracuda cloudgen firewall"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field             | Status  | Core | Detection | Informational |
+| --------------- | ----------------- | ------- | ---- | --------- | ------------- |
+| endpoint-login  | src_ip            | Default |      | &#10003;  |               |
+| network-session | duration          | Default |      |           | &#10003;      |
+|                 | src_translated_ip | Default |      |           | &#10003;      |
+|                 | src_interface     | Default |      |           | &#10003;      |
+|                 | dest_external_ip  | Default |      |           | &#10003;      |
+|                 | bytes_out         | Default |      |           | &#10003;      |
+|                 | dest_interface    | Default |      |           | &#10003;      |
+|                 | bytes_in          | Default |      |           | &#10003;      |
+|                 | event_code        | Default |      |           | &#10003;      |
+|                 | rule              | Default |      |           | &#10003;      |
+| vpn-login       | src_port          | Default |      |           | &#10003;      |
+|                 | src_translated_ip | Default |      |           | &#10003;      |
+|                 | dest_host         | Default |      | &#10003;  |               |
+|                 | event_name        | Default |      |           | &#10003;      |
+

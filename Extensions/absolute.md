@@ -1,18 +1,22 @@
 absolute
 ========
 
-```JSON
-{"expression":"product = absolute",
-"activity_type":{"alert-trigger":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = absolute
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core | Detection | Informational |
+| ------------- | --------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | additional_info |        |      |           |               |
+|               | alert_id        | Legacy |      |           | &#10003;      |
+|               | dest_host       | Legacy |      | &#10003;  |               |
+

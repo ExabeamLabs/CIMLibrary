@@ -1,49 +1,35 @@
 rsa netwitness platform
 =======================
 
-```JSON
-{"expression":"product = \"rsa netwitness\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"role":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"external_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"uri":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"query_string":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "rsa netwitness"
+
+Fields
+------
+
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| role         |      |           | &#10003;      |
+| method       |      |           | &#10003;      |
+| group_name   |      |           | &#10003;      |
+| action_type  |      |           | &#10003;      |
+| service_name |      |           | &#10003;      |
+| session_id   |      |           | &#10003;      |
+| external_id  |      |           | &#10003;      |
+| uri          |      |           | &#10003;      |
+| src_ip       |      |           | &#10003;      |
+| src_port     |      |           | &#10003;      |
+| process_name |      |           | &#10003;      |
+| event_name   |      |           | &#10003;      |
+| user_agent   |      |           | &#10003;      |
+| query_string |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

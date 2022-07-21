@@ -1,42 +1,29 @@
 tanium threat response
 ======================
 
-```JSON
-{"expression":"product = \"tanium threat response\"",
-"activity_type":{"alert-trigger":{"fields":{"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "tanium threat response"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | process_name         | Legacy |          | &#10003;  |               |
+|               | alert_id             | Legacy |          |           | &#10003;      |
+|               | dest_ip              | Legacy | &#10003; | &#10003;  |               |
+|               | domain               |        |          |           |               |
+|               | hash_md5             |        |          |           |               |
+|               | operating_system     |        |          |           |               |
+|               | process_dir          |        |          |           |               |
+|               | process_command_line |        |          |           |               |
+|               | process_path         | Legacy |          | &#10003;  |               |
+|               | user                 | Legacy |          | &#10003;  |               |
+

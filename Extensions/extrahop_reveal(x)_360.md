@@ -1,38 +1,28 @@
 extrahop reveal(x) 360
 ======================
 
-```JSON
-{"expression":"product = extrahop reveal(x) 360",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"query":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sub_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = extrahop reveal(x) 360
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | result          |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | domain          |        |          |           |               |
+|               | query           |        |          |           |               |
+|               | sub_domain      |        |          |           |               |
+|               | dest_host       | Legacy |          | &#10003;  |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+

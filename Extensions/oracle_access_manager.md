@@ -1,48 +1,31 @@
 oracle access manager
 =====================
 
-```JSON
-{"expression":"product = \"oracle access manager\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "oracle access manager"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          |           | &#10003;      |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip      | Default |      | &#10003;  |               |
+|               | resource    | Default |      |           | &#10003;      |
+|               | object      | Default |      |           | &#10003;      |
+| app-login     | src_ip      | Default |      | &#10003;  |               |
+|               | auth_method | Default |      |           | &#10003;      |
+|               | resource    | Default |      |           | &#10003;      |
+|               | dest_ip     | Default |      | &#10003;  |               |
+|               | dest_host   | Default |      | &#10003;  |               |
+|               | object      | Default |      |           | &#10003;      |
+

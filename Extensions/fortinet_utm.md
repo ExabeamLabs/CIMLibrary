@@ -1,137 +1,52 @@
 fortinet utm
 ============
 
-```JSON
-{"expression":"product = fortinet utm",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"http-session":{"fields":{"policy_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_subtype":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"auth_server":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"uri":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"http-request":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_subtype":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_server":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = fortinet utm
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field           | Status  | Core     | Detection | Informational |
+| ----------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger           | src_ip          | Legacy  | &#10003; | &#10003;  |               |
+|                         | src_port        | Legacy  |          |           | &#10003;      |
+|                         | protocol        | Legacy  |          | &#10003;  |               |
+|                         | additional_info |         |          |           |               |
+|                         | dest_ip         | Legacy  | &#10003; | &#10003;  |               |
+|                         | action          | Legacy  |          |           | &#10003;      |
+|                         | src_host        | Legacy  | &#10003; | &#10003;  |               |
+|                         | user            | Legacy  |          | &#10003;  |               |
+|                         | dest_port       | Legacy  |          | &#10003;  |               |
+|                         | target          |         |          |           |               |
+| app-activity            | src_ip          | Default |          | &#10003;  |               |
+|                         | src_port        | Default |          |           | &#10003;      |
+|                         | web_domain      | Default |          |           | &#10003;      |
+|                         | dest_ip         | Default |          | &#10003;  |               |
+|                         | event_name      | Default |          |           | &#10003;      |
+|                         | event_subtype   | Default |          |           | &#10003;      |
+|                         | category        | Default |          |           | &#10003;      |
+|                         | user            | Default | &#10003; | &#10003;  |               |
+|                         | auth_server     | Default |          |           | &#10003;      |
+|                         | uri             | Default |          |           | &#10003;      |
+|                         | dest_port       | Default |          |           | &#10003;      |
+| endpoint-authentication | src_ip          | Default |          | &#10003;  |               |
+|                         | dest_ip         | Default |          | &#10003;  |               |
+| http-request            | application     | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+|                         | service_name    | Default |          |           | &#10003;      |
+|                         | event_name      | Default |          |           | &#10003;      |
+|                         | event_subtype   | Default |          |           | &#10003;      |
+|                         | operation       | Default |          |           | &#10003;      |
+|                         | auth_server     | Default |          |           | &#10003;      |
+| http-session            | policy_id       | Default |          |           | &#10003;      |
+|                         | group_name      | Default |          |           | &#10003;      |
+|                         | additional_info | Default |          |           | &#10003;      |
+

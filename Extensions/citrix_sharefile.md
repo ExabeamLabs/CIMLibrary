@@ -1,67 +1,40 @@
 citrix sharefile
 ================
 
-```JSON
-{"expression":"product = \"citrix sharefile\"",
-"activity_type":{"file-download":{"fields":{}},
-"file-upload":{"fields":{}},
-"app-login":{"fields":{}},
-"file-share":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"country_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"uri_path":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"company":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "citrix sharefile"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      | &#10003;  |               |
+| country_code    |      | &#10003;  |               |
+| uri_path        |      | &#10003;  |               |
+| additional_info |      |           | &#10003;      |
+| event_code      |      | &#10003;  |               |
+| domain          |      | &#10003;  |               |
+| action          |      | &#10003;  |               |
+| company         |      | &#10003;  |               |
+| user            |      | &#10003;  |               |
+| operation       |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-activity  | file_path   | Default |      |           | &#10003;      |
+|               | file_ext    | Default |      |           | &#10003;      |
+|               | file_name   | Default |      |           | &#10003;      |
+|               | file_dir    | Default |      |           | &#10003;      |
+| app-login     |             |         |      |           |               |
+| file-download |             |         |      |           |               |
+| file-share    | application | Default |      |           | &#10003;      |
+|               | operation   | Default |      |           | &#10003;      |
+|               | target      | Default |      |           | &#10003;      |
+| file-upload   |             |         |      |           |               |
+

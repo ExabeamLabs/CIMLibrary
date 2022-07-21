@@ -1,24 +1,24 @@
 ironnet irondefense
 ===================
 
-```JSON
-{"expression":"product = ironnet irondefense",
-"activity_type":{"alert-trigger":{"fields":{"alert_status":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = ironnet irondefense
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | alert_status    |        |          |           |               |
+|               | bytes_out       |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | dest_port       | Legacy |          | &#10003;  |               |
+

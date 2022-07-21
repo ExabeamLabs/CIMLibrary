@@ -1,15 +1,21 @@
 symantec fireglass
 ==================
 
-```JSON
-{"expression":"product = \"symantec fireglass\"",
-"activity_type":{"http-session":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "symantec fireglass"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status  | Core | Detection | Informational |
+| ------------- | --------- | ------- | ---- | --------- | ------------- |
+| http-session  | domain    | Default |      |           | &#10003;      |
+|               | operation | Default |      |           | &#10003;      |
+

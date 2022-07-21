@@ -1,48 +1,31 @@
 esector defesa logger
 =====================
 
-```JSON
-{"expression":"product = \"esector defesa logger\"",
-"activity_type":{"file-write":{"fields":{"host_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"host_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"host_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "esector defesa logger"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field      | Status | Core     | Detection | Informational |
+| ------------- | ---------- | ------ | -------- | --------- | ------------- |
+| file-delete   | host_ip    |        |          |           |               |
+|               | event_name |        |          |           |               |
+|               | src_host   | Legacy |          | &#10003;  |               |
+|               | user       | Legacy | &#10003; | &#10003;  |               |
+| file-read     | host_ip    |        |          |           |               |
+|               | event_name |        |          |           |               |
+|               | src_host   | Legacy |          | &#10003;  |               |
+|               | user       | Legacy | &#10003; | &#10003;  |               |
+| file-write    | host_ip    |        |          |           |               |
+|               | event_name |        |          |           |               |
+|               | src_host   |        |          |           |               |
+|               | user       | Legacy | &#10003; | &#10003;  |               |
+

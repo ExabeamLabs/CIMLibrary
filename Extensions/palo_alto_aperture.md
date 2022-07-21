@@ -1,80 +1,42 @@
 palo alto aperture
 ==================
 
-```JSON
-{"expression":"product = \"palo alto aperture\"",
-"activity_type":{"audit_policy-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"item_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"item_creator":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"collaborators":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"item_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "palo alto aperture"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| domain |      |           | &#10003;      |
+| user   |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type       | Field           | Status  | Core     | Detection | Informational |
+| ------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger       | src_ip          | Legacy  | &#10003; | &#10003;  |               |
+|                     | additional_info |         |          |           |               |
+|                     | item_type       |         |          |           |               |
+|                     | dest_ip         | Legacy  | &#10003; | &#10003;  |               |
+|                     | item_creator    |         |          |           |               |
+|                     | collaborators   |         |          |           |               |
+|                     | last_name       |         |          |           |               |
+|                     | item_name       |         |          |           |               |
+|                     | user            | Legacy  |          | &#10003;  |               |
+|                     | first_name      |         |          |           |               |
+| app-activity        | src_ip          | Default |          | &#10003;  |               |
+| app-login           | src_ip          | Default |          | &#10003;  |               |
+| audit_policy-modify | src_ip          |         |          | &#10003;  |               |
+|                     | operation       |         |          |           | &#10003;      |
+| file-delete         | src_ip          |         |          | &#10003;  |               |
+|                     | access          | Legacy  |          | &#10003;  |               |
+| file-read           | src_ip          |         |          | &#10003;  |               |
+|                     | access          | Legacy  |          | &#10003;  |               |
+| file-write          | src_ip          |         |          | &#10003;  |               |
+|                     | access          | Legacy  |          | &#10003;  |               |
+

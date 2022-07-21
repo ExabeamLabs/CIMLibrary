@@ -1,27 +1,24 @@
 honeywell siama
 ===============
 
-```JSON
-{"expression":"product = \"honeywell siama\"",
-"activity_type":{"physical_location-access":{"fields":{"src_location_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"door_side_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_door_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "honeywell siama"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type            | Field            | Status  | Core | Detection | Informational |
+| ------------------------ | ---------------- | ------- | ---- | --------- | ------------- |
+| physical_location-access | src_location_id  | Default |      |           | &#10003;      |
+|                          | user_id          | Default |      |           | &#10003;      |
+|                          | event_name       | Default |      |           | &#10003;      |
+|                          | door_side_id     | Default |      |           | &#10003;      |
+|                          | location_door_id | Default |      |           | &#10003;      |
+

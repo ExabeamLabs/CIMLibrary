@@ -1,786 +1,247 @@
 falcon
 ======
 
-```JSON
-{"expression":"product = \"falcon\"",
-"activity_type":{"scheduled_task-create":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-role-revoke":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"activity_details":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"peripheral_storage-remove":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"activity_details":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"dns-request":{"fields":{"file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"aip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dns_response":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"falcon_host_link":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"falcon_host_link":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"process-create":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"falcon_host_link":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"service_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"log_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"grandparent_process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"old_hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_sid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-download":{"fields":{"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_hash":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"network-traffic":{"fields":{"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"configuration-modify":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"peripheral_storage-insert":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"activity_details":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"vendor_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-role-assign":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"falcon_host_link":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"new_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_command_line":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"old_hash":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"falcon_host_link":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"aip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_package":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"old_hash":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_sid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_server":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"user":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"aid":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "falcon"
+
+Fields
+------
+
+| Field | Core     | Detection | Informational |
+| ----- | -------- | --------- | ------------- |
+| user  | &#10003; | &#10003;  |               |
+| aid   |          |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type             | Field                    | Status  | Core     | Detection | Informational |
+| ------------------------- | ------------------------ | ------- | -------- | --------- | ------------- |
+| app-activity              | src_ip                   | Default |          | &#10003;  |               |
+|                           | application              | Default |          |           | &#10003;      |
+|                           | resource                 | Default |          |           | &#10003;      |
+|                           | additional_info          | Default |          |           | &#10003;      |
+|                           | domain                   | Default |          |           | &#10003;      |
+|                           | user                     | Default |          | &#10003;  |               |
+|                           | object                   | Default |          |           | &#10003;      |
+| app-login                 | src_ip                   | Default |          | &#10003;  |               |
+|                           | activity_details         | Default |          |           | &#10003;      |
+|                           | event_name               | Default |          |           | &#10003;      |
+|                           | session_id               | Default |          |           | &#10003;      |
+| configuration-modify      | domain                   |         |          |           |               |
+|                           | operation                |         |          |           |               |
+|                           | user                     |         |          |           |               |
+|                           | object                   |         |          |           |               |
+| dns-request               | file_name                |         |          |           |               |
+|                           | alert_severity           |         |          |           |               |
+|                           | aip                      |         |          |           |               |
+|                           | src_host                 | Legacy  | &#10003; | &#10003;  |               |
+|                           | protocol                 |         |          |           |               |
+|                           | process_guid             |         |          |           |               |
+|                           | dns_response             |         |          |           |               |
+|                           | additional_info          |         |          |           |               |
+|                           | event_code               |         |          |           |               |
+|                           | domain                   |         |          |           |               |
+|                           | hash_md5                 |         |          |           |               |
+|                           | category                 |         |          |           |               |
+|                           | alert_name               |         |          |           |               |
+| endpoint-login            | process_id               | Default |          |           | &#10003;      |
+|                           | file_path                | Default |          |           | &#10003;      |
+|                           | falcon_host_link         | Default |          |           | &#10003;      |
+|                           | file_name                | Default |          |           | &#10003;      |
+|                           | file_dir                 | Default |          |           | &#10003;      |
+|                           | aip                      | Default |          |           | &#10003;      |
+|                           | session_id               | Default |          |           | &#10003;      |
+|                           | process_command_line     | Default |          |           | &#10003;      |
+|                           | src_ip                   | Default |          | &#10003;  |               |
+|                           | hash_sha256              | Default |          |           | &#10003;      |
+|                           | authentication_package   | Default |          |           | &#10003;      |
+|                           | file_ext                 | Default |          |           | &#10003;      |
+|                           | process_guid             | Default |          |           | &#10003;      |
+|                           | old_hash                 | Default |          |           | &#10003;      |
+|                           | event_code               | Default |          |           | &#10003;      |
+|                           | bytes                    | Default |          |           | &#10003;      |
+|                           | hash_md5                 | Default |          |           | &#10003;      |
+|                           | user_sid                 | Default |          |           | &#10003;      |
+|                           | event_name               | Default |          |           | &#10003;      |
+|                           | auth_server              | Default |          |           | &#10003;      |
+| file-delete               | process_id               |         |          |           |               |
+|                           | access                   | Legacy  |          | &#10003;  |               |
+|                           | falcon_host_link         |         |          |           |               |
+|                           | session_id               |         |          |           |               |
+|                           | src_host                 | Legacy  |          | &#10003;  |               |
+|                           | process_command_line     |         |          |           |               |
+|                           | src_ip                   |         |          |           |               |
+|                           | hash_sha256              |         |          |           |               |
+|                           | process_guid             |         |          |           |               |
+|                           | old_hash                 |         |          |           |               |
+|                           | bytes                    |         |          |           |               |
+|                           | event_code               |         |          |           |               |
+|                           | alert_id                 |         |          |           |               |
+|                           | hash_md5                 |         |          |           |               |
+|                           | user_sid                 |         |          |           |               |
+|                           | operating_system         |         |          |           |               |
+|                           | event_name               |         |          |           |               |
+|                           | alert_name               |         |          |           |               |
+| file-download             | src_port                 |         |          |           |               |
+|                           | hash_sha256              |         |          |           |               |
+|                           | process_guid             |         |          |           |               |
+|                           | old_hash                 |         |          |           |               |
+|                           | event_code               |         |          |           |               |
+|                           | dest_ip                  |         |          |           |               |
+|                           | event_name               |         |          |           |               |
+|                           | src_host                 | Legacy  |          |           | &#10003;      |
+|                           | new_hash                 |         |          |           |               |
+| file-read                 | process_id               |         |          |           |               |
+|                           | access                   | Legacy  |          | &#10003;  |               |
+|                           | falcon_host_link         |         |          |           |               |
+|                           | alert_severity           |         |          |           |               |
+|                           | src_ip                   |         |          |           |               |
+|                           | protocol                 |         |          |           |               |
+|                           | process_guid             |         |          |           |               |
+|                           | event_code               |         |          |           |               |
+|                           | alert_id                 |         |          |           |               |
+|                           | hash_md5                 |         |          |           |               |
+|                           | operating_system         |         |          |           |               |
+|                           | dest_port                |         |          |           |               |
+|                           | session_id               |         |          |           |               |
+|                           | src_host                 | Legacy  |          | &#10003;  |               |
+|                           | process_command_line     |         |          |           |               |
+|                           | src_port                 |         |          |           |               |
+|                           | hash_sha256              |         |          |           |               |
+|                           | additional_info          |         |          |           |               |
+|                           | old_hash                 |         |          |           |               |
+|                           | bytes                    | Legacy  |          |           | &#10003;      |
+|                           | domain                   |         |          |           |               |
+|                           | dest_ip                  |         |          |           |               |
+|                           | user_sid                 |         |          |           |               |
+|                           | event_name               |         |          |           |               |
+|                           | category                 |         |          |           |               |
+|                           | alert_name               |         |          |           |               |
+|                           | object                   |         |          |           |               |
+| file-write                | process_id               |         |          |           |               |
+|                           | access                   | Legacy  |          | &#10003;  |               |
+|                           | falcon_host_link         |         |          |           |               |
+|                           | alert_severity           |         |          |           |               |
+|                           | src_ip                   |         |          |           |               |
+|                           | protocol                 |         |          |           |               |
+|                           | process_guid             |         |          |           |               |
+|                           | file_type                | Legacy  |          |           | &#10003;      |
+|                           | event_code               |         |          |           |               |
+|                           | alert_id                 |         |          |           |               |
+|                           | hash_md5                 |         |          |           |               |
+|                           | operating_system         |         |          |           |               |
+|                           | dest_port                |         |          |           |               |
+|                           | new_hash                 |         |          |           |               |
+|                           | device_id                | Legacy  |          | &#10003;  |               |
+|                           | session_id               |         |          |           |               |
+|                           | src_host                 |         |          |           |               |
+|                           | process_command_line     |         |          |           |               |
+|                           | src_port                 |         |          |           |               |
+|                           | hash_sha256              |         |          |           |               |
+|                           | additional_info          |         |          |           |               |
+|                           | old_hash                 |         |          |           |               |
+|                           | bytes                    | Legacy  |          | &#10003;  |               |
+|                           | domain                   |         |          |           |               |
+|                           | dest_ip                  |         |          |           |               |
+|                           | user_sid                 |         |          |           |               |
+|                           | event_name               |         |          |           |               |
+|                           | category                 |         |          |           |               |
+|                           | alert_name               |         |          |           |               |
+| group-member-add          | src_ip                   |         |          |           |               |
+|                           | domain                   | Legacy  |          |           | &#10003;      |
+|                           | user                     | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation                |         |          |           |               |
+| network-traffic           | process_guid             | Default |          |           | &#10003;      |
+|                           | additional_info          | Default |          |           | &#10003;      |
+|                           | file_name                | Default |          |           | &#10003;      |
+|                           | event_code               | Default |          |           | &#10003;      |
+|                           | process_name             | Default |          |           | &#10003;      |
+|                           | domain                   | Default |          |           | &#10003;      |
+|                           | alert_severity           | Default |          |           | &#10003;      |
+|                           | hash_md5                 | Default |          |           | &#10003;      |
+|                           | src_host                 | Default |          | &#10003;  |               |
+|                           | category                 | Default |          |           | &#10003;      |
+|                           | alert_name               | Default |          |           | &#10003;      |
+|                           | direction                | Default |          |           | &#10003;      |
+| peripheral_storage-insert | src_ip                   |         |          |           |               |
+|                           | process_id               |         |          |           |               |
+|                           | file_path                |         |          |           |               |
+|                           | file_ext                 |         |          |           |               |
+|                           | event_code               |         |          |           |               |
+|                           | file_name                |         |          |           |               |
+|                           | activity_details         |         |          |           |               |
+|                           | vendor_id                |         |          |           |               |
+|                           | file_dir                 |         |          |           |               |
+|                           | alert_id                 |         |          |           |               |
+|                           | operation                |         |          |           |               |
+| peripheral_storage-remove | src_ip                   |         |          |           |               |
+|                           | file_path                |         |          |           |               |
+|                           | file_ext                 |         |          |           |               |
+|                           | event_code               | Legacy  |          |           | &#10003;      |
+|                           | file_name                | Legacy  | &#10003; |           |               |
+|                           | activity_details         |         |          |           |               |
+|                           | file_dir                 |         |          |           |               |
+|                           | alert_id                 |         |          |           |               |
+|                           | operation                |         |          |           |               |
+| process-create            | file_path                | Default |          |           | &#10003;      |
+|                           | falcon_host_link         | Default |          |           | &#10003;      |
+|                           | file_name                | Default |          |           | &#10003;      |
+|                           | service_name             | Default |          |           | &#10003;      |
+|                           | file_dir                 | Default |          |           | &#10003;      |
+|                           | session_id               | Default |          |           | &#10003;      |
+|                           | process_command_line     | Default |          |           | &#10003;      |
+|                           | hash_sha256              | Default |          |           | &#10003;      |
+|                           | src_ip                   | Default |          | &#10003;  |               |
+|                           | log_severity             | Default |          |           | &#10003;      |
+|                           | process_guid             | Default |          |           | &#10003;      |
+|                           | file_ext                 | Default |          |           | &#10003;      |
+|                           | grandparent_process_path | Default |          |           | &#10003;      |
+|                           | additional_info          | Default |          |           | &#10003;      |
+|                           | old_hash                 | Default |          |           | &#10003;      |
+|                           | event_code               | Default |          |           | &#10003;      |
+|                           | bytes                    | Default |          |           | &#10003;      |
+|                           | dest_ip                  | Default |          | &#10003;  |               |
+|                           | hash_md5                 | Default |          |           | &#10003;      |
+|                           | user_sid                 | Default |          |           | &#10003;      |
+|                           | operating_system         | Default |          |           | &#10003;      |
+|                           | parent_process_guid      | Default |          |           | &#10003;      |
+| scheduled_task-create     | src_ip                   |         |          |           |               |
+|                           | file_path                |         |          |           |               |
+|                           | file_ext                 |         |          |           |               |
+|                           | event_code               | Legacy  |          |           | &#10003;      |
+|                           | file_name                |         |          |           |               |
+|                           | file_dir                 |         |          |           |               |
+| user-create               | src_ip                   |         |          |           |               |
+|                           | application              |         |          |           |               |
+|                           | domain                   | Legacy  |          |           | &#10003;      |
+|                           | event_name               |         |          |           |               |
+|                           | user                     | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation                |         |          |           |               |
+| user-delete               | src_ip                   |         |          |           |               |
+|                           | application              |         |          |           |               |
+|                           | domain                   | Legacy  |          |           | &#10003;      |
+|                           | event_name               |         |          |           |               |
+|                           | user                     | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation                |         |          |           |               |
+| user-modify               | src_ip                   |         |          |           |               |
+|                           | application              |         |          |           |               |
+|                           | domain                   | Legacy  |          |           | &#10003;      |
+|                           | event_name               |         |          |           |               |
+|                           | user                     | Legacy  | &#10003; |           |               |
+|                           | operation                |         |          |           |               |
+| user-role-assign          | src_ip                   | Default |          | &#10003;  |               |
+|                           | application              | Default |          |           | &#10003;      |
+|                           | domain                   | Default |          |           | &#10003;      |
+|                           | event_name               | Default |          |           | &#10003;      |
+|                           | user                     | Default |          | &#10003;  |               |
+|                           | operation                | Default |          |           | &#10003;      |
+| user-role-revoke          | src_ip                   | Default |          | &#10003;  |               |
+|                           | application              | Default |          |           | &#10003;      |
+|                           | domain                   | Default |          |           | &#10003;      |
+|                           | event_name               | Default |          |           | &#10003;      |
+|                           | user                     | Default |          | &#10003;  |               |
+|                           | operation                | Default |          |           | &#10003;      |
+

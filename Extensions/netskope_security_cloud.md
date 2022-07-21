@@ -1,1176 +1,335 @@
 netskope security cloud
 =======================
 
-```JSON
-{"expression":"product = \"netskope security cloud\"",
-"activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-send":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-upload":{"fields":{"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"log-search":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-copy":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-permission-modify":{"fields":{"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-move":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-delete":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"app_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"account":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-list":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"network-session":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"country_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location_city":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-download":{"fields":{"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-mfa-disable":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-list":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"site_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"from_user_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_path_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"shared_with_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"http-session":{"fields":{"src_location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"message-send":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-role-modify":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"browser":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"location":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"browser":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"auth_method":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"browser":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-remove":{"fields":{"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"browser":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "netskope security cloud"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field             | Status  | Core     | Detection | Informational |
+| ---------------------- | ----------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger          | site_at           |         |          |           |               |
+|                        | file_path         | Legacy  |          |           | &#10003;      |
+|                        | additional_info   |         |          |           |               |
+|                        | bytes             | Legacy  |          | &#10003;  |               |
+|                        | alert_id          | Legacy  |          |           | &#10003;      |
+|                        | dest_ip           | Legacy  | &#10003; | &#10003;  |               |
+|                        | from_user_at      |         |          |           |               |
+|                        | hash_md5          |         |          |           |               |
+|                        | file_path_at      |         |          |           |               |
+|                        | user              | Legacy  |          | &#10003;  |               |
+|                        | shared_with_at    |         |          |           |               |
+|                        | target            |         |          |           |               |
+| app-activity           | country           | Default |          |           | &#10003;      |
+|                        | app_type          | Default |          |           | &#10003;      |
+|                        | resource          | Default |          |           | &#10003;      |
+|                        | file_name         | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | src_translated_ip | Default |          |           | &#10003;      |
+|                        | auth_method       | Default |          |           | &#10003;      |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | additional_info   | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | file_type         | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | dest_ip           | Default |          | &#10003;  |               |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | dest_host         | Default |          | &#10003;  |               |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+|                        | account           | Default |          | &#10003;  |               |
+|                        | user_agent        | Default |          |           | &#10003;      |
+|                        | object            | Default |          |           | &#10003;      |
+| app-login              | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | auth_method       | Default |          |           | &#10003;      |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | file_type         | Default |          |           | &#10003;      |
+|                        | dest_ip           | Default |          | &#10003;  |               |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | dest_port         | Default |          |           | &#10003;      |
+|                        | user_agent        | Default |          |           | &#10003;      |
+|                        | object            | Default |          |           | &#10003;      |
+| email-receive          | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | dest_port         | Default |          |           | &#10003;      |
+|                        | url               | Default |          |           | &#10003;      |
+| email-send             | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | file_type         | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | dest_port         | Default |          |           | &#10003;      |
+|                        | user_agent        | Default |          |           | &#10003;      |
+| file-copy              | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | file_type         | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| file-delete            | src_host          | Legacy  |          | &#10003;  |               |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | auth_method       |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             |         |          |           |               |
+|                        | file_type         | Legacy  |          |           | &#10003;      |
+|                        | domain            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | dest_port         |         |          |           |               |
+|                        | user_agent        |         |          |           |               |
+|                        | object            |         |          |           |               |
+| file-download          | src_host          | Legacy  |          |           | &#10003;      |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | auth_method       |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             | Legacy  |          | &#10003;  |               |
+|                        | file_type         | Legacy  |          |           | &#10003;      |
+|                        | domain            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | dest_port         |         |          |           |               |
+|                        | user_agent        |         |          |           |               |
+|                        | object            |         |          |           |               |
+| file-list              | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | file_type         | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| file-move              | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | file_type         | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| file-permission-modify | src_host          |         |          |           |               |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | auth_method       |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             |         |          |           |               |
+|                        | file_type         | Legacy  |          |           | &#10003;      |
+|                        | domain            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | dest_port         |         |          |           |               |
+|                        | user_agent        |         |          |           |               |
+|                        | object            |         |          |           |               |
+| file-read              | src_host          | Legacy  |          | &#10003;  |               |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | auth_method       |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             | Legacy  |          |           | &#10003;      |
+|                        | file_type         | Legacy  |          |           | &#10003;      |
+|                        | domain            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | dest_port         |         |          |           |               |
+|                        | user_agent        |         |          |           |               |
+|                        | object            |         |          |           |               |
+| file-upload            | src_host          | Legacy  |          |           | &#10003;      |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | auth_method       |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             |         |          |           |               |
+|                        | file_type         | Legacy  |          |           | &#10003;      |
+|                        | domain            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | dest_port         |         |          |           |               |
+|                        | user_agent        |         |          |           |               |
+|                        | object            |         |          |           |               |
+| file-write             | src_host          |         |          |           |               |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | auth_method       |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             | Legacy  |          | &#10003;  |               |
+|                        | file_type         | Legacy  |          |           | &#10003;      |
+|                        | domain            |         |          |           |               |
+|                        | browser           |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | action            |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | operation         |         |          |           |               |
+|                        | dest_port         |         |          |           |               |
+|                        | user_agent        |         |          |           |               |
+|                        | object            |         |          |           |               |
+| group-member-list      | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| group-member-remove    | src_host          | Legacy  |          | &#10003;  |               |
+|                        | url               |         |          |           |               |
+|                        | src_ip            |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             |         |          |           |               |
+|                        | browser           |         |          |           |               |
+|                        | domain            | Legacy  |          |           | &#10003;      |
+|                        | action            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | operation         |         |          |           |               |
+|                        | user              | Legacy  | &#10003; | &#10003;  |               |
+|                        | dest_port         |         |          |           |               |
+| http-session           | src_location      | Default |          |           | &#10003;      |
+|                        | src_country       | Default |          |           | &#10003;      |
+|                        | additional_info   | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
+| log-search             | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| message-send           | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | dest_port         | Default |          |           | &#10003;      |
+|                        | url               | Default |          |           | &#10003;      |
+| network-session        | src_translated_ip | Default |          |           | &#10003;      |
+|                        | country_code      | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | location_city     | Default |          |           | &#10003;      |
+|                        | category          | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | user_agent        | Default |          |           | &#10003;      |
+| user-create            | src_ip            |         |          |           |               |
+|                        | web_domain        |         |          |           |               |
+|                        | bytes             |         |          |           |               |
+|                        | browser           |         |          |           |               |
+|                        | action            |         |          |           |               |
+|                        | operating_system  |         |          |           |               |
+|                        | location          |         |          |           |               |
+|                        | src_host          | Legacy  |          | &#10003;  |               |
+|                        | operation         |         |          |           |               |
+|                        | dest_port         |         |          |           |               |
+|                        | url               |         |          |           |               |
+| user-mfa-disable       | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| user-password-delete   | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+| user-role-modify       | src_host          | Default |          | &#10003;  |               |
+|                        | url               | Default |          |           | &#10003;      |
+|                        | src_ip            | Default |          | &#10003;  |               |
+|                        | web_domain        | Default |          |           | &#10003;      |
+|                        | bytes             | Default |          |           | &#10003;      |
+|                        | browser           | Default |          |           | &#10003;      |
+|                        | domain            | Default |          |           | &#10003;      |
+|                        | action            | Default |          |           | &#10003;      |
+|                        | operating_system  | Default |          |           | &#10003;      |
+|                        | location          | Default |          |           | &#10003;      |
+|                        | operation         | Default |          |           | &#10003;      |
+|                        | user              | Default |          | &#10003;  |               |
+|                        | dest_port         | Default |          |           | &#10003;      |
+

@@ -1,16 +1,22 @@
 securid
 =======
 
-```JSON
-{"expression":"product = \"securid\"",
-"activity_type":{"vpn-logout":{"fields":{"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "securid"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field      | Status | Core | Detection | Informational |
+| ------------- | ---------- | ------ | ---- | --------- | ------------- |
+| vpn-logout    | dest_ip    |        |      | &#10003;  |               |
+|               | session_id |        |      |           | &#10003;      |
+|               | user_agent |        |      | &#10003;  |               |
+

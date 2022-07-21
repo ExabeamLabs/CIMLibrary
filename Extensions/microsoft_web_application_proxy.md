@@ -1,22 +1,26 @@
 microsoft web application proxy
 ===============================
 
-```JSON
-{"expression":"product = \"microsoft web application proxy\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "microsoft web application proxy"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| bytes_out |      |           | &#10003;      |
+| method    |      |           | &#10003;      |
+| bytes_in  |      |           | &#10003;      |
+| mime      |      |           | &#10003;      |
+| action    |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

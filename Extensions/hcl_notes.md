@@ -1,14 +1,21 @@
 hcl notes
 =========
 
-```JSON
-{"expression":"product = \"hcl notes\"",
-"activity_type":{"database-modify":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"network-session":{"fields":{"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "hcl notes"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field     | Status  | Core | Detection | Informational |
+| --------------- | --------- | ------- | ---- | --------- | ------------- |
+| database-modify | db_name   |         |      |           |               |
+| network-session | dest_host | Default |      | &#10003;  |               |
+

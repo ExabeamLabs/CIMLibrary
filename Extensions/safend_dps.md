@@ -1,44 +1,32 @@
 safend dps
 ==========
 
-```JSON
-{"expression":"product = \"safend dps\"",
-"activity_type":{"peripheral_storage-activity":{"fields":{}},
-"file-write":{"fields":{"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"device_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "safend dps"
+
+Fields
+------
+
+| Field     | Core     | Detection | Informational |
+| --------- | -------- | --------- | ------------- |
+| domain    |          | &#10003;  |               |
+| user      | &#10003; | &#10003;  |               |
+| operation |          |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type               | Field            | Status | Core | Detection | Informational |
+| --------------------------- | ---------------- | ------ | ---- | --------- | ------------- |
+| file-read                   | device_id        | Legacy |      | &#10003;  |               |
+|                             | bytes_out        |        |      |           | &#10003;      |
+|                             | operating_system |        |      | &#10003;  |               |
+|                             | device_type      | Legacy |      |           | &#10003;      |
+| file-write                  | device_id        | Legacy |      | &#10003;  |               |
+|                             | bytes_in         |        |      | &#10003;  |               |
+|                             | operating_system |        |      |           | &#10003;      |
+|                             | device_type      | Legacy |      |           | &#10003;      |
+| peripheral_storage-activity |                  |        |      |           |               |
+

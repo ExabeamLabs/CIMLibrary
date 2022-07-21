@@ -1,267 +1,90 @@
 centrify zero trust privilege services
 ======================================
 
-```JSON
-{"expression":"product = \"centrify zero trust privilege services\"",
-"activity_type":{"role-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"role-delete":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-switch":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "centrify zero trust privilege services"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| event_name |      |           | &#10003;      |
+| object     |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type        | Field            | Status  | Core     | Detection | Informational |
+| -------------------- | ---------------- | ------- | -------- | --------- | ------------- |
+| app-activity         | src_ip           | Default |          | &#10003;  |               |
+|                      | auth_method      | Default |          |           | &#10003;      |
+|                      | additional_info  | Default |          |           | &#10003;      |
+|                      | dest_ip          | Default |          | &#10003;  |               |
+|                      | domain           | Default |          |           | &#10003;      |
+|                      | operating_system | Default |          |           | &#10003;      |
+|                      | dest_host        | Default |          | &#10003;  |               |
+|                      | user             | Default |          | &#10003;  |               |
+|                      | user_agent       | Default |          |           | &#10003;      |
+| role-create          | src_ip           | Default |          | &#10003;  |               |
+|                      | additional_info  | Default |          |           | &#10003;      |
+|                      | dest_ip          | Default |          | &#10003;  |               |
+|                      | domain           | Default |          |           | &#10003;      |
+|                      | operating_system | Default |          |           | &#10003;      |
+|                      | dest_host        | Default |          | &#10003;  |               |
+|                      | user             | Default |          | &#10003;  |               |
+|                      | operation        | Default |          |           | &#10003;      |
+|                      | user_agent       | Default |          |           | &#10003;      |
+| role-delete          | src_ip           | Default |          | &#10003;  |               |
+|                      | additional_info  | Default |          |           | &#10003;      |
+|                      | dest_ip          | Default |          | &#10003;  |               |
+|                      | domain           | Default |          |           | &#10003;      |
+|                      | operating_system | Default |          |           | &#10003;      |
+|                      | dest_host        | Default |          | &#10003;  |               |
+|                      | user             | Default |          | &#10003;  |               |
+|                      | operation        | Default |          |           | &#10003;      |
+|                      | user_agent       | Default |          |           | &#10003;      |
+| role-modify          | src_ip           | Default |          | &#10003;  |               |
+|                      | additional_info  | Default |          |           | &#10003;      |
+|                      | dest_ip          | Default |          | &#10003;  |               |
+|                      | domain           | Default |          |           | &#10003;      |
+|                      | operating_system | Default |          |           | &#10003;      |
+|                      | dest_host        | Default |          | &#10003;  |               |
+|                      | user             | Default |          | &#10003;  |               |
+|                      | operation        | Default |          |           | &#10003;      |
+|                      | user_agent       | Default |          |           | &#10003;      |
+| user-create          | src_ip           |         |          |           |               |
+|                      | additional_info  |         |          |           |               |
+|                      | dest_ip          |         |          |           |               |
+|                      | domain           | Legacy  |          |           | &#10003;      |
+|                      | operating_system |         |          |           |               |
+|                      | dest_host        | Legacy  |          | &#10003;  |               |
+|                      | user             | Legacy  | &#10003; | &#10003;  |               |
+|                      | operation        |         |          |           |               |
+|                      | user_agent       |         |          |           |               |
+| user-delete          | src_ip           |         |          |           |               |
+|                      | additional_info  |         |          |           |               |
+|                      | dest_ip          |         |          |           |               |
+|                      | domain           | Legacy  |          |           | &#10003;      |
+|                      | operating_system |         |          |           |               |
+|                      | dest_host        | Legacy  |          |           | &#10003;      |
+|                      | user             | Legacy  | &#10003; | &#10003;  |               |
+|                      | operation        |         |          |           |               |
+|                      | user_agent       |         |          |           |               |
+| user-password-modify | src_ip           | Default |          | &#10003;  |               |
+|                      | additional_info  | Default |          |           | &#10003;      |
+|                      | dest_ip          | Default |          | &#10003;  |               |
+|                      | domain           | Default |          |           | &#10003;      |
+|                      | operating_system | Default |          |           | &#10003;      |
+|                      | dest_host        | Default |          | &#10003;  |               |
+|                      | user             | Default |          | &#10003;  |               |
+|                      | operation        | Default |          |           | &#10003;      |
+|                      | user_agent       | Default |          |           | &#10003;      |
+| user-switch          | process_id       |         |          |           |               |
+|                      | process_name     |         |          |           |               |
+|                      | service_name     |         |          |           |               |
+|                      | process_dir      |         |          |           |               |
+|                      | process_path     |         |          |           |               |
+

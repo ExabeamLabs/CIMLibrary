@@ -1,28 +1,28 @@
 cisco unified communications manager
 ====================================
 
-```JSON
-{"expression":"product = \"cisco unified cm\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco unified cm"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      | &#10003;  |               |
+| additional_info |      |           | &#10003;      |
+| dest_host       |      | &#10003;  |               |
+| event_name      |      | &#10003;  |               |
+| operation       |      | &#10003;  |               |
+| object          |      | &#10003;  |               |
+| target          |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

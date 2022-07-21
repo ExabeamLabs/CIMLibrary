@@ -1,48 +1,33 @@
 sftp
 ====
 
-```JSON
-{"expression":"product = \"sftp\"",
-"activity_type":{"file-download":{"fields":{"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-upload":{"fields":{"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"app-login":{"fields":{}},
-"file-write":{"fields":{"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "sftp"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      |           | &#10003;      |
+| access     |      |           | &#10003;      |
+| bytes      |      |           | &#10003;      |
+| dest_ip    |      |           | &#10003;      |
+| src_host   |      |           | &#10003;      |
+| dest_port  |      |           | &#10003;      |
+| user_agent |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core     | Detection | Informational |
+| ------------- | ----- | ------ | -------- | --------- | ------------- |
+| app-login     |       |        |          |           |               |
+| file-delete   | user  | Legacy | &#10003; | &#10003;  |               |
+| file-download | user  | Legacy | &#10003; | &#10003;  |               |
+| file-read     | user  | Legacy | &#10003; | &#10003;  |               |
+| file-upload   | user  | Legacy | &#10003; | &#10003;  |               |
+| file-write    | user  | Legacy | &#10003; | &#10003;  |               |
+

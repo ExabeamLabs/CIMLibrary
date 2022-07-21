@@ -1,25 +1,26 @@
 pinsafe
 =======
 
-```JSON
-{"expression":"product = \"PINsafe\"",
-"activity_type":{"app-login":{"fields":{}},
-"app-activity":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "PINsafe"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_port    | Default |      |           | &#10003;      |
+|               | application | Default |      |           | &#10003;      |
+|               | user        | Default |      | &#10003;  |               |
+| app-login     |             |         |      |           |               |
+

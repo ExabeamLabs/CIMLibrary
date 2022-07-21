@@ -1,13 +1,23 @@
 secure computing safeword
 =========================
 
-```JSON
-{"expression":"product = \"secure computing safeword\"",
-"activity_type":{"app-authentication":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "secure computing safeword"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| src_ip   |      |           | &#10003;      |
+| src_host |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type      | Field | Status | Core | Detection | Informational |
+| ------------------ | ----- | ------ | ---- | --------- | ------------- |
+| app-authentication |       |        |      |           |               |
+

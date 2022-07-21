@@ -1,45 +1,33 @@
 powertech identity & access manager
 ===================================
 
-```JSON
-{"expression":"product = \"powertech identity & access manager\"",
-"activity_type":{"file-write":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-switch":{"fields":{"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{}},
-"file-read":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "powertech identity & access manager"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| domain |      |           | &#10003;      |
+| user   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type  | Field      | Status  | Core | Detection | Informational |
+| -------------- | ---------- | ------- | ---- | --------- | ------------- |
+| endpoint-login |            |         |      |           |               |
+| file-delete    | src_ip     |         |      | &#10003;  |               |
+|                | event_code |         |      |           | &#10003;      |
+| file-read      | src_ip     |         |      | &#10003;  |               |
+|                | event_code |         |      |           | &#10003;      |
+| file-write     | src_ip     |         |      | &#10003;  |               |
+|                | event_code |         |      |           | &#10003;      |
+| process-create | src_ip     | Default |      | &#10003;  |               |
+|                | event_code | Default |      |           | &#10003;      |
+| user-switch    | event_code |         |      |           | &#10003;      |
+|                | dest_ip    |         |      | &#10003;  |               |
+

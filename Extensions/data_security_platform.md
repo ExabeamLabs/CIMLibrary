@@ -1,79 +1,39 @@
 data security platform
 ======================
 
-```JSON
-{"expression":"product = \"data security platform\"",
-"activity_type":{"file-permission-modify":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "data security platform"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field     | Status | Core     | Detection | Informational |
+| ---------------------- | --------- | ------ | -------- | --------- | ------------- |
+| file-delete            | access    | Legacy |          | &#10003;  |               |
+|                        | dest_ip   |        |          |           |               |
+|                        | domain    |        |          |           |               |
+|                        | dest_host | Legacy |          | &#10003;  |               |
+|                        | user      | Legacy | &#10003; | &#10003;  |               |
+| file-permission-modify | access    | Legacy |          | &#10003;  |               |
+|                        | dest_ip   |        |          |           |               |
+|                        | domain    |        |          |           |               |
+|                        | dest_host | Legacy |          | &#10003;  |               |
+|                        | user      | Legacy | &#10003; | &#10003;  |               |
+| file-read              | access    | Legacy |          | &#10003;  |               |
+|                        | dest_ip   |        |          |           |               |
+|                        | domain    |        |          |           |               |
+|                        | dest_host | Legacy |          | &#10003;  |               |
+|                        | user      | Legacy | &#10003; | &#10003;  |               |
+| file-write             | access    | Legacy |          | &#10003;  |               |
+|                        | dest_ip   |        |          |           |               |
+|                        | domain    |        |          |           |               |
+|                        | dest_host | Legacy |          | &#10003;  |               |
+|                        | user      | Legacy | &#10003; | &#10003;  |               |
+

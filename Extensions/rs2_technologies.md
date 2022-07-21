@@ -1,22 +1,26 @@
 rs2 technologies
 ================
 
-```JSON
-{"expression":"product = \"rs2 technologies\"",
-"activity_type":{"physical_location-access":{"fields":{}}},
-"fields":{"location_building":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "rs2 technologies"
+
+Fields
+------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| location_building |      |           | &#10003;      |
+| event_code        |      |           | &#10003;      |
+| event_name        |      |           | &#10003;      |
+| last_name         |      |           | &#10003;      |
+| first_name        |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type            | Field | Status | Core | Detection | Informational |
+| ------------------------ | ----- | ------ | ---- | --------- | ------------- |
+| physical_location-access |       |        |      |           |               |
+

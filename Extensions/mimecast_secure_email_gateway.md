@@ -1,127 +1,49 @@
 mimecast secure email gateway
 =============================
 
-```JSON
-{"expression":"product = \"mimecast secure email gateway\"",
-"activity_type":{"email-receive":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"message_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"spam_score":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"attachment_count":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"attachment_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_source":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-read":{"fields":{"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_address":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_user":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_source":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_email":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"email_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "mimecast secure email gateway"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status  | Core | Detection | Informational |
+| ------------- | ---------------- | ------- | ---- | --------- | ------------- |
+| app-activity  | src_ip           | Default |      | &#10003;  |               |
+|               | application      | Default |      |           | &#10003;      |
+|               | resource         | Default |      |           | &#10003;      |
+|               | additional_info  | Default |      |           | &#10003;      |
+|               | domain           | Default |      |           | &#10003;      |
+|               | log_source       | Default |      |           | &#10003;      |
+|               | user             | Default |      | &#10003;  |               |
+|               | object           | Default |      |           | &#10003;      |
+|               | target           | Default |      |           | &#10003;      |
+| app-login     | src_ip           | Default |      | &#10003;  |               |
+| email-read    | result           | Default |      |           | &#10003;      |
+|               | email_address    | Default |      |           | &#10003;      |
+|               | email_user       | Default |      |           | &#10003;      |
+|               | application      | Default |      |           | &#10003;      |
+|               | additional_info  | Default |      |           | &#10003;      |
+|               | resource         | Default |      |           | &#10003;      |
+|               | log_source       | Default |      |           | &#10003;      |
+|               | dest_email       | Default |      |           | &#10003;      |
+|               | email_domain     | Default |      |           | &#10003;      |
+|               | operation        | Default |      |           | &#10003;      |
+|               | object           | Default |      |           | &#10003;      |
+| email-receive | src_ip           | Default |      | &#10003;  |               |
+|               | bytes            | Default |      |           | &#10003;      |
+|               | file_type        | Default |      |           | &#10003;      |
+|               | hash_md5         | Default |      |           | &#10003;      |
+|               | message_id       | Default |      |           | &#10003;      |
+|               | spam_score       | Default |      |           | &#10003;      |
+|               | attachment_count | Default |      |           | &#10003;      |
+|               | direction        | Default |      |           | &#10003;      |
+|               | attachment_size  | Default |      |           | &#10003;      |
+

@@ -1,291 +1,93 @@
 exabeam dl
 ==========
 
-```JSON
-{"expression":"product = \"exabeam dl\"",
-"activity_type":{"rule-trigger":{"fields":{"rule_severity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"usecases":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_time":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"labels":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"trigger_time":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"rule_reason":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"mitre_labels":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_time":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"role-delete":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"rule-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"event_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"original_score":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"mitre_labels":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_reason":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"usecases":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_time":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"log_time":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"labels":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-notification":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"role-permission-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"log_source-add":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"log_source-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "exabeam dl"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field           | Status  | Core     | Detection | Informational |
+| ---------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger          | event_id        |         |          |           | &#10003;      |
+|                        | dest_host       | Legacy  |          | &#10003;  |               |
+|                        | original_score  |         |          |           |               |
+|                        | src_host        | Legacy  | &#10003; | &#10003;  |               |
+|                        | mitre_labels    |         |          |           | &#10003;      |
+|                        | alert_reason    |         |          |           | &#10003;      |
+|                        | usecases        |         |          |           | &#10003;      |
+|                        | user            | Legacy  |          | &#10003;  |               |
+|                        | event_time      |         |          |           | &#10003;      |
+|                        | log_time        |         |          |           |               |
+|                        | labels          |         |          |           | &#10003;      |
+| app-activity           | src_ip          | Default |          | &#10003;  |               |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+| app-login              | src_ip          | Default |          | &#10003;  |               |
+|                        | additional_info | Default |          |           | &#10003;      |
+| app-notification       | src_ip          | Default |          | &#10003;  |               |
+|                        | application     | Default |          |           | &#10003;      |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| group-modify           | src_ip          |         |          |           |               |
+|                        | application     |         |          |           |               |
+|                        | additional_info |         |          |           |               |
+|                        | domain          | Legacy  |          |           | &#10003;      |
+|                        | user            | Legacy  | &#10003; |           |               |
+|                        | operation       |         |          |           |               |
+| log_source-add         | src_ip          | Default |          | &#10003;  |               |
+|                        | application     | Default |          |           | &#10003;      |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| log_source-modify      | src_ip          | Default |          | &#10003;  |               |
+|                        | application     | Default |          |           | &#10003;      |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| role-delete            | src_ip          | Default |          | &#10003;  |               |
+|                        | application     | Default |          |           | &#10003;      |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| role-permission-modify | src_ip          | Default |          | &#10003;  |               |
+|                        | application     | Default |          |           | &#10003;      |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| rule-create            | src_ip          | Default |          | &#10003;  |               |
+|                        | application     | Default |          |           | &#10003;      |
+|                        | additional_info | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| rule-trigger           | rule_severity   | Default |          |           | &#10003;      |
+|                        | rule            | Default |          |           | &#10003;      |
+|                        | src_host        | Default |          | &#10003;  |               |
+|                        | usecases        | Default |          |           | &#10003;      |
+|                        | log_time        | Default |          |           | &#10003;      |
+|                        | labels          | Default |          |           | &#10003;      |
+|                        | src_ip          | Default |          | &#10003;  |               |
+|                        | trigger_time    | Default |          |           | &#10003;      |
+|                        | event_id        | Default |          |           | &#10003;      |
+|                        | rule_reason     | Default |          |           | &#10003;      |
+|                        | dest_ip         | Default |          | &#10003;  |               |
+|                        | dest_host       | Default |          | &#10003;  |               |
+|                        | mitre_labels    | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | event_time      | Default |          |           | &#10003;      |
+

@@ -25,6 +25,8 @@ app-login:success
 app-login:fail
 --------------
 
-| Field | Core     | Detection | Informational |
-| ----- | -------- | --------- | ------------- |
-| user  | &#10003; |           |               |
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| failure_code   |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |
+| user           | &#10003; |           |               |

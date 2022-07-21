@@ -1,65 +1,35 @@
 openvms
 =======
 
-```JSON
-{"expression":"product = \"openvms\"",
-"activity_type":{"endpoint-login":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "openvms"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field           | Status  | Core     | Detection | Informational |
+| -------------- | --------------- | ------- | -------- | --------- | ------------- |
+| endpoint-login | process_id      | Default |          |           | &#10003;      |
+|                | additional_info | Default |          |           | &#10003;      |
+|                | process_name    | Default |          |           | &#10003;      |
+|                | event_name      | Default |          |           | &#10003;      |
+| file-delete    | process_id      |         |          |           |               |
+|                | access          | Legacy  |          | &#10003;  |               |
+|                | additional_info |         |          |           |               |
+|                | process_name    | Legacy  |          |           | &#10003;      |
+|                | event_name      |         |          |           |               |
+|                | user            | Legacy  | &#10003; | &#10003;  |               |
+| file-read      | process_id      |         |          |           |               |
+|                | access          | Legacy  |          | &#10003;  |               |
+|                | additional_info |         |          |           |               |
+|                | process_name    | Legacy  |          |           | &#10003;      |
+|                | event_name      |         |          |           |               |
+|                | user            | Legacy  | &#10003; | &#10003;  |               |
+

@@ -1,54 +1,34 @@
 wazuh siem
 ==========
 
-```JSON
-{"expression":"product = wazuh siem",
-"activity_type":{"alert-trigger":{"fields":{"agent_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"agent_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"data":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"log_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"description":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"log_location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"rule_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"decoder_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"wazuh_manager":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = wazuh siem
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | agent_id        |        |          |           |               |
+|               | agent_name      |        |          |           |               |
+|               | data            |        |          |           |               |
+|               | log_path        |        |          |           |               |
+|               | event_name_name |        |          |           |               |
+|               | description     |        |          |           |               |
+|               | dest_user       |        |          |           |               |
+|               | src_host        | Legacy | &#10003; | &#10003;  |               |
+|               | log_location    |        |          |           |               |
+|               | result          |        |          |           |               |
+|               | rule_id         |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | additional_info |        |          |           |               |
+|               | decoder_name    |        |          |           |               |
+|               | wazuh_manager   |        |          |           |               |
+

@@ -1,52 +1,39 @@
 sap
 ===
 
-```JSON
-{"expression":"product = \"sap\"",
-"activity_type":{"file-download":{"fields":{}},
-"user-delete":{"fields":{}},
-"user-lock":{"fields":{}},
-"app-login":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{}},
-"app-activity":{"fields":{}},
-"user-unlock":{"fields":{}}},
-"fields":{"severity":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"server":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_mac":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"activity_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"client":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"aid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"transaction":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "sap"
+
+Fields
+------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| severity    |      |           | &#10003;      |
+| src_ip      |      |           | &#10003;      |
+| server      |      |           | &#10003;      |
+| src_mac     |      |           | &#10003;      |
+| activity_id |      |           | &#10003;      |
+| user_sid    |      |           | &#10003;      |
+| client      |      |           | &#10003;      |
+| result_code |      |           | &#10003;      |
+| category    |      |           | &#10003;      |
+| aid         |      |           | &#10003;      |
+| transaction |      |           | &#10003;      |
+| object      |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core | Detection | Informational |
+| ------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity  |                 |         |      |           |               |
+| app-login     | additional_info | Default |      |           | &#10003;      |
+| file-download |                 |         |      |           |               |
+| user-create   |                 |         |      |           |               |
+| user-delete   |                 |         |      |           |               |
+| user-lock     |                 |         |      |           |               |
+| user-unlock   |                 |         |      |           |               |
+

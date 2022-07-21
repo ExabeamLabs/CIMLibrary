@@ -1,76 +1,46 @@
 azure resource log (blob storage)
 =================================
 
-```JSON
-{"expression":"product = \"azure resource log (blob storage)\"",
-"activity_type":{"file-permission-modify":{"fields":{}},
-"file-list":{"fields":{}},
-"file-write":{"fields":{}},
-"file-read":{"fields":{}}},
-"fields":{"tenant_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_version":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"schema_version":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"referrer":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"time_modified":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"correlation_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"storage_account":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"region":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "azure resource log (blob storage)"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| tenant_id           |      |           | &#10003;      |
+| operation_version   |      |           | &#10003;      |
+| operation_type      |      |           | &#10003;      |
+| bytes_in            |      | &#10003;  |               |
+| event_category      |      |           | &#10003;      |
+| authentication_type |      |           | &#10003;      |
+| url                 |      |           | &#10003;      |
+| result              |      |           | &#10003;      |
+| src_ip              |      | &#10003;  |               |
+| schema_version      |      |           | &#10003;      |
+| referrer            |      |           | &#10003;      |
+| time_modified       |      |           | &#10003;      |
+| protocol            |      |           | &#10003;      |
+| bytes_out           |      | &#10003;  |               |
+| domain              |      |           | &#10003;      |
+| correlation_id      |      |           | &#10003;      |
+| result_code         |      |           | &#10003;      |
+| storage_account     |      | &#10003;  |               |
+| region              |      | &#10003;  |               |
+| operation           |      | &#10003;  |               |
+| user                |      | &#10003;  |               |
+| user_agent          |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field | Status | Core | Detection | Informational |
+| ---------------------- | ----- | ------ | ---- | --------- | ------------- |
+| file-list              |       |        |      |           |               |
+| file-permission-modify |       |        |      |           |               |
+| file-read              |       |        |      |           |               |
+| file-write             |       |        |      |           |               |
+

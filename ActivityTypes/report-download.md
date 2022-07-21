@@ -26,7 +26,9 @@ report-download:success
 report-download:fail
 --------------------
 
-| Field     | Core | Detection | Informational |
-| --------- | ---- | --------- | ------------- |
-| file_ext  |      |           | &#10003;      |
-| file_name |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| file_ext       |      |           | &#10003;      |
+| file_name      |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

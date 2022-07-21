@@ -1,112 +1,47 @@
 zoom
 ====
 
-```JSON
-{"expression":"product = \"zoom\"",
-"activity_type":{"meeting-member-join":{"fields":{"member_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"meeting_topic":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_timezone":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_number":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"app_version":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"client_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"meeting-modify":{"fields":{"old_password":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_password":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_number":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"meeting-start":{"fields":{"meeting_topic":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_timezone":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_number":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"meeting-create":{"fields":{"meeting_topic":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_timezone":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_duration":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_number":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"meeting-end":{"fields":{"meeting_topic":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_timezone":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_duration":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"meeting_number":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "zoom"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| operation |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type       | Field            | Status  | Core | Detection | Informational |
+| ------------------- | ---------------- | ------- | ---- | --------- | ------------- |
+| app-login           | src_ip           | Default |      | &#10003;  |               |
+|                     | app_version      | Default |      |           | &#10003;      |
+|                     | additional_info  | Default |      |           | &#10003;      |
+|                     | client_type      | Default |      |           | &#10003;      |
+| meeting-create      | meeting_topic    | Legacy  |      |           | &#10003;      |
+|                     | meeting_timezone | Legacy  |      |           | &#10003;      |
+|                     | meeting_type     | Legacy  |      |           | &#10003;      |
+|                     | meeting_duration | Legacy  |      |           | &#10003;      |
+|                     | meeting_number   | Legacy  |      |           | &#10003;      |
+| meeting-end         | meeting_topic    | Legacy  |      |           | &#10003;      |
+|                     | meeting_timezone | Legacy  |      |           | &#10003;      |
+|                     | meeting_type     | Legacy  |      |           | &#10003;      |
+|                     | meeting_duration | Legacy  |      |           | &#10003;      |
+|                     | meeting_number   | Legacy  |      |           | &#10003;      |
+| meeting-member-join | member_id        |         |      |           |               |
+|                     | meeting_topic    | Legacy  |      |           | &#10003;      |
+|                     | meeting_timezone | Legacy  |      |           | &#10003;      |
+|                     | meeting_type     | Legacy  |      |           | &#10003;      |
+|                     | meeting_number   | Legacy  |      |           | &#10003;      |
+| meeting-modify      | old_password     | Legacy  |      |           | &#10003;      |
+|                     | new_password     | Legacy  |      |           | &#10003;      |
+|                     | meeting_number   | Legacy  |      |           | &#10003;      |
+| meeting-start       | meeting_topic    | Legacy  |      |           | &#10003;      |
+|                     | meeting_timezone | Legacy  |      |           | &#10003;      |
+|                     | meeting_type     | Legacy  |      |           | &#10003;      |
+|                     | meeting_number   | Legacy  |      |           | &#10003;      |
+

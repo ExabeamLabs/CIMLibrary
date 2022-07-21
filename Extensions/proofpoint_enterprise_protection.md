@@ -1,66 +1,36 @@
 proofpoint enterprise protection
 ================================
 
-```JSON
-{"expression":"product = \"proofpoint enterprise protection\"",
-"activity_type":{"alert-trigger":{"fields":{"email_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"hash_sha256":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"external_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "proofpoint enterprise protection"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status | Core     | Detection | Informational |
+| ------------- | ---------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | email_id         |        |          |           |               |
+|               | file_name        | Legacy | &#10003; |           |               |
+|               | src_host         | Legacy | &#10003; | &#10003;  |               |
+|               | target           |        |          |           |               |
+|               | threat_url       |        |          |           |               |
+|               | hash_sha256      |        |          |           |               |
+|               | src_ip           | Legacy | &#10003; | &#10003;  |               |
+|               | external_address |        |          |           |               |
+|               | sender           | Legacy | &#10003; |           |               |
+|               | recipients       |        |          |           |               |
+|               | alert_id         | Legacy |          |           | &#10003;      |
+|               | dest_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | hash_md5         |        |          |           |               |
+|               | recipient        |        |          |           |               |
+|               | dest_host        | Legacy |          | &#10003;  |               |
+|               | malware_url      |        |          |           |               |
+|               | user             | Legacy |          | &#10003;  |               |
+

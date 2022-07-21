@@ -1,60 +1,36 @@
 proofpoint insider threat management
 ====================================
 
-```JSON
-{"expression":"product = proofpoint insider threat management",
-"activity_type":{"alert-trigger":{"fields":{"country":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"city":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"failure_reason":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"state":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result_at":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = proofpoint insider threat management
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | country         |        |          |           |               |
+|               | city            |        |          |           |               |
+|               | object_type     |        |          |           |               |
+|               | last_name       |        |          |           |               |
+|               | failure_reason  |        |          |           |               |
+|               | result          |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | email_address   |        |          |           |               |
+|               | full_name       |        |          |           |               |
+|               | application     |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | state           |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | first_name      |        |          |           |               |
+|               | result_at       |        |          |           |               |
+|               | user_agent      |        |          |           |               |
+|               | object          |        |          |           |               |
+

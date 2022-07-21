@@ -1,137 +1,54 @@
 ibm resource access control facility
 ====================================
 
-```JSON
-{"expression":"product = \"ibm racf\"",
-"activity_type":{"app-login":{"fields":{"manager_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"identifier":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"environment":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"manager":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"terminal":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"database-activity":{"fields":{"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"command":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"identifier":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"group_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"terminal":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"manager_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"environment":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"manager_email":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "ibm racf"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| additional_info |      |           | &#10003;      |
+| dest_ip         |      |           | &#10003;      |
+| db_user         |      |           | &#10003;      |
+| user            |      |           | &#10003;      |
+| object          |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type     | Field           | Status  | Core | Detection | Informational |
+| ----------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity      | identifier      | Default |      |           | &#10003;      |
+|                   | group_name      | Default |      |           | &#10003;      |
+|                   | dest_user       | Default |      | &#10003;  |               |
+|                   | terminal        | Default |      |           | &#10003;      |
+|                   | src_host        | Default |      | &#10003;  |               |
+|                   | alert_type      | Default |      |           | &#10003;      |
+|                   | manager_name    | Default |      |           | &#10003;      |
+|                   | environment     | Default |      |           | &#10003;      |
+|                   | user_id         | Default |      |           | &#10003;      |
+|                   | additional_info | Default |      |           | &#10003;      |
+|                   | event_code      | Default |      |           | &#10003;      |
+|                   | process_name    | Default |      |           | &#10003;      |
+|                   | domain          | Default |      |           | &#10003;      |
+|                   | dest_host       | Default |      | &#10003;  |               |
+|                   | manager_email   | Default |      |           | &#10003;      |
+| app-login         | manager_name    | Default |      |           | &#10003;      |
+|                   | identifier      | Default |      |           | &#10003;      |
+|                   | environment     | Default |      |           | &#10003;      |
+|                   | manager         | Default |      |           | &#10003;      |
+|                   | user_id         | Default |      |           | &#10003;      |
+|                   | group_name      | Default |      |           | &#10003;      |
+|                   | process_name    | Default |      |           | &#10003;      |
+|                   | dest_host       | Default |      | &#10003;  |               |
+|                   | src_host        | Default |      | &#10003;  |               |
+|                   | terminal        | Default |      |           | &#10003;      |
+|                   | operation       | Default |      |           | &#10003;      |
+|                   | alert_type      | Default |      |           | &#10003;      |
+| database-activity | event_name      | Default |      |           | &#10003;      |
+|                   | command         | Default |      |           | &#10003;      |
+

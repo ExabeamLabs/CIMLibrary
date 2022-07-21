@@ -1,13 +1,22 @@
 xceedium
 ========
 
-```JSON
-{"expression":"product = \"xceedium\"",
-"activity_type":{"app-login":{"fields":{"result_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "xceedium"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-login     | result_code | Default |      |           | &#10003;      |
+

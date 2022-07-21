@@ -1,19 +1,22 @@
 vmware nsx
 ==========
 
-```JSON
-{"expression":"product = \"vmware nsx\"",
-"activity_type":{"network-session":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_country":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "vmware nsx"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type   | Field           | Status  | Core | Detection | Informational |
+| --------------- | --------------- | ------- | ---- | --------- | ------------- |
+| network-session | additional_info | Default |      |           | &#10003;      |
+|                 | operation       | Default |      |           | &#10003;      |
+|                 | dest_country    | Default |      |           | &#10003;      |
+

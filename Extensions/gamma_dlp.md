@@ -1,26 +1,25 @@
 gamma dlp
 =========
 
-```JSON
-{"expression":"product = gamma dlp",
-"activity_type":{"alert-trigger":{"fields":{"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = gamma dlp
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core | Detection | Informational |
+| ------------- | --------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | email_address   |        |      |           |               |
+|               | application     |        |      |           |               |
+|               | additional_info |        |      |           |               |
+|               | user_id         |        |      |           |               |
+|               | alert_id        | Legacy |      |           | &#10003;      |
+|               | event_name_name |        |      |           |               |
+

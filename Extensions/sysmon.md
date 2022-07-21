@@ -1,239 +1,88 @@
 sysmon
 ======
 
-```JSON
-{"expression":"product = \"sysmon\"",
-"activity_type":{"dll-load":{"fields":{"hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"thread_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_sha1":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_signature":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_signature_status":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_signed":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"hash_md5":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"registry-modify":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"thread_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"alert-trigger":{"fields":{}},
-"driver-load":{"fields":{"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"thread_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha1":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_signature":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_signature_status":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_signed":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"process_id":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"thread_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"time_created":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"dns-request":{"fields":{"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"thread_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dns_response":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_path":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"process-create":{"fields":{"hash_sha256":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha1":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_integrity":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"process_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"thread_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_guid":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ipv6":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ipv6":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"hash_sha256":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"thread_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_sha1":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"is_executable":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_guid":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"is_archived":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"hash_md5":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"log_name":{"core":"1",
-"detection":"0",
-"informational":"0"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "sysmon"
+
+Fields
+------
+
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| log_name   | &#10003; |           |               |
+| event_code |          |           | &#10003;      |
+| src_host   | &#10003; | &#10003;  |               |
+| user       | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field                       | Status  | Core | Detection | Informational |
+| --------------- | --------------------------- | ------- | ---- | --------- | ------------- |
+| alert-trigger   |                             |         |      |           |               |
+| dll-load        | hash_sha256                 |         |      | &#10003;  |               |
+|                 | thread_id                   |         |      | &#10003;  |               |
+|                 | hash_sha1                   |         |      | &#10003;  |               |
+|                 | process_guid                | Legacy  |      |           | &#10003;      |
+|                 | file_signature              |         |      | &#10003;  |               |
+|                 | file_signature_status       |         |      | &#10003;  |               |
+|                 | file_signed                 |         |      | &#10003;  |               |
+|                 | hash_md5                    |         |      | &#10003;  |               |
+| dns-request     | process_id                  |         |      |           | &#10003;      |
+|                 | thread_id                   |         |      |           | &#10003;      |
+|                 | process_guid                |         |      |           | &#10003;      |
+|                 | dns_response                |         |      | &#10003;  |               |
+|                 | process_name                |         |      | &#10003;  |               |
+|                 | process_dir                 |         |      | &#10003;  |               |
+|                 | process_path                |         |      | &#10003;  |               |
+| driver-load     | hash_sha256                 | Default |      |           | &#10003;      |
+|                 | process_id                  | Default |      |           | &#10003;      |
+|                 | thread_id                   | Default |      |           | &#10003;      |
+|                 | hash_sha1                   | Default |      |           | &#10003;      |
+|                 | file_signature              | Default |      |           | &#10003;      |
+|                 | file_signature_status       | Default |      |           | &#10003;      |
+|                 | file_signed                 | Default |      |           | &#10003;      |
+|                 | hash_md5                    | Default |      |           | &#10003;      |
+| file-delete     | hash_sha256                 |         |      | &#10003;  |               |
+|                 | process_id                  |         |      |           | &#10003;      |
+|                 | thread_id                   |         |      |           | &#10003;      |
+|                 | hash_sha1                   |         |      | &#10003;  |               |
+|                 | is_executable               |         |      | &#10003;  |               |
+|                 | process_guid                |         |      |           | &#10003;      |
+|                 | is_archived                 |         |      |           | &#10003;      |
+|                 | process_name                | Legacy  |      |           | &#10003;      |
+|                 | hash_md5                    |         |      | &#10003;  |               |
+|                 | process_dir                 | Legacy  |      |           | &#10003;      |
+|                 | process_path                | Legacy  |      |           | &#10003;      |
+| file-write      | process_id                  |         |      | &#10003;  |               |
+|                 | thread_id                   |         |      |           |               |
+|                 | process_guid                |         |      |           | &#10003;      |
+|                 | process_name                | Legacy  |      |           | &#10003;      |
+|                 | time_created                |         |      | &#10003;  |               |
+|                 | process_dir                 | Legacy  |      |           | &#10003;      |
+|                 | process_path                | Legacy  |      | &#10003;  |               |
+| network-session | process_id                  | Default |      |           | &#10003;      |
+|                 | thread_id                   | Default |      |           | &#10003;      |
+|                 | process_guid                | Default |      |           | &#10003;      |
+|                 | process_name                | Default |      |           | &#10003;      |
+|                 | dest_ipv6                   | Default |      |           | &#10003;      |
+|                 | dest_host                   | Default |      | &#10003;  |               |
+|                 | process_dir                 | Default |      |           | &#10003;      |
+|                 | process_path                | Default |      |           | &#10003;      |
+|                 | src_ipv6                    | Default |      |           | &#10003;      |
+| process-create  | hash_sha256                 | Default |      |           | &#10003;      |
+|                 | hash_sha1                   | Default |      |           | &#10003;      |
+|                 | process_guid                | Default |      |           | &#10003;      |
+|                 | parent_process_command_line | Default |      |           | &#10003;      |
+|                 | process_integrity           | Default |      |           | &#10003;      |
+|                 | hash_md5                    | Default |      |           | &#10003;      |
+|                 | parent_process_guid         | Default |      |           | &#10003;      |
+| registry-modify | process_id                  |         |      |           | &#10003;      |
+|                 | thread_id                   |         |      |           | &#10003;      |
+|                 | process_guid                |         |      |           | &#10003;      |
+|                 | process_name                |         |      | &#10003;  |               |
+|                 | process_dir                 |         |      | &#10003;  |               |
+|                 | process_path                |         |      | &#10003;  |               |
+

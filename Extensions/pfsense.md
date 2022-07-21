@@ -1,19 +1,25 @@
 pfsense
 =======
 
-```JSON
-{"expression":"product = \"pfsense\"",
-"activity_type":{"network-traffic":{"fields":{}}},
-"fields":{"dest_interface":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "pfsense"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| dest_interface |      |           | &#10003;      |
+| bytes_in       |      |           | &#10003;      |
+| operation      |      |           | &#10003;      |
+| direction      |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type   | Field | Status | Core | Detection | Informational |
+| --------------- | ----- | ------ | ---- | --------- | ------------- |
+| network-traffic |       |        |      |           |               |
+

@@ -1,31 +1,26 @@
 palo alto networks aperture
 ===========================
 
-```JSON
-{"expression":"product = palo alto networks aperture",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"policy_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = palo alto networks aperture
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|               | application     |        |          |           |               |
+|               | policy_id       |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | url             |        |          |           |               |
+

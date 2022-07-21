@@ -1,61 +1,34 @@
 goanywhere mft
 ==============
 
-```JSON
-{"expression":"product = \"goanywhere mft\"",
-"activity_type":{"file-download":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"file-upload":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "goanywhere mft"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field      | Status  | Core     | Detection | Informational |
+| -------------- | ---------- | ------- | -------- | --------- | ------------- |
+| endpoint-login | src_ip     | Default |          | &#10003;  |               |
+|                | dest_ip    | Default |          | &#10003;  |               |
+|                | event_name | Default |          |           | &#10003;      |
+| file-delete    | src_ip     |         |          |           |               |
+|                | dest_ip    |         |          |           |               |
+|                | src_host   | Legacy  |          | &#10003;  |               |
+|                | user       | Legacy  | &#10003; | &#10003;  |               |
+| file-download  | src_ip     |         |          |           |               |
+|                | dest_ip    |         |          |           |               |
+|                | dest_host  | Legacy  |          |           | &#10003;      |
+|                | user       | Legacy  | &#10003; | &#10003;  |               |
+| file-upload    | src_ip     |         |          |           |               |
+|                | dest_ip    |         |          |           |               |
+|                | src_host   | Legacy  |          |           | &#10003;      |
+|                | user       | Legacy  | &#10003; | &#10003;  |               |
+

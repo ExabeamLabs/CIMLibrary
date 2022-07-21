@@ -1,102 +1,49 @@
 observeit
 =========
 
-```JSON
-{"expression":"product = \"observeit\"",
-"activity_type":{"app-login":{"fields":{}},
-"database-activity":{"fields":{"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"db_object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{}},
-"process-create":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "observeit"
+
+Fields
+------
+
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| src_ip           |          | &#10003;  |               |
+| domain           |          | &#10003;  |               |
+| session_id       |          |           | &#10003;      |
+| operating_system |          |           | &#10003;      |
+| dest_host        |          | &#10003;  |               |
+| user             | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type     | Field            | Status  | Core     | Detection | Informational |
+| ----------------- | ---------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger     | src_ip           | Legacy  | &#10003; | &#10003;  |               |
+|                   | additional_info  |         |          |           |               |
+|                   | process_name     | Legacy  |          | &#10003;  |               |
+|                   | alert_id         | Legacy  |          |           | &#10003;      |
+|                   | domain           |         |          |           |               |
+|                   | dest_host        | Legacy  |          | &#10003;  |               |
+|                   | operating_system |         |          |           |               |
+|                   | session_id       |         |          |           |               |
+|                   | src_host         | Legacy  | &#10003; | &#10003;  |               |
+|                   | user             | Legacy  |          | &#10003;  |               |
+|                   | target           |         |          |           |               |
+| app-activity      | additional_info  | Default |          |           | &#10003;      |
+|                   | dest_ip          | Default |          | &#10003;  |               |
+|                   | src_host         | Default |          | &#10003;  |               |
+|                   | object           | Default |          |           | &#10003;      |
+| app-login         |                  |         |          |           |               |
+| database-activity | db_name          | Default |          |           | &#10003;      |
+|                   | process_name     | Default |          |           | &#10003;      |
+|                   | dest_user        | Default |          | &#10003;  |               |
+|                   | src_host         | Default |          | &#10003;  |               |
+|                   | db_object        | Default |          |           | &#10003;      |
+| endpoint-login    |                  |         |          |           |               |
+| process-create    |                  |         |          |           |               |
+

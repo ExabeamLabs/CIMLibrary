@@ -1,51 +1,32 @@
 palo alto networks magnifier
 ============================
 
-```JSON
-{"expression":"product = palo alto networks magnifier",
-"activity_type":{"alert-trigger":{"fields":{"dest_user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"threat_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = palo alto networks magnifier
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field         | Status | Core     | Detection | Informational |
+| ------------- | ------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | dest_user     |        |          |           |               |
+|               | target_domain |        |          |           |               |
+|               | src_ip        | Legacy | &#10003; | &#10003;  |               |
+|               | src_location  |        |          |           |               |
+|               | alert_id      | Legacy |          |           | &#10003;      |
+|               | dest_ip       | Legacy | &#10003; | &#10003;  |               |
+|               | domain        |        |          |           |               |
+|               | action        | Legacy |          |           | &#10003;      |
+|               | threat_type   |        |          |           |               |
+|               | malware_url   |        |          |           |               |
+|               | category      |        |          |           |               |
+|               | user          | Legacy |          | &#10003;  |               |
+|               | direction     |        |          |           |               |
+

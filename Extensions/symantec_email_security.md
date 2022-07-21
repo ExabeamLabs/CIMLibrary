@@ -1,20 +1,25 @@
 symantec email security
 =======================
 
-```JSON
-{"expression":"product = \"symantec email security\"",
-"activity_type":{"email-receive":{"fields":{}},
-"email-send":{"fields":{"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"message_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "symantec email security"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_ip     |      |           | &#10003;      |
+| bytes      |      |           | &#10003;      |
+| message_id |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field     | Status  | Core | Detection | Informational |
+| ------------- | --------- | ------- | ---- | --------- | ------------- |
+| email-receive |           |         |      |           |               |
+| email-send    | file_name | Default |      |           | &#10003;      |
+

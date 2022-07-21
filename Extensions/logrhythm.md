@@ -1,39 +1,27 @@
 logrhythm
 =========
 
-```JSON
-{"expression":"product = \"logrhythm\"",
-"activity_type":{"process-create":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "logrhythm"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field      | Status  | Core | Detection | Informational |
+| -------------- | ---------- | ------- | ---- | --------- | ------------- |
+| process-create | src_port   | Default |      |           | &#10003;      |
+|                | src_ip     | Default |      | &#10003;  |               |
+|                | protocol   | Default |      |           | &#10003;      |
+|                | dest_ip    | Default |      | &#10003;  |               |
+|                | domain     | Default |      |           | &#10003;      |
+|                | event_name | Default |      |           | &#10003;      |
+|                | user       | Default |      | &#10003;  |               |
+|                | dest_port  | Default |      |           | &#10003;      |
+

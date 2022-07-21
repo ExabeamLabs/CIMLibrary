@@ -1,57 +1,33 @@
 microsoft defender antivirus
 ============================
 
-```JSON
-{"expression":"product = microsoft defender antivirus",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_directory":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft defender antivirus
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status | Core     | Detection | Informational |
+| ------------- | ----------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path         | Legacy |          |           | &#10003;      |
+|               | process           |        |          |           |               |
+|               | src_host          | Legacy | &#10003; | &#10003;  |               |
+|               | result            |        |          |           |               |
+|               | src_ip            | Legacy | &#10003; | &#10003;  |               |
+|               | additional_info   |        |          |           |               |
+|               | process_name      | Legacy |          | &#10003;  |               |
+|               | alert_id          | Legacy |          |           | &#10003;      |
+|               | domain            |        |          |           |               |
+|               | process_directory |        |          |           |               |
+|               | action            | Legacy |          |           | &#10003;      |
+|               | dest_host         | Legacy |          | &#10003;  |               |
+|               | malware_url       |        |          |           |               |
+|               | user              | Legacy |          | &#10003;  |               |
+

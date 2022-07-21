@@ -1,43 +1,28 @@
 kemp load balancer
 ==================
 
-```JSON
-{"expression":"product = \"kemp load balancer\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "kemp load balancer"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field          | Status  | Core | Detection | Informational |
+| ------------------ | -------------- | ------- | ---- | --------- | ------------- |
+| app-authentication | src_ip         | Default |      | &#10003;  |               |
+|                    | event_name     | Default |      |           | &#10003;      |
+|                    | event_category | Default |      |           | &#10003;      |
+| app-login          | src_ip         | Default |      | &#10003;  |               |
+|                    | event_name     | Default |      |           | &#10003;      |
+|                    | object         | Default |      |           | &#10003;      |
+| endpoint-login     | dest_ip        | Default |      | &#10003;  |               |
+|                    | event_name     | Default |      |           | &#10003;      |
+|                    | event_category | Default |      |           | &#10003;      |
+

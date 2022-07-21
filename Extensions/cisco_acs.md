@@ -1,43 +1,33 @@
 cisco acs
 =========
 
-```JSON
-{"expression":"product = \"cisco acs\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"device_version":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_severity":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"device_vendor":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dtz":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco acs"
+
+Fields
+------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| device_version |      | &#10003;  |               |
+| src_ip         |      | &#10003;  |               |
+| result         |      | &#10003;  |               |
+| service_name   |      | &#10003;  |               |
+| alert_severity |      | &#10003;  |               |
+| dest_ip        |      | &#10003;  |               |
+| device_vendor  |      | &#10003;  |               |
+| dtz            |      | &#10003;  |               |
+| src_host       |      | &#10003;  |               |
+| event_category |      | &#10003;  |               |
+| operation      |      | &#10003;  |               |
+| dest_port      |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

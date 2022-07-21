@@ -1,82 +1,41 @@
 check point security gateway
 ============================
 
-```JSON
-{"expression":"product = \"check point security gateway\"",
-"activity_type":{"vpn-authentication":{"fields":{"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"user_ou":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ipnum":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"authentication_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"direction":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"user_ou":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_duration":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_country_code":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "check point security gateway"
+
+Fields
+------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| src_ip            |      | &#10003;  |               |
+| src_translated_ip |      | &#10003;  |               |
+| src_country_code  |      | &#10003;  |               |
+| dest_ip           |      | &#10003;  |               |
+| action            |      | &#10003;  |               |
+| event_name        |      | &#10003;  |               |
+| src_host          |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type      | Field                | Status  | Core | Detection | Informational |
+| ------------------ | -------------------- | ------- | ---- | --------- | ------------- |
+| vpn-authentication | auth_method          | Default |      |           | &#10003;      |
+|                    | operating_system     | Default |      |           | &#10003;      |
+| vpn-login          | user_ou              | Default |      |           | &#10003;      |
+|                    | src_port             | Default |      |           | &#10003;      |
+|                    | src_translated_ipnum | Default |      |           | &#10003;      |
+|                    | operating_system     | Default |      |           | &#10003;      |
+|                    | realm                | Default |      |           | &#10003;      |
+|                    | operation            | Default |      |           | &#10003;      |
+|                    | authentication_type  | Default |      |           | &#10003;      |
+|                    | dest_port            | Default |      |           | &#10003;      |
+|                    | direction            | Default |      |           | &#10003;      |
+| vpn-logout         | user_ou              |         |      | &#10003;  |               |
+|                    | dest_host            | Legacy  |      |           | &#10003;      |
+|                    | session_duration     | Legacy  |      | &#10003;  |               |
+

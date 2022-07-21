@@ -1,37 +1,29 @@
 watchguard
 ==========
 
-```JSON
-{"expression":"product = \"watchguard\"",
-"activity_type":{"http-session":{"fields":{"proxy_action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"web_domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "watchguard"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| bytes_out |      |           | &#10003;      |
+| bytes_in  |      |           | &#10003;      |
+| domain    |      |           | &#10003;      |
+| category  |      |           | &#10003;      |
+| user      |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type   | Field        | Status  | Core | Detection | Informational |
+| --------------- | ------------ | ------- | ---- | --------- | ------------- |
+| http-session    | proxy_action | Default |      |           | &#10003;      |
+| network-session | web_domain   | Default |      |           | &#10003;      |
+|                 | event_code   | Default |      |           | &#10003;      |
+|                 | operation    | Default |      |           | &#10003;      |
+

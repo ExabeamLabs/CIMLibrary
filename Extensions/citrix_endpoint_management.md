@@ -1,25 +1,27 @@
 citrix endpoint management
 ==========================
 
-```JSON
-{"expression":"product = \"citrix endpoint management\"",
-"activity_type":{"app-login":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "citrix endpoint management"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      | &#10003;  |               |
+| additional_info |      |           | &#10003;      |
+| session_id      |      |           | &#10003;      |
+| src_host        |      | &#10003;  |               |
+| operation       |      | &#10003;  |               |
+| user_agent      |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login     |       |        |      |           |               |
+

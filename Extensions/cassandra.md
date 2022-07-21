@@ -1,63 +1,34 @@
 cassandra
 =========
 
-```JSON
-{"expression":"product = \"cassandra\"",
-"activity_type":{"database-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"database-modify":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_user":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cassandra"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type     | Field           | Status  | Core | Detection | Informational |
+| ----------------- | --------------- | ------- | ---- | --------- | ------------- |
+| database-activity | src_ip          | Default |      | &#10003;  |               |
+|                   | additional_info | Default |      |           | &#10003;      |
+|                   | dest_ip         | Default |      | &#10003;  |               |
+|                   | event_name      | Default |      |           | &#10003;      |
+|                   | dest_user       | Default |      | &#10003;  |               |
+| database-login    | src_ip          | Default |      | &#10003;  |               |
+|                   | additional_info | Default |      |           | &#10003;      |
+|                   | dest_ip         | Default |      | &#10003;  |               |
+|                   | event_name      | Default |      |           | &#10003;      |
+|                   | dest_user       | Default |      | &#10003;  |               |
+| database-modify   | src_ip          | Legacy  |      |           | &#10003;      |
+|                   | db_name         |         |      |           |               |
+|                   | additional_info |         |      |           |               |
+|                   | dest_ip         |         |      |           |               |
+|                   | dest_user       |         |      |           |               |
+

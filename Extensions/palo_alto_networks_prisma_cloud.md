@@ -1,42 +1,29 @@
 palo alto networks prisma cloud
 ===============================
 
-```JSON
-{"expression":"product = palo alto networks prisma cloud",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_file_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = palo alto networks prisma cloud
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field             | Status | Core     | Detection | Informational |
+| ------------- | ----------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | src_ip            | Legacy | &#10003; | &#10003;  |               |
+|               | file_path         | Legacy |          |           | &#10003;      |
+|               | file_ext          |        |          |           |               |
+|               | malware_file_name |        |          |           |               |
+|               | additional_info   |        |          |           |               |
+|               | file_name         | Legacy | &#10003; |           |               |
+|               | domain            |        |          |           |               |
+|               | file_dir          | Legacy |          |           | &#10003;      |
+|               | user_sid          |        |          |           |               |
+|               | user              | Legacy |          | &#10003;  |               |
+

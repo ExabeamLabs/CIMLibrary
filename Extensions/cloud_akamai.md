@@ -1,8 +1,20 @@
 cloud akamai
 ============
 
-```JSON
-{"expression":"product = \"cloud akamai\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "cloud akamai"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

@@ -1,11 +1,23 @@
 event viewer - adfs
 ===================
 
-```JSON
-{"expression":"product = \"event viewer - adfs\"",
-"activity_type":{"dns-response":{"fields":{}},
-"endpoint-authentication":{"fields":{}}},
-"fields":{"event_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "event viewer - adfs"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| event_name |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field | Status | Core | Detection | Informational |
+| ----------------------- | ----- | ------ | ---- | --------- | ------------- |
+| dns-response            |       |        |      |           |               |
+| endpoint-authentication |       |        |      |           |               |
+

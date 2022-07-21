@@ -1,226 +1,84 @@
 azure activity log
 ==================
 
-```JSON
-{"expression":"product = \"azure activity log\"",
-"activity_type":{"endpoint-key-write":{"fields":{"key_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"bucket-write":{"fields":{}},
-"image-write":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"region":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"snapshot-read":{"fields":{}},
-"role-write":{"fields":{"role":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"assignble_scope":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_data_actions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"role_definition":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"description":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"allowed_permissions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"denied_data_actions":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-permission-modify":{"fields":{"assignment_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"role_definition_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"principal_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"principal_id":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-command":{"fields":{}},
-"endpoint-write":{"fields":{"image_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"instance_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"interface_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"image_publisher":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"os_admin":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"image_release":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"vm_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"region":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"image_version":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"snapshot-write":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"region":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-write":{"fields":{"src_resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"disk_state":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operating_system_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"disk_size":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"region":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_resource_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-read":{"fields":{}}},
-"fields":{"tenant_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"service_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"resource_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_first":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"subscription_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_group":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_path":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"correlation_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"result_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_last":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"authorization_scope":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "azure activity log"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| tenant_id           |      |           | &#10003;      |
+| resource            |      | &#10003;  |               |
+| service_name        |      | &#10003;  |               |
+| resource_type       |      |           | &#10003;      |
+| operation_first     |      |           | &#10003;      |
+| event_category      |      |           | &#10003;      |
+| src_ip              |      | &#10003;  |               |
+| operation_name      |      |           | &#10003;      |
+| result              |      | &#10003;  |               |
+| subscription_id     |      |           | &#10003;      |
+| resource_group      |      |           | &#10003;      |
+| domain              |      |           | &#10003;      |
+| resource_path       |      |           | &#10003;      |
+| correlation_id      |      |           | &#10003;      |
+| result_code         |      |           | &#10003;      |
+| operation_last      |      |           | &#10003;      |
+| resource_name       |      |           | &#10003;      |
+| authorization_scope |      |           | &#10003;      |
+| user                |      | &#10003;  |               |
+| operation           |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field                 | Status  | Core | Detection | Informational |
+| ---------------------- | --------------------- | ------- | ---- | --------- | ------------- |
+| bucket-write           |                       |         |      |           |               |
+| disk-read              |                       |         |      |           |               |
+| disk-write             | src_resource          | Default |      |           | &#10003;      |
+|                        | disk_state            | Default |      |           | &#10003;      |
+|                        | operating_system_type | Default |      |           | &#10003;      |
+|                        | dest_host             | Default |      | &#10003;  |               |
+|                        | disk_size             | Default |      |           | &#10003;      |
+|                        | resource_name         | Default |      |           | &#10003;      |
+|                        | region                | Default |      |           | &#10003;      |
+|                        | src_resource_type     | Default |      |           | &#10003;      |
+| endpoint-command       |                       |         |      |           |               |
+| endpoint-key-write     | key_name              | Default |      |           | &#10003;      |
+| endpoint-write         | image_name            | Default |      |           | &#10003;      |
+|                        | instance_id           | Default |      |           | &#10003;      |
+|                        | interface_id          | Default |      |           | &#10003;      |
+|                        | image_publisher       | Default |      |           | &#10003;      |
+|                        | os_admin              | Default |      |           | &#10003;      |
+|                        | image_release         | Default |      |           | &#10003;      |
+|                        | operating_system_type | Default |      |           | &#10003;      |
+|                        | vm_size               | Default |      |           | &#10003;      |
+|                        | resource_name         | Default |      |           | &#10003;      |
+|                        | region                | Default |      |           | &#10003;      |
+|                        | image_version         | Default |      |           | &#10003;      |
+|                        | src_resource_type     | Default |      |           | &#10003;      |
+| image-write            | src_resource          | Default |      |           | &#10003;      |
+|                        | operating_system_type | Default |      |           | &#10003;      |
+|                        | resource_name         | Default |      |           | &#10003;      |
+|                        | region                | Default |      |           | &#10003;      |
+| role-write             | role                  | Default |      |           | &#10003;      |
+|                        | assignble_scope       | Default |      |           | &#10003;      |
+|                        | allowed_data_actions  | Default |      |           | &#10003;      |
+|                        | role_definition       | Default |      |           | &#10003;      |
+|                        | description           | Default |      |           | &#10003;      |
+|                        | allowed_permissions   | Default |      |           | &#10003;      |
+|                        | denied_data_actions   | Default |      |           | &#10003;      |
+| snapshot-read          |                       |         |      |           |               |
+| snapshot-write         | src_resource          | Default |      |           | &#10003;      |
+|                        | operating_system_type | Default |      |           | &#10003;      |
+|                        | region                | Default |      |           | &#10003;      |
+|                        | src_resource_type     | Default |      |           | &#10003;      |
+| user-permission-modify | assignment_id         |         |      |           |               |
+|                        | role_definition_id    |         |      |           |               |
+|                        | principal_type        |         |      |           |               |
+|                        | principal_id          |         |      |           |               |
+

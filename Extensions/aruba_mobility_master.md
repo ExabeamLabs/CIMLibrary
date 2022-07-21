@@ -1,59 +1,32 @@
 aruba mobility master
 =====================
 
-```JSON
-{"expression":"product = \"aruba mobility master\"",
-"activity_type":{"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"auth_server":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"authentication_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_server":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "aruba mobility master"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field               | Status  | Core | Detection | Informational |
+| ----------------------- | ------------------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | src_ip              | Default |      | &#10003;  |               |
+|                         | src_port            | Default |      |           | &#10003;      |
+|                         | src_mac             | Default |      |           | &#10003;      |
+|                         | dest_ip             | Default |      | &#10003;  |               |
+|                         | auth_server         | Default |      |           | &#10003;      |
+|                         | dest_port           | Default |      |           | &#10003;      |
+| endpoint-login          | src_ip              | Default |      | &#10003;  |               |
+|                         | src_port            | Default |      |           | &#10003;      |
+|                         | src_mac             | Default |      |           | &#10003;      |
+|                         | dest_ip             | Default |      | &#10003;  |               |
+|                         | authentication_type | Default |      |           | &#10003;      |
+|                         | auth_server         | Default |      |           | &#10003;      |
+|                         | dest_port           | Default |      |           | &#10003;      |
+

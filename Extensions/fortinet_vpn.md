@@ -1,35 +1,28 @@
 fortinet vpn
 ============
 
-```JSON
-{"expression":"product = \"fortinet vpn\"",
-"activity_type":{"vpn-authentication":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "fortinet vpn"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type      | Field             | Status  | Core | Detection | Informational |
+| ------------------ | ----------------- | ------- | ---- | --------- | ------------- |
+| vpn-authentication | additional_info   | Default |      |           | &#10003;      |
+| vpn-login          | src_translated_ip | Default |      |           | &#10003;      |
+|                    | realm             | Default |      |           | &#10003;      |
+| vpn-logout         | src_translated_ip |         |      |           | &#10003;      |
+|                    | bytes_out         | Legacy  |      | &#10003;  |               |
+|                    | bytes_in          |         |      |           | &#10003;      |
+|                    | realm             | Legacy  |      |           | &#10003;      |
+

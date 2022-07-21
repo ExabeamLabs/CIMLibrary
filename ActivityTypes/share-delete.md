@@ -21,7 +21,4 @@ share-delete:success
 There are no fields for this activity type.
 
 
-share-delete:fail
------------------
-
-There are no fields for this activity type.
+A failure activity is not currently supported for this activity-type.

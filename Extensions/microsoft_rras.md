@@ -1,24 +1,27 @@
 microsoft rras
 ==============
 
-```JSON
-{"expression":"product = \"microsoft rras\"",
-"activity_type":{"vpn-authentication":{"fields":{}},
-"vpn-login":{"fields":{}},
-"vpn-logout":{"fields":{"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_sec":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_min":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "microsoft rras"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| session_id |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type      | Field       | Status | Core | Detection | Informational |
+| ------------------ | ----------- | ------ | ---- | --------- | ------------- |
+| vpn-authentication |             |        |      |           |               |
+| vpn-login          |             |        |      |           |               |
+| vpn-logout         | bytes_out   | Legacy |      | &#10003;  |               |
+|                    | bytes_in    |        |      |           |               |
+|                    | session_sec |        |      |           |               |
+|                    | session_min |        |      |           |               |
+

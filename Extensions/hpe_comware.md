@@ -1,19 +1,22 @@
 hpe comware
 ===========
 
-```JSON
-{"expression":"product = \"hpe comware\"",
-"activity_type":{"process-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "hpe comware"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field   | Status  | Core | Detection | Informational |
+| -------------- | ------- | ------- | ---- | --------- | ------------- |
+| process-create | src_ip  | Default |      | &#10003;  |               |
+|                | dest_ip | Default |      | &#10003;  |               |
+|                | user    | Default |      | &#10003;  |               |
+

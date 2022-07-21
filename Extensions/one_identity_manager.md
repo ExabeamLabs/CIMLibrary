@@ -1,30 +1,25 @@
 one identity manager
 ====================
 
-```JSON
-{"expression":"product = \"one identity manager\"",
-"activity_type":{"user-password-modify":{"fields":{"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-switch":{"fields":{"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "one identity manager"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type        | Field           | Status  | Core | Detection | Informational |
+| -------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity         | additional_info | Default |      |           | &#10003;      |
+|                      | dest_host       | Default |      | &#10003;  |               |
+|                      | user            | Default |      | &#10003;  |               |
+|                      | object          | Default |      |           | &#10003;      |
+| user-password-modify | dest_host       | Default |      | &#10003;  |               |
+| user-switch          | dest_host       |         |      |           |               |
+

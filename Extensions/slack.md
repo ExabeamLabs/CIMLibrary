@@ -1,480 +1,147 @@
 slack
 =====
 
-```JSON
-{"expression":"product = \"slack\"",
-"activity_type":{"user-role-revoke":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-upload":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"channel-member-join":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"channel-member-leave":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-role-assign":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-download":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"}}},
-"user-enable":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-role-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-role-assign":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-role-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"channel-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"workspace-create":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-role-revoke":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-logout":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-disable":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"workspace-member-add":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"channel-delete":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-share":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"workspace-delete":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"channel-create":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-permission-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-remove":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "slack"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| user_id    |      |           | &#10003;      |
+| file_type  |      |           | &#10003;      |
+| dest_ip    |      |           | &#10003;      |
+| dest_host  |      |           | &#10003;      |
+| user_agent |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type          | Field       | Status  | Core     | Detection | Informational |
+| ---------------------- | ----------- | ------- | -------- | --------- | ------------- |
+| app-login              | file_ext    | Default |          |           | &#10003;      |
+|                        | file_name   | Default |          |           | &#10003;      |
+| app-logout             | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| channel-create         | operation   | Default |          |           | &#10003;      |
+| channel-delete         | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| channel-member-join    | application | Default |          |           | &#10003;      |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| channel-member-leave   | application | Default |          |           | &#10003;      |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| channel-modify         | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| file-download          | domain      |         |          |           |               |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+| file-share             | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+| file-upload            | domain      |         |          |           |               |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+| group-member-add       | src_ip      |         |          |           |               |
+|                        | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+|                        | operation   |         |          |           |               |
+|                        | object      |         |          |           |               |
+| group-member-remove    | src_ip      |         |          |           |               |
+|                        | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+|                        | operation   |         |          |           |               |
+|                        | object      |         |          |           |               |
+| group-role-assign      | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| group-role-modify      | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| group-role-revoke      | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| user-create            | src_ip      |         |          |           |               |
+|                        | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+|                        | operation   |         |          |           |               |
+|                        | object      |         |          |           |               |
+| user-disable           | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | operation   |         |          |           |               |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+|                        | object      |         |          |           |               |
+| user-enable            | src_ip      |         |          |           |               |
+|                        | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | user        | Legacy  | &#10003; | &#10003;  |               |
+|                        | operation   |         |          |           |               |
+|                        | object      |         |          |           |               |
+| user-modify            | src_ip      |         |          |           |               |
+|                        | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | user        | Legacy  | &#10003; |           |               |
+|                        | operation   |         |          |           |               |
+|                        | object      |         |          |           |               |
+| user-permission-modify | src_ip      |         |          |           |               |
+|                        | application |         |          |           |               |
+|                        | domain      | Legacy  |          |           | &#10003;      |
+|                        | user        | Legacy  | &#10003; |           |               |
+|                        | operation   |         |          |           |               |
+|                        | object      |         |          |           |               |
+| user-role-assign       | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| user-role-modify       | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| user-role-revoke       | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| workspace-create       | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| workspace-delete       | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+| workspace-member-add   | src_ip      | Default |          | &#10003;  |               |
+|                        | application | Default |          |           | &#10003;      |
+|                        | domain      | Default |          |           | &#10003;      |
+|                        | user        | Default |          | &#10003;  |               |
+|                        | operation   | Default |          |           | &#10003;      |
+|                        | object      | Default |          |           | &#10003;      |
+

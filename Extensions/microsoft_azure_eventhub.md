@@ -1,62 +1,36 @@
 microsoft azure eventhub
 ========================
 
-```JSON
-{"expression":"product = microsoft azure eventhub",
-"activity_type":{"alert-trigger":{"fields":{"event_name_hub_namespace":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"azure_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"azure_resource_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"last_known_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_upn":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name_hub_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft azure eventhub
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                    | Status | Core     | Detection | Informational |
+| ------------- | ------------------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger | event_name_hub_namespace |        |          |           |               |
+|               | azure_category           |        |          |           |               |
+|               | src_host                 | Legacy | &#10003; | &#10003;  |               |
+|               | result                   |        |          |           |               |
+|               | src_ip                   | Legacy | &#10003; | &#10003;  |               |
+|               | email_address            |        |          |           |               |
+|               | application              |        |          |           |               |
+|               | additional_info          |        |          |           |               |
+|               | azure_resource_type      |        |          |           |               |
+|               | alert_id                 | Legacy |          |           | &#10003;      |
+|               | domain                   |        |          |           |               |
+|               | last_known_ip            |        |          |           |               |
+|               | user_upn                 |        |          |           |               |
+|               | operation                |        |          |           |               |
+|               | user                     | Legacy |          | &#10003;  |               |
+|               | event_name_hub_name      |        |          |           |               |
+|               | object                   |        |          |           |               |
+

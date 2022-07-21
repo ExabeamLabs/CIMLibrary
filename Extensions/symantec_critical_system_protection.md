@@ -1,73 +1,43 @@
 symantec critical system protection
 ===================================
 
-```JSON
-{"expression":"product = \"symantec critical system protection\"",
-"activity_type":{"user-modify":{"fields":{"old_attribute":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_attribute":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{}},
-"user-create":{"fields":{"group_name":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-switch":{"fields":{"process_name":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"group-delete":{"fields":{}},
-"group-create":{"fields":{}},
-"endpoint-login":{"fields":{"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"parent_process_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-modify":{"fields":{"old_attribute":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"new_attribute":{"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"login_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"rule":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"policy_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "symantec critical system protection"
+
+Fields
+------
+
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| src_ip      |      | &#10003;  |               |
+| result      |      |           | &#10003;      |
+| login_type  |      |           | &#10003;      |
+| event_code  |      |           | &#10003;      |
+| domain      |      | &#10003;  |               |
+| dest_ip     |      | &#10003;  |               |
+| rule        |      |           | &#10003;      |
+| policy_name |      |           | &#10003;      |
+| session_id  |      |           | &#10003;      |
+| user        |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type  | Field               | Status  | Core | Detection | Informational |
+| -------------- | ------------------- | ------- | ---- | --------- | ------------- |
+| endpoint-login | process_name        | Default |      |           | &#10003;      |
+|                | event_name          | Default |      |           | &#10003;      |
+|                | process_path        | Default |      |           | &#10003;      |
+|                | parent_process_path | Default |      |           | &#10003;      |
+| group-create   |                     |         |      |           |               |
+| group-delete   |                     |         |      |           |               |
+| group-modify   | old_attribute       |         |      |           | &#10003;      |
+|                | new_attribute       |         |      |           | &#10003;      |
+| user-create    | group_name          |         |      |           | &#10003;      |
+| user-delete    |                     |         |      |           |               |
+| user-modify    | old_attribute       |         |      |           | &#10003;      |
+|                | new_attribute       |         |      |           | &#10003;      |
+| user-switch    | process_name        |         |      | &#10003;  |               |
+

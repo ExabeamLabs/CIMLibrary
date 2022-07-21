@@ -28,3 +28,5 @@ bucket-policy-modify:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | policy_content |      | &#10003;  |               |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

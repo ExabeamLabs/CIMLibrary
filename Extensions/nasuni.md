@@ -1,27 +1,26 @@
 nasuni
 ======
 
-```JSON
-{"expression":"product = \"nasuni\"",
-"activity_type":{"file-permission-modify":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-write":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "nasuni"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      | &#10003;  |               |
+| domain |      |           | &#10003;      |
+| user   |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field  | Status | Core | Detection | Informational |
+| ---------------------- | ------ | ------ | ---- | --------- | ------------- |
+| file-delete            | access | Legacy |      | &#10003;  |               |
+| file-permission-modify | access | Legacy |      | &#10003;  |               |
+| file-write             | access | Legacy |      | &#10003;  |               |
+

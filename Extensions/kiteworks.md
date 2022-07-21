@@ -1,307 +1,102 @@
 kiteworks
 =========
 
-```JSON
-{"expression":"product = \"kiteworks\"",
-"activity_type":{"email-send":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-upload":{"fields":{"access":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-permission-modify":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"email-delete":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"access":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"access":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"access":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-delete":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-unlock":{"fields":{}},
-"file-download":{"fields":{"access":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-reset":{"fields":{"access":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-modify":{"fields":{"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"email-modify":{"fields":{"attachment":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-create":{"fields":{"attachment":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-lock":{"fields":{}},
-"configuration-modify":{"fields":{"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"proxy_ip":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"email-recipient-add":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-read":{"fields":{"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"url":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "kiteworks"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip |          | &#10003;  |               |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type          | Field           | Status  | Core | Detection | Informational |
+| ---------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity           | access          | Default |      |           | &#10003;      |
+|                        | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+| app-login              | access          | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+| configuration-modify   | additional_info |         |      |           |               |
+|                        | mime            |         |      |           |               |
+|                        | operation       |         |      |           |               |
+|                        | url             |         |      |           |               |
+|                        | user_agent      |         |      |           |               |
+|                        | proxy_ip        |         |      |           |               |
+| email-create           | attachment      | Default |      |           | &#10003;      |
+|                        | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+| email-delete           | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+| email-modify           | attachment      | Default |      |           | &#10003;      |
+|                        | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+| email-read             | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | dest_user       | Default |      | &#10003;  |               |
+|                        | operation       | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+| email-recipient-add    | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+| email-send             | additional_info | Default |      |           | &#10003;      |
+|                        | bytes           | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | operation       | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+| file-delete            | access          | Legacy  |      | &#10003;  |               |
+| file-download          | access          |         |      |           | &#10003;      |
+| file-permission-modify | access          | Legacy  |      | &#10003;  |               |
+| file-read              | access          | Legacy  |      | &#10003;  |               |
+| file-upload            | access          |         |      |           | &#10003;      |
+| file-write             | access          | Legacy  |      | &#10003;  |               |
+| user-delete            | additional_info |         |      |           |               |
+|                        | mime            |         |      |           |               |
+|                        | dest_host       | Legacy  |      |           | &#10003;      |
+|                        | operation       |         |      |           |               |
+|                        | url             |         |      |           |               |
+|                        | user_agent      |         |      |           |               |
+| user-lock              |                 |         |      |           |               |
+| user-modify            | dest_host       | Legacy  |      |           | &#10003;      |
+|                        | operation       |         |      |           |               |
+| user-password-modify   | access          | Default |      |           | &#10003;      |
+|                        | mime            | Default |      |           | &#10003;      |
+|                        | user_agent      | Default |      |           | &#10003;      |
+|                        | url             | Default |      |           | &#10003;      |
+| user-password-reset    | access          |         |      |           | &#10003;      |
+|                        | mime            |         |      |           | &#10003;      |
+|                        | user_agent      |         |      | &#10003;  |               |
+|                        | url             |         |      |           | &#10003;      |
+| user-unlock            |                 |         |      |           |               |
+

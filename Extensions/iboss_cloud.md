@@ -1,31 +1,29 @@
 iboss cloud
 ===========
 
-```JSON
-{"expression":"product = iboss secure web gateway\"",
-"activity_type":{"http-session":{"fields":{}}},
-"fields":{"method":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"mime":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"categories":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = iboss secure web gateway"
+
+Fields
+------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| method     |      |           | &#10003;      |
+| bytes_out  |      |           | &#10003;      |
+| mime       |      |           | &#10003;      |
+| action     |      |           | &#10003;      |
+| categories |      |           | &#10003;      |
+| src_host   |      |           | &#10003;      |
+| category   |      |           | &#10003;      |
+| user_agent |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| http-session  |       |        |      |           |               |
+

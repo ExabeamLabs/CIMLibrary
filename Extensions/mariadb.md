@@ -1,124 +1,52 @@
 mariadb
 =======
 
-```JSON
-{"expression":"product = \"mariadb\"",
-"activity_type":{"database-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"query_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"connection_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"database-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"query_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"connection_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"database-query":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"query_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"connection_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"database-modify":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"query_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"connection_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"database-delete":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"query_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"connection_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "mariadb"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type     | Field         | Status  | Core     | Detection | Informational |
+| ----------------- | ------------- | ------- | -------- | --------- | ------------- |
+| database-activity | src_ip        | Default |          | &#10003;  |               |
+|                   | query_id      | Default |          |           | &#10003;      |
+|                   | db_name       | Default |          |           | &#10003;      |
+|                   | connection_id | Default |          |           | &#10003;      |
+|                   | user          | Default |          | &#10003;  |               |
+|                   | object        | Default |          |           | &#10003;      |
+| database-delete   | src_ip        | Legacy  |          |           | &#10003;      |
+|                   | query_id      |         |          |           |               |
+|                   | db_name       |         |          |           |               |
+|                   | connection_id |         |          |           |               |
+|                   | user          | Legacy  | &#10003; |           |               |
+|                   | operation     |         |          |           |               |
+|                   | object        |         |          |           |               |
+| database-login    | src_ip        | Default |          | &#10003;  |               |
+|                   | query_id      | Default |          |           | &#10003;      |
+|                   | db_name       | Default |          |           | &#10003;      |
+|                   | connection_id | Default |          |           | &#10003;      |
+|                   | operation     | Default |          |           | &#10003;      |
+|                   | object        | Default |          |           | &#10003;      |
+| database-modify   | src_ip        | Legacy  |          |           | &#10003;      |
+|                   | query_id      |         |          |           |               |
+|                   | db_name       |         |          |           |               |
+|                   | connection_id |         |          |           |               |
+|                   | user          | Legacy  | &#10003; |           |               |
+|                   | operation     |         |          |           |               |
+|                   | object        |         |          |           |               |
+| database-query    | src_ip        | Legacy  |          | &#10003;  |               |
+|                   | query_id      |         |          |           |               |
+|                   | db_name       |         |          |           |               |
+|                   | connection_id |         |          |           |               |
+|                   | user          | Legacy  | &#10003; | &#10003;  |               |
+|                   | operation     |         |          |           |               |
+|                   | object        |         |          |           |               |
+

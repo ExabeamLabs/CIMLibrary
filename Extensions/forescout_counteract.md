@@ -1,49 +1,32 @@
 forescout counteract
 ====================
 
-```JSON
-{"expression":"product = \"forescout counteract\"",
-"activity_type":{"configuration-modify":{"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-policy-verify":{"fields":{"host_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "forescout counteract"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type          | Field           | Status  | Core | Detection | Informational |
+| ---------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| configuration-modify   | src_ip          |         |      |           |               |
+|                        | additional_info |         |      |           |               |
+|                        | dest_ip         |         |      |           |               |
+|                        | session_id      |         |      |           |               |
+|                        | user            |         |      |           |               |
+|                        | operation       |         |      |           |               |
+|                        | object          |         |      |           |               |
+| endpoint-policy-verify | host_ip         | Default |      |           | &#10003;      |
+|                        | dest_mac        | Default |      |           | &#10003;      |
+|                        | dest_ip         | Default |      | &#10003;  |               |
+|                        | event_name      | Default |      |           | &#10003;      |
+|                        | user            | Default |      | &#10003;  |               |
+| network-session        |                 |         |      |           |               |
+

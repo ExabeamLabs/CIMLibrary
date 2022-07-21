@@ -1,47 +1,29 @@
 digipass for apps
 =================
 
-```JSON
-{"expression":"product = \"digipass for apps\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "digipass for apps"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type           | Field       | Status  | Core | Detection | Informational |
+| ----------------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-login               | src_ip      | Default |      | &#10003;  |               |
+|                         | protocol    | Default |      |           | &#10003;      |
+|                         | auth_method | Default |      |           | &#10003;      |
+|                         | event_code  | Default |      |           | &#10003;      |
+|                         | event_name  | Default |      |           | &#10003;      |
+| endpoint-authentication | src_ip      | Default |      | &#10003;  |               |
+|                         | protocol    | Default |      |           | &#10003;      |
+|                         | auth_method | Default |      |           | &#10003;      |
+|                         | event_code  | Default |      |           | &#10003;      |
+|                         | event_name  | Default |      |           | &#10003;      |
+

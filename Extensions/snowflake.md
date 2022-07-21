@@ -1,23 +1,26 @@
 snowflake
 =========
 
-```JSON
-{"expression":"product = \"snowflake\"",
-"activity_type":{"database-login":{"fields":{}},
-"database-query":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"db_operation":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"db_schema":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"query_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"db_user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "snowflake"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| query_id |      |           | &#10003;      |
+| db_user  |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type  | Field        | Status | Core     | Detection | Informational |
+| -------------- | ------------ | ------ | -------- | --------- | ------------- |
+| database-login |              |        |          |           |               |
+| database-query | db_name      |        |          |           |               |
+|                | db_operation | Legacy | &#10003; | &#10003;  |               |
+|                | db_schema    |        |          |           |               |
+

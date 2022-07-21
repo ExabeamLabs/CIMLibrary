@@ -1,11 +1,20 @@
 imperva incapsula
 =================
 
-```JSON
-{"expression":"product = \"imperva incapsula\"",
-"activity_type":{"http-session":{"fields":{"country_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "imperva incapsula"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status  | Core | Detection | Informational |
+| ------------- | ------------ | ------- | ---- | --------- | ------------- |
+| http-session  | country_code | Default |      |           | &#10003;      |
+

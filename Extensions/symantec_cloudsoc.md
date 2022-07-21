@@ -1,97 +1,43 @@
 symantec cloudsoc
 =================
 
-```JSON
-{"expression":"product = \"symantec cloudsoc\"",
-"activity_type":{"alert-trigger":{"fields":{"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"browser":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "symantec cloudsoc"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status  | Core     | Detection | Informational |
+| ------------- | --------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger | src_ip          | Legacy  | &#10003; | &#10003;  |               |
+|               | file_path       | Legacy  |          |           | &#10003;      |
+|               | full_name       |         |          |           |               |
+|               | resource        |         |          |           |               |
+|               | file_name       | Legacy  | &#10003; |           |               |
+|               | process_name    | Legacy  |          | &#10003;  |               |
+|               | browser         |         |          |           |               |
+|               | domain          |         |          |           |               |
+|               | file_dir        | Legacy  |          |           | &#10003;      |
+|               | operation       |         |          |           |               |
+|               | user            | Legacy  |          | &#10003;  |               |
+|               | user_agent      |         |          |           |               |
+| app-activity  | src_ip          | Default |          | &#10003;  |               |
+|               | file_path       | Default |          |           | &#10003;      |
+|               | file_ext        | Default |          |           | &#10003;      |
+|               | application     | Default |          |           | &#10003;      |
+|               | object_type     | Default |          |           | &#10003;      |
+|               | additional_info | Default |          |           | &#10003;      |
+|               | file_name       | Default |          |           | &#10003;      |
+|               | file_dir        | Default |          |           | &#10003;      |
+|               | domain          | Default |          |           | &#10003;      |
+|               | user            | Default |          | &#10003;  |               |
+|               | user_agent      | Default |          |           | &#10003;      |
+|               | object          | Default |          |           | &#10003;      |
+

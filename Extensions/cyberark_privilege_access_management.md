@@ -1,311 +1,105 @@
 cyberark privilege access management
 ====================================
 
-```JSON
-{"expression":"product = \"cyberark vault\"",
-"activity_type":{"user-password-read":{"fields":{"gateway_station":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"command":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-permission-modify":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"record_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"safe_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-login":{"fields":{"event_subtype":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-property-delete":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"user-password-modify":{"fields":{"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"password-create":{"fields":{"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"command":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"record_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"safe_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"password-use":{"fields":{"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"command":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-logout":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"record_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"safe_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-password-reset":{"fields":{"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-notification":{"fields":{"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"db_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"device_type":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"record_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"safe_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"command":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_service_name":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"safe_value":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "cyberark vault"
+
+Fields
+------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| src_ip            |      |           | &#10003;      |
+| event_code        |      |           | &#10003;      |
+| dest_ip           |      |           | &#10003;      |
+| dest_service_name |      |           | &#10003;      |
+| dest_host         |      |           | &#10003;      |
+| safe_value        |      |           | &#10003;      |
+| dest_port         |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type          | Field           | Status  | Core     | Detection | Informational |
+| ---------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity           | file_path       | Default |          |           | &#10003;      |
+|                        | file_ext        | Default |          |           | &#10003;      |
+|                        | resource        | Default |          |           | &#10003;      |
+|                        | file_name       | Default |          |           | &#10003;      |
+|                        | file_type       | Default |          |           | &#10003;      |
+|                        | process_name    | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | file_dir        | Default |          |           | &#10003;      |
+|                        | src_host        | Default |          | &#10003;  |               |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | object          | Default |          |           | &#10003;      |
+| app-login              | event_subtype   | Default |          |           | &#10003;      |
+|                        | src_host        | Default |          | &#10003;  |               |
+| app-logout             | domain          | Default |          |           | &#10003;      |
+|                        | operation       | Default |          |           | &#10003;      |
+| app-notification       | domain          | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+| endpoint-login         | process_name    | Default |          |           | &#10003;      |
+|                        | src_host        | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+|                        | command         | Default |          |           | &#10003;      |
+| file-delete            | db_name         |         |          |           |               |
+|                        | additional_info |         |          |           |               |
+|                        | domain          |         |          |           |               |
+|                        | device_type     |         |          |           |               |
+|                        | src_host        | Legacy  |          | &#10003;  |               |
+|                        | user            | Legacy  | &#10003; | &#10003;  |               |
+|                        | record_type     |         |          |           |               |
+|                        | safe_name       |         |          |           |               |
+| file-permission-modify | db_name         |         |          |           |               |
+|                        | additional_info |         |          |           |               |
+|                        | domain          |         |          |           |               |
+|                        | device_type     |         |          |           |               |
+|                        | src_host        |         |          |           |               |
+|                        | user            | Legacy  | &#10003; | &#10003;  |               |
+|                        | record_type     |         |          |           |               |
+|                        | safe_name       |         |          |           |               |
+| file-property-delete   | domain          | Default |          |           | &#10003;      |
+|                        | operation       | Default |          |           | &#10003;      |
+|                        | user            | Default |          | &#10003;  |               |
+| file-read              | db_name         |         |          |           |               |
+|                        | additional_info |         |          |           |               |
+|                        | domain          |         |          |           |               |
+|                        | device_type     | Legacy  |          |           | &#10003;      |
+|                        | src_host        | Legacy  |          | &#10003;  |               |
+|                        | user            | Legacy  | &#10003; | &#10003;  |               |
+|                        | record_type     |         |          |           |               |
+|                        | safe_name       |         |          |           |               |
+| file-write             | db_name         |         |          |           |               |
+|                        | additional_info |         |          |           |               |
+|                        | domain          |         |          |           |               |
+|                        | device_type     | Legacy  |          |           | &#10003;      |
+|                        | src_host        |         |          |           |               |
+|                        | user            | Legacy  | &#10003; | &#10003;  |               |
+|                        | record_type     |         |          |           |               |
+|                        | safe_name       |         |          |           |               |
+| password-create        | protocol        | Default |          |           | &#10003;      |
+|                        | process_name    | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | session_id      | Default |          |           | &#10003;      |
+|                        | src_host        | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+|                        | command         | Default |          |           | &#10003;      |
+| password-use           | protocol        | Default |          |           | &#10003;      |
+|                        | process_name    | Default |          |           | &#10003;      |
+|                        | domain          | Default |          |           | &#10003;      |
+|                        | session_id      | Default |          |           | &#10003;      |
+|                        | src_host        | Default |          | &#10003;  |               |
+|                        | operation       | Default |          |           | &#10003;      |
+|                        | command         | Default |          |           | &#10003;      |
+| user-password-modify   | src_host        | Default |          | &#10003;  |               |
+| user-password-read     | gateway_station |         |          |           |               |
+|                        | process_name    | Legacy  |          |           | &#10003;      |
+|                        | session_id      |         |          |           |               |
+|                        | src_host        | Legacy  |          |           | &#10003;      |
+|                        | command         |         |          |           |               |
+| user-password-reset    | src_host        |         |          |           |               |
+

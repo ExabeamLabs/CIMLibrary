@@ -25,6 +25,8 @@ vm_pool-endpoint-add:success
 vm_pool-endpoint-add:fail
 -------------------------
 
-| Field     | Core | Detection | Informational |
-| --------- | ---- | --------- | ------------- |
-| dest_host |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| dest_host      |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

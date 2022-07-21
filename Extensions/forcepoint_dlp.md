@@ -1,96 +1,45 @@
 forcepoint dlp
 ==============
 
-```JSON
-{"expression":"product = \"forcepoint dlp\"",
-"activity_type":{"peripheral_storage-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_dir":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_details":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"email_attachment":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"extension":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"target_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"external_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"web_domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes_unit":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "forcepoint dlp"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type               | Field             | Status  | Core     | Detection | Informational |
+| --------------------------- | ----------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger               | email_attachment  |         |          |           |               |
+|                             | extension         |         |          |           |               |
+|                             | file_name         | Legacy  | &#10003; |           |               |
+|                             | last_name         |         |          |           |               |
+|                             | src_host          | Legacy  | &#10003; | &#10003;  |               |
+|                             | target_domain     |         |          |           |               |
+|                             | url               |         |          |           |               |
+|                             | target            |         |          |           |               |
+|                             | result            |         |          |           |               |
+|                             | src_ip            | Legacy  | &#10003; | &#10003;  |               |
+|                             | external_address  |         |          |           |               |
+|                             | full_name         |         |          |           |               |
+|                             | sender            | Legacy  | &#10003; |           |               |
+|                             | web_domain        |         |          |           |               |
+|                             | bytes             | Legacy  |          | &#10003;  |               |
+|                             | recipients        |         |          |           |               |
+|                             | domain            |         |          |           |               |
+|                             | bytes_unit        |         |          |           |               |
+|                             | email_subject     |         |          |           |               |
+|                             | user              | Legacy  |          | &#10003;  |               |
+|                             | first_name        |         |          |           |               |
+| peripheral_storage-activity | file_path         | Default |          |           | &#10003;      |
+|                             | file_ext          | Default |          |           | &#10003;      |
+|                             | file_name         | Default |          |           | &#10003;      |
+|                             | file_dir          | Default |          |           | &#10003;      |
+|                             | operation_details | Default |          |           | &#10003;      |
+

@@ -1,14 +1,24 @@
 deep discovery inspector
 ========================
 
-```JSON
-{"expression":"product = \"deep discovery inspector\"",
-"activity_type":{"app-login":{"fields":{}},
-"user-password-modify":{"fields":{}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "deep discovery inspector"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      | &#10003;  |               |
+| result |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type        | Field | Status | Core | Detection | Informational |
+| -------------------- | ----- | ------ | ---- | --------- | ------------- |
+| app-login            |       |        |      |           |               |
+| user-password-modify |       |        |      |           |               |
+

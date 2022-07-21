@@ -1,60 +1,34 @@
 palo alto networks traps
 ========================
 
-```JSON
-{"expression":"product = palo alto networks traps",
-"activity_type":{"alert-trigger":{"fields":{"dest_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_location":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_ip":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"direction":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = palo alto networks traps
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field              | Status | Core     | Detection | Informational |
+| ------------- | ------------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger | dest_translated_ip |        |          |           |               |
+|               | src_ip             | Legacy | &#10003; | &#10003;  |               |
+|               | src_location       |        |          |           |               |
+|               | src_port           | Legacy |          |           | &#10003;      |
+|               | src_translated_ip  |        |          |           |               |
+|               | protocol           | Legacy |          | &#10003;  |               |
+|               | email_address      |        |          |           |               |
+|               | application        |        |          |           |               |
+|               | alert_id           | Legacy |          |           | &#10003;      |
+|               | dest_ip            | Legacy | &#10003; | &#10003;  |               |
+|               | domain             |        |          |           |               |
+|               | action             | Legacy |          |           | &#10003;      |
+|               | user               | Legacy |          | &#10003;  |               |
+|               | dest_port          | Legacy |          | &#10003;  |               |
+|               | direction          |        |          |           |               |
+

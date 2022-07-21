@@ -1,91 +1,42 @@
 aruba clearpass policy manager
 ==============================
 
-```JSON
-{"expression":"product = \"aruba clearpass policy manager\"",
-"activity_type":{"endpoint-policy-verify":{"fields":{"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"access_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"auth_server":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"network":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-login":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"access_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_mac":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"network":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"authentication_type":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "aruba clearpass policy manager"
+
+Fields
+------
+
+| Field               | Core | Detection | Informational |
+| ------------------- | ---- | --------- | ------------- |
+| src_ip              |      |           | &#10003;      |
+| dest_ip             |      | &#10003;  |               |
+| authentication_type |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type           | Field           | Status  | Core | Detection | Informational |
+| ----------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| endpoint-authentication | src_port        | Default |      |           | &#10003;      |
+|                         | src_mac         | Default |      |           | &#10003;      |
+|                         | access_type     | Default |      |           | &#10003;      |
+|                         | user_type       | Default |      |           | &#10003;      |
+|                         | dest_mac        | Default |      |           | &#10003;      |
+|                         | additional_info | Default |      |           | &#10003;      |
+|                         | event_name      | Default |      |           | &#10003;      |
+|                         | auth_server     | Default |      |           | &#10003;      |
+|                         | dest_port       | Default |      |           | &#10003;      |
+|                         | network         | Default |      |           | &#10003;      |
+| endpoint-login          | src_port        | Default |      |           | &#10003;      |
+|                         | src_mac         | Default |      |           | &#10003;      |
+|                         | access_type     | Default |      |           | &#10003;      |
+|                         | user_type       | Default |      |           | &#10003;      |
+|                         | dest_mac        | Default |      |           | &#10003;      |
+|                         | session_id      | Default |      |           | &#10003;      |
+|                         | dest_port       | Default |      |           | &#10003;      |
+|                         | network         | Default |      |           | &#10003;      |
+| endpoint-policy-verify  | session_id      | Default |      |           | &#10003;      |
+

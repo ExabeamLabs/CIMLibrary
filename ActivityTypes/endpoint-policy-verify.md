@@ -25,6 +25,8 @@ endpoint-policy-verify:success
 endpoint-policy-verify:fail
 ---------------------------
 
-| Field  | Core     | Detection | Informational |
-| ------ | -------- | --------- | ------------- |
-| src_ip | &#10003; |           |               |
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| src_ip         | &#10003; |           |               |
+| failure_code   |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |

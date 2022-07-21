@@ -1,443 +1,132 @@
 ovirt
 =====
 
-```JSON
-{"expression":"product = \"ovirt\"",
-"activity_type":{"vm_pool-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vm_host-enable":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"peripheral_storage-remove":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"vm_host-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"datastore-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-logout":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"log-clear":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-attach":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"image-import":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-remove":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"datacenter-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"cluster-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-scan":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"datastore-create":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"policy-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-authentication":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vm_host-create":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-stop":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-create":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"endpoint-modify":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-start":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"peripheral_storage-insert":{"fields":{"application":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"datastore-delete":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"disk-modify":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"datastore-enable":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vm_template-delete":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "ovirt"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type             | Field       | Status  | Core     | Detection | Informational |
+| ------------------------- | ----------- | ------- | -------- | --------- | ------------- |
+| app-activity              | application | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| app-login                 | src_ip      | Default |          | &#10003;  |               |
+| cluster-modify            | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| datacenter-modify         | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| datastore-create          | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| datastore-delete          | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| datastore-enable          | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| datastore-modify          | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| disk-attach               | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| disk-modify               | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| disk-remove               | application | Default |          |           | &#10003;      |
+|                           | resource    | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| disk-scan                 | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| endpoint-authentication   | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | object      | Default |          |           | &#10003;      |
+| endpoint-create           | application | Default |          |           | &#10003;      |
+|                           | resource    | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| endpoint-login            | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | object      | Default |          |           | &#10003;      |
+| endpoint-logout           | application |         |          |           |               |
+|                           | operation   |         |          |           |               |
+|                           | object      |         |          |           |               |
+| endpoint-modify           | application |         |          |           |               |
+|                           | resource    |         |          |           |               |
+|                           | operation   |         |          |           |               |
+|                           | user        | Legacy  | &#10003; |           |               |
+|                           | object      |         |          |           |               |
+| endpoint-start            | application | Default |          |           | &#10003;      |
+|                           | resource    | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| endpoint-stop             | application | Default |          |           | &#10003;      |
+|                           | resource    | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| image-import              | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| log-clear                 | application |         |          |           |               |
+|                           | operation   |         |          |           |               |
+|                           | user        | Legacy  | &#10003; | &#10003;  |               |
+|                           | object      |         |          |           |               |
+| peripheral_storage-insert | application |         |          |           |               |
+|                           | operation   |         |          |           |               |
+|                           | user        | Legacy  | &#10003; | &#10003;  |               |
+|                           | object      |         |          |           |               |
+| peripheral_storage-remove | application |         |          |           |               |
+|                           | operation   |         |          |           |               |
+|                           | user        | Legacy  | &#10003; |           |               |
+|                           | object      |         |          |           |               |
+| policy-modify             | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| vm_host-create            | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| vm_host-enable            | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| vm_host-modify            | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| vm_pool-modify            | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+|                           | object      | Default |          |           | &#10003;      |
+| vm_template-delete        | application | Default |          |           | &#10003;      |
+|                           | operation   | Default |          |           | &#10003;      |
+|                           | user        | Default |          | &#10003;  |               |
+

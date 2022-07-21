@@ -1,68 +1,36 @@
 sophos xg firewall
 ==================
 
-```JSON
-{"expression":"product = \"sophos xg firewall\"",
-"activity_type":{"http-session":{"fields":{"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_country_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_country_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"core":"1",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "sophos xg firewall"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          | &#10003;  |               |
+| user   | &#10003; | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type   | Field             | Status  | Core | Detection | Informational |
+| --------------- | ----------------- | ------- | ---- | --------- | ------------- |
+| http-session    | file_name         | Default |      |           | &#10003;      |
+| network-session | src_interface     | Default |      |           | &#10003;      |
+|                 | device_id         | Default |      |           | &#10003;      |
+|                 | dest_interface    | Default |      |           | &#10003;      |
+|                 | src_country_code  | Default |      |           | &#10003;      |
+|                 | operation         | Default |      |           | &#10003;      |
+|                 | dest_country_code | Default |      |           | &#10003;      |
+| vpn-login       | src_port          | Default |      |           | &#10003;      |
+|                 | src_interface     | Default |      |           | &#10003;      |
+|                 | protocol          | Default |      |           | &#10003;      |
+|                 | dest_interface    | Default |      |           | &#10003;      |
+|                 | dest_ip           | Default |      | &#10003;  |               |
+|                 | operation         | Default |      |           | &#10003;      |
+|                 | dest_port         | Default |      |           | &#10003;      |
+

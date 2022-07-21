@@ -1,9 +1,21 @@
 symantec messaging gateway
 ==========================
 
-```JSON
-{"expression":"product = \"smg\"",
-"activity_type":{"email-receive":{"fields":{}},
-"email-send":{"fields":{}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "smg"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field | Status | Core | Detection | Informational |
+| ------------- | ----- | ------ | ---- | --------- | ------------- |
+| email-receive |       |        |      |           |               |
+| email-send    |       |        |      |           |               |
+

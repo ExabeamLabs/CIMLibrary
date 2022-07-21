@@ -1,217 +1,77 @@
 citrix gateway
 ==============
 
-```JSON
-{"expression":"product = \"citrix gateway\"",
-"activity_type":{"vpn-session":{"fields":{"src_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"duration":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"access_group":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"vpn-authentication":{"fields":{"method":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"action":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"uri":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"http-session":{"fields":{"protocol":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"result_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-login":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"vpn_client_type":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"realm":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"vpn-logout":{"fields":{"bytes_in":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"session_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"vpn_client_type":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"source_connection_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_port":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"duration":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_translated_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"bytes_out":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_ip":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_port":{"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"process-create":{"fields":{"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_command_line":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"network-session":{"fields":{"src_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_out":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes_in":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_translated_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_translated_ip":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "citrix gateway"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type      | Field                | Status  | Core | Detection | Informational |
+| ------------------ | -------------------- | ------- | ---- | --------- | ------------- |
+| http-session       | protocol             | Default |      |           | &#10003;      |
+|                    | dest_host            | Default |      | &#10003;  |               |
+|                    | result_code          | Default |      |           | &#10003;      |
+| network-session    | src_translated_ip    | Default |      |           | &#10003;      |
+|                    | result               | Default |      |           | &#10003;      |
+|                    | bytes_out            | Default |      |           | &#10003;      |
+|                    | bytes_in             | Default |      |           | &#10003;      |
+|                    | event_name           | Default |      |           | &#10003;      |
+|                    | dest_translated_port | Default |      |           | &#10003;      |
+|                    | src_translated_port  | Default |      |           | &#10003;      |
+|                    | operation            | Default |      |           | &#10003;      |
+|                    | dest_translated_ip   | Default |      |           | &#10003;      |
+| process-create     | dest_ip              | Default |      | &#10003;  |               |
+|                    | process_command_line | Default |      |           | &#10003;      |
+|                    | user                 | Default |      | &#10003;  |               |
+| vpn-authentication | method               | Default |      |           | &#10003;      |
+|                    | dest_ip              | Default |      | &#10003;  |               |
+|                    | action               | Default |      |           | &#10003;      |
+|                    | event_name           | Default |      |           | &#10003;      |
+|                    | session_id           | Default |      |           | &#10003;      |
+|                    | dest_host            | Default |      | &#10003;  |               |
+|                    | src_host             | Default |      | &#10003;  |               |
+|                    | event_category       | Default |      |           | &#10003;      |
+|                    | uri                  | Default |      |           | &#10003;      |
+|                    | dest_port            | Default |      |           | &#10003;      |
+|                    | object               | Default |      |           | &#10003;      |
+| vpn-login          | src_translated_ip    | Default |      |           | &#10003;      |
+|                    | dest_ip              | Default |      | &#10003;  |               |
+|                    | dest_host            | Default |      | &#10003;  |               |
+|                    | session_id           | Default |      |           | &#10003;      |
+|                    | vpn_client_type      | Default |      |           | &#10003;      |
+|                    | realm                | Default |      |           | &#10003;      |
+|                    | src_host             | Default |      | &#10003;  |               |
+|                    | user_agent           | Default |      |           | &#10003;      |
+| vpn-logout         | bytes_in             |         |      | &#10003;  |               |
+|                    | session_id           |         |      |           | &#10003;      |
+|                    | vpn_client_type      |         |      | &#10003;  |               |
+|                    | src_host             |         |      | &#10003;  |               |
+|                    | source_connection_id |         |      |           | &#10003;      |
+|                    | src_port             |         |      | &#10003;  |               |
+|                    | duration             |         |      | &#10003;  |               |
+|                    | src_translated_ip    |         |      | &#10003;  |               |
+|                    | bytes_out            | Legacy  |      | &#10003;  |               |
+|                    | dest_ip              |         |      | &#10003;  |               |
+|                    | event_name           |         |      | &#10003;  |               |
+|                    | dest_host            | Legacy  |      |           | &#10003;      |
+|                    | dest_port            |         |      | &#10003;  |               |
+| vpn-session        | src_port             |         |      | &#10003;  |               |
+|                    | duration             |         |      | &#10003;  |               |
+|                    | src_translated_ip    |         |      | &#10003;  |               |
+|                    | bytes_out            |         |      | &#10003;  |               |
+|                    | bytes_in             |         |      | &#10003;  |               |
+|                    | event_name           |         |      | &#10003;  |               |
+|                    | action               |         |      | &#10003;  |               |
+|                    | session_id           |         |      |           | &#10003;      |
+|                    | access_group         |         |      | &#10003;  |               |
+|                    | dest_port            |         |      | &#10003;  |               |
+|                    | dest_translated_ip   |         |      | &#10003;  |               |
+

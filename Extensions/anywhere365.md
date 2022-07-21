@@ -1,37 +1,28 @@
 anywhere365
 ===========
 
-```JSON
-{"expression":"product = \"anywhere365\"",
-"activity_type":{"call-receive":{"fields":{"recipients":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"alert_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-notification":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"alert_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{"event_id":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "anywhere365"
+
+Fields
+------
+
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| event_id |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type    | Field      | Status  | Core | Detection | Informational |
+| ---------------- | ---------- | ------- | ---- | --------- | ------------- |
+| app-activity     | src_ip     | Default |      | &#10003;  |               |
+|                  | domain     | Default |      |           | &#10003;      |
+|                  | alert_id   | Default |      |           | &#10003;      |
+|                  | user       | Default |      | &#10003;  |               |
+| app-notification | src_ip     | Default |      | &#10003;  |               |
+|                  | alert_id   | Default |      |           | &#10003;      |
+| call-receive     | recipients | Default |      |           | &#10003;      |
+

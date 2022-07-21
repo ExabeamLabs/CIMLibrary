@@ -1,32 +1,26 @@
 rsa dlp
 =======
 
-```JSON
-{"expression":"product = \"rsa dlp\"",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "rsa dlp"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status | Core     | Detection | Informational |
+| ------------- | ------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger | result       |        |          |           |               |
+|               | src_ip       | Legacy | &#10003; | &#10003;  |               |
+|               | process_name | Legacy |          | &#10003;  |               |
+|               | domain       |        |          |           |               |
+|               | process_dir  |        |          |           |               |
+|               | process_path | Legacy |          | &#10003;  |               |
+|               | user         | Legacy |          | &#10003;  |               |
+

@@ -1,32 +1,28 @@
 ftp
 ===
 
-```JSON
-{"expression":"product = \"ftp\"",
-"activity_type":{"app-activity":{"fields":{"bytes":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-write":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"file-read":{"fields":{"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-delete":{"fields":{}}},
-"fields":{"src_ip":{"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "ftp"
+
+Fields
+------
+
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| src_ip | &#10003; | &#10003;  |               |
+| domain |          |           | &#10003;      |
+| user   |          | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type | Field  | Status  | Core | Detection | Informational |
+| ------------- | ------ | ------- | ---- | --------- | ------------- |
+| app-activity  | bytes  | Default |      |           | &#10003;      |
+|               | object | Default |      |           | &#10003;      |
+| file-delete   |        |         |      |           |               |
+| file-read     | bytes  | Legacy  |      |           | &#10003;      |
+| file-write    | bytes  | Legacy  |      | &#10003;  |               |
+

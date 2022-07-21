@@ -1,73 +1,39 @@
 microsoft windows defender
 ==========================
 
-```JSON
-{"expression":"product = \"microsoft windows defender\"",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"message_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"recipient_count":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"target":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"apps":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "microsoft windows defender"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path       | Legacy |          |           | &#10003;      |
+|               | file_name       | Legacy | &#10003; |           |               |
+|               | message_id      |        |          |           |               |
+|               | recipient_count |        |          |           |               |
+|               | target          |        |          |           |               |
+|               | result          |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | sender          | Legacy | &#10003; |           |               |
+|               | user_id         |        |          |           |               |
+|               | bytes           | Legacy |          | &#10003;  |               |
+|               | recipients      |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | domain          |        |          |           |               |
+|               | recipient       |        |          |           |               |
+|               | event_name      |        |          |           |               |
+|               | operation       |        |          |           |               |
+|               | email_subject   |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | apps            |        |          |           |               |
+|               | object          |        |          |           |               |
+

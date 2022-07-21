@@ -1,108 +1,52 @@
 securityiq
 ==========
 
-```JSON
-{"expression":"product = \"securityiq\"",
-"activity_type":{"user-password-reset":{"fields":{"user_sid":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-download":{"fields":{}},
-"file-upload":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-permission-modify":{"fields":{"account_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sid_domain":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-delete":{"fields":{"user_sid":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-lock":{"fields":{"user_sid":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-create":{"fields":{"user_sid":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-read":{"fields":{"account_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"access":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sid_domain":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-remove":{"fields":{"group_id":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_sid":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "securityiq"
+
+Fields
+------
+
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| user  |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type          | Field      | Status | Core | Detection | Informational |
+| ---------------------- | ---------- | ------ | ---- | --------- | ------------- |
+| file-delete            | domain     |        |      |           |               |
+|                        | user_sid   |        |      |           |               |
+|                        | event_name |        |      |           |               |
+| file-download          |            |        |      |           |               |
+| file-permission-modify | account_id |        |      |           |               |
+|                        | access     | Legacy |      | &#10003;  |               |
+|                        | domain     |        |      |           |               |
+|                        | user_sid   |        |      |           |               |
+|                        | event_name |        |      |           |               |
+|                        | sid_domain |        |      |           |               |
+| file-read              | account_id |        |      |           |               |
+|                        | access     | Legacy |      | &#10003;  |               |
+|                        | domain     |        |      |           |               |
+|                        | user_sid   |        |      |           |               |
+|                        | event_name |        |      |           |               |
+|                        | sid_domain |        |      |           |               |
+| file-upload            | domain     |        |      |           |               |
+| file-write             | domain     |        |      |           |               |
+|                        | user_sid   |        |      |           |               |
+|                        | event_name |        |      |           |               |
+| group-member-remove    | group_id   | Legacy |      | &#10003;  |               |
+|                        | event_name |        |      |           |               |
+| user-create            | user_sid   | Legacy |      |           | &#10003;      |
+|                        | event_name |        |      |           |               |
+| user-delete            | user_sid   | Legacy |      |           | &#10003;      |
+|                        | event_name |        |      |           |               |
+| user-lock              | user_sid   | Legacy |      |           | &#10003;      |
+|                        | dest_host  | Legacy |      |           | &#10003;      |
+|                        | event_name |        |      |           |               |
+| user-password-reset    | user_sid   | Legacy |      |           | &#10003;      |
+|                        | event_name |        |      |           |               |
+

@@ -1,500 +1,151 @@
 github
 ======
 
-```JSON
-{"expression":"product = \"github\"",
-"activity_type":{"branch-protection-enable":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-delete":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"branch-protection-modify":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"repository-move":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"repository-create":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"hook-create":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"configuration-mfa-enable":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"repository-delete":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-invite-cancel":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-repository-add":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user_agent":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-repository-remove":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"branch-protection-disable":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-activity":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"branch-modify":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"hook-modify":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"repository-modify":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-delete":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"repository-member-add":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"repository-member-remove":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-modify":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-invite":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"log-download":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-remove":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-modify":{"fields":{"resource":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"object":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "github"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| domain |      |           | &#10003;      |
+| user   |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type             | Field           | Status  | Core     | Detection | Informational |
+| ------------------------- | --------------- | ------- | -------- | --------- | ------------- |
+| app-activity              | resource        | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| app-login                 | src_ip          | Default |          | &#10003;  |               |
+|                           | user_agent      | Default |          |           | &#10003;      |
+| branch-modify             | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| branch-protection-disable | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| branch-protection-enable  | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| branch-protection-modify  | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| configuration-mfa-enable  | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| group-delete              | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; |           |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+| group-member-add          | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+| group-member-remove       | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+| group-modify              | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; |           |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+| group-repository-add      | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| group-repository-remove   | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| hook-create               | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| hook-modify               | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| log-download              | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-create         | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-delete         | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-member-add     | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-member-remove  | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-modify         | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-move           | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| user-create               | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+| user-delete               | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; | &#10003;  |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+| user-invite               | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| user-invite-cancel        | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| user-modify               | resource        |         |          |           |               |
+|                           | additional_info |         |          |           |               |
+|                           | user            | Legacy  | &#10003; |           |               |
+|                           | operation       |         |          |           |               |
+|                           | object          |         |          |           |               |
+

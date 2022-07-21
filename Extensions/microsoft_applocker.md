@@ -1,51 +1,33 @@
 microsoft applocker
 ===================
 
-```JSON
-{"expression":"product = microsoft applocker",
-"activity_type":{"alert-trigger":{"fields":{"process":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"version":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malicious_file_count":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"execution_status":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"threat_type":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"error_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = microsoft applocker
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field                | Status | Core     | Detection | Informational |
+| ------------- | -------------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | process              |        |          |           |               |
+|               | threat_id            |        |          |           |               |
+|               | src_host             | Legacy | &#10003; | &#10003;  |               |
+|               | version              |        |          |           |               |
+|               | malicious_file_count |        |          |           |               |
+|               | result               |        |          |           |               |
+|               | user_id              |        |          |           |               |
+|               | malware_id           |        |          |           |               |
+|               | process_name         | Legacy |          | &#10003;  |               |
+|               | domain               |        |          |           |               |
+|               | execution_status     |        |          |           |               |
+|               | threat_type          |        |          |           |               |
+|               | error_code           |        |          |           |               |
+|               | malware_url          |        |          |           |               |
+

@@ -1,24 +1,24 @@
 akamai technologies
 ===================
 
-```JSON
-{"expression":"product = akamai technologies",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"src_port":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"malware_url":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"category":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = akamai technologies
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status | Core     | Detection | Informational |
+| ------------- | ----------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result      |        |          |           |               |
+|               | src_ip      | Legacy | &#10003; | &#10003;  |               |
+|               | src_port    | Legacy |          |           | &#10003;      |
+|               | malware_url |        |          |           |               |
+|               | category    |        |          |           |               |
+

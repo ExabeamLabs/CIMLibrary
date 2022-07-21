@@ -1,36 +1,28 @@
 abnormal inbound email protection
 =================================
 
-```JSON
-{"expression":"product = abnormal inbound email protection",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_address":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"sender":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"recipients":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"alert_id":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"recipient":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"message_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"email_subject":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = abnormal inbound email protection
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | result          |        |          |           |               |
+|               | email_address   |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | sender          | Legacy | &#10003; |           |               |
+|               | recipients      |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | recipient       |        |          |           |               |
+|               | message_id      |        |          |           |               |
+|               | email_subject   |        |          |           |               |
+

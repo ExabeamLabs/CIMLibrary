@@ -1,44 +1,31 @@
 cisco ios
 =========
 
-```JSON
-{"expression":"product = \"cisco ios\"",
-"activity_type":{"configuration-modify":{"fields":{"event_code":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"event_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_category":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"endpoint-login":{"fields":{"src_port":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"event_code":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"network-session":{"fields":{"src_interface":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"packets":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"process-create":{"fields":{"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"1",
-"informational":"0"}}}
-```
+Expression
+----------
+
+product = "cisco ios"
+
+Fields
+------
+
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| src_ip |      | &#10003;  |               |
+
+Activity Types
+--------------
+
+| Activity Type        | Field          | Status  | Core | Detection | Informational |
+| -------------------- | -------------- | ------- | ---- | --------- | ------------- |
+| configuration-modify | event_code     |         |      |           |               |
+|                      | event_name     |         |      |           |               |
+|                      | src_host       |         |      | &#10003;  |               |
+|                      | event_category |         |      |           |               |
+|                      | user           |         |      |           |               |
+| endpoint-login       | src_port       | Default |      |           | &#10003;      |
+|                      | event_code     | Default |      |           | &#10003;      |
+| network-session      | src_interface  | Default |      |           | &#10003;      |
+|                      | packets        | Default |      |           | &#10003;      |
+| process-create       | user           | Default |      | &#10003;  |               |
+

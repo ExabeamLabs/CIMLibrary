@@ -25,6 +25,8 @@ file-write:success
 file-write:fail
 ---------------
 
-| Field  | Core | Detection | Informational |
-| ------ | ---- | --------- | ------------- |
-| is_dok |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| is_dok         |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

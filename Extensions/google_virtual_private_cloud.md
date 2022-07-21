@@ -1,22 +1,26 @@
 google virtual private cloud
 ============================
 
-```JSON
-{"expression":"product = \"google virtual private cloud\"",
-"activity_type":{"network-traffic":{"fields":{}}},
-"fields":{"bytes_out":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"reporter":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"packets":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "google virtual private cloud"
+
+Fields
+------
+
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| bytes_out |      |           | &#10003;      |
+| dest_host |      |           | &#10003;      |
+| reporter  |      |           | &#10003;      |
+| src_host  |      |           | &#10003;      |
+| packets   |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type   | Field | Status | Core | Detection | Informational |
+| --------------- | ----- | ------ | ---- | --------- | ------------- |
+| network-traffic |       |        |      |           |               |
+

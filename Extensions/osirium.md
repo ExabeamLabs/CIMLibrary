@@ -1,11 +1,20 @@
 osirium
 =======
 
-```JSON
-{"expression":"product = \"osirium\"",
-"activity_type":{"app-login":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "osirium"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field  | Status  | Core | Detection | Informational |
+| ------------- | ------ | ------- | ---- | --------- | ------------- |
+| app-login     | src_ip | Default |      | &#10003;  |               |
+

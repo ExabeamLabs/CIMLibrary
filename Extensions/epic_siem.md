@@ -1,142 +1,54 @@
 epic siem
 =========
 
-```JSON
-{"expression":"product = \"epic siem\"",
-"activity_type":{"app-login":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"app-authentication":{"fields":{"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}},
-"app-activity":{"fields":{"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"result":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"dest_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"account":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-password-modify":{"fields":{"src_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"event_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"resource":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"src_host":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-switch":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"src_host":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "epic siem"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type        | Field           | Status  | Core | Detection | Informational |
+| -------------------- | --------------- | ------- | ---- | --------- | ------------- |
+| app-activity         | resource        | Default |      |           | &#10003;      |
+|                      | src_host        | Default |      | &#10003;  |               |
+|                      | result          | Default |      |           | &#10003;      |
+|                      | src_ip          | Default |      | &#10003;  |               |
+|                      | event_id        | Default |      |           | &#10003;      |
+|                      | application     | Default |      |           | &#10003;      |
+|                      | additional_info | Default |      |           | &#10003;      |
+|                      | user_id         | Default |      |           | &#10003;      |
+|                      | dest_ip         | Default |      | &#10003;  |               |
+|                      | dest_host       | Default |      | &#10003;  |               |
+|                      | user            | Default |      | &#10003;  |               |
+|                      | account         | Default |      | &#10003;  |               |
+|                      | object          | Default |      |           | &#10003;      |
+| app-authentication   | dest_host       | Default |      | &#10003;  |               |
+|                      | src_host        | Default |      | &#10003;  |               |
+| app-login            | resource        | Default |      |           | &#10003;      |
+|                      | additional_info | Default |      |           | &#10003;      |
+|                      | dest_ip         | Default |      | &#10003;  |               |
+|                      | dest_host       | Default |      | &#10003;  |               |
+|                      | src_host        | Default |      | &#10003;  |               |
+|                      | operation       | Default |      |           | &#10003;      |
+| user-password-modify | src_ip          | Default |      | &#10003;  |               |
+|                      | event_id        | Default |      |           | &#10003;      |
+|                      | resource        | Default |      |           | &#10003;      |
+|                      | additional_info | Default |      |           | &#10003;      |
+|                      | user_id         | Default |      |           | &#10003;      |
+|                      | dest_ip         | Default |      | &#10003;  |               |
+|                      | src_host        | Default |      | &#10003;  |               |
+|                      | operation       | Default |      |           | &#10003;      |
+|                      | object          | Default |      |           | &#10003;      |
+| user-switch          | result          |         |      |           |               |
+|                      | additional_info |         |      |           |               |
+|                      | dest_host       |         |      |           |               |
+|                      | src_host        |         |      |           |               |
+|                      | operation       |         |      |           |               |
+

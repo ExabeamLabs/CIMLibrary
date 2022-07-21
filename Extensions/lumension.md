@@ -1,53 +1,36 @@
 lumension
 =========
 
-```JSON
-{"expression":"product = \"lumension\"",
-"activity_type":{"peripheral_storage-activity":{"fields":{"file_path":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_ext":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"file_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"peripheral_storage-insert":{"fields":{"file_path":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{}},
-"file-read":{"fields":{}}},
-"fields":{"device_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_id":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"bytes":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"device_type":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation_details":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"operation":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "lumension"
+
+Fields
+------
+
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| device_id         |      |           | &#10003;      |
+| user_id           |      |           | &#10003;      |
+| bytes             |      |           | &#10003;      |
+| domain            |      |           | &#10003;      |
+| device_type       |      |           | &#10003;      |
+| user              |      |           | &#10003;      |
+| operation_details |      |           | &#10003;      |
+| operation         |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type               | Field     | Status  | Core | Detection | Informational |
+| --------------------------- | --------- | ------- | ---- | --------- | ------------- |
+| file-read                   |           |         |      |           |               |
+| file-write                  |           |         |      |           |               |
+| peripheral_storage-activity | file_path | Default |      |           | &#10003;      |
+|                             | file_ext  | Default |      |           | &#10003;      |
+|                             | file_name | Default |      |           | &#10003;      |
+| peripheral_storage-insert   | file_path |         |      |           |               |
+|                             | file_ext  |         |      |           |               |
+|                             | file_name |         |      |           |               |
+

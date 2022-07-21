@@ -1,19 +1,22 @@
 macos
 =====
 
-```JSON
-{"expression":"product = \"macos\"",
-"activity_type":{"endpoint-login":{"fields":{"login_id":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"process_name":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "macos"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type  | Field        | Status  | Core | Detection | Informational |
+| -------------- | ------------ | ------- | ---- | --------- | ------------- |
+| endpoint-login | login_id     | Default |      |           | &#10003;      |
+|                | process_name | Default |      |           | &#10003;      |
+|                | dest_ip      | Default |      | &#10003;  |               |
+

@@ -1,38 +1,28 @@
 safend data protection suite (dps)
 ==================================
 
-```JSON
-{"expression":"product = \"safend data protection suite (dps)\"",
-"activity_type":{"alert-trigger":{"fields":{"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"protocol":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"device_id":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"bytes":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"operating_system":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "safend data protection suite (dps)"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field            | Status | Core | Detection | Informational |
+| ------------- | ---------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | result           |        |      |           |               |
+|               | protocol         | Legacy |      | &#10003;  |               |
+|               | device_id        |        |      |           |               |
+|               | additional_info  |        |      |           |               |
+|               | bytes            | Legacy |      | &#10003;  |               |
+|               | process_name     | Legacy |      | &#10003;  |               |
+|               | domain           |        |      |           |               |
+|               | operating_system |        |      |           |               |
+|               | user             | Legacy |      | &#10003;  |               |
+

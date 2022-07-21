@@ -1,44 +1,29 @@
 vormetric
 =========
 
-```JSON
-{"expression":"product = \"vormetric\"",
-"activity_type":{"alert-trigger":{"fields":{"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"process_name":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"action":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"process_dir":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"process_path":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "vormetric"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field        | Status | Core     | Detection | Informational |
+| ------------- | ------------ | ------ | -------- | --------- | ------------- |
+| alert-trigger | access       |        |          |           |               |
+|               | file_name    | Legacy | &#10003; |           |               |
+|               | process_name | Legacy |          | &#10003;  |               |
+|               | domain       |        |          |           |               |
+|               | file_dir     | Legacy |          |           | &#10003;      |
+|               | action       | Legacy |          |           | &#10003;      |
+|               | dest_host    | Legacy |          | &#10003;  |               |
+|               | process_dir  |        |          |           |               |
+|               | process_path | Legacy |          | &#10003;  |               |
+|               | user         | Legacy |          | &#10003;  |               |
+

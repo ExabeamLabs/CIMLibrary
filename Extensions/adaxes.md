@@ -1,27 +1,24 @@
 adaxes
 ======
 
-```JSON
-{"expression":"product = \"adaxes\"",
-"activity_type":{"app-activity":{"fields":{"application":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"target":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "adaxes"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| app-activity  | application | Default |      |           | &#10003;      |
+|               | domain      | Default |      |           | &#10003;      |
+|               | user        | Default |      | &#10003;  |               |
+|               | object      | Default |      |           | &#10003;      |
+|               | target      | Default |      |           | &#10003;      |
+

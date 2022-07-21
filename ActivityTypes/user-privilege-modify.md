@@ -25,6 +25,8 @@ user-privilege-modify:success
 user-privilege-modify:fail
 --------------------------
 
-| Field      | Core | Detection | Informational |
-| ---------- | ---- | --------- | ------------- |
-| privileges |      |           |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| privileges     |      |           |               |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

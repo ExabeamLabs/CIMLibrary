@@ -1,112 +1,50 @@
 microsoft cas
 =============
 
-```JSON
-{"expression":"product = \"microsoft cas\"",
-"activity_type":{"email-send":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"mailbox-item-move":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-delete":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"mailbox-item-delete":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-move":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-member-add":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"app-activity":{"fields":{"access":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"dest_ip":{"Status":"Default",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"object":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-read":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-delete":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-modify":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"email-create":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"mailbox-item-create":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-modify":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"mailbox-item-modify":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"email-move":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"alert-trigger":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"user-role-assign":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"file-rename":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"user-create":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"file-write":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"group-member-remove":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}},
-"mailbox-permission-modify":{"fields":{"operation":{"Status":"Default",
-"core":"0",
-"detection":"0",
-"informational":"1"}}},
-"group-modify":{"fields":{"operation":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{"src_ip":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user":{"core":"0",
-"detection":"0",
-"informational":"1"},
-"user_agent":{"core":"0",
-"detection":"0",
-"informational":"1"}}}
-```
+Expression
+----------
+
+product = "microsoft cas"
+
+Fields
+------
+
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+| domain          |      |           | &#10003;      |
+| user            |      |           | &#10003;      |
+| user_agent      |      |           | &#10003;      |
+
+Activity Types
+--------------
+
+| Activity Type             | Field     | Status  | Core | Detection | Informational |
+| ------------------------- | --------- | ------- | ---- | --------- | ------------- |
+| alert-trigger             | operation |         |      |           |               |
+| app-activity              | access    | Default |      |           | &#10003;      |
+|                           | dest_ip   | Default |      | &#10003;  |               |
+|                           | object    | Default |      |           | &#10003;      |
+| email-create              | operation | Default |      |           | &#10003;      |
+| email-delete              | operation | Default |      |           | &#10003;      |
+| email-modify              | operation | Default |      |           | &#10003;      |
+| email-move                | operation | Default |      |           | &#10003;      |
+| email-send                | operation | Default |      |           | &#10003;      |
+| file-delete               | operation |         |      |           |               |
+| file-move                 | operation | Default |      |           | &#10003;      |
+| file-read                 | operation |         |      |           |               |
+| file-rename               | operation | Default |      |           | &#10003;      |
+| file-write                | operation |         |      |           |               |
+| group-member-add          | operation |         |      |           |               |
+| group-member-remove       | operation |         |      |           |               |
+| group-modify              | operation |         |      |           |               |
+| mailbox-item-create       | operation | Default |      |           | &#10003;      |
+| mailbox-item-delete       | operation | Default |      |           | &#10003;      |
+| mailbox-item-modify       | operation | Default |      |           | &#10003;      |
+| mailbox-item-move         | operation | Default |      |           | &#10003;      |
+| mailbox-permission-modify | operation | Default |      |           | &#10003;      |
+| user-create               | operation |         |      |           |               |
+| user-modify               | operation |         |      |           |               |
+| user-role-assign          | operation | Default |      |           | &#10003;      |
+

@@ -25,6 +25,8 @@ password-copy:success
 password-copy:fail
 ------------------
 
-| Field        | Core | Detection | Informational |
-| ------------ | ---- | --------- | ------------- |
-| src_password |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
+| src_password   |      |           | &#10003;      |

@@ -1,55 +1,33 @@
 varonis data security platform
 ==============================
 
-```JSON
-{"expression":"product = \"varonis data security platform\"",
-"activity_type":{"alert-trigger":{"fields":{"file_path":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"access":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_name":{"Status":"Legacy",
-"core":"1",
-"detection":"0",
-"informational":"0"},
-"file_dir":{"Status":"Legacy",
-"core":"0",
-"detection":"0",
-"informational":"1"},
-"last_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"result":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"file_ext":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"full_name":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"additional_info":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_ip":{"Status":"Legacy",
-"core":"1",
-"detection":"1",
-"informational":"0"},
-"domain":{"core":"0",
-"detection":"0",
-"informational":"0"},
-"dest_host":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"user":{"Status":"Legacy",
-"core":"0",
-"detection":"1",
-"informational":"0"},
-"first_name":{"core":"0",
-"detection":"0",
-"informational":"0"}}}},
-"fields":{}}
-```
+Expression
+----------
+
+product = "varonis data security platform"
+
+Fields
+------
+
+There are no fields for this extension.
+
+Activity Types
+--------------
+
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path       | Legacy |          |           | &#10003;      |
+|               | access          |        |          |           |               |
+|               | file_name       | Legacy | &#10003; |           |               |
+|               | file_dir        | Legacy |          |           | &#10003;      |
+|               | last_name       |        |          |           |               |
+|               | result          |        |          |           |               |
+|               | file_ext        |        |          |           |               |
+|               | full_name       |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
+|               | domain          |        |          |           |               |
+|               | dest_host       | Legacy |          | &#10003;  |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | first_name      |        |          |           |               |
+
