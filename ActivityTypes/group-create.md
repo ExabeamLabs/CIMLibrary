@@ -5,15 +5,26 @@ Description
 -----------
 A group was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-createsuccess) or a [fail](#group-createfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | group        |
 | Activity      | create       |
 | Activity Type | group-create |
 | Pretty Name   | Group Create |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success | Fail   |
+| ------- | ------ |
+| NA<br>  | NA<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-createsuccess) or a [fail](#group-createfail).
+
 
 group-create:success
 --------------------

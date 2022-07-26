@@ -5,15 +5,21 @@ Description
 -----------
 A SSL session was initiated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-startsuccess) or a [fail](#ssl-startfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ssl       |
 | Activity      | start     |
 | Activity Type | ssl-start |
 | Pretty Name   | Ssl Start |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-startsuccess) or a [fail](#ssl-startfail).
+
 
 ssl-start:success
 -----------------

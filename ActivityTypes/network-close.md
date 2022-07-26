@@ -5,15 +5,21 @@ Description
 -----------
 A network session was terminated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#network-closesuccess) or a [fail](#network-closefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | network       |
 | Activity      | close         |
 | Activity Type | network-close |
 | Pretty Name   | Network Close |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#network-closesuccess) or a [fail](#network-closefail).
+
 
 network-close:success
 ---------------------

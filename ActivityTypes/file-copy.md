@@ -5,15 +5,21 @@ Description
 -----------
 A file was copied
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-copysuccess) or a [fail](#file-copyfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | file      |
 | Activity      | copy      |
 | Activity Type | file-copy |
 | Pretty Name   | File Copy |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-copysuccess) or a [fail](#file-copyfail).
+
 
 file-copy:success
 -----------------

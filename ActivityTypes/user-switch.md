@@ -5,15 +5,26 @@ Description
 -----------
 A user switched into another user account
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-switchsuccess) or a [fail](#user-switchfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | switch      |
 | Activity Type | user-switch |
 | Pretty Name   | User Switch |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success            | Fail               |
+| ------------------ | ------------------ |
+| account-switch<br> | account-switch<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-switchsuccess) or a [fail](#user-switchfail).
+
 
 user-switch:success
 -------------------

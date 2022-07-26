@@ -5,15 +5,21 @@ Description
 -----------
 An automation cloud function was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#function-createsuccess) or a [fail](#function-createfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | function        |
 | Activity      | create          |
 | Activity Type | function-create |
 | Pretty Name   | Function Create |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#function-createsuccess) or a [fail](#function-createfail).
+
 
 function-create:success
 -----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A web response was provided from a destination using the HTTP protocol
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#http-responsesuccess) or a [fail](#http-responsefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | http          |
 | Activity      | response      |
 | Activity Type | http-response |
 | Pretty Name   | Http Response |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-responsesuccess) or a [fail](#http-responsefail).
+
 
 http-response:success
 ---------------------

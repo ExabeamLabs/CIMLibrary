@@ -5,15 +5,21 @@ Description
 -----------
 The security role association of a user account was modified directly
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-role-modifysuccess) or a [fail](#user-role-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | user             |
 | Activity      | role-modify      |
 | Activity Type | user-role-modify |
 | Pretty Name   | User Role Modify |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-role-modifysuccess) or a [fail](#user-role-modifyfail).
+
 
 user-role-modify:success
 ------------------------

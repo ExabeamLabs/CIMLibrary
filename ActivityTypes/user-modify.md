@@ -5,15 +5,26 @@ Description
 -----------
 The attributes of a user were changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-modifysuccess) or a [fail](#user-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | modify      |
 | Activity Type | user-modify |
 | Pretty Name   | User Modify |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success | Fail   |
+| ------- | ------ |
+| NA<br>  | NA<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-modifysuccess) or a [fail](#user-modifyfail).
+
 
 user-modify:success
 -------------------

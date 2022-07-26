@@ -5,15 +5,21 @@ Description
 -----------
 The global configuration of an application or a program was read
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-readsuccess) or a [fail](#configuration-readfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | configuration      |
 | Activity      | read               |
 | Activity Type | configuration-read |
 | Pretty Name   | Configuration Read |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-readsuccess) or a [fail](#configuration-readfail).
+
 
 configuration-read:success
 --------------------------

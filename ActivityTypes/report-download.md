@@ -5,15 +5,21 @@ Description
 -----------
 A report was downloaded from an app
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#report-downloadsuccess) or a [fail](#report-downloadfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | report          |
 | Activity      | download        |
 | Activity Type | report-download |
 | Pretty Name   | Report Download |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#report-downloadsuccess) or a [fail](#report-downloadfail).
+
 
 report-download:success
 -----------------------

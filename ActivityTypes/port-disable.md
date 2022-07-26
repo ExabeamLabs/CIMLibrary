@@ -5,15 +5,21 @@ Description
 -----------
 A port was disabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#port-disablesuccess) or a [fail](#port-disablefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | port         |
 | Activity      | disable      |
 | Activity Type | port-disable |
 | Pretty Name   | Port Disable |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#port-disablesuccess) or a [fail](#port-disablefail).
+
 
 port-disable:success
 --------------------

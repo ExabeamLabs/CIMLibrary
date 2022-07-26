@@ -5,15 +5,26 @@ Description
 -----------
 An activation of DCOM application
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dcom-activatesuccess) or a [fail](#dcom-activatefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | dcom          |
 | Activity      | activate      |
 | Activity Type | dcom-activate |
 | Pretty Name   | Dcom Activate |
-| Legacy Name   |               |
+
+Legacy Names
+------------
+| Success | Fail                       |
+| ------- | -------------------------- |
+| NA<br>  | dcom-activation-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dcom-activatesuccess) or a [fail](#dcom-activatefail).
+
 
 dcom-activate:success
 ---------------------

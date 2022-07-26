@@ -5,15 +5,26 @@ Description
 -----------
 A file was uploaded to a website
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-uploadsuccess) or a [fail](#file-uploadfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | file        |
 | Activity      | upload      |
 | Activity Type | file-upload |
 | Pretty Name   | File Upload |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success         | Fail            |
+| --------------- | --------------- |
+| file-upload<br> | file-upload<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-uploadsuccess) or a [fail](#file-uploadfail).
+
 
 file-upload:success
 -------------------

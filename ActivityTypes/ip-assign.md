@@ -5,15 +5,21 @@ Description
 -----------
 An IP was dispensed and is in use
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ip-assignsuccess) or a [fail](#ip-assignfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ip        |
 | Activity      | assign    |
 | Activity Type | ip-assign |
 | Pretty Name   | Ip Assign |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ip-assignsuccess) or a [fail](#ip-assignfail).
+
 
 ip-assign:success
 -----------------

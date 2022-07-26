@@ -5,15 +5,21 @@ Description
 -----------
 A communication channel was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-deletesuccess) or a [fail](#channel-deletefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | channel        |
 | Activity      | delete         |
 | Activity Type | channel-delete |
 | Pretty Name   | Channel Delete |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-deletesuccess) or a [fail](#channel-deletefail).
+
 
 channel-delete:success
 ----------------------

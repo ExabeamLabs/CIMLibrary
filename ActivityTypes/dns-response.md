@@ -5,15 +5,26 @@ Description
 -----------
 A DNS response was recevied
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-responsesuccess) or a [fail](#dns-responsefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | dns          |
 | Activity      | response     |
 | Activity Type | dns-response |
 | Pretty Name   | Dns Response |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success          | Fail             |
+| ---------------- | ---------------- |
+| dns-response<br> | dns-response<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-responsesuccess) or a [fail](#dns-responsefail).
+
 
 dns-response:success
 --------------------

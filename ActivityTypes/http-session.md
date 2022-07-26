@@ -5,15 +5,26 @@ Description
 -----------
 A summary of a complete HTTP web session
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#http-sessionsuccess) or a [fail](#http-sessionfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | http         |
 | Activity      | session      |
 | Activity Type | http-session |
 | Pretty Name   | Http Session |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success                  | Fail                    |
+| ------------------------ | ----------------------- |
+| web-activity-allowed<br> | web-activity-denied<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-sessionsuccess) or a [fail](#http-sessionfail).
+
 
 http-session:success
 --------------------

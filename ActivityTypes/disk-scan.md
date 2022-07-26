@@ -5,15 +5,21 @@ Description
 -----------
 A scan that targeted disk objecs took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-scansuccess) or a [fail](#disk-scanfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | disk      |
 | Activity      | scan      |
 | Activity Type | disk-scan |
 | Pretty Name   | Disk Scan |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-scansuccess) or a [fail](#disk-scanfail).
+
 
 disk-scan:success
 -----------------

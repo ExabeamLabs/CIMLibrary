@@ -5,15 +5,21 @@ Description
 -----------
 The owner of a file was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-owner-modifysuccess) or a [fail](#file-owner-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | file              |
 | Activity      | owner-modify      |
 | Activity Type | file-owner-modify |
 | Pretty Name   | File Owner Modify |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-owner-modifysuccess) or a [fail](#file-owner-modifyfail).
+
 
 file-owner-modify:success
 -------------------------

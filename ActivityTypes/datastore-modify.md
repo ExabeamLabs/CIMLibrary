@@ -5,15 +5,21 @@ Description
 -----------
 The properties or configuration of a virtualization datastore were modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#datastore-modifysuccess) or a [fail](#datastore-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | datastore        |
 | Activity      | modify           |
 | Activity Type | datastore-modify |
 | Pretty Name   | Datastore Modify |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#datastore-modifysuccess) or a [fail](#datastore-modifyfail).
+
 
 datastore-modify:success
 ------------------------

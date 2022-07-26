@@ -5,15 +5,21 @@ Description
 -----------
 A user has initiated a 'forgot password' process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-forgetsuccess) or a [fail](#user-password-forgetfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | user                 |
 | Activity      | password-forget      |
 | Activity Type | user-password-forget |
 | Pretty Name   | User Password Forget |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-forgetsuccess) or a [fail](#user-password-forgetfail).
+
 
 user-password-forget:success
 ----------------------------

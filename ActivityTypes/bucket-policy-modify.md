@@ -5,15 +5,21 @@ Description
 -----------
 The security policy linked to the bucket was updated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-policy-modifysuccess) or a [fail](#bucket-policy-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | bucket               |
 | Activity      | policy-modify        |
 | Activity Type | bucket-policy-modify |
 | Pretty Name   | Bucket Policy Modify |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-policy-modifysuccess) or a [fail](#bucket-policy-modifyfail).
+
 
 bucket-policy-modify:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The ACL or any other passive permission configuration applied to the bucket was updated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-permission-modifysuccess) or a [fail](#bucket-permission-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                    |
 | ------------- | ------------------------ |
 | Subject       | bucket                   |
 | Activity      | permission-modify        |
 | Activity Type | bucket-permission-modify |
 | Pretty Name   | Bucket Permission Modify |
-| Legacy Name   |                          |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-permission-modifysuccess) or a [fail](#bucket-permission-modifyfail).
+
 
 bucket-permission-modify:success
 --------------------------------

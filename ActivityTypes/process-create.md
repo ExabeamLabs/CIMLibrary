@@ -5,15 +5,26 @@ Description
 -----------
 A process was executed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-createsuccess) or a [fail](#process-createfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | process        |
 | Activity      | create         |
 | Activity Type | process-create |
 | Pretty Name   | Process Create |
-| Legacy Name   |                |
+
+Legacy Names
+------------
+| Success             | Fail                       |
+| ------------------- | -------------------------- |
+| process-created<br> | process-created-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-createsuccess) or a [fail](#process-createfail).
+
 
 process-create:success
 ----------------------

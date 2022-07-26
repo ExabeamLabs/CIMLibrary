@@ -5,15 +5,21 @@ Description
 -----------
 A digital certificate object was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-createsuccess) or a [fail](#certificate-createfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | certificate        |
 | Activity      | create             |
 | Activity Type | certificate-create |
 | Pretty Name   | Certificate Create |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-createsuccess) or a [fail](#certificate-createfail).
+
 
 certificate-create:success
 --------------------------

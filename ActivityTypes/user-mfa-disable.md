@@ -5,15 +5,21 @@ Description
 -----------
 The MFA configuration for a user account was set to disabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-mfa-disablesuccess) or a [fail](#user-mfa-disablefail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | user             |
 | Activity      | mfa-disable      |
 | Activity Type | user-mfa-disable |
 | Pretty Name   | User Mfa Disable |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-mfa-disablesuccess) or a [fail](#user-mfa-disablefail).
+
 
 user-mfa-disable:success
 ------------------------

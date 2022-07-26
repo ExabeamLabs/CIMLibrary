@@ -5,15 +5,21 @@ Description
 -----------
 A representation of a single DHCP packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-trafficsuccess) or a [fail](#dhcp-trafficfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | dhcp         |
 | Activity      | traffic      |
 | Activity Type | dhcp-traffic |
 | Pretty Name   | Dhcp Traffic |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-trafficsuccess) or a [fail](#dhcp-trafficfail).
+
 
 dhcp-traffic:success
 --------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A scheduled task was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-createsuccess) or a [fail](#scheduled_task-createfail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | scheduled_task        |
 | Activity      | create                |
 | Activity Type | scheduled_task-create |
 | Pretty Name   | Scheduled_task Create |
-| Legacy Name   |                       |
+
+Legacy Names
+------------
+| Success          | Fail             |
+| ---------------- | ---------------- |
+| task-created<br> | task-created<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-createsuccess) or a [fail](#scheduled_task-createfail).
+
 
 scheduled_task-create:success
 -----------------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A group was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-modifysuccess) or a [fail](#group-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | group        |
 | Activity      | modify       |
 | Activity Type | group-modify |
 | Pretty Name   | Group Modify |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success | Fail   |
+| ------- | ------ |
+| NA<br>  | NA<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-modifysuccess) or a [fail](#group-modifyfail).
+
 
 group-modify:success
 --------------------

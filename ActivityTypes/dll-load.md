@@ -5,15 +5,26 @@ Description
 -----------
 A dll module was loaded into a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dll-loadsuccess) or a [fail](#dll-loadfail).
-
+Parameters
+----------
 | Parameter     | Value    |
 | ------------- | -------- |
 | Subject       | dll      |
 | Activity      | load     |
 | Activity Type | dll-load |
 | Pretty Name   | Dll Load |
-| Legacy Name   |          |
+
+Legacy Names
+------------
+| Success          | Fail             |
+| ---------------- | ---------------- |
+| image-loaded<br> | image-loaded<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dll-loadsuccess) or a [fail](#dll-loadfail).
+
 
 dll-load:success
 ----------------

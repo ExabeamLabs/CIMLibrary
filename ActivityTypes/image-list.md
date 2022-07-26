@@ -5,15 +5,21 @@ Description
 -----------
 An enumeration of VM image objects took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#image-listsuccess) or a [fail](#image-listfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | image      |
 | Activity      | list       |
 | Activity Type | image-list |
 | Pretty Name   | Image List |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#image-listsuccess) or a [fail](#image-listfail).
+
 
 image-list:success
 ------------------

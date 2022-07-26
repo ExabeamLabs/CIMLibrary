@@ -5,15 +5,21 @@ Description
 -----------
 Virtual memory was read from a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-memory-readsuccess) or a [fail](#process-memory-readfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | process             |
 | Activity      | memory-read         |
 | Activity Type | process-memory-read |
 | Pretty Name   | Process Memory Read |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-memory-readsuccess) or a [fail](#process-memory-readfail).
+
 
 process-memory-read:success
 ---------------------------

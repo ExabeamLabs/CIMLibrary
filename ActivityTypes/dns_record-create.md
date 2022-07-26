@@ -5,15 +5,21 @@ Description
 -----------
 A DNS record was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-createsuccess) or a [fail](#dns_record-createfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | dns_record        |
 | Activity      | create            |
 | Activity Type | dns_record-create |
 | Pretty Name   | Dns_record Create |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-createsuccess) or a [fail](#dns_record-createfail).
+
 
 dns_record-create:success
 -------------------------

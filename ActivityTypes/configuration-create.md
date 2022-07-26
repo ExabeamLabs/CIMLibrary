@@ -5,15 +5,21 @@ Description
 -----------
 A global configuration definition was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-createsuccess) or a [fail](#configuration-createfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | configuration        |
 | Activity      | create               |
 | Activity Type | configuration-create |
 | Pretty Name   | Configuration Create |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-createsuccess) or a [fail](#configuration-createfail).
+
 
 configuration-create:success
 ----------------------------

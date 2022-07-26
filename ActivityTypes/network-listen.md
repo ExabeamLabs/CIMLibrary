@@ -5,15 +5,21 @@ Description
 -----------
 A network process or service has started listening for connections
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#network-listensuccess) or a [fail](#network-listenfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | network        |
 | Activity      | listen         |
 | Activity Type | network-listen |
 | Pretty Name   | Network Listen |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#network-listensuccess) or a [fail](#network-listenfail).
+
 
 network-listen:success
 ----------------------

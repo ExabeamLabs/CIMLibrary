@@ -5,15 +5,21 @@ Description
 -----------
 The properties of a communication channel were changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-modifysuccess) or a [fail](#channel-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | channel        |
 | Activity      | modify         |
 | Activity Type | channel-modify |
 | Pretty Name   | Channel Modify |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-modifysuccess) or a [fail](#channel-modifyfail).
+
 
 channel-modify:success
 ----------------------

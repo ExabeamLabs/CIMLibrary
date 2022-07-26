@@ -5,15 +5,21 @@ Description
 -----------
 A part of a directory service replication process is taking place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replicationsuccess) or a [fail](#ds-replicationfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | ds             |
 | Activity      | replication    |
 | Activity Type | ds-replication |
 | Pretty Name   | Ds Replication |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replicationsuccess) or a [fail](#ds-replicationfail).
+
 
 ds-replication:success
 ----------------------

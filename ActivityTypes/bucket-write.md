@@ -5,15 +5,21 @@ Description
 -----------
 A cloud bucket was created or modified, only used as a catch all if create or modify cannot be determined
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-writesuccess) or a [fail](#bucket-writefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | bucket       |
 | Activity      | write        |
 | Activity Type | bucket-write |
 | Pretty Name   | Bucket Write |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-writesuccess) or a [fail](#bucket-writefail).
+
 
 bucket-write:success
 --------------------

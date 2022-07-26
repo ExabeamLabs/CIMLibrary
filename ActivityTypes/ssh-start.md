@@ -5,15 +5,21 @@ Description
 -----------
 A SSH sesssion was initiated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ssh-startsuccess) or a [fail](#ssh-startfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ssh       |
 | Activity      | start     |
 | Activity Type | ssh-start |
 | Pretty Name   | Ssh Start |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssh-startsuccess) or a [fail](#ssh-startfail).
+
 
 ssh-start:success
 -----------------

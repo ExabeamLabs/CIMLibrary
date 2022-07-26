@@ -5,15 +5,21 @@ Description
 -----------
 A VM host was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-createsuccess) or a [fail](#vm_host-createfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | vm_host        |
 | Activity      | create         |
 | Activity Type | vm_host-create |
 | Pretty Name   | Vm_host Create |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-createsuccess) or a [fail](#vm_host-createfail).
+
 
 vm_host-create:success
 ----------------------

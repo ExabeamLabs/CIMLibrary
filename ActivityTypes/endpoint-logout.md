@@ -5,15 +5,26 @@ Description
 -----------
 A user logged out of an endpoint
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-logoutsuccess) or a [fail](#endpoint-logoutfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | endpoint        |
 | Activity      | logout          |
 | Activity Type | endpoint-logout |
 | Pretty Name   | Endpoint Logout |
-| Legacy Name   |                 |
+
+Legacy Names
+------------
+| Success                                    | Fail |
+| ------------------------------------------ | ---- |
+| logout-remote<br>winsession-disconnect<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-logoutsuccess) or a [fail](#endpoint-logoutfail).
+
 
 endpoint-logout:success
 -----------------------

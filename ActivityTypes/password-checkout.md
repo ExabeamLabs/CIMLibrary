@@ -5,15 +5,21 @@ Description
 -----------
 A password was checked out from a vault, a checkout is a one timed access of a password, that blocks other users from accessing it at that time
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#password-checkoutsuccess) or a [fail](#password-checkoutfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | password          |
 | Activity      | checkout          |
 | Activity Type | password-checkout |
 | Pretty Name   | Password Checkout |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-checkoutsuccess) or a [fail](#password-checkoutfail).
+
 
 password-checkout:success
 -------------------------

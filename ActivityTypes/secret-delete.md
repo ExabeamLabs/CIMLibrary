@@ -5,15 +5,21 @@ Description
 -----------
 Secret credentials were deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-deletesuccess) or a [fail](#secret-deletefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | secret        |
 | Activity      | delete        |
 | Activity Type | secret-delete |
 | Pretty Name   | Secret Delete |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-deletesuccess) or a [fail](#secret-deletefail).
+
 
 secret-delete:success
 ---------------------

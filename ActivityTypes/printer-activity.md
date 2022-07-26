@@ -5,15 +5,26 @@ Description
 -----------
 An activity in a printer
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#printer-activitysuccess) or a [fail](#printer-activityfail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | printer          |
 | Activity      | activity         |
 | Activity Type | printer-activity |
 | Pretty Name   | Printer Activity |
-| Legacy Name   |                  |
+
+Legacy Names
+------------
+| Success            | Fail |
+| ------------------ | ---- |
+| print-activity<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#printer-activitysuccess) or a [fail](#printer-activityfail).
+
 
 printer-activity:success
 ------------------------

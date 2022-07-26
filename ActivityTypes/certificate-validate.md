@@ -5,15 +5,21 @@ Description
 -----------
 The authenticity of a digital certificate was validated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-validatesuccess) or a [fail](#certificate-validatefail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | certificate          |
 | Activity      | validate             |
 | Activity Type | certificate-validate |
 | Pretty Name   | Certificate Validate |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-validatesuccess) or a [fail](#certificate-validatefail).
+
 
 certificate-validate:success
 ----------------------------

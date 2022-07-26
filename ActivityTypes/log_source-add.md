@@ -5,15 +5,21 @@ Description
 -----------
 A log source was added to a program or an app
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#log_source-addsuccess) or a [fail](#log_source-addfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | log_source     |
 | Activity      | add            |
 | Activity Type | log_source-add |
 | Pretty Name   | Log_source Add |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log_source-addsuccess) or a [fail](#log_source-addfail).
+
 
 log_source-add:success
 ----------------------

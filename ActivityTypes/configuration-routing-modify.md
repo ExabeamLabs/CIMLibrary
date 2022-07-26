@@ -5,15 +5,21 @@ Description
 -----------
 The global routing configuration of an application or a program was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-routing-modifysuccess) or a [fail](#configuration-routing-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                        |
 | ------------- | ---------------------------- |
 | Subject       | configuration                |
 | Activity      | routing-modify               |
 | Activity Type | configuration-routing-modify |
 | Pretty Name   | Configuration Routing Modify |
-| Legacy Name   |                              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-routing-modifysuccess) or a [fail](#configuration-routing-modifyfail).
+
 
 configuration-routing-modify:success
 ------------------------------------

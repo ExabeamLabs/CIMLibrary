@@ -5,15 +5,26 @@ Description
 -----------
 A representation of a single network packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#network-trafficsuccess) or a [fail](#network-trafficfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | network         |
 | Activity      | traffic         |
 | Activity Type | network-traffic |
 | Pretty Name   | Network Traffic |
-| Legacy Name   |                 |
+
+Legacy Names
+------------
+| Success                                                 | Fail                                                |
+| ------------------------------------------------------- | --------------------------------------------------- |
+| netflow-connection<br>network-connection-successful<br> | netflow-connection<br>network-connection-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#network-trafficsuccess) or a [fail](#network-trafficfail).
+
 
 network-traffic:success
 -----------------------

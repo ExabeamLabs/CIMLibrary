@@ -5,15 +5,21 @@ Description
 -----------
 A git repository was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-createsuccess) or a [fail](#repository-createfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | repository        |
 | Activity      | create            |
 | Activity Type | repository-create |
 | Pretty Name   | Repository Create |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-createsuccess) or a [fail](#repository-createfail).
+
 
 repository-create:success
 -------------------------

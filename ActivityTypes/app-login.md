@@ -5,15 +5,26 @@ Description
 -----------
 A user logged in to an application
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-loginsuccess) or a [fail](#app-loginfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | app       |
 | Activity      | login     |
 | Activity Type | app-login |
 | Pretty Name   | App Login |
-| Legacy Name   |           |
+
+Legacy Names
+------------
+| Success                              | Fail                                        |
+| ------------------------------------ | ------------------------------------------- |
+| app-login<br>webconference-login<br> | failed-app-login<br>webconference-login<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-loginsuccess) or a [fail](#app-loginfail).
+
 
 app-login:success
 -----------------

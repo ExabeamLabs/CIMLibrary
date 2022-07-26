@@ -5,15 +5,21 @@ Description
 -----------
 The properties or configuration of the service object were updated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#service-modifysuccess) or a [fail](#service-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | service        |
 | Activity      | modify         |
 | Activity Type | service-modify |
 | Pretty Name   | Service Modify |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#service-modifysuccess) or a [fail](#service-modifyfail).
+
 
 service-modify:success
 ----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A directory service replication has started
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-startsuccess) or a [fail](#ds-replication-startfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | ds                   |
 | Activity      | replication-start    |
 | Activity Type | ds-replication-start |
 | Pretty Name   | Ds Replication Start |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-startsuccess) or a [fail](#ds-replication-startfail).
+
 
 ds-replication-start:success
 ----------------------------

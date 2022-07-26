@@ -5,15 +5,26 @@ Description
 -----------
 An audit policy was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#audit_policy-modifysuccess) or a [fail](#audit_policy-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | audit_policy        |
 | Activity      | modify              |
 | Activity Type | audit_policy-modify |
 | Pretty Name   | Audit_policy Modify |
-| Legacy Name   |                     |
+
+Legacy Names
+------------
+| Success                 | Fail                    |
+| ----------------------- | ----------------------- |
+| audit-policy-change<br> | audit-policy-change<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#audit_policy-modifysuccess) or a [fail](#audit_policy-modifyfail).
+
 
 audit_policy-modify:success
 ---------------------------

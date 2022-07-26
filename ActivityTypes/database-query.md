@@ -5,15 +5,26 @@ Description
 -----------
 A database resource was queried
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-querysuccess) or a [fail](#database-queryfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | database       |
 | Activity      | query          |
 | Activity Type | database-query |
 | Pretty Name   | Database Query |
-| Legacy Name   |                |
+
+Legacy Names
+------------
+| Success            | Fail               |
+| ------------------ | ------------------ |
+| database-query<br> | database-query<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-querysuccess) or a [fail](#database-queryfail).
+
 
 database-query:success
 ----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A VM image was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#image-createsuccess) or a [fail](#image-createfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | image        |
 | Activity      | create       |
 | Activity Type | image-create |
 | Pretty Name   | Image Create |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#image-createsuccess) or a [fail](#image-createfail).
+
 
 image-create:success
 --------------------

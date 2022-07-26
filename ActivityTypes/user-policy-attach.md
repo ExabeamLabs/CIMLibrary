@@ -5,15 +5,21 @@ Description
 -----------
 A policy document was attached to the user
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-policy-attachsuccess) or a [fail](#user-policy-attachfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | user               |
 | Activity      | policy-attach      |
 | Activity Type | user-policy-attach |
 | Pretty Name   | User Policy Attach |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-policy-attachsuccess) or a [fail](#user-policy-attachfail).
+
 
 user-policy-attach:success
 --------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A security policy was enforced on the system or the object
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-applysuccess) or a [fail](#policy-applyfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | policy       |
 | Activity      | apply        |
 | Activity Type | policy-apply |
 | Pretty Name   | Policy Apply |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-applysuccess) or a [fail](#policy-applyfail).
+
 
 policy-apply:success
 --------------------

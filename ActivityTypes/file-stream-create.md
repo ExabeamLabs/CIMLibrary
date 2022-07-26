@@ -5,15 +5,21 @@ Description
 -----------
 A file stream (windows) was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-stream-createsuccess) or a [fail](#file-stream-createfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | file               |
 | Activity      | stream-create      |
 | Activity Type | file-stream-create |
 | Pretty Name   | File Stream Create |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-stream-createsuccess) or a [fail](#file-stream-createfail).
+
 
 file-stream-create:success
 --------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 Virtual memory was allocated in a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-memory-allocatesuccess) or a [fail](#process-memory-allocatefail).
-
+Parameters
+----------
 | Parameter     | Value                   |
 | ------------- | ----------------------- |
 | Subject       | process                 |
 | Activity      | memory-allocate         |
 | Activity Type | process-memory-allocate |
 | Pretty Name   | Process Memory Allocate |
-| Legacy Name   |                         |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-memory-allocatesuccess) or a [fail](#process-memory-allocatefail).
+
 
 process-memory-allocate:success
 -------------------------------

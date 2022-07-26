@@ -5,15 +5,21 @@ Description
 -----------
 A dll module was unloaded from a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dll-unloadsuccess) or a [fail](#dll-unloadfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | dll        |
 | Activity      | unload     |
 | Activity Type | dll-unload |
 | Pretty Name   | Dll Unload |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dll-unloadsuccess) or a [fail](#dll-unloadfail).
+
 
 dll-unload:success
 ------------------

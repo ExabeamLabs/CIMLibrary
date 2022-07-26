@@ -5,15 +5,21 @@ Description
 -----------
 The properties of a process were changed as it was running
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-modifysuccess) or a [fail](#process-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | process        |
 | Activity      | modify         |
 | Activity Type | process-modify |
 | Pretty Name   | Process Modify |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-modifysuccess) or a [fail](#process-modifyfail).
+
 
 process-modify:success
 ----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The MFA configuration for a user account was set to enabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-mfa-enablesuccess) or a [fail](#user-mfa-enablefail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | user            |
 | Activity      | mfa-enable      |
 | Activity Type | user-mfa-enable |
 | Pretty Name   | User Mfa Enable |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-mfa-enablesuccess) or a [fail](#user-mfa-enablefail).
+
 
 user-mfa-enable:success
 -----------------------

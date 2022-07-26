@@ -5,15 +5,21 @@ Description
 -----------
 The host name of an endpoint was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-name-modifysuccess) or a [fail](#endpoint-name-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | endpoint             |
 | Activity      | name-modify          |
 | Activity Type | endpoint-name-modify |
 | Pretty Name   | Endpoint Name Modify |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-name-modifysuccess) or a [fail](#endpoint-name-modifyfail).
+
 
 endpoint-name-modify:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The status of a virtualization datastore was set to enable
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#datastore-enablesuccess) or a [fail](#datastore-enablefail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | datastore        |
 | Activity      | enable           |
 | Activity Type | datastore-enable |
 | Pretty Name   | Datastore Enable |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#datastore-enablesuccess) or a [fail](#datastore-enablefail).
+
 
 datastore-enable:success
 ------------------------

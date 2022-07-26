@@ -5,15 +5,26 @@ Description
 -----------
 A user accounts' password was reset
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-resetsuccess) or a [fail](#user-password-resetfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | user                |
 | Activity      | password-reset      |
 | Activity Type | user-password-reset |
 | Pretty Name   | User Password Reset |
-| Legacy Name   |                     |
+
+Legacy Names
+------------
+| Success                    | Fail                       |
+| -------------------------- | -------------------------- |
+| account-password-reset<br> | account-password-reset<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-resetsuccess) or a [fail](#user-password-resetfail).
+
 
 user-password-reset:success
 ---------------------------

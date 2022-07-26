@@ -5,15 +5,21 @@ Description
 -----------
 A stored password object was copied, and a new object was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#password-copysuccess) or a [fail](#password-copyfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | password      |
 | Activity      | copy          |
 | Activity Type | password-copy |
 | Pretty Name   | Password Copy |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-copysuccess) or a [fail](#password-copyfail).
+
 
 password-copy:success
 ---------------------

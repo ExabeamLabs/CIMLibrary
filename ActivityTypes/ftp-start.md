@@ -5,15 +5,21 @@ Description
 -----------
 A FTP network session was initiated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ftp-startsuccess) or a [fail](#ftp-startfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ftp       |
 | Activity      | start     |
 | Activity Type | ftp-start |
 | Pretty Name   | Ftp Start |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ftp-startsuccess) or a [fail](#ftp-startfail).
+
 
 ftp-start:success
 -----------------

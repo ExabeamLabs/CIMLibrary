@@ -5,15 +5,26 @@ Description
 -----------
 A user privilege was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-privilege-modifysuccess) or a [fail](#user-privilege-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | user                  |
 | Activity      | privilege-modify      |
 | Activity Type | user-privilege-modify |
 | Pretty Name   | User Privilege Modify |
-| Legacy Name   |                       |
+
+Legacy Names
+------------
+| Success               | Fail                  |
+| --------------------- | --------------------- |
+| privileged-access<br> | privileged-access<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-privilege-modifysuccess) or a [fail](#user-privilege-modifyfail).
+
 
 user-privilege-modify:success
 -----------------------------

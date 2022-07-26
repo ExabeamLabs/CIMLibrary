@@ -5,15 +5,21 @@ Description
 -----------
 The public access block configuration of a bucket was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-accessblock-modifysuccess) or a [fail](#bucket-accessblock-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                     |
 | ------------- | ------------------------- |
 | Subject       | bucket                    |
 | Activity      | accessblock-modify        |
 | Activity Type | bucket-accessblock-modify |
 | Pretty Name   | Bucket Accessblock Modify |
-| Legacy Name   |                           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#bucket-accessblock-modifysuccess) or a [fail](#bucket-accessblock-modifyfail).
+
 
 bucket-accessblock-modify:success
 ---------------------------------

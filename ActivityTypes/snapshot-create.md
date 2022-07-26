@@ -5,15 +5,21 @@ Description
 -----------
 A snapshot was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-createsuccess) or a [fail](#snapshot-createfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | snapshot        |
 | Activity      | create          |
 | Activity Type | snapshot-create |
 | Pretty Name   | Snapshot Create |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-createsuccess) or a [fail](#snapshot-createfail).
+
 
 snapshot-create:success
 -----------------------

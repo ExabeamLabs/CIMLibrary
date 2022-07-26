@@ -5,15 +5,21 @@ Description
 -----------
 The usage configuration of a VM host was set to enabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-enablesuccess) or a [fail](#vm_host-enablefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | vm_host        |
 | Activity      | enable         |
 | Activity Type | vm_host-enable |
 | Pretty Name   | Vm_host Enable |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-enablesuccess) or a [fail](#vm_host-enablefail).
+
 
 vm_host-enable:success
 ----------------------

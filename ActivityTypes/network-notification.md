@@ -5,15 +5,21 @@ Description
 -----------
 A network notification is an entirely informational notification that regards network traffic. This activity only represents informational events that are not "activities".
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#network-notificationsuccess) or a [fail](#network-notificationfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | network              |
 | Activity      | notification         |
 | Activity Type | network-notification |
 | Pretty Name   | Network Notification |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#network-notificationsuccess) or a [fail](#network-notificationfail).
+
 
 network-notification:success
 ----------------------------

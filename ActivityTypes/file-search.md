@@ -5,15 +5,21 @@ Description
 -----------
 A search was performed on files
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-searchsuccess) or a [fail](#file-searchfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | file        |
 | Activity      | search      |
 | Activity Type | file-search |
 | Pretty Name   | File Search |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-searchsuccess) or a [fail](#file-searchfail).
+
 
 file-search:success
 -------------------

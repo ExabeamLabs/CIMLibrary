@@ -5,15 +5,21 @@ Description
 -----------
 A hook object was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#hook-createsuccess) or a [fail](#hook-createfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | hook        |
 | Activity      | create      |
 | Activity Type | hook-create |
 | Pretty Name   | Hook Create |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#hook-createsuccess) or a [fail](#hook-createfail).
+
 
 hook-create:success
 -------------------

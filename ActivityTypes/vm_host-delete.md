@@ -5,15 +5,21 @@ Description
 -----------
 A VM host was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-deletesuccess) or a [fail](#vm_host-deletefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | vm_host        |
 | Activity      | delete         |
 | Activity Type | vm_host-delete |
 | Pretty Name   | Vm_host Delete |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_host-deletesuccess) or a [fail](#vm_host-deletefail).
+
 
 vm_host-delete:success
 ----------------------

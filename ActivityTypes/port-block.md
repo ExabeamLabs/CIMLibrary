@@ -5,15 +5,21 @@ Description
 -----------
 A port was blocked, dropping traffic that comes throug
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#port-blocksuccess) or a [fail](#port-blockfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | port       |
 | Activity      | block      |
 | Activity Type | port-block |
 | Pretty Name   | Port Block |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#port-blocksuccess) or a [fail](#port-blockfail).
+
 
 port-block:success
 ------------------

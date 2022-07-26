@@ -5,15 +5,21 @@ Description
 -----------
 A SMTP sesssion was initiated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#smtp-startsuccess) or a [fail](#smtp-startfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | smtp       |
 | Activity      | start      |
 | Activity Type | smtp-start |
 | Pretty Name   | Smtp Start |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#smtp-startsuccess) or a [fail](#smtp-startfail).
+
 
 smtp-start:success
 ------------------

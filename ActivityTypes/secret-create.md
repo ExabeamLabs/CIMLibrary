@@ -5,15 +5,21 @@ Description
 -----------
 Secret credentials were created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-createsuccess) or a [fail](#secret-createfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | secret        |
 | Activity      | create        |
 | Activity Type | secret-create |
 | Pretty Name   | Secret Create |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-createsuccess) or a [fail](#secret-createfail).
+
 
 secret-create:success
 ---------------------

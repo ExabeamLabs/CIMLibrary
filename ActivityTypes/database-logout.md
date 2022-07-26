@@ -5,15 +5,21 @@ Description
 -----------
 A user logged out of a database
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-logoutsuccess) or a [fail](#database-logoutfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | database        |
 | Activity      | logout          |
 | Activity Type | database-logout |
 | Pretty Name   | Database Logout |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-logoutsuccess) or a [fail](#database-logoutfail).
+
 
 database-logout:success
 -----------------------

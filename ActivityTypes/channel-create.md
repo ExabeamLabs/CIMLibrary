@@ -5,15 +5,21 @@ Description
 -----------
 A communication channel was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-createsuccess) or a [fail](#channel-createfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | channel        |
 | Activity      | create         |
 | Activity Type | channel-create |
 | Pretty Name   | Channel Create |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#channel-createsuccess) or a [fail](#channel-createfail).
+
 
 channel-create:success
 ----------------------

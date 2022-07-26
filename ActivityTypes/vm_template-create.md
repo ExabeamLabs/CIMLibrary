@@ -5,15 +5,21 @@ Description
 -----------
 A VM template was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_template-createsuccess) or a [fail](#vm_template-createfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | vm_template        |
 | Activity      | create             |
 | Activity Type | vm_template-create |
 | Pretty Name   | Vm_template Create |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_template-createsuccess) or a [fail](#vm_template-createfail).
+
 
 vm_template-create:success
 --------------------------

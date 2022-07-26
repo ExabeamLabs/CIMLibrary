@@ -5,15 +5,26 @@ Description
 -----------
 An endpoint was locked
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-locksuccess) or a [fail](#endpoint-lockfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | endpoint      |
 | Activity      | lock          |
 | Activity Type | endpoint-lock |
 | Pretty Name   | Endpoint Lock |
-| Legacy Name   |               |
+
+Legacy Names
+------------
+| Success                | Fail |
+| ---------------------- | ---- |
+| workstation-locked<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-locksuccess) or a [fail](#endpoint-lockfail).
+
 
 endpoint-lock:success
 ---------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A password was created for a user account
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-createsuccess) or a [fail](#user-password-createfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | user                 |
 | Activity      | password-create      |
 | Activity Type | user-password-create |
 | Pretty Name   | User Password Create |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-createsuccess) or a [fail](#user-password-createfail).
+
 
 user-password-create:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A generic activity took place in an endpoint (catch all)
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-activitysuccess) or a [fail](#endpoint-activityfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | endpoint          |
 | Activity      | activity          |
 | Activity Type | endpoint-activity |
 | Pretty Name   | Endpoint Activity |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-activitysuccess) or a [fail](#endpoint-activityfail).
+
 
 endpoint-activity:success
 -------------------------

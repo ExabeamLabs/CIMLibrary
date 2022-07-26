@@ -5,15 +5,26 @@ Description
 -----------
 An endpoint policy was verified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-policy-verifysuccess) or a [fail](#endpoint-policy-verifyfail).
-
+Parameters
+----------
 | Parameter     | Value                  |
 | ------------- | ---------------------- |
 | Subject       | endpoint               |
 | Activity      | policy-verify          |
 | Activity Type | endpoint-policy-verify |
 | Pretty Name   | Endpoint Policy Verify |
-| Legacy Name   |                        |
+
+Legacy Names
+------------
+| Success       | Fail                 |
+| ------------- | -------------------- |
+| nac-logon<br> | nac-failed-logon<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-policy-verifysuccess) or a [fail](#endpoint-policy-verifyfail).
+
 
 endpoint-policy-verify:success
 ------------------------------

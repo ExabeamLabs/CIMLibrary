@@ -5,15 +5,21 @@ Description
 -----------
 A web query was made using the HTTP protocol
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#http-requestsuccess) or a [fail](#http-requestfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | http         |
 | Activity      | request      |
 | Activity Type | http-request |
 | Pretty Name   | Http Request |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#http-requestsuccess) or a [fail](#http-requestfail).
+
 
 http-request:success
 --------------------

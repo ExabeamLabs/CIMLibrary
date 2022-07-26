@@ -5,15 +5,21 @@ Description
 -----------
 A database resource was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-createsuccess) or a [fail](#database-createfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | database        |
 | Activity      | create          |
 | Activity Type | database-create |
 | Pretty Name   | Database Create |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-createsuccess) or a [fail](#database-createfail).
+
 
 database-create:success
 -----------------------

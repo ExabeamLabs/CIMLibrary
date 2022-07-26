@@ -5,15 +5,21 @@ Description
 -----------
 The configuration or properties of a snapshot were modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-modifysuccess) or a [fail](#snapshot-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | snapshot        |
 | Activity      | modify          |
 | Activity Type | snapshot-modify |
 | Pretty Name   | Snapshot Modify |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-modifysuccess) or a [fail](#snapshot-modifyfail).
+
 
 snapshot-modify:success
 -----------------------

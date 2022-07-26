@@ -5,15 +5,21 @@ Description
 -----------
 A group object was assigned a security role
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-role-assignsuccess) or a [fail](#group-role-assignfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | group             |
 | Activity      | role-assign       |
 | Activity Type | group-role-assign |
 | Pretty Name   | Group Role Assign |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-role-assignsuccess) or a [fail](#group-role-assignfail).
+
 
 group-role-assign:success
 -------------------------

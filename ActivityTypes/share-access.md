@@ -5,15 +5,26 @@ Description
 -----------
 A network share was accessed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#share-accesssuccess) or a [fail](#share-accessfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | share        |
 | Activity      | access       |
 | Activity Type | share-access |
 | Pretty Name   | Share Access |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success          | Fail                    |
+| ---------------- | ----------------------- |
+| share-access<br> | share-access-denied<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#share-accesssuccess) or a [fail](#share-accessfail).
+
 
 share-access:success
 --------------------

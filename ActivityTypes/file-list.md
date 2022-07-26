@@ -5,15 +5,21 @@ Description
 -----------
 A file enumeration took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-listsuccess) or a [fail](#file-listfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | file      |
 | Activity      | list      |
 | Activity Type | file-list |
 | Pretty Name   | File List |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-listsuccess) or a [fail](#file-listfail).
+
 
 file-list:success
 -----------------

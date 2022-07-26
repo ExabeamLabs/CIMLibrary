@@ -5,15 +5,21 @@ Description
 -----------
 A DHCP ack packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-acknowledgesuccess) or a [fail](#dhcp-acknowledgefail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | dhcp             |
 | Activity      | acknowledge      |
 | Activity Type | dhcp-acknowledge |
 | Pretty Name   | Dhcp Acknowledge |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-acknowledgesuccess) or a [fail](#dhcp-acknowledgefail).
+
 
 dhcp-acknowledge:success
 ------------------------

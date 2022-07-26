@@ -5,15 +5,21 @@ Description
 -----------
 A stored password was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#password-createsuccess) or a [fail](#password-createfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | password        |
 | Activity      | create          |
 | Activity Type | password-create |
 | Pretty Name   | Password Create |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-createsuccess) or a [fail](#password-createfail).
+
 
 password-create:success
 -----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A secret credentials object was copied
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-copysuccess) or a [fail](#secret-copyfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | secret      |
 | Activity      | copy        |
 | Activity Type | secret-copy |
 | Pretty Name   | Secret Copy |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#secret-copysuccess) or a [fail](#secret-copyfail).
+
 
 secret-copy:success
 -------------------

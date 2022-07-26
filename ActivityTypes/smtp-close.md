@@ -5,15 +5,21 @@ Description
 -----------
 A SMTP session was terminated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#smtp-closesuccess) or a [fail](#smtp-closefail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | smtp       |
 | Activity      | close      |
 | Activity Type | smtp-close |
 | Pretty Name   | Smtp Close |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#smtp-closesuccess) or a [fail](#smtp-closefail).
+
 
 smtp-close:success
 ------------------

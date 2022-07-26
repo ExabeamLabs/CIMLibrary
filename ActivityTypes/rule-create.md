@@ -5,15 +5,21 @@ Description
 -----------
 A security rule was created on a security product or program
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#rule-createsuccess) or a [fail](#rule-createfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | rule        |
 | Activity      | create      |
 | Activity Type | rule-create |
 | Pretty Name   | Rule Create |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#rule-createsuccess) or a [fail](#rule-createfail).
+
 
 rule-create:success
 -------------------

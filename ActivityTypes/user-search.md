@@ -5,15 +5,21 @@ Description
 -----------
 A search was performed on user accounts
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-searchsuccess) or a [fail](#user-searchfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | search      |
 | Activity Type | user-search |
 | Pretty Name   | User Search |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-searchsuccess) or a [fail](#user-searchfail).
+
 
 user-search:success
 -------------------

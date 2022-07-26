@@ -5,15 +5,21 @@ Description
 -----------
 A driver object was loaded into the systems' kernel
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#driver-loadsuccess) or a [fail](#driver-loadfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | driver      |
 | Activity      | load        |
 | Activity Type | driver-load |
 | Pretty Name   | Driver Load |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#driver-loadsuccess) or a [fail](#driver-loadfail).
+
 
 driver-load:success
 -------------------

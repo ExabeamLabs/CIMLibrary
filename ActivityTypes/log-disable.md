@@ -5,15 +5,21 @@ Description
 -----------
 The audit log generation from a log was disabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#log-disablesuccess) or a [fail](#log-disablefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | log         |
 | Activity      | disable     |
 | Activity Type | log-disable |
 | Pretty Name   | Log Disable |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-disablesuccess) or a [fail](#log-disablefail).
+
 
 log-disable:success
 -------------------

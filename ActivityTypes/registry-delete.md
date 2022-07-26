@@ -5,15 +5,21 @@ Description
 -----------
 A registry object wa deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-deletesuccess) or a [fail](#registry-deletefail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | registry        |
 | Activity      | delete          |
 | Activity Type | registry-delete |
 | Pretty Name   | Registry Delete |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-deletesuccess) or a [fail](#registry-deletefail).
+
 
 registry-delete:success
 -----------------------

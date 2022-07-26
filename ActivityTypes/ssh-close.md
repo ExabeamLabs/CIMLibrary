@@ -5,15 +5,21 @@ Description
 -----------
 A SSH session was terminated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ssh-closesuccess) or a [fail](#ssh-closefail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ssh       |
 | Activity      | close     |
 | Activity Type | ssh-close |
 | Pretty Name   | Ssh Close |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssh-closesuccess) or a [fail](#ssh-closefail).
+
 
 ssh-close:success
 -----------------

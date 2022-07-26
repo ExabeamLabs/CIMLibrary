@@ -5,15 +5,21 @@ Description
 -----------
 The content or configuration of an email rule was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email_rule-modifysuccess) or a [fail](#email_rule-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | email_rule        |
 | Activity      | modify            |
 | Activity Type | email_rule-modify |
 | Pretty Name   | Email_rule Modify |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email_rule-modifysuccess) or a [fail](#email_rule-modifyfail).
+
 
 email_rule-modify:success
 -------------------------

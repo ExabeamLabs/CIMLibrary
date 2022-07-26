@@ -5,15 +5,21 @@ Description
 -----------
 A git repository was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-deletesuccess) or a [fail](#repository-deletefail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | repository        |
 | Activity      | delete            |
 | Activity Type | repository-delete |
 | Pretty Name   | Repository Delete |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-deletesuccess) or a [fail](#repository-deletefail).
+
 
 repository-delete:success
 -------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A user accounts' password has expired
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-expiresuccess) or a [fail](#user-password-expirefail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | user                 |
 | Activity      | password-expire      |
 | Activity Type | user-password-expire |
 | Pretty Name   | User Password Expire |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-expiresuccess) or a [fail](#user-password-expirefail).
+
 
 user-password-expire:success
 ----------------------------

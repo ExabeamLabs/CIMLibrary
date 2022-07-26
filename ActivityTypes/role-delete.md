@@ -5,15 +5,21 @@ Description
 -----------
 A security role was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#role-deletesuccess) or a [fail](#role-deletefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | role        |
 | Activity      | delete      |
 | Activity Type | role-delete |
 | Pretty Name   | Role Delete |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-deletesuccess) or a [fail](#role-deletefail).
+
 
 role-delete:success
 -------------------

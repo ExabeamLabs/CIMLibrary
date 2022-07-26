@@ -5,15 +5,21 @@ Description
 -----------
 A shared link that was sent to a user was opened
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#share_link-opensuccess) or a [fail](#share_link-openfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | share_link      |
 | Activity      | open            |
 | Activity Type | share_link-open |
 | Pretty Name   | Share_link Open |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#share_link-opensuccess) or a [fail](#share_link-openfail).
+
 
 share_link-open:success
 -----------------------

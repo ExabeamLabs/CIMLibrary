@@ -5,15 +5,21 @@ Description
 -----------
 The global configuration of an application or a program was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-deletesuccess) or a [fail](#configuration-deletefail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | configuration        |
 | Activity      | delete               |
 | Activity Type | configuration-delete |
 | Pretty Name   | Configuration Delete |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-deletesuccess) or a [fail](#configuration-deletefail).
+
 
 configuration-delete:success
 ----------------------------

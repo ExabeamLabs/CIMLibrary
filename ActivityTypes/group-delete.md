@@ -5,15 +5,26 @@ Description
 -----------
 A group was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-deletesuccess) or a [fail](#group-deletefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | group        |
 | Activity      | delete       |
 | Activity Type | group-delete |
 | Pretty Name   | Group Delete |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success | Fail   |
+| ------- | ------ |
+| NA<br>  | NA<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-deletesuccess) or a [fail](#group-deletefail).
+
 
 group-delete:success
 --------------------

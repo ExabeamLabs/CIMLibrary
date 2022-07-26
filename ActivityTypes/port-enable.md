@@ -5,15 +5,21 @@ Description
 -----------
 A port was enabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#port-enablesuccess) or a [fail](#port-enablefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | port        |
 | Activity      | enable      |
 | Activity Type | port-enable |
 | Pretty Name   | Port Enable |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#port-enablesuccess) or a [fail](#port-enablefail).
+
 
 port-enable:success
 -------------------

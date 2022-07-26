@@ -5,15 +5,21 @@ Description
 -----------
 The content of a DNS record was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-modifysuccess) or a [fail](#dns_record-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | dns_record        |
 | Activity      | modify            |
 | Activity Type | dns_record-modify |
 | Pretty Name   | Dns_record Modify |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-modifysuccess) or a [fail](#dns_record-modifyfail).
+
 
 dns_record-modify:success
 -------------------------
