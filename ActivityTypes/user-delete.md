@@ -5,15 +5,26 @@ Description
 -----------
 A user account was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-deletesuccess) or a [fail](#user-deletefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | delete      |
 | Activity Type | user-delete |
 | Pretty Name   | User Delete |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success             | Fail                |
+| ------------------- | ------------------- |
+| account-deleted<br> | account-deleted<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-deletesuccess) or a [fail](#user-deletefail).
+
 
 user-delete:success
 -------------------

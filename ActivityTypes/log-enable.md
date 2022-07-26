@@ -5,15 +5,21 @@ Description
 -----------
 The audit log generation from a log was enabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#log-enablesuccess) or a [fail](#log-enablefail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | log        |
 | Activity      | enable     |
 | Activity Type | log-enable |
 | Pretty Name   | Log Enable |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-enablesuccess) or a [fail](#log-enablefail).
+
 
 log-enable:success
 ------------------

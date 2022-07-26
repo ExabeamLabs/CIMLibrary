@@ -5,15 +5,21 @@ Description
 -----------
 A file was renamed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-renamesuccess) or a [fail](#file-renamefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | file        |
 | Activity      | rename      |
 | Activity Type | file-rename |
 | Pretty Name   | File Rename |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-renamesuccess) or a [fail](#file-renamefail).
+
 
 file-rename:success
 -------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A DHCP offer packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-offersuccess) or a [fail](#dhcp-offerfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | dhcp       |
 | Activity      | offer      |
 | Activity Type | dhcp-offer |
 | Pretty Name   | Dhcp Offer |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-offersuccess) or a [fail](#dhcp-offerfail).
+
 
 dhcp-offer:success
 ------------------

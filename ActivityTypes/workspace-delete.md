@@ -5,15 +5,21 @@ Description
 -----------
 A workspace was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-deletesuccess) or a [fail](#workspace-deletefail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | workspace        |
 | Activity      | delete           |
 | Activity Type | workspace-delete |
 | Pretty Name   | Workspace Delete |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-deletesuccess) or a [fail](#workspace-deletefail).
+
 
 workspace-delete:success
 ------------------------

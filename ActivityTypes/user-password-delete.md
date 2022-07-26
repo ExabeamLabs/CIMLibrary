@@ -5,15 +5,21 @@ Description
 -----------
 A user accounts' password was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-deletesuccess) or a [fail](#user-password-deletefail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | user                 |
 | Activity      | password-delete      |
 | Activity Type | user-password-delete |
 | Pretty Name   | User Password Delete |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-password-deletesuccess) or a [fail](#user-password-deletefail).
+
 
 user-password-delete:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A directory service replication has ended
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-stopsuccess) or a [fail](#ds-replication-stopfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | ds                  |
 | Activity      | replication-stop    |
 | Activity Type | ds-replication-stop |
 | Pretty Name   | Ds Replication Stop |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-stopsuccess) or a [fail](#ds-replication-stopfail).
+
 
 ds-replication-stop:success
 ---------------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A user logged into an endpoint
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-loginsuccess) or a [fail](#endpoint-loginfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | endpoint       |
 | Activity      | login          |
 | Activity Type | endpoint-login |
 | Pretty Name   | Endpoint Login |
-| Legacy Name   |                |
+
+Legacy Names
+------------
+| Success                                                                                                                                                                      | Fail                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| local-logon<br>remote-logon<br>batch-logon<br>kerberos-logon<br>ntlm-logon<br>service-logon<br>remote-access<br>computer-logon<br>nac-logon<br>authentication-successful<br> | local-logon<br>remote-logon<br>batch-logon<br>kerberos-logon<br>ntlm-logon<br>service-logon<br>remote-access<br>computer-logon<br>failed-logon<br>nac-failed-logon<br>authentication-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-loginsuccess) or a [fail](#endpoint-loginfail).
+
 
 endpoint-login:success
 ----------------------

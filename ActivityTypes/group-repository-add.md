@@ -5,15 +5,21 @@ Description
 -----------
 A git repository was associated with the group
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-repository-addsuccess) or a [fail](#group-repository-addfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | group                |
 | Activity      | repository-add       |
 | Activity Type | group-repository-add |
 | Pretty Name   | Group Repository Add |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-repository-addsuccess) or a [fail](#group-repository-addfail).
+
 
 group-repository-add:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A recipient was added to an email message
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-recipient-addsuccess) or a [fail](#email-recipient-addfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | email               |
 | Activity      | recipient-add       |
 | Activity Type | email-recipient-add |
 | Pretty Name   | Email Recipient Add |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-recipient-addsuccess) or a [fail](#email-recipient-addfail).
+
 
 email-recipient-add:success
 ---------------------------

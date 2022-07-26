@@ -5,15 +5,21 @@ Description
 -----------
 A SSL session was terminated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-closesuccess) or a [fail](#ssl-closefail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ssl       |
 | Activity      | close     |
 | Activity Type | ssl-close |
 | Pretty Name   | Ssl Close |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-closesuccess) or a [fail](#ssl-closefail).
+
 
 ssl-close:success
 -----------------

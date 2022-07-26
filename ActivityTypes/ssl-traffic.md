@@ -5,15 +5,21 @@ Description
 -----------
 A representation of a single SSL packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-trafficsuccess) or a [fail](#ssl-trafficfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | ssl         |
 | Activity      | traffic     |
 | Activity Type | ssl-traffic |
 | Pretty Name   | Ssl Traffic |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ssl-trafficsuccess) or a [fail](#ssl-trafficfail).
+
 
 ssl-traffic:success
 -------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A snapshot object was created or modified, only used as a catch all if create or modify cannot be determined
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-writesuccess) or a [fail](#snapshot-writefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | snapshot       |
 | Activity      | write          |
 | Activity Type | snapshot-write |
 | Pretty Name   | Snapshot Write |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#snapshot-writesuccess) or a [fail](#snapshot-writefail).
+
 
 snapshot-write:success
 ----------------------

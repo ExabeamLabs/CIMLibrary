@@ -5,15 +5,21 @@ Description
 -----------
 The properties or configuration of a security role were changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#role-modifysuccess) or a [fail](#role-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | role        |
 | Activity      | modify      |
 | Activity Type | role-modify |
 | Pretty Name   | Role Modify |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-modifysuccess) or a [fail](#role-modifyfail).
+
 
 role-modify:success
 -------------------

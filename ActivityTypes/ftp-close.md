@@ -5,15 +5,21 @@ Description
 -----------
 A FTP network session was closed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ftp-closesuccess) or a [fail](#ftp-closefail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | ftp       |
 | Activity      | close     |
 | Activity Type | ftp-close |
 | Pretty Name   | Ftp Close |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ftp-closesuccess) or a [fail](#ftp-closefail).
+
 
 ftp-close:success
 -----------------

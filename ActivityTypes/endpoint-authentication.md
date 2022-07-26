@@ -5,15 +5,26 @@ Description
 -----------
 A part of an identification process to an endpoint that is not the login
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-authenticationsuccess) or a [fail](#endpoint-authenticationfail).
-
+Parameters
+----------
 | Parameter     | Value                   |
 | ------------- | ----------------------- |
 | Subject       | endpoint                |
 | Activity      | authentication          |
 | Activity Type | endpoint-authentication |
 | Pretty Name   | Endpoint Authentication |
-| Legacy Name   |                         |
+
+Legacy Names
+------------
+| Success                                                      | Fail                                                            |
+| ------------------------------------------------------------ | --------------------------------------------------------------- |
+| authentication-successful<br>kerberos-logon<br>nac-logon<br> | authentication-failed<br>kerberos-logon<br>nac-failed-logon<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-authenticationsuccess) or a [fail](#endpoint-authenticationfail).
+
 
 endpoint-authentication:success
 -------------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A thread was created in a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-thread-createsuccess) or a [fail](#process-thread-createfail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | process               |
 | Activity      | thread-create         |
 | Activity Type | process-thread-create |
 | Pretty Name   | Process Thread Create |
-| Legacy Name   |                       |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-thread-createsuccess) or a [fail](#process-thread-createfail).
+
 
 process-thread-create:success
 -----------------------------

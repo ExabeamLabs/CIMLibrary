@@ -5,15 +5,21 @@ Description
 -----------
 A DNS record was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-deletesuccess) or a [fail](#dns_record-deletefail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | dns_record        |
 | Activity      | delete            |
 | Activity Type | dns_record-delete |
 | Pretty Name   | Dns_record Delete |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns_record-deletesuccess) or a [fail](#dns_record-deletefail).
+
 
 dns_record-delete:success
 -------------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A file was downloaded from a website
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-downloadsuccess) or a [fail](#file-downloadfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | file          |
 | Activity      | download      |
 | Activity Type | file-download |
 | Pretty Name   | File Download |
-| Legacy Name   |               |
+
+Legacy Names
+------------
+| Success           | Fail              |
+| ----------------- | ----------------- |
+| file-download<br> | file-download<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-downloadsuccess) or a [fail](#file-downloadfail).
+
 
 file-download:success
 ---------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The configuration of the replication process of the directory service was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-modifysuccess) or a [fail](#ds-replication-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | ds                    |
 | Activity      | replication-modify    |
 | Activity Type | ds-replication-modify |
 | Pretty Name   | Ds Replication Modify |
-| Legacy Name   |                       |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ds-replication-modifysuccess) or a [fail](#ds-replication-modifyfail).
+
 
 ds-replication-modify:success
 -----------------------------

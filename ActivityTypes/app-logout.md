@@ -5,15 +5,21 @@ Description
 -----------
 A user logged out of an application
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-logoutsuccess) or a [fail](#app-logoutfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | app        |
 | Activity      | logout     |
 | Activity Type | app-logout |
 | Pretty Name   | App Logout |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-logoutsuccess) or a [fail](#app-logoutfail).
+
 
 app-logout:success
 ------------------

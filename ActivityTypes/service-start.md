@@ -5,15 +5,21 @@ Description
 -----------
 A service was executed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#service-startsuccess) or a [fail](#service-startfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | service       |
 | Activity      | start         |
 | Activity Type | service-start |
 | Pretty Name   | Service Start |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#service-startsuccess) or a [fail](#service-startfail).
+
 
 service-start:success
 ---------------------

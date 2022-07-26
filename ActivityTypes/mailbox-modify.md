@@ -5,15 +5,21 @@ Description
 -----------
 The properties or configuration of an email mailbox were changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-modifysuccess) or a [fail](#mailbox-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | mailbox        |
 | Activity      | modify         |
 | Activity Type | mailbox-modify |
 | Pretty Name   | Mailbox Modify |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-modifysuccess) or a [fail](#mailbox-modifyfail).
+
 
 mailbox-modify:success
 ----------------------

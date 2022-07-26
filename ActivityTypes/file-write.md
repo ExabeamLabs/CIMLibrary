@@ -5,15 +5,26 @@ Description
 -----------
 A file was created or edited
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-writesuccess) or a [fail](#file-writefail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | file       |
 | Activity      | write      |
 | Activity Type | file-write |
 | Pretty Name   | File Write |
-| Legacy Name   |            |
+
+Legacy Names
+------------
+| Success                     | Fail                        |
+| --------------------------- | --------------------------- |
+| file-write<br>usb-write<br> | file-write<br>usb-write<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-writesuccess) or a [fail](#file-writefail).
+
 
 file-write:success
 ------------------

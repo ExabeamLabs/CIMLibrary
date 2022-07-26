@@ -5,15 +5,26 @@ Description
 -----------
 A summary of a DHCP session
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-sessionsuccess) or a [fail](#dhcp-sessionfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | dhcp         |
 | Activity      | session      |
 | Activity Type | dhcp-session |
 | Pretty Name   | Dhcp Session |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success            | Fail |
+| ------------------ | ---- |
+| computer-logon<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dhcp-sessionsuccess) or a [fail](#dhcp-sessionfail).
+
 
 dhcp-session:success
 --------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A user account was unlocked
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-unlocksuccess) or a [fail](#user-unlockfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | unlock      |
 | Activity Type | user-unlock |
 | Pretty Name   | User Unlock |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success              | Fail                 |
+| -------------------- | -------------------- |
+| account-unlocked<br> | account-unlocked<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-unlocksuccess) or a [fail](#user-unlockfail).
+
 
 user-unlock:success
 -------------------

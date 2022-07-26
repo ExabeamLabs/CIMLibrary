@@ -5,15 +5,26 @@ Description
 -----------
 A user opened a door, gate, or any other entrance using their badge
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#physical_location-accesssuccess) or a [fail](#physical_location-accessfail).
-
+Parameters
+----------
 | Parameter     | Value                    |
 | ------------- | ------------------------ |
 | Subject       | physical_location        |
 | Activity      | access                   |
 | Activity Type | physical_location-access |
 | Pretty Name   | Physical_location Access |
-| Legacy Name   |                          |
+
+Legacy Names
+------------
+| Success             | Fail                       |
+| ------------------- | -------------------------- |
+| physical-access<br> | failed-physical-access<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#physical_location-accesssuccess) or a [fail](#physical_location-accessfail).
+
 
 physical_location-access:success
 --------------------------------

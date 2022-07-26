@@ -5,15 +5,21 @@ Description
 -----------
 A global key object was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#key-deletesuccess) or a [fail](#key-deletefail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | key        |
 | Activity      | delete     |
 | Activity Type | key-delete |
 | Pretty Name   | Key Delete |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#key-deletesuccess) or a [fail](#key-deletefail).
+
 
 key-delete:success
 ------------------

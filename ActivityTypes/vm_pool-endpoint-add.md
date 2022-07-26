@@ -5,15 +5,21 @@ Description
 -----------
 An endpoint instance was added to the VM pool
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-endpoint-addsuccess) or a [fail](#vm_pool-endpoint-addfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | vm_pool              |
 | Activity      | endpoint-add         |
 | Activity Type | vm_pool-endpoint-add |
 | Pretty Name   | Vm_pool Endpoint Add |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-endpoint-addsuccess) or a [fail](#vm_pool-endpoint-addfail).
+
 
 vm_pool-endpoint-add:success
 ----------------------------

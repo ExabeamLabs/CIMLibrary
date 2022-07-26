@@ -5,15 +5,21 @@ Description
 -----------
 An email mailbox was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-deletesuccess) or a [fail](#mailbox-deletefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | mailbox        |
 | Activity      | delete         |
 | Activity Type | mailbox-delete |
 | Pretty Name   | Mailbox Delete |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-deletesuccess) or a [fail](#mailbox-deletefail).
+
 
 mailbox-delete:success
 ----------------------

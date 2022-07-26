@@ -5,15 +5,21 @@ Description
 -----------
 An audit log was downloaded from a remote site
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#log-downloadsuccess) or a [fail](#log-downloadfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | log          |
 | Activity      | download     |
 | Activity Type | log-download |
 | Pretty Name   | Log Download |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-downloadsuccess) or a [fail](#log-downloadfail).
+
 
 log-download:success
 --------------------

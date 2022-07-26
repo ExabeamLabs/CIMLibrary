@@ -5,15 +5,26 @@ Description
 -----------
 A DNS query was sent
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-requestsuccess) or a [fail](#dns-requestfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | dns         |
 | Activity      | request     |
 | Activity Type | dns-request |
 | Pretty Name   | Dns Request |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success       | Fail          |
+| ------------- | ------------- |
+| dns-query<br> | dns-query<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-requestsuccess) or a [fail](#dns-requestfail).
+
 
 dns-request:success
 -------------------

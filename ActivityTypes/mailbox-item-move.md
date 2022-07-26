@@ -5,15 +5,21 @@ Description
 -----------
 An item contained in an email mailbox was moved from one folder or maiblox to another
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-item-movesuccess) or a [fail](#mailbox-item-movefail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | mailbox           |
 | Activity      | item-move         |
 | Activity Type | mailbox-item-move |
 | Pretty Name   | Mailbox Item Move |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-item-movesuccess) or a [fail](#mailbox-item-movefail).
+
 
 mailbox-item-move:success
 -------------------------

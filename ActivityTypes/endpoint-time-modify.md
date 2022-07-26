@@ -5,15 +5,21 @@ Description
 -----------
 The internal time of an endpoint was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-time-modifysuccess) or a [fail](#endpoint-time-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | endpoint             |
 | Activity      | time-modify          |
 | Activity Type | endpoint-time-modify |
 | Pretty Name   | Endpoint Time Modify |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-time-modifysuccess) or a [fail](#endpoint-time-modifyfail).
+
 
 endpoint-time-modify:success
 ----------------------------

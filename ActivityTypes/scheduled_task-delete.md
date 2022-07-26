@@ -5,15 +5,21 @@ Description
 -----------
 A scheduled task was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-deletesuccess) or a [fail](#scheduled_task-deletefail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | scheduled_task        |
 | Activity      | delete                |
 | Activity Type | scheduled_task-delete |
 | Pretty Name   | Scheduled_task Delete |
-| Legacy Name   |                       |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-deletesuccess) or a [fail](#scheduled_task-deletefail).
+
 
 scheduled_task-delete:success
 -----------------------------

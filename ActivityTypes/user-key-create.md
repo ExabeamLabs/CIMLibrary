@@ -5,15 +5,21 @@ Description
 -----------
 A user security key was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-key-createsuccess) or a [fail](#user-key-createfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | user            |
 | Activity      | key-create      |
 | Activity Type | user-key-create |
 | Pretty Name   | User Key Create |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-key-createsuccess) or a [fail](#user-key-createfail).
+
 
 user-key-create:success
 -----------------------

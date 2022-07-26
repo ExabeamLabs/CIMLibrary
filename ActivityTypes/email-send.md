@@ -5,15 +5,26 @@ Description
 -----------
 A user sent an email message
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-sendsuccess) or a [fail](#email-sendfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | email      |
 | Activity      | send       |
 | Activity Type | email-send |
 | Pretty Name   | Email Send |
-| Legacy Name   |            |
+
+Legacy Names
+------------
+| Success                 | Fail                           |
+| ----------------------- | ------------------------------ |
+| dlp-email-alert-out<br> | dlp-email-alert-out-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-sendsuccess) or a [fail](#email-sendfail).
+
 
 email-send:success
 ------------------

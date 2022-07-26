@@ -5,15 +5,21 @@ Description
 -----------
 An app notification is an entirely informational notification that has popped up on an app. This activity only represents informational events that are not "activities".
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-notificationsuccess) or a [fail](#app-notificationfail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | app              |
 | Activity      | notification     |
 | Activity Type | app-notification |
 | Pretty Name   | App Notification |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-notificationsuccess) or a [fail](#app-notificationfail).
+
 
 app-notification:success
 ------------------------

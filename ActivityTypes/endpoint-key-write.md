@@ -5,15 +5,21 @@ Description
 -----------
 An endpoint security key was created or modified, only used as a catch all if create or modify cannot be determined
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-key-writesuccess) or a [fail](#endpoint-key-writefail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | endpoint           |
 | Activity      | key-write          |
 | Activity Type | endpoint-key-write |
 | Pretty Name   | Endpoint Key Write |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-key-writesuccess) or a [fail](#endpoint-key-writefail).
+
 
 endpoint-key-write:success
 --------------------------

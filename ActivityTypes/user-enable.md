@@ -5,15 +5,26 @@ Description
 -----------
 A user account was enabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-enablesuccess) or a [fail](#user-enablefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | enable      |
 | Activity Type | user-enable |
 | Pretty Name   | User Enable |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success             | Fail |
+| ------------------- | ---- |
+| account-enabled<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-enablesuccess) or a [fail](#user-enablefail).
+
 
 user-enable:success
 -------------------

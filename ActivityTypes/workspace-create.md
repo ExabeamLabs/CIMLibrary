@@ -5,15 +5,21 @@ Description
 -----------
 A workspace was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-createsuccess) or a [fail](#workspace-createfail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | workspace        |
 | Activity      | create           |
 | Activity Type | workspace-create |
 | Pretty Name   | Workspace Create |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-createsuccess) or a [fail](#workspace-createfail).
+
 
 workspace-create:success
 ------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A service was stopped
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#service-stopsuccess) or a [fail](#service-stopfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | service      |
 | Activity      | stop         |
 | Activity Type | service-stop |
 | Pretty Name   | Service Stop |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#service-stopsuccess) or a [fail](#service-stopfail).
+
 
 service-stop:success
 --------------------

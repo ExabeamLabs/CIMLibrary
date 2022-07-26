@@ -5,15 +5,21 @@ Description
 -----------
 A folder was created on a an app
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#folder-createsuccess) or a [fail](#folder-createfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | folder        |
 | Activity      | create        |
 | Activity Type | folder-create |
 | Pretty Name   | Folder Create |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#folder-createsuccess) or a [fail](#folder-createfail).
+
 
 folder-create:success
 ---------------------

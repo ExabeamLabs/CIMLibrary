@@ -5,15 +5,26 @@ Description
 -----------
 A file was opened/read
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-readsuccess) or a [fail](#file-readfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | file      |
 | Activity      | read      |
 | Activity Type | file-read |
 | Pretty Name   | File Read |
-| Legacy Name   |           |
+
+Legacy Names
+------------
+| Success                   | Fail                      |
+| ------------------------- | ------------------------- |
+| file-read<br>usb-read<br> | file-read<br>usb-read<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-readsuccess) or a [fail](#file-readfail).
+
 
 file-read:success
 -----------------

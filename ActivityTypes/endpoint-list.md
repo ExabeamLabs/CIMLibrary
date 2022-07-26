@@ -5,15 +5,21 @@ Description
 -----------
 Multiple endpoint objects have been enumerated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-listsuccess) or a [fail](#endpoint-listfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | endpoint      |
 | Activity      | list          |
 | Activity Type | endpoint-list |
 | Pretty Name   | Endpoint List |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-listsuccess) or a [fail](#endpoint-listfail).
+
 
 endpoint-list:success
 ---------------------

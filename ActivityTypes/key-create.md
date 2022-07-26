@@ -5,15 +5,21 @@ Description
 -----------
 A global key object was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#key-createsuccess) or a [fail](#key-createfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | key        |
 | Activity      | create     |
 | Activity Type | key-create |
 | Pretty Name   | Key Create |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#key-createsuccess) or a [fail](#key-createfail).
+
 
 key-create:success
 ------------------

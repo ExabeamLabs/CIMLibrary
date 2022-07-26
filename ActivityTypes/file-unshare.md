@@ -5,15 +5,21 @@ Description
 -----------
 A share of a file was disabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-unsharesuccess) or a [fail](#file-unsharefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | file         |
 | Activity      | unshare      |
 | Activity Type | file-unshare |
 | Pretty Name   | File Unshare |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-unsharesuccess) or a [fail](#file-unsharefail).
+
 
 file-unshare:success
 --------------------

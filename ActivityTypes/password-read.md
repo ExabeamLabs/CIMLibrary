@@ -5,15 +5,21 @@ Description
 -----------
 The value of a stored password was read
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#password-readsuccess) or a [fail](#password-readfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | password      |
 | Activity      | read          |
 | Activity Type | password-read |
 | Pretty Name   | Password Read |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-readsuccess) or a [fail](#password-readfail).
+
 
 password-read:success
 ---------------------

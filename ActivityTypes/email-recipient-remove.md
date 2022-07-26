@@ -5,15 +5,21 @@ Description
 -----------
 A recipient was removed from an email message
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-recipient-removesuccess) or a [fail](#email-recipient-removefail).
-
+Parameters
+----------
 | Parameter     | Value                  |
 | ------------- | ---------------------- |
 | Subject       | email                  |
 | Activity      | recipient-remove       |
 | Activity Type | email-recipient-remove |
 | Pretty Name   | Email Recipient Remove |
-| Legacy Name   |                        |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-recipient-removesuccess) or a [fail](#email-recipient-removefail).
+
 
 email-recipient-remove:success
 ------------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The endpoint domain object associated password was updated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-password-modifysuccess) or a [fail](#endpoint-password-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                    |
 | ------------- | ------------------------ |
 | Subject       | endpoint                 |
 | Activity      | password-modify          |
 | Activity Type | endpoint-password-modify |
 | Pretty Name   | Endpoint Password Modify |
-| Legacy Name   |                          |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-password-modifysuccess) or a [fail](#endpoint-password-modifyfail).
+
 
 endpoint-password-modify:success
 --------------------------------

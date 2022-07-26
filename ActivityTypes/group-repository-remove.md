@@ -5,15 +5,21 @@ Description
 -----------
 A git repository was removed from a group
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-repository-removesuccess) or a [fail](#group-repository-removefail).
-
+Parameters
+----------
 | Parameter     | Value                   |
 | ------------- | ----------------------- |
 | Subject       | group                   |
 | Activity      | repository-remove       |
 | Activity Type | group-repository-remove |
 | Pretty Name   | Group Repository Remove |
-| Legacy Name   |                         |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-repository-removesuccess) or a [fail](#group-repository-removefail).
+
 
 group-repository-remove:success
 -------------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 An occurance of a scheduled task was done executing
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-finishsuccess) or a [fail](#scheduled_task-finishfail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | scheduled_task        |
 | Activity      | finish                |
 | Activity Type | scheduled_task-finish |
 | Pretty Name   | Scheduled_task Finish |
-| Legacy Name   |                       |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-finishsuccess) or a [fail](#scheduled_task-finishfail).
+
 
 scheduled_task-finish:success
 -----------------------------

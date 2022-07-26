@@ -5,15 +5,26 @@ Description
 -----------
 A user called his privilege to access to an oject
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-privilege-usesuccess) or a [fail](#user-privilege-usefail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | user               |
 | Activity      | privilege-use      |
 | Activity Type | user-privilege-use |
 | Pretty Name   | User Privilege Use |
-| Legacy Name   |                    |
+
+Legacy Names
+------------
+| Success                                           | Fail |
+| ------------------------------------------------- | ---- |
+| privileged-access<br>privileged-object-access<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-privilege-usesuccess) or a [fail](#user-privilege-usefail).
+
 
 user-privilege-use:success
 --------------------------

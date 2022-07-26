@@ -5,15 +5,21 @@ Description
 -----------
 A digital certificate enrollment or creation was requested by an entity
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-requestsuccess) or a [fail](#certificate-requestfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | certificate         |
 | Activity      | request             |
 | Activity Type | certificate-request |
 | Pretty Name   | Certificate Request |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-requestsuccess) or a [fail](#certificate-requestfail).
+
 
 certificate-request:success
 ---------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The name of a user account was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-name-modifysuccess) or a [fail](#user-name-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | user             |
 | Activity      | name-modify      |
 | Activity Type | user-name-modify |
 | Pretty Name   | User Name Modify |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-name-modifysuccess) or a [fail](#user-name-modifyfail).
+
 
 user-name-modify:success
 ------------------------

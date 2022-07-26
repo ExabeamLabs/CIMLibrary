@@ -5,15 +5,21 @@ Description
 -----------
 A VM template was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_template-deletesuccess) or a [fail](#vm_template-deletefail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | vm_template        |
 | Activity      | delete             |
 | Activity Type | vm_template-delete |
 | Pretty Name   | Vm_template Delete |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_template-deletesuccess) or a [fail](#vm_template-deletefail).
+
 
 vm_template-delete:success
 --------------------------

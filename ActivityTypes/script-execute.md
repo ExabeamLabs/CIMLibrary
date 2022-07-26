@@ -5,15 +5,21 @@ Description
 -----------
 Scripting commands were executed on the system
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#script-executesuccess) or a [fail](#script-executefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | script         |
 | Activity      | execute        |
 | Activity Type | script-execute |
 | Pretty Name   | Script Execute |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#script-executesuccess) or a [fail](#script-executefail).
+
 
 script-execute:success
 ----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A property of a file was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-property-deletesuccess) or a [fail](#file-property-deletefail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | file                 |
 | Activity      | property-delete      |
 | Activity Type | file-property-delete |
 | Pretty Name   | File Property Delete |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-property-deletesuccess) or a [fail](#file-property-deletefail).
+
 
 file-property-delete:success
 ----------------------------

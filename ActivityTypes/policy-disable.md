@@ -5,15 +5,21 @@ Description
 -----------
 The enforcement status of a security policy was changed to disabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-disablesuccess) or a [fail](#policy-disablefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | policy         |
 | Activity      | disable        |
 | Activity Type | policy-disable |
 | Pretty Name   | Policy Disable |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#policy-disablesuccess) or a [fail](#policy-disablefail).
+
 
 policy-disable:success
 ----------------------

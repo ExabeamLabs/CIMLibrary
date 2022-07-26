@@ -5,15 +5,26 @@ Description
 -----------
 The content or configuration of a registry object was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-modifysuccess) or a [fail](#registry-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | registry        |
 | Activity      | modify          |
 | Activity Type | registry-modify |
 | Pretty Name   | Registry Modify |
-| Legacy Name   |                 |
+
+Legacy Names
+------------
+| Success            | Fail               |
+| ------------------ | ------------------ |
+| registry-write<br> | registry-write<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-modifysuccess) or a [fail](#registry-modifyfail).
+
 
 registry-modify:success
 -----------------------

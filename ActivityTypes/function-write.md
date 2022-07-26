@@ -5,15 +5,21 @@ Description
 -----------
 An automation cloud function was created or modified, only used as a catch all if create or modify cannot be determined
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#function-writesuccess) or a [fail](#function-writefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | function       |
 | Activity      | write          |
 | Activity Type | function-write |
 | Pretty Name   | Function Write |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#function-writesuccess) or a [fail](#function-writefail).
+
 
 function-write:success
 ----------------------

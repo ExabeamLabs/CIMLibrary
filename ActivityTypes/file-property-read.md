@@ -5,15 +5,21 @@ Description
 -----------
 The properties of a file were read
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-property-readsuccess) or a [fail](#file-property-readfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | file               |
 | Activity      | property-read      |
 | Activity Type | file-property-read |
 | Pretty Name   | File Property Read |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-property-readsuccess) or a [fail](#file-property-readfail).
+
 
 file-property-read:success
 --------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 An enumeration of disk objects took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-listsuccess) or a [fail](#disk-listfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | disk      |
 | Activity      | list      |
 | Activity Type | disk-list |
 | Pretty Name   | Disk List |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-listsuccess) or a [fail](#disk-listfail).
+
 
 disk-list:success
 -----------------

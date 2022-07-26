@@ -5,15 +5,21 @@ Description
 -----------
 A group object was revoked a security role
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-role-revokesuccess) or a [fail](#group-role-revokefail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | group             |
 | Activity      | role-revoke       |
 | Activity Type | group-role-revoke |
 | Pretty Name   | Group Role Revoke |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-role-revokesuccess) or a [fail](#group-role-revokefail).
+
 
 group-role-revoke:success
 -------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A user has created and started to write an email or a draft of an email
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-createsuccess) or a [fail](#email-createfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | email        |
 | Activity      | create       |
 | Activity Type | email-create |
 | Pretty Name   | Email Create |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-createsuccess) or a [fail](#email-createfail).
+
 
 email-create:success
 --------------------

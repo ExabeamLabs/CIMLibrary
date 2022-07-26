@@ -5,15 +5,21 @@ Description
 -----------
 A request to read the properties or configuration of a user was made
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-readsuccess) or a [fail](#user-readfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | user      |
 | Activity      | read      |
 | Activity Type | user-read |
 | Pretty Name   | User Read |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-readsuccess) or a [fail](#user-readfail).
+
 
 user-read:success
 -----------------

@@ -5,15 +5,21 @@ Description
 -----------
 The value of a stored password was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#password-modifysuccess) or a [fail](#password-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | password        |
 | Activity      | modify          |
 | Activity Type | password-modify |
 | Pretty Name   | Password Modify |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-modifysuccess) or a [fail](#password-modifyfail).
+
 
 password-modify:success
 -----------------------

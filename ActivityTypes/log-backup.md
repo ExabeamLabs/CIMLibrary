@@ -5,15 +5,21 @@ Description
 -----------
 An audit log was backed up
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#log-backupsuccess) or a [fail](#log-backupfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | log        |
 | Activity      | backup     |
 | Activity Type | log-backup |
 | Pretty Name   | Log Backup |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log-backupsuccess) or a [fail](#log-backupfail).
+
 
 log-backup:success
 ------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A user received an email message
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-receivesuccess) or a [fail](#email-receivefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | email         |
 | Activity      | receive       |
 | Activity Type | email-receive |
 | Pretty Name   | Email Receive |
-| Legacy Name   |               |
+
+Legacy Names
+------------
+| Success                | Fail                          |
+| ---------------------- | ----------------------------- |
+| dlp-email-alert-in<br> | dlp-email-alert-in-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-receivesuccess) or a [fail](#email-receivefail).
+
 
 email-receive:success
 ---------------------

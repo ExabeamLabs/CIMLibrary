@@ -5,15 +5,21 @@ Description
 -----------
 A digital certificate has timed out and expired
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-expiresuccess) or a [fail](#certificate-expirefail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | certificate        |
 | Activity      | expire             |
 | Activity Type | certificate-expire |
 | Pretty Name   | Certificate Expire |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#certificate-expiresuccess) or a [fail](#certificate-expirefail).
+
 
 certificate-expire:success
 --------------------------

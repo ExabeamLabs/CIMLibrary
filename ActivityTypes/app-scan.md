@@ -5,15 +5,21 @@ Description
 -----------
 A scan that targeted apps took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-scansuccess) or a [fail](#app-scanfail).
-
+Parameters
+----------
 | Parameter     | Value    |
 | ------------- | -------- |
 | Subject       | app      |
 | Activity      | scan     |
 | Activity Type | app-scan |
 | Pretty Name   | App Scan |
-| Legacy Name   |          |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-scansuccess) or a [fail](#app-scanfail).
+
 
 app-scan:success
 ----------------

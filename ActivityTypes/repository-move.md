@@ -5,15 +5,21 @@ Description
 -----------
 The location of a git repository was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-movesuccess) or a [fail](#repository-movefail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | repository      |
 | Activity      | move            |
 | Activity Type | repository-move |
 | Pretty Name   | Repository Move |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#repository-movesuccess) or a [fail](#repository-movefail).
+
 
 repository-move:success
 -----------------------

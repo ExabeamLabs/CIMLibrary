@@ -5,15 +5,21 @@ Description
 -----------
 The protection configuration of a git branch was changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#branch-protection-modifysuccess) or a [fail](#branch-protection-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                    |
 | ------------- | ------------------------ |
 | Subject       | branch                   |
 | Activity      | protection-modify        |
 | Activity Type | branch-protection-modify |
 | Pretty Name   | Branch Protection Modify |
-| Legacy Name   |                          |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#branch-protection-modifysuccess) or a [fail](#branch-protection-modifyfail).
+
 
 branch-protection-modify:success
 --------------------------------

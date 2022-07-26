@@ -5,15 +5,21 @@ Description
 -----------
 An endpoint object was created or modified, only used as a catch all if create or modify cannot be determined
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-writesuccess) or a [fail](#endpoint-writefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | endpoint       |
 | Activity      | write          |
 | Activity Type | endpoint-write |
 | Pretty Name   | Endpoint Write |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-writesuccess) or a [fail](#endpoint-writefail).
+
 
 endpoint-write:success
 ----------------------

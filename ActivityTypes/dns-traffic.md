@@ -5,15 +5,21 @@ Description
 -----------
 A representation of a single DNS packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-trafficsuccess) or a [fail](#dns-trafficfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | dns         |
 | Activity      | traffic     |
 | Activity Type | dns-traffic |
 | Pretty Name   | Dns Traffic |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#dns-trafficsuccess) or a [fail](#dns-trafficfail).
+
 
 dns-traffic:success
 -------------------

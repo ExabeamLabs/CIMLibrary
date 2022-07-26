@@ -5,15 +5,21 @@ Description
 -----------
 The permissions that apply to an email mailbox were changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-permission-modifysuccess) or a [fail](#mailbox-permission-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                     |
 | ------------- | ------------------------- |
 | Subject       | mailbox                   |
 | Activity      | permission-modify         |
 | Activity Type | mailbox-permission-modify |
 | Pretty Name   | Mailbox Permission Modify |
-| Legacy Name   |                           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#mailbox-permission-modifysuccess) or a [fail](#mailbox-permission-modifyfail).
+
 
 mailbox-permission-modify:success
 ---------------------------------

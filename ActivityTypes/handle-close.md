@@ -5,15 +5,21 @@ Description
 -----------
 A windows handle was closed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#handle-closesuccess) or a [fail](#handle-closefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | handle       |
 | Activity      | close        |
 | Activity Type | handle-close |
 | Pretty Name   | Handle Close |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#handle-closesuccess) or a [fail](#handle-closefail).
+
 
 handle-close:success
 --------------------

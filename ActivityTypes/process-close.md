@@ -5,15 +5,21 @@ Description
 -----------
 A process was terminated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-closesuccess) or a [fail](#process-closefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | process       |
 | Activity      | close         |
 | Activity Type | process-close |
 | Pretty Name   | Process Close |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-closesuccess) or a [fail](#process-closefail).
+
 
 process-close:success
 ---------------------

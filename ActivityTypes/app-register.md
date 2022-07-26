@@ -5,15 +5,21 @@ Description
 -----------
 A user has registered to an app
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-registersuccess) or a [fail](#app-registerfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | app          |
 | Activity      | register     |
 | Activity Type | app-register |
 | Pretty Name   | App Register |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-registersuccess) or a [fail](#app-registerfail).
+
 
 app-register:success
 --------------------

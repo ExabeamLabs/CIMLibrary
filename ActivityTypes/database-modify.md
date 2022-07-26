@@ -5,15 +5,26 @@ Description
 -----------
 A database resource was updated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-modifysuccess) or a [fail](#database-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | database        |
 | Activity      | modify          |
 | Activity Type | database-modify |
 | Pretty Name   | Database Modify |
-| Legacy Name   |                 |
+
+Legacy Names
+------------
+| Success             | Fail |
+| ------------------- | ---- |
+| database-update<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-modifysuccess) or a [fail](#database-modifyfail).
+
 
 database-modify:success
 -----------------------

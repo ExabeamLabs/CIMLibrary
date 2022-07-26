@@ -5,15 +5,21 @@ Description
 -----------
 A process token was assigned to a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-token-assignsuccess) or a [fail](#process-token-assignfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | process              |
 | Activity      | token-assign         |
 | Activity Type | process-token-assign |
 | Pretty Name   | Process Token Assign |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-token-assignsuccess) or a [fail](#process-token-assignfail).
+
 
 process-token-assign:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 The status of a virtualization datastore was set to disable
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#datastore-disablesuccess) or a [fail](#datastore-disablefail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | datastore         |
 | Activity      | disable           |
 | Activity Type | datastore-disable |
 | Pretty Name   | Datastore Disable |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#datastore-disablesuccess) or a [fail](#datastore-disablefail).
+
 
 datastore-disable:success
 -------------------------

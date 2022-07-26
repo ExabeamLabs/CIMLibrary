@@ -5,15 +5,21 @@ Description
 -----------
 An email in an inbox was deleted and read
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-readsuccess) or a [fail](#email-readfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | email      |
 | Activity      | read       |
 | Activity Type | email-read |
 | Pretty Name   | Email Read |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-readsuccess) or a [fail](#email-readfail).
+
 
 email-read:success
 ------------------

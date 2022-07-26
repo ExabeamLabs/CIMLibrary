@@ -5,15 +5,21 @@ Description
 -----------
 The protection status of a git branch was changed to disabled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#branch-protection-disablesuccess) or a [fail](#branch-protection-disablefail).
-
+Parameters
+----------
 | Parameter     | Value                     |
 | ------------- | ------------------------- |
 | Subject       | branch                    |
 | Activity      | protection-disable        |
 | Activity Type | branch-protection-disable |
 | Pretty Name   | Branch Protection Disable |
-| Legacy Name   |                           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#branch-protection-disablesuccess) or a [fail](#branch-protection-disablefail).
+
 
 branch-protection-disable:success
 ---------------------------------

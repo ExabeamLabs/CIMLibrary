@@ -5,15 +5,21 @@ Description
 -----------
 A user account was revoked a security role
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-role-revokesuccess) or a [fail](#user-role-revokefail).
-
+Parameters
+----------
 | Parameter     | Value            |
 | ------------- | ---------------- |
 | Subject       | user             |
 | Activity      | role-revoke      |
 | Activity Type | user-role-revoke |
 | Pretty Name   | User Role Revoke |
-| Legacy Name   |                  |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-role-revokesuccess) or a [fail](#user-role-revokefail).
+
 
 user-role-revoke:success
 ------------------------

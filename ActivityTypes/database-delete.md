@@ -5,15 +5,26 @@ Description
 -----------
 A database resource was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-deletesuccess) or a [fail](#database-deletefail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | database        |
 | Activity      | delete          |
 | Activity Type | database-delete |
 | Pretty Name   | Database Delete |
-| Legacy Name   |                 |
+
+Legacy Names
+------------
+| Success             | Fail                |
+| ------------------- | ------------------- |
+| database-delete<br> | database-delete<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-deletesuccess) or a [fail](#database-deletefail).
+
 
 database-delete:success
 -----------------------

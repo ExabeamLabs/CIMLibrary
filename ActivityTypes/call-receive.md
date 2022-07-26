@@ -5,15 +5,21 @@ Description
 -----------
 A user has recived a call from another user
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#call-receivesuccess) or a [fail](#call-receivefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | call         |
 | Activity      | receive      |
 | Activity Type | call-receive |
 | Pretty Name   | Call Receive |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#call-receivesuccess) or a [fail](#call-receivefail).
+
 
 call-receive:success
 --------------------

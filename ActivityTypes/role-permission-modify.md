@@ -5,15 +5,21 @@ Description
 -----------
 The permissions associated with a security role were changed
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#role-permission-modifysuccess) or a [fail](#role-permission-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                  |
 | ------------- | ---------------------- |
 | Subject       | role                   |
 | Activity      | permission-modify      |
 | Activity Type | role-permission-modify |
 | Pretty Name   | Role Permission Modify |
-| Legacy Name   |                        |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-permission-modifysuccess) or a [fail](#role-permission-modifyfail).
+
 
 role-permission-modify:success
 ------------------------------

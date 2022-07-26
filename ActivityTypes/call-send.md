@@ -5,15 +5,21 @@ Description
 -----------
 A user has called another user
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#call-sendsuccess) or a [fail](#call-sendfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | call      |
 | Activity      | send      |
 | Activity Type | call-send |
 | Pretty Name   | Call Send |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#call-sendsuccess) or a [fail](#call-sendfail).
+
 
 call-send:success
 -----------------

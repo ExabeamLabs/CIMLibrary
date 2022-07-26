@@ -5,15 +5,26 @@ Description
 -----------
 The global configuration of an application or a program was modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-modifysuccess) or a [fail](#configuration-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | configuration        |
 | Activity      | modify               |
 | Activity Type | configuration-modify |
 | Pretty Name   | Configuration Modify |
-| Legacy Name   |                      |
+
+Legacy Names
+------------
+| Success           | Fail              |
+| ----------------- | ----------------- |
+| config-change<br> | config-change<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-modifysuccess) or a [fail](#configuration-modifyfail).
+
 
 configuration-modify:success
 ----------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A network session was initiated
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#network-startsuccess) or a [fail](#network-startfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | network       |
 | Activity      | start         |
 | Activity Type | network-start |
 | Pretty Name   | Network Start |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#network-startsuccess) or a [fail](#network-startfail).
+
 
 network-start:success
 ---------------------

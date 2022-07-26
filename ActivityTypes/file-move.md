@@ -5,15 +5,21 @@ Description
 -----------
 A file was moved to another location
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#file-movesuccess) or a [fail](#file-movefail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | file      |
 | Activity      | move      |
 | Activity Type | file-move |
 | Pretty Name   | File Move |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#file-movesuccess) or a [fail](#file-movefail).
+
 
 file-move:success
 -----------------

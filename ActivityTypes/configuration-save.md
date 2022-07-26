@@ -5,15 +5,21 @@ Description
 -----------
 Changes to the global configuration of an application or a program were saved
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-savesuccess) or a [fail](#configuration-savefail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | configuration      |
 | Activity      | save               |
 | Activity Type | configuration-save |
 | Pretty Name   | Configuration Save |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#configuration-savesuccess) or a [fail](#configuration-savefail).
+
 
 configuration-save:success
 --------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 An email in an inbox folder was moved to another inbox folder
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email-movesuccess) or a [fail](#email-movefail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | email      |
 | Activity      | move       |
 | Activity Type | email-move |
 | Pretty Name   | Email Move |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email-movesuccess) or a [fail](#email-movefail).
+
 
 email-move:success
 ------------------

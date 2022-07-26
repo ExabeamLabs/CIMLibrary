@@ -5,15 +5,26 @@ Description
 -----------
 A representation of a single RADIUS packet
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#radius-trafficsuccess) or a [fail](#radius-trafficfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | radius         |
 | Activity      | traffic        |
 | Activity Type | radius-traffic |
 | Pretty Name   | Radius Traffic |
-| Legacy Name   |                |
+
+Legacy Names
+------------
+| Success       | Fail                 |
+| ------------- | -------------------- |
+| nac-logon<br> | nac-failed-logon<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#radius-trafficsuccess) or a [fail](#radius-trafficfail).
+
 
 radius-traffic:success
 ----------------------

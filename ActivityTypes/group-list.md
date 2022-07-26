@@ -5,15 +5,21 @@ Description
 -----------
 An enumeration of multiple groups took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-listsuccess) or a [fail](#group-listfail).
-
+Parameters
+----------
 | Parameter     | Value      |
 | ------------- | ---------- |
 | Subject       | group      |
 | Activity      | list       |
 | Activity Type | group-list |
 | Pretty Name   | Group List |
-| Legacy Name   |            |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-listsuccess) or a [fail](#group-listfail).
+
 
 group-list:success
 ------------------

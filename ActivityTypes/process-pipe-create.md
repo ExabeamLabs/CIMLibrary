@@ -5,15 +5,21 @@ Description
 -----------
 An inter-process communication pipe was created in a process
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#process-pipe-createsuccess) or a [fail](#process-pipe-createfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | process             |
 | Activity      | pipe-create         |
 | Activity Type | process-pipe-create |
 | Pretty Name   | Process Pipe Create |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#process-pipe-createsuccess) or a [fail](#process-pipe-createfail).
+
 
 process-pipe-create:success
 ---------------------------

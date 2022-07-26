@@ -5,15 +5,21 @@ Description
 -----------
 A security rule was deleted on a security product or program
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#rule-deletesuccess) or a [fail](#rule-deletefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | rule        |
 | Activity      | delete      |
 | Activity Type | rule-delete |
 | Pretty Name   | Rule Delete |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#rule-deletesuccess) or a [fail](#rule-deletefail).
+
 
 rule-delete:success
 -------------------

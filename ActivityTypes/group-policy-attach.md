@@ -5,15 +5,21 @@ Description
 -----------
 A policy document was assigned to the group
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-policy-attachsuccess) or a [fail](#group-policy-attachfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | group               |
 | Activity      | policy-attach       |
 | Activity Type | group-policy-attach |
 | Pretty Name   | Group Policy Attach |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-policy-attachsuccess) or a [fail](#group-policy-attachfail).
+
 
 group-policy-attach:success
 ---------------------------

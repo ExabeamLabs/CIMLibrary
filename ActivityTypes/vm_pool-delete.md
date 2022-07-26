@@ -5,15 +5,21 @@ Description
 -----------
 A VM pool was deleted
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-deletesuccess) or a [fail](#vm_pool-deletefail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | vm_pool        |
 | Activity      | delete         |
 | Activity Type | vm_pool-delete |
 | Pretty Name   | Vm_pool Delete |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vm_pool-deletesuccess) or a [fail](#vm_pool-deletefail).
+
 
 vm_pool-delete:success
 ----------------------

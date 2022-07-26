@@ -5,15 +5,21 @@ Description
 -----------
 A scheduled task was enabled, allowing it to trigger
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-enablesuccess) or a [fail](#scheduled_task-enablefail).
-
+Parameters
+----------
 | Parameter     | Value                 |
 | ------------- | --------------------- |
 | Subject       | scheduled_task        |
 | Activity      | enable                |
 | Activity Type | scheduled_task-enable |
 | Pretty Name   | Scheduled_task Enable |
-| Legacy Name   |                       |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-enablesuccess) or a [fail](#scheduled_task-enablefail).
+
 
 scheduled_task-enable:success
 -----------------------------

@@ -5,15 +5,26 @@ Description
 -----------
 A part of an identification process to a VPN that is not the login
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vpn-authenticationsuccess) or a [fail](#vpn-authenticationfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | vpn                |
 | Activity      | authentication     |
 | Activity Type | vpn-authentication |
 | Pretty Name   | Vpn Authentication |
-| Legacy Name   |                    |
+
+Legacy Names
+------------
+| Success                       | Fail |
+| ----------------------------- | ---- |
+| authentication-successful<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vpn-authenticationsuccess) or a [fail](#vpn-authenticationfail).
+
 
 vpn-authentication:success
 --------------------------

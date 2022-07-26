@@ -5,15 +5,21 @@ Description
 -----------
 A scheduled task was configured to start, marking the moment where it would start searching for its triggers.
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-startsuccess) or a [fail](#scheduled_task-startfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | scheduled_task       |
 | Activity      | start                |
 | Activity Type | scheduled_task-start |
 | Pretty Name   | Scheduled_task Start |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#scheduled_task-startsuccess) or a [fail](#scheduled_task-startfail).
+
 
 scheduled_task-start:success
 ----------------------------

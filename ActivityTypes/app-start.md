@@ -5,15 +5,21 @@ Description
 -----------
 The application was initiazlied
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-startsuccess) or a [fail](#app-startfail).
-
+Parameters
+----------
 | Parameter     | Value     |
 | ------------- | --------- |
 | Subject       | app       |
 | Activity      | start     |
 | Activity Type | app-start |
 | Pretty Name   | App Start |
-| Legacy Name   |           |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-startsuccess) or a [fail](#app-startfail).
+
 
 app-start:success
 -----------------

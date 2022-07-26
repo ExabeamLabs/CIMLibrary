@@ -5,15 +5,21 @@ Description
 -----------
 A summary of a complete RADIUS network session
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#radius-session	success) or a [fail](#radius-session	fail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | radius          |
 | Activity      | session	        |
 | Activity Type | radius-session	 |
 | Pretty Name   | Radius Session	 |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#radius-session	success) or a [fail](#radius-session	fail).
+
 
 radius-session	:success
 -----------------------

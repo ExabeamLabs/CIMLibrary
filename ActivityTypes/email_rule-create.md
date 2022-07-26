@@ -5,15 +5,21 @@ Description
 -----------
 An email rule was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#email_rule-createsuccess) or a [fail](#email_rule-createfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | email_rule        |
 | Activity      | create            |
 | Activity Type | email_rule-create |
 | Pretty Name   | Email_rule Create |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#email_rule-createsuccess) or a [fail](#email_rule-createfail).
+
 
 email_rule-create:success
 -------------------------

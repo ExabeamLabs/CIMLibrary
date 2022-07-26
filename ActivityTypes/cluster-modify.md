@@ -5,15 +5,21 @@ Description
 -----------
 The properties or configuration of a virtualization cluster were modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#cluster-modifysuccess) or a [fail](#cluster-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | cluster        |
 | Activity      | modify         |
 | Activity Type | cluster-modify |
 | Pretty Name   | Cluster Modify |
-| Legacy Name   |                |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#cluster-modifysuccess) or a [fail](#cluster-modifyfail).
+
 
 cluster-modify:success
 ----------------------

@@ -5,15 +5,21 @@ Description
 -----------
 An IP was freed from use and is now available to reassign
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#ip-freesuccess) or a [fail](#ip-freefail).
-
+Parameters
+----------
 | Parameter     | Value   |
 | ------------- | ------- |
 | Subject       | ip      |
 | Activity      | free    |
 | Activity Type | ip-free |
 | Pretty Name   | Ip Free |
-| Legacy Name   |         |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#ip-freesuccess) or a [fail](#ip-freefail).
+
 
 ip-free:success
 ---------------

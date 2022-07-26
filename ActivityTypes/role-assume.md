@@ -5,15 +5,21 @@ Description
 -----------
 A security role identity was assumed by another identity, granting itself this roles' permissions.
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#role-assumesuccess) or a [fail](#role-assumefail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | role        |
 | Activity      | assume      |
 | Activity Type | role-assume |
 | Pretty Name   | Role Assume |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-assumesuccess) or a [fail](#role-assumefail).
+
 
 role-assume:success
 -------------------

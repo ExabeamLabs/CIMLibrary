@@ -5,15 +5,26 @@ Description
 -----------
 An activity on a peripheral storage device
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#peripheral_storage-activitysuccess) or a [fail](#peripheral_storage-activityfail).
-
+Parameters
+----------
 | Parameter     | Value                       |
 | ------------- | --------------------------- |
 | Subject       | peripheral_storage          |
 | Activity      | activity                    |
 | Activity Type | peripheral_storage-activity |
 | Pretty Name   | Peripheral_storage Activity |
-| Legacy Name   |                             |
+
+Legacy Names
+------------
+| Success          | Fail                    |
+| ---------------- | ----------------------- |
+| usb-activity<br> | failed-usb-activity<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#peripheral_storage-activitysuccess) or a [fail](#peripheral_storage-activityfail).
+
 
 peripheral_storage-activity:success
 -----------------------------------

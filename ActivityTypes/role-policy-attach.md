@@ -5,15 +5,21 @@ Description
 -----------
 A policy document was attached to the role identity
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#role-policy-attachsuccess) or a [fail](#role-policy-attachfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | role               |
 | Activity      | policy-attach      |
 | Activity Type | role-policy-attach |
 | Pretty Name   | Role Policy Attach |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#role-policy-attachsuccess) or a [fail](#role-policy-attachfail).
+
 
 role-policy-attach:success
 --------------------------

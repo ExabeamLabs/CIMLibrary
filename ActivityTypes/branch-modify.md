@@ -5,15 +5,21 @@ Description
 -----------
 A git branch properties were modified
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#branch-modifysuccess) or a [fail](#branch-modifyfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | branch        |
 | Activity      | modify        |
 | Activity Type | branch-modify |
 | Pretty Name   | Branch Modify |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#branch-modifysuccess) or a [fail](#branch-modifyfail).
+
 
 branch-modify:success
 ---------------------

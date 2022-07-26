@@ -5,15 +5,21 @@ Description
 -----------
 A user has requested that his device configuration will be remembered on future usage in this system
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-device-remembersuccess) or a [fail](#user-device-rememberfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | user                 |
 | Activity      | device-remember      |
 | Activity Type | user-device-remember |
 | Pretty Name   | User Device Remember |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-device-remembersuccess) or a [fail](#user-device-rememberfail).
+
 
 user-device-remember:success
 ----------------------------

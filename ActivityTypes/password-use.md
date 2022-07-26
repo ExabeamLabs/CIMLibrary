@@ -5,15 +5,21 @@ Description
 -----------
 A stored password was used by a user
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#password-usesuccess) or a [fail](#password-usefail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | password     |
 | Activity      | use          |
 | Activity Type | password-use |
 | Pretty Name   | Password Use |
-| Legacy Name   |              |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#password-usesuccess) or a [fail](#password-usefail).
+
 
 password-use:success
 --------------------

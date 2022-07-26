@@ -5,15 +5,21 @@ Description
 -----------
 Database resources were enumerated on the database
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-listsuccess) or a [fail](#database-listfail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | database      |
 | Activity      | list          |
 | Activity Type | database-list |
 | Pretty Name   | Database List |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-listsuccess) or a [fail](#database-listfail).
+
 
 database-list:success
 ---------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A user account invitation to workspace was canceled
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-invite-cancelsuccess) or a [fail](#user-invite-cancelfail).
-
+Parameters
+----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
 | Subject       | user               |
 | Activity      | invite-cancel      |
 | Activity Type | user-invite-cancel |
 | Pretty Name   | User Invite Cancel |
-| Legacy Name   |                    |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-invite-cancelsuccess) or a [fail](#user-invite-cancelfail).
+
 
 user-invite-cancel:success
 --------------------------

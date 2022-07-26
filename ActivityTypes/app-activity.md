@@ -5,15 +5,26 @@ Description
 -----------
 An activity in an application
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#app-activitysuccess) or a [fail](#app-activityfail).
-
+Parameters
+----------
 | Parameter     | Value        |
 | ------------- | ------------ |
 | Subject       | app          |
 | Activity      | activity     |
 | Activity Type | app-activity |
 | Pretty Name   | App Activity |
-| Legacy Name   |              |
+
+Legacy Names
+------------
+| Success                                               | Fail                                                         |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| app-activity<br>webconference-operations-activity<br> | app-activity-failed<br>webconference-operations-activity<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#app-activitysuccess) or a [fail](#app-activityfail).
+
 
 app-activity:success
 --------------------

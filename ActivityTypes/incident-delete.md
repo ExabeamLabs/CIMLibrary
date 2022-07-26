@@ -5,15 +5,21 @@ Description
 -----------
 A security incident was deleted on a security product
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#incident-deletesuccess) or a [fail](#incident-deletefail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | incident        |
 | Activity      | delete          |
 | Activity Type | incident-delete |
 | Pretty Name   | Incident Delete |
-| Legacy Name   |                 |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#incident-deletesuccess) or a [fail](#incident-deletefail).
+
 
 incident-delete:success
 -----------------------

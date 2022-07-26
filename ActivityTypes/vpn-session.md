@@ -5,15 +5,26 @@ Description
 -----------
 A summary of a VPN network session
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#vpn-sessionsuccess) or a [fail](#vpn-sessionfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | vpn         |
 | Activity      | session     |
 | Activity Type | vpn-session |
 | Pretty Name   | Vpn Session |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success            | Fail |
+| ------------------ | ---- |
+| vpn-connection<br> |      |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#vpn-sessionsuccess) or a [fail](#vpn-sessionfail).
+
 
 vpn-session:success
 -------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A member was added to a workspace
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-member-addsuccess) or a [fail](#workspace-member-addfail).
-
+Parameters
+----------
 | Parameter     | Value                |
 | ------------- | -------------------- |
 | Subject       | workspace            |
 | Activity      | member-add           |
 | Activity Type | workspace-member-add |
 | Pretty Name   | Workspace Member Add |
-| Legacy Name   |                      |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#workspace-member-addsuccess) or a [fail](#workspace-member-addfail).
+
 
 workspace-member-add:success
 ----------------------------

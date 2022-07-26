@@ -5,15 +5,26 @@ Description
 -----------
 A registry object was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-createsuccess) or a [fail](#registry-createfail).
-
+Parameters
+----------
 | Parameter     | Value           |
 | ------------- | --------------- |
 | Subject       | registry        |
 | Activity      | create          |
 | Activity Type | registry-create |
 | Pretty Name   | Registry Create |
-| Legacy Name   |                 |
+
+Legacy Names
+------------
+| Success            | Fail               |
+| ------------------ | ------------------ |
+| registry-write<br> | registry-write<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#registry-createsuccess) or a [fail](#registry-createfail).
+
 
 registry-create:success
 -----------------------

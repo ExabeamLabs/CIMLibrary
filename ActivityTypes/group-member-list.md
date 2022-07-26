@@ -5,15 +5,21 @@ Description
 -----------
 An enumeration of group members took place
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#group-member-listsuccess) or a [fail](#group-member-listfail).
-
+Parameters
+----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
 | Subject       | group             |
 | Activity      | member-list       |
 | Activity Type | group-member-list |
 | Pretty Name   | Group Member List |
-| Legacy Name   |                   |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#group-member-listsuccess) or a [fail](#group-member-listfail).
+
 
 group-member-list:success
 -------------------------

@@ -5,15 +5,21 @@ Description
 -----------
 A screenshot of an endpoint was taken
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-screenshotsuccess) or a [fail](#endpoint-screenshotfail).
-
+Parameters
+----------
 | Parameter     | Value               |
 | ------------- | ------------------- |
 | Subject       | endpoint            |
 | Activity      | screenshot          |
 | Activity Type | endpoint-screenshot |
 | Pretty Name   | Endpoint Screenshot |
-| Legacy Name   |                     |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-screenshotsuccess) or a [fail](#endpoint-screenshotfail).
+
 
 endpoint-screenshot:success
 ---------------------------

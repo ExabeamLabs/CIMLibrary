@@ -5,15 +5,26 @@ Description
 -----------
 A user account was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#user-createsuccess) or a [fail](#user-createfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | user        |
 | Activity      | create      |
 | Activity Type | user-create |
 | Pretty Name   | User Create |
-| Legacy Name   |             |
+
+Legacy Names
+------------
+| Success              | Fail                 |
+| -------------------- | -------------------- |
+| account-creation<br> | account-creation<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#user-createsuccess) or a [fail](#user-createfail).
+
 
 user-create:success
 -------------------

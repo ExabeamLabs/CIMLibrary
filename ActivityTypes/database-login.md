@@ -5,15 +5,26 @@ Description
 -----------
 A user logged in to a database
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#database-loginsuccess) or a [fail](#database-loginfail).
-
+Parameters
+----------
 | Parameter     | Value          |
 | ------------- | -------------- |
 | Subject       | database       |
 | Activity      | login          |
 | Activity Type | database-login |
 | Pretty Name   | Database Login |
-| Legacy Name   |                |
+
+Legacy Names
+------------
+| Success            | Fail                      |
+| ------------------ | ------------------------- |
+| database-login<br> | database-failed-login<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#database-loginsuccess) or a [fail](#database-loginfail).
+
 
 database-login:success
 ----------------------

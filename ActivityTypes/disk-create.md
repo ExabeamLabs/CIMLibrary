@@ -5,15 +5,21 @@ Description
 -----------
 A disk volume object was created
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-createsuccess) or a [fail](#disk-createfail).
-
+Parameters
+----------
 | Parameter     | Value       |
 | ------------- | ----------- |
 | Subject       | disk        |
 | Activity      | create      |
 | Activity Type | disk-create |
 | Pretty Name   | Disk Create |
-| Legacy Name   |             |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#disk-createsuccess) or a [fail](#disk-createfail).
+
 
 disk-create:success
 -------------------

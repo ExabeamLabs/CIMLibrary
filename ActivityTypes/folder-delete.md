@@ -5,15 +5,21 @@ Description
 -----------
 A folder was deleted on an app
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#folder-deletesuccess) or a [fail](#folder-deletefail).
-
+Parameters
+----------
 | Parameter     | Value         |
 | ------------- | ------------- |
 | Subject       | folder        |
 | Activity      | delete        |
 | Activity Type | folder-delete |
 | Pretty Name   | Folder Delete |
-| Legacy Name   |               |
+
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#folder-deletesuccess) or a [fail](#folder-deletefail).
+
 
 folder-delete:success
 ---------------------
