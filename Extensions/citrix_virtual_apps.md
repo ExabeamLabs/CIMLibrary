@@ -14,9 +14,9 @@ Fields
 | src_ip            |      | &#10003;  |               |
 | src_translated_ip |      | &#10003;  |               |
 | protocol          |      | &#10003;  |               |
+| os                |      | &#10003;  |               |
 | dest_ip           |      | &#10003;  |               |
 | alert_id          |      | &#10003;  |               |
-| operating_system  |      | &#10003;  |               |
 | event_name        |      | &#10003;  |               |
 | src_host          |      | &#10003;  |               |
 

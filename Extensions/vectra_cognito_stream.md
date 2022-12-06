@@ -21,7 +21,7 @@ Activity Types
 | ------------- | --------------------- | ------- | ---- | --------- | ------------- |
 | app-activity  | src_ip                | Default |      | &#10003;  |               |
 |               | result                | Default |      |           | &#10003;      |
-|               | application           | Default |      |           | &#10003;      |
+|               | app                   | Default |      |           | &#10003;      |
 |               | dest_ip               | Default |      | &#10003;  |               |
 | rdp-traffic   |                       |         |      |           |               |
 | ssh-traffic   | cipher_algorithm      |         |      |           |               |

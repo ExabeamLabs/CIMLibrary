@@ -4,7 +4,7 @@ microsoft web application proxy
 Expression
 ----------
 
-product = "microsoft web application proxy"
+product = "microsoft web Application proxy"
 
 Fields
 ------

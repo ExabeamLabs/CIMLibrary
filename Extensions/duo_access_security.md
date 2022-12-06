@@ -13,9 +13,9 @@ Fields
 | ---------------- | ---- | --------- | ------------- |
 | result           |      |           | &#10003;      |
 | src_ip           |      | &#10003;  |               |
+| os               |      |           | &#10003;      |
 | location_country |      |           | &#10003;      |
 | location_city    |      |           | &#10003;      |
-| operating_system |      |           | &#10003;      |
 | location_state   |      |           | &#10003;      |
 | user_agent       |      |           | &#10003;      |
 | object           |      |           | &#10003;      |

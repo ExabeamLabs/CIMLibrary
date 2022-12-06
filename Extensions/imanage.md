@@ -16,7 +16,7 @@ Activity Types
 
 | Activity Type | Field           | Status  | Core     | Detection | Informational |
 | ------------- | --------------- | ------- | -------- | --------- | ------------- |
-| alert-trigger | application     |         |          |           |               |
+| alert-trigger | app             |         |          |           |               |
 |               | file_name       | Legacy  | &#10003; |           |               |
 |               | user            | Legacy  |          | &#10003;  |               |
 | app-activity  | file_path       | Default |          |           | &#10003;      |

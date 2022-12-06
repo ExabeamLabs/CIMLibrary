@@ -44,6 +44,7 @@ Activity Types
 |                         | message_id           | Default |      |           | &#10003;      |
 |                         | direction            | Default |      |           | &#10003;      |
 | endpoint-authentication | user_ou              | Default |      |           | &#10003;      |
+|                         | os                   | Default |      |           | &#10003;      |
 |                         | bytes_in             | Default |      |           | &#10003;      |
 |                         | rule                 | Default |      |           | &#10003;      |
 |                         | product_name         | Default |      |           | &#10003;      |
@@ -52,7 +53,6 @@ Activity Types
 |                         | src_translated_ip    | Default |      |           | &#10003;      |
 |                         | protocol             | Default |      |           | &#10003;      |
 |                         | bytes_out            | Default |      |           | &#10003;      |
-|                         | operating_system     | Default |      |           | &#10003;      |
 |                         | action               | Default |      |           | &#10003;      |
 |                         | dest_translated_port | Default |      |           | &#10003;      |
 |                         | company              | Default |      |           | &#10003;      |
@@ -63,6 +63,7 @@ Activity Types
 |                         | origin_name          | Default |      |           | &#10003;      |
 |                         | direction            | Default |      |           | &#10003;      |
 | endpoint-login          | user_ou              | Default |      |           | &#10003;      |
+|                         | os                   | Default |      |           | &#10003;      |
 |                         | bytes_in             | Default |      |           | &#10003;      |
 |                         | rule                 | Default |      |           | &#10003;      |
 |                         | product_name         | Default |      |           | &#10003;      |
@@ -73,7 +74,6 @@ Activity Types
 |                         | bytes_out            | Default |      |           | &#10003;      |
 |                         | additional_info      | Default |      |           | &#10003;      |
 |                         | process_name         | Default |      |           | &#10003;      |
-|                         | operating_system     | Default |      |           | &#10003;      |
 |                         | action               | Default |      |           | &#10003;      |
 |                         | dest_translated_port | Default |      |           | &#10003;      |
 |                         | company              | Default |      |           | &#10003;      |
@@ -83,7 +83,8 @@ Activity Types
 |                         | origin_ip            | Default |      |           | &#10003;      |
 |                         | origin_name          | Default |      |           | &#10003;      |
 |                         | direction            | Default |      |           | &#10003;      |
-| http-session            | service_name         | Default |      |           | &#10003;      |
+| http-session            | os                   | Default |      |           | &#10003;      |
+|                         | service_name         | Default |      |           | &#10003;      |
 |                         | interface_name       | Default |      |           | &#10003;      |
 |                         | rule                 | Default |      |           | &#10003;      |
 |                         | product_name         | Default |      |           | &#10003;      |
@@ -94,13 +95,13 @@ Activity Types
 |                         | full_name            | Default |      |           | &#10003;      |
 |                         | additional_info      | Default |      |           | &#10003;      |
 |                         | dest_translated_port | Default |      |           | &#10003;      |
-|                         | operating_system     | Default |      |           | &#10003;      |
 |                         | src_translated_port  | Default |      |           | &#10003;      |
 |                         | origin_ip            | Default |      |           | &#10003;      |
 |                         | origin_name          | Default |      |           | &#10003;      |
 |                         | direction            | Default |      |           | &#10003;      |
 | network-session         | user_ou              | Default |      |           | &#10003;      |
 |                         | src_interface        | Default |      |           | &#10003;      |
+|                         | os                   | Default |      |           | &#10003;      |
 |                         | bytes_in             | Default |      |           | &#10003;      |
 |                         | alert_severity       | Default |      |           | &#10003;      |
 |                         | interface_name       | Default |      |           | &#10003;      |
@@ -111,7 +112,6 @@ Activity Types
 |                         | rule_id              | Default |      |           | &#10003;      |
 |                         | src_translated_ip    | Default |      |           | &#10003;      |
 |                         | bytes_out            | Default |      |           | &#10003;      |
-|                         | operating_system     | Default |      |           | &#10003;      |
 |                         | app_protocol         | Default |      |           | &#10003;      |
 |                         | action               | Default |      |           | &#10003;      |
 |                         | dest_translated_port | Default |      |           | &#10003;      |
@@ -156,7 +156,6 @@ Activity Types
 |                         | dest_translated_ip   | Default |      |           | &#10003;      |
 |                         | src_translated_ip    | Default |      |           | &#10003;      |
 |                         | protocol             | Default |      |           | &#10003;      |
-|                         | operating_system     | Default |      |           | &#10003;      |
 |                         | app_protocol         | Default |      |           | &#10003;      |
 |                         | action               | Default |      |           | &#10003;      |
 |                         | company              | Default |      |           | &#10003;      |
@@ -167,6 +166,7 @@ Activity Types
 |                         | policy               | Default |      |           | &#10003;      |
 |                         | direction            | Default |      |           | &#10003;      |
 |                         | user_ou              | Default |      |           | &#10003;      |
+|                         | os                   | Default |      |           | &#10003;      |
 |                         | product_name         | Default |      |           | &#10003;      |
 |                         | rule_id              | Default |      |           | &#10003;      |
 |                         | src_port             | Default |      |           | &#10003;      |
@@ -177,6 +177,7 @@ Activity Types
 |                         | src_translated_port  | Default |      |           | &#10003;      |
 |                         | origin_ip            | Default |      |           | &#10003;      |
 | vpn-logout              | user_ou              |         |      |           | &#10003;      |
+|                         | os                   |         |      | &#10003;  |               |
 |                         | bytes_in             |         |      | &#10003;  |               |
 |                         | rule                 |         |      | &#10003;  |               |
 |                         | product_name         |         |      |           | &#10003;      |
@@ -185,7 +186,6 @@ Activity Types
 |                         | src_translated_ip    |         |      | &#10003;  |               |
 |                         | protocol             |         |      | &#10003;  |               |
 |                         | bytes_out            | Legacy  |      | &#10003;  |               |
-|                         | operating_system     |         |      | &#10003;  |               |
 |                         | action               |         |      | &#10003;  |               |
 |                         | dest_translated_port |         |      | &#10003;  |               |
 |                         | dest_host            | Legacy  |      |           | &#10003;      |

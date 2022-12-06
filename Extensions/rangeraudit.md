@@ -18,7 +18,7 @@ Activity Types
 
 | Activity Type  | Field           | Status  | Core | Detection | Informational |
 | -------------- | --------------- | ------- | ---- | --------- | ------------- |
-| app-activity   | application     | Default |      |           | &#10003;      |
+| app-activity   | app             | Default |      |           | &#10003;      |
 |                | additional_info | Default |      |           | &#10003;      |
 |                | resource        | Default |      |           | &#10003;      |
 |                | dest_host       | Default |      | &#10003;  |               |

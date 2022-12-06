@@ -16,12 +16,12 @@ Activity Types
 
 | Activity Type        | Field           | Status  | Core | Detection | Informational |
 | -------------------- | --------------- | ------- | ---- | --------- | ------------- |
-| app-activity         | resource        | Default |      |           | &#10003;      |
+| app-activity         | app             | Default |      |           | &#10003;      |
+|                      | resource        | Default |      |           | &#10003;      |
 |                      | src_host        | Default |      | &#10003;  |               |
 |                      | result          | Default |      |           | &#10003;      |
 |                      | src_ip          | Default |      | &#10003;  |               |
 |                      | event_id        | Default |      |           | &#10003;      |
-|                      | application     | Default |      |           | &#10003;      |
 |                      | additional_info | Default |      |           | &#10003;      |
 |                      | user_id         | Default |      |           | &#10003;      |
 |                      | dest_ip         | Default |      | &#10003;  |               |

@@ -18,6 +18,7 @@ Activity Types
 | ------------- | ----------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | process           |        |          |           |               |
 |               | malware_file_name |        |          |           |               |
+|               | os                |        |          |           |               |
 |               | file_name         | Legacy | &#10003; |           |               |
 |               | src_host          | Legacy | &#10003; | &#10003;  |               |
 |               | result            |        |          |           |               |
@@ -26,7 +27,6 @@ Activity Types
 |               | process_name      | Legacy |          | &#10003;  |               |
 |               | dest_ip           | Legacy | &#10003; | &#10003;  |               |
 |               | hash_md5          |        |          |           |               |
-|               | operating_system  |        |          |           |               |
 |               | threat_type       |        |          |           |               |
 |               | malware_url       |        |          |           |               |
 |               | user              | Legacy |          | &#10003;  |               |

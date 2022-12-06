@@ -54,38 +54,38 @@ Activity Types
 |                     | user_sid         | Default |          |           | &#10003;      |
 |                     | dest_host        | Default |          | &#10003;  |               |
 |                     | direction        | Default |          |           | &#10003;      |
-| mailbox-create      | email_address    | Default |          |           | &#10003;      |
-|                     | email_user       | Default |          |           | &#10003;      |
-|                     | application      | Default |          |           | &#10003;      |
-|                     | email_domain     | Default |          |           | &#10003;      |
-|                     | operation        | Default |          |           | &#10003;      |
-| mailbox-item-create | email_address    | Default |          |           | &#10003;      |
-|                     | email_user       | Default |          |           | &#10003;      |
-|                     | application      | Default |          |           | &#10003;      |
-|                     | email_domain     | Default |          |           | &#10003;      |
-|                     | operation        | Default |          |           | &#10003;      |
-| mailbox-item-delete | src_ip           | Default |          | &#10003;  |               |
+| mailbox-create      | app              | Default |          |           | &#10003;      |
 |                     | email_address    | Default |          |           | &#10003;      |
-|                     | application      | Default |          |           | &#10003;      |
+|                     | email_user       | Default |          |           | &#10003;      |
+|                     | email_domain     | Default |          |           | &#10003;      |
+|                     | operation        | Default |          |           | &#10003;      |
+| mailbox-item-create | app              | Default |          |           | &#10003;      |
+|                     | email_address    | Default |          |           | &#10003;      |
+|                     | email_user       | Default |          |           | &#10003;      |
+|                     | email_domain     | Default |          |           | &#10003;      |
+|                     | operation        | Default |          |           | &#10003;      |
+| mailbox-item-delete | app              | Default |          |           | &#10003;      |
+|                     | src_ip           | Default |          | &#10003;  |               |
+|                     | email_address    | Default |          |           | &#10003;      |
 |                     | email_user       | Default |          |           | &#10003;      |
 |                     | additional_info  | Default |          |           | &#10003;      |
 |                     | email_domain     | Default |          |           | &#10003;      |
 |                     | user             | Default |          | &#10003;  |               |
 |                     | operation        | Default |          |           | &#10003;      |
 |                     | object           | Default |          |           | &#10003;      |
-| mailbox-item-modify | email_address    | Default |          |           | &#10003;      |
+| mailbox-item-modify | app              | Default |          |           | &#10003;      |
+|                     | email_address    | Default |          |           | &#10003;      |
 |                     | email_user       | Default |          |           | &#10003;      |
-|                     | application      | Default |          |           | &#10003;      |
 |                     | email_domain     | Default |          |           | &#10003;      |
 |                     | operation        | Default |          |           | &#10003;      |
-| mailbox-modify      | email_address    | Default |          |           | &#10003;      |
+| mailbox-modify      | app              | Default |          |           | &#10003;      |
+|                     | email_address    | Default |          |           | &#10003;      |
 |                     | email_user       | Default |          |           | &#10003;      |
-|                     | application      | Default |          |           | &#10003;      |
 |                     | email_domain     | Default |          |           | &#10003;      |
 |                     | operation        | Default |          |           | &#10003;      |
-| user-modify         | email_address    |         |          |           |               |
+| user-modify         | app              |         |          |           |               |
+|                     | email_address    |         |          |           |               |
 |                     | email_user       |         |          |           |               |
-|                     | application      |         |          |           |               |
 |                     | email_domain     |         |          |           |               |
 |                     | operation        |         |          |           |               |
 

@@ -30,6 +30,7 @@ Activity Types
 |                        | target            |         |          |           |               |
 | app-activity           | country           | Default |          |           | &#10003;      |
 |                        | app_type          | Default |          |           | &#10003;      |
+|                        | os                | Default |          |           | &#10003;      |
 |                        | resource          | Default |          |           | &#10003;      |
 |                        | file_name         | Default |          |           | &#10003;      |
 |                        | src_host          | Default |          | &#10003;  |               |
@@ -44,7 +45,6 @@ Activity Types
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | dest_ip           | Default |          | &#10003;  |               |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | dest_host         | Default |          | &#10003;  |               |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
@@ -52,7 +52,8 @@ Activity Types
 |                        | account           | Default |          | &#10003;  |               |
 |                        | user_agent        | Default |          |           | &#10003;      |
 |                        | object            | Default |          |           | &#10003;      |
-| app-login              | src_host          | Default |          | &#10003;  |               |
+| app-login              | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | auth_method       | Default |          |           | &#10003;      |
@@ -61,23 +62,23 @@ Activity Types
 |                        | file_type         | Default |          |           | &#10003;      |
 |                        | dest_ip           | Default |          | &#10003;  |               |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | dest_port         | Default |          |           | &#10003;      |
 |                        | user_agent        | Default |          |           | &#10003;      |
 |                        | object            | Default |          |           | &#10003;      |
 | email-receive          | src_ip            | Default |          | &#10003;  |               |
+|                        | os                | Default |          |           | &#10003;      |
 |                        | web_domain        | Default |          |           | &#10003;      |
 |                        | bytes             | Default |          |           | &#10003;      |
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | src_host          | Default |          | &#10003;  |               |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | dest_port         | Default |          |           | &#10003;      |
 |                        | url               | Default |          |           | &#10003;      |
-| email-send             | src_host          | Default |          | &#10003;  |               |
+| email-send             | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -85,12 +86,12 @@ Activity Types
 |                        | file_type         | Default |          |           | &#10003;      |
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | dest_port         | Default |          |           | &#10003;      |
 |                        | user_agent        | Default |          |           | &#10003;      |
-| file-copy              | src_host          | Default |          | &#10003;  |               |
+| file-copy              | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -99,12 +100,12 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
-| file-delete            | src_host          | Legacy  |          | &#10003;  |               |
+| file-delete            | os                |         |          |           |               |
+|                        | src_host          | Legacy  |          | &#10003;  |               |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | auth_method       |         |          |           |               |
@@ -112,13 +113,13 @@ Activity Types
 |                        | bytes             |         |          |           |               |
 |                        | file_type         | Legacy  |          |           | &#10003;      |
 |                        | domain            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
 |                        | dest_port         |         |          |           |               |
 |                        | user_agent        |         |          |           |               |
 |                        | object            |         |          |           |               |
-| file-download          | src_host          | Legacy  |          |           | &#10003;      |
+| file-download          | os                |         |          |           |               |
+|                        | src_host          | Legacy  |          |           | &#10003;      |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | auth_method       |         |          |           |               |
@@ -126,13 +127,13 @@ Activity Types
 |                        | bytes             | Legacy  |          | &#10003;  |               |
 |                        | file_type         | Legacy  |          |           | &#10003;      |
 |                        | domain            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
 |                        | dest_port         |         |          |           |               |
 |                        | user_agent        |         |          |           |               |
 |                        | object            |         |          |           |               |
-| file-list              | src_host          | Default |          | &#10003;  |               |
+| file-list              | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -141,12 +142,12 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
-| file-move              | src_host          | Default |          | &#10003;  |               |
+| file-move              | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -155,12 +156,12 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
-| file-permission-modify | src_host          |         |          |           |               |
+| file-permission-modify | os                |         |          |           |               |
+|                        | src_host          |         |          |           |               |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | auth_method       |         |          |           |               |
@@ -168,13 +169,13 @@ Activity Types
 |                        | bytes             |         |          |           |               |
 |                        | file_type         | Legacy  |          |           | &#10003;      |
 |                        | domain            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
 |                        | dest_port         |         |          |           |               |
 |                        | user_agent        |         |          |           |               |
 |                        | object            |         |          |           |               |
-| file-read              | src_host          | Legacy  |          | &#10003;  |               |
+| file-read              | os                |         |          |           |               |
+|                        | src_host          | Legacy  |          | &#10003;  |               |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | auth_method       |         |          |           |               |
@@ -182,13 +183,13 @@ Activity Types
 |                        | bytes             | Legacy  |          |           | &#10003;      |
 |                        | file_type         | Legacy  |          |           | &#10003;      |
 |                        | domain            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
 |                        | dest_port         |         |          |           |               |
 |                        | user_agent        |         |          |           |               |
 |                        | object            |         |          |           |               |
-| file-upload            | src_host          | Legacy  |          |           | &#10003;      |
+| file-upload            | os                |         |          |           |               |
+|                        | src_host          | Legacy  |          |           | &#10003;      |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | auth_method       |         |          |           |               |
@@ -196,13 +197,13 @@ Activity Types
 |                        | bytes             |         |          |           |               |
 |                        | file_type         | Legacy  |          |           | &#10003;      |
 |                        | domain            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
 |                        | dest_port         |         |          |           |               |
 |                        | user_agent        |         |          |           |               |
 |                        | object            |         |          |           |               |
-| file-write             | src_host          |         |          |           |               |
+| file-write             | os                |         |          |           |               |
+|                        | src_host          |         |          |           |               |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | auth_method       |         |          |           |               |
@@ -211,7 +212,6 @@ Activity Types
 |                        | file_type         | Legacy  |          |           | &#10003;      |
 |                        | domain            |         |          |           |               |
 |                        | browser           |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | action            |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
@@ -219,7 +219,8 @@ Activity Types
 |                        | dest_port         |         |          |           |               |
 |                        | user_agent        |         |          |           |               |
 |                        | object            |         |          |           |               |
-| group-member-list      | src_host          | Default |          | &#10003;  |               |
+| group-member-list      | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -227,12 +228,12 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
-| group-member-remove    | src_host          | Legacy  |          | &#10003;  |               |
+| group-member-remove    | os                |         |          |           |               |
+|                        | src_host          | Legacy  |          | &#10003;  |               |
 |                        | url               |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | web_domain        |         |          |           |               |
@@ -240,18 +241,18 @@ Activity Types
 |                        | browser           |         |          |           |               |
 |                        | domain            | Legacy  |          |           | &#10003;      |
 |                        | action            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | operation         |         |          |           |               |
 |                        | user              | Legacy  | &#10003; | &#10003;  |               |
 |                        | dest_port         |         |          |           |               |
 | http-session           | src_location      | Default |          |           | &#10003;      |
+|                        | os                | Default |          |           | &#10003;      |
 |                        | src_country       | Default |          |           | &#10003;      |
 |                        | additional_info   | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | src_host          | Default |          | &#10003;  |               |
-| log-search             | src_host          | Default |          | &#10003;  |               |
+| log-search             | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -259,17 +260,16 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
 | message-send           | src_ip            | Default |          | &#10003;  |               |
+|                        | os                | Default |          |           | &#10003;      |
 |                        | web_domain        | Default |          |           | &#10003;      |
 |                        | bytes             | Default |          |           | &#10003;      |
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | src_host          | Default |          | &#10003;  |               |
 |                        | operation         | Default |          |           | &#10003;      |
@@ -283,17 +283,18 @@ Activity Types
 |                        | user              | Default |          | &#10003;  |               |
 |                        | user_agent        | Default |          |           | &#10003;      |
 | user-create            | src_ip            |         |          |           |               |
+|                        | os                |         |          |           |               |
 |                        | web_domain        |         |          |           |               |
 |                        | bytes             |         |          |           |               |
 |                        | browser           |         |          |           |               |
 |                        | action            |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | location          |         |          |           |               |
 |                        | src_host          | Legacy  |          | &#10003;  |               |
 |                        | operation         |         |          |           |               |
 |                        | dest_port         |         |          |           |               |
 |                        | url               |         |          |           |               |
-| user-mfa-disable       | src_host          | Default |          | &#10003;  |               |
+| user-mfa-disable       | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -301,12 +302,12 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
-| user-password-delete   | src_host          | Default |          | &#10003;  |               |
+| user-password-delete   | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -314,12 +315,12 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |
 |                        | dest_port         | Default |          |           | &#10003;      |
-| user-role-modify       | src_host          | Default |          | &#10003;  |               |
+| user-role-modify       | os                | Default |          |           | &#10003;      |
+|                        | src_host          | Default |          | &#10003;  |               |
 |                        | url               | Default |          |           | &#10003;      |
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | web_domain        | Default |          |           | &#10003;      |
@@ -327,7 +328,6 @@ Activity Types
 |                        | browser           | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | action            | Default |          |           | &#10003;      |
-|                        | operating_system  | Default |          |           | &#10003;      |
 |                        | location          | Default |          |           | &#10003;      |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | user              | Default |          | &#10003;  |               |

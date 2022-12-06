@@ -1,10 +1,10 @@
-imperva web application firewall
-================================
+imperva web app firewall
+========================
 
 Expression
 ----------
 
-product = imperva web application firewall
+product = imperva web Application firewall
 
 Fields
 ------

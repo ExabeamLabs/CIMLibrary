@@ -29,17 +29,21 @@ The possible fields for this activity type will vary depending on whether the ac
 app-authentication:success
 --------------------------
 
-| Field               | Core     | Detection | Informational |
-| ------------------- | -------- | --------- | ------------- |
-| user                | &#10003; |           |               |
-| authentication_type |          |           |               |
+| Field       | Core     | Detection | Informational |
+| ----------- | -------- | --------- | ------------- |
+| auth_type   |          |           |               |
+| mfa_country |          | &#10003;  |               |
+| mfa_device  |          | &#10003;  |               |
+| user        | &#10003; |           |               |
 
 app-authentication:fail
 -----------------------
 
-| Field               | Core     | Detection | Informational |
-| ------------------- | -------- | --------- | ------------- |
-| failure_code        |          | &#10003;  |               |
-| failure_reason      |          | &#10003;  |               |
-| user                | &#10003; |           |               |
-| authentication_type |          |           |               |
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| auth_type      |          |           |               |
+| failure_code   |          | &#10003;  |               |
+| mfa_country    |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |
+| mfa_device     |          | &#10003;  |               |
+| user           | &#10003; |           |               |

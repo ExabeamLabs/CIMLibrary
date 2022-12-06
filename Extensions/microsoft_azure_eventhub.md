@@ -16,13 +16,13 @@ Activity Types
 
 | Activity Type | Field                    | Status | Core     | Detection | Informational |
 | ------------- | ------------------------ | ------ | -------- | --------- | ------------- |
-| alert-trigger | event_name_hub_namespace |        |          |           |               |
+| alert-trigger | app                      |        |          |           |               |
+|               | event_name_hub_namespace |        |          |           |               |
 |               | azure_category           |        |          |           |               |
 |               | src_host                 | Legacy | &#10003; | &#10003;  |               |
 |               | result                   |        |          |           |               |
 |               | src_ip                   | Legacy | &#10003; | &#10003;  |               |
 |               | email_address            |        |          |           |               |
-|               | application              |        |          |           |               |
 |               | additional_info          |        |          |           |               |
 |               | azure_resource_type      |        |          |           |               |
 |               | alert_id                 | Legacy |          |           | &#10003;      |

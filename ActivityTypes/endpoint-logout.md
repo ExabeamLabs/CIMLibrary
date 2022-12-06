@@ -33,6 +33,7 @@ endpoint-logout:success
 | ---------- | -------- | --------- | ------------- |
 | login_type |          | &#10003;  |               |
 | domain     |          |           |               |
+| logon_type |          | &#10003;  |               |
 | user       | &#10003; | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

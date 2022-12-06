@@ -9,7 +9,12 @@ product = "vmware nsx"
 Fields
 ------
 
-There are no fields for this extension.
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| bytes_out |      |           | &#10003;      |
+| bytes_in  |      |           | &#10003;      |
+| operation |      |           | &#10003;      |
+| direction |      |           | &#10003;      |
 
 Activity Types
 --------------

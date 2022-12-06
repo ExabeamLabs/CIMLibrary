@@ -25,16 +25,16 @@ Fields
 Activity Types
 --------------
 
-| Activity Type | Field       | Status  | Core | Detection | Informational |
-| ------------- | ----------- | ------- | ---- | --------- | ------------- |
-| app-activity  | file_path   | Default |      |           | &#10003;      |
-|               | file_ext    | Default |      |           | &#10003;      |
-|               | file_name   | Default |      |           | &#10003;      |
-|               | file_dir    | Default |      |           | &#10003;      |
-| app-login     |             |         |      |           |               |
-| file-download |             |         |      |           |               |
-| file-share    | application | Default |      |           | &#10003;      |
-|               | operation   | Default |      |           | &#10003;      |
-|               | target      | Default |      |           | &#10003;      |
-| file-upload   |             |         |      |           |               |
+| Activity Type | Field     | Status  | Core | Detection | Informational |
+| ------------- | --------- | ------- | ---- | --------- | ------------- |
+| app-activity  | file_path | Default |      |           | &#10003;      |
+|               | file_ext  | Default |      |           | &#10003;      |
+|               | file_name | Default |      |           | &#10003;      |
+|               | file_dir  | Default |      |           | &#10003;      |
+| app-login     |           |         |      |           |               |
+| file-download |           |         |      |           |               |
+| file-share    | app       | Default |      |           | &#10003;      |
+|               | operation | Default |      |           | &#10003;      |
+|               | target    | Default |      |           | &#10003;      |
+| file-upload   |           |         |      |           |               |
 

@@ -39,7 +39,7 @@ Activity Types
 |                         | dest_port       | Default |          |           | &#10003;      |
 | endpoint-authentication | src_ip          | Default |          | &#10003;  |               |
 |                         | dest_ip         | Default |          | &#10003;  |               |
-| http-request            | application     | Default |          |           | &#10003;      |
+| http-request            | app             | Default |          |           | &#10003;      |
 |                         | additional_info | Default |          |           | &#10003;      |
 |                         | service_name    | Default |          |           | &#10003;      |
 |                         | event_name      | Default |          |           | &#10003;      |

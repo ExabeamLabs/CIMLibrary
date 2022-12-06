@@ -30,6 +30,7 @@ Activity Types
 |                      | alert_name       | Default |      |           | &#10003;      |
 | app-authentication   | local_user_id    | Default |      |           | &#10003;      |
 |                      | role             | Default |      |           | &#10003;      |
+|                      | os               | Default |      |           | &#10003;      |
 |                      | src_host         | Default |      | &#10003;  |               |
 |                      | auth_method      | Default |      |           | &#10003;      |
 |                      | additional_info  | Default |      |           | &#10003;      |
@@ -37,7 +38,6 @@ Activity Types
 |                      | browser          | Default |      |           | &#10003;      |
 |                      | dest_host        | Default |      | &#10003;  |               |
 |                      | event_name       | Default |      |           | &#10003;      |
-|                      | operating_system | Default |      |           | &#10003;      |
 |                      | response_time    | Default |      |           | &#10003;      |
 |                      | attributes       | Default |      |           | &#10003;      |
 |                      | device           | Default |      |           | &#10003;      |
@@ -46,13 +46,13 @@ Activity Types
 |                      | adopter_id       | Default |      |           | &#10003;      |
 | app-login            | country          | Default |      |           | &#10003;      |
 |                      | requested_app    | Default |      |           | &#10003;      |
+|                      | os               | Default |      |           | &#10003;      |
 |                      | src_host         | Default |      | &#10003;  |               |
 |                      | url              | Default |      |           | &#10003;      |
 |                      | src_ip           | Default |      | &#10003;  |               |
 |                      | auth_method      | Default |      |           | &#10003;      |
 |                      | additional_info  | Default |      |           | &#10003;      |
 |                      | dest_ip          | Default |      | &#10003;  |               |
-|                      | operating_system | Default |      |           | &#10003;      |
 |                      | dest_host        | Default |      | &#10003;  |               |
 |                      | event_name       | Default |      |           | &#10003;      |
 |                      | requested_app_id | Default |      |           | &#10003;      |
@@ -74,7 +74,7 @@ Activity Types
 |                      | adopter_id       |         |      |           |               |
 | vpn-login            | country          | Default |      |           | &#10003;      |
 |                      | requested_app    | Default |      |           | &#10003;      |
-|                      | operating_system | Default |      |           | &#10003;      |
+|                      | os               | Default |      |           | &#10003;      |
 |                      | requested_app_id | Default |      |           | &#10003;      |
 |                      | device           | Default |      |           | &#10003;      |
 

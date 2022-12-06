@@ -33,6 +33,7 @@ endpoint-login:success
 | ---------- | -------- | --------- | ------------- |
 | login_type |          | &#10003;  |               |
 | domain     |          | &#10003;  |               |
+| logon_type |          | &#10003;  |               |
 | user       | &#10003; | &#10003;  |               |
 
 endpoint-login:fail

@@ -16,9 +16,9 @@ Parameters
 
 Legacy Names
 ------------
-| Success                       | Fail |
-| ----------------------------- | ---- |
-| authentication-successful<br> |      |
+| Success                       | Fail                      |
+| ----------------------------- | ------------------------- |
+| authentication-successful<br> | authentication-failed<br> |
 
 Fields
 ------
@@ -29,10 +29,23 @@ The possible fields for this activity type will vary depending on whether the ac
 vpn-authentication:success
 --------------------------
 
-| Field               | Core     | Detection | Informational |
-| ------------------- | -------- | --------- | ------------- |
-| domain              |          | &#10003;  |               |
-| user                | &#10003; | &#10003;  |               |
-| authentication_type | &#10003; | &#10003;  |               |
+| Field       | Core     | Detection | Informational |
+| ----------- | -------- | --------- | ------------- |
+| auth_type   | &#10003; | &#10003;  |               |
+| domain      |          | &#10003;  |               |
+| mfa_country |          | &#10003;  |               |
+| mfa_device  |          | &#10003;  |               |
+| user        | &#10003; | &#10003;  |               |
 
-A failure activity is not currently supported for this activity-type.
+vpn-authentication:fail
+-----------------------
+
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| auth_type      | &#10003; | &#10003;  |               |
+| failure_code   |          | &#10003;  |               |
+| domain         |          | &#10003;  |               |
+| mfa_country    |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |
+| mfa_device     |          | &#10003;  |               |
+| user           | &#10003; | &#10003;  |               |

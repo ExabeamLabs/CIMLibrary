@@ -31,10 +31,10 @@ Activity Types
 |                             | process_name      | Legacy  |          | &#10003;  |               |
 |                             | alert_id          | Legacy  |          |           | &#10003;      |
 |                             | occured_time      |         |          |           |               |
-|                             | operating_system  |         |          |           |               |
 |                             | direction         |         |          |           |               |
 |                             | email_attachment  |         |          |           |               |
 |                             | device_id         |         |          |           |               |
+|                             | os                |         |          |           |               |
 |                             | file_name         | Legacy  | &#10003; |           |               |
 |                             | file_dir          | Legacy  |          |           | &#10003;      |
 |                             | original_user     |         |          |           |               |

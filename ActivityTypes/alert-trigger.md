@@ -29,7 +29,11 @@ The possible fields for this activity type will vary depending on whether the ac
 alert-trigger:success
 ---------------------
 
-There are no fields for this activity type.
-
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| alert_severity | &#10003; |           |               |
+| alert_source   | &#10003; |           |               |
+| alert_subject  |          |           | &#10003;      |
+| alert_type     | &#10003; |           |               |
 
 A failure activity is not currently supported for this activity-type.

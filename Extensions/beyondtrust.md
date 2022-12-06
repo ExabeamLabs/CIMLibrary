@@ -17,7 +17,7 @@ Activity Types
 | Activity Type          | Field             | Status  | Core     | Detection | Informational |
 | ---------------------- | ----------------- | ------- | -------- | --------- | ------------- |
 | app-activity           | src_ip            | Default |          | &#10003;  |               |
-|                        | application       | Default |          |           | &#10003;      |
+|                        | app               | Default |          |           | &#10003;      |
 |                        | additional_info   | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | dest_domain       | Default |          |           | &#10003;      |
@@ -29,25 +29,26 @@ Activity Types
 |                        | src_ip            | Default |          | &#10003;  |               |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | object            | Default |          |           | &#10003;      |
-| password-create        | account_domain    | Default |          |           | &#10003;      |
-|                        | application       | Default |          |           | &#10003;      |
+| endpoint-login         | user_info         | Default |          |           | &#10003;      |
+| password-create        | app               | Default |          |           | &#10003;      |
+|                        | account_domain    | Default |          |           | &#10003;      |
 |                        | additional_info   | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | dest_host         | Default |          | &#10003;  |               |
 |                        | operation         | Default |          |           | &#10003;      |
 |                        | account           | Default |          | &#10003;  |               |
 |                        | object            | Default |          |           | &#10003;      |
-| user-permission-modify | src_user          |         |          |           |               |
+| user-permission-modify | app               |         |          |           |               |
+|                        | os                |         |          |           |               |
+|                        | src_user          |         |          |           |               |
 |                        | session_id        |         |          |           |               |
 |                        | src_host          | Legacy  |          |           | &#10003;      |
 |                        | src_port          |         |          |           |               |
 |                        | src_ip            |         |          |           |               |
 |                        | full_name         |         |          |           |               |
 |                        | email_user        |         |          |           |               |
-|                        | application       |         |          |           |               |
 |                        | additional_info   |         |          |           |               |
 |                        | dest_ip           |         |          |           |               |
-|                        | operating_system  |         |          |           |               |
 |                        | dest_host         | Legacy  |          |           | &#10003;      |
 |                        | event_name        |         |          |           |               |
 |                        | operation         |         |          |           |               |

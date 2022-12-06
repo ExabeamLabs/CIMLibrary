@@ -20,6 +20,7 @@ Activity Types
 |               | miscellaneous        |        |          |           |               |
 |               | bytes_in             |        |          |           |               |
 |               | src_user             |        |          |           |               |
+|               | network_app          |        |          |           |               |
 |               | dest_translated_ip   |        |          |           |               |
 |               | threat_category      |        |          |           |               |
 |               | src_ip               | Legacy | &#10003; | &#10003;  |               |
@@ -32,6 +33,7 @@ Activity Types
 |               | alert_id             | Legacy |          |           | &#10003;      |
 |               | action               | Legacy |          |           | &#10003;      |
 |               | dest_port            | Legacy |          | &#10003;  |               |
+|               | user_agent           |        |          |           |               |
 |               | direction            |        |          |           |               |
 |               | src_network_zone     |        |          |           |               |
 |               | file_name            | Legacy | &#10003; |           |               |
@@ -39,19 +41,20 @@ Activity Types
 |               | profile              |        |          |           |               |
 |               | dest_network_zone    |        |          |           |               |
 |               | event_category       |        |          |           |               |
-|               | rule_id              |        |          |           |               |
 |               | src_port             | Legacy |          |           | &#10003;      |
+|               | rule_id              |        |          |           |               |
 |               | sequence             |        |          |           |               |
 |               | file_ext             |        |          |           |               |
 |               | email_address        |        |          |           |               |
 |               | bytes_out            |        |          |           |               |
 |               | additional_info      |        |          |           |               |
+|               | web_domain           |        |          |           |               |
+|               | dest_ip              | Legacy | &#10003; | &#10003;  |               |
 |               | domain               |        |          |           |               |
 |               | dest_domain          |        |          |           |               |
 |               | dest_host            | Legacy |          | &#10003;  |               |
 |               | dest_translated_port |        |          |           |               |
 |               | malware_url          |        |          |           |               |
-|               | network_application  |        |          |           |               |
 |               | category             |        |          |           |               |
 |               | user                 | Legacy |          | &#10003;  |               |
 |               | event_time           |        |          |           |               |

@@ -16,14 +16,14 @@ Activity Types
 
 | Activity Type | Field              | Status | Core     | Detection | Informational |
 | ------------- | ------------------ | ------ | -------- | --------- | ------------- |
-| alert-trigger | dest_translated_ip |        |          |           |               |
+| alert-trigger | app                |        |          |           |               |
+|               | dest_translated_ip |        |          |           |               |
 |               | src_ip             | Legacy | &#10003; | &#10003;  |               |
 |               | src_location       |        |          |           |               |
 |               | src_port           | Legacy |          |           | &#10003;      |
 |               | src_translated_ip  |        |          |           |               |
 |               | protocol           | Legacy |          | &#10003;  |               |
 |               | email_address      |        |          |           |               |
-|               | application        |        |          |           |               |
 |               | alert_id           | Legacy |          |           | &#10003;      |
 |               | dest_ip            | Legacy | &#10003; | &#10003;  |               |
 |               | domain             |        |          |           |               |

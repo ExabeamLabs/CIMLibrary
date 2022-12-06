@@ -47,7 +47,7 @@ Activity Types
 |                     | object           | Default |      |           | &#10003;      |
 | app-login           | user_agent       | Default |      |           | &#10003;      |
 | group-member-add    | group_type       | Legacy  |      |           | &#10003;      |
-| user-create         | application      |         |      |           |               |
+| user-create         | app              |         |      |           |               |
 |                     | object_type      |         |      |           |               |
 |                     | additional_info  |         |      |           |               |
 |                     | browser          |         |      |           |               |
@@ -56,7 +56,7 @@ Activity Types
 |                     | user_agent       |         |      |           |               |
 |                     | object           |         |      |           |               |
 | user-lock           | group_name       |         |      |           | &#10003;      |
-| user-password-reset | application      |         |      |           |               |
+| user-password-reset | app              |         |      |           |               |
 |                     | object_type      |         |      |           |               |
 |                     | additional_info  |         |      |           |               |
 |                     | browser          |         |      |           |               |

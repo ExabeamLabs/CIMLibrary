@@ -23,8 +23,8 @@ Activity Types
 | vpn-login          | src_translated_ip | Default |      |           | &#10003;      |
 |                    | src_port          | Default |      |           | &#10003;      |
 |                    | protocol          | Default |      |           | &#10003;      |
+|                    | os                | Default |      |           | &#10003;      |
 |                    | dest_ip           | Default |      | &#10003;  |               |
-|                    | operating_system  | Default |      |           | &#10003;      |
 |                    | dest_host         | Default |      | &#10003;  |               |
 |                    | event_name        | Default |      |           | &#10003;      |
 |                    | src_host          | Default |      | &#10003;  |               |
@@ -32,8 +32,8 @@ Activity Types
 | vpn-logout         | src_translated_ip |         |      |           |               |
 |                    | src_port          |         |      |           |               |
 |                    | protocol          |         |      |           |               |
+|                    | os                |         |      |           |               |
 |                    | dest_ip           |         |      |           |               |
-|                    | operating_system  |         |      |           |               |
 |                    | dest_host         | Legacy  |      |           | &#10003;      |
 |                    | event_name        |         |      |           |               |
 |                    | src_host          |         |      |           |               |

@@ -25,9 +25,9 @@ Activity Types
 |                             | operation    |         |          |           |               |
 |                             | user         | Legacy  |          | &#10003;  |               |
 |                             | object       |         |          |           |               |
-| app-activity                | file_path    | Default |          |           | &#10003;      |
+| app-activity                | app          | Default |          |           | &#10003;      |
+|                             | file_path    | Default |          |           | &#10003;      |
 |                             | file_ext     | Default |          |           | &#10003;      |
-|                             | application  | Default |          |           | &#10003;      |
 |                             | file_name    | Default |          |           | &#10003;      |
 |                             | bytes        | Default |          |           | &#10003;      |
 |                             | file_dir     | Default |          |           | &#10003;      |

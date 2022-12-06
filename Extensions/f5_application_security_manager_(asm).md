@@ -4,7 +4,7 @@ f5 application security manager (asm)
 Expression
 ----------
 
-product = f5 application security manager (asm)
+product = f5 Application security manager (asm)
 
 Fields
 ------

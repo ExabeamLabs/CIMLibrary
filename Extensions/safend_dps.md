@@ -18,15 +18,15 @@ Fields
 Activity Types
 --------------
 
-| Activity Type               | Field            | Status | Core | Detection | Informational |
-| --------------------------- | ---------------- | ------ | ---- | --------- | ------------- |
-| file-read                   | device_id        | Legacy |      | &#10003;  |               |
-|                             | bytes_out        |        |      |           | &#10003;      |
-|                             | operating_system |        |      | &#10003;  |               |
-|                             | device_type      | Legacy |      |           | &#10003;      |
-| file-write                  | device_id        | Legacy |      | &#10003;  |               |
-|                             | bytes_in         |        |      | &#10003;  |               |
-|                             | operating_system |        |      |           | &#10003;      |
-|                             | device_type      | Legacy |      |           | &#10003;      |
-| peripheral_storage-activity |                  |        |      |           |               |
+| Activity Type               | Field       | Status | Core | Detection | Informational |
+| --------------------------- | ----------- | ------ | ---- | --------- | ------------- |
+| file-read                   | device_id   | Legacy |      | &#10003;  |               |
+|                             | os          |        |      | &#10003;  |               |
+|                             | bytes_out   |        |      |           | &#10003;      |
+|                             | device_type | Legacy |      |           | &#10003;      |
+| file-write                  | device_id   | Legacy |      | &#10003;  |               |
+|                             | os          |        |      |           | &#10003;      |
+|                             | bytes_in    |        |      | &#10003;  |               |
+|                             | device_type | Legacy |      |           | &#10003;      |
+| peripheral_storage-activity |             |        |      |           |               |
 

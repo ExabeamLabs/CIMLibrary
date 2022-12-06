@@ -16,13 +16,13 @@ Activity Types
 
 | Activity Type | Field           | Status | Core     | Detection | Informational |
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | file_path       | Legacy |          |           | &#10003;      |
+| alert-trigger | app             |        |          |           |               |
+|               | file_path       | Legacy |          |           | &#10003;      |
 |               | file_name       | Legacy | &#10003; |           |               |
 |               | message_id      |        |          |           |               |
 |               | recipient_count |        |          |           |               |
 |               | target          |        |          |           |               |
 |               | result          |        |          |           |               |
-|               | application     |        |          |           |               |
 |               | additional_info |        |          |           |               |
 |               | user_id         |        |          |           |               |
 |               | recipients      |        |          |           |               |

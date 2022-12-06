@@ -27,13 +27,14 @@ Activity Types
 |               | src_ip               | Legacy | &#10003; | &#10003;  |               |
 |               | src_translated_ip    |        |          |           |               |
 |               | protocol             | Legacy |          | &#10003;  |               |
-|               | application_protocol |        |          |           |               |
 |               | attack               |        |          |           |               |
 |               | action               | Legacy |          |           | &#10003;      |
+|               | app_protocol         |        |          |           |               |
 |               | first_name           |        |          |           |               |
 |               | dest_port            | Legacy |          | &#10003;  |               |
 |               | origin_name          |        |          |           |               |
 |               | direction            |        |          |           |               |
+|               | app                  |        |          |           |               |
 |               | user_ou              |        |          |           |               |
 |               | smartdefense_profile |        |          |           |               |
 |               | service_name         |        |          |           |               |
@@ -46,7 +47,6 @@ Activity Types
 |               | rule_id              |        |          |           |               |
 |               | src_port             | Legacy |          |           | &#10003;      |
 |               | full_name            |        |          |           |               |
-|               | application          |        |          |           |               |
 |               | additional_info      |        |          |           |               |
 |               | domain               |        |          |           |               |
 |               | protection_name      |        |          |           |               |

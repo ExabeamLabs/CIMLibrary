@@ -19,8 +19,8 @@ Activity Types
 | app-authentication     | additional_info | Default |          |           | &#10003;      |
 |                        | domain          | Default |          |           | &#10003;      |
 |                        | operation       | Default |          |           | &#10003;      |
-| app-login              | src_ip          | Default |          | &#10003;  |               |
-|                        | application     | Default |          |           | &#10003;      |
+| app-login              | app             | Default |          |           | &#10003;      |
+|                        | src_ip          | Default |          | &#10003;  |               |
 |                        | event_name      | Default |          |           | &#10003;      |
 |                        | event_subtype   | Default |          |           | &#10003;      |
 |                        | operation       | Default |          |           | &#10003;      |

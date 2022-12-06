@@ -18,8 +18,10 @@ Activity Types
 | ------------- | -------------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | process_id           |        |          |           |               |
 |               | process              |        |          |           |               |
+|               | os                   |        |          |           |               |
 |               | file_name            | Legacy | &#10003; |           |               |
 |               | event_name_name      |        |          |           |               |
+|               | process_dir          |        |          |           |               |
 |               | process_command_line |        |          |           |               |
 |               | parent_process       |        |          |           |               |
 |               | src_host             | Legacy | &#10003; | &#10003;  |               |
@@ -31,9 +33,7 @@ Activity Types
 |               | alert_id             | Legacy |          |           | &#10003;      |
 |               | domain               |        |          |           |               |
 |               | hash_md5             |        |          |           |               |
-|               | process_directory    |        |          |           |               |
 |               | user_sid             |        |          |           |               |
-|               | operating_system     |        |          |           |               |
 |               | parent_process_path  |        |          |           |               |
 |               | user                 | Legacy |          | &#10003;  |               |
 
