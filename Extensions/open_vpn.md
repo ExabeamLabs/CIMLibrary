@@ -18,8 +18,8 @@ Activity Types
 
 | Activity Type | Field             | Status  | Core | Detection | Informational |
 | ------------- | ----------------- | ------- | ---- | --------- | ------------- |
-| app-activity  | src_ip            | Default |      | &#10003;  |               |
-|               | application       | Default |      |           | &#10003;      |
+| app-activity  | app               | Default |      |           | &#10003;      |
+|               | src_ip            | Default |      | &#10003;  |               |
 |               | additional_info   | Default |      |           | &#10003;      |
 |               | bytes             | Default |      |           | &#10003;      |
 |               | src_host          | Default |      | &#10003;  |               |

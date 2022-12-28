@@ -44,8 +44,8 @@ Fields
 Activity Types
 --------------
 
-| Activity Type | Field | Status | Core | Detection | Informational |
-| ------------- | ----- | ------ | ---- | --------- | ------------- |
-| email-receive |       |        |      |           |               |
-| email-send    |       |        |      |           |               |
+| Activity Type | Field       | Status  | Core | Detection | Informational |
+| ------------- | ----------- | ------- | ---- | --------- | ------------- |
+| email-receive | folder_name | Default |      |           | &#10003;      |
+| email-send    |             |         |      |           |               |
 

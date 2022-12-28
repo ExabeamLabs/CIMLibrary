@@ -4,7 +4,7 @@ kaspersky endpoint security for business
 Expression
 ----------
 
-product = "kaspersky endpoint security for business"
+product = kaspersky endpoint security for business
 
 Fields
 ------
@@ -19,13 +19,15 @@ Activity Types
 | alert-trigger             | device_ip       |        |          |           |               |
 |                           | result          |        |          |           |               |
 |                           | additional_info |        |          |           |               |
-|                           | dest_ip         | Legacy | &#10003; | &#10003;  |               |
 |                           | domain          |        |          |           |               |
+|                           | dest_ip         | Legacy | &#10003; | &#10003;  |               |
 |                           | action          | Legacy |          |           | &#10003;      |
 |                           | dest_host       | Legacy |          | &#10003;  |               |
+|                           | malware_url     |        |          |           |               |
 |                           | device_type     |        |          |           |               |
-|                           | operation       |        |          |           |               |
+|                           | src_host        | Legacy | &#10003; | &#10003;  |               |
 |                           | user            | Legacy |          | &#10003;  |               |
+|                           | operation       |        |          |           |               |
 | peripheral_storage-insert | src_ip          |        |          |           |               |
 |                           | user            | Legacy | &#10003; | &#10003;  |               |
 |                           | operation       |        |          |           |               |

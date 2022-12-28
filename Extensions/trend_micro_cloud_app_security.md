@@ -16,9 +16,9 @@ Activity Types
 
 | Activity Type | Field           | Status | Core     | Detection | Informational |
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | result          |        |          |           |               |
+| alert-trigger | app             |        |          |           |               |
+|               | result          |        |          |           |               |
 |               | email_address   |        |          |           |               |
-|               | application     |        |          |           |               |
 |               | additional_info |        |          |           |               |
 |               | file_name       | Legacy | &#10003; |           |               |
 |               | malware_url     |        |          |           |               |

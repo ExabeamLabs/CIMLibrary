@@ -16,14 +16,14 @@ Activity Types
 
 | Activity Type | Field           | Status | Core     | Detection | Informational |
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | src_mac         |        |          |           |               |
+| alert-trigger | app             |        |          |           |               |
+|               | src_mac         |        |          |           |               |
 |               | process         |        |          |           |               |
 |               | event_subtype   |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | result          |        |          |           |               |
 |               | src_ip          | Legacy | &#10003; | &#10003;  |               |
 |               | protocol        | Legacy |          | &#10003;  |               |
-|               | application     |        |          |           |               |
 |               | additional_info |        |          |           |               |
 |               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
 |               | dest_host       | Legacy |          | &#10003;  |               |

@@ -21,12 +21,12 @@ Activity Types
 
 | Activity Type | Field           | Status  | Core     | Detection | Informational |
 | ------------- | --------------- | ------- | -------- | --------- | ------------- |
-| app-activity  | file_path       | Default |          |           | &#10003;      |
+| app-activity  | app             | Default |          |           | &#10003;      |
+|               | file_path       | Default |          |           | &#10003;      |
 |               | file_name       | Default |          |           | &#10003;      |
 |               | table_name      | Default |          |           | &#10003;      |
 |               | dproc           | Default |          |           | &#10003;      |
 |               | file_ext        | Default |          |           | &#10003;      |
-|               | application     | Default |          |           | &#10003;      |
 |               | additional_info | Default |          |           | &#10003;      |
 |               | bytes           | Default |          |           | &#10003;      |
 |               | file_type       | Default |          |           | &#10003;      |

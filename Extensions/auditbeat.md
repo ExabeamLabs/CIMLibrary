@@ -20,11 +20,11 @@ Activity Types
 |                         | process_id           | Default |          |           | &#10003;      |
 |                         | syscall              | Default |          |           | &#10003;      |
 |                         | operation_type       | Default |          |           | &#10003;      |
+|                         | os                   | Default |          |           | &#10003;      |
 |                         | process_command_line | Default |          |           | &#10003;      |
 |                         | group_id             | Default |          |           | &#10003;      |
 |                         | process_name         | Default |          |           | &#10003;      |
 |                         | domain               | Default |          |           | &#10003;      |
-|                         | operating_system     | Default |          |           | &#10003;      |
 |                         | process_path         | Default |          |           | &#10003;      |
 |                         | tag                  | Default |          |           | &#10003;      |
 |                         | user                 | Default | &#10003; | &#10003;  |               |
@@ -45,11 +45,11 @@ Activity Types
 |                         | hash_md5             | Default |          |           | &#10003;      |
 |                         | user                 | Default |          | &#10003;  |               |
 | process-modify          | result               | Default |          |           | &#10003;      |
+|                         | app                  | Default |          |           | &#10003;      |
 |                         | audit_id             | Default |          |           | &#10003;      |
+|                         | os                   | Default |          |           | &#10003;      |
 |                         | operation_type       | Default |          |           | &#10003;      |
-|                         | application          | Default |          |           | &#10003;      |
 |                         | group_id             | Default |          |           | &#10003;      |
-|                         | operating_system     | Default |          |           | &#10003;      |
 |                         | event_category       | Default |          |           | &#10003;      |
 |                         | user                 | Default |          | &#10003;  |               |
 |                         | operation            | Default |          |           | &#10003;      |

@@ -16,7 +16,8 @@ Activity Types
 
 | Activity Type | Field           | Status | Core     | Detection | Informational |
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | country         |        |          |           |               |
+| alert-trigger | app             |        |          |           |               |
+|               | country         |        |          |           |               |
 |               | city            |        |          |           |               |
 |               | object_type     |        |          |           |               |
 |               | last_name       |        |          |           |               |
@@ -25,7 +26,6 @@ Activity Types
 |               | src_ip          | Legacy | &#10003; | &#10003;  |               |
 |               | email_address   |        |          |           |               |
 |               | full_name       |        |          |           |               |
-|               | application     |        |          |           |               |
 |               | additional_info |        |          |           |               |
 |               | state           |        |          |           |               |
 |               | user            | Legacy |          | &#10003;  |               |

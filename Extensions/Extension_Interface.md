@@ -1,16 +1,17 @@
- Extension  Interface
-=====================
+Extension Interface
+===================
 
-###  Description
+### Description
 
 This interface defines any additional context elements that help describe the activity. The extension layer preserves fields that were not essential to describing the subject or activity, but are still represented in the log source. Extensions can contain two definitions. One contains schema fields, which are the fields required for any log from a given data source. The other definition contains activity type mapping, which includes the fields required for a specific activity type from a given data source.
-###  Data Sources
+### Data Sources
 * [abnormal inbound email protection](abnormal_inbound_email_protection.md)
 * [absolute](absolute.md)
 * [accellion kiteworks](accellion_kiteworks.md)
 * [access it! universal.net](access_it!_universal.net.md)
 * [aci](aci.md)
 * [adaxes](adaxes.md)
+* [advanced analytics](advanced_analytics.md)
 * [airlock web application firewall](airlock_web_application_firewall.md)
 * [airwatch](airwatch.md)
 * [akamai technologies](akamai_technologies.md)
@@ -106,7 +107,6 @@ This interface defines any additional context elements that help describe the ac
 * [clearswift secure email gateway](clearswift_secure_email_gateway.md)
 * [clientview](clientview.md)
 * [cloud akamai](cloud_akamai.md)
-* [cloudflare](cloudflare.md)
 * [cloudflare insights](cloudflare_insights.md)
 * [cloudflare waf](cloudflare_waf.md)
 * [code42 incydr](code42_incydr.md)
@@ -114,8 +114,8 @@ This interface defines any additional context elements that help describe the ac
 * [cognitas crosslink](cognitas_crosslink.md)
 * [cohesity dataplatform](cohesity_dataplatform.md)
 * [contrast security secure code platform](contrast_security_secure_code_platform.md)
+* [correlation rule](correlation_rule.md)
 * [cortex xdr](cortex_xdr.md)
-* [crowdstrike falcon](crowdstrike_falcon.md)
 * [cyberark endpoint privilege management](cyberark_endpoint_privilege_management.md)
 * [cyberark privilege access management](cyberark_privilege_access_management.md)
 * [cyberark privileged access manager](cyberark_privileged_access_manager.md)
@@ -159,11 +159,12 @@ This interface defines any additional context elements that help describe the ac
 * [event viewer - security](event_viewer_-_security.md)
 * [event viewer - system](event_viewer_-_system.md)
 * [event viewer - terminalservices-gateway](event_viewer_-_terminalservices-gateway.md)
-* [exabeam dl](exabeam_dl.md)
+* [exabeam audit](exabeam_audit.md)
 * [extrahop reveal(x) 360](extrahop_reveal(x)_360.md)
 * [eyeinspect](eyeinspect.md)
 * [f-secure elements](f-secure_elements.md)
 * [f5 access policy manager](f5_access_policy_manager.md)
+* [f5 app security manager (asm)](f5_app_security_manager_(asm).md)
 * [f5 application security manager (asm)](f5_application_security_manager_(asm).md)
 * [f5 big-ip advanced firewall module (afm)](f5_big-ip_advanced_firewall_module_(afm).md)
 * [f5 big-ip application security manager (asm)](f5_big-ip_application_security_manager_(asm).md)
@@ -249,7 +250,7 @@ This interface defines any additional context elements that help describe the ac
 * [imperva file activity monitoring](imperva_file_activity_monitoring.md)
 * [imperva incapsula](imperva_incapsula.md)
 * [imperva securesphere](imperva_securesphere.md)
-* [imperva web application firewall](imperva_web_application_firewall.md)
+* [imperva web app firewall](imperva_web_app_firewall.md)
 * [imprivata](imprivata.md)
 * [imss](imss.md)
 * [imsva](imsva.md)
@@ -420,6 +421,7 @@ This interface defines any additional context elements that help describe the ac
 * [salesforce](salesforce.md)
 * [sangfor ngaf](sangfor_ngaf.md)
 * [sap](sap.md)
+* [search](search.md)
 * [seclore](seclore.md)
 * [secure computing safeword](secure_computing_safeword.md)
 * [secureauth login](secureauth_login.md)

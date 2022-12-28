@@ -21,7 +21,7 @@ Activity Types
 
 | Activity Type | Field        | Status  | Core | Detection | Informational |
 | ------------- | ------------ | ------- | ---- | --------- | ------------- |
-| app-activity  | application  | Default |      |           | &#10003;      |
+| app-activity  | app          | Default |      |           | &#10003;      |
 |               | resource     | Default |      |           | &#10003;      |
 |               | service_name | Default |      |           | &#10003;      |
 |               | dest_user    | Default |      | &#10003;  |               |
@@ -46,10 +46,10 @@ Activity Types
 |               | file_type    | Legacy  |      |           | &#10003;      |
 |               | bytes        | Legacy  |      |           | &#10003;      |
 |               | object       |         |      | &#10003;  |               |
-| file-upload   | owned_user   |         |      | &#10003;  |               |
+| file-upload   | app          |         |      |           |               |
+|               | owned_user   |         |      | &#10003;  |               |
 |               | access_type  |         |      | &#10003;  |               |
 |               | access       |         |      | &#10003;  |               |
-|               | application  |         |      |           |               |
 |               | resource     |         |      |           |               |
 |               | file_type    | Legacy  |      |           | &#10003;      |
 |               | bytes        |         |      | &#10003;  |               |

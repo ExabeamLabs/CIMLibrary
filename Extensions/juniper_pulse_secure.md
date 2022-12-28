@@ -25,7 +25,7 @@ Activity Types
 |                    | dest_host        | Default |      | &#10003;  |               |
 |                    | src_host         | Default |      | &#10003;  |               |
 |                    | user_agent       | Default |      |           | &#10003;      |
-| http-request       | application      | Default |      |           | &#10003;      |
+| http-request       | app              | Default |      |           | &#10003;      |
 |                    | additional_info  | Default |      |           | &#10003;      |
 |                    | bytes            | Default |      |           | &#10003;      |
 |                    | dest_host        | Default |      | &#10003;  |               |

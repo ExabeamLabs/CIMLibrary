@@ -25,14 +25,14 @@ Activity Types
 | Activity Type      | Field                | Status  | Core | Detection | Informational |
 | ------------------ | -------------------- | ------- | ---- | --------- | ------------- |
 | vpn-authentication | auth_method          | Default |      |           | &#10003;      |
-|                    | operating_system     | Default |      |           | &#10003;      |
+|                    | os                   | Default |      |           | &#10003;      |
 | vpn-login          | user_ou              | Default |      |           | &#10003;      |
 |                    | src_port             | Default |      |           | &#10003;      |
+|                    | auth_type            | Default |      |           | &#10003;      |
+|                    | os                   | Default |      |           | &#10003;      |
 |                    | src_translated_ipnum | Default |      |           | &#10003;      |
-|                    | operating_system     | Default |      |           | &#10003;      |
 |                    | realm                | Default |      |           | &#10003;      |
 |                    | operation            | Default |      |           | &#10003;      |
-|                    | authentication_type  | Default |      |           | &#10003;      |
 |                    | dest_port            | Default |      |           | &#10003;      |
 |                    | direction            | Default |      |           | &#10003;      |
 | vpn-logout         | user_ou              |         |      | &#10003;  |               |

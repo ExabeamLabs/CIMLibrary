@@ -4,7 +4,7 @@ auth0
 Expression
 ----------
 
-product = "auth0"
+product = auth0
 
 Fields
 ------
@@ -20,8 +20,15 @@ Fields
 Activity Types
 --------------
 
-| Activity Type        | Field | Status | Core | Detection | Informational |
-| -------------------- | ----- | ------ | ---- | --------- | ------------- |
-| app-login            |       |        |      |           |               |
-| user-password-modify |       |        |      |           |               |
+| Activity Type        | Field           | Status | Core     | Detection | Informational |
+| -------------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger        | app             |        |          |           |               |
+|                      | src_ip          | Legacy | &#10003; | &#10003;  |               |
+|                      | auth_type       |        |          |           |               |
+|                      | email_address   |        |          |           |               |
+|                      | additional_info |        |          |           |               |
+|                      | domain          |        |          |           |               |
+|                      | user_agent      |        |          |           |               |
+| app-login            |                 |        |          |           |               |
+| user-password-modify |                 |        |          |           |               |
 

@@ -10,6 +10,7 @@ The universal interface defines a set of global fields. These are fields that ar
 
 | Field            | Core     | Detection | Informational |
 | ---------------- | -------- | --------- | ------------- |
+| activity         | &#10003; |           |               |
 | activity_type    | &#10003; |           |               |
 | host             |          |           | &#10003;      |
 | landscape        |          | &#10003;  |               |

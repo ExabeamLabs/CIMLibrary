@@ -16,7 +16,8 @@ Activity Types
 
 | Activity Type | Field             | Status | Core     | Detection | Informational |
 | ------------- | ----------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | country           |        |          |           |               |
+| alert-trigger | app               |        |          |           |               |
+|               | country           |        |          |           |               |
 |               | city              |        |          |           |               |
 |               | more_info         |        |          |           |               |
 |               | result            |        |          |           |               |
@@ -24,7 +25,6 @@ Activity Types
 |               | token_issuer_type |        |          |           |               |
 |               | email_address     |        |          |           |               |
 |               | full_name         |        |          |           |               |
-|               | application       |        |          |           |               |
 |               | additional_info   |        |          |           |               |
 |               | sender            | Legacy | &#10003; |           |               |
 |               | alert_id          | Legacy |          |           | &#10003;      |

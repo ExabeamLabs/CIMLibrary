@@ -17,7 +17,7 @@ Activity Types
 | Activity Type | Field           | Status  | Core | Detection | Informational |
 | ------------- | --------------- | ------- | ---- | --------- | ------------- |
 | http-request  | result          | Default |      |           | &#10003;      |
-|               | application     | Default |      |           | &#10003;      |
+|               | app             | Default |      |           | &#10003;      |
 |               | additional_info | Default |      |           | &#10003;      |
 |               | bytes           | Default |      |           | &#10003;      |
 |               | domain          | Default |      |           | &#10003;      |

@@ -16,8 +16,8 @@ Activity Types
 
 | Activity Type | Field            | Status  | Core | Detection | Informational |
 | ------------- | ---------------- | ------- | ---- | --------- | ------------- |
-| app-activity  | src_ip           | Default |      | &#10003;  |               |
-|               | application      | Default |      |           | &#10003;      |
+| app-activity  | app              | Default |      |           | &#10003;      |
+|               | src_ip           | Default |      | &#10003;  |               |
 |               | resource         | Default |      |           | &#10003;      |
 |               | additional_info  | Default |      |           | &#10003;      |
 |               | domain           | Default |      |           | &#10003;      |
@@ -26,10 +26,10 @@ Activity Types
 |               | object           | Default |      |           | &#10003;      |
 |               | target           | Default |      |           | &#10003;      |
 | app-login     | src_ip           | Default |      | &#10003;  |               |
-| email-read    | result           | Default |      |           | &#10003;      |
+| email-read    | app              | Default |      |           | &#10003;      |
+|               | result           | Default |      |           | &#10003;      |
 |               | email_address    | Default |      |           | &#10003;      |
 |               | email_user       | Default |      |           | &#10003;      |
-|               | application      | Default |      |           | &#10003;      |
 |               | additional_info  | Default |      |           | &#10003;      |
 |               | resource         | Default |      |           | &#10003;      |
 |               | log_source       | Default |      |           | &#10003;      |

@@ -9,7 +9,16 @@ product = "vormetric"
 Fields
 ------
 
-There are no fields for this extension.
+| Field        | Core | Detection | Informational |
+| ------------ | ---- | --------- | ------------- |
+| access       |      |           | &#10003;      |
+| process_name |      |           | &#10003;      |
+| domain       |      |           | &#10003;      |
+| process_dir  |      |           | &#10003;      |
+| src_host     |      |           | &#10003;      |
+| process_path |      |           | &#10003;      |
+| user         |      |           | &#10003;      |
+| alert_name   |      |           | &#10003;      |
 
 Activity Types
 --------------
@@ -26,4 +35,5 @@ Activity Types
 |               | process_dir  |        |          |           |               |
 |               | process_path | Legacy |          | &#10003;  |               |
 |               | user         | Legacy |          | &#10003;  |               |
+| file-read     |              |        |          |           |               |
 

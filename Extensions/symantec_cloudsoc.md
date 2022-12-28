@@ -28,10 +28,10 @@ Activity Types
 |               | operation       |         |          |           |               |
 |               | user            | Legacy  |          | &#10003;  |               |
 |               | user_agent      |         |          |           |               |
-| app-activity  | src_ip          | Default |          | &#10003;  |               |
+| app-activity  | app             | Default |          |           | &#10003;      |
+|               | src_ip          | Default |          | &#10003;  |               |
 |               | file_path       | Default |          |           | &#10003;      |
 |               | file_ext        | Default |          |           | &#10003;      |
-|               | application     | Default |          |           | &#10003;      |
 |               | object_type     | Default |          |           | &#10003;      |
 |               | additional_info | Default |          |           | &#10003;      |
 |               | file_name       | Default |          |           | &#10003;      |

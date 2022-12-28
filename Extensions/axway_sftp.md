@@ -21,11 +21,11 @@ Fields
 Activity Types
 --------------
 
-| Activity Type      | Field                  | Status  | Core | Detection | Informational |
-| ------------------ | ---------------------- | ------- | ---- | --------- | ------------- |
-| app-authentication | src_ip                 | Default |      | &#10003;  |               |
-|                    | src_port               | Default |      |           | &#10003;      |
-|                    | auth_method            | Default |      |           | &#10003;      |
-| endpoint-login     | authentication_package | Default |      |           | &#10003;      |
-| file-upload        |                        |         |      |           |               |
+| Activity Type      | Field        | Status  | Core | Detection | Informational |
+| ------------------ | ------------ | ------- | ---- | --------- | ------------- |
+| app-authentication | src_ip       | Default |      | &#10003;  |               |
+|                    | src_port     | Default |      |           | &#10003;      |
+|                    | auth_method  | Default |      |           | &#10003;      |
+| endpoint-login     | auth_package | Default |      |           | &#10003;      |
+| file-upload        |              |         |      |           |               |
 

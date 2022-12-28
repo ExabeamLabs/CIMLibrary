@@ -16,10 +16,10 @@ Activity Types
 
 | Activity Type | Field           | Status  | Core | Detection | Informational |
 | ------------- | --------------- | ------- | ---- | --------- | ------------- |
-| app-activity  | result          | Default |      |           | &#10003;      |
+| app-activity  | app             | Default |      |           | &#10003;      |
+|               | result          | Default |      |           | &#10003;      |
 |               | src_ip          | Default |      | &#10003;  |               |
 |               | method          | Default |      |           | &#10003;      |
-|               | application     | Default |      |           | &#10003;      |
 |               | resource        | Default |      |           | &#10003;      |
 |               | additional_info | Default |      |           | &#10003;      |
 |               | user            | Default |      | &#10003;  |               |

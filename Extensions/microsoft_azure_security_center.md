@@ -21,8 +21,8 @@ Activity Types
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | src_ip          | Legacy | &#10003; | &#10003;  |               |
 |               | src_port        | Legacy |          |           | &#10003;      |
-|               | full_name       |        |          |           |               |
 |               | email_address   |        |          |           |               |
+|               | full_name       |        |          |           |               |
 |               | db_name         |        |          |           |               |
 |               | email_user      |        |          |           |               |
 |               | additional_info |        |          |           |               |

@@ -16,8 +16,8 @@ Activity Types
 
 | Activity Type | Field           | Status | Core     | Detection | Informational |
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | src_ip          | Legacy | &#10003; | &#10003;  |               |
-|               | application     |        |          |           |               |
+| alert-trigger | app             |        |          |           |               |
+|               | src_ip          | Legacy | &#10003; | &#10003;  |               |
 |               | policy_id       |        |          |           |               |
 |               | additional_info |        |          |           |               |
 |               | alert_id        | Legacy |          |           | &#10003;      |

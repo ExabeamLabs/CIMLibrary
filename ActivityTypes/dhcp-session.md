@@ -16,9 +16,9 @@ Parameters
 
 Legacy Names
 ------------
-| Success            | Fail |
-| ------------------ | ---- |
-| computer-logon<br> |      |
+| Success            | Fail               |
+| ------------------ | ------------------ |
+| computer-logon<br> | computer-logon<br> |
 
 Fields
 ------
@@ -32,4 +32,10 @@ dhcp-session:success
 There are no fields for this activity type.
 
 
-A failure activity is not currently supported for this activity-type.
+dhcp-session:fail
+-----------------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

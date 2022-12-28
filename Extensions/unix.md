@@ -4,7 +4,7 @@ unix
 Expression
 ----------
 
-product = "unix"
+product = unix
 
 Fields
 ------
@@ -16,6 +16,24 @@ Activity Types
 
 | Activity Type           | Field                | Status  | Core     | Detection | Informational |
 | ----------------------- | -------------------- | ------- | -------- | --------- | ------------- |
+| alert-trigger           | parent_process_id    |         |          |           |               |
+|                         | file_path            | Legacy  |          |           | &#10003;      |
+|                         | process_id           |         |          |           |               |
+|                         | operation_type       |         |          |           |               |
+|                         | service_name         |         |          |           |               |
+|                         | file_owner           |         |          |           |               |
+|                         | process_command_line |         |          |           |               |
+|                         | src_host             | Legacy  | &#10003; | &#10003;  |               |
+|                         | event_subtype        |         |          |           |               |
+|                         | event_category       |         |          |           |               |
+|                         | result               |         |          |           |               |
+|                         | src_ip               | Legacy  | &#10003; | &#10003;  |               |
+|                         | path                 |         |          |           |               |
+|                         | group_id             |         |          |           |               |
+|                         | process_name         | Legacy  |          | &#10003;  |               |
+|                         | arg                  |         |          |           |               |
+|                         | dest_host            | Legacy  |          | &#10003;  |               |
+|                         | user                 | Legacy  |          | &#10003;  |               |
 | email-receive           | protocol             | Default |          |           | &#10003;      |
 |                         | bytes                | Default |          |           | &#10003;      |
 |                         | num_recipients       | Default |          |           | &#10003;      |

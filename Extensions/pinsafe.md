@@ -17,10 +17,10 @@ Fields
 Activity Types
 --------------
 
-| Activity Type | Field       | Status  | Core | Detection | Informational |
-| ------------- | ----------- | ------- | ---- | --------- | ------------- |
-| app-activity  | src_port    | Default |      |           | &#10003;      |
-|               | application | Default |      |           | &#10003;      |
-|               | user        | Default |      | &#10003;  |               |
-| app-login     |             |         |      |           |               |
+| Activity Type | Field    | Status  | Core | Detection | Informational |
+| ------------- | -------- | ------- | ---- | --------- | ------------- |
+| app-activity  | app      | Default |      |           | &#10003;      |
+|               | src_port | Default |      |           | &#10003;      |
+|               | user     | Default |      | &#10003;  |               |
+| app-login     |          |         |      |           |               |
 

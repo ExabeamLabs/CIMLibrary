@@ -9,11 +9,11 @@ product = "aruba clearpass policy manager"
 Fields
 ------
 
-| Field               | Core | Detection | Informational |
-| ------------------- | ---- | --------- | ------------- |
-| src_ip              |      |           | &#10003;      |
-| dest_ip             |      | &#10003;  |               |
-| authentication_type |      |           | &#10003;      |
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_ip    |      |           | &#10003;      |
+| auth_type |      |           | &#10003;      |
+| dest_ip   |      | &#10003;  |               |
 
 Activity Types
 --------------
