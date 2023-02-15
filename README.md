@@ -14,3 +14,15 @@ You can follow the links below to explore individual interfaces or view the enti
 ### [Subject Interface](Subjects/Subject_Interface.md)
 ### [Activity Type Interface](ActivityTypes/ActivityType_Interface.md)
 ### [Extension Interface](Extensions/Extension_Interface.md)
+
+## Additional Elements 
+
+In addition to the elements represented in the Common Information Model interfaces, the model also preserves other types of information with event data. You can follow the links below to explore these elements. 
+
+[Platforms and Landscapes](https://github.com/Exabeam/CIMLibraryDemo/blob/master/Platforms_Landscapes.md) – A list of platforms listed by landscape 
+
+[Field Descriptions](Fields_Descriptions.md) – A list of available fields and their descriptions 
+
+[Product Categories](https://github.com/Exabeam/ContentLibraryCIM2Demo/blob/master/Exabeam%20Product%20Categories.md) – A list of supported product categories with descriptions (redirects to the Content Library) 
+
+[Vendors and Products](https://github.com/Exabeam/ContentLibraryCIM2Demo/blob/master/Exabeam%20Data%20Sources.md) – A list of products listed by vendors (redirects to the Content Library) 
