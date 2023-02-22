@@ -19,6 +19,8 @@ You can follow the links below to explore individual interfaces or view the enti
 
 In addition to the elements represented in the Common Information Model interfaces, the model also preserves other types of information with event data. You can follow the links below to explore these elements. 
 
+[Platforms and Landscapes]([https://github.com/Exabeam/CIMLibraryDemo/blob/master/Platforms_Landscapes.md](https://github.com/ExabeamLabs/CIMLibrary/blob/main/Platforms_Landscapes.md)) – A list of platforms listed by landscape
+
 [Field Descriptions](Fields_Descriptions.md) – A list of available fields and their descriptions 
 
 [Product Categories](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/Exabeam%20Product%20Categories.md) – A list of supported product categories with descriptions (redirects to the Content Library) 
