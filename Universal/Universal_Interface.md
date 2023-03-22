@@ -8,16 +8,3 @@ The universal interface defines a set of global fields. These are fields that ar
 
 ###  Universal fields
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| activity         | &#10003; |           |               |
-| activity_type    | &#10003; |           |               |
-| host             |          |           | &#10003;      |
-| landscape        |          | &#10003;  |               |
-| outcome          | &#10003; |           |               |
-| platform         |          | &#10003;  |               |
-| product          | &#10003; |           |               |
-| product_category |          | &#10003;  |               |
-| raw_log_time     | &#10003; |           |               |
-| subject          | &#10003; |           |               |
-| vendor           | &#10003; |           |               |
