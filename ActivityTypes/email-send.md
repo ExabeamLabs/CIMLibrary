@@ -43,6 +43,7 @@ email-send:success
 | dest_email_address | &#10003; |           |               |
 | dest_domain        |          |           | &#10003;      |
 | email_domain       |          |           | &#10003;      |
+| src_email_address  | &#10003; |           |               |
 | email_subject      |          |           | &#10003;      |
 
 email-send:fail
@@ -64,4 +65,5 @@ email-send:fail
 | dest_email_address | &#10003; |           |               |
 | dest_domain        |          |           | &#10003;      |
 | email_domain       |          |           | &#10003;      |
+| src_email_address  | &#10003; |           |               |
 | email_subject      |          |           | &#10003;      |

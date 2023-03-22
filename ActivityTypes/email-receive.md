@@ -43,6 +43,7 @@ email-receive:success
 | dest_email_address | &#10003; |           |               |
 | dest_domain        |          |           | &#10003;      |
 | email_domain       |          |           | &#10003;      |
+| src_email_address  | &#10003; |           |               |
 | email_subject      |          |           | &#10003;      |
 
 email-receive:fail
@@ -64,4 +65,5 @@ email-receive:fail
 | dest_email_address | &#10003; |           |               |
 | dest_domain        |          |           | &#10003;      |
 | email_domain       |          |           | &#10003;      |
+| src_email_address  | &#10003; |           |               |
 | email_subject      |          |           | &#10003;      |
