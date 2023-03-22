@@ -1,0 +1,48 @@
+endpoint-login
+==============
+
+Description
+-----------
+A user logged into an endpoint
+
+Parameters
+----------
+| Parameter     | Value          |
+| ------------- | -------------- |
+| Subject       | endpoint       |
+| Activity      | login          |
+| Activity Type | endpoint-login |
+| Pretty Name   | Endpoint Login |
+
+Legacy Names
+------------
+| Success                                                                                                                                                                      | Fail                                                                                                                                                                                            |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| local-logon<br>remote-logon<br>batch-logon<br>kerberos-logon<br>ntlm-logon<br>service-logon<br>remote-access<br>computer-logon<br>nac-logon<br>authentication-successful<br> | local-logon<br>remote-logon<br>batch-logon<br>kerberos-logon<br>ntlm-logon<br>service-logon<br>remote-access<br>computer-logon<br>failed-logon<br>nac-failed-logon<br>authentication-failed<br> |
+
+Fields
+------
+
+The possible fields for this activity type will vary depending on whether the activity was a [success](#endpoint-loginsuccess) or a [fail](#endpoint-loginfail).
+
+
+endpoint-login:success
+----------------------
+
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| login_type |          | &#10003;  |               |
+| domain     |          | &#10003;  |               |
+| logon_type |          | &#10003;  |               |
+| user       | &#10003; | &#10003;  |               |
+
+endpoint-login:fail
+-------------------
+
+| Field          | Core     | Detection | Informational |
+| -------------- | -------- | --------- | ------------- |
+| failure_code   |          | &#10003;  |               |
+| login_type     |          | &#10003;  |               |
+| domain         |          | &#10003;  |               |
+| failure_reason |          | &#10003;  |               |
+| user           | &#10003; | &#10003;  |               |
