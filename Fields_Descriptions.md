@@ -1,7 +1,10 @@
- Fields Descriptions
+ Field Descriptions
 ====================
 
-This table lists the Common Information Model fields that can be used to build events and to create searches and correlation rules.| Field                           | Data Type   | Description                                                                                                                                                                                                                                                                          |
+This table lists the Common Information Model fields that can be used to build events and to create searches and correlation rules.
+
+
+| Field                           | Data Type   | Description                                                                                                                                                                                                                                                                          |
 | ------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | AA                              | string      | The Authoritative Answer bit for response messages specifies that the responding name server is an authority for the domain name in the question section.                                                                                                                            |
 | RA                              | string      | The Recursion Available bit in a response message indicates that the name server supports recursive queries.                                                                                                                                                                         |
