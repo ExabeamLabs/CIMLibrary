@@ -32,8 +32,17 @@ alert-trigger:success
 | Field          | Core     | Detection | Informational |
 | -------------- | -------- | --------- | ------------- |
 | alert_severity | &#10003; |           |               |
-| alert_source   | &#10003; |           |               |
-| alert_subject  |          |           | &#10003;      |
+| alert_subject  |          | &#10003;  | &#10003;      |
+| src_host       |          | &#10003;  |               |
 | alert_type     | &#10003; |           |               |
+| protocol       |          | &#10003;  |               |
+| top_domain     |          | &#10003;  |               |
+| process_name   |          | &#10003;  |               |
+| bytes          |          | &#10003;  |               |
+| dest_ip        |          | &#10003;  |               |
+| alert_source   | &#10003; |           |               |
+| dest_host      |          | &#10003;  |               |
+| user           |          | &#10003;  |               |
+| dest_port      |          | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

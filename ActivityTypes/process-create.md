@@ -32,10 +32,17 @@ process-create:success
 | Field                       | Core | Detection | Informational |
 | --------------------------- | ---- | --------- | ------------- |
 | parent_process_id           |      | &#10003;  |               |
+| hash_sha256                 |      | &#10003;  |               |
 | parent_process_command_line |      | &#10003;  |               |
+| process_guid                |      | &#10003;  |               |
 | parent_process_name         |      | &#10003;  |               |
+| domain                      |      | &#10003;  |               |
+| process_integrity           |      | &#10003;  |               |
+| dest_host                   |      | &#10003;  |               |
+| parent_process_guid         |      | &#10003;  |               |
 | parent_process_dir          |      | &#10003;  |               |
 | parent_process_path         |      | &#10003;  |               |
+| user                        |      | &#10003;  |               |
 
 process-create:fail
 -------------------
@@ -48,4 +55,11 @@ process-create:fail
 | parent_process_name         |      | &#10003;  |               |
 | failure_reason              |      | &#10003;  |               |
 | parent_process_dir          |      | &#10003;  |               |
+| hash_sha256                 |      | &#10003;  |               |
+| process_guid                |      | &#10003;  |               |
+| domain                      |      | &#10003;  |               |
+| process_integrity           |      | &#10003;  |               |
+| dest_host                   |      | &#10003;  |               |
+| parent_process_guid         |      | &#10003;  |               |
 | parent_process_path         |      | &#10003;  |               |
+| user                        |      | &#10003;  |               |

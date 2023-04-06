@@ -29,8 +29,10 @@ The possible fields for this activity type will vary depending on whether the ac
 group-member-remove:success
 ---------------------------
 
-| Field  | Core     | Detection | Informational |
-| ------ | -------- | --------- | ------------- |
-| member | &#10003; | &#10003;  |               |
+| Field     | Core     | Detection | Informational |
+| --------- | -------- | --------- | ------------- |
+| member    | &#10003; | &#10003;  |               |
+| dest_user |          | &#10003;  |               |
+| user      |          | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

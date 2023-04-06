@@ -40,11 +40,13 @@ email-receive:success
 | email_address      | &#10003; |           |               |
 | file_ext           |          |           | &#10003;      |
 | email_user         |          |           | &#10003;      |
+| bytes              |          | &#10003;  |               |
 | dest_email_address | &#10003; |           |               |
 | dest_domain        |          |           | &#10003;      |
 | email_domain       |          |           | &#10003;      |
 | src_email_address  | &#10003; |           |               |
 | email_subject      |          |           | &#10003;      |
+| user               |          | &#10003;  |               |
 
 email-receive:fail
 ------------------
@@ -62,8 +64,10 @@ email-receive:fail
 | email_address      | &#10003; |           |               |
 | file_ext           |          |           | &#10003;      |
 | email_user         |          |           | &#10003;      |
+| bytes              |          | &#10003;  |               |
 | dest_email_address | &#10003; |           |               |
 | dest_domain        |          |           | &#10003;      |
 | email_domain       |          |           | &#10003;      |
 | src_email_address  | &#10003; |           |               |
 | email_subject      |          |           | &#10003;      |
+| user               |          | &#10003;  |               |

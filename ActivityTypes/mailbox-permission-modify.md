@@ -24,8 +24,10 @@ The possible fields for this activity type will vary depending on whether the ac
 mailbox-permission-modify:success
 ---------------------------------
 
-There are no fields for this activity type.
-
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| dest_user |      | &#10003;  |               |
+| user      |      | &#10003;  |               |
 
 mailbox-permission-modify:fail
 ------------------------------
@@ -33,4 +35,6 @@ mailbox-permission-modify:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| dest_user      |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| user           |      | &#10003;  |               |

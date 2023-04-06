@@ -29,8 +29,9 @@ The possible fields for this activity type will vary depending on whether the ac
 user-lock:success
 -----------------
 
-There are no fields for this activity type.
-
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| user  |      | &#10003;  |               |
 
 user-lock:fail
 --------------
@@ -39,3 +40,4 @@ user-lock:fail
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| user           |      | &#10003;  |               |

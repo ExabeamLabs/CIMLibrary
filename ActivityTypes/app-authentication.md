@@ -32,9 +32,18 @@ app-authentication:success
 | Field       | Core     | Detection | Informational |
 | ----------- | -------- | --------- | ------------- |
 | auth_type   |          |           |               |
+| os          |          | &#10003;  |               |
 | mfa_country |          | &#10003;  |               |
+| mime        |          | &#10003;  |               |
+| src_host    |          | &#10003;  |               |
+| src_ip      |          | &#10003;  |               |
+| browser     |          | &#10003;  |               |
+| fingerprint |          | &#10003;  |               |
 | mfa_device  |          | &#10003;  |               |
-| user        | &#10003; |           |               |
+| user        | &#10003; | &#10003;  |               |
+| operation   |          | &#10003;  |               |
+| user_agent  |          | &#10003;  |               |
+| object      |          | &#10003;  |               |
 
 app-authentication:fail
 -----------------------
@@ -43,7 +52,16 @@ app-authentication:fail
 | -------------- | -------- | --------- | ------------- |
 | auth_type      |          |           |               |
 | failure_code   |          | &#10003;  |               |
+| os             |          | &#10003;  |               |
 | mfa_country    |          | &#10003;  |               |
+| mime           |          | &#10003;  |               |
 | failure_reason |          | &#10003;  |               |
+| src_host       |          | &#10003;  |               |
+| src_ip         |          | &#10003;  |               |
+| browser        |          | &#10003;  |               |
+| fingerprint    |          | &#10003;  |               |
 | mfa_device     |          | &#10003;  |               |
-| user           | &#10003; |           |               |
+| user           | &#10003; | &#10003;  |               |
+| operation      |          | &#10003;  |               |
+| user_agent     |          | &#10003;  |               |
+| object         |          | &#10003;  |               |

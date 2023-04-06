@@ -102,6 +102,31 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"access": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			}
 		},
@@ -110,7 +135,7 @@
 			"fields": {
 				"process_name": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"process_path": {
@@ -170,12 +195,12 @@
 			"fields": {
 				"dest_user": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"dest_domain": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				}
 			}
@@ -185,7 +210,7 @@
 			"fields": {
 				"group_name": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"group_domain": {
@@ -211,6 +236,16 @@
 				"audit_policy_name": {
 					"core": "1",
 					"detection": "0",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
 					"informational": "0"
 				}
 			}
@@ -296,6 +331,21 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"attribute": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			}
 		},
@@ -309,12 +359,12 @@
 				},
 				"location_building": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"location_city": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"direction": {
@@ -348,6 +398,11 @@
 					"informational": "1"
 				},
 				"src_host": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
@@ -580,6 +635,31 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"direction": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes_out": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			}
 		},
@@ -620,6 +700,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"top_dns_query": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			}
 		},
@@ -648,7 +733,7 @@
 				},
 				"dest_port": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"uri_path": {
@@ -672,6 +757,71 @@
 					"informational": "0"
 				},
 				"top_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"protocol": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"direction": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes_out": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes_in": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"http_response_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"category": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"categories": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"method": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -755,6 +905,36 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"protocol": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"direction": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes_out": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			}
 		},
@@ -777,6 +957,36 @@
 					"informational": "0"
 				},
 				"dest_port": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"protocol": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"direction": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes_out": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -809,7 +1019,33 @@
 		},
 		"database": {
 			"description": "The database subject represents a database interface and the resources it contains",
-			"fields": {}
+			"fields": {
+				"user": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"db_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"db_operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"ftp": {
 			"description": "File transfer protocel (FTP) is a network protocol used to transmitting files over the network. This subject represents FTP traffic related activities.",
@@ -1153,7 +1389,7 @@
 			"fields": {
 				"alert_name": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				}
 			}
@@ -1289,7 +1525,7 @@
 				},
 				"script_name": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				}
 			}
@@ -1599,7 +1835,7 @@
 				},
 				"src_file_dir": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				}
 			}
@@ -1629,7 +1865,7 @@
 				},
 				"src_file_dir": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"failure_reason": {
@@ -2235,7 +2471,18 @@
 			"outcome": "success",
 			"pretty_name": "User Create",
 			"description": "A user account was created",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"account-creation"
 			]
@@ -2257,6 +2504,16 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -2270,7 +2527,13 @@
 			"outcome": "success",
 			"pretty_name": "User Delete",
 			"description": "A user account was deleted",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"account-deleted"
 			]
@@ -2289,6 +2552,11 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -2404,7 +2672,13 @@
 			"outcome": "success",
 			"pretty_name": "User Lock",
 			"description": "A user account was locked",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"account-lockout"
 			]
@@ -2426,6 +2700,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -2439,7 +2718,13 @@
 			"outcome": "success",
 			"pretty_name": "User Password Modify",
 			"description": "A user accounts' password was changed",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"account-password-change"
 			]
@@ -2458,6 +2743,11 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -2618,6 +2908,21 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_user_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -2648,6 +2953,21 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_user_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -3255,6 +3575,41 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"hash_sha256": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_guid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"parent_process_guid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_integrity": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -3300,6 +3655,41 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"hash_sha256": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_guid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"parent_process_guid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_integrity": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -3717,9 +4107,75 @@
 			"fields": {
 				"user": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_agent": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"mime": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"fingerprint": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"login_type": {
+					"core": "0",
+					"detection": "1",
 					"informational": "0"
 				}
+
 			},
 			"legacy_event_name": [
 				"app-login",
@@ -3736,7 +4192,7 @@
 			"fields": {
 				"user": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"failure_reason": {
@@ -3748,7 +4204,73 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_agent": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"mime": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"fingerprint": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"login_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
+
 			},
 			"legacy_event_name": [
 				"failed-app-login",
@@ -3814,7 +4336,52 @@
 			"fields": {
 				"operation": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_agent": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"mime": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"fingerprint": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object": {
+					"core": "0",
+					"detection": "1",
 					"informational": "0"
 				}
 			},
@@ -3833,7 +4400,7 @@
 			"fields": {
 				"operation": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"failure_reason": {
@@ -3842,6 +4409,51 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_agent": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"mime": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"fingerprint": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -3862,7 +4474,7 @@
 			"fields": {
 				"user": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"auth_type": {
@@ -3877,6 +4489,51 @@
 					"informational": "0"
 				},
 				"mfa_country": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_agent": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"mime": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"fingerprint": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"operation": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -3897,7 +4554,7 @@
 			"fields": {
 				"user": {
 					"core": "1",
-					"detection": "0",
+					"detection": "1",
 					"informational": "0"
 				},
 				"auth_type": {
@@ -3921,6 +4578,51 @@
 					"informational": "0"
 				},
 				"mfa_country": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"browser": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_agent": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"mime": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"fingerprint": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"operation": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -4086,7 +4788,43 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"result_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"account": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"location": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_mac": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
+
 			},
 			"legacy_event_name": [
 				"local-logon",
@@ -4133,7 +4871,43 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"result_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"account": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"location": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_mac": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
+
 			},
 			"legacy_event_name": [
 				"local-logon",
@@ -4748,12 +5522,37 @@
 			"pretty_name": "Database Login",
 			"description": "A user logged in to a database",
 			"fields": {
-				"user": {
-					"core": "1",
+				"domain": {
+					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"domain": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"login_type": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -4771,11 +5570,6 @@
 			"pretty_name": "Database Login",
 			"description": "A user logged in to a database",
 			"fields": {
-				"user": {
-					"core": "1",
-					"detection": "1",
-					"informational": "0"
-				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -4790,7 +5584,38 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"login_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
+
 			},
 			"legacy_event_name": [
 				"database-failed-login"
@@ -4804,11 +5629,6 @@
 			"pretty_name": "Database Logout",
 			"description": "A user logged out of a database",
 			"fields": {
-				"user": {
-					"core": "1",
-					"detection": "1",
-					"informational": "0"
-				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -4824,11 +5644,6 @@
 			"pretty_name": "Database Logout",
 			"description": "A user logged out of a database",
 			"fields": {
-				"user": {
-					"core": "1",
-					"detection": "1",
-					"informational": "0"
-				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -4904,6 +5719,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"response_size": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -4929,6 +5749,11 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"response_size": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -5060,6 +5885,36 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"login_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"realm": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -5092,6 +5947,36 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"login_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"os": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"realm": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -5230,6 +6115,16 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"bytes_out": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"session_duration": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -5260,6 +6155,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes_out": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"session_duration": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -5329,7 +6234,7 @@
 				},
 				"email_subject": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"email_attachment": {
@@ -5344,8 +6249,61 @@
 				},
 				"file_ext": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"attachment": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"num_attachments": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"file_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"num_recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"external_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"external_domain_recipient": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"external_domain_sender": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5412,7 +6370,7 @@
 				},
 				"email_subject": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"email_attachment": {
@@ -5427,7 +6385,7 @@
 				},
 				"file_ext": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"failure_reason": {
@@ -5439,6 +6397,59 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"attachment": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"num_attachments": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"file_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"num_recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"external_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"external_domain_recipient": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"external_domain_sender": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5522,6 +6533,16 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -5612,6 +6633,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -5985,7 +7016,23 @@
 			"outcome": "success",
 			"pretty_name": "Email_rule Create",
 			"description": "An email rule was created",
-			"fields": {}
+			"fields": {
+				"email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"email_rule-create:fail": {
 			"subject": "email_rule",
@@ -6001,6 +7048,21 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"operation": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -6072,7 +7134,18 @@
 			"outcome": "success",
 			"pretty_name": "Dns Request",
 			"description": "A DNS query was sent",
-			"fields": {},
+			"fields": {
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"dns-query"
 			]
@@ -6091,6 +7164,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -6119,6 +7202,16 @@
 					"informational": "0"
 				},
 				"dns_response_flags": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"nx_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -6157,6 +7250,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"nx_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -6479,6 +7582,31 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"group_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_ou": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -6507,6 +7635,31 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"group_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user_ou": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -6523,6 +7676,16 @@
 			"fields": {
 				"member": {
 					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_user": {
+					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				}
@@ -7604,6 +8767,26 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_dir": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -7746,7 +8929,23 @@
 			"outcome": "success",
 			"pretty_name": "Service Create",
 			"description": "A service was created",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_command_line": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"service-created"
 			]
@@ -7885,7 +9084,18 @@
 			"outcome": "success",
 			"pretty_name": "Share Access",
 			"description": "A network share was accessed",
-			"fields": {},
+			"fields": {
+				"src_port": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"file_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"share-access"
 			]
@@ -7904,6 +9114,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_port": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"file_path": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -7985,7 +9205,23 @@
 			"outcome": "success",
 			"pretty_name": "Scheduled_task Create",
 			"description": "A scheduled task was created",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"task-created"
 			]
@@ -8004,6 +9240,21 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -8277,7 +9528,18 @@
 			"outcome": "success",
 			"pretty_name": "Meeting Modify",
 			"description": "A web meeting's information was updated",
-			"fields": {},
+			"fields": {
+				"old_password": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"new_password": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"web-meeting-updated"
 			]
@@ -8296,6 +9558,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"old_password": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"new_password": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -8341,7 +9613,18 @@
 			"outcome": "success",
 			"pretty_name": "Log Clear",
 			"description": "An audit log was cleared",
-			"fields": {},
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"legacy_event_name": [
 				"audit-log-clear"
 			]
@@ -8360,6 +9643,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -8966,6 +10259,26 @@
 				"operation": {
 					"core": "1",
 					"detection": "0",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"printer_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"num_pages": {
+					"core": "0",
+					"detection": "1",
 					"informational": "0"
 				}
 			},
@@ -10903,7 +12216,18 @@
 			"outcome": "success",
 			"pretty_name": "Mailbox Permission Modify",
 			"description": "The permissions that apply to an email mailbox were changed",
-			"fields": {}
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"mailbox-permission-modify:fail": {
 			"subject": "mailbox",
@@ -10919,6 +12243,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_user": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -11227,7 +12561,18 @@
 			"outcome": "success",
 			"pretty_name": "Password Checkout",
 			"description": "A password was checked out from a vault, a checkout is a one timed access of a password, that blocks other users from accessing it at that time",
-			"fields": {}
+			"fields": {
+				"safe_value": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"password-checkout:fail": {
 			"subject": "password",
@@ -11243,6 +12588,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"safe_value": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -13021,7 +14376,7 @@
 				},
 				"alert_subject": {
 					"core": "0",
-					"detection": "0",
+					"detection": "1",
 					"informational": "1"
 				},
 				"alert_severity": {
@@ -13032,6 +14387,51 @@
 				"alert_source": {
 					"core": "1",
 					"detection": "0",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_port": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"process_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"bytes": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"protocol": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"top_domain": {
+					"core": "0",
+					"detection": "1",
 					"informational": "0"
 				}
 			},
@@ -14255,7 +15655,18 @@
 			"outcome": "success",
 			"pretty_name": "Script Execute",
 			"description": "Scripting commands were executed on the system",
-			"fields": {}
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"command_invocation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"script-execute:fail": {
 			"subject": "script",
@@ -14271,6 +15682,16 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"command_invocation": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"

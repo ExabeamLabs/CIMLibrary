@@ -29,15 +29,25 @@ The possible fields for this activity type will vary depending on whether the ac
 group-member-add:success
 ------------------------
 
-| Field  | Core     | Detection | Informational |
-| ------ | -------- | --------- | ------------- |
-| member | &#10003; | &#10003;  |               |
+| Field     | Core     | Detection | Informational |
+| --------- | -------- | --------- | ------------- |
+| user_ou   |          | &#10003;  |               |
+| group_id  |          | &#10003;  |               |
+| member    | &#10003; | &#10003;  |               |
+| dest_user |          | &#10003;  |               |
+| src_host  |          | &#10003;  |               |
+| user      |          | &#10003;  |               |
 
 group-member-add:fail
 ---------------------
 
 | Field          | Core     | Detection | Informational |
 | -------------- | -------- | --------- | ------------- |
+| user_ou        |          | &#10003;  |               |
 | failure_code   |          | &#10003;  |               |
+| group_id       |          | &#10003;  |               |
 | member         | &#10003; | &#10003;  |               |
+| dest_user      |          | &#10003;  |               |
 | failure_reason |          | &#10003;  |               |
+| src_host       |          | &#10003;  |               |
+| user           |          | &#10003;  |               |

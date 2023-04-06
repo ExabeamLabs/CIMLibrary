@@ -24,8 +24,10 @@ The possible fields for this activity type will vary depending on whether the ac
 password-checkout:success
 -------------------------
 
-There are no fields for this activity type.
-
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| src_host   |      | &#10003;  |               |
+| safe_value |      | &#10003;  |               |
 
 password-checkout:fail
 ----------------------
@@ -34,3 +36,5 @@ password-checkout:fail
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| src_host       |      | &#10003;  |               |
+| safe_value     |      | &#10003;  |               |
