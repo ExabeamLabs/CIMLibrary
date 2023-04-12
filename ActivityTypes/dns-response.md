@@ -35,7 +35,6 @@ dns-response:success
 | dns_response_code  |          | &#10003;  |               |
 | dns_response_flags |          | &#10003;  |               |
 | dest_host          |          | &#10003;  |               |
-| nx_count           |          | &#10003;  |               |
 
 dns-response:fail
 -----------------
@@ -47,5 +46,4 @@ dns-response:fail
 | dns_response_code  |          | &#10003;  |               |
 | dns_response_flags |          | &#10003;  |               |
 | dest_host          |          | &#10003;  |               |
-| nx_count           |          | &#10003;  |               |
 | failure_reason     |          | &#10003;  |               |

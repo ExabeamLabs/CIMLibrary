@@ -700,11 +700,6 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				},
-				"top_dns_query": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
 				}
 			}
 		},
@@ -6262,11 +6257,6 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"num_attachments": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
 				"bytes": {
 					"core": "0",
 					"detection": "1",
@@ -6286,24 +6276,6 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				},
-				"external_domain": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0",
-					"enriched": "1"
-				},
-				"external_domain_recipient": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0",
-					"enriched": "1"
-				},
-				"external_domain_sender": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0",
-					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6408,11 +6380,6 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"num_attachments": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
 				"bytes": {
 					"core": "0",
 					"detection": "1",
@@ -6432,24 +6399,6 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				},
-				"external_domain": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0",
-					"enriched": "1"
-				},
-				"external_domain_recipient": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0",
-					"enriched": "1"
-				},
-				"external_domain_sender": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0",
-					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7210,11 +7159,6 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				},
-				"nx_count": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -7258,13 +7202,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				},
-				"nx_count": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				}
-			},
+				}			},
 			"legacy_event_name": [
 				"dns-response"
 			]
