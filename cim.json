@@ -3,10 +3,11 @@
 		"universal": {
 			"description": "",
 			"fields": {
-				"raw_log_time": {
+				"time": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"product": {
 					"core": "1",
