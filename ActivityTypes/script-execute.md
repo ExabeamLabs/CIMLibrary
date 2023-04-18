@@ -24,17 +24,15 @@ The possible fields for this activity type will vary depending on whether the ac
 script-execute:success
 ----------------------
 
-| Field              | Core | Detection | Informational |
-| ------------------ | ---- | --------- | ------------- |
-| command_invocation |      | &#10003;  |               |
-| user               |      | &#10003;  |               |
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| user  |      | &#10003;  |               |
 
 script-execute:fail
 -------------------
 
-| Field              | Core | Detection | Informational |
-| ------------------ | ---- | --------- | ------------- |
-| command_invocation |      | &#10003;  |               |
-| failure_code       |      | &#10003;  |               |
-| failure_reason     |      | &#10003;  |               |
-| user               |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
+| user           |      | &#10003;  |               |
