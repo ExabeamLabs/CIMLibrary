@@ -15599,6 +15599,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"command_invocation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			}
 		},
@@ -15621,6 +15626,11 @@
 					"informational": "0"
 				},
 				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"command_invocation": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
