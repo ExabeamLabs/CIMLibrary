@@ -27,12 +27,3 @@ In addition to the elements represented in the Common Information Model interfac
 
 [Vendors and Products](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/Exabeam%20Data%20Sources.md) – A list of products listed by vendors (redirects to the Content Library) 
 
-## Legacy Migration Resources
-
-To upgrade from legacy Exabeam products to the Exabeam Security Operations Platform, existing content must be migrated so that it complies with Common Information Model standards. The following resources provide the mapping information necessary to migrate the content.
-
-[Field Mapping by Events](FieldsMappings.md) - A table that maps legacy events and fields to the corresponding Common Information Model activity types and fields
-
-[Parser Names Matrix](https://github.com/Exabeam/ContentLibraryCIM2Demo/blob/master/ParserNamesMatrix.md) - A set of alphabaetical tables that map legacy parser names to new parser names that comply with the Common Information Model (redirects to the Content Library)
-
-[Metadata Field Mapping](https://github.com/Exabeam/CIMLibraryDemo/blob/master/MetaFieldsMappings.md) - A table that maps legacy metadata field names to field names that comply with the Common Information Model.
