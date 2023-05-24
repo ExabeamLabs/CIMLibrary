@@ -31,7 +31,7 @@ In addition to the elements represented in the Common Information Model interfac
 
 To upgrade from earlier Exabeam products to the Exabeam Security Operations Platform, existing content must be migrated so that it complies with Common Information Model standards. The following resources provide the mapping information necessary to migrate the content.
 
-[Field Mapping by Events](FieldMappings.md) - A table that maps old events and fields to the corresponding Common Information Model activity types and fields
+[Field Mapping by Events](FieldsMappings.md) - A table that maps old events and fields to the corresponding Common Information Model activity types and fields
 
 [Parser Names Matrix](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/ParserNamesMatrix.md) - A set of alphabaetical tables that map old parser names to new parser names that comply with the Common Information Model (redirects to the Content Library)
 
