@@ -24,13 +24,43 @@ The possible fields for this activity type will vary depending on whether the ac
 rule-trigger:success
 --------------------
 
-There are no fields for this activity type.
-
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| rule_severity |      |           | &#10003;      |
+| rule          |      |           | &#10003;      |
+| src_host      |      | &#10003;  |               |
+| rule_usecases |      |           | &#10003;      |
+| log_time      |      |           | &#10003;      |
+| src_ip        |      | &#10003;  |               |
+| trigger_time  |      |           | &#10003;      |
+| event_id      |      |           | &#10003;      |
+| rule_reason   |      |           | &#10003;      |
+| dest_ip       |      | &#10003;  |               |
+| dest_host     |      | &#10003;  |               |
+| mitre_labels  |      |           | &#10003;      |
+| asset_labels  |      |           | &#10003;      |
+| user          |      | &#10003;  |               |
+| event_time    |      |           | &#10003;      |
 
 rule-trigger:fail
 -----------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| rule_severity  |      |           | &#10003;      |
 | failure_code   |      | &#10003;  |               |
+| rule           |      |           | &#10003;      |
+| src_host       |      | &#10003;  |               |
+| rule_usecases  |      |           | &#10003;      |
 | failure_reason |      | &#10003;  |               |
+| log_time       |      |           | &#10003;      |
+| src_ip         |      | &#10003;  |               |
+| trigger_time   |      |           | &#10003;      |
+| event_id       |      |           | &#10003;      |
+| rule_reason    |      |           | &#10003;      |
+| dest_ip        |      | &#10003;  |               |
+| dest_host      |      | &#10003;  |               |
+| mitre_labels   |      |           | &#10003;      |
+| asset_labels   |      |           | &#10003;      |
+| user           |      | &#10003;  |               |
+| event_time     |      |           | &#10003;      |

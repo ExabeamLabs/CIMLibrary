@@ -78,19 +78,4 @@ Activity Types
 |                        | domain              | Default |          |           | &#10003;      |
 |                        | user                | Default |          | &#10003;  |               |
 |                        | operation           | Default |          |           | &#10003;      |
-| rule-trigger           | rule_severity       | Default |          |           | &#10003;      |
-|                        | rule                | Default |          |           | &#10003;      |
-|                        | src_host            | Default |          | &#10003;  |               |
-|                        | rule_usecases       | Default |          |           | &#10003;      |
-|                        | log_time            | Default |          |           | &#10003;      |
-|                        | src_ip              | Default |          | &#10003;  |               |
-|                        | trigger_time        | Default |          |           | &#10003;      |
-|                        | event_id            | Default |          |           | &#10003;      |
-|                        | rule_reason         | Default |          |           | &#10003;      |
-|                        | dest_ip             | Default |          | &#10003;  |               |
-|                        | dest_host           | Default |          | &#10003;  |               |
-|                        | mitre_labels        | Default |          |           | &#10003;      |
-|                        | asset_labels        | Default |          |           | &#10003;      |
-|                        | user                | Default |          | &#10003;  |               |
-|                        | event_time          | Default |          |           | &#10003;      |
 

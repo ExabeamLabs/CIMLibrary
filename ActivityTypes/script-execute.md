@@ -26,6 +26,7 @@ script-execute:success
 
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
+| scriptblock_text   |      |           | &#10003;      |
 | command_invocation |      | &#10003;  |               |
 | user               |      | &#10003;  |               |
 
@@ -34,6 +35,7 @@ script-execute:fail
 
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
+| scriptblock_text   |      |           | &#10003;      |
 | command_invocation |      | &#10003;  |               |
 | failure_code       |      | &#10003;  |               |
 | failure_reason     |      | &#10003;  |               |

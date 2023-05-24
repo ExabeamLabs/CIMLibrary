@@ -1533,6 +1533,10 @@
 		"function": {
 			"description": "An automation function is a cloud object, allowing for automated resource management with cloud commands in the form of a function code",
 			"fields": {}
+		},
+		"parser": {
+			"description": "A parser is an Exabeam configuration that defines log value extractions and mappings.",
+			"fields": {}
 		}
 	},
 	"EventTypes": {
@@ -4171,7 +4175,6 @@
 					"detection": "1",
 					"informational": "0"
 				}
-
 			},
 			"legacy_event_name": [
 				"app-login",
@@ -4266,7 +4269,6 @@
 					"detection": "1",
 					"informational": "0"
 				}
-
 			},
 			"legacy_event_name": [
 				"failed-app-login",
@@ -4820,7 +4822,6 @@
 					"detection": "1",
 					"informational": "0"
 				}
-
 			},
 			"legacy_event_name": [
 				"local-logon",
@@ -4903,7 +4904,6 @@
 					"detection": "1",
 					"informational": "0"
 				}
-
 			},
 			"legacy_event_name": [
 				"local-logon",
@@ -5611,7 +5611,6 @@
 					"detection": "1",
 					"informational": "0"
 				}
-
 			},
 			"legacy_event_name": [
 				"database-failed-login"
@@ -7203,7 +7202,8 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}			},
+				}
+			},
 			"legacy_event_name": [
 				"dns-response"
 			]
@@ -8053,6 +8053,93 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"repository-read:success": {
+			"subject": "repository",
+			"activity": "read",
+			"activity_type": "repository-read",
+			"outcome": "success",
+			"pretty_name": "Repository Read",
+			"description": "A git repository read",
+			"fields": {}
+		},
+		"repository-read:fail": {
+			"subject": "repository",
+			"activity": "read",
+			"activity_type": "repository-read",
+			"outcome": "fail",
+			"pretty_name": "Repository Read",
+			"description": "A git repository read",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"repository-pull:success": {
+			"subject": "repository",
+			"activity": "pull",
+			"activity_type": "repository-pull",
+			"outcome": "success",
+			"pretty_name": "Repository Pull",
+			"description": "A git repository was Pulled",
+			"fields": {}
+		},
+		"repository-pull:fail": {
+			"subject": "repository",
+			"activity": "pull",
+			"activity_type": "repository-pull",
+			"outcome": "fail",
+			"pretty_name": "Repository Pull",
+			"description": "A git repository was Pulled",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"repository-push:success": {
+			"subject": "repository",
+			"activity": "push",
+			"activity_type": "repository-push",
+			"outcome": "success",
+			"pretty_name": "Repository Push",
+			"description": "A git repository was Pushed",
+			"fields": {}
+		},
+		"repository-push:fail": {
+			"subject": "repository",
+			"activity": "push",
+			"activity_type": "repository-push",
+			"outcome": "fail",
+			"pretty_name": "Repository Push",
+			"description": "A git repository was Pushed",
+			"fields": {
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -10501,6 +10588,35 @@
 			"legacy_event_name": [
 				"remote-logon"
 			]
+		},
+		"branch-create:success": {
+			"subject": "branch",
+			"activity": "create",
+			"activity_type": "branch-create",
+			"outcome": "success",
+			"pretty_name": "Branch Create",
+			"description": "A git branch was created",
+			"fields": {}
+		},
+		"branch-create:fail": {
+			"subject": "branch",
+			"activity": "create",
+			"activity_type": "branch-create",
+			"outcome": "fail",
+			"pretty_name": "Branch Create",
+			"description": "A git branch was created",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"branch-modify:success": {
 			"subject": "branch",
@@ -12989,6 +13105,35 @@
 				}
 			}
 		},
+		"report-delete:success": {
+			"subject": "report",
+			"activity": "delete",
+			"activity_type": "report-delete",
+			"outcome": "success",
+			"pretty_name": "Report Delete",
+			"description": "A report was deleted on an app",
+			"fields": {}
+		},
+		"report-delete:fail": {
+			"subject": "report",
+			"activity": "delete",
+			"activity_type": "report-delete",
+			"outcome": "fail",
+			"pretty_name": "Report Delete",
+			"description": "A report was delete on an app",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
 		"report-download:success": {
 			"subject": "report",
 			"activity": "download",
@@ -13561,7 +13706,98 @@
 			"outcome": "success",
 			"pretty_name": "Rule Trigger",
 			"description": "A trigger of a security rule was recorded on a security product or program",
-			"fields": {}
+			"fields": {
+				"src_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"rule": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"trigger_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_reason": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"mitre_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_usecases": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"asset_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_severity": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_id": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"log_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			}
 		},
 		"rule-trigger:fail": {
 			"subject": "rule",
@@ -13571,6 +13807,96 @@
 			"pretty_name": "Rule Trigger",
 			"description": "A trigger of a security rule was recorded on a security product or program",
 			"fields": {
+				"src_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"rule": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"trigger_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_reason": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"mitre_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_usecases": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"asset_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_severity": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_id": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"log_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -15604,6 +15930,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"scriptblock_text": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
@@ -15634,6 +15966,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"scriptblock_text": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
@@ -54204,6 +54542,40 @@
 						}
 					}
 				},
+				"branch-create": {
+					"fields": {
+						"resource": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"object": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"additional_info": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"operation": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
 				"repository-member-remove": {
 					"fields": {
 						"resource": {
@@ -54435,6 +54807,108 @@
 					}
 				},
 				"group-repository-add": {
+					"fields": {
+						"resource": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"object": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"additional_info": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"operation": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"repository-read": {
+					"fields": {
+						"resource": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"object": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"additional_info": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"operation": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"repository-pull": {
+					"fields": {
+						"resource": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"object": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"additional_info": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"operation": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"repository-push": {
 					"fields": {
 						"resource": {
 							"Status": "Default",
@@ -65044,106 +65518,6 @@
 			"expression": "product = \"correlation rule\"",
 			"fields": {},
 			"activity_type": {
-				"rule-trigger": {
-					"fields": {
-						"src_host": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"src_ip": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"rule": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"dest_host": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"dest_ip": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"user": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"trigger_time": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"rule_reason": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"mitre_labels": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"rule_usecases": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"asset_labels": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"rule_severity": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"event_id": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"event_time": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"log_time": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"scriptblock_text": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
-				},
 				"alert-trigger": {
 					"fields": {
 						"mitre_labels": {
@@ -65433,100 +65807,6 @@
 							"informational": "1"
 						},
 						"app": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
-				},
-				"rule-trigger": {
-					"fields": {
-						"src_host": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"src_ip": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"rule": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"dest_host": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"dest_ip": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"user": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"trigger_time": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"rule_reason": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"mitre_labels": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"rule_usecases": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"asset_labels": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"rule_severity": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"event_id": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"event_time": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"log_time": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",

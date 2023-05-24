@@ -23,6 +23,11 @@ Activity Types
 |                           | object          | Default |          |           | &#10003;      |
 | app-login                 | src_ip          | Default |          | &#10003;  |               |
 |                           | user_agent      | Default |          |           | &#10003;      |
+| branch-create             | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
 | branch-modify             | resource        | Default |          |           | &#10003;      |
 |                           | additional_info | Default |          |           | &#10003;      |
 |                           | user            | Default |          | &#10003;  |               |
@@ -119,6 +124,21 @@ Activity Types
 |                           | operation       | Default |          |           | &#10003;      |
 |                           | object          | Default |          |           | &#10003;      |
 | repository-move           | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-pull           | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-push           | resource        | Default |          |           | &#10003;      |
+|                           | additional_info | Default |          |           | &#10003;      |
+|                           | user            | Default |          | &#10003;  |               |
+|                           | operation       | Default |          |           | &#10003;      |
+|                           | object          | Default |          |           | &#10003;      |
+| repository-read           | resource        | Default |          |           | &#10003;      |
 |                           | additional_info | Default |          |           | &#10003;      |
 |                           | user            | Default |          | &#10003;  |               |
 |                           | operation       | Default |          |           | &#10003;      |
