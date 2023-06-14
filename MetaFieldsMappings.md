@@ -1,9 +1,9 @@
 Metadata Field Mapping
 ========================
 
-This table maps old metadata field names to field names that comply with the common information model
+This table maps old metadata field names to New-Scale field names that correspond to the Common Information Model.
 
-| Old Metadata Field Name                 | Common Information Model Metadata Field Name                |
+| Old Metadata Field Name                 | New-Scale Metadata Field Name                |
 | ----------------------------------- | ------------------------------------- |
 | @host                               | m_host                                |
 | @metadata.beat                      | m_metadata_beat                       |
