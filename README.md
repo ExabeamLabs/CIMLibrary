@@ -19,20 +19,22 @@ You can follow the links below to explore individual interfaces or view the enti
 
 In addition to the elements represented in the Common Information Model interfaces, the model also preserves other types of information with event data. You can follow the links below to explore these elements. 
 
-[Platforms and Landscapes](https://github.com/ExabeamLabs/CIMLibrary/blob/main/Platforms_Landscapes.md) – A list of platforms listed by landscape
+- [Platforms and Landscapes](https://github.com/ExabeamLabs/CIMLibrary/blob/main/Platforms_Landscapes.md) – A list of platforms listed by landscape
 
-[Field Descriptions](Fields_Descriptions.md) – A list of available fields and their descriptions 
+- [Field Descriptions](Fields_Descriptions.md) – A list of available fields and their descriptions 
 
-[Product Categories](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/Exabeam%20Product%20Categories.md) – A list of supported product categories with descriptions (redirects to the New-Scale Content Library) 
 
-[Vendors and Products](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/Exabeam%20Data%20Sources.md) – A list of products listed by vendors (redirects to the New-Scale Content Library) 
+- [Product Categories](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/Exabeam%20Product%20Categories.md) – A list of supported product categories with descriptions (redirects to the New-Scale Content Library) 
+
+- [Vendors and Products](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/Exabeam%20Data%20Sources.md) – A list of products listed by vendors (redirects to the New-Scale Content Library) 
+
 
 ## Migration Resources
 
 To upgrade from earlier Exabeam products to the New-Scale Security Operations Platform, existing content must be migrated so that it complies with Common Information Model standards. The following resources provide the mapping information necessary to migrate the content.
 
-[Field Mapping by Events](FieldsMappings.md) - A table that maps old events and fields to the corresponding Common Information Model activity types and fields
+- [Field Mapping by Events](FieldsMappings.md) - A table that maps old events and fields to the corresponding Common Information Model activity types and fields
 
-[Parser Names Matrix](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/ParserNamesMatrix.md) - A set of alphabaetical tables that map old parser names to New-Scale parser names that comply with the Common Information Model (redirects to the New-Scale Content Library)
+- [Parser Names Matrix](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/ParserNamesMatrix.md) - A set of alphabaetical tables that map old parser names to New-Scale parser names that comply with the Common Information Model (redirects to the New-Scale Content Library)
 
-[Metadata Field Mapping](MetaFieldsMappings.md) - A table that maps old metadata field names to field names that comply with the Common Information Model.
+- [Metadata Field Mapping](MetaFieldsMappings.md) - A table that maps old metadata field names to field names that comply with the Common Information Model.
