@@ -3,7 +3,7 @@
 
  This table maps old event types and fields to the coresponding activity types and fields in Common Information Model
 
-| Old Event | Common Information Model Activity Type| Old Fields | Common Information Model Fields |
+| Old Event | New-Scale Activity Type| Old Fields | New-Scale Fields |
 | --------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------- |
 | dlp-alert | [alert-trigger:success](ActivityTypes/alert-trigger.md) | accesses | access|
 | &nbsp;| &nbsp;| target_domain| dest_domain |
