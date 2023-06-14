@@ -1,7 +1,7 @@
  Field Mapping by Event
 =======================
 
- This table maps old event types and fields to the coresponding activity types and fields in Common Information Model
+ This table maps old event types and fields to the New-Scale activity types and fields that correspond to the Common Information Model.
 
 | Old Event | New-Scale Activity Type| Old Fields | New-Scale Fields |
 | --------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------- |
