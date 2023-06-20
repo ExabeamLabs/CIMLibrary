@@ -3877,6 +3877,66 @@
 				}
 			}
 		},
+                "process-memory-protect:success": {
+                        "subject": "process",
+                        "activity": "memory-protect",
+                        "activity_type": "process-memory-protect",
+                        "outcome": "success",
+                        "pretty_name": "Process Memory Protect",
+                        "description": "Virtual memory was protected",
+                        "fields": {
+                                "memory_address": {
+                                        "core": "0",
+                                        "detection": "0",
+                                        "informational": "1"
+                                },
+                                "memory_size": {
+                                        "core": "0",
+                                        "detection": "0",
+                                        "informational": "1"
+                                },
+                                "memory_protection": {
+                                        "core": "0",
+                                        "detection": "0",
+                                        "informational": "1"
+                                }
+                        }
+                },
+                "process-memory-protect:fail": {
+                        "subject": "process",
+                        "activity": "memory-protect",
+                        "activity_type": "process-memory-protect",
+                        "outcome": "fail",
+                        "pretty_name": "Process Memory Protect",
+                        "description": "Virtual memory was protected",
+                        "fields": {
+                                "memory_address": {
+                                        "core": "0",
+                                        "detection": "0",
+                                        "informational": "1"
+                                },
+                                "memory_size": {
+                                        "core": "0",
+                                        "detection": "0",
+                                        "informational": "1"
+                                },
+                                "memory_protection": {
+                                        "core": "0",
+                                        "detection": "0",
+                                        "informational": "1"
+                                },
+                                "failure_reason": {
+                                        "core": "0",
+                                        "detection": "1",
+                                        "informational": "0"
+                                },
+                                "failure_code": {
+                                        "core": "0",
+                                        "detection": "1",
+                                        "informational": "0"
+                                }
+                        }
+                },
 		"process-open:success": {
 			"subject": "process",
 			"activity": "open",
@@ -76318,7 +76378,31 @@
 							"informational": "0"
 						}
 					}
-				}
+				},
+                                "process-memory-protect": {
+                                        "fields": {
+                                                "additional_info": {
+                                                        "core": "0",
+                                                        "detection": "0",
+                                                        "informational": "0"
+                                                },
+                                                "action": {
+                                                        "core": "0",
+                                                        "detection": "0",
+                                                        "informational": "1"
+                                                },
+                                                "operation": {
+                                                        "core": "0",
+                                                        "detection": "0",
+                                                        "informational": "1"
+                                                },
+                                                "event_name": {
+                                                        "core": "0",
+                                                        "detection": "0",
+                                                        "informational": "1"
+                                                }
+                                         }
+                                }
 			}
 		},
 		"mvision": {

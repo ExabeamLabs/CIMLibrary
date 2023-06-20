@@ -289,6 +289,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [process-close](process-close.md)
  * [process-create](process-create.md)
  * [process-memory-allocate](process-memory-allocate.md)
+ * [process-memory-protect](process-memory-protect.md)
  * [process-memory-read](process-memory-read.md)
  * [process-modify](process-modify.md)
  * [process-open](process-open.md)
