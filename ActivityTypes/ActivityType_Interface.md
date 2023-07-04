@@ -224,6 +224,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [log-disable](log-disable.md)
  * [log-download](log-download.md)
  * [log-enable](log-enable.md)
+ * [log-export](log-export.md)
  * [log-read](log-read.md)
  * [log-search](log-search.md)
  * [log_source-add](log_source-add.md)

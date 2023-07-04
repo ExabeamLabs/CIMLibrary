@@ -2902,7 +2902,8 @@
 				"user": {
 					"core": "1",
 					"detection": "1",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -6240,7 +6241,8 @@
 				"dest_user": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_domain": {
 					"core": "0",
@@ -6250,7 +6252,8 @@
 				"email_address": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"email_user": {
 					"core": "0",
@@ -6476,7 +6479,8 @@
 				"dest_user": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_domain": {
 					"core": "0",
@@ -6486,7 +6490,8 @@
 				"email_address": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"email_user": {
 					"core": "0",
@@ -9793,6 +9798,35 @@
 			"outcome": "fail",
 			"pretty_name": "Log Download",
 			"description": "An audit log was downloaded from a remote site",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"log-export:success": {
+			"subject": "log",
+			"activity": "export",
+			"activity_type": "log-export",
+			"outcome": "success",
+			"pretty_name": "Log Export",
+			"description": "An audit log was exported from a remote site",
+			"fields": {}
+		},
+		"log-export:fail": {
+			"subject": "log",
+			"activity": "export",
+			"activity_type": "log-export",
+			"outcome": "fail",
+			"pretty_name": "Log Export",
+			"description": "An audit log was exported from a remote site",
 			"fields": {
 				"failure_reason": {
 					"core": "0",
