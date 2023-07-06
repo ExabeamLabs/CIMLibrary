@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: dlp-alert
-### New-Scale Activity Type: alert-trigger:success
+### New-Scale Activity Type: rule-trigger:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

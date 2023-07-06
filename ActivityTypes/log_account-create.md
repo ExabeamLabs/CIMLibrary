@@ -1,33 +1,33 @@
-log_source-disable
+log_account-create
 ==================
 
 Description
 -----------
-
+A log account was created
 
 Parameters
 ----------
 | Parameter     | Value              |
 | ------------- | ------------------ |
-| Subject       | log_source         |
-| Activity      | disable            |
-| Activity Type | log_source-disable |
-| Pretty Name   | Log Source Disable |
+| Subject       | log_account        |
+| Activity      | create             |
+| Activity Type | log_account-create |
+| Pretty Name   | Log Account Create |
 
 
 Fields
 ------
 
-The possible fields for this activity type will vary depending on whether the activity was a [success](#log_source-disablesuccess) or a [fail](#log_source-disablefail).
+The possible fields for this activity type will vary depending on whether the activity was a [success](#log_account-createsuccess) or a [fail](#log_account-createfail).
 
 
-log_source-disable:success
+log_account-create:success
 --------------------------
 
 There are no fields for this activity type.
 
 
-log_source-disable:fail
+log_account-create:fail
 -----------------------
 
 | Field          | Core | Detection | Informational |

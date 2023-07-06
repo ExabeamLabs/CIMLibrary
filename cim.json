@@ -81,16 +81,20 @@
 		}
 	},
 	"Subjects": {
-		"file": {
-			"description": "A file is a storage object on endpoints and applications, that contains content, data or settings that can be written into it or read from it.",
-			"fields": {
-				"file_name": {
-					"core": "1",
-					"detection": "0",
-					"informational": "0"
-				},
-				"file_path": {
-					"core": "0",
+        "log_account": {
+            "description": "A log account represents a container of resources within a cloud vendor, and is used to connect and transfer logs into an application",
+            "fields": {}
+        },
+        "file": {
+            "description": "A file is a storage object on endpoints and applications, that contains content, data or settings that can be written into it or read from it.",
+            "fields": {
+                "file_name": {
+                    "core": "1",
+                    "detection": "0",
+                    "informational": "0"
+                },
+                "file_path": {
+                    "core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
@@ -1540,16 +1544,103 @@
 		}
 	},
 	"EventTypes": {
-		"file-write:success": {
-			"subject": "file",
-			"activity": "write",
-			"activity_type": "file-write",
-			"outcome": "success",
-			"pretty_name": "File Write",
-			"description": "A file was created or edited",
-			"fields": {
-				"is_dok": {
-					"core": "0",
+        "log_account-create:success": {
+            "subject": "log_account",
+            "activity": "create",
+            "activity_type": "log_account-create",
+            "outcome": "success",
+            "pretty_name": "Log Account Create",
+            "description": "A log account was created",
+            "fields": {}
+        },
+        "log_account-create:fail": {
+            "subject": "log_account",
+            "activity": "create",
+            "activity_type": "log_account-create",
+            "outcome": "fail",
+            "pretty_name": "Log Account Create",
+            "description": "A log account creation failed",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            }
+        },
+        "log_account-modify:success": {
+            "subject": "log_account",
+            "activity": "modify",
+            "activity_type": "log_account-modify",
+            "outcome": "success",
+            "pretty_name": "Log Account Modify",
+            "description": "A log account was Modified",
+            "fields": {}
+        },
+        "log_account-modify:fail": {
+            "subject": "log_account",
+            "activity": "modify",
+            "activity_type": "log_account-modify",
+            "outcome": "fail",
+            "pretty_name": "Log Account Modify",
+            "description": "A log account modification failed",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            }
+        },
+        "log_account-delete:success": {
+            "subject": "log_account",
+            "activity": "delete",
+            "activity_type": "log_account-delete",
+            "outcome": "success",
+            "pretty_name": "Log Account Delete",
+            "description": "A log account was Deleted",
+            "fields": {}
+        },
+        "log_account-delete:fail": {
+            "subject": "log_account",
+            "activity": "delete",
+            "activity_type": "log_account-delete",
+            "outcome": "fail",
+            "pretty_name": "Log Account Delete",
+            "description": "A log account delete failed",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            }
+        },
+        "file-write:success": {
+            "subject": "file",
+            "activity": "write",
+            "activity_type": "file-write",
+            "outcome": "success",
+            "pretty_name": "File Write",
+            "description": "A file was created or edited",
+            "fields": {
+                "is_dok": {
+                    "core": "0",
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
@@ -16650,26 +16741,26 @@
 			}
 		},
 		"log_source-enable:success": {
-			"subject": "log",
-			"activity": "enable",
-			"activity_type": "log_source-enable",
-			"outcome": "success",
-			"pretty_name": "Log Source Enable",
-			"description": "",
-			"fields": {}
-		},
+            "subject": "log_source",
+            "activity": "enable",
+            "activity_type": "log_source-enable",
+            "outcome": "success",
+            "pretty_name": "Log Source Enable",
+            "description": "",
+            "fields": {}
+        },
 		"log_source-enable:fail": {
-			"subject": "log",
-			"activity": "enable",
-			"activity_type": "log_source-enable",
-			"outcome": "fail",
-			"pretty_name": "Log Source Enable",
-			"description": "",
-			"fields": {
-				"failure_reason": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
+            "subject": "log_source",
+            "activity": "enable",
+            "activity_type": "log_source-enable",
+            "outcome": "fail",
+            "pretty_name": "Log Source Enable",
+            "description": "",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
 				},
 				"failure_code": {
 					"core": "0",
@@ -16679,26 +16770,26 @@
 			}
 		},
 		"log_source-disable:success": {
-			"subject": "log",
-			"activity": "disable",
-			"activity_type": "log_source-disable",
-			"outcome": "success",
-			"pretty_name": "Log Source Disable",
-			"description": "",
-			"fields": {}
-		},
+            "subject": "log_source",
+            "activity": "disable",
+            "activity_type": "log_source-disable",
+            "outcome": "success",
+            "pretty_name": "Log Source Disable",
+            "description": "",
+            "fields": {}
+        },
 		"log_source-disable:fail": {
-			"subject": "log",
-			"activity": "disable",
-			"activity_type": "log_source-disable",
-			"outcome": "fail",
-			"pretty_name": "Log Source Disable",
-			"description": "",
-			"fields": {
-				"failure_reason": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
+            "subject": "log_source",
+            "activity": "disable",
+            "activity_type": "log_source-disable",
+            "outcome": "fail",
+            "pretty_name": "Log Source Disable",
+            "description": "",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
 				},
 				"failure_code": {
 					"core": "0",

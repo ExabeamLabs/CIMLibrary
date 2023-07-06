@@ -20,6 +20,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [aws-instance-screenshot-failed](FieldsMappings/aws-instance-screenshot-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [aws-general-activity-failed](FieldsMappings/aws-general-activity-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [aws-instance-command-failed](FieldsMappings/aws-instance-command-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
+| [app-activity](FieldsMappings/app-activity_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [cloud-admin-activity-failed](FieldsMappings/cloud-admin-activity-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [app-activity](FieldsMappings/app-activity_fields.md) | [app-activity:success](ActivityTypes/app-activity.md) |
 | [webconference-operations-activity](FieldsMappings/webconference-operations-activity_fields.md) | [app-activity:success](ActivityTypes/app-activity.md) |
@@ -219,6 +220,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [network-connection-failed](FieldsMappings/network-connection-failed_fields.md) | [network-traffic:fail](ActivityTypes/network-traffic.md)|
 | [network-connection-successful](FieldsMappings/network-connection-successful_fields.md) | [network-traffic:success](ActivityTypes/network-traffic.md) |
 | [netflow-connection](FieldsMappings/netflow-connection_fields.md) | [network-traffic:success](ActivityTypes/network-traffic.md) |
+| [process-network](FieldsMappings/process-network_fields.md) | [network-traffic:success](ActivityTypes/network-traffic.md) |
 | [failed-usb-activity](FieldsMappings/failed-usb-activity_fields.md) | [peripheral_storage-activity:fail](ActivityTypes/peripheral_storage-activity.md)|
 | [usb-activity](FieldsMappings/usb-activity_fields.md) | [peripheral_storage-activity:success](ActivityTypes/peripheral_storage-activity.md) |
 | [usb-insert](FieldsMappings/usb-insert_fields.md) | [peripheral_storage-insert:success](ActivityTypes/peripheral_storage-insert.md) |
@@ -259,6 +261,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [gcp-role-write](FieldsMappings/gcp-role-write_fields.md) | [role-modify:success](ActivityTypes/role-modify.md) |
 | [aws-policy-attach](FieldsMappings/aws-policy-attach_fields.md) | [role-policy-attach:success](ActivityTypes/role-policy-attach.md) |
 | [azure-role-write](FieldsMappings/azure-role-write_fields.md) | [role-write:success](ActivityTypes/role-write.md) |
+| [dlp-alert](FieldsMappings/dlp-alert_fields.md) | [rule-trigger:success](ActivityTypes/rule-trigger.md) |
 | [task-created](FieldsMappings/task-created_fields.md) | [scheduled_task-create:success](ActivityTypes/scheduled_task-create.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [scheduled_task-finish:success](ActivityTypes/scheduled_task-finish.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [scheduled_task-start:success](ActivityTypes/scheduled_task-start.md) |
