@@ -28,6 +28,7 @@ Activity Types
 |                         | event_code         |         |      |           |               |
 |                         | domain             |         |      |           |               |
 |                         | event_name         |         |      |           |               |
+|                         | domain_user_name   |         |      |           |               |
 |                         | user               |         |      |           |               |
 |                         | operation          |         |      |           |               |
 |                         | admin_interface    |         |      |           |               |

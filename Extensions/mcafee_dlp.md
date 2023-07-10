@@ -19,6 +19,7 @@ Activity Types
 | alert-trigger | num_pages         |        |          |           |               |
 |               | rule              |        |          |           |               |
 |               | device_type       |        |          |           |               |
+|               | domain_user_name  |        |          |           |               |
 |               | src_ip            | Legacy | &#10003; | &#10003;  |               |
 |               | external_address  |        |          |           |               |
 |               | protocol          | Legacy |          | &#10003;  |               |

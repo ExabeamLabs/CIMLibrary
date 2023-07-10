@@ -14,12 +14,13 @@ There are no fields for this extension.
 Activity Types
 --------------
 
-| Activity Type | Field           | Status | Core     | Detection | Informational |
-| ------------- | --------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | additional_info |        |          |           |               |
-|               | domain          |        |          |           |               |
-|               | threat_type     |        |          |           |               |
-|               | malware_url     |        |          |           |               |
-|               | src_host        | Legacy | &#10003; | &#10003;  |               |
-|               | user            | Legacy |          | &#10003;  |               |
+| Activity Type | Field            | Status | Core     | Detection | Informational |
+| ------------- | ---------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | additional_info  |        |          |           |               |
+|               | domain           |        |          |           |               |
+|               | threat_type      |        |          |           |               |
+|               | malware_url      |        |          |           |               |
+|               | domain_user_name |        |          |           |               |
+|               | src_host         | Legacy | &#10003; | &#10003;  |               |
+|               | user             | Legacy |          | &#10003;  |               |
 

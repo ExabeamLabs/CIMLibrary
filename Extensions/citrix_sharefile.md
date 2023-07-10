@@ -9,18 +9,19 @@ product = "citrix sharefile"
 Fields
 ------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| src_ip          |      | &#10003;  |               |
-| country_code    |      | &#10003;  |               |
-| uri_path        |      | &#10003;  |               |
-| additional_info |      |           | &#10003;      |
-| event_code      |      | &#10003;  |               |
-| domain          |      | &#10003;  |               |
-| action          |      | &#10003;  |               |
-| company         |      | &#10003;  |               |
-| user            |      | &#10003;  |               |
-| operation       |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| src_ip           |      | &#10003;  |               |
+| country_code     |      | &#10003;  |               |
+| uri_path         |      | &#10003;  |               |
+| additional_info  |      |           | &#10003;      |
+| event_code       |      | &#10003;  |               |
+| domain           |      | &#10003;  |               |
+| action           |      | &#10003;  |               |
+| domain_user_name |      |           |               |
+| company          |      | &#10003;  |               |
+| user             |      | &#10003;  |               |
+| operation        |      | &#10003;  |               |
 
 Activity Types
 --------------

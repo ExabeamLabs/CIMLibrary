@@ -57,6 +57,7 @@ Activity Types
 |                         | dest_interface        | Default |          |           | &#10003;      |
 |                         | dest_translated_host  | Default |          |           | &#10003;      |
 |                         | src_translated_host   | Default |          |           | &#10003;      |
+|                         | domain_user_name      |         |          |           |               |
 |                         | src_host              | Default |          | &#10003;  |               |
 |                         | dest_translated_ip    | Default |          |           | &#10003;      |
 |                         | src_translated_ip     | Default |          |           | &#10003;      |

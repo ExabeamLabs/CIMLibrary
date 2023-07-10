@@ -23,6 +23,7 @@ Activity Types
 |               | domain               |        |          |           |               |
 |               | hash_md5             |        |          |           |               |
 |               | process_dir          |        |          |           |               |
+|               | domain_user_name     |        |          |           |               |
 |               | process_command_line |        |          |           |               |
 |               | process_path         | Legacy |          | &#10003;  |               |
 |               | user                 | Legacy |          | &#10003;  |               |

@@ -20,6 +20,7 @@ Activity Types
 |               | process         |        |          |           |               |
 |               | file_name       | Legacy | &#10003; |           |               |
 |               | file_dir        | Legacy |          |           | &#10003;      |
+|               | local_user_name |        |          |           |               |
 |               | process_dir     |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | hash_sha256     |        |          |           |               |

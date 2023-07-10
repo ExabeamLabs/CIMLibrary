@@ -29,34 +29,38 @@ The possible fields for this activity type will vary depending on whether the ac
 endpoint-login:success
 ----------------------
 
-| Field       | Core     | Detection | Informational |
-| ----------- | -------- | --------- | ------------- |
-| src_ip      |          | &#10003;  |               |
-| src_mac     |          | &#10003;  |               |
-| login_type  |          | &#10003;  |               |
-| domain      |          | &#10003;  |               |
-| dest_ip     |          | &#10003;  |               |
-| result_code |          | &#10003;  |               |
-| location    |          | &#10003;  |               |
-| src_host    |          | &#10003;  |               |
-| logon_type  |          | &#10003;  |               |
-| user        | &#10003; | &#10003;  |               |
-| account     |          | &#10003;  |               |
+| Field             | Core     | Detection | Informational |
+| ----------------- | -------- | --------- | ------------- |
+| src_mac           |          | &#10003;  |               |
+| login_type        |          | &#10003;  |               |
+| domain_user_name  |          |           |               |
+| src_host          |          | &#10003;  |               |
+| logon_type        |          | &#10003;  |               |
+| src_ip            |          | &#10003;  |               |
+| account_user_name |          |           |               |
+| domain            |          | &#10003;  |               |
+| dest_ip           |          | &#10003;  |               |
+| result_code       |          | &#10003;  |               |
+| location          |          | &#10003;  |               |
+| user              | &#10003; | &#10003;  |               |
+| account           |          | &#10003;  |               |
 
 endpoint-login:fail
 -------------------
 
-| Field          | Core     | Detection | Informational |
-| -------------- | -------- | --------- | ------------- |
-| src_ip         |          | &#10003;  |               |
-| src_mac        |          | &#10003;  |               |
-| failure_code   |          | &#10003;  |               |
-| login_type     |          | &#10003;  |               |
-| domain         |          | &#10003;  |               |
-| dest_ip        |          | &#10003;  |               |
-| result_code    |          | &#10003;  |               |
-| location       |          | &#10003;  |               |
-| failure_reason |          | &#10003;  |               |
-| src_host       |          | &#10003;  |               |
-| user           | &#10003; | &#10003;  |               |
-| account        |          | &#10003;  |               |
+| Field             | Core     | Detection | Informational |
+| ----------------- | -------- | --------- | ------------- |
+| src_mac           |          | &#10003;  |               |
+| failure_code      |          | &#10003;  |               |
+| login_type        |          | &#10003;  |               |
+| domain_user_name  |          |           |               |
+| failure_reason    |          | &#10003;  |               |
+| src_host          |          | &#10003;  |               |
+| src_ip            |          | &#10003;  |               |
+| account_user_name |          |           |               |
+| domain            |          | &#10003;  |               |
+| dest_ip           |          | &#10003;  |               |
+| result_code       |          | &#10003;  |               |
+| location          |          | &#10003;  |               |
+| user              | &#10003; | &#10003;  |               |
+| account           |          | &#10003;  |               |

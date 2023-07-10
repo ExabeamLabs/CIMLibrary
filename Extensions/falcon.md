@@ -27,6 +27,7 @@ Activity Types
 |                           | falcon_host_link                |         |          |           |               |
 |                           | kill_parent                     |         |          |           |               |
 |                           | kill_process                    |         |          |           |               |
+|                           | domain_user_name                |         |          |           |               |
 |                           | pattern_disposition_description |         |          |           |               |
 |                           | critical_process_disabled       |         |          |           |               |
 |                           | process_guid                    |         |          |           |               |
@@ -81,6 +82,7 @@ Activity Types
 |                           | resource                        | Default |          |           | &#10003;      |
 |                           | additional_info                 | Default |          |           | &#10003;      |
 |                           | domain                          | Default |          |           | &#10003;      |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Default |          | &#10003;  |               |
 |                           | object                          | Default |          |           | &#10003;      |
 | app-login                 | src_ip                          | Default |          | &#10003;  |               |
@@ -88,6 +90,7 @@ Activity Types
 |                           | event_name                      | Default |          |           | &#10003;      |
 |                           | session_id                      | Default |          |           | &#10003;      |
 | configuration-modify      | domain                          |         |          |           |               |
+|                           | domain_user_name                |         |          |           |               |
 |                           | operation                       |         |          |           |               |
 |                           | user                            |         |          |           |               |
 |                           | object                          |         |          |           |               |
@@ -209,6 +212,7 @@ Activity Types
 |                           | alert_name                      |         |          |           |               |
 | group-member-add          | src_ip                          |         |          |           |               |
 |                           | domain                          | Legacy  |          |           | &#10003;      |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Legacy  | &#10003; | &#10003;  |               |
 |                           | operation                       |         |          |           |               |
 | network-traffic           | process_guid                    | Default |          |           | &#10003;      |
@@ -275,30 +279,35 @@ Activity Types
 |                           | app                             |         |          |           |               |
 |                           | domain                          | Legacy  |          |           | &#10003;      |
 |                           | event_name                      |         |          |           |               |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Legacy  | &#10003; | &#10003;  |               |
 |                           | operation                       |         |          |           |               |
 | user-delete               | src_ip                          |         |          |           |               |
 |                           | app                             |         |          |           |               |
 |                           | domain                          | Legacy  |          |           | &#10003;      |
 |                           | event_name                      |         |          |           |               |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Legacy  | &#10003; | &#10003;  |               |
 |                           | operation                       |         |          |           |               |
 | user-modify               | src_ip                          |         |          |           |               |
 |                           | app                             |         |          |           |               |
 |                           | domain                          | Legacy  |          |           | &#10003;      |
 |                           | event_name                      |         |          |           |               |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Legacy  | &#10003; |           |               |
 |                           | operation                       |         |          |           |               |
 | user-role-assign          | src_ip                          | Default |          | &#10003;  |               |
 |                           | app                             | Default |          |           | &#10003;      |
 |                           | domain                          | Default |          |           | &#10003;      |
 |                           | event_name                      | Default |          |           | &#10003;      |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Default |          | &#10003;  |               |
 |                           | operation                       | Default |          |           | &#10003;      |
 | user-role-revoke          | src_ip                          | Default |          | &#10003;  |               |
 |                           | app                             | Default |          |           | &#10003;      |
 |                           | domain                          | Default |          |           | &#10003;      |
 |                           | event_name                      | Default |          |           | &#10003;      |
+|                           | domain_user_name                |         |          |           |               |
 |                           | user                            | Default |          | &#10003;  |               |
 |                           | operation                       | Default |          |           | &#10003;      |
 

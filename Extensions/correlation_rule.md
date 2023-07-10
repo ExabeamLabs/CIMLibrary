@@ -17,6 +17,7 @@ Activity Types
 | Activity Type | Field            | Status | Core     | Detection | Informational |
 | ------------- | ---------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | rule_severity    |        |          |           | &#10003;      |
+|               | local_user_name  |        |          |           |               |
 |               | rule             |        |          |           |               |
 |               | rule_usecases    |        |          | &#10003;  |               |
 |               | src_host         | Legacy | &#10003; | &#10003;  |               |

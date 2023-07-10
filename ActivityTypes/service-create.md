@@ -31,6 +31,7 @@ service-create:success
 
 | Field                | Core | Detection | Informational |
 | -------------------- | ---- | --------- | ------------- |
+| local_user_name      |      |           |               |
 | process_path         |      | &#10003;  |               |
 | process_command_line |      | &#10003;  |               |
 | user                 |      | &#10003;  |               |

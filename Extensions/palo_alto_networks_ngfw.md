@@ -21,6 +21,7 @@ Activity Types
 |               | bytes_in             |        |          |           |               |
 |               | src_user             |        |          |           |               |
 |               | network_app          |        |          |           |               |
+|               | domain_user_name     |        |          |           |               |
 |               | dest_translated_ip   |        |          |           |               |
 |               | threat_category      |        |          |           |               |
 |               | src_ip               | Legacy | &#10003; | &#10003;  |               |

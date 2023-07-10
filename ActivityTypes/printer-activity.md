@@ -29,12 +29,13 @@ The possible fields for this activity type will vary depending on whether the ac
 printer-activity:success
 ------------------------
 
-| Field        | Core     | Detection | Informational |
-| ------------ | -------- | --------- | ------------- |
-| bytes        |          | &#10003;  |               |
-| num_pages    |          | &#10003;  |               |
-| printer_name |          | &#10003;  |               |
-| operation    | &#10003; |           |               |
-| user         |          | &#10003;  |               |
+| Field           | Core     | Detection | Informational |
+| --------------- | -------- | --------- | ------------- |
+| bytes           |          | &#10003;  |               |
+| num_pages       |          | &#10003;  |               |
+| local_user_name |          |           |               |
+| printer_name    |          | &#10003;  |               |
+| operation       | &#10003; |           |               |
+| user            |          | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

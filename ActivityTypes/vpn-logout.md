@@ -33,6 +33,7 @@ vpn-logout:success
 | ---------------- | -------- | --------- | ------------- |
 | bytes_out        | &#10003; | &#10003;  |               |
 | domain           |          | &#10003;  |               |
+| domain_user_name |          |           |               |
 | user             | &#10003; | &#10003;  |               |
 | session_duration |          | &#10003;  |               |
 
@@ -44,6 +45,7 @@ vpn-logout:fail
 | failure_code     |          | &#10003;  |               |
 | bytes_out        | &#10003; | &#10003;  |               |
 | domain           |          | &#10003;  |               |
+| domain_user_name |          |           |               |
 | failure_reason   |          | &#10003;  |               |
 | user             | &#10003; | &#10003;  |               |
 | session_duration |          | &#10003;  |               |

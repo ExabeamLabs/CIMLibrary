@@ -29,19 +29,21 @@ The possible fields for this activity type will vary depending on whether the ac
 endpoint-authentication:success
 -------------------------------
 
-| Field     | Core     | Detection | Informational |
-| --------- | -------- | --------- | ------------- |
-| auth_type |          | &#10003;  |               |
-| domain    |          | &#10003;  |               |
-| user      | &#10003; | &#10003;  |               |
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| auth_type        |          | &#10003;  |               |
+| domain           |          | &#10003;  |               |
+| domain_user_name |          |           |               |
+| user             | &#10003; | &#10003;  |               |
 
 endpoint-authentication:fail
 ----------------------------
 
-| Field          | Core     | Detection | Informational |
-| -------------- | -------- | --------- | ------------- |
-| auth_type      |          | &#10003;  |               |
-| failure_code   |          | &#10003;  |               |
-| domain         |          | &#10003;  |               |
-| failure_reason |          | &#10003;  |               |
-| user           | &#10003; | &#10003;  |               |
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| auth_type        |          | &#10003;  |               |
+| failure_code     |          | &#10003;  |               |
+| domain           |          | &#10003;  |               |
+| domain_user_name |          |           |               |
+| failure_reason   |          | &#10003;  |               |
+| user             | &#10003; | &#10003;  |               |

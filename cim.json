@@ -132,6 +132,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -207,6 +213,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "1"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -252,6 +264,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -286,6 +304,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -301,6 +325,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -351,6 +381,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -411,6 +447,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -595,6 +637,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -825,6 +873,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -1044,6 +1098,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -1099,6 +1159,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -1218,6 +1284,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -2572,6 +2644,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2605,6 +2683,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2623,6 +2707,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2651,6 +2741,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2768,6 +2864,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2796,6 +2898,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2814,6 +2922,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2842,6 +2956,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3015,6 +3135,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3063,6 +3189,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3702,6 +3834,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3785,6 +3923,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4326,6 +4470,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4420,6 +4570,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4439,6 +4595,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -4464,6 +4626,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -4533,6 +4701,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4607,6 +4781,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4687,6 +4867,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4776,6 +4962,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4795,6 +4987,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -4820,6 +5018,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -4973,6 +5177,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"account_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5055,6 +5271,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"account_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5092,6 +5320,12 @@
 				"auth_type": {
 					"core": "0",
 					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
 				}
@@ -5134,6 +5368,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5168,6 +5408,12 @@
 				"logon_type": {
 					"core": "0",
 					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
 				}
@@ -5704,6 +5950,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5762,6 +6014,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5780,6 +6038,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -5805,6 +6069,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -6062,6 +6332,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6127,6 +6403,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6168,6 +6450,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6216,6 +6504,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6239,6 +6533,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6272,6 +6572,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6315,6 +6621,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6430,6 +6742,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6553,6 +6871,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6648,6 +6972,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6751,6 +7081,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6971,6 +7307,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -7021,6 +7363,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -7061,6 +7409,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -7111,6 +7465,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -7702,6 +8062,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7755,6 +8127,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7783,6 +8167,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -8969,6 +9359,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9126,6 +9522,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9402,6 +9804,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9440,6 +9848,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9805,6 +10219,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9838,6 +10258,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10396,6 +10822,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10424,6 +10856,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10491,6 +10929,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10926,7 +11370,14 @@
 			"outcome": "success",
 			"pretty_name": "Call Receive",
 			"description": "A user has recived a call from another user",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"call-receive:fail": {
 			"subject": "call",
@@ -10945,6 +11396,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -10955,7 +11412,14 @@
 			"outcome": "success",
 			"pretty_name": "Call Send",
 			"description": "A user has called another user",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"call-send:fail": {
 			"subject": "call",
@@ -10974,6 +11438,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12466,6 +12936,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12496,6 +12972,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12682,6 +13164,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12712,6 +13200,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12732,6 +13226,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12762,6 +13262,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12772,7 +13278,14 @@
 			"outcome": "success",
 			"pretty_name": "Password Checkin",
 			"description": "A password was checked in from a vault, finishing the checkout process. a checkout is a one timed access of a password, that blocks other users from accessing it at that time",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"password-checkin:fail": {
 			"subject": "password",
@@ -12791,6 +13304,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12811,6 +13330,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12841,6 +13366,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12856,6 +13387,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12881,6 +13418,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12891,7 +13434,14 @@
 			"outcome": "success",
 			"pretty_name": "Password Create",
 			"description": "A stored password was created",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"password-create:fail": {
 			"subject": "password",
@@ -12910,6 +13460,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12920,7 +13476,14 @@
 			"outcome": "success",
 			"pretty_name": "Password Read",
 			"description": "The value of a stored password was read",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"password-read:fail": {
 			"subject": "password",
@@ -12939,6 +13502,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12949,7 +13518,14 @@
 			"outcome": "success",
 			"pretty_name": "Password Use",
 			"description": "A stored password was used by a user",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"password-use:fail": {
 			"subject": "password",
@@ -12968,6 +13544,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -12978,7 +13560,14 @@
 			"outcome": "success",
 			"pretty_name": "Password Modify",
 			"description": "The value of a stored password was changed",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"password-modify:fail": {
 			"subject": "password",
@@ -12997,6 +13586,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -13007,7 +13602,14 @@
 			"outcome": "success",
 			"pretty_name": "Password Download",
 			"description": "A stored password object was downloaded",
-			"fields": {}
+			"fields": {
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			}
 		},
 		"password-download:fail": {
 			"subject": "password",
@@ -13026,6 +13628,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -13981,6 +14589,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -14091,6 +14705,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -14488,6 +15108,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -14518,6 +15144,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -14883,6 +15515,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -16121,6 +16759,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -16157,6 +16801,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -16822,6 +17472,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -17226,6 +17882,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"log_name": {
 					"core": "1",
 					"detection": "0",
@@ -17593,6 +18255,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -17650,6 +18318,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -18239,6 +18913,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_user_sid": {
 							"Status": "Default",
 							"core": "0",
@@ -18429,6 +19109,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -18715,6 +19401,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"bytes_out": {
 							"Status": "Default",
 							"core": "0",
@@ -18753,6 +19445,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -19217,6 +19915,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"trans_id": {
 							"core": "0",
 							"detection": "0",
@@ -19633,6 +20337,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -19700,6 +20410,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -19766,6 +20482,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -20039,6 +20761,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -20130,6 +20858,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -20170,6 +20904,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -20813,6 +21553,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -20847,6 +21593,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"sensor_id": {
 							"Status": "Default",
@@ -20950,6 +21702,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -21375,6 +22133,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -22809,6 +23573,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -23209,6 +23979,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -24216,6 +24992,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -24467,6 +25249,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -24525,6 +25313,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_translated_ip": {
 							"Status": "Default",
@@ -24602,6 +25396,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"bytes_out": {
 					"core": "0",
 					"detection": "1",
@@ -24676,6 +25476,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"action": {
 					"core": "0",
@@ -24939,6 +25745,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"operation": {
 					"core": "0",
@@ -26244,6 +27056,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -26589,6 +27407,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -26610,6 +27434,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"core": "0",
@@ -26636,6 +27466,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -26677,6 +27513,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -26717,6 +27559,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -26753,6 +27601,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -26788,6 +27642,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"core": "0",
@@ -27070,6 +27930,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"aid": {
 							"core": "0",
@@ -27438,6 +28304,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"record_type": {
 							"core": "0",
 							"detection": "0",
@@ -27483,6 +28355,12 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"record_type": {
 							"core": "0",
@@ -27530,6 +28408,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"record_type": {
 							"core": "0",
 							"detection": "0",
@@ -27575,6 +28459,12 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"record_type": {
 							"core": "0",
@@ -27675,6 +28565,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_dir": {
 							"Status": "Default",
 							"core": "0",
@@ -27714,6 +28610,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -27834,6 +28736,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -28154,6 +29062,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_host": {
 					"core": "0",
 					"detection": "0",
@@ -28225,6 +29139,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"action": {
 					"core": "0",
@@ -28514,6 +29434,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"bytes": {
 							"Status": "Legacy",
 							"core": "0",
@@ -28575,6 +29501,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"bytes": {
 							"core": "0",
 							"detection": "0",
@@ -28634,6 +29566,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"bytes": {
 							"core": "0",
@@ -28695,6 +29633,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"bytes": {
 							"Status": "Legacy",
 							"core": "0",
@@ -28746,6 +29690,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"file_path": {
 							"Status": "Default",
@@ -28866,6 +29816,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -28920,6 +29876,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"process_name": {
 					"core": "0",
@@ -29009,6 +29971,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -29440,6 +30408,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -29578,6 +30552,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"bytes": {
 					"core": "0",
 					"detection": "0",
@@ -29697,6 +30677,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"action": {
 					"core": "0",
 					"detection": "0",
@@ -29736,6 +30722,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -29905,6 +30897,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"database_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -30215,6 +31213,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -30771,6 +31775,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"database_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -30841,6 +31851,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"database_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -30911,6 +31927,12 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -30926,6 +31948,12 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -30942,6 +31970,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -31018,6 +32052,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"app": {
 							"core": "0",
 							"detection": "0",
@@ -31072,6 +32112,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -31111,6 +32157,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -31208,6 +32260,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -31247,6 +32305,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -31288,6 +32352,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -31328,6 +32398,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -31363,6 +32439,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"core": "0",
@@ -31400,6 +32482,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -31436,6 +32524,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -31471,6 +32565,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -31512,6 +32612,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -31548,6 +32654,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -31583,6 +32695,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -31624,6 +32742,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -31663,6 +32787,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -31968,6 +33098,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"additional_info": {
 					"core": "0",
 					"detection": "0",
@@ -32135,6 +33271,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"table_name": {
 							"Status": "Default",
 							"core": "0",
@@ -32210,6 +33352,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"core": "0",
 							"detection": "0",
@@ -32270,6 +33418,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"core": "0",
@@ -32333,6 +33487,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"core": "0",
 							"detection": "0",
@@ -32394,6 +33554,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"core": "0",
@@ -32462,6 +33628,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"bytes": {
 					"core": "0",
@@ -33397,6 +34569,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_port": {
 							"Status": "Default",
 							"core": "0",
@@ -33679,6 +34857,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33713,6 +34897,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33744,6 +34934,12 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"object": {
 							"core": "0",
@@ -33785,6 +34981,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33821,6 +35023,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33857,6 +35065,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33893,6 +35107,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33927,6 +35147,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33961,6 +35187,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -33995,6 +35227,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -34079,6 +35317,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -34101,6 +35345,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"additional_info": {
 					"core": "0",
@@ -34492,6 +35742,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -34877,6 +36133,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"dest_ip": {
 					"core": "0",
 					"detection": "0",
@@ -34963,6 +36225,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -34983,6 +36251,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"database_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"additional_info": {
 					"core": "0",
@@ -35510,6 +36784,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"url": {
 							"Status": "Default",
 							"core": "0",
@@ -35848,6 +37128,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -36111,6 +37397,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -36170,6 +37462,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"event_code": {
 							"Status": "Legacy",
@@ -36260,6 +37558,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"process_name": {
 					"core": "0",
 					"detection": "0",
@@ -36340,6 +37644,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"database_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"event_name": {
 							"Status": "Default",
 							"core": "0",
@@ -36384,6 +37694,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"database_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"event_name": {
 							"core": "0",
@@ -36533,6 +37849,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"database_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"user": {
 					"core": "0",
 					"detection": "0",
@@ -36674,6 +37996,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_host": {
 							"Status": "Default",
 							"core": "0",
@@ -36750,6 +38078,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"operation": {
 					"core": "0",
@@ -36934,6 +38268,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"object": {
 							"Status": "Default",
 							"core": "0",
@@ -36979,6 +38319,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"additional_info": {
 					"core": "0",
@@ -37411,6 +38757,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -37490,6 +38842,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -37740,6 +39098,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"email_address": {
 							"core": "0",
 							"detection": "0",
@@ -37792,6 +39156,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -37909,6 +39279,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -38066,6 +39442,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"email_address": {
 							"core": "0",
 							"detection": "0",
@@ -38195,6 +39577,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -38270,6 +39658,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"device_id": {
 							"core": "0",
@@ -38574,6 +39968,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_sid": {
 							"core": "0",
 							"detection": "0",
@@ -38658,6 +40058,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -38764,6 +40170,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -38865,6 +40277,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -38947,6 +40365,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"user_agent": {
 							"core": "0",
@@ -39185,6 +40609,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_ext": {
 							"core": "0",
 							"detection": "0",
@@ -39207,6 +40637,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"email_address": {
 							"core": "0",
@@ -39319,6 +40755,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"user_agent": {
 					"core": "0",
 					"detection": "1",
@@ -39370,6 +40812,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -39713,6 +41161,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40062,6 +41516,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40094,6 +41554,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"action": {
 							"Status": "Legacy",
@@ -40257,6 +41723,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40312,6 +41784,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40361,6 +41839,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40446,6 +41930,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40500,6 +41990,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -40543,6 +42039,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"email_address": {
 							"core": "0",
@@ -40615,6 +42117,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"email_address": {
 							"core": "0",
 							"detection": "0",
@@ -40686,6 +42194,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"email_address": {
 							"core": "0",
 							"detection": "0",
@@ -40756,6 +42270,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"email_address": {
 							"core": "0",
@@ -40838,6 +42358,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"email_address": {
 							"core": "0",
@@ -40957,6 +42483,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -41067,6 +42599,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"user_sid": {
 							"core": "0",
@@ -41226,6 +42764,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"email_address": {
 							"core": "0",
@@ -41401,6 +42945,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -41498,6 +43048,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -41668,6 +43224,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -41711,6 +43273,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -41802,6 +43370,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -41950,6 +43524,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -42130,6 +43710,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -42336,6 +43922,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_sid": {
 							"core": "0",
 							"detection": "0",
@@ -42396,6 +43988,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -42466,6 +44064,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"threat_type": {
 							"core": "0",
 							"detection": "0",
@@ -42476,6 +44080,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -42542,6 +44152,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"user_agent": {
 							"core": "0",
@@ -42797,6 +44413,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"email_address": {
 							"core": "0",
@@ -43120,6 +44742,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -43475,6 +45103,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_dir": {
 							"Status": "Legacy",
 							"core": "0",
@@ -43600,6 +45234,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -43702,6 +45342,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -43769,6 +45415,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -43994,6 +45646,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -44136,6 +45794,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -44257,6 +45921,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -44396,6 +46066,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -44678,6 +46354,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"email_address": {
 							"core": "0",
 							"detection": "0",
@@ -44881,6 +46563,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45131,6 +46819,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45212,6 +46906,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45292,6 +46992,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45374,6 +47080,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45474,6 +47186,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45719,6 +47437,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -45786,6 +47510,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -45897,6 +47627,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -45969,6 +47705,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -46020,6 +47762,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -46107,6 +47855,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"dest_local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -46124,6 +47878,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"log_name": {
 					"core": "0",
@@ -46194,6 +47954,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -46211,6 +47977,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_host": {
 					"core": "1",
@@ -46359,6 +48131,18 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -46645,6 +48429,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"result": {
 					"core": "0",
 					"detection": "0",
@@ -46926,6 +48716,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_agent": {
 							"core": "0",
 							"detection": "0",
@@ -46947,6 +48743,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -47130,6 +48932,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"full_name": {
 							"core": "0",
 							"detection": "0",
@@ -47171,6 +48979,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"operation": {
 					"core": "0",
@@ -47362,6 +49176,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -47408,6 +49228,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -47450,6 +49276,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Legacy",
@@ -47496,6 +49328,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"Status": "Default",
 							"core": "0",
@@ -47536,6 +49374,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"Status": "Default",
 							"core": "0",
@@ -47570,6 +49414,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"core": "0",
@@ -47614,6 +49464,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Default",
@@ -47661,6 +49517,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -47706,6 +49568,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Default",
@@ -47753,6 +49621,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -47798,6 +49672,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Default",
@@ -47845,6 +49725,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -47890,6 +49776,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Default",
@@ -47937,6 +49829,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -47983,6 +49881,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Default",
 							"core": "0",
@@ -48025,6 +49929,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Legacy",
@@ -48238,6 +50148,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"operation": {
 					"core": "0",
 					"detection": "0",
@@ -48332,6 +50248,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"Status": "Default",
 							"core": "0",
@@ -48405,6 +50327,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_host": {
 					"core": "1",
@@ -48784,6 +50712,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -48843,6 +50777,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -48871,6 +50811,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -48906,6 +50852,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"Status": "Default",
 							"core": "0",
@@ -48940,6 +50892,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"Status": "Default",
 							"core": "0",
@@ -48972,6 +50930,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"core": "0",
 							"detection": "0",
@@ -48993,6 +50957,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"rule": {
 					"core": "0",
@@ -49189,6 +51159,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -49410,6 +51386,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -49519,6 +51501,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_host": {
 					"core": "1",
@@ -49655,6 +51643,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"access": {
 							"core": "0",
 							"detection": "0",
@@ -49694,6 +51688,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -49823,6 +51823,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -50340,6 +52346,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -50462,6 +52474,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -50638,6 +52656,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -50699,6 +52723,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_user": {
 							"Status": "Default",
@@ -50771,6 +52801,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -50850,6 +52886,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -50980,6 +53022,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -51918,6 +53966,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"db_name": {
 					"core": "0",
 					"detection": "0",
@@ -52164,6 +54218,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -52201,6 +54261,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -52499,6 +54565,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -52608,6 +54680,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -52655,6 +54733,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"dest_local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -52748,6 +54832,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -52774,6 +54864,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -52789,6 +54885,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_ip": {
 							"core": "0",
@@ -52855,6 +54957,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -53065,6 +55173,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -53082,6 +55196,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -53631,6 +55751,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -53927,6 +56053,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -53997,6 +56129,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -54256,6 +56394,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -54273,6 +56417,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -54368,6 +56518,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -54388,6 +56544,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -55664,6 +57826,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -55879,6 +58047,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"event_name": {
 							"core": "0",
 							"detection": "0",
@@ -55940,6 +58114,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -56693,6 +58873,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"auth_method": {
 							"Status": "Default",
 							"core": "0",
@@ -56715,6 +58901,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -56884,6 +59076,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -57107,6 +59305,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -57503,6 +59707,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -57594,6 +59804,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"app": {
 							"Status": "Default",
 							"core": "0",
@@ -57655,6 +59871,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"alert_id": {
 							"Status": "Default",
@@ -58092,6 +60314,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -58242,6 +60470,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -58348,6 +60582,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"user_dn": {
 					"core": "0",
@@ -58474,6 +60714,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -58490,6 +60736,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -58517,6 +60769,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -58542,6 +60800,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -58571,6 +60835,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"Status": "Default",
 							"core": "0",
@@ -58598,6 +60868,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -58647,6 +60923,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -58673,6 +60955,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -58698,6 +60986,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -58727,6 +61021,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -58752,6 +61052,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -58779,6 +61085,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -58804,6 +61116,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -58986,6 +61304,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -59198,6 +61522,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_user": {
 							"Status": "Default",
 							"core": "0",
@@ -59221,6 +61551,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"dest_domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -59307,6 +61643,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -59548,11 +61890,23 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"account": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"process_id": {
 							"Status": "Default",
@@ -59648,6 +62002,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"direction": {
 							"Status": "Default",
 							"core": "0",
@@ -59675,6 +62035,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"user_id": {
 							"Status": "Default",
@@ -59913,6 +62279,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -59969,6 +62341,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -60990,6 +63368,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -61020,6 +63404,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -61050,6 +63440,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -61264,6 +63660,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"auth_method": {
 							"Status": "Default",
 							"core": "0",
@@ -61322,6 +63724,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"Status": "Default",
 							"core": "0",
@@ -61377,6 +63785,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"core": "0",
 							"detection": "0",
@@ -61428,6 +63842,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -61483,6 +63903,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -61542,6 +63968,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"Status": "Default",
 							"core": "0",
@@ -61599,6 +64031,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -61667,6 +64105,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_id": {
 							"core": "0",
 							"detection": "0",
@@ -61719,6 +64163,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_id": {
 							"core": "0",
 							"detection": "0",
@@ -61769,6 +64219,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"user_id": {
 							"core": "0",
@@ -61866,6 +64322,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"event_name": {
 							"Status": "Default",
@@ -62186,6 +64648,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -62229,6 +64697,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -62266,6 +64740,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -62314,6 +64794,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -62330,6 +64816,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -62433,6 +64925,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -62469,6 +64967,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -62778,6 +65282,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"service_name": {
 							"core": "0",
 							"detection": "0",
@@ -63054,6 +65564,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"service_name": {
 							"core": "0",
 							"detection": "0",
@@ -63328,6 +65844,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"service_name": {
 							"core": "0",
@@ -63606,6 +66128,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"service_name": {
 							"core": "0",
 							"detection": "0",
@@ -63882,6 +66410,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"service_name": {
 							"core": "0",
@@ -64209,6 +66743,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -64320,6 +66860,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Legacy",
 							"core": "0",
@@ -64351,6 +66897,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Legacy",
@@ -64384,6 +66936,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"dest_host": {
 							"Status": "Legacy",
 							"core": "0",
@@ -64415,6 +66973,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"dest_host": {
 							"Status": "Legacy",
@@ -64583,6 +67147,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -64794,6 +67364,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"resource": {
 							"Status": "Default",
@@ -65187,6 +67763,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"hash_md5": {
 							"Status": "Default",
 							"core": "0",
@@ -65299,6 +67881,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -65324,6 +67912,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -65350,6 +67944,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -65638,6 +68238,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"event_category": {
 							"core": "0",
 							"detection": "0",
@@ -65778,6 +68384,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -65816,6 +68428,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -65857,6 +68475,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -65897,6 +68521,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"core": "0",
 							"detection": "0",
@@ -65932,6 +68562,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -65972,6 +68608,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -66073,6 +68715,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -66089,6 +68737,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -66129,6 +68783,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -66175,6 +68835,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -66773,6 +69439,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"event_name": {
 							"core": "0",
 							"detection": "0",
@@ -66809,6 +69481,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"event_name": {
 							"core": "0",
@@ -66847,6 +69525,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"event_name": {
 							"core": "0",
 							"detection": "0",
@@ -66883,6 +69567,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"event_name": {
 							"core": "0",
@@ -67028,6 +69718,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -67055,6 +69751,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -67082,6 +69784,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -67342,6 +70050,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -67368,6 +70082,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -67432,6 +70152,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -67501,6 +70227,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"Status": "Default",
 							"core": "0",
@@ -67546,6 +70278,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"Status": "Default",
@@ -68280,6 +71018,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -68397,6 +71141,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -68679,6 +71429,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -68720,6 +71476,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -68808,6 +71570,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -68908,6 +71676,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -69084,6 +71858,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -69123,6 +71903,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -69161,6 +71947,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -69597,6 +72389,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"download_source": {
 							"core": "0",
 							"detection": "0",
@@ -69694,6 +72492,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -69810,6 +72614,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"src_ip": {
 							"Status": "Default",
@@ -70161,6 +72971,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -70208,6 +73024,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -70526,6 +73348,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"protocol": {
 					"core": "0",
 					"detection": "0",
@@ -70775,6 +73603,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -71134,6 +73968,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_sid": {
 							"core": "0",
 							"detection": "0",
@@ -71160,6 +74000,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"cabinet_name": {
 							"Status": "Default",
@@ -71902,6 +74748,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_type": {
 							"Status": "Legacy",
 							"core": "0",
@@ -71978,6 +74830,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"file_type": {
 							"Status": "Legacy",
@@ -72072,6 +74930,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_type": {
 							"Status": "Legacy",
 							"core": "0",
@@ -72148,6 +75012,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"file_type": {
 							"Status": "Legacy",
@@ -72227,6 +75097,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_type": {
 							"Status": "Legacy",
 							"core": "0",
@@ -72302,6 +75178,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"file_type": {
 							"Status": "Legacy",
@@ -72392,6 +75274,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"src_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -72403,6 +75291,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"file_type": {
 							"Status": "Default",
@@ -72503,6 +75397,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"country_code": {
 							"Status": "Default",
@@ -72799,6 +75699,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -72887,6 +75793,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -72975,6 +75887,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73057,6 +75975,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73139,6 +76063,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73221,6 +76151,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73303,6 +76239,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73385,6 +76327,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73473,6 +76421,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -73595,6 +76549,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"additional_info": {
 							"Status": "Default",
 							"core": "0",
@@ -73652,6 +76612,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -73715,6 +76681,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"core": "0",
 							"detection": "0",
@@ -73773,6 +76745,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -73836,6 +76814,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"core": "0",
 							"detection": "0",
@@ -73895,6 +76879,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -73958,6 +76948,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"operation": {
 							"core": "0",
 							"detection": "0",
@@ -74016,6 +77012,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"operation": {
 							"Status": "Default",
@@ -74085,6 +77087,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"file_type": {
 							"Status": "Legacy",
 							"core": "0",
@@ -74131,6 +77139,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"file_type": {
 							"Status": "Legacy",
@@ -74193,6 +77207,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -74253,6 +77273,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -74278,6 +77304,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -74319,6 +77351,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -74346,6 +77384,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -74372,6 +77416,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -74416,6 +77466,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -74562,6 +77618,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -74769,6 +77831,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"event_code": {
 					"core": "0",
@@ -75160,6 +78228,12 @@
 							"detection": "0",
 							"informational": "1"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"object_type": {
 							"Status": "Default",
 							"core": "0",
@@ -75238,6 +78312,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_agent": {
 							"core": "0",
 							"detection": "0",
@@ -75269,6 +78349,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"group_name": {
 							"Status": "Default",
@@ -75369,6 +78455,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"os": {
 							"core": "0",
@@ -75505,6 +78597,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				},
@@ -75551,6 +78649,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -75573,6 +78677,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -75613,6 +78723,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"app": {
 							"Status": "Default",
@@ -75659,6 +78775,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"group_name": {
 							"Status": "Default",
@@ -75950,6 +79072,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -75982,6 +79110,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76050,6 +79184,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76319,6 +79459,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76497,6 +79643,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"user_id": {
 							"core": "0",
 							"detection": "0",
@@ -76622,6 +79774,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76725,6 +79883,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76774,6 +79938,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76833,6 +80003,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -76904,6 +80080,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"full_name": {
 							"core": "0",
@@ -77117,6 +80299,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -77132,6 +80320,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -77203,6 +80397,18 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
+						"database_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -77218,6 +80424,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -77299,6 +80511,18 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
+						"database_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -77382,6 +80606,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -77530,6 +80760,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -77644,6 +80880,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -77762,6 +81004,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -77876,6 +81124,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"action": {
 							"Status": "Legacy",
@@ -78060,6 +81314,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"first_name": {
 							"core": "0",
 							"detection": "0",
@@ -78182,6 +81442,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -78731,6 +81997,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -78926,6 +82198,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -78941,6 +82219,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"account_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						},
 						"additional_info": {
 							"core": "0",
@@ -79015,6 +82299,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -79083,6 +82373,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -79166,6 +82462,12 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
 						}
 					}
 				}
@@ -79572,6 +82874,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"user_type": {
 					"core": "0",
@@ -80754,6 +84062,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -81140,6 +84454,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -81618,6 +84938,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {

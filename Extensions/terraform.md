@@ -9,13 +9,14 @@ product = "terraform"
 Fields
 ------
 
-| Field  | Core | Detection | Informational |
-| ------ | ---- | --------- | ------------- |
-| method |      |           | &#10003;      |
-| bytes  |      |           | &#10003;      |
-| domain |      |           | &#10003;      |
-| action |      |           | &#10003;      |
-| user   |      |           | &#10003;      |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| method           |      |           | &#10003;      |
+| bytes            |      |           | &#10003;      |
+| domain           |      |           | &#10003;      |
+| action           |      |           | &#10003;      |
+| domain_user_name |      |           |               |
+| user             |      |           | &#10003;      |
 
 Activity Types
 --------------

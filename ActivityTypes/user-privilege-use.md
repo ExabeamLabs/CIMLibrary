@@ -29,12 +29,13 @@ The possible fields for this activity type will vary depending on whether the ac
 user-privilege-use:success
 --------------------------
 
-| Field        | Core | Detection | Informational |
-| ------------ | ---- | --------- | ------------- |
-| privileges   |      |           |               |
-| process_name |      | &#10003;  |               |
-| process_dir  |      | &#10003;  |               |
-| src_host     |      | &#10003;  |               |
-| user         |      | &#10003;  |               |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| privileges      |      |           |               |
+| process_name    |      | &#10003;  |               |
+| local_user_name |      |           |               |
+| process_dir     |      | &#10003;  |               |
+| src_host        |      | &#10003;  |               |
+| user            |      | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

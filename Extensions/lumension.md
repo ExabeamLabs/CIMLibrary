@@ -16,6 +16,7 @@ Fields
 | bytes             |      |           | &#10003;      |
 | domain            |      |           | &#10003;      |
 | device_type       |      |           | &#10003;      |
+| domain_user_name  |      |           |               |
 | user              |      |           | &#10003;      |
 | operation_details |      |           | &#10003;      |
 | operation         |      |           | &#10003;      |

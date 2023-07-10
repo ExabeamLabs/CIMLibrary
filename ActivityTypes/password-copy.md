@@ -24,15 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 password-copy:success
 ---------------------
 
-| Field        | Core | Detection | Informational |
-| ------------ | ---- | --------- | ------------- |
-| src_password |      |           | &#10003;      |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| local_user_name |      |           |               |
+| src_password    |      |           | &#10003;      |
 
 password-copy:fail
 ------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
-| src_password   |      |           | &#10003;      |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| failure_code    |      | &#10003;  |               |
+| local_user_name |      |           |               |
+| failure_reason  |      | &#10003;  |               |
+| src_password    |      |           | &#10003;      |

@@ -28,6 +28,7 @@ script-execute:success
 | ------------------ | ---- | --------- | ------------- |
 | scriptblock_text   |      |           | &#10003;      |
 | command_invocation |      | &#10003;  |               |
+| local_user_name    |      |           |               |
 | user               |      | &#10003;  |               |
 
 script-execute:fail
@@ -38,5 +39,6 @@ script-execute:fail
 | scriptblock_text   |      |           | &#10003;      |
 | command_invocation |      | &#10003;  |               |
 | failure_code       |      | &#10003;  |               |
+| local_user_name    |      |           |               |
 | failure_reason     |      | &#10003;  |               |
 | user               |      | &#10003;  |               |

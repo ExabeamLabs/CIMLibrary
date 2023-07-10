@@ -23,6 +23,7 @@ Activity Types
 |                           | src_host                      | Default |          | &#10003;  |               |
 | file-delete               | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
+|                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   |         |          |           |               |
 |                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
@@ -76,6 +77,7 @@ Activity Types
 |                           | user_uid                      |         |          |           |               |
 | file-download             | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
+|                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   |         |          |           |               |
 |                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
@@ -129,6 +131,7 @@ Activity Types
 |                           | user_uid                      |         |          |           |               |
 | file-read                 | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
+|                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   | Legacy  |          |           | &#10003;      |
 |                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
@@ -182,6 +185,7 @@ Activity Types
 |                           | user_uid                      |         |          |           |               |
 | file-upload               | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
+|                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   |         |          |           |               |
 |                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
@@ -235,6 +239,7 @@ Activity Types
 |                           | user_uid                      |         |          |           |               |
 | file-write                | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
+|                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   | Legacy  |          |           | &#10003;      |
 |                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
@@ -301,6 +306,7 @@ Activity Types
 |                           | event_code                    |         |          |           |               |
 |                           | dest_ip                       |         |          |           |               |
 |                           | log_source                    |         |          |           |               |
+|                           | local_user_name               |         |          |           |               |
 |                           | printer_name                  | Legacy  | &#10003; | &#10003;  |               |
 |                           | src_host                      | Legacy  |          |           | &#10003;      |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |

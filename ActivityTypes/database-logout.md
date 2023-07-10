@@ -24,15 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 database-logout:success
 -----------------------
 
-| Field  | Core | Detection | Informational |
-| ------ | ---- | --------- | ------------- |
-| domain |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| domain           |      | &#10003;  |               |
+| domain_user_name |      |           |               |
 
 database-logout:fail
 --------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| domain         |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| failure_code     |      | &#10003;  |               |
+| domain           |      | &#10003;  |               |
+| domain_user_name |      |           |               |
+| failure_reason   |      | &#10003;  |               |

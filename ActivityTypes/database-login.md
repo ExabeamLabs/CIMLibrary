@@ -29,27 +29,29 @@ The possible fields for this activity type will vary depending on whether the ac
 database-login:success
 ----------------------
 
-| Field      | Core | Detection | Informational |
-| ---------- | ---- | --------- | ------------- |
-| src_ip     |      | &#10003;  |               |
-| login_type |      | &#10003;  |               |
-| domain     |      | &#10003;  |               |
-| dest_ip    |      | &#10003;  |               |
-| dest_host  |      | &#10003;  |               |
-| src_host   |      | &#10003;  |               |
-| user       |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| src_ip           |      | &#10003;  |               |
+| login_type       |      | &#10003;  |               |
+| domain           |      | &#10003;  |               |
+| dest_ip          |      | &#10003;  |               |
+| dest_host        |      | &#10003;  |               |
+| domain_user_name |      |           |               |
+| src_host         |      | &#10003;  |               |
+| user             |      | &#10003;  |               |
 
 database-login:fail
 -------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| src_ip         |      | &#10003;  |               |
-| failure_code   |      | &#10003;  |               |
-| login_type     |      | &#10003;  |               |
-| domain         |      | &#10003;  |               |
-| dest_ip        |      | &#10003;  |               |
-| dest_host      |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
-| src_host       |      | &#10003;  |               |
-| user           |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| src_ip           |      | &#10003;  |               |
+| failure_code     |      | &#10003;  |               |
+| login_type       |      | &#10003;  |               |
+| domain           |      | &#10003;  |               |
+| dest_ip          |      | &#10003;  |               |
+| dest_host        |      | &#10003;  |               |
+| domain_user_name |      |           |               |
+| failure_reason   |      | &#10003;  |               |
+| src_host         |      | &#10003;  |               |
+| user             |      | &#10003;  |               |
