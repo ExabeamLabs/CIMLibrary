@@ -85,6 +85,10 @@
             "description": "A log account represents a container of resources within a cloud vendor, and is used to connect and transfer logs into an application",
             "fields": {}
         },
+		"context_source": {
+            "description": "A context source normalizes contextual data collected from external sources, which can then be used to enrich events or provide context in investigations",
+            "fields": {}
+        },
         "file": {
             "description": "A file is a storage object on endpoints and applications, that contains content, data or settings that can be written into it or read from it.",
             "fields": {
@@ -357,6 +361,11 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"ds_object_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"ds_name": {
 					"core": "0",
 					"detection": "1",
@@ -378,6 +387,11 @@
 					"informational": "0"
 				},
 				"attribute": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"properties": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -1616,6 +1630,93 @@
 		}
 	},
 	"EventTypes": {
+		"context_source-create:success": {
+            "subject": "context_source",
+            "activity": "create",
+            "activity_type": "context_source-create",
+            "outcome": "success",
+            "pretty_name": "Context Source Create",
+            "description": "Context source  was created",
+            "fields": {}
+        },
+        "context_source-create:fail": {
+            "subject": "context_source",
+            "activity": "create",
+            "activity_type": "context_source-create",
+            "outcome": "fail",
+            "pretty_name": "Context Source Create",
+            "description": "Context source creation failed",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            }
+        },
+		"context_source-modify:success": {
+            "subject": "context_source",
+            "activity": "modify",
+            "activity_type": "context_source-modify",
+            "outcome": "success",
+            "pretty_name": "Context Source Modify",
+            "description": "Context source was Modified",
+            "fields": {}
+        },
+        "context_source-modify:fail": {
+            "subject": "context_source",
+            "activity": "modify",
+            "activity_type": "context_source-modify",
+            "outcome": "fail",
+            "pretty_name": "Context Source Modify",
+            "description": "Context source modification failed",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            }
+        },
+		"context_source-delete:success": {
+            "subject": "context_source",
+            "activity": "delete",
+            "activity_type": "context_source-delete",
+            "outcome": "success",
+            "pretty_name": "Context Source Delete",
+            "description": "Context source was deleted",
+            "fields": {}
+        },
+        "context_source-delete:fail": {
+            "subject": "context_source",
+            "activity": "delete",
+            "activity_type": "context_source-delete",
+            "outcome": "fail",
+            "pretty_name": "Context Source Delete",
+            "description": "Context source delete failed",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            }
+        },
         "log_account-create:success": {
             "subject": "log_account",
             "activity": "create",
@@ -6716,7 +6817,8 @@
 				"user": {
 					"core": "0",
 					"detection": "1",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"attachment": {
 					"core": "0",
@@ -6765,7 +6867,8 @@
 				"dest_user": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_domain": {
 					"core": "0",
@@ -6775,7 +6878,8 @@
 				"email_address": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"email_user": {
 					"core": "0",
@@ -6845,7 +6949,8 @@
 				"user": {
 					"core": "0",
 					"detection": "1",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"attachment": {
 					"core": "0",
@@ -6966,7 +7071,8 @@
 				"user": {
 					"core": "0",
 					"detection": "1",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"bytes": {
 					"core": "0",
@@ -6995,7 +7101,8 @@
 				"dest_user": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_domain": {
 					"core": "0",
@@ -7005,7 +7112,8 @@
 				"email_address": {
 					"core": "1",
 					"detection": "0",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"email_user": {
 					"core": "0",
@@ -7075,7 +7183,8 @@
 				"user": {
 					"core": "0",
 					"detection": "1",
-					"informational": "0"
+					"informational": "0",
+					"enriched": "1"
 				},
 				"bytes": {
 					"core": "0",
