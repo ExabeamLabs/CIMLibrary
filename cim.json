@@ -14144,6 +14144,24 @@
 				}
 			}
 		},
+		"report-execute:success": {
+			"subject": "report",
+			"activity": "execute",
+			"activity_type": "report-execute",
+			"outcome": "success",
+			"pretty_name": "Report Execute",
+			"description": "A report was Execute on an app",
+			"fields": {}
+		},
+		"report-execute:fail": {
+			"subject": "report",
+			"activity": "execute",
+			"activity_type": "report-execute",
+			"outcome": "success",
+			"pretty_name": "Report Execute",
+			"description": "A report was Execute on an app",
+			"fields": {}
+		},
 		"repository-create:success": {
 			"subject": "repository",
 			"activity": "create",

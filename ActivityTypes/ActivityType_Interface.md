@@ -314,6 +314,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [report-create](report-create.md)
  * [report-delete](report-delete.md)
  * [report-download](report-download.md)
+ * [report-execute](report-execute.md)
  * [report-export](report-export.md)
  * [report-read](report-read.md)
  * [repository-create](repository-create.md)
