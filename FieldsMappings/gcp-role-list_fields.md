@@ -24,6 +24,7 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | parent_sha256hash                                         | parent_hash_sha256          |
 | command_line                                              | process_command_line        |
 | reason                                                    | result_reason               |
+| role                                                      | role_name                   |
 | selected_sha256                                           | selected_hash_sha256        |
 | service                                                   | service_name                |
 | sender                                                    | src_email_address           |

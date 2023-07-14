@@ -26,6 +26,7 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | policy                                                             | policy_name                 |
 | command_line                                                       | process_command_line        |
 | reason                                                             | result_reason               |
+| role                                                               | role_name                   |
 | selected_sha256                                                    | selected_hash_sha256        |
 | sender                                                             | src_email_address           |
 | target_sha256                                                      | target_hash_sha256          |

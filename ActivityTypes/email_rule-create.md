@@ -14,6 +14,11 @@ Parameters
 | Activity Type | email_rule-create |
 | Pretty Name   | Email_rule Create |
 
+Legacy Names
+------------
+| Success          | Fail |
+| ---------------- | ---- |
+| app-activity<br> |      |
 
 Fields
 ------

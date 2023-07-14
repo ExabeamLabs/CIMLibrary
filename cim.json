@@ -361,11 +361,6 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"ds_object_type": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
 				"ds_name": {
 					"core": "0",
 					"detection": "1",
@@ -7606,7 +7601,10 @@
 					"detection": "1",
 					"informational": "0"
 				}
-			}
+			},
+			"legacy_event_name": [
+				"app-activity"
+			]
 		},
 		"email_rule-create:fail": {
 			"subject": "email_rule",
@@ -13052,7 +13050,10 @@
 					"informational": "0",
 					"enriched": "1"
 				}
-			}
+			},
+			"legacy_event_name": [
+				"app-activity"
+			]
 		},
 		"mailbox-permission-modify:fail": {
 			"subject": "mailbox",

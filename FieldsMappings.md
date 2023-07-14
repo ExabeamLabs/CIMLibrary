@@ -102,6 +102,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [dlp-email-alert-in](FieldsMappings/dlp-email-alert-in_fields.md) | [email-receive:success](ActivityTypes/email-receive.md) |
 | [dlp-email-alert-out-failed](FieldsMappings/dlp-email-alert-out-failed_fields.md) | [email-send:fail](ActivityTypes/email-send.md)|
 | [dlp-email-alert-out](FieldsMappings/dlp-email-alert-out_fields.md) | [email-send:success](ActivityTypes/email-send.md) |
+| [app-activity](FieldsMappings/app-activity_fields.md) | [email_rule-create:success](ActivityTypes/email_rule-create.md) |
 | [nac-failed-logon](FieldsMappings/nac-failed-logon_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
 | [authentication-failed](FieldsMappings/authentication-failed_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
 | [authentication-successful](FieldsMappings/authentication-successful_fields.md) | [endpoint-authentication:success](ActivityTypes/endpoint-authentication.md) |
@@ -205,6 +206,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [azure-keyvault-write](FieldsMappings/azure-keyvault-write_fields.md) | [key-write:success](ActivityTypes/key-write.md) |
 | [aws-instance-creds-write](FieldsMappings/aws-instance-creds-write_fields.md) | [key-write:success](ActivityTypes/key-write.md) |
 | [audit-log-clear](FieldsMappings/audit-log-clear_fields.md) | [log-clear:success](ActivityTypes/log-clear.md) |
+| [app-activity](FieldsMappings/app-activity_fields.md) | [mailbox-permission-modify:success](ActivityTypes/mailbox-permission-modify.md) |
 | [web-meeting-created](FieldsMappings/web-meeting-created_fields.md) | [meeting-create:success](ActivityTypes/meeting-create.md) |
 | [web-meeting-ended](FieldsMappings/web-meeting-ended_fields.md) | [meeting-end:success](ActivityTypes/meeting-end.md) |
 | [web-meeting-participant-joined](FieldsMappings/web-meeting-participant-joined_fields.md) | [meeting-member-join:success](ActivityTypes/meeting-member-join.md) |

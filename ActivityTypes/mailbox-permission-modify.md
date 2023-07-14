@@ -14,6 +14,11 @@ Parameters
 | Activity Type | mailbox-permission-modify |
 | Pretty Name   | Mailbox Permission Modify |
 
+Legacy Names
+------------
+| Success          | Fail |
+| ---------------- | ---- |
+| app-activity<br> |      |
 
 Fields
 ------
