@@ -2723,6 +2723,53 @@
 				}
 			}
 		},
+                "file-create:success": {
+                        "subject": "file",
+                        "activity": "create",
+                        "activity_type": "file-create",
+                        "outcome": "success",
+                        "pretty_name": "File Create",
+                        "description": "A file was created",
+                        "fields": {
+                                "is_dok": {
+                                        "core": "0", 
+                                        "detection": "1",
+                                        "informational": "0",
+                                        "enriched": "1"
+                                }
+                        },
+                        "legacy_event_name": [
+                                "file-write"
+                        ]
+                },
+                "file-create:fail": {
+                        "subject": "file",
+                        "activity": "create",
+                        "activity_type": "file-create",
+                        "outcome": "fail",
+                        "pretty_name": "File Create",
+                        "description": "A file was created",
+                        "fields": {
+                                "is_dok": {
+                                        "core": "0", 
+                                        "detection": "1",
+                                        "informational": "0"
+                                },
+                                "failure_reason": {
+                                        "core": "0",
+                                        "detection": "1",
+                                        "informational": "0"
+                                },
+                                "failure_code": {
+                                        "core": "0",
+                                        "detection": "1",
+                                        "informational": "0"
+                                }
+                        },
+                        "legacy_event_name": [
+                                "file-write"
+                        ]
+                },
 		"user-create:success": {
 			"subject": "user",
 			"activity": "create",

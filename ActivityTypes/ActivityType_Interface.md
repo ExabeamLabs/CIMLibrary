@@ -152,6 +152,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [endpoint-write](endpoint-write.md)
  * [file-close](file-close.md)
  * [file-copy](file-copy.md)
+ * [file-create](file-create.md)
  * [file-delete](file-delete.md)
  * [file-download](file-download.md)
  * [file-list](file-list.md)
