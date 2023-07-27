@@ -639,6 +639,7 @@
 | dummy-new-parser-623               | f5-bigip-str-network-traffic-fail-855                                              |
 | dummy-new-parser-624               | pan-ngfw-json-alert-trigger-success-threat-data                                    |
 | dummy-new-parser-625               | pan-ngfw-json-alert-trigger-success-threat-action                                  |
+| dummy-new-parser-626               | pan-ngfw-json-endpoint-login-auth                                                  |
 | dummy-new-parser-63                | microsoft-iis-str-http-session-getapi                                              |
 | dummy-new-parser-64                | microsoft-iis-str-http-session-getautodiscover                                     |
 | dummy-new-parser-65                | microsoft-iis-str-http-session-getecp                                              |
@@ -678,6 +679,7 @@
 | dummy-new-parser-697               | microsoft-windows-str-dll-load-success-4610                                        |
 | dummy-new-parser-7                 | exabeam-audit-json-alert-case-success                                              |
 | dummy-new-parser-70                | microsoft-iis-str-http-session-getoab                                              |
+| dummy-new-parser-700               | zscaler-ia-str-http-session-dlpengine-2                                            |
 | dummy-new-parser-71                | microsoft-iis-str-http-session-getowa                                              |
 | dummy-new-parser-72                | microsoft-iis-str-http-session-getrpc                                              |
 | dummy-new-parser-73                | microsoft-iis-str-http-session-headapi                                             |
