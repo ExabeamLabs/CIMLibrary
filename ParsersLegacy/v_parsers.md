@@ -92,7 +92,10 @@
 | vmware-system-info-4                    | vmware-horizon-str-app-notification-success-maximum                  |
 | vmware-system-info-5                    | vmware-horizon-kv-app-activity-success-module                        |
 | vmware-vcenter-activity                 | vmware-vcenter-json-app-login-success-viewcenter                     |
+| vmware-vcenter-app-login                | vmware-vcenter-json-app-login-success-loggedin                       |
+| vmware-vcenter-app-logout               | vmware-vcenter-json-app-logout-success-loggedout                     |
 | vmware-vcenter-login                    | vmware-vcenter-json-endpoint-login-success-userauthenticated         |
+| vmware-vcenter-system-info              | vmware-vcenter-json-app-notification-success-notificationsuccess     |
 | vmware-view-app-activity                | vmware-view-kv-app-activity-success-desktopid                        |
 | vmware-view-app-activity-1              | vmware-view-str-app-activity-success-application                     |
 | vmware-view-app-login                   | vmware-view-str-app-login-success-viewuser                           |

@@ -50,6 +50,7 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | md5,<br>md5_sum,<br>md5_hash                                       | hash_md5                    |
 | sha1,<br>sha1_sum                                                  | hash_sha1                   |
 | sha256,<br>sha256_sum                                              | hash_sha256                 |
+| host,<br>local_asset                                               | host                        |
 | parent_process_cmd,<br>parent_command_line,<br>parent_cmd          | parent_process_command_line |
 | parent_directory,<br>parent_process_directory                      | parent_process_dir          |
 | process_directory,<br>directory                                    | process_dir                 |

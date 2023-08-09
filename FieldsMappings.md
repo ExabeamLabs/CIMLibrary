@@ -103,6 +103,11 @@ This table maps old event types to their corresponding new-scale activity types.
 | [dlp-email-alert-out-failed](FieldsMappings/dlp-email-alert-out-failed_fields.md) | [email-send:fail](ActivityTypes/email-send.md)|
 | [dlp-email-alert-out](FieldsMappings/dlp-email-alert-out_fields.md) | [email-send:success](ActivityTypes/email-send.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [email_rule-create:success](ActivityTypes/email_rule-create.md) |
+| [email_rule-create](FieldsMappings/email_rule-create_fields.md) | [email_rule-create:success](ActivityTypes/email_rule-create.md) |
+| [email_rule-delete](FieldsMappings/email_rule-delete_fields.md) | [email_rule-delete:success](ActivityTypes/email_rule-delete.md) |
+| [email_rule-disable](FieldsMappings/email_rule-disable_fields.md) | [email_rule-disable:success](ActivityTypes/email_rule-disable.md) |
+| [email_rule-enable](FieldsMappings/email_rule-enable_fields.md) | [email_rule-enable:success](ActivityTypes/email_rule-enable.md) |
+| [email_rule-modify](FieldsMappings/email_rule-modify_fields.md) | [email_rule-modify:success](ActivityTypes/email_rule-modify.md) |
 | [nac-failed-logon](FieldsMappings/nac-failed-logon_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
 | [authentication-failed](FieldsMappings/authentication-failed_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
 | [authentication-successful](FieldsMappings/authentication-successful_fields.md) | [endpoint-authentication:success](ActivityTypes/endpoint-authentication.md) |
@@ -151,6 +156,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [aws-storageobject-copy-failed](FieldsMappings/aws-storageobject-copy-failed_fields.md) | [file-copy:fail](ActivityTypes/file-copy.md)|
 | [aws-storageobject-copy](FieldsMappings/aws-storageobject-copy_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
 | [file-write](FieldsMappings/file-write_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
+| [file-write](FieldsMappings/file-write_fields.md) | [file-create:success](ActivityTypes/file-create.md) |
 | [file-delete](FieldsMappings/file-delete_fields.md) | [file-delete:fail](ActivityTypes/file-delete.md)|
 | [file-delete](FieldsMappings/file-delete_fields.md) | [file-delete:success](ActivityTypes/file-delete.md) |
 | [file-download](FieldsMappings/file-download_fields.md) | [file-download:success](ActivityTypes/file-download.md) |
@@ -187,6 +193,8 @@ This table maps old event types to their corresponding new-scale activity types.
 | [aws-identity-addtogroup](FieldsMappings/aws-identity-addtogroup_fields.md) | [group-member-add:success](ActivityTypes/group-member-add.md) |
 | [member-removed](FieldsMappings/member-removed_fields.md) | [group-member-remove:success](ActivityTypes/group-member-remove.md) |
 | [aws-policy-attach](FieldsMappings/aws-policy-attach_fields.md) | [group-policy-attach:success](ActivityTypes/group-policy-attach.md) |
+| [group-role-assign](FieldsMappings/group-role-assign_fields.md) | [group-role-assign:success](ActivityTypes/group-role-assign.md) |
+| [group-role-revoke](FieldsMappings/group-role-revoke_fields.md) | [group-role-revoke:success](ActivityTypes/group-role-revoke.md) |
 | [app-activity-failed](FieldsMappings/app-activity-failed_fields.md) | [http-request:fail](ActivityTypes/http-request.md)|
 | [app-activity](FieldsMappings/app-activity_fields.md) | [http-request:success](ActivityTypes/http-request.md) |
 | [web-activity-denied](FieldsMappings/web-activity-denied_fields.md) | [http-session:fail](ActivityTypes/http-session.md)|
@@ -206,6 +214,23 @@ This table maps old event types to their corresponding new-scale activity types.
 | [azure-keyvault-write](FieldsMappings/azure-keyvault-write_fields.md) | [key-write:success](ActivityTypes/key-write.md) |
 | [aws-instance-creds-write](FieldsMappings/aws-instance-creds-write_fields.md) | [key-write:success](ActivityTypes/key-write.md) |
 | [audit-log-clear](FieldsMappings/audit-log-clear_fields.md) | [log-clear:success](ActivityTypes/log-clear.md) |
+| [m365-app-activity-fail](FieldsMappings/m365-app-activity-fail_fields.md) | [m365-app-activity-fail:fail](ActivityTypes/m365-app-activity-fail.md)|
+| [m365-app-activity](FieldsMappings/m365-app-activity_fields.md) | [m365-app-activity:success](ActivityTypes/m365-app-activity.md) |
+| [m365-file-copy](FieldsMappings/m365-file-copy_fields.md) | [m365-file-copy:success](ActivityTypes/m365-file-copy.md) |
+| [m365-file-delete](FieldsMappings/m365-file-delete_fields.md) | [m365-file-delete:success](ActivityTypes/m365-file-delete.md) |
+| [m365-file-download](FieldsMappings/m365-file-download_fields.md) | [m365-file-download:success](ActivityTypes/m365-file-download.md) |
+| [m365-file-move](FieldsMappings/m365-file-move_fields.md) | [m365-file-move:success](ActivityTypes/m365-file-move.md) |
+| [m365-file-read](FieldsMappings/m365-file-read_fields.md) | [m365-file-read:success](ActivityTypes/m365-file-read.md) |
+| [m365-file-rename](FieldsMappings/m365-file-rename_fields.md) | [m365-file-rename:success](ActivityTypes/m365-file-rename.md) |
+| [m365-file-write](FieldsMappings/m365-file-write_fields.md) | [m365-file-write:success](ActivityTypes/m365-file-write.md) |
+| [m365-group-create](FieldsMappings/m365-group-create_fields.md) | [m365-group-create:success](ActivityTypes/m365-group-create.md) |
+| [m365-user-create-fail](FieldsMappings/m365-user-create-fail_fields.md) | [m365-user-create-fail:fail](ActivityTypes/m365-user-create-fail.md)|
+| [m365-user-create](FieldsMappings/m365-user-create_fields.md) | [m365-user-create:success](ActivityTypes/m365-user-create.md) |
+| [m365-user-delete](FieldsMappings/m365-user-delete_fields.md) | [m365-user-delete:success](ActivityTypes/m365-user-delete.md) |
+| [mailbox-item-delete](FieldsMappings/mailbox-item-delete_fields.md) | [mailbox-item-delete:success](ActivityTypes/mailbox-item-delete.md) |
+| [mailbox-item-read](FieldsMappings/mailbox-item-read_fields.md) | [mailbox-item-read:success](ActivityTypes/mailbox-item-read.md) |
+| [mailbox-modify](FieldsMappings/mailbox-modify_fields.md) | [mailbox-modify:success](ActivityTypes/mailbox-modify.md) |
+| [mailbox-permissiom-modify](FieldsMappings/mailbox-permissiom-modify_fields.md) | [mailbox-permissiom-modify:success](ActivityTypes/mailbox-permissiom-modify.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [mailbox-permission-modify:success](ActivityTypes/mailbox-permission-modify.md) |
 | [web-meeting-created](FieldsMappings/web-meeting-created_fields.md) | [meeting-create:success](ActivityTypes/meeting-create.md) |
 | [web-meeting-ended](FieldsMappings/web-meeting-ended_fields.md) | [meeting-end:success](ActivityTypes/meeting-end.md) |
@@ -219,6 +244,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [netflow-connection](FieldsMappings/netflow-connection_fields.md) | [network-session:success](ActivityTypes/network-session.md) |
 | [process-network](FieldsMappings/process-network_fields.md) | [network-session:success](ActivityTypes/network-session.md) |
 | [network-connection-successful](FieldsMappings/network-connection-successful_fields.md) | [network-session:success](ActivityTypes/network-session.md) |
+| [network-connection-successful](FieldsMappings/network-connection-successful_fields.md) | [network-start:success](ActivityTypes/network-start.md) |
 | [network-connection-failed](FieldsMappings/network-connection-failed_fields.md) | [network-traffic:fail](ActivityTypes/network-traffic.md)|
 | [network-connection-successful](FieldsMappings/network-connection-successful_fields.md) | [network-traffic:success](ActivityTypes/network-traffic.md) |
 | [netflow-connection](FieldsMappings/netflow-connection_fields.md) | [network-traffic:success](ActivityTypes/network-traffic.md) |
@@ -247,6 +273,8 @@ This table maps old event types to their corresponding new-scale activity types.
 | [registry-write](FieldsMappings/registry-write_fields.md) | [registry-create:success](ActivityTypes/registry-create.md) |
 | [registry-write](FieldsMappings/registry-write_fields.md) | [registry-modify:success](ActivityTypes/registry-modify.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [repository-create:success](ActivityTypes/repository-create.md) |
+| [app-activity](FieldsMappings/app-activity_fields.md) | [repository-delete:success](ActivityTypes/repository-delete.md) |
+| [app-activity](FieldsMappings/app-activity_fields.md) | [repository-member-add:success](ActivityTypes/repository-member-add.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [repository-modify:success](ActivityTypes/repository-modify.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [repository-pull:success](ActivityTypes/repository-pull.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [repository-push:success](ActivityTypes/repository-push.md) |
@@ -276,6 +304,10 @@ This table maps old event types to their corresponding new-scale activity types.
 | [share-access](FieldsMappings/share-access_fields.md) | [share-delete:success](ActivityTypes/share-delete.md) |
 | [share-access](FieldsMappings/share-access_fields.md) | [share-modify:success](ActivityTypes/share-modify.md) |
 | [file-read](FieldsMappings/file-read_fields.md) | [share-mount:success](ActivityTypes/share-mount.md) |
+| [share_link-create](FieldsMappings/share_link-create_fields.md) | [share_link-create:success](ActivityTypes/share_link-create.md) |
+| [share_link-member-add](FieldsMappings/share_link-member-add_fields.md) | [share_link-member-add:success](ActivityTypes/share_link-member-add.md) |
+| [share_link-modify](FieldsMappings/share_link-modify_fields.md) | [share_link-modify:success](ActivityTypes/share_link-modify.md) |
+| [share_link-use](FieldsMappings/share_link-use_fields.md) | [share_link-use:success](ActivityTypes/share_link-use.md) |
 | [aws-snapshot-create-failed](FieldsMappings/aws-snapshot-create-failed_fields.md) | [snapshot-create:fail](ActivityTypes/snapshot-create.md)|
 | [gcp-snapshot-create](FieldsMappings/gcp-snapshot-create_fields.md) | [snapshot-create:success](ActivityTypes/snapshot-create.md) |
 | [aws-snapshot-create](FieldsMappings/aws-snapshot-create_fields.md) | [snapshot-create:success](ActivityTypes/snapshot-create.md) |
@@ -312,6 +344,8 @@ This table maps old event types to their corresponding new-scale activity types.
 | [privileged-object-access](FieldsMappings/privileged-object-access_fields.md) | [user-privilege-use:success](ActivityTypes/user-privilege-use.md) |
 | [privileged-access](FieldsMappings/privileged-access_fields.md) | [user-privilege-use:success](ActivityTypes/user-privilege-use.md) |
 | [azure-role-assign](FieldsMappings/azure-role-assign_fields.md) | [user-role-assign:success](ActivityTypes/user-role-assign.md) |
+| [user-role-assign](FieldsMappings/user-role-assign_fields.md) | [user-role-assign:success](ActivityTypes/user-role-assign.md) |
+| [user-role-revoke](FieldsMappings/user-role-revoke_fields.md) | [user-role-revoke:success](ActivityTypes/user-role-revoke.md) |
 | [account-switch](FieldsMappings/account-switch_fields.md) | [user-switch:success](ActivityTypes/user-switch.md) |
 | [account-unlocked](FieldsMappings/account-unlocked_fields.md) | [user-unlock:success](ActivityTypes/user-unlock.md) |
 | [authentication-failed](FieldsMappings/authentication-failed_fields.md) | [vpn-authentication:fail](ActivityTypes/vpn-authentication.md)|

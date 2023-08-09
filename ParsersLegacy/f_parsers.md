@@ -6,6 +6,7 @@
 | f5-asm-alert-1                              | f5-asm-cef-alert-trigger-success-responsecode                      |
 | f5-asm-alert-2                              | "f5-asm-xml-alert-trigger-userid                                   |
 | f5-asm-alert-3                              | f5-asm-kv-alert-trigger-success-shareincreased                     |
+| f5-asm-alert-4                              | f5-asm-cef-alert-trigger-success-cookie-1                          |
 | f5-asm-web-activity                         | f5-asm-kv-http-session-mitigationaction                            |
 | f5-big-ip-authentication-successful         | f5-bigip-str-app-authentication-success-01490265                   |
 | f5-config-change                            | f5-bigip-kv-configuration-modify-audit                             |

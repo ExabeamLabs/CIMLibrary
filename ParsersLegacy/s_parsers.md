@@ -997,6 +997,7 @@
 | seclore-file-read-1                          | seclore-s-json-file-read-success-2                                             |
 | seclore-file-share                           | seclore-s-json-file-share-offlineaccessright                                   |
 | seclore-file-write                           | seclore-s-json-file-write-success-3                                            |
+| secomea-app-login                            | secomea-s-str-app-login-success-login                                          |
 | secure-auth-event-20100                      | secureauth-login-kv-app-notification-20100                                     |
 | secure-auth-event-20990                      | secureauth-login-kv-app-notification-20990                                     |
 | secure-auth-event-21000                      | secureauth-login-kv-app-notification-21000                                     |
