@@ -132,8 +132,15 @@
 | airlock-logout                                        | airlock-sah-kv-vpn-logout-success-logout                                          |
 | airlock-network-connection                            | airlock-sah-kv-network-traffic-success-connectionsuccessful                       |
 | airlock-rename-folder                                 | airlock-sah-kv-file-write-success-renamefolder                                    |
+| airwatch-admin-app-activity                           | vmware-airwatch-kv-app-activity-success-device                                    |
+| airwatch-admin-app-activity-1                         | vmware-airwatch-kv-app-activity-success-profiles                                  |
+| airwatch-admin-app-activity-2                         | vmware-airwatch-kv-app-activity-success-smartgroups                               |
+| airwatch-admin-app-activity-3                         | vmware-airwatch-kv-app-activity-success-applications                              |
+| airwatch-admin-app-activity-4                         | vmware-airwatch-kv-app-activity-success-authentication                            |
 | airwatch-admin-loggedin                               | vmware-airwatch-kv-endpoint-login-success-adminuserloggedin                       |
+| airwatch-admin-loggedin-1                             | vmware-airwatch-kv-endpoint-login-success-adminuserlogin                          |
 | airwatch-admin-loggedout                              | vmware-airwatch-kv-app-logout-success-userloggedout                               |
+| airwatch-admin-loggedout-1                            | vmware-airwatch-kv-endpoint-logout-success-adminuserlogout                        |
 | airwatch-admin-login-failed                           | vmware-airwatch-kv-endpoint-login-fail-loginfailed                                |
 | airwatch-application-remove-requested                 | vmware-airwatch-kv-app-activity-success-appremoved                                |
 | airwatch-auth-successful                              | vmware-airwatch-kv-endpoint-login-success-login                                   |
