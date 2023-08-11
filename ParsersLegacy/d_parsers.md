@@ -111,6 +111,7 @@
 | dummy-new-auth0-parser-9           | auth0-a-json-user-delete-success-userdeletion                                      |
 | dummy-new-aws-parser               | amazon-awscloudtrail-json-file-write-success-objectcreated                         |
 | dummy-new-cloudflare-parser        | cloudflare-waf-json-http-session-firewall                                          |
+| dummy-new-crowdstrike-parser       | crowdstrike-falcon-json-alert-trigger-success-identityprotection                   |
 | dummy-new-defenderep-parser        | microsoft-defenderep-json-file-success-advancedhuntingdevicefileevents             |
 | dummy-new-event-6                  | cisco-securenwanalytics-json-network-session-success-serviceid                     |
 | dummy-new-github-parser-1          | github-g-json-repository-create-success-gitclone                                   |
@@ -144,6 +145,8 @@
 | dummy-new-juniper-parser-5         | juniper-ps-str-vpn-login-fail-loginfailed-1                                        |
 | dummy-new-juniper-parser-6         | pfsense-p-csv-network-traffic-fail-block-1                                         |
 | dummy-new-microsoft-parser         | microsoft-evsecurity-xml-policy-modify-4947                                        |
+| dummy-new-microsoft-parser-1       | microsoft-evsecurity-kv-network-session-fail-4653-1                                |
+| dummy-new-microsoft-parser-2       | microsoft-evsecurity-kv-driver-load-fail-5038                                      |
 | dummy-new-netowrk-parser           | claroty-ctd-cef-alert-trigger-success-network-hostscan                             |
 | dummy-new-netowrk-parser-1         | claroty-ctd-cef-alert-trigger-success-security-knownthreat                         |
 | dummy-new-netowrk-parser-2         | claroty-ctd-cef-alert-trigger-success-network-policyvoilation                      |

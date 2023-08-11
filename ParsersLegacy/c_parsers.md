@@ -242,7 +242,10 @@
 | cef-aws-guardduty-security-alert-16                      | amazon-awsguardduty-sk4-alert-trigger-success-instancecredentialexfiltration         |
 | cef-aws-guardduty-security-alert-17                      | amazon-awsguardduty-sk4-alert-trigger-success-anomalousbehavior-1                    |
 | cef-aws-guardduty-security-alert-18                      | amazon-awsguardduty-sk4-alert-trigger-success-guardduty-4                            |
+| cef-aws-guardduty-security-alert-19                      | amazon-awsguardduty-sk4-alert-trigger-success-reconportscan                          |
 | cef-aws-guardduty-security-alert-2                       | amazon-awsguardduty-sk4-alert-trigger-success-toripcaller                            |
+| cef-aws-guardduty-security-alert-20                      | amazon-awsguardduty-sk4-alert-trigger-success-sshbruteforce-1                        |
+| cef-aws-guardduty-security-alert-21                      | amazon-awsguardduty-sk4-alert-trigger-success-bucketblockpublicaccessdisabled        |
 | cef-aws-guardduty-security-alert-3                       | amazon-awsguardduty-sk4-alert-trigger-success-guardduty-2                            |
 | cef-aws-guardduty-security-alert-4                       | amazon-awsguardduty-sk4-alert-trigger-success-rootcredentialusage                    |
 | cef-aws-guardduty-security-alert-5                       | amazon-awsguardduty-sk4-alert-trigger-success-anomalousbehavior                      |
