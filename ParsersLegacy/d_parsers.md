@@ -732,6 +732,9 @@
 | dummy-new-parser-97                | microsoft-iis-str-http-session-postews-1                                           |
 | dummy-new-parser-98                | microsoft-iis-str-http-session-postmapi                                            |
 | dummy-new-parser-99                | microsoft-iis-str-http-session-postmicrosoftserver                                 |
+| dummy-new-parser-mcafee-1          | mcafee-wg-csv-http-session-connect                                                 |
+| dummy-new-parser-mcafee-2          | mcafee-wg-csv-http-session-observed                                                |
+| dummy-new-parser-mcafee-3          | mcafee-wg-csv-http-session-denied                                                  |
 | dummy-new-windows-parser           | microsoft-mssql-json-database-activity-success-dbactivity                          |
 | dummy-parser-rds-1                 | amazon-awsguardduty-json-database-login-fail-maliciousipcallerfailedlogin          |
 | duo-app-activity                   | cisco-duo-json-app-activity-success-user                                           |
