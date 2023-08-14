@@ -28,17 +28,16 @@ Activity Types
 |                 | categories       | Default |      |           | &#10003;      |
 |                 | proxy_action     | Default |      |           | &#10003;      |
 |                 | proxy_ip         | Default |      |           | &#10003;      |
-| network-traffic | method           | Default |      |           | &#10003;      |
+| network-traffic | referrer         | Default |      |           | &#10003;      |
+|                 | method           | Default |      |           | &#10003;      |
+|                 | bytes_out        | Default |      |           | &#10003;      |
 |                 | bytes_in         | Default |      |           | &#10003;      |
 |                 | mime             | Default |      |           | &#10003;      |
-|                 | domain_user_name |         |      |           |               |
-|                 | proxy_action     | Default |      |           | &#10003;      |
-|                 | referrer         | Default |      |           | &#10003;      |
-|                 | bytes_out        | Default |      |           | &#10003;      |
 |                 | domain           | Default |      |           | &#10003;      |
-|                 | action           | Default |      |           | &#10003;      |
 |                 | result_code      | Default |      |           | &#10003;      |
+|                 | domain_user_name |         |      |           |               |
 |                 | categories       | Default |      |           | &#10003;      |
 |                 | category         | Default |      |           | &#10003;      |
 |                 | user             | Default |      | &#10003;  |               |
+|                 | proxy_action     | Default |      |           | &#10003;      |
 

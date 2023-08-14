@@ -81,24 +81,24 @@
 		}
 	},
 	"Subjects": {
-        "log_account": {
-            "description": "A log account represents a container of resources within a cloud vendor, and is used to connect and transfer logs into an application",
-            "fields": {}
-        },
+		"log_account": {
+			"description": "A log account represents a container of resources within a cloud vendor, and is used to connect and transfer logs into an application",
+			"fields": {}
+		},
 		"context_source": {
-            "description": "A context source normalizes contextual data collected from external sources, which can then be used to enrich events or provide context in investigations",
-            "fields": {}
-        },
-        "file": {
-            "description": "A file is a storage object on endpoints and applications, that contains content, data or settings that can be written into it or read from it.",
-            "fields": {
-                "file_name": {
-                    "core": "1",
-                    "detection": "0",
-                    "informational": "0"
-                },
-                "file_path": {
-                    "core": "0",
+			"description": "A context source normalizes contextual data collected from external sources, which can then be used to enrich events or provide context in investigations",
+			"fields": {}
+		},
+		"file": {
+			"description": "A file is a storage object on endpoints and applications, that contains content, data or settings that can be written into it or read from it.",
+			"fields": {
+				"file_name": {
+					"core": "1",
+					"detection": "0",
+					"informational": "0"
+				},
+				"file_path": {
+					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
@@ -722,6 +722,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"action": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
@@ -1626,189 +1631,189 @@
 	},
 	"EventTypes": {
 		"context_source-create:success": {
-            "subject": "context_source",
-            "activity": "create",
-            "activity_type": "context_source-create",
-            "outcome": "success",
-            "pretty_name": "Context Source Create",
-            "description": "Context source  was created",
-            "fields": {}
-        },
-        "context_source-create:fail": {
-            "subject": "context_source",
-            "activity": "create",
-            "activity_type": "context_source-create",
-            "outcome": "fail",
-            "pretty_name": "Context Source Create",
-            "description": "Context source creation failed",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            }
-        },
+			"subject": "context_source",
+			"activity": "create",
+			"activity_type": "context_source-create",
+			"outcome": "success",
+			"pretty_name": "Context Source Create",
+			"description": "Context source  was created",
+			"fields": {}
+		},
+		"context_source-create:fail": {
+			"subject": "context_source",
+			"activity": "create",
+			"activity_type": "context_source-create",
+			"outcome": "fail",
+			"pretty_name": "Context Source Create",
+			"description": "Context source creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
 		"context_source-modify:success": {
-            "subject": "context_source",
-            "activity": "modify",
-            "activity_type": "context_source-modify",
-            "outcome": "success",
-            "pretty_name": "Context Source Modify",
-            "description": "Context source was Modified",
-            "fields": {}
-        },
-        "context_source-modify:fail": {
-            "subject": "context_source",
-            "activity": "modify",
-            "activity_type": "context_source-modify",
-            "outcome": "fail",
-            "pretty_name": "Context Source Modify",
-            "description": "Context source modification failed",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            }
-        },
+			"subject": "context_source",
+			"activity": "modify",
+			"activity_type": "context_source-modify",
+			"outcome": "success",
+			"pretty_name": "Context Source Modify",
+			"description": "Context source was Modified",
+			"fields": {}
+		},
+		"context_source-modify:fail": {
+			"subject": "context_source",
+			"activity": "modify",
+			"activity_type": "context_source-modify",
+			"outcome": "fail",
+			"pretty_name": "Context Source Modify",
+			"description": "Context source modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
 		"context_source-delete:success": {
-            "subject": "context_source",
-            "activity": "delete",
-            "activity_type": "context_source-delete",
-            "outcome": "success",
-            "pretty_name": "Context Source Delete",
-            "description": "Context source was deleted",
-            "fields": {}
-        },
-        "context_source-delete:fail": {
-            "subject": "context_source",
-            "activity": "delete",
-            "activity_type": "context_source-delete",
-            "outcome": "fail",
-            "pretty_name": "Context Source Delete",
-            "description": "Context source delete failed",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            }
-        },
-        "log_account-create:success": {
-            "subject": "log_account",
-            "activity": "create",
-            "activity_type": "log_account-create",
-            "outcome": "success",
-            "pretty_name": "Log Account Create",
-            "description": "A log account was created",
-            "fields": {}
-        },
-        "log_account-create:fail": {
-            "subject": "log_account",
-            "activity": "create",
-            "activity_type": "log_account-create",
-            "outcome": "fail",
-            "pretty_name": "Log Account Create",
-            "description": "A log account creation failed",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            }
-        },
-        "log_account-modify:success": {
-            "subject": "log_account",
-            "activity": "modify",
-            "activity_type": "log_account-modify",
-            "outcome": "success",
-            "pretty_name": "Log Account Modify",
-            "description": "A log account was Modified",
-            "fields": {}
-        },
-        "log_account-modify:fail": {
-            "subject": "log_account",
-            "activity": "modify",
-            "activity_type": "log_account-modify",
-            "outcome": "fail",
-            "pretty_name": "Log Account Modify",
-            "description": "A log account modification failed",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            }
-        },
-        "log_account-delete:success": {
-            "subject": "log_account",
-            "activity": "delete",
-            "activity_type": "log_account-delete",
-            "outcome": "success",
-            "pretty_name": "Log Account Delete",
-            "description": "A log account was Deleted",
-            "fields": {}
-        },
-        "log_account-delete:fail": {
-            "subject": "log_account",
-            "activity": "delete",
-            "activity_type": "log_account-delete",
-            "outcome": "fail",
-            "pretty_name": "Log Account Delete",
-            "description": "A log account delete failed",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            }
-        },
-        "file-write:success": {
-            "subject": "file",
-            "activity": "write",
-            "activity_type": "file-write",
-            "outcome": "success",
-            "pretty_name": "File Write",
-            "description": "A file was created or edited",
-            "fields": {
-                "is_dok": {
-                    "core": "0",
+			"subject": "context_source",
+			"activity": "delete",
+			"activity_type": "context_source-delete",
+			"outcome": "success",
+			"pretty_name": "Context Source Delete",
+			"description": "Context source was deleted",
+			"fields": {}
+		},
+		"context_source-delete:fail": {
+			"subject": "context_source",
+			"activity": "delete",
+			"activity_type": "context_source-delete",
+			"outcome": "fail",
+			"pretty_name": "Context Source Delete",
+			"description": "Context source delete failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"log_account-create:success": {
+			"subject": "log_account",
+			"activity": "create",
+			"activity_type": "log_account-create",
+			"outcome": "success",
+			"pretty_name": "Log Account Create",
+			"description": "A log account was created",
+			"fields": {}
+		},
+		"log_account-create:fail": {
+			"subject": "log_account",
+			"activity": "create",
+			"activity_type": "log_account-create",
+			"outcome": "fail",
+			"pretty_name": "Log Account Create",
+			"description": "A log account creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"log_account-modify:success": {
+			"subject": "log_account",
+			"activity": "modify",
+			"activity_type": "log_account-modify",
+			"outcome": "success",
+			"pretty_name": "Log Account Modify",
+			"description": "A log account was Modified",
+			"fields": {}
+		},
+		"log_account-modify:fail": {
+			"subject": "log_account",
+			"activity": "modify",
+			"activity_type": "log_account-modify",
+			"outcome": "fail",
+			"pretty_name": "Log Account Modify",
+			"description": "A log account modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"log_account-delete:success": {
+			"subject": "log_account",
+			"activity": "delete",
+			"activity_type": "log_account-delete",
+			"outcome": "success",
+			"pretty_name": "Log Account Delete",
+			"description": "A log account was Deleted",
+			"fields": {}
+		},
+		"log_account-delete:fail": {
+			"subject": "log_account",
+			"activity": "delete",
+			"activity_type": "log_account-delete",
+			"outcome": "fail",
+			"pretty_name": "Log Account Delete",
+			"description": "A log account delete failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"file-write:success": {
+			"subject": "file",
+			"activity": "write",
+			"activity_type": "file-write",
+			"outcome": "success",
+			"pretty_name": "File Write",
+			"description": "A file was created or edited",
+			"fields": {
+				"is_dok": {
+					"core": "0",
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
@@ -2723,53 +2728,53 @@
 				}
 			}
 		},
-                "file-create:success": {
-                        "subject": "file",
-                        "activity": "create",
-                        "activity_type": "file-create",
-                        "outcome": "success",
-                        "pretty_name": "File Create",
-                        "description": "A file was created",
-                        "fields": {
-                                "is_dok": {
-                                        "core": "0", 
-                                        "detection": "1",
-                                        "informational": "0",
-                                        "enriched": "1"
-                                }
-                        },
-                        "legacy_event_name": [
-                                "file-write"
-                        ]
-                },
-                "file-create:fail": {
-                        "subject": "file",
-                        "activity": "create",
-                        "activity_type": "file-create",
-                        "outcome": "fail",
-                        "pretty_name": "File Create",
-                        "description": "A file was created",
-                        "fields": {
-                                "is_dok": {
-                                        "core": "0", 
-                                        "detection": "1",
-                                        "informational": "0"
-                                },
-                                "failure_reason": {
-                                        "core": "0",
-                                        "detection": "1",
-                                        "informational": "0"
-                                },
-                                "failure_code": {
-                                        "core": "0",
-                                        "detection": "1",
-                                        "informational": "0"
-                                }
-                        },
-                        "legacy_event_name": [
-                                "file-write"
-                        ]
-                },
+		"file-create:success": {
+			"subject": "file",
+			"activity": "create",
+			"activity_type": "file-create",
+			"outcome": "success",
+			"pretty_name": "File Create",
+			"description": "A file was created",
+			"fields": {
+				"is_dok": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"legacy_event_name": [
+				"file-write"
+			]
+		},
+		"file-create:fail": {
+			"subject": "file",
+			"activity": "create",
+			"activity_type": "file-create",
+			"outcome": "fail",
+			"pretty_name": "File Create",
+			"description": "A file was created",
+			"fields": {
+				"is_dok": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"legacy_event_name": [
+				"file-write"
+			]
+		},
 		"user-create:success": {
 			"subject": "user",
 			"activity": "create",
@@ -4256,66 +4261,66 @@
 				}
 			}
 		},
-                "process-memory-protect:success": {
-                        "subject": "process",
-                        "activity": "memory-protect",
-                        "activity_type": "process-memory-protect",
-                        "outcome": "success",
-                        "pretty_name": "Process Memory Protect",
-                        "description": "Virtual memory was protected",
-                        "fields": {
-                                "memory_address": {
-                                        "core": "0",
-                                        "detection": "0",
-                                        "informational": "1"
-                                },
-                                "memory_size": {
-                                        "core": "0",
-                                        "detection": "0",
-                                        "informational": "1"
-                                },
-                                "memory_protection": {
-                                        "core": "0",
-                                        "detection": "0",
-                                        "informational": "1"
-                                }
-                        }
-                },
-                "process-memory-protect:fail": {
-                        "subject": "process",
-                        "activity": "memory-protect",
-                        "activity_type": "process-memory-protect",
-                        "outcome": "fail",
-                        "pretty_name": "Process Memory Protect",
-                        "description": "Virtual memory was protected",
-                        "fields": {
-                                "memory_address": {
-                                        "core": "0",
-                                        "detection": "0",
-                                        "informational": "1"
-                                },
-                                "memory_size": {
-                                        "core": "0",
-                                        "detection": "0",
-                                        "informational": "1"
-                                },
-                                "memory_protection": {
-                                        "core": "0",
-                                        "detection": "0",
-                                        "informational": "1"
-                                },
-                                "failure_reason": {
-                                        "core": "0",
-                                        "detection": "1",
-                                        "informational": "0"
-                                },
-                                "failure_code": {
-                                        "core": "0",
-                                        "detection": "1",
-                                        "informational": "0"
-                                }
-                        }
-                },
+		"process-memory-protect:success": {
+			"subject": "process",
+			"activity": "memory-protect",
+			"activity_type": "process-memory-protect",
+			"outcome": "success",
+			"pretty_name": "Process Memory Protect",
+			"description": "Virtual memory was protected",
+			"fields": {
+				"memory_address": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"memory_size": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"memory_protection": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			}
+		},
+		"process-memory-protect:fail": {
+			"subject": "process",
+			"activity": "memory-protect",
+			"activity_type": "process-memory-protect",
+			"outcome": "fail",
+			"pretty_name": "Process Memory Protect",
+			"description": "Virtual memory was protected",
+			"fields": {
+				"memory_address": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"memory_size": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"memory_protection": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
 		"process-open:success": {
 			"subject": "process",
 			"activity": "open",
@@ -17566,26 +17571,26 @@
 			}
 		},
 		"log_source-enable:success": {
-            "subject": "log_source",
-            "activity": "enable",
-            "activity_type": "log_source-enable",
-            "outcome": "success",
-            "pretty_name": "Log Source Enable",
-            "description": "",
-            "fields": {}
-        },
+			"subject": "log_source",
+			"activity": "enable",
+			"activity_type": "log_source-enable",
+			"outcome": "success",
+			"pretty_name": "Log Source Enable",
+			"description": "",
+			"fields": {}
+		},
 		"log_source-enable:fail": {
-            "subject": "log_source",
-            "activity": "enable",
-            "activity_type": "log_source-enable",
-            "outcome": "fail",
-            "pretty_name": "Log Source Enable",
-            "description": "",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
+			"subject": "log_source",
+			"activity": "enable",
+			"activity_type": "log_source-enable",
+			"outcome": "fail",
+			"pretty_name": "Log Source Enable",
+			"description": "",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				},
 				"failure_code": {
 					"core": "0",
@@ -17595,26 +17600,26 @@
 			}
 		},
 		"log_source-disable:success": {
-            "subject": "log_source",
-            "activity": "disable",
-            "activity_type": "log_source-disable",
-            "outcome": "success",
-            "pretty_name": "Log Source Disable",
-            "description": "",
-            "fields": {}
-        },
+			"subject": "log_source",
+			"activity": "disable",
+			"activity_type": "log_source-disable",
+			"outcome": "success",
+			"pretty_name": "Log Source Disable",
+			"description": "",
+			"fields": {}
+		},
 		"log_source-disable:fail": {
-            "subject": "log_source",
-            "activity": "disable",
-            "activity_type": "log_source-disable",
-            "outcome": "fail",
-            "pretty_name": "Log Source Disable",
-            "description": "",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
+			"subject": "log_source",
+			"activity": "disable",
+			"activity_type": "log_source-disable",
+			"outcome": "fail",
+			"pretty_name": "Log Source Disable",
+			"description": "",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				},
 				"failure_code": {
 					"core": "0",
@@ -19516,12 +19521,6 @@
 				},
 				"network-traffic": {
 					"fields": {
-						"action": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"proxy_action": {
 							"Status": "Default",
 							"core": "0",
@@ -79831,30 +79830,30 @@
 						}
 					}
 				},
-                                "process-memory-protect": {
-                                        "fields": {
-                                                "additional_info": {
-                                                        "core": "0",
-                                                        "detection": "0",
-                                                        "informational": "0"
-                                                },
-                                                "action": {
-                                                        "core": "0",
-                                                        "detection": "0",
-                                                        "informational": "1"
-                                                },
-                                                "operation": {
-                                                        "core": "0",
-                                                        "detection": "0",
-                                                        "informational": "1"
-                                                },
-                                                "event_name": {
-                                                        "core": "0",
-                                                        "detection": "0",
-                                                        "informational": "1"
-                                                }
-                                         }
-                                }
+				"process-memory-protect": {
+					"fields": {
+						"additional_info": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"action": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"operation": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"event_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				}
 			}
 		},
 		"mvision": {

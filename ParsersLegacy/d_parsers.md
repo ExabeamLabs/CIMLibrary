@@ -736,6 +736,15 @@
 | dummy-new-parser-mcafee-2          | mcafee-wg-csv-http-session-observed                                                |
 | dummy-new-parser-mcafee-3          | mcafee-wg-csv-http-session-denied                                                  |
 | dummy-new-windows-parser           | microsoft-mssql-json-database-activity-success-dbactivity                          |
+| dummy-new-windows-parser-1         | microsoft-evsecurity-xml-network-notfication-4816-1                                |
+| dummy-new-windows-parser-2         | microsoft-evsecurity-xml-user-name-modify-4781-1                                   |
+| dummy-new-windows-parser-3         | microsoft-evsecurity-xml-group-member-add-success-4756                             |
+| dummy-new-windows-parser-4         | microsoft-evsecurity-xml-scheduled-task-disable-4701-1                             |
+| dummy-new-windows-parser-5         | microsoft-evsystem-xml-endpoint-activity-fail-5605                                 |
+| dummy-new-windows-parser-6         | microsoft-evsecurity-xml-group-modify-success-4760-3                               |
+| dummy-new-windows-parser-7         | microsoft-evsecurity-xml-group-modify-success-4737-1                               |
+| dummy-new-windows-parser-8         | microsoft-evsecurity-xml-group-modify-success-4764                                 |
+| dummy-new-windows-parser-9         | microsoft-evsecurity-xml-scheduled-task-create-success-4700-2                      |
 | dummy-parser-rds-1                 | amazon-awsguardduty-json-database-login-fail-maliciousipcallerfailedlogin          |
 | duo-app-activity                   | cisco-duo-json-app-activity-success-user                                           |
 | duo-app-activity-1                 | cisco-duo-sk4-app-activity-success-app-userupdate                                  |
