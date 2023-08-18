@@ -2374,6 +2374,8 @@
 | crowdstrike-auth-failed-2                                | crowdstrike-falcon-json-endpoint-login-fail-userlogonfail-1                          |
 | crowdstrike-config-change                                | crowdstrike-falcon-json-configuration-modify-success-firewall                        |
 | crowdstrike-falcon-dummy-parser-1                        | crowdstrike-falcon-json-alert-trigger-success-xdrdetection                           |
+| crowdstrike-falcon-ssl-connect                           | crowdstrike-falcon-kv-network-traffic-success-falconsensor                           |
+| crowdstrike-falcon-ssl-connect-failed                    | crowdstrike-falcon-kv-network-traffic-fail-unabletoconnect                           |
 | crowdstrike-falcon-usb-write                             | crowdstrike-falcon-sk4-file-write-success-written                                    |
 | crowdstrike-falcon-usb-write-1                           | crowdstrike-falcon-json-file-write-success-written                                   |
 | crowdstrike-file-alert                                   | crowdstrike-falcon-sk4-alert-trigger-success-quarantinedfilestate                    |

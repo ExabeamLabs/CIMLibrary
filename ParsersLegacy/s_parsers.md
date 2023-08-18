@@ -178,6 +178,7 @@
 | s-crowdstrike-failed-logon                   | crowdstrike-falcon-sk4-endpoint-login-userloginfail                            |
 | s-crowdstrike-process-alert                  | crowdstrike-falcon-mix-alert-trigger-success-suspiciousactivity                |
 | s-crowdstrike-security-alert                 | crowdstrike-falcon-mix-alert-trigger-success-detection                         |
+| s-crowdstrike-security-alert-1               | crowdstrike-falcon-json-alert-trigger-success-mobiledetection                  |
 | s-cws-proxy                                  | cisco-cws-kv-http-session-webcatcode                                           |
 | s-cyberark-account-switch                    | cyberark-vault-kv-user-switch-success-retrievepassword-1                       |
 | s-cyberark-account-switch-2                  | cyberark-pam-str-user-switch-success-passwordretrieve                          |

@@ -392,7 +392,7 @@
 | dummy-new-parser-340               | symantec-edr-json-app-alert-success-8061                                           |
 | dummy-new-parser-342               | symantec-edr-json-app-notification-success-3                                       |
 | dummy-new-parser-343               | symantec-edr-json-app-notification-success-21                                      |
-| dummy-new-parser-344               | symantec-edr-json-app-notification-success-2                                       |
+| dummy-new-parser-344               | "symantec-edr-json-app-notification-success-2                                      |
 | dummy-new-parser-345               | symantec-edr-json-app-notification-success-11                                      |
 | dummy-new-parser-346               | symantec-edr-json-app-notification-success-4                                       |
 | dummy-new-parser-347               | symantec-edr-json-process-create-success-8001                                      |
@@ -454,7 +454,7 @@
 | dummy-new-parser-419               | amazon-awscloudtrail-json-policy-apply-success-policyexecution                     |
 | dummy-new-parser-42                | juniper-ps-str-vpn-login-success-startedaovpn                                      |
 | dummy-new-parser-420               | symantec-endpointprotection-json-process-create-success-8027                       |
-| dummy-new-parser-421               | symantec-endpointprotection-json-alert-trigger-success-8027                        |
+| dummy-new-parser-421               | "symantec-endpointprotection-json-alert-trigger-success-8027                       |
 | dummy-new-parser-422               | amazon-awscloudtrail-json-app-authentication-success-saml2response                 |
 | dummy-new-parser-423               | cisco-umbrella-str-dns-response-success-allowed-1                                  |
 | dummy-new-parser-424               | cisco-umbrella-str-dns-response-success-allowed-2                                  |
@@ -614,6 +614,9 @@
 | dummy-new-parser-592               | microsoft-evsecurity-xml-endpoint-notification-success-4693                        |
 | dummy-new-parser-593               | microsoft-evsecurity-xml-endpoint-authentication-success-4651                      |
 | dummy-new-parser-594               | microsoft-defenderep-json-process-memory-protect-success-ntprotectvirtualmemory    |
+| dummy-new-parser-595               | symantec-endpointprotection-json-alert-trigger-success-42                          |
+| dummy-new-parser-596               | symantec-endpointprotection-json-alert-trigger-success-80                          |
+| dummy-new-parser-597               | symantec-edr-json-app-login-success-20                                             |
 | dummy-new-parser-6                 | cisco-fp-json-alert-trigger-success-malware                                        |
 | dummy-new-parser-60                | microsoft-iis-str-http-session-optionsoab                                          |
 | dummy-new-parser-600               | checkpoint-ngfw-kv-certificate-expire-success-trustpoint                           |
