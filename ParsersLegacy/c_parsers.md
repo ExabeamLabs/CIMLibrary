@@ -1418,6 +1418,8 @@
 | cef-securesphere-file-operations                         | imperva-fam-cef-file-success-audit                                                   |
 | cef-securesphere-logout                                  | imperva-securesphere-cef-app-logout-userloggedout                                    |
 | cef-security-graph-alert                                 | microsoft-azuresc-json-alert-trigger-success-geoanomaly                              |
+| cef-security-graph-alert-1                               | microsoft-azuresc-json-alert-trigger-success-blobgeoanomaly                          |
+| cef-security-graph-alert-2                               | microsoft-azuresc-json-alert-trigger-success-sqlpoolgeoanomaly                       |
 | cef-sendmail-system-info                                 | unix-unix-cef-app-activity-sendmail                                                  |
 | cef-sensormatik-badge-access                             | sensormatik-s-cef-physical-location-access-success-sensormatik                       |
 | cef-sentinelone-file-alert                               | sentinelone-singularityp-cef-file-success-securityfile                               |

@@ -131,6 +131,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [endpoint-command](endpoint-command.md)
  * [endpoint-create](endpoint-create.md)
  * [endpoint-delete](endpoint-delete.md)
+ * [endpoint-domain-join](endpoint-domain-join.md)
  * [endpoint-enable](endpoint-enable.md)
  * [endpoint-key-create](endpoint-key-create.md)
  * [endpoint-key-write](endpoint-key-write.md)

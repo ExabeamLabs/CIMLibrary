@@ -702,6 +702,7 @@
 | dummy-new-parser-70                | microsoft-iis-str-http-session-getoab                                              |
 | dummy-new-parser-700               | zscaler-ia-str-http-session-dlpengine-2                                            |
 | dummy-new-parser-71                | microsoft-iis-str-http-session-getowa                                              |
+| dummy-new-parser-710               | microsoft-evsecurity-xml-endpoint-domain-join-fail-16998                           |
 | dummy-new-parser-711               | microsoft-evsystem-xml-endpoint-logout-success-7002                                |
 | dummy-new-parser-712               | microsoft-evsecurity-xml-password-read-5379-2                                      |
 | dummy-new-parser-713               | microsoft-evsystem-xml-policy-apply-1502                                           |

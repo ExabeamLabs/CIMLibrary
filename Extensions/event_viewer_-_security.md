@@ -45,6 +45,9 @@ Activity Types
 |                           | ticket_encryption_type | Default |          |           | &#10003;      |
 |                           | kerberos_service_name  | Default |          |           | &#10003;      |
 | endpoint-delete           |                        |         |          |           |               |
+| endpoint-domain-join      | process_id             |         |          |           | &#10003;      |
+|                           | dest_user_sid          | Default |          |           | &#10003;      |
+|                           | user_sid               |         |          |           |               |
 | endpoint-lock             | session_id             |         |          |           | &#10003;      |
 | endpoint-login            | result                 | Default |          |           | &#10003;      |
 |                           | src_ip                 | Default |          | &#10003;  |               |

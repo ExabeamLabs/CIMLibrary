@@ -524,10 +524,17 @@
 | azure-security-center-process-alert                   | microsoft-azuresc-json-alert-trigger-success-kvappanomaly                         |
 | azure-security-center-security-alert                  | microsoft-azuresc-json-alert-trigger-success-sqldbprincipalanomaly                |
 | azure-security-center-security-alert-1                | microsoft-azuresc-json-alert-trigger-success-asc                                  |
+| azure-security-center-security-alert-10               | microsoft-azuresc-json-alert-trigger-success-systemeventlogcleared                |
+| azure-security-center-security-alert-11               | microsoft-azuresc-json-alert-trigger-success-vmaccessunusualconfigreset           |
+| azure-security-center-security-alert-12               | microsoft-azuresc-json-alert-trigger-success-principalanomaly                     |
 | azure-security-center-security-alert-2                | microsoft-azuresc-json-alert-trigger-success-vmwindowsobfus                       |
 | azure-security-center-security-alert-3                | microsoft-azuresc-json-alert-trigger-success-geoanomaly                           |
 | azure-security-center-security-alert-4                | microsoft-azuresc-json-alert-trigger-success-anomalouspageaccess                  |
 | azure-security-center-security-alert-5                | microsoft-azuresc-sk4-alert-trigger-success-asc                                   |
+| azure-security-center-security-alert-6                | microsoft-azuresc-json-alert-trigger-success-filesgeoanomaly                      |
+| azure-security-center-security-alert-7                | microsoft-azuresc-json-alert-trigger-success-vulnerabilitytosqlinjection          |
+| azure-security-center-security-alert-8                | microsoft-azuresc-json-alert-trigger-success-useragentinjection                   |
+| azure-security-center-security-alert-9                | microsoft-azuresc-json-alert-trigger-success-datacenteranomaly                    |
 | azure-snapshots-write                                 | microsoft-azure-json-snapshot-write-success-snapshotswrite                        |
 | azure-sshpublickeys-write                             | microsoft-azure-json-key-write-success-sshpublickey                               |
 | azure-system-info                                     | microsoft-azuremon-kv-app-activity-uam                                            |
