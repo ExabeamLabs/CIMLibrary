@@ -709,7 +709,6 @@
 | cef-fsecure-security-alert                               | fsecure-policymanager-cef-alert-trigger-success-fsecure                              |
 | cef-fsecure-system-info                                  | fsecure-policymanager-cef-app-activity-import                                        |
 | cef-gcp-system-info                                      | google-gcpca-sk4-app-activity-stackdriverevents                                      |
-| cef-generic                                              | microfocusarcsight-ma-cef-app-activity-success-4363448                               |
 | cef-github-app-activity                                  | github-g-sk4-repository-create-success-github                                        |
 | cef-google-app-activity-1                                | google-workspace-sk4-app-activity-success-calendar                                   |
 | cef-google-app-activity-2                                | google-workspace-sk4-app-activity-success-mobile                                     |
@@ -1733,7 +1732,6 @@
 | cef-windows-dns-response                                 | microsoft-windows-cef-dns-response-success-dnsresponse                               |
 | cef-windows-dns-response-1                               | microsoft-windows-cef-dns-response-success-packet                                    |
 | cef-windows-ds-access-5137                               | microsoft-evsecurity-sk4-ds-object-create-success-5137                               |
-| cef-windows-generic                                      | microsoft-evsecurity-cef-endpoint-activity-4933                                      |
 | cef-windows-logout                                       | microsoft-evdhcpserver-sk4-dns-record-create-fail-adminevents                        |
 | cef-windows-member-added-2003                            | microsoft-evsecurity-cef-group-member-add-success-4732                               |
 | cef-windows-member-removed-2003                          | microsoft-evsecurity-cef-group-member-remove-success-4733-1                          |

@@ -68,7 +68,7 @@
 | win-enable-device-request                | "microsoft-windows-xml-peripheral-storage-activity-success-enableadevice        |
 | win-external-device-recog                | "microsoft-evsecurity-xml-peripheral-storage-insert-success-devicewasrecognized |
 | win-external-device-recog-1              | microsoft-evsecurity-kv-peripheralstorage-insert-success-6416                   |
-| win-powershell-command                   | "microsoft-evpowershell-xml-process-create-success-4103                         |
+| win-powershell-command                   | "microsoft-evpowershell-xml-process-create-success-4103-1                       |
 | windows-1102                             | microsoft-evsecurity-kv-http-request-success-1102                               |
 | windows-4768-1                           | microsoft-evsecurity-json-endpoint-login-4768-1                                 |
 | windows-4793                             | microsoft-evsecurity-kv-endpoint-notification-success-4793-1                    |
