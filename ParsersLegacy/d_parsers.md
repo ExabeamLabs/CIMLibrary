@@ -617,6 +617,7 @@
 | dummy-new-parser-595               | symantec-endpointprotection-json-alert-trigger-success-42                          |
 | dummy-new-parser-596               | symantec-endpointprotection-json-alert-trigger-success-80                          |
 | dummy-new-parser-597               | symantec-edr-json-app-login-success-20                                             |
+| dummy-new-parser-598               | microsoft-sysmon-xml-process-pipe-create-success-18                                |
 | dummy-new-parser-6                 | cisco-fp-json-alert-trigger-success-malware                                        |
 | dummy-new-parser-60                | microsoft-iis-str-http-session-optionsoab                                          |
 | dummy-new-parser-600               | checkpoint-ngfw-kv-certificate-expire-success-trustpoint                           |
@@ -707,6 +708,7 @@
 | dummy-new-parser-712               | microsoft-evsecurity-xml-password-read-5379-2                                      |
 | dummy-new-parser-713               | microsoft-evsystem-xml-policy-apply-1502                                           |
 | dummy-new-parser-72                | microsoft-iis-str-http-session-getrpc                                              |
+| dummy-new-parser-720               | code42-incydr-json-file-succes-file                                                |
 | dummy-new-parser-73                | microsoft-iis-str-http-session-headapi                                             |
 | dummy-new-parser-74                | microsoft-iis-str-http-session-headautodiscover                                    |
 | dummy-new-parser-75                | microsoft-iis-str-http-session-headecp                                             |

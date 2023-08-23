@@ -98,6 +98,7 @@
 | adfs-auth-successful-1                                | microsoft-evsecurity-kv-endpoint-login-success-500                                |
 | adfs-dns-request                                      | microsoft-adfs-kv-http-request-audit                                              |
 | adfs-dns-response                                     | microsoft-adfs-kv-http-response-success-dispatched                                |
+| adfs-dummy-parser-1                                   | microsoft-adfs-str-app-authentication-fail-411                                    |
 | admanager-activity                                    | microsoft-ad-kv-app-group-admp                                                    |
 | adminbyrequest-privileged-access                      | adminbyrequest-a-json-user-privilege-use-success-adminsession                     |
 | adminbyrequest-privileged-object-access               | adminbyrequest-a-json-user-privilege-use-success-runasadmin                       |
