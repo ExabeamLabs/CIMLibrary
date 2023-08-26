@@ -664,6 +664,11 @@
 | dummy-new-parser-64                | microsoft-iis-str-http-session-getautodiscover                                     |
 | dummy-new-parser-640               | pan-gp-leef-app-activity-success-portalgetconfig                                   |
 | dummy-new-parser-641               | pan-gp-leef-endpoint-authentication-success-portalprelogin                         |
+| dummy-new-parser-642               | cohesity-dataplatform-json-app-activity-success-open                               |
+| dummy-new-parser-643               | cohesity-dataplatform-json-app-activity-success-setattributes                      |
+| dummy-new-parser-644               | cohesity-dataplatform-json-app-login-success-logon                                 |
+| dummy-new-parser-645               | cohesity-dataplatform-json-app-logout-success-logoff                               |
+| dummy-new-parser-646               | cohesity-dataplatform-json-app-activity-success-requesttype                        |
 | dummy-new-parser-65                | microsoft-iis-str-http-session-getecp                                              |
 | dummy-new-parser-650               | microsoft-evsecurity-str-app-notification-410                                      |
 | dummy-new-parser-651               | microsoft-mssql-str-database-login-success-18453                                   |
@@ -702,6 +707,14 @@
 | dummy-new-parser-7                 | exabeam-audit-json-alert-case-success                                              |
 | dummy-new-parser-70                | microsoft-iis-str-http-session-getoab                                              |
 | dummy-new-parser-700               | zscaler-ia-str-http-session-dlpengine-2                                            |
+| dummy-new-parser-701               | catonetworks-cc-json-vpn-http-success-monitor                                      |
+| dummy-new-parser-702               | catonetworks-cc-json-vpn-http-success-block                                        |
+| dummy-new-parser-703               | catonetworks-cc-json-vpn-alert-trigger-success-alert                               |
+| dummy-new-parser-704               | catonetworks-cc-json-vpn-http-success-allow                                        |
+| dummy-new-parser-705               | catonetworks-cc-json-vpn-http-success-sdp                                          |
+| dummy-new-parser-706               | catonetworks-cc-json-vpn-http-success-rbi                                          |
+| dummy-new-parser-707               | catonetworks-cc-json-vpn-http-success-connectivity                                 |
+| dummy-new-parser-708               | catonetworks-cc-json-vpn-http-success-security                                     |
 | dummy-new-parser-71                | microsoft-iis-str-http-session-getowa                                              |
 | dummy-new-parser-710               | microsoft-evsecurity-xml-endpoint-domain-join-fail-16998                           |
 | dummy-new-parser-711               | microsoft-evsystem-xml-endpoint-logout-success-7002                                |

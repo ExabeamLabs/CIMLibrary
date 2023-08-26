@@ -88,6 +88,7 @@
 | beyondtrust-privileged-access-2           | beyondtrust-b-json-user-privilege-assign-success-28691                                     |
 | beyondtrust-privileged-access-3           | beyondtrust-b-json-user-privilege-assign-success-28693                                     |
 | beyondtrust-process-created               | beyondtrust-powerbroker-json-process-create-success-28692                                  |
+| beyondtrust-process-created-1             | beyondtrust-b-json-process-create-success-processcreated                                   |
 | beyondtrust-system-info                   | beyondtrust-bi-cef-app-notification-success-performancealert                               |
 | beyondtrust-system-info-1                 | beyondtrust-bi-cef-app-notification-success-serviceerroralert                              |
 | bind-dns-query                            | unix-unixnamed-str-dns-request-success-client                                              |

@@ -106,6 +106,7 @@
 | pan-cef-alert-7                          | pan-wildfire-cef-alert-trigger-success-lsardeleteaccess                 |
 | pan-config-change                        | "pan-ngfw-csv-configuration-modify-success-config                       |
 | pan-data-alert                           | pan-ngfw-csv-alert-trigger-success-data                                 |
+| pan-dummy-parser-1                       | pan-ngfw-json-app-notification-success-dhcp                             |
 | pan-failed-vpn-login                     | pan-ngfw-json-vpn-login-fail-failure                                    |
 | pan-file-alert                           | pan-ngfw-json-alert-trigger-success-threatalert                         |
 | pan-flood-alert                          | pan-ngfw-csv-alert-trigger-success-flood                                |
