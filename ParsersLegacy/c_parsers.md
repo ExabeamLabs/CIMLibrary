@@ -1190,6 +1190,14 @@
 | cef-palo-alto-vpn-system-event-1                         | pan-gp-cef-app-notification-success-userid                                           |
 | cef-paloalto-firewall                                    | pan-ngfw-cef-network-traffic-fail-panostraffic                                       |
 | cef-paloalto-firewall-global-protect                     | pan-gp-cef-endpoint-authentication-panossystem                                       |
+| cef-paloalto-vpn-app-activity                            | pan-gp-cef-app-activity-success-tunnel                                               |
+| cef-paloalto-vpn-app-activity-1                          | pan-gp-cef-app-activity-success-hostinfo                                             |
+| cef-paloalto-vpn-app-activity-2                          | pan-gp-cef-app-activity-success-configuration                                        |
+| cef-paloalto-vpn-app-activity-3                          | pan-gp-cef-app-activity-success-agentmsg                                             |
+| cef-paloalto-vpn-end                                     | pan-gp-cef-vpn-logout-success-logout-1                                               |
+| cef-paloalto-vpn-login                                   | pan-gp-cef-vpn-login-login                                                           |
+| cef-paloalto-vpn-login-1                                 | pan-gp-cef-vpn-login-connected                                                       |
+| cef-paloalto-vpn-login-2                                 | pan-gp-cef-vpn-login-beforelogin                                                     |
 | cef-pan-auth-failed                                      | pan-gp-cef-endpoint-authentication-fail-authfailed                                   |
 | cef-pan-auth-successful                                  | pan-gp-cef-endpoint-authentication-success-userauthentication                        |
 | cef-pan-dns-query                                        | pan-ngfw-cef-dns-request-success-realtimednsquery                                    |
