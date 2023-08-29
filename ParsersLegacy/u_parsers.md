@@ -72,6 +72,9 @@
 | unix-authentication-successful       | unix-unix-str-endpoint-login-success-successfulpamweblogin       |
 | unix-change-file-ownership-failed    | unix-unix-kv-file-owner-modify-success-invalidgroup              |
 | unix-dlp-email-out                   | unix-unix-kv-email-send-success-smtp                             |
+| unix-dummy-parser                    | unix-unix-str-endpoint-authentication-fail-sudoauth              |
+| unix-dummy-parser-1                  | unix-unix-str-user-password-expire-success-account               |
+| unix-dummy-parser-2                  | unix-unix-str-endpoint-authentication-fail-auth                  |
 | unix-failed-identification           | unix-unix-str-endpoint-authentication-sshdnotreceiveid           |
 | unix-failed-logon-1                  | unix-unix-str-endpoint-login-fail-invaliduser-1                  |
 | unix-failed-logon-10                 | unix-unix-str-endpoint-login-fail-unablesshd                     |
