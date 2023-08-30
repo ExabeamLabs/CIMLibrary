@@ -1418,6 +1418,7 @@
 | cef-securesphere-db-alert-2                              | imperva-securesphere-cef-alert-trigger-servergroup                                   |
 | cef-securesphere-db-failed-login                         | imperva-securesphere-cef-database-login-fail-audit                                   |
 | cef-securesphere-db-login                                | imperva-securesphere-cef-database-login-success-audit                                |
+| cef-securesphere-db-login-1                              | imperva-securesphere-cef-database-login-success-logged-in                            |
 | cef-securesphere-db-logout                               | imperva-securesphere-cef-database-logout-securespherelogout                          |
 | cef-securesphere-db-query                                | imperva-securesphere-cef-database-query-success-audit                                |
 | cef-securesphere-db-query-1                              | imperva-securesphere-cef-database-query-success-securesphere                         |

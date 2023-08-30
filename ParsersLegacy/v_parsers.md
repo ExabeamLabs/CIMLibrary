@@ -122,3 +122,4 @@
 | vontu-email-dlp-2                       | symantec-dlp-kv-email-send-sender                                    |
 | vormetric-app-activity                  | vormetric-v-cef-app-activity-appactivity                             |
 | vormetric-file-operations               | vormetric-v-kv-file-read-success-code                                |
+| vsphere-system-info                     | vmware-esxi-str-app-authentication-success-pushingto                 |
