@@ -396,6 +396,11 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"access_list":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
