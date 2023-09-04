@@ -443,6 +443,8 @@
 | json-zeek_weird                                 | zeek-z-json-alert-trigger-success-ip                                                |
 | jsonar-database-login                           | jsonar-sonarg-json-database-login-success-sonarw                                    |
 | jsonar-database-login-1                         | jsonar-sonarg-leef-database-login-success-logout                                    |
+| jumpcloud-app-login                             | jumpcloud-jc-str-app-login-success                                                  |
+| jumpcloud-failed-app-login                      | jumpcloud-jc-str-app-login-fail                                                     |
 | jun-flow-mcast-rpf-fail                         | juniper-srx-kv-network-notification-flowmcastrpffail                                |
 | jun-network-connection                          | juniper-srx-kv-network-session-netscreen                                            |
 | jun-rt-alg-ntc-fsm-drop                         | juniper-srx-kv-network-notification-rtalgntcfsmdrop                                 |

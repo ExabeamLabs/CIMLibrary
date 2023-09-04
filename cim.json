@@ -361,6 +361,11 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"ds_object_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"ds_name": {
 					"core": "0",
 					"detection": "1",
