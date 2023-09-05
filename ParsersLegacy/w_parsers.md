@@ -162,6 +162,7 @@
 | windows-xml-powershell-process-created-1 | "microsoft-evsecurity-xml-process-create-success-600                            |
 | windows-xml-powershell-process-created-2 | "microsoft-evpowershell-xml-process-create-success-4103                         |
 | wininit-process-info-12                  | "windows-evsystem-xml-endpoint-notification-12                                  |
+| wiz-alert                                | wiz-w-json-alert-trigger-success-virtualmachine                                 |
 | wiz-app-login                            | wiz-w-json-app-login-success-federatedauth                                      |
 | wiz-config-change                        | wiz-w-json-audit_policy-modify-success-settingsdeleted                          |
 | wiz-config-change-1                      | wiz-w-json-configuration-modify-success-rulecreated                             |
