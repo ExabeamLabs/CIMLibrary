@@ -1,5 +1,7 @@
 | Old Parser Name                          | New Parser Name                                                         |
 | ---------------------------------------- | ----------------------------------------------------------------------- |
+| pa-dummy-parser-1                        | pan-ngfw-json-network-traffic-fail-deny-5                               |
+| pa-dummy-parser-2                        | pan-ngfw-json-network-traffic-fail-deny-6                               |
 | packetfence-system-info-1                | packetfence-p-kv-app-notification-status                                |
 | packetfence-system-info-2                | packetfence-p-kv-app-notification-role                                  |
 | packetfence-system-info-3                | packetfence-p-kv-app-notification-fromswitchip                          |
