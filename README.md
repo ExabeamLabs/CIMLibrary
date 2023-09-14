@@ -35,6 +35,6 @@ To upgrade from earlier Exabeam products to the New-Scale Security Operations Pl
 
 - [Field Mapping by Events](FieldsMappings.md) - A table that maps old events and fields to the corresponding Common Information Model activity types and fields
 
-- [Parser Names Matrix](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/ParserNamesMatrix.md) - A set of alphabaetical tables that map old parser names to New-Scale parser names that comply with the Common Information Model (redirects to the New-Scale Content Library)
+- [Parser Names Matrix](https://github.com/ExabeamLabs/Content-Library-CIM2/blob/master/ParserNamesMatrix.md) - A set of alphabetical tables that map old parser names to New-Scale parser names that comply with the Common Information Model (redirects to the New-Scale Content Library)
 
 - [Metadata Field Mapping](MetaFieldsMappings.md) - A table that maps old metadata field names to field names that comply with the Common Information Model.
