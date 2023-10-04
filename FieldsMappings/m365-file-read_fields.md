@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: m365-file-read
-### New-Scale Activity Type: m365-file-read:success
+### New-Scale Activity Type: file-read:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: email_rule-disable
-### New-Scale Activity Type: email_rule-disable:success
+### New-Scale Activity Type: app-activity:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

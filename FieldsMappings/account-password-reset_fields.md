@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: account-password-reset
-### New-Scale Activity Type: user-password-reset:success
+### New-Scale Activity Type: user-password-reset:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

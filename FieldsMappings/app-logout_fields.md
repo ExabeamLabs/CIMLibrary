@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: app-logout
-### New-Scale Activity Type: app-logout:success
+### New-Scale Activity Type: app-logout:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

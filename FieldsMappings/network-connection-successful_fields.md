@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: network-connection-successful
-### New-Scale Activity Type: network-traffic:success
+### New-Scale Activity Type: dns-traffic:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

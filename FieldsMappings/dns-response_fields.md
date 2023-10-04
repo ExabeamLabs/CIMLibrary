@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: dns-response
-### New-Scale Activity Type: dns-response:success
+### New-Scale Activity Type: dns-response:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

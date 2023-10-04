@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: local-logon
-### New-Scale Activity Type: endpoint-login:success
+### New-Scale Activity Type: endpoint-login:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

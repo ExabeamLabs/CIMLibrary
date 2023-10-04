@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: aws-identity-list-failed
-### New-Scale Activity Type: user-list:fail
+### New-Scale Activity Type: group-list:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

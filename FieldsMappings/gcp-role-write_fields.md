@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: gcp-role-write
-### New-Scale Activity Type: role-modify:success
+### New-Scale Activity Type: role-create:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

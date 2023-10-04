@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: share_link-modify
-### New-Scale Activity Type: share_link-modify:success
+### New-Scale Activity Type: app-activity:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

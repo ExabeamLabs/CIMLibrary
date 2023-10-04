@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: privileged-access
-### New-Scale Activity Type: user-privilege-use:success
+### New-Scale Activity Type: user-privilege-assign:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 
