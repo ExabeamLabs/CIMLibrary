@@ -45,5 +45,6 @@ alert-trigger:success
 | dest_host       |          | &#10003;  |               |
 | user            |          | &#10003;  |               |
 | dest_port       |          | &#10003;  |               |
+| cid             |          |           | &#10003;      |
 
 A failure activity is not currently supported for this activity-type.

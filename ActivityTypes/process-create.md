@@ -44,6 +44,7 @@ process-create:success
 | parent_process_guid         |      | &#10003;  |               |
 | parent_process_path         |      | &#10003;  |               |
 | user                        |      | &#10003;  |               |
+| cid                         |      |           | &#10003;      |
 
 process-create:fail
 -------------------
@@ -65,3 +66,4 @@ process-create:fail
 | parent_process_guid         |      | &#10003;  |               |
 | parent_process_path         |      | &#10003;  |               |
 | user                        |      | &#10003;  |               |
+| cid                         |      |           | &#10003;      |

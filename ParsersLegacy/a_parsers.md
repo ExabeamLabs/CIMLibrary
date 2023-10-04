@@ -118,6 +118,7 @@
 | adssp-system-info-2                                   | manageengine-adssp-cef-app-authentication-fail-identifyverification               |
 | airlock-appwhitelisting-app-activity                  | airlock-allowlisting-str-app-activity-success-fileactivity                        |
 | airlock-appwhitelisting-app-activity-1                | airlock-allowlisting-str-app-activity-success-serveractivity                      |
+| airlock-appwhitelisting-app-activity-2                | airlock-allowlisting-json-app-activity-success-fileactivity                       |
 | airlock-create-folder                                 | airlock-sah-kv-file-write-success-createfolder                                    |
 | airlock-disconnect                                    | airlock-sah-kv-vpn-logout-success-auditlog                                        |
 | airlock-file-delete                                   | airlock-sah-kv-file-delete-success-deletefile                                     |

@@ -193,6 +193,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [group-modify](group-modify.md)
  * [group-permission-modify](group-permission-modify.md)
  * [group-policy-attach](group-policy-attach.md)
+ * [group-read](group-read.md)
  * [group-repository-add](group-repository-add.md)
  * [group-repository-remove](group-repository-remove.md)
  * [group-role-assign](group-role-assign.md)

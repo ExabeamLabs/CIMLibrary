@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 scheduled_task-modify:success
 -----------------------------
 
-There are no fields for this activity type.
-
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| cid   |      |           | &#10003;      |
 
 scheduled_task-modify:fail
 --------------------------
@@ -34,3 +35,4 @@ scheduled_task-modify:fail
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| cid            |      |           | &#10003;      |

@@ -35,6 +35,7 @@
 | vmware-auth-set-ip                      | vmware-horizon-csv-endpoint-login-success-tunnelservice              |
 | vmware-auth-successful                  | vmware-horizon-csv-endpoint-login-success-user                       |
 | vmware-disconnected-from-machine        | vmware-view-str-endpoint-logout-success-disconnected                 |
+| vmware-dummy-parser                     | vmware-vcenter-str-scheduled-task-create-success-cmd                 |
 | vmware-esxi-login                       | vmware-esxi-str-endpoint-login-success-loggedin-1                    |
 | vmware-esxi-login-1                     | vmware-esxi-str-endpoint-login-success-loggedin                      |
 | vmware-esxi-logout                      | vmware-esxi-kv-app-logout-success-loggedout                          |

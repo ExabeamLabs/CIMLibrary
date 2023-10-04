@@ -42,6 +42,7 @@ app-activity:success
 | user            |      | &#10003;  |               |
 | user_agent      |      | &#10003;  |               |
 | object          |      | &#10003;  |               |
+| cid             |      |           | &#10003;      |
 
 app-activity:fail
 -----------------
@@ -61,3 +62,4 @@ app-activity:fail
 | user            |      | &#10003;  |               |
 | user_agent      |      | &#10003;  |               |
 | object          |      | &#10003;  |               |
+| cid             |      |           | &#10003;      |

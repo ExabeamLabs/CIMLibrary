@@ -28,6 +28,7 @@ app-logout:success
 | --------------- | -------- | --------- | ------------- |
 | local_user_name |          |           |               |
 | user            | &#10003; |           |               |
+| cid             |          |           | &#10003;      |
 
 app-logout:fail
 ---------------
@@ -38,3 +39,4 @@ app-logout:fail
 | local_user_name |          |           |               |
 | failure_reason  |          | &#10003;  |               |
 | user            | &#10003; |           |               |
+| cid             |          |           | &#10003;      |

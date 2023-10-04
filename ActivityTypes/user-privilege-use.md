@@ -3,7 +3,7 @@ user-privilege-use
 
 Description
 -----------
-A user called his privilege to access to an oject
+A user called his privilege to access to an object
 
 Parameters
 ----------
@@ -38,4 +38,10 @@ user-privilege-use:success
 | src_host        |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
 
-A failure activity is not currently supported for this activity-type.
+user-privilege-use:fail
+-----------------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| privileges |      |           |               |
+| user       |      | &#10003;  |               |

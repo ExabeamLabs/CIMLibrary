@@ -1827,6 +1827,12 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+                    "core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -1856,6 +1862,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+                    "core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -1876,6 +1888,12 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -1905,6 +1923,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -1941,6 +1965,11 @@
 					"informational": "0"
 				},
 				"src_file_dir": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"cid": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -1992,6 +2021,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3998,6 +4032,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -4087,6 +4127,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -4494,7 +4540,13 @@
 			"outcome": "success",
 			"pretty_name": "Dll Load",
 			"description": "A dll module was loaded into a process",
-			"fields": {},
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"image-loaded"
 			]
@@ -4516,6 +4568,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4634,6 +4691,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -4734,6 +4797,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -4759,6 +4828,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			}
 		},
@@ -4790,7 +4865,14 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
+
 			}
 		},
 		"app-notification:success": {
@@ -4800,7 +4882,14 @@
 			"outcome": "success",
 			"pretty_name": "App Notification",
 			"description": "An app notification is an entirely informational notification that has popped up on an app. This activity only represents informational events that are not \"activities\".",
-			"fields": {}
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
+				}
+			}
 		},
 		"app-activity:success": {
 			"subject": "app",
@@ -4865,6 +4954,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -4945,6 +5040,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -5347,6 +5448,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -5441,6 +5548,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -8142,6 +8255,11 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -8170,6 +8288,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -8538,6 +8661,35 @@
 			"legacy_event_name": [
 				"NA"
 			]
+		},
+		"group-read:success": {
+			"subject": "group",
+			"activity": "read",
+			"activity_type": "group-read",
+			"outcome": "success",
+			"pretty_name": "Group Read",
+			"description": "A request was made to read the content of a group",
+			"fields": {}
+		},
+		"group-read:fail": {
+			"subject": "group",
+			"activity": "read",
+			"activity_type": "group-read",
+			"outcome": "fail",
+			"pretty_name": "Group Read",
+			"description": "A request was made to read the content of a group",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
 		},
 		"group-modify:success": {
 			"subject": "group",
@@ -8955,7 +9107,13 @@
 			"outcome": "success",
 			"pretty_name": "Network Traffic",
 			"description": "A representation of a single network packet",
-			"fields": {},
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"netflow-connection",
 				"network-connection-successful"
@@ -8978,6 +9136,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -8992,7 +9155,13 @@
 			"outcome": "success",
 			"pretty_name": "Network Session",
 			"description": "A representation of an entire network session",
-			"fields": {},
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"netflow-connection",
 				"network-connection-successful",
@@ -9554,7 +9723,7 @@
 			"activity_type": "user-privilege-use",
 			"outcome": "success",
 			"pretty_name": "User Privilege Use",
-			"description": "A user called his privilege to access to an oject",
+			"description": "A user called his privilege to access to an object",
 			"fields": {
 				"privileges": {
 					"core": "0",
@@ -9591,6 +9760,29 @@
 			"legacy_event_name": [
 				"privileged-access",
 				"privileged-object-access"
+			]
+		},
+		"user-privilege-use:fail": {
+			"subject": "user",
+			"activity": "privilege-use",
+			"activity_type": "user-privilege-use",
+			"outcome": "fail",
+			"pretty_name": "User Privilege Use",
+			"description": "A user called his privilege to access to an object",
+			"fields": {
+				"privileges": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0"
+				},
+				"user": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"legacy_event_name": [
+				
 			]
 		},
 		"registry-create:success": {
@@ -9664,7 +9856,13 @@
 			"outcome": "success",
 			"pretty_name": "Registry Modify",
 			"description": "The content or configuration of a registry object was modified",
-			"fields": {},
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"registry-write"
 			]
@@ -9686,6 +9884,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10031,6 +10234,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -10075,6 +10284,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -10204,7 +10419,13 @@
 			"outcome": "success",
 			"pretty_name": "Scheduled_task Modify",
 			"description": "The configuration of a scheduled task was changed",
-			"fields": {}
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			}
 		},
 		"scheduled_task-modify:fail": {
 			"subject": "scheduled_task",
@@ -10223,6 +10444,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
@@ -10707,7 +10933,13 @@
 			"outcome": "success",
 			"pretty_name": "Configuration Modify",
 			"description": "The global configuration of an application or a program was modified",
-			"fields": {},
+			"fields": {
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"config-change"
 			]
@@ -10729,6 +10961,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -15763,6 +16000,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -19822,6 +20065,11 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"cid": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
 						}
 					}
 				},
@@ -19862,6 +20110,11 @@
 							"informational": "1"
 						},
 						"owned_user": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"cid": {
 							"core": "0",
 							"detection": "1",
 							"informational": "0"

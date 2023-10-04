@@ -46,6 +46,7 @@ app-login:success
 | operation        |          | &#10003;  |               |
 | user_agent       |          | &#10003;  |               |
 | object           |          | &#10003;  |               |
+| cid              |          |           | &#10003;      |
 
 app-login:fail
 --------------
@@ -69,3 +70,4 @@ app-login:fail
 | operation        |          | &#10003;  |               |
 | user_agent       |          | &#10003;  |               |
 | object           |          | &#10003;  |               |
+| cid              |          |           | &#10003;      |

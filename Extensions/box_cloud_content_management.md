@@ -41,6 +41,7 @@ Activity Types
 |               | bytes        | Legacy  |      | &#10003;  |               |
 |               | file_dir     | Legacy  |      |           | &#10003;      |
 |               | object       |         |      | &#10003;  |               |
+|               | cid          |         |      | &#10003;  |               |
 | file-read     | owned_user   |         |      | &#10003;  |               |
 |               | access_type  |         |      | &#10003;  |               |
 |               | access       | Legacy  |      | &#10003;  |               |
@@ -65,4 +66,5 @@ Activity Types
 |               | bytes        | Legacy  |      | &#10003;  |               |
 |               | process_name | Legacy  |      |           | &#10003;      |
 |               | object       |         |      | &#10003;  |               |
+|               | cid          |         |      | &#10003;  |               |
 

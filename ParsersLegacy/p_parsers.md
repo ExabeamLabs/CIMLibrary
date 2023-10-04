@@ -109,6 +109,15 @@
 | pan-config-change                        | "pan-ngfw-csv-configuration-modify-success-config                       |
 | pan-data-alert                           | pan-ngfw-csv-alert-trigger-success-data                                 |
 | pan-dummy-parser-1                       | pan-ngfw-json-app-notification-success-dhcp                             |
+| pan-dummy-parser-10                      | pan-ngfw-leef-app-activity-success-switchtossl                          |
+| pan-dummy-parser-2                       | pan-prismaaccess-leef-network-traffic-success-end                       |
+| pan-dummy-parser-3                       | pan-ngfw-leef-network-traffic-fail-deny-2                               |
+| pan-dummy-parser-4                       | pan-gp-leef-vpn-login-success-gatewaytagentmsg                          |
+| pan-dummy-parser-5                       | pan-gp-leef-vpn-login-success-portalgencookie                           |
+| pan-dummy-parser-6                       | pan-ngfw-leef-app-activity-success-setupipsec                           |
+| pan-dummy-parser-7                       | pan-ngfw-leef-app-activity-success-quarantinedelete                     |
+| pan-dummy-parser-8                       | pan-gp-leef-vpn-login-success-gatewaygencookie                          |
+| pan-dummy-parser-9                       | pan-ngfw-leef-app-activity-success-setupssl                             |
 | pan-failed-vpn-login                     | pan-ngfw-json-vpn-login-fail-failure                                    |
 | pan-file-alert                           | pan-ngfw-json-alert-trigger-success-threatalert                         |
 | pan-flood-alert                          | pan-ngfw-csv-alert-trigger-success-flood                                |

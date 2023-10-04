@@ -44,6 +44,7 @@ endpoint-login:success
 | location          |          | &#10003;  |               |
 | user              | &#10003; | &#10003;  |               |
 | account           |          | &#10003;  |               |
+| cid               |          |           | &#10003;      |
 
 endpoint-login:fail
 -------------------
@@ -64,3 +65,4 @@ endpoint-login:fail
 | location          |          | &#10003;  |               |
 | user              | &#10003; | &#10003;  |               |
 | account           |          | &#10003;  |               |
+| cid               |          |           | &#10003;      |

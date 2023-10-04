@@ -134,6 +134,7 @@
 | windows-system-info-7                    | microsoft-evliveid-kv-endpoint-activity-success-endpointactivity                |
 | windows-system-info-8                    | microsoft-evknownfolders-str-endpoint-activity-success-endpointactivity         |
 | windows-system-info-9                    | microsoft-evlp-str-endpoint-activity-success-endpointactivity                   |
+| windows-user-lock-dummy-parser           | microsoft-evsecurity-kv-user-lock-success-4740-3                                |
 | windows-vpn-login-4979                   | microsoft-directaccess-csv-vpn-login-success-4979                               |
 | windows-vpn-login-4981                   | microsoft-directaccess-csv-vpn-login-success-4981                               |
 | windows-vpn-login-failed-4654            | microsoft-directaccess-csv-vpn-login-fail-4654                                  |

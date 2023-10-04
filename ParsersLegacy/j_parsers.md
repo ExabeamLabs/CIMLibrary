@@ -195,6 +195,8 @@
 | json-defender-atp-security-alert-1              | microsoft-defenderep-json-alert-trigger-success-credentialaccess-1                  |
 | json-defender-atp-security-alert-10             | microsoft-defenderep-json-alert-trigger-success-ransomware                          |
 | json-defender-atp-security-alert-11             | microsoft-defenderep-json-alert-trigger-success-suspiciousactivity-1                |
+| json-defender-atp-security-alert-12             | microsoft-defenderep-json-alert-trigger-success-initialaccess-3                     |
+| json-defender-atp-security-alert-13             | microsoft-defenderep-json-alert-trigger-success-defenseevasion-3                    |
 | json-defender-atp-security-alert-2              | microsoft-defenderep-json-alert-trigger-success-defenseevasion-2                    |
 | json-defender-atp-security-alert-3              | microsoft-defenderep-json-alert-trigger-success-discovery-1                         |
 | json-defender-atp-security-alert-4              | microsoft-defenderep-json-alert-trigger-success-execution-1                         |

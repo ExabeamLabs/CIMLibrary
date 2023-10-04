@@ -35,6 +35,7 @@ scheduled_task-create:success
 | local_user_name |      |           |               |
 | process_path    |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
+| cid             |      |           | &#10003;      |
 
 scheduled_task-create:fail
 --------------------------
@@ -47,3 +48,4 @@ scheduled_task-create:fail
 | failure_reason  |      | &#10003;  |               |
 | process_path    |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
+| cid             |      |           | &#10003;      |

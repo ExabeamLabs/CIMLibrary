@@ -1994,6 +1994,7 @@
 | cisco-dns-response                                       | cisco-fp-kv-dns-response-success-dnsquery                                            |
 | cisco-dns-response-1                                     | cisco-umbrella-sk4-dns-response-success-dns                                          |
 | cisco-dns-response-2                                     | cisco-umbrella-json-dns-response-success-responsecode                                |
+| cisco-dummy-parser                                       | cisco-fp-kv-network-traffic-success-accesscontrolruleaction                          |
 | cisco-duo-account-lockout                                | cisco-duo-str-user-lock-success-adminlockout                                         |
 | cisco-duo-password-reset                                 | cisco-duo-str-user-password-reset-success-authattempts                               |
 | cisco-eigrp-system-info                                  | cisco-asa-mix-app-notification-eigrp                                                 |
@@ -2434,11 +2435,13 @@
 | crowdstrike-registry-update-1                            | crowdstrike-falcon-cef-registry-modify-asepkeyupdate                                 |
 | crowdstrike-security-alert                               | crowdstrike-falcon-json-alert-trigger-success-eventsimplename                        |
 | crowdstrike-security-alert-1                             | crowdstrike-falcon-sk4-alert-trigger-suspiciousdnsrequest                            |
+| crowdstrike-security-alert-10                            | crowdstrike-falcon-json-alert-trigger-success-reconnotification                      |
 | crowdstrike-security-alert-2                             | crowdstrike-falcon-mix-alert-trigger-success-detectionsummaryevent                   |
 | crowdstrike-security-alert-4                             | crowdstrike-falcon-json-alert-trigger-success-dllinjection                           |
 | crowdstrike-security-alert-5                             | crowdstrike-falcon-json-alert-trigger-success-scenario                               |
 | crowdstrike-security-alert-6                             | crowdstrike-falcon-json-alert-trigger-success-falconhostlink                         |
 | crowdstrike-security-alert-7                             | "crowdstrike-falcon-sk4-alert-trigger-success-idpdetection                           |
+| crowdstrike-security-alert-8                             | crowdstrike-falcon-json-alert-trigger-success-identityprotection                     |
 | crowdstrike-service-created                              | crowdstrike-falcon-json-process-create-success-servicestarted                        |
 | crowdstrike-service-created-1                            | crowdstrike-falcon-json-process-create-success-createservice                         |
 | crowdstrike-system-error                                 | crowdstrike-falcon-kv-app-notification-crashnotification                             |
@@ -2476,6 +2479,15 @@
 | cylance-alert-2                                          | blackberry-protect-sk4-alert-trigger-success-cyclaneprotect                          |
 | cylance-alert-3                                          | blackberry-protect-json-alert-trigger-success-cylanceprotect                         |
 | cylance-dlp-alert                                        | blackberry-protect-kv-alert-trigger-success-devicecontrol                            |
+| cylance-optics-dummy-parser                              | cylance-optics-kv-alert-trigger-success-apievent                                     |
+| cylance-optics-dummy-parser-1                            | cylance-optics-kv-alert-trigger-success-dnsevent                                     |
+| cylance-optics-dummy-parser-2                            | cylance-optics-kv-alert-trigger-success-fileevent                                    |
+| cylance-optics-dummy-parser-3                            | cylance-optics-kv-alert-trigger-success-logevent                                     |
+| cylance-optics-dummy-parser-4                            | cylance-optics-kv-network-session-success-networkevent                               |
+| cylance-optics-dummy-parser-5                            | cylance-optics-kv-alert-trigger-success-powershellevent                              |
+| cylance-optics-dummy-parser-6                            | cylance-optics-kv-alert-trigger-success-processevent                                 |
+| cylance-optics-dummy-parser-7                            | cylance-optics-kv-alert-trigger-success-registryevent                                |
+| cylance-optics-dummy-parser-8                            | cylance-optics-kv-alert-trigger-success-wmievent                                     |
 | cylance-process-alert                                    | blackberry-protect-sk4-alert-trigger-success-terminate                               |
 | cylance-protect-file-alert                               | blackberry-c-json-alert-trigger-success-cylancescore                                 |
 | cylance-protect-security-alert                           | blackberry-protect-json-alert-trigger-success-cylancescore                           |
