@@ -4,7 +4,7 @@ symantec advanced threat protection
 Expression
 ----------
 
-product = "symantec edr"
+product = "symantec advanced threat protection"
 
 Fields
 ------

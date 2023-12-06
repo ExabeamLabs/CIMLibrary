@@ -4,7 +4,7 @@ box cloud content management
 Expression
 ----------
 
-product = "box cloud content"
+product = "box cloud content management"
 
 Fields
 ------

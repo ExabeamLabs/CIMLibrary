@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: mailbox-permissiom-modify
-### New-Scale Activity Type: mailbox-permissiom-modify:success
+### New-Scale Activity Type: NOTE: MISSING MAPPING!
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

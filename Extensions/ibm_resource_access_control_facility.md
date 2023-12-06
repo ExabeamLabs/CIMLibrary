@@ -4,7 +4,7 @@ ibm resource access control facility
 Expression
 ----------
 
-product = "ibm racf"
+product = "ibm resource access control facility"
 
 Fields
 ------

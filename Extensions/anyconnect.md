@@ -4,7 +4,7 @@ anyconnect
 Expression
 ----------
 
-product = "any connect"
+product = "anyconnect"
 
 Fields
 ------

@@ -4,7 +4,7 @@ globalprotect
 Expression
 ----------
 
-product = "palo alto global protect"
+product = "globalprotect"
 
 Fields
 ------

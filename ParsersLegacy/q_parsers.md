@@ -22,8 +22,6 @@
 | q-adfs-auth-successful-1             | microsoft-evsecurity-mix-endpoint-login-success-1200                     |
 | q-aruba-failed-nac-logon             | hp-arubacpm-kv-radius-traffic-fail-authfailed-2                          |
 | q-aruba-failed-nac-logon-1           | hp-arubacpm-kv-radius-traffic-fail-authfailed                            |
-| q-aruba-failed-nac-logon-2           | hp-arubacpm-kv-radius-traffic-fail-authenticationfailed                  |
-| q-aruba-failed-nac-logon-3           | hp-arubacpm-kv-radius-traffic-fail-sessionreuseerror                     |
 | q-aruba-nac-logon-1                  | hp-arubacpm-kv-endpoint-login-success-logguestaccess                     |
 | q-aruba-nac-logon-2                  | hp-arubacpm-kv-endpoint-login-success-loggedinuser                       |
 | q-aruba-nac-logon-3                  | hp-arubacpm-kv-radius-traffic-success-radiusaccounting                   |
@@ -31,7 +29,6 @@
 | q-aruba-nac-logon-5                  | hp-arubacpm-kv-radius-traffic-success-loggedinusers                      |
 | q-aruba-nac-logon-6                  | hp-arubacpm-kv-radius-traffic-success-guest                              |
 | q-aruba-nac-logon-7                  | hp-arubacpm-kv-endpoint-login-success-authenticated                      |
-| q-aruba-nac-logon-8                  | hp-arubacpm-kv-radius-traffic-success-radiusacc                          |
 | q-asa-6-113039-vpn-start             | cisco-asa-str-vpn-login-success-113039                                   |
 | q-asa-722037-vpn-end                 | cisco-asa-str-vpn-logout-success-722037                                  |
 | q-beyondtrust-process-created        | beyondtrust-powerbroker-str-process-create-success-messageforwarded      |
@@ -118,19 +115,9 @@
 | q-microsoft-4648                     | microsoft-evsecurity-kv-user-switch-success-4648-2                       |
 | q-microsoft-4719                     | microsoft-evsecurity-kv-audit-policy-modify-success-4719-2               |
 | q-microsoft-4740                     | microsoft-evsecurity-kv-user-lock-success-4740-1                         |
-| q-microsoft-asc-alert-dlp            | microsoft-m365auditlogs-json-alert-trigger-datalossprevention-1          |
-| q-microsoft-asc-alert-tm             | microsoft-o365-json-alert-trigger-threatmanagement                       |
-| q-microsoft-asc-security-alert       | microsoft-azuresc-json-alert-trigger-success-geoanomaly-1                |
-| q-microsoft-asc-security-alert-1     | microsoft-azuresc-json-alert-trigger-success-sshbruteforcefailed         |
-| q-microsoft-asc-security-alert-2     | microsoft-azuresc-json-alert-trigger-success-wpscanner                   |
-| q-microsoft-asc-security-alert-3     | microsoft-azuresc-json-alert-trigger-success-smartscreen                 |
-| q-microsoft-asc-security-alert-4     | microsoft-azuresc-json-alert-trigger-success-scansensitivepage           |
 | q-microsoft-dhcp                     | microsoft-windows-kv-dhcp-session-success-assign                         |
 | q-microsoft-dhcp-renew               | microsoft-windows-kv-dhcp-session-success-renew                          |
 | q-microsoft-dhcp-update              | microsoft-windows-kv-dhcp-session-success-dnsupdate                      |
-| q-microsoft-ipc-security-alert       | microsoft-azureadip-json-alert-trigger-success-impossibletravel-1        |
-| q-microsoft-ipc-security-alert-1     | microsoft-azureadip-json-alert-trigger-success-anonymouslogin-1          |
-| q-microsoft-ipc-security-alert-2     | microsoft-azureadip-json-alert-trigger-success-unfamiliarlocation        |
 | q-microsoft-print-activity           | microsoft-evprintservice-kv-printer-activity-success-1                   |
 | q-o365-dlp-email                     | microsoft-o365-kv-email-quarantined                                      |
 | q-o365-sharepoint-activity           | microsoft-o365-json-file-success-workload                                |

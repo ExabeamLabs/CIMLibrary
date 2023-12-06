@@ -28,11 +28,13 @@ email-recipient-add:success
 | --------------------- | -------- | --------- | ------------- |
 | dest_email_domain     |          |           | &#10003;      |
 | dest_email_user       |          |           | &#10003;      |
+| dest_user_full_name   |          |           | &#10003;      |
 | dest_domain_user_name |          |           |               |
 | dest_email_address    |          |           | &#10003;      |
 | dest_domain           |          |           | &#10003;      |
 | dest_user             |          |           | &#10003;      |
 | src_email_address     | &#10003; |           |               |
+| src_email_domain      |          |           | &#10003;      |
 
 email-recipient-add:fail
 ------------------------
@@ -42,9 +44,11 @@ email-recipient-add:fail
 | dest_email_domain     |          |           | &#10003;      |
 | dest_email_user       |          |           | &#10003;      |
 | failure_code          |          | &#10003;  |               |
+| dest_user_full_name   |          |           | &#10003;      |
 | dest_domain_user_name |          |           |               |
 | dest_email_address    |          |           | &#10003;      |
 | dest_domain           |          |           | &#10003;      |
 | dest_user             |          |           | &#10003;      |
 | src_email_address     | &#10003; |           |               |
 | failure_reason        |          | &#10003;  |               |
+| src_email_domain      |          |           | &#10003;      |

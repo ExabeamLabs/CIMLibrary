@@ -186,4 +186,3 @@
 | extrahop-dns-query                    | extrahop-revealx-json-dns-request-success-dnsquery                    |
 | extrahop-network-perf                 | extrahop-revealx-json-alert-trigger-success-dnsnames                  |
 | extrahop-network-sec                  | extrahop-revealx-json-alert-trigger-success-sec                       |
-| extrahop-network-sec-1                | extrahop-revealx-json-alert-trigger-success-sec-1                     |

@@ -4,7 +4,7 @@ oracle database
 Expression
 ----------
 
-product = "oracle db"
+product = "oracle database"
 
 Fields
 ------

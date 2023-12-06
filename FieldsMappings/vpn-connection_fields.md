@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: vpn-connection
-### New-Scale Activity Type: vpn-login:success
+### New-Scale Activity Type: vpn-login:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

@@ -175,7 +175,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [gcp-serviceaccount-creds-write](FieldsMappings/gcp-serviceaccount-creds-write_fields.md) | [user-key-create:success](ActivityTypes/user-key-create.md) |
 | [gcp-serviceaccount-write](FieldsMappings/gcp-serviceaccount-write_fields.md) | [user-create:success](ActivityTypes/user-create.md) |
 | [gcp-snapshot-create](FieldsMappings/gcp-snapshot-create_fields.md) | [snapshot-create:success](ActivityTypes/snapshot-create.md) |
-| [gcp-storage-list](FieldsMappings/gcp-storage-list_fields.md) | [bucket-list:success](ActivityTypes/bucket-list.md) |
+| [gcp-storage-list](FieldsMappings/gcp-storage-list_fields.md) | [bucket-list:fail](ActivityTypes/bucket-list.md)|
 | [gcp-storageobject-acl](FieldsMappings/gcp-storageobject-acl_fields.md) | [file-permission-modify:success](ActivityTypes/file-permission-modify.md) |
 | [gcp-storageobject-read](FieldsMappings/gcp-storageobject-read_fields.md) | [file-read:success](ActivityTypes/file-read.md) |
 | [gcp-storageobject-write](FieldsMappings/gcp-storageobject-write_fields.md) | [file-write:success](ActivityTypes/file-write.md) |
@@ -240,7 +240,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [usb-write](FieldsMappings/usb-write_fields.md) | [file-write:success](ActivityTypes/file-write.md) |
 | [user-role-assign](FieldsMappings/user-role-assign_fields.md) | [user-role-assign:success](ActivityTypes/user-role-assign.md) |
 | [user-role-revoke](FieldsMappings/user-role-revoke_fields.md) | [user-role-revoke:success](ActivityTypes/user-role-revoke.md) |
-| [vpn-connection](FieldsMappings/vpn-connection_fields.md) | [vpn-login:success](ActivityTypes/vpn-login.md) |
+| [vpn-connection](FieldsMappings/vpn-connection_fields.md) | [vpn-login:fail](ActivityTypes/vpn-login.md)|
 | [vpn-login](FieldsMappings/vpn-login_fields.md) | [vpn-login:success](ActivityTypes/vpn-login.md) |
 | [vpn-logout](FieldsMappings/vpn-logout_fields.md) | [vpn-logout:success](ActivityTypes/vpn-logout.md) |
 | [web-activity-allowed](FieldsMappings/web-activity-allowed_fields.md) | [http-session:success](ActivityTypes/http-session.md) |

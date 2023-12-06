@@ -4,7 +4,7 @@ deep security
 Expression
 ----------
 
-product = "deep security agent"
+product = "deep security"
 
 Fields
 ------

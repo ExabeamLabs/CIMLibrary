@@ -4,7 +4,7 @@ singularity platform
 Expression
 ----------
 
-product = "sentinelone"
+product = "singularity platform"
 
 Fields
 ------

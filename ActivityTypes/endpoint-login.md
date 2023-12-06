@@ -35,6 +35,7 @@ endpoint-login:success
 | login_type        |          | &#10003;  |               |
 | domain_user_name  |          |           |               |
 | src_host          |          | &#10003;  |               |
+| subject_sid       |          |           | &#10003;      |
 | logon_type        |          | &#10003;  |               |
 | src_ip            |          | &#10003;  |               |
 | account_user_name |          |           |               |
@@ -57,6 +58,7 @@ endpoint-login:fail
 | domain_user_name  |          |           |               |
 | failure_reason    |          | &#10003;  |               |
 | src_host          |          | &#10003;  |               |
+| subject_sid       |          |           | &#10003;      |
 | src_ip            |          | &#10003;  |               |
 | account_user_name |          |           |               |
 | domain            |          | &#10003;  |               |

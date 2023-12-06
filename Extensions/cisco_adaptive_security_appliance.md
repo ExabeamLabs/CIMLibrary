@@ -4,7 +4,7 @@ cisco adaptive security appliance
 Expression
 ----------
 
-product = "cisco asa"
+product = "cisco adaptive security appliance"
 
 Fields
 ------
