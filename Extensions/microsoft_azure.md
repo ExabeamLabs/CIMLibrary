@@ -16,7 +16,8 @@ Activity Types
 
 | Activity Type | Field                | Status | Core     | Detection | Informational |
 | ------------- | -------------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger | nt_domain            |        |          |           |               |
+| alert-trigger | domain_user_name     |        |          |           |               |
+|               | nt_domain            |        |          |           |               |
 |               | processing_end_time  |        |          |           |               |
 |               | src_ip               | Legacy | &#10003; | &#10003;  |               |
 |               | event_hub_namespace  |        |          |           |               |

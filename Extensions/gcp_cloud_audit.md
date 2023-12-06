@@ -9,25 +9,26 @@ product = "gcp cloud audit"
 Fields
 ------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| resource        |      | &#10003;  |               |
-| service_name    |      | &#10003;  |               |
-| resource_type   |      |           | &#10003;      |
-| event_category  |      |           | &#10003;      |
-| operation_first |      |           | &#10003;      |
-| src_ip          |      | &#10003;  |               |
-| project_id      |      |           | &#10003;      |
-| zone            |      |           | &#10003;      |
-| domain          |      |           | &#10003;      |
-| resource_path   |      |           | &#10003;      |
-| result_code     |      |           | &#10003;      |
-| resource_name   |      |           | &#10003;      |
-| region          |      | &#10003;  |               |
-| operation_last  |      |           | &#10003;      |
-| user            |      | &#10003;  |               |
-| operation       |      | &#10003;  |               |
-| user_agent      |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| resource         |      | &#10003;  |               |
+| service_name     |      | &#10003;  |               |
+| resource_type    |      |           | &#10003;      |
+| domain_user_name |      |           |               |
+| event_category   |      |           | &#10003;      |
+| operation_first  |      |           | &#10003;      |
+| src_ip           |      | &#10003;  |               |
+| project_id       |      |           | &#10003;      |
+| zone             |      |           | &#10003;      |
+| domain           |      |           | &#10003;      |
+| resource_path    |      |           | &#10003;      |
+| result_code      |      |           | &#10003;      |
+| resource_name    |      |           | &#10003;      |
+| region           |      | &#10003;  |               |
+| operation_last   |      |           | &#10003;      |
+| user             |      | &#10003;  |               |
+| operation        |      | &#10003;  |               |
+| user_agent       |      | &#10003;  |               |
 
 Activity Types
 --------------

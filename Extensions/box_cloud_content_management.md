@@ -4,17 +4,18 @@ box cloud content management
 Expression
 ----------
 
-product = "box cloud content"
+product = "box cloud content management"
 
 Fields
 ------
 
-| Field           | Core     | Detection | Informational |
-| --------------- | -------- | --------- | ------------- |
-| src_ip          |          | &#10003;  |               |
-| additional_info |          |           | &#10003;      |
-| domain          |          | &#10003;  |               |
-| user            | &#10003; | &#10003;  |               |
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| src_ip           |          | &#10003;  |               |
+| additional_info  |          |           | &#10003;      |
+| domain           |          | &#10003;  |               |
+| domain_user_name |          |           |               |
+| user             | &#10003; | &#10003;  |               |
 
 Activity Types
 --------------
@@ -40,6 +41,7 @@ Activity Types
 |               | bytes        | Legacy  |      | &#10003;  |               |
 |               | file_dir     | Legacy  |      |           | &#10003;      |
 |               | object       |         |      | &#10003;  |               |
+|               | cid          |         |      | &#10003;  |               |
 | file-read     | owned_user   |         |      | &#10003;  |               |
 |               | access_type  |         |      | &#10003;  |               |
 |               | access       | Legacy  |      | &#10003;  |               |
@@ -64,4 +66,5 @@ Activity Types
 |               | bytes        | Legacy  |      | &#10003;  |               |
 |               | process_name | Legacy  |      |           | &#10003;      |
 |               | object       |         |      | &#10003;  |               |
+|               | cid          |         |      | &#10003;  |               |
 

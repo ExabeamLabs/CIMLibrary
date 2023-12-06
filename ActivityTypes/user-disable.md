@@ -16,9 +16,9 @@ Parameters
 
 Legacy Names
 ------------
-| Success              | Fail |
-| -------------------- | ---- |
-| account-disabled<br> |      |
+| Success              | Fail                 |
+| -------------------- | -------------------- |
+| account-disabled<br> | account-disabled<br> |
 
 Fields
 ------
@@ -32,4 +32,10 @@ user-disable:success
 There are no fields for this activity type.
 
 
-A failure activity is not currently supported for this activity-type.
+user-disable:fail
+-----------------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

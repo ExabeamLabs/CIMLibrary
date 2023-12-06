@@ -19,6 +19,7 @@ Activity Types
 | alert-trigger | dest_dns_hostname    |        |          |           |               |
 |               | confidence_level     |        |          |           |               |
 |               | rule                 |        |          |           |               |
+|               | domain_user_name     |        |          |           |               |
 |               | attack_info          |        |          |           |               |
 |               | rule_uid             |        |          |           |               |
 |               | dest_translated_ip   |        |          |           |               |
@@ -44,6 +45,7 @@ Activity Types
 |               | failure_reason       |        |          |           |               |
 |               | src_host             | Legacy | &#10003; | &#10003;  |               |
 |               | product_name         |        |          |           |               |
+|               | account_user_name    |        |          |           |               |
 |               | rule_id              |        |          |           |               |
 |               | src_port             | Legacy |          |           | &#10003;      |
 |               | full_name            |        |          |           |               |

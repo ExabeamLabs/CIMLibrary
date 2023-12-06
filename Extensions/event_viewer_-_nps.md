@@ -4,7 +4,7 @@ event viewer - nps
 Expression
 ----------
 
-product = "microsoft nps"
+product = "event viewer - nps"
 
 Fields
 ------

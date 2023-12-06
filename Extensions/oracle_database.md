@@ -4,22 +4,23 @@ oracle database
 Expression
 ----------
 
-product = "oracle db"
+product = "oracle database"
 
 Fields
 ------
 
-| Field     | Core     | Detection | Informational |
-| --------- | -------- | --------- | ------------- |
-| src_ip    |          |           | &#10003;      |
-| db_id     |          |           | &#10003;      |
-| db_name   |          |           | &#10003;      |
-| domain    |          | &#10003;  |               |
-| dest_host |          |           | &#10003;      |
-| src_host  |          |           | &#10003;      |
-| user      | &#10003; | &#10003;  |               |
-| operation |          |           | &#10003;      |
-| dest_port |          |           | &#10003;      |
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| src_ip           |          |           | &#10003;      |
+| db_id            |          |           | &#10003;      |
+| db_name          |          |           | &#10003;      |
+| domain           |          | &#10003;  |               |
+| dest_host        |          |           | &#10003;      |
+| domain_user_name |          |           |               |
+| src_host         |          |           | &#10003;      |
+| user             | &#10003; | &#10003;  |               |
+| operation        |          |           | &#10003;      |
+| dest_port        |          |           | &#10003;      |
 
 Activity Types
 --------------

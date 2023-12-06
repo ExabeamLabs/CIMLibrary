@@ -32,6 +32,7 @@ file-read:success
 | Field  | Core | Detection | Informational |
 | ------ | ---- | --------- | ------------- |
 | is_dok |      | &#10003;  |               |
+| cid    |      |           | &#10003;      |
 
 file-read:fail
 --------------
@@ -41,3 +42,4 @@ file-read:fail
 | failure_code   |      | &#10003;  |               |
 | is_dok         |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| cid            |      |           | &#10003;      |

@@ -32,6 +32,7 @@ peripheral_storage-activity:success
 | Field     | Core     | Detection | Informational |
 | --------- | -------- | --------- | ------------- |
 | operation | &#10003; | &#10003;  |               |
+| cid       |          |           | &#10003;      |
 
 peripheral_storage-activity:fail
 --------------------------------
@@ -41,3 +42,4 @@ peripheral_storage-activity:fail
 | failure_code   |          | &#10003;  |               |
 | failure_reason |          | &#10003;  |               |
 | operation      | &#10003; | &#10003;  |               |
+| cid            |          |           | &#10003;      |

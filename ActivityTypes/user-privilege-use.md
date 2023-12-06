@@ -3,7 +3,7 @@ user-privilege-use
 
 Description
 -----------
-A user called his privilege to access to an oject
+A user called his privilege to access to an object
 
 Parameters
 ----------
@@ -29,8 +29,19 @@ The possible fields for this activity type will vary depending on whether the ac
 user-privilege-use:success
 --------------------------
 
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| privileges      |      |           |               |
+| process_name    |      | &#10003;  |               |
+| local_user_name |      |           |               |
+| process_dir     |      | &#10003;  |               |
+| src_host        |      | &#10003;  |               |
+| user            |      | &#10003;  |               |
+
+user-privilege-use:fail
+-----------------------
+
 | Field      | Core | Detection | Informational |
 | ---------- | ---- | --------- | ------------- |
 | privileges |      |           |               |
-
-A failure activity is not currently supported for this activity-type.
+| user       |      | &#10003;  |               |

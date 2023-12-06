@@ -18,6 +18,7 @@ Activity Types
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | app             |        |          |           |               |
 |               | event_name_name |        |          |           |               |
+|               | local_user_name |        |          |           |               |
 |               | failure_reason  |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | src_ip          | Legacy | &#10003; | &#10003;  |               |

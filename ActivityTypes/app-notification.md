@@ -24,7 +24,8 @@ The possible fields for this activity type will vary depending on whether the ac
 app-notification:success
 ------------------------
 
-There are no fields for this activity type.
-
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| cid   |      |           | &#10003;      |
 
 A failure activity is not currently supported for this activity-type.

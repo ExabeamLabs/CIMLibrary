@@ -29,15 +29,17 @@ The possible fields for this activity type will vary depending on whether the ac
 physical_location-access:success
 --------------------------------
 
-| Field | Core     | Detection | Informational |
-| ----- | -------- | --------- | ------------- |
-| user  | &#10003; | &#10003;  |               |
+| Field           | Core     | Detection | Informational |
+| --------------- | -------- | --------- | ------------- |
+| local_user_name |          |           |               |
+| user            | &#10003; | &#10003;  |               |
 
 physical_location-access:fail
 -----------------------------
 
-| Field          | Core     | Detection | Informational |
-| -------------- | -------- | --------- | ------------- |
-| failure_code   |          | &#10003;  |               |
-| failure_reason |          | &#10003;  |               |
-| user           | &#10003; | &#10003;  |               |
+| Field           | Core     | Detection | Informational |
+| --------------- | -------- | --------- | ------------- |
+| failure_code    |          | &#10003;  |               |
+| local_user_name |          |           |               |
+| failure_reason  |          | &#10003;  |               |
+| user            | &#10003; | &#10003;  |               |

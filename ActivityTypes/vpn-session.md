@@ -29,9 +29,10 @@ The possible fields for this activity type will vary depending on whether the ac
 vpn-session:success
 -------------------
 
-| Field  | Core     | Detection | Informational |
-| ------ | -------- | --------- | ------------- |
-| domain |          | &#10003;  |               |
-| user   | &#10003; | &#10003;  |               |
+| Field            | Core     | Detection | Informational |
+| ---------------- | -------- | --------- | ------------- |
+| domain           |          | &#10003;  |               |
+| domain_user_name |          |           |               |
+| user             | &#10003; | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

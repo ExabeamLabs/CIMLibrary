@@ -23,6 +23,7 @@ Activity Types
 |               | resource        | Default |          |           | &#10003;      |
 |               | file_name       | Default |          |           | &#10003;      |
 |               | file_dir        | Default |          |           | &#10003;      |
+|               | local_user_name |         |          |           |               |
 |               | src_host        | Default |          | &#10003;  |               |
 |               | client_id       | Default |          |           | &#10003;      |
 |               | src_ip          | Default |          | &#10003;  |               |

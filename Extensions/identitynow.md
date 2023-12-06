@@ -41,6 +41,7 @@ Activity Types
 |                      | operation       | Default |          |           | &#10003;      |
 | user-modify          | src_ip          |         |          |           |               |
 |                      | additional_info |         |          |           |               |
+|                      | local_user_name |         |          |           |               |
 |                      | fingerprint     |         |          |           |               |
 |                      | src_host        | Legacy  |          |           | &#10003;      |
 |                      | event_subtype   |         |          |           |               |
@@ -54,6 +55,7 @@ Activity Types
 |                      | operation       | Default |          |           | &#10003;      |
 | user-unlock          | src_ip          |         |          |           |               |
 |                      | additional_info |         |          |           |               |
+|                      | local_user_name |         |          |           |               |
 |                      | fingerprint     |         |          |           |               |
 |                      | src_host        |         |          |           |               |
 |                      | event_subtype   |         |          |           |               |

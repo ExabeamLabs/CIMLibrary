@@ -1,10 +1,10 @@
-exabeam audit
-=============
+audit log
+=========
 
 Expression
 ----------
 
-product = "exabeam audit"
+product = "audit log"
 
 Fields
 ------
