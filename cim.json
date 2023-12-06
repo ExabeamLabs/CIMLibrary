@@ -5454,6 +5454,11 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"subject_sid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5554,6 +5559,11 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"subject_sid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7011,6 +7021,16 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"email_recipients": {
 					"core": "0",
 					"detection": "0",
@@ -7129,6 +7149,16 @@
 					"informational": "1"
 				},
 				"dest_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -7265,6 +7295,16 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"email_recipients": {
 					"core": "0",
 					"detection": "0",
@@ -7363,6 +7403,16 @@
 					"informational": "1"
 				},
 				"dest_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -7639,6 +7689,16 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"dest_domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -7681,6 +7741,16 @@
 					"informational": "1"
 				},
 				"dest_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -7741,6 +7811,16 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"dest_domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -7787,6 +7867,16 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -7822,6 +7912,16 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				},
 				"operation": {
 					"core": "0",
@@ -7860,6 +7960,16 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_user_full_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				},
 				"operation": {
 					"core": "0",
@@ -9924,6 +10034,35 @@
 				}
 			}
 		},
+                "registry-read:success": {
+                        "subject": "registry",
+                        "activity": "read",
+                        "activity_type": "registry-read",
+                        "outcome": "success",
+                        "pretty_name": "Registry Read",
+                        "description": "A registry key or value were read",
+                        "fields": {}
+                },
+                "registry-read:fail": {
+                        "subject": "registry",
+                        "activity": "read",
+                        "activity_type": "registry-read",
+                        "outcome": "fail",
+                        "pretty_name": "Registry Read",
+                        "description": "A registry key or value were read",
+                        "fields": {
+                                "failure_reason": {
+                                        "core": "0",
+                                        "detection": "1",
+                                        "informational": "0"
+                                },
+                                "failure_code": {
+                                        "core": "0",
+                                        "detection": "1",
+                                        "informational": "0"
+                                }
+                        }
+                },
 		"service-create:success": {
 			"subject": "service",
 			"activity": "create",
@@ -15074,6 +15213,402 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"business_criticality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"observed_activity": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"recoverability": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_filter": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_from_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_to_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"previous_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"create_case": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"case_description": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_source": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_field": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"field_value": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rules": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entities": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_url": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_percentile": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_raw_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"risk_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_product": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_vendor": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"subscription_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			}
+		},
+		"rule-trigger-beta:success": {
+			"subject": "rule",
+			"activity": "trigger-beta",
+			"activity_type": "rule-trigger-beta",
+			"outcome": "success",
+			"pretty_name": "Rule Trigger Beta",
+			"description": "A trigger of a security rule was recorded on a security product or program",
+			"fields": {
+				"src_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"rule": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"trigger_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_reason": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"mitre_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_usecases": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"asset_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_severity": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_id": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"log_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"business_criticality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"observed_activity": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"recoverability": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_filter": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_from_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_to_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"previous_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"create_case": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"case_description": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_source": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_field": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"field_value": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rules": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entities": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_url": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_percentile": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_raw_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"risk_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_product": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_vendor": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"subscription_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
@@ -15190,6 +15725,151 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"business_criticality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"observed_activity": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"recoverability": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_filter": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_from_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_to_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"previous_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"create_case": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"case_description": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_source": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_field": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"field_value": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rules": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entities": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_url": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_percentile": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_raw_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rarity_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"risk_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_product": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_vendor": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"subscription_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			}
 		},
@@ -19770,7 +20450,7 @@
 				}
 			}
 		},
-		"symantec blue coat proxysg": {
+		"blue coat proxysg": {
 			"expression": "product = \"blue coat proxysg\"",
 			"fields": {
 				"src_host": {
@@ -19923,7 +20603,7 @@
 			}
 		},
 		"box cloud content management": {
-			"expression": "product = \"box cloud content\"",
+			"expression": "product = \"box cloud content management\"",
 			"fields": {
 				"user": {
 					"core": "1",
@@ -22194,7 +22874,7 @@
 				}
 			}
 		},
-		"carbon black cloud endpoint standard": {
+		"carbon black ces": {
 			"expression": "product = \"carbon black ces\"",
 			"fields": {
 				"src_ip": {
@@ -24137,7 +24817,7 @@
 			}
 		},
 		"cisco adaptive security appliance": {
-			"expression": "product = \"cisco asa\"",
+			"expression": "product = \"cisco adaptive security appliance\"",
 			"fields": {
 				"event_code": {
 					"core": "0",
@@ -24691,7 +25371,7 @@
 			}
 		},
 		"cisco unified communications manager": {
-			"expression": "product = \"cisco unified cm\"",
+			"expression": "product = \"cisco unified communications manager\"",
 			"fields": {
 				"src_ip": {
 					"core": "0",
@@ -25575,7 +26255,7 @@
 			}
 		},
 		"anyconnect": {
-			"expression": "product = \"any connect\"",
+			"expression": "product = \"anyconnect\"",
 			"fields": {
 				"dest_host": {
 					"core": "0",
@@ -25769,7 +26449,7 @@
 				}
 			}
 		},
-		"cisco meraki mx appliances": {
+		"cisco meraki mx appliance": {
 			"expression": "product = \"cisco meraki mx appliance\"",
 			"fields": {},
 			"activity_type": {
@@ -26840,7 +27520,7 @@
 			}
 		},
 		"citrix web app firewall": {
-			"expression": "product = \"citrix appfw\"",
+			"expression": "product = \"citrix web app firewall\"",
 			"fields": {
 				"interface_in": {
 					"core": "0",
@@ -28567,8 +29247,8 @@
 				}
 			}
 		},
-		"cyberark endpoint privilege management": {
-			"expression": "product = \"cyberark epm\"",
+		"cyberark endpoint privilege manager": {
+			"expression": "product = \"cyberark endpoint privilege manager\"",
 			"fields": {
 				"event_name": {
 					"core": "0",
@@ -28688,8 +29368,8 @@
 				}
 			}
 		},
-		"cyberark privilege access management": {
-			"expression": "product = \"cyberark vault\"",
+		"cyberark privilege access manager": {
+			"expression": "product = \"cyberark privilege access manager\"",
 			"fields": {
 				"event_code": {
 					"core": "0",
@@ -28756,6 +29436,30 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"user": {
+							"Status": "Legacy",
+							"core": "1",
+							"detection": "0",
+							"informational": "0"
+						},
+						"domain": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"domain_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
+						"event_code": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -28772,6 +29476,30 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"event_code": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"src_ip": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"protocol": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"url": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -29099,6 +29827,24 @@
 							"informational": "1"
 						},
 						"process_name": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"app_group": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"event_subtype": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"additional_info": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -29463,7 +30209,7 @@
 				}
 			}
 		},
-		"zebra wireless lan management": {
+		"zebra wlan management": {
 			"expression": "product = \"zebra wlan management\"",
 			"fields": {
 				"event_code": {
@@ -29782,7 +30528,7 @@
 				}
 			}
 		},
-		"airlock web application firewall": {
+		"airlock waf": {
 			"expression": "product = \"airlock waf\"",
 			"fields": {
 				"action": {
@@ -30745,7 +31491,7 @@
 				}
 			}
 		},
-		"access it! universal.net": {
+		"access it universal.net": {
 			"expression": "product =\"access it universal.net\"",
 			"fields": {
 				"last_name": {
@@ -31372,7 +32118,7 @@
 				}
 			}
 		},
-		"symantec messaging gateway": {
+		"smg": {
 			"expression": "product = \"smg\"",
 			"fields": {},
 			"activity_type": {
@@ -33348,7 +34094,7 @@
 			}
 		},
 		"symantec siteminder": {
-			"expression": "product = \"siteminder\"",
+			"expression": "product = \"symantec siteminder\"",
 			"fields": {
 				"src_host": {
 					"core": "0",
@@ -33413,7 +34159,7 @@
 			}
 		},
 		"silverfort authentication platform": {
-			"expression": "product = \"silverfort\"",
+			"expression": "product = \"silverfort authentication platform\"",
 			"fields": {
 				"src_host": {
 					"core": "0",
@@ -34121,7 +34867,7 @@
 			}
 		},
 		"singularity platform": {
-			"expression": "product = \"sentinelone\"",
+			"expression": "product = \"singularity platform\"",
 			"fields": {
 				"user": {
 					"core": "0",
@@ -34723,7 +35469,7 @@
 			}
 		},
 		"sensormatik": {
-			"expression": "product = sensormatik\"",
+			"expression": "product = \"sensormatik\"",
 			"fields": {
 				"last_name": {
 					"core": "0",
@@ -35160,7 +35906,7 @@
 			}
 		},
 		"iboss cloud": {
-			"expression": "product = iboss secure web gateway\"",
+			"expression": "product = \"iboss cloud\"",
 			"fields": {
 				"categories": {
 					"core": "0",
@@ -35210,7 +35956,7 @@
 			}
 		},
 		"secureenvoy multi-factor authentication": {
-			"expression": "product = \"secure envoy\"",
+			"expression": "product = \"secureenvoy multi-factor authentication\"",
 			"fields": {
 				"server_name": {
 					"core": "0",
@@ -36040,7 +36786,7 @@
 			}
 		},
 		"rsa netwitness platform": {
-			"expression": "product = \"rsa netwitness\"",
+			"expression": "product = \"rsa netwitness platform\"",
 			"fields": {
 				"src_ip": {
 					"core": "0",
@@ -36320,7 +37066,7 @@
 				}
 			}
 		},
-		"avigilon access control manager": {
+		"aviglion acm": {
 			"expression": "product = \"aviglion acm\"",
 			"fields": {
 				"category": {
@@ -36435,7 +37181,7 @@
 			}
 		},
 		"targeted attack platform": {
-			"expression": "product = proofpoint tap\"",
+			"expression": "product = \"targeted attack platform\"",
 			"fields": {
 				"bytes": {
 					"core": "0",
@@ -37920,102 +38666,6 @@
 				}
 			}
 		},
-		"cyberark privileged session manager": {
-			"expression": "product = \"cyberark psm\"",
-			"fields": {},
-			"activity_type": {
-				"app-login": {
-					"fields": {
-						"event_code": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"src_ip": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"protocol": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"url": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"event_subtype": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
-				},
-				"user-password-read": {
-					"fields": {
-						"user": {
-							"Status": "Legacy",
-							"core": "1",
-							"detection": "0",
-							"informational": "0"
-						},
-						"domain": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"domain_user_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0",
-							"enriched": "1"
-						},
-						"event_code": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
-				},
-				"app-activity": {
-					"fields": {
-						"user": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"app_group": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"event_subtype": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"additional_info": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
-				}
-			}
-		},
 		"sterling b2b integrator": {
 			"expression": "product = \"Sterling B2B Integrator\"",
 			"fields": {
@@ -38346,7 +38996,7 @@
 			}
 		},
 		"ibm resource access control facility": {
-			"expression": "product = \"ibm racf\"",
+			"expression": "product = \"ibm resource access control facility\"",
 			"fields": {
 				"dest_ip": {
 					"core": "0",
@@ -38575,7 +39225,7 @@
 				}
 			}
 		},
-		"microsoft 365 audit logs": {
+		"m365 audit logs": {
 			"expression": "product = \"m365 audit logs\"",
 			"fields": {
 				"user": {
@@ -40797,99 +41447,6 @@
 				}
 			}
 		},
-		"f5 app security manager (asm)": {
-			"expression": "product = f5 Application security manager (asm)",
-			"fields": {},
-			"activity_type": {
-				"alert-trigger": {
-					"fields": {
-						"country": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"dest_host": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"dest_ip": {
-							"Status": "Legacy",
-							"core": "1",
-							"detection": "1",
-							"informational": "0"
-						},
-						"dest_port": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"domain": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"ip_reputation": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"malware_file_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"malware_url": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"policy_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"protocol": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"src_ip": {
-							"Status": "Legacy",
-							"core": "1",
-							"detection": "1",
-							"informational": "0"
-						},
-						"src_port": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"user": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"domain_user_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0",
-							"enriched": "1"
-						},
-						"user_agent": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						}
-					}
-				}
-			}
-		},
 		"fidelis cybersecurity elevate": {
 			"expression": "product = fidelis cybersecurity elevate",
 			"fields": {},
@@ -41720,8 +42277,8 @@
 				}
 			}
 		},
-		"imperva web app firewall": {
-			"expression": "product = imperva web Application firewall",
+		"Imperva Web application Firewall": {
+			"expression": "product = imperva web application firewall",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -48751,7 +49308,7 @@
 			}
 		},
 		"event viewer - nps": {
-			"expression": "product = \"microsoft nps\"",
+			"expression": "product = \"event viewer - nps\"",
 			"fields": {
 				"auth_server": {
 					"core": "0",
@@ -50588,7 +51145,7 @@
 			}
 		},
 		"trend micro interscan web security": {
-			"expression": "product = \"interscan web security\"",
+			"expression": "product = \"trend micro interscan web security\"",
 			"fields": {},
 			"activity_type": {
 				"http-session": {
@@ -50728,7 +51285,7 @@
 			}
 		},
 		"deep security": {
-			"expression": "product = \"deep security agent\"",
+			"expression": "product = \"deep security\"",
 			"fields": {},
 			"activity_type": {
 				"network-session": {
@@ -50816,7 +51373,7 @@
 			}
 		},
 		"symantec virtual secure web gateway": {
-			"expression": "product = \"symantec secure web gateway\"",
+			"expression": "product = \"symantec virtual secure web gateway\"",
 			"fields": {},
 			"activity_type": {
 				"http-session": {
@@ -51601,7 +52158,7 @@
 			}
 		},
 		"symantec web security service": {
-			"expression": "product = \"symantec wss\"",
+			"expression": "product = \"symantec web security service\"",
 			"fields": {},
 			"activity_type": {
 				"http-session": {
@@ -51657,7 +52214,7 @@
 			}
 		},
 		"symantec advanced threat protection": {
-			"expression": "product = \"symantec edr\"",
+			"expression": "product = \"symantec advanced threat protection\"",
 			"fields": {
 				"user": {
 					"core": "0",
@@ -53384,7 +53941,7 @@
 			}
 		},
 		"globalprotect": {
-			"expression": "product = \"palo alto global protect\"",
+			"expression": "product = \"globalprotect\"",
 			"fields": {
 				"user": {
 					"core": "1",
@@ -54463,7 +55020,7 @@
 			}
 		},
 		"oracle database": {
-			"expression": "product = \"oracle db\"",
+			"expression": "product = \"oracle database\"",
 			"fields": {
 				"user": {
 					"core": "1",
@@ -68904,6 +69461,96 @@
 				}
 			}
 		},
+		"NG Analytics": {
+			"expression": "product = \"NG Analytics\"",
+			"fields": {},
+			"activity_type": {
+				"alert-trigger": {
+					"fields": {
+						"mitre_labels": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"rule_usecases": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"rule_severity": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"dest_host": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"dest_ip": {
+							"Status": "Legacy",
+							"core": "1",
+							"detection": "1",
+							"informational": "0"
+						},
+						"operation": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"rule_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"rule_id": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"rule": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"rule_reason": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"rule_type": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"src_host": {
+							"Status": "Legacy",
+							"core": "1",
+							"detection": "1",
+							"informational": "0"
+						},
+						"url": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"user": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						}
+					}
+				}
+			}
+		},
 		"search": {
 			"expression": "product = \"search\"",
 			"fields": {},
@@ -82820,7 +83467,7 @@
 			}
 		},
 		"f5 application security manager (asm)": {
-			"expression": "product = f5 Application security manager (asm)",
+			"expression": "product = f5 application security manager (asm)",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -82865,17 +83512,53 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"src_ip": {
-							"Status": "Legacy",
-							"core": "1",
-							"detection": "1",
-							"informational": "0"
-						},
 						"src_port": {
 							"Status": "Legacy",
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"local_user_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0",
+							"enriched": "1"
+						},
+						"ip_reputation": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"country": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"domain": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"malware_file_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"malware_url": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"policy_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"src_ip": {
+							"Status": "Legacy",
+							"core": "1",
+							"detection": "1",
+							"informational": "0"
 						},
 						"user": {
 							"Status": "Legacy",
@@ -82883,11 +83566,16 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"local_user_name": {
+						"domain_user_name": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0",
 							"enriched": "1"
+						},
+						"user_agent": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
 						}
 					}
 				}
