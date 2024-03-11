@@ -4,7 +4,7 @@ rsa netwitness platform
 Expression
 ----------
 
-product = "rsa netwitness platform"
+product = "rsa netwitness"
 
 Fields
 ------

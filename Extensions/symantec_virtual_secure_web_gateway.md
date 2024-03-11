@@ -4,7 +4,7 @@ symantec virtual secure web gateway
 Expression
 ----------
 
-product = "symantec virtual secure web gateway"
+product = "symantec secure web gateway"
 
 Fields
 ------

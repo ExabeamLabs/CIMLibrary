@@ -20,7 +20,6 @@ Activity Types
 |               | process         |        |          |           |               |
 |               | email_address   |        |          |           |               |
 |               | additional_info |        |          |           |               |
-|               | local_user_name |        |          |           |               |
 |               | malware_url     |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | user            | Legacy |          | &#10003;  |               |

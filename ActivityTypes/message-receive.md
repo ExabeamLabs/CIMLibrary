@@ -24,19 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 message-receive:success
 -----------------------
 
-| Field                 | Core | Detection | Informational |
-| --------------------- | ---- | --------- | ------------- |
-| dest_domain_user_name |      |           |               |
-| dest_domain           |      |           | &#10003;      |
-| dest_user             |      |           | &#10003;      |
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| dest_domain |      |           | &#10003;      |
+| dest_user   |      |           | &#10003;      |
 
 message-receive:fail
 --------------------
 
-| Field                 | Core | Detection | Informational |
-| --------------------- | ---- | --------- | ------------- |
-| failure_code          |      | &#10003;  |               |
-| dest_domain_user_name |      |           |               |
-| dest_domain           |      |           | &#10003;      |
-| dest_user             |      |           | &#10003;      |
-| failure_reason        |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| dest_domain    |      |           | &#10003;      |
+| dest_user      |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

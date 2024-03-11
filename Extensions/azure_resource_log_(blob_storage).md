@@ -16,7 +16,6 @@ Fields
 | operation_version |      |           | &#10003;      |
 | operation_type    |      |           | &#10003;      |
 | bytes_in          |      | &#10003;  |               |
-| domain_user_name  |      |           |               |
 | event_category    |      |           | &#10003;      |
 | url               |      |           | &#10003;      |
 | result            |      |           | &#10003;      |

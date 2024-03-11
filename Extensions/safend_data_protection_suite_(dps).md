@@ -14,16 +14,15 @@ There are no fields for this extension.
 Activity Types
 --------------
 
-| Activity Type | Field            | Status | Core | Detection | Informational |
-| ------------- | ---------------- | ------ | ---- | --------- | ------------- |
-| alert-trigger | result           |        |      |           |               |
-|               | protocol         | Legacy |      | &#10003;  |               |
-|               | device_id        |        |      |           |               |
-|               | os               |        |      |           |               |
-|               | additional_info  |        |      |           |               |
-|               | bytes            | Legacy |      | &#10003;  |               |
-|               | process_name     | Legacy |      | &#10003;  |               |
-|               | domain           |        |      |           |               |
-|               | domain_user_name |        |      |           |               |
-|               | user             | Legacy |      | &#10003;  |               |
+| Activity Type | Field           | Status | Core | Detection | Informational |
+| ------------- | --------------- | ------ | ---- | --------- | ------------- |
+| alert-trigger | result          |        |      |           |               |
+|               | protocol        | Legacy |      | &#10003;  |               |
+|               | device_id       |        |      |           |               |
+|               | os              |        |      |           |               |
+|               | additional_info |        |      |           |               |
+|               | bytes           | Legacy |      | &#10003;  |               |
+|               | process_name    | Legacy |      | &#10003;  |               |
+|               | domain          |        |      |           |               |
+|               | user            | Legacy |      | &#10003;  |               |
 

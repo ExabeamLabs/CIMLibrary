@@ -24,31 +24,25 @@ The possible fields for this activity type will vary depending on whether the ac
 email-recipient-remove:success
 ------------------------------
 
-| Field                 | Core     | Detection | Informational |
-| --------------------- | -------- | --------- | ------------- |
-| dest_email_domain     |          |           | &#10003;      |
-| dest_email_user       |          |           | &#10003;      |
-| dest_user_full_name   |          |           | &#10003;      |
-| dest_domain_user_name |          |           |               |
-| dest_email_address    |          |           | &#10003;      |
-| dest_domain           |          |           | &#10003;      |
-| dest_user             |          |           | &#10003;      |
-| src_email_address     | &#10003; |           |               |
-| src_email_domain      |          |           | &#10003;      |
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| dest_email_domain  |          |           | &#10003;      |
+| dest_email_user    |          |           | &#10003;      |
+| dest_email_address |          |           | &#10003;      |
+| dest_domain        |          |           | &#10003;      |
+| dest_user          |          |           | &#10003;      |
+| src_email_address  | &#10003; |           |               |
 
 email-recipient-remove:fail
 ---------------------------
 
-| Field                 | Core     | Detection | Informational |
-| --------------------- | -------- | --------- | ------------- |
-| dest_email_domain     |          |           | &#10003;      |
-| dest_email_user       |          |           | &#10003;      |
-| failure_code          |          | &#10003;  |               |
-| dest_user_full_name   |          |           | &#10003;      |
-| dest_domain_user_name |          |           |               |
-| dest_email_address    |          |           | &#10003;      |
-| dest_domain           |          |           | &#10003;      |
-| dest_user             |          |           | &#10003;      |
-| src_email_address     | &#10003; |           |               |
-| failure_reason        |          | &#10003;  |               |
-| src_email_domain      |          |           | &#10003;      |
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| dest_email_domain  |          |           | &#10003;      |
+| dest_email_user    |          |           | &#10003;      |
+| failure_code       |          | &#10003;  |               |
+| dest_email_address |          |           | &#10003;      |
+| dest_domain        |          |           | &#10003;      |
+| dest_user          |          |           | &#10003;      |
+| src_email_address  | &#10003; |           |               |
+| failure_reason     |          | &#10003;  |               |

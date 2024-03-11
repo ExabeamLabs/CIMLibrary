@@ -18,6 +18,6 @@ The universal interface defines a set of global fields. These are fields that ar
 | platform         |          | &#10003;  |               |
 | product          | &#10003; |           |               |
 | product_category |          | &#10003;  |               |
+| raw_log_time     | &#10003; |           |               |
 | subject          | &#10003; |           |               |
-| time             | &#10003; |           |               |
 | vendor           | &#10003; |           |               |

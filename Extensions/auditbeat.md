@@ -21,9 +21,7 @@ Activity Types
 |                         | syscall              | Default |          |           | &#10003;      |
 |                         | operation_type       | Default |          |           | &#10003;      |
 |                         | os                   | Default |          |           | &#10003;      |
-|                         | domain_user_name     |         |          |           |               |
 |                         | process_command_line | Default |          |           | &#10003;      |
-|                         | account_user_name    |         |          |           |               |
 |                         | group_id             | Default |          |           | &#10003;      |
 |                         | process_name         | Default |          |           | &#10003;      |
 |                         | domain               | Default |          |           | &#10003;      |
@@ -38,7 +36,6 @@ Activity Types
 |                         | process_name         | Default |          |           | &#10003;      |
 |                         | domain               | Default |          |           | &#10003;      |
 |                         | process_dir          | Default |          |           | &#10003;      |
-|                         | domain_user_name     |         |          |           |               |
 |                         | process_path         | Default |          |           | &#10003;      |
 |                         | user                 | Default |          | &#10003;  |               |
 |                         | direction            | Default |          |           | &#10003;      |
@@ -46,7 +43,6 @@ Activity Types
 |                         | additional_info      | Default |          |           | &#10003;      |
 |                         | domain               | Default |          |           | &#10003;      |
 |                         | hash_md5             | Default |          |           | &#10003;      |
-|                         | domain_user_name     |         |          |           |               |
 |                         | user                 | Default |          | &#10003;  |               |
 | process-modify          | result               | Default |          |           | &#10003;      |
 |                         | app                  | Default |          |           | &#10003;      |

@@ -22,7 +22,6 @@ Activity Types
 |               | src_ip            | Default |      | &#10003;  |               |
 |               | additional_info   | Default |      |           | &#10003;      |
 |               | bytes             | Default |      |           | &#10003;      |
-|               | local_user_name   |         |      |           |               |
 |               | src_host          | Default |      | &#10003;  |               |
 |               | user              | Default |      | &#10003;  |               |
 | vpn-login     | src_port          | Default |      |           | &#10003;      |

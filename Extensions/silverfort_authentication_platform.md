@@ -4,7 +4,7 @@ silverfort authentication platform
 Expression
 ----------
 
-product = "silverfort authentication platform"
+product = "silverfort"
 
 Fields
 ------

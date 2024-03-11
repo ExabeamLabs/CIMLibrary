@@ -19,7 +19,6 @@ Activity Types
 | alert-trigger | result          |        |          |           |               |
 |               | device_name     |        |          |           |               |
 |               | additional_info |        |          |           |               |
-|               | local_user_name |        |          |           |               |
 |               | event_name      |        |          |           |               |
 |               | failure_reason  |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |

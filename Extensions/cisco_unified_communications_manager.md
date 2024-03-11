@@ -4,7 +4,7 @@ cisco unified communications manager
 Expression
 ----------
 
-product = "cisco unified communications manager"
+product = "cisco unified cm"
 
 Fields
 ------

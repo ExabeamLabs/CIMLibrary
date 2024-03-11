@@ -4,7 +4,7 @@ anyconnect
 Expression
 ----------
 
-product = "anyconnect"
+product = "any connect"
 
 Fields
 ------
@@ -25,7 +25,6 @@ Activity Types
 |                 | parent_process_name  | Default |      |           | &#10003;      |
 |                 | parent_process_hash  | Default |      |           | &#10003;      |
 |                 | os_version           | Default |      |           | &#10003;      |
-|                 | domain_user_name     |         |      |           |               |
 |                 | os_environment       | Default |      |           | &#10003;      |
 |                 | bytes_out            | Default |      |           | &#10003;      |
 |                 | process_hash         | Default |      |           | &#10003;      |

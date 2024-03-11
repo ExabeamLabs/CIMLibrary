@@ -4,7 +4,7 @@ secureenvoy multi-factor authentication
 Expression
 ----------
 
-product = "secureenvoy multi-factor authentication"
+product = "secure envoy"
 
 Fields
 ------

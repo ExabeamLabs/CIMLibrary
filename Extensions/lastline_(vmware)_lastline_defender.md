@@ -22,7 +22,6 @@ Activity Types
 |               | additional_info |        |          |           |               |
 |               | alert_id        | Legacy |          |           | &#10003;      |
 |               | dest_ip         | Legacy | &#10003; | &#10003;  |               |
-|               | local_user_name |        |          |           |               |
 |               | dest_host       | Legacy |          | &#10003;  |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | user            | Legacy |          | &#10003;  |               |

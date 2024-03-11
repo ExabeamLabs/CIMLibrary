@@ -21,7 +21,6 @@ Activity Types
 |               | additional_info |        |          |           |               |
 |               | service_name    |        |          |           |               |
 |               | alert_id        | Legacy |          |           | &#10003;      |
-|               | local_user_name |        |          |           |               |
 |               | malware_url     |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | user            | Legacy |          | &#10003;  |               |

@@ -14,7 +14,6 @@ Fields
 | process_id           |          |           | &#10003;      |
 | device_id            |          |           | &#10003;      |
 | process_dir          |          | &#10003;  |               |
-| domain_user_name     |          |           |               |
 | src_host             |          | &#10003;  |               |
 | process_command_line |          | &#10003;  |               |
 | process_guid         |          |           | &#10003;      |
@@ -47,7 +46,6 @@ Activity Types
 |                 | hash_md5                    | Default |      |           | &#10003;      |
 |                 | dest_host                   | Default |      | &#10003;  |               |
 |                 | parent_process_guid         | Default |      |           | &#10003;      |
-|                 | domain_user_name            |         |      |           |               |
 |                 | process_command_line        | Default |      |           | &#10003;      |
 |                 | user                        | Default |      | &#10003;  |               |
 

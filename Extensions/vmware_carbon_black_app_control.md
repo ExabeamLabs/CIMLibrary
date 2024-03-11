@@ -17,7 +17,6 @@ Activity Types
 | Activity Type | Field            | Status | Core     | Detection | Informational |
 | ------------- | ---------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | file_path        | Legacy |          |           | &#10003;      |
-|               | domain_user_name |        |          |           |               |
 |               | src_host         | Legacy | &#10003; | &#10003;  |               |
 |               | src_ip           | Legacy | &#10003; | &#10003;  |               |
 |               | additional_info  |        |          |           |               |

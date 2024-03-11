@@ -22,7 +22,6 @@ Activity Types
 |               | file_name            | Legacy | &#10003; |           |               |
 |               | event_name_name      |        |          |           |               |
 |               | process_dir          |        |          |           |               |
-|               | domain_user_name     |        |          |           |               |
 |               | process_command_line |        |          |           |               |
 |               | parent_process       |        |          |           |               |
 |               | src_host             | Legacy | &#10003; | &#10003;  |               |

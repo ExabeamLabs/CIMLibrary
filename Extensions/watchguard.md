@@ -9,14 +9,13 @@ product = "watchguard"
 Fields
 ------
 
-| Field            | Core | Detection | Informational |
-| ---------------- | ---- | --------- | ------------- |
-| bytes_out        |      |           | &#10003;      |
-| bytes_in         |      |           | &#10003;      |
-| domain           |      |           | &#10003;      |
-| domain_user_name |      |           |               |
-| category         |      |           | &#10003;      |
-| user             |      |           | &#10003;      |
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| bytes_out |      |           | &#10003;      |
+| bytes_in  |      |           | &#10003;      |
+| domain    |      |           | &#10003;      |
+| category  |      |           | &#10003;      |
+| user      |      |           | &#10003;      |
 
 Activity Types
 --------------

@@ -9,11 +9,10 @@ product = "atlassian bitbucket"
 Fields
 ------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| domain           |          |           | &#10003;      |
-| domain_user_name |          |           |               |
-| user             | &#10003; | &#10003;  |               |
+| Field  | Core     | Detection | Informational |
+| ------ | -------- | --------- | ------------- |
+| domain |          |           | &#10003;      |
+| user   | &#10003; | &#10003;  |               |
 
 Activity Types
 --------------

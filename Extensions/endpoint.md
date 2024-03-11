@@ -24,7 +24,6 @@ Activity Types
 |               | domain            |        |          |           |               |
 |               | action            | Legacy |          |           | &#10003;      |
 |               | malware_url       |        |          |           |               |
-|               | domain_user_name  |        |          |           |               |
 |               | src_host          | Legacy | &#10003; | &#10003;  |               |
 |               | user              | Legacy |          | &#10003;  |               |
 

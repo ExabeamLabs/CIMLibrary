@@ -24,15 +24,13 @@ The possible fields for this activity type will vary depending on whether the ac
 call-receive:success
 --------------------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| local_user_name |      |           |               |
+There are no fields for this activity type.
+
 
 call-receive:fail
 -----------------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| failure_code    |      | &#10003;  |               |
-| local_user_name |      |           |               |
-| failure_reason  |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

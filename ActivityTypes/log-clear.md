@@ -29,19 +29,13 @@ The possible fields for this activity type will vary depending on whether the ac
 log-clear:success
 -----------------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| local_user_name |      |           |               |
-| src_host        |      | &#10003;  |               |
-| user            |      | &#10003;  |               |
+There are no fields for this activity type.
+
 
 log-clear:fail
 --------------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| failure_code    |      | &#10003;  |               |
-| local_user_name |      |           |               |
-| failure_reason  |      | &#10003;  |               |
-| src_host        |      | &#10003;  |               |
-| user            |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

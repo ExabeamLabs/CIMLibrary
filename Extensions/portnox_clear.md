@@ -22,10 +22,9 @@ Fields
 Activity Types
 --------------
 
-| Activity Type           | Field            | Status  | Core | Detection | Informational |
-| ----------------------- | ---------------- | ------- | ---- | --------- | ------------- |
-| endpoint-authentication |                  |         |      |           |               |
-| endpoint-policy-verify  | domain           | Default |      |           | &#10003;      |
-|                         | domain_user_name |         |      |           |               |
-|                         | user             | Default |      | &#10003;  |               |
+| Activity Type           | Field  | Status  | Core | Detection | Informational |
+| ----------------------- | ------ | ------- | ---- | --------- | ------------- |
+| endpoint-authentication |        |         |      |           |               |
+| endpoint-policy-verify  | domain | Default |      |           | &#10003;      |
+|                         | user   | Default |      | &#10003;  |               |
 

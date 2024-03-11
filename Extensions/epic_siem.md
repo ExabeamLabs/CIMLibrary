@@ -18,7 +18,6 @@ Activity Types
 | -------------------- | --------------- | ------- | ---- | --------- | ------------- |
 | app-activity         | app             | Default |      |           | &#10003;      |
 |                      | resource        | Default |      |           | &#10003;      |
-|                      | local_user_name |         |      |           |               |
 |                      | src_host        | Default |      | &#10003;  |               |
 |                      | result          | Default |      |           | &#10003;      |
 |                      | src_ip          | Default |      | &#10003;  |               |

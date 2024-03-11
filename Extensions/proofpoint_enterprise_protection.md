@@ -18,7 +18,6 @@ Activity Types
 | ------------- | ---------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | email_id         |        |          |           |               |
 |               | file_name        | Legacy | &#10003; |           |               |
-|               | local_user_name  |        |          |           |               |
 |               | src_host         | Legacy | &#10003; | &#10003;  |               |
 |               | target           |        |          |           |               |
 |               | threat_url       |        |          |           |               |

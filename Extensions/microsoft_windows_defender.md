@@ -14,31 +14,26 @@ There are no fields for this extension.
 Activity Types
 --------------
 
-| Activity Type          | Field            | Status | Core     | Detection | Informational |
-| ---------------------- | ---------------- | ------ | -------- | --------- | ------------- |
-| alert-trigger          | file_path        | Legacy |          |           | &#10003;      |
-|                        | file_name        | Legacy | &#10003; |           |               |
-|                        | message_id       |        |          |           |               |
-|                        | recipient_count  |        |          |           |               |
-|                        | domain_user_name |        |          |           |               |
-|                        | target           |        |          |           |               |
-|                        | result           |        |          |           |               |
-|                        | additional_info  |        |          |           |               |
-|                        | sender           | Legacy | &#10003; |           |               |
-|                        | user_id          |        |          |           |               |
-|                        | bytes            | Legacy |          | &#10003;  |               |
-|                        | recipients       |        |          |           |               |
-|                        | alert_id         | Legacy |          |           | &#10003;      |
-|                        | domain           |        |          |           |               |
-|                        | recipient        |        |          |           |               |
-|                        | event_name       |        |          |           |               |
-|                        | operation        |        |          |           |               |
-|                        | email_subject    |        |          |           |               |
-|                        | user             | Legacy |          | &#10003;  |               |
-|                        | apps             |        |          |           |               |
-|                        | object           |        |          |           |               |
-| process-memory-protect | additional_info  |        |          |           |               |
-|                        | action           |        |          |           | &#10003;      |
-|                        | event_name       |        |          |           | &#10003;      |
-|                        | operation        |        |          |           | &#10003;      |
+| Activity Type | Field           | Status | Core     | Detection | Informational |
+| ------------- | --------------- | ------ | -------- | --------- | ------------- |
+| alert-trigger | file_path       | Legacy |          |           | &#10003;      |
+|               | file_name       | Legacy | &#10003; |           |               |
+|               | message_id      |        |          |           |               |
+|               | recipient_count |        |          |           |               |
+|               | target          |        |          |           |               |
+|               | result          |        |          |           |               |
+|               | additional_info |        |          |           |               |
+|               | sender          | Legacy | &#10003; |           |               |
+|               | user_id         |        |          |           |               |
+|               | bytes           | Legacy |          | &#10003;  |               |
+|               | recipients      |        |          |           |               |
+|               | alert_id        | Legacy |          |           | &#10003;      |
+|               | domain          |        |          |           |               |
+|               | recipient       |        |          |           |               |
+|               | event_name      |        |          |           |               |
+|               | operation       |        |          |           |               |
+|               | email_subject   |        |          |           |               |
+|               | user            | Legacy |          | &#10003;  |               |
+|               | apps            |        |          |           |               |
+|               | object          |        |          |           |               |
 

@@ -22,7 +22,6 @@ Activity Types
 |               | additional_info  | Default |      |           | &#10003;      |
 |               | domain           | Default |      |           | &#10003;      |
 |               | log_source       | Default |      |           | &#10003;      |
-|               | domain_user_name |         |      |           |               |
 |               | user             | Default |      | &#10003;  |               |
 |               | object           | Default |      |           | &#10003;      |
 |               | target           | Default |      |           | &#10003;      |

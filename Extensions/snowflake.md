@@ -9,11 +9,10 @@ product = "snowflake"
 Fields
 ------
 
-| Field              | Core | Detection | Informational |
-| ------------------ | ---- | --------- | ------------- |
-| query_id           |      |           | &#10003;      |
-| db_user            |      |           | &#10003;      |
-| database_user_name |      |           |               |
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| query_id |      |           | &#10003;      |
+| db_user  |      |           | &#10003;      |
 
 Activity Types
 --------------

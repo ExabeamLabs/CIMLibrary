@@ -4,7 +4,7 @@ trend micro interscan web security
 Expression
 ----------
 
-product = "trend micro interscan web security"
+product = "interscan web security"
 
 Fields
 ------

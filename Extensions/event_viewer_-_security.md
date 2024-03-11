@@ -9,18 +9,17 @@ product = "event viewer - security"
 Fields
 ------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| login_id         |          |           | &#10003;      |
-| event_id         |          |           | &#10003;      |
-| log_name         | &#10003; |           |               |
-| user_id          |          |           | &#10003;      |
-| event_code       | &#10003; | &#10003;  |               |
-| domain           |          | &#10003;  |               |
-| event_name       |          |           | &#10003;      |
-| domain_user_name |          |           |               |
-| src_host         | &#10003; | &#10003;  |               |
-| user             | &#10003; | &#10003;  |               |
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| login_id   |          |           | &#10003;      |
+| event_id   |          |           | &#10003;      |
+| log_name   | &#10003; |           |               |
+| user_id    |          |           | &#10003;      |
+| event_code | &#10003; | &#10003;  |               |
+| domain     |          | &#10003;  |               |
+| event_name |          |           | &#10003;      |
+| src_host   | &#10003; | &#10003;  |               |
+| user       | &#10003; | &#10003;  |               |
 
 Activity Types
 --------------
@@ -45,9 +44,6 @@ Activity Types
 |                           | ticket_encryption_type | Default |          |           | &#10003;      |
 |                           | kerberos_service_name  | Default |          |           | &#10003;      |
 | endpoint-delete           |                        |         |          |           |               |
-| endpoint-domain-join      | process_id             |         |          |           | &#10003;      |
-|                           | dest_user_sid          | Default |          |           | &#10003;      |
-|                           | user_sid               |         |          |           |               |
 | endpoint-lock             | session_id             |         |          |           | &#10003;      |
 | endpoint-login            | result                 | Default |          |           | &#10003;      |
 |                           | src_ip                 | Default |          | &#10003;  |               |
@@ -113,7 +109,6 @@ Activity Types
 |                           | elevation_type         | Default |          |           | &#10003;      |
 | scheduled_task-create     | file_path              |         |          | &#10003;  |               |
 |                           | file_ext               |         |          | &#10003;  |               |
-|                           | dest_domain_user_name  |         |          |           |               |
 |                           | file_name              |         |          | &#10003;  |               |
 |                           | file_dir               |         |          | &#10003;  |               |
 |                           | dest_domain            |         |          | &#10003;  |               |
@@ -126,7 +121,6 @@ Activity Types
 |                           | service_command_line   |         |          | &#10003;  |               |
 |                           | service_type           |         |          | &#10003;  |               |
 |                           | file_ext               |         |          | &#10003;  |               |
-|                           | dest_domain_user_name  |         |          |           |               |
 |                           | file_name              |         |          | &#10003;  |               |
 |                           | file_dir               |         |          | &#10003;  |               |
 |                           | dest_domain            |         |          | &#10003;  |               |
@@ -143,7 +137,6 @@ Activity Types
 |                           | src_ip                 | Default |          | &#10003;  |               |
 |                           | thread_id              | Default |          |           | &#10003;      |
 |                           | process_guid           | Default |          |           | &#10003;      |
-|                           | dest_domain_user_name  |         |          |           |               |
 |                           | file_type              | Default |          |           | &#10003;      |
 |                           | process_name           | Default |          |           | &#10003;      |
 |                           | key_length             | Default |          |           | &#10003;      |

@@ -4,7 +4,7 @@ targeted attack platform
 Expression
 ----------
 
-product = "targeted attack platform"
+product = proofpoint tap"
 
 Fields
 ------

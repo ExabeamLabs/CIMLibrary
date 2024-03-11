@@ -21,7 +21,6 @@ Activity Types
 |                         | process_id           |         |          |           |               |
 |                         | operation_type       |         |          |           |               |
 |                         | service_name         |         |          |           |               |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           |         |          |           |               |
 |                         | process_command_line |         |          |           |               |
 |                         | src_host             | Legacy  | &#10003; | &#10003;  |               |
@@ -78,7 +77,6 @@ Activity Types
 |                         | access               | Legacy  |          | &#10003;  |               |
 |                         | operation_type       |         |          |           | &#10003;      |
 |                         | service_name         |         |          |           | &#10003;      |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           |         |          |           | &#10003;      |
 |                         | process_command_line |         |          |           | &#10003;      |
 |                         | src_host             |         |          | &#10003;  |               |
@@ -97,7 +95,6 @@ Activity Types
 |                         | access               | Legacy  |          | &#10003;  |               |
 |                         | operation_type       |         |          |           | &#10003;      |
 |                         | service_name         |         |          |           | &#10003;      |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           |         |          |           | &#10003;      |
 |                         | process_command_line |         |          |           | &#10003;      |
 |                         | src_host             | Legacy  |          | &#10003;  |               |
@@ -118,7 +115,6 @@ Activity Types
 |                         | process_id           |         |          |           |               |
 |                         | operation_type       |         |          |           |               |
 |                         | service_name         |         |          |           |               |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           |         |          |           |               |
 |                         | process_command_line |         |          |           |               |
 |                         | src_host             | Legacy  |          | &#10003;  |               |
@@ -140,7 +136,6 @@ Activity Types
 |                         | process_id           |         |          |           |               |
 |                         | operation_type       |         |          |           |               |
 |                         | service_name         |         |          |           |               |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           |         |          |           |               |
 |                         | process_command_line |         |          |           |               |
 |                         | src_host             | Legacy  |          | &#10003;  |               |
@@ -156,7 +151,6 @@ Activity Types
 |                         | process_id           |         |          |           |               |
 |                         | operation_type       |         |          |           |               |
 |                         | service_name         |         |          |           |               |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           |         |          |           |               |
 |                         | process_command_line |         |          |           |               |
 |                         | src_host             |         |          |           |               |
@@ -175,7 +169,6 @@ Activity Types
 |                         | process_id           | Default |          |           | &#10003;      |
 |                         | operation_type       | Default |          |           | &#10003;      |
 |                         | service_name         | Default |          |           | &#10003;      |
-|                         | local_user_name      |         |          |           |               |
 |                         | file_owner           | Default |          |           | &#10003;      |
 |                         | process_command_line | Default |          |           | &#10003;      |
 |                         | src_host             | Default |          | &#10003;  |               |

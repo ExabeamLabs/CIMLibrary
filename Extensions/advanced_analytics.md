@@ -18,7 +18,6 @@ Activity Types
 | ------------- | ---------------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | trigger_type           |        |          |           |               |
 |               | rule                   |        |          |           |               |
-|               | domain_user_name       |        |          |           |               |
 |               | rule_usecases          |        |          |           | &#10003;      |
 |               | src_ip                 | Legacy | &#10003; | &#10003;  |               |
 |               | trigger_entity         |        |          |           |               |

@@ -29,11 +29,7 @@ The possible fields for this activity type will vary depending on whether the ac
 service-create:success
 ----------------------
 
-| Field                | Core | Detection | Informational |
-| -------------------- | ---- | --------- | ------------- |
-| local_user_name      |      |           |               |
-| process_path         |      | &#10003;  |               |
-| process_command_line |      | &#10003;  |               |
-| user                 |      | &#10003;  |               |
+There are no fields for this activity type.
+
 
 A failure activity is not currently supported for this activity-type.

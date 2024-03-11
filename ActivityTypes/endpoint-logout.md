@@ -29,12 +29,11 @@ The possible fields for this activity type will vary depending on whether the ac
 endpoint-logout:success
 -----------------------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| login_type       |          | &#10003;  |               |
-| domain           |          |           |               |
-| domain_user_name |          |           |               |
-| logon_type       |          | &#10003;  |               |
-| user             | &#10003; | &#10003;  |               |
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| login_type |          | &#10003;  |               |
+| domain     |          |           |               |
+| logon_type |          | &#10003;  |               |
+| user       | &#10003; | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.

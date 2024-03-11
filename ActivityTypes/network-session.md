@@ -29,9 +29,8 @@ The possible fields for this activity type will vary depending on whether the ac
 network-session:success
 -----------------------
 
-| Field | Core | Detection | Informational |
-| ----- | ---- | --------- | ------------- |
-| cid   |      |           | &#10003;      |
+There are no fields for this activity type.
+
 
 network-session:fail
 --------------------

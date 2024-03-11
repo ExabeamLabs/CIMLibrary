@@ -14,11 +14,6 @@ Parameters
 | Activity Type | email_rule-create |
 | Pretty Name   | Email_rule Create |
 
-Legacy Names
-------------
-| Success          | Fail |
-| ---------------- | ---- |
-| app-activity<br> |      |
 
 Fields
 ------
@@ -29,23 +24,13 @@ The possible fields for this activity type will vary depending on whether the ac
 email_rule-create:success
 -------------------------
 
-| Field               | Core | Detection | Informational |
-| ------------------- | ---- | --------- | ------------- |
-| dest_email_domain   |      | &#10003;  |               |
-| dest_user_full_name |      |           | &#10003;      |
-| email_domain        |      | &#10003;  |               |
-| src_email_domain    |      |           | &#10003;      |
-| operation           |      | &#10003;  |               |
+There are no fields for this activity type.
+
 
 email_rule-create:fail
 ----------------------
 
-| Field               | Core | Detection | Informational |
-| ------------------- | ---- | --------- | ------------- |
-| dest_email_domain   |      | &#10003;  |               |
-| failure_code        |      | &#10003;  |               |
-| dest_user_full_name |      |           | &#10003;      |
-| email_domain        |      | &#10003;  |               |
-| failure_reason      |      | &#10003;  |               |
-| src_email_domain    |      |           | &#10003;      |
-| operation           |      | &#10003;  |               |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |

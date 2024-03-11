@@ -4,7 +4,7 @@ symantec siteminder
 Expression
 ----------
 
-product = "symantec siteminder"
+product = "siteminder"
 
 Fields
 ------

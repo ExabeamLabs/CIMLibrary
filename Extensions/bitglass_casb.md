@@ -9,13 +9,12 @@ product = "bitglass casb"
 Fields
 ------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| os               |          | &#10003;  |               |
-| domain           |          | &#10003;  |               |
-| domain_user_name |          |           |               |
-| user             | &#10003; | &#10003;  |               |
-| user_agent       |          | &#10003;  |               |
+| Field      | Core     | Detection | Informational |
+| ---------- | -------- | --------- | ------------- |
+| os         |          | &#10003;  |               |
+| domain     |          | &#10003;  |               |
+| user       | &#10003; | &#10003;  |               |
+| user_agent |          | &#10003;  |               |
 
 Activity Types
 --------------

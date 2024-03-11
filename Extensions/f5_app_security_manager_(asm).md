@@ -19,7 +19,6 @@ Activity Types
 | alert-trigger | country           |        |          |           |               |
 |               | malware_file_name |        |          |           |               |
 |               | policy_name       |        |          |           |               |
-|               | domain_user_name  |        |          |           |               |
 |               | src_ip            | Legacy | &#10003; | &#10003;  |               |
 |               | src_port          | Legacy |          |           | &#10003;      |
 |               | protocol          | Legacy |          | &#10003;  |               |

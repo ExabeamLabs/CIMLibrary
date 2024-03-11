@@ -35,7 +35,6 @@ Activity Types
 |                         | dest_host                    |         |          | &#10003;  |               |
 |                         | session_id                   |         |          |           | &#10003;      |
 |                         | user_uids                    |         |          |           | &#10003;      |
-|                         | domain_user_name             |         |          |           |               |
 |                         | trans_id                     |         |          |           | &#10003;      |
 |                         | user                         | Legacy  | &#10003; |           |               |
 | dns-request             | query_id                     |         |          |           | &#10003;      |
@@ -81,22 +80,20 @@ Activity Types
 |                         | result_code                  | Default |          |           | &#10003;      |
 |                         | src_host                     | Default |          | &#10003;  |               |
 |                         | dest_port                    | Default |          |           | &#10003;      |
-| file-delete             | app                          |         |          |           |               |
+| file-delete             | src_port                     |         |          | &#10003;  |               |
+|                         | app                          |         |          |           |               |
+|                         | event_code                   |         |          | &#10003;  |               |
 |                         | mime                         |         |          |           |               |
-|                         | local_user_name              |         |          |           |               |
+|                         | dest_host                    | Legacy  |          | &#10003;  |               |
 |                         | session_id                   |         |          |           |               |
 |                         | src_host                     | Legacy  |          | &#10003;  |               |
-|                         | share_path                   |         |          | &#10003;  |               |
-|                         | src_port                     |         |          | &#10003;  |               |
-|                         | event_code                   |         |          | &#10003;  |               |
-|                         | dest_host                    | Legacy  |          | &#10003;  |               |
 |                         | user                         | Legacy  | &#10003; | &#10003;  |               |
 |                         | operation                    |         |          |           |               |
 |                         | dest_port                    |         |          | &#10003;  |               |
+|                         | share_path                   |         |          | &#10003;  |               |
 |                         | object                       |         |          |           |               |
 | file-read               | timedout                     |         |          |           | &#10003;      |
 |                         | mime                         |         |          | &#10003;  |               |
-|                         | local_user_name              |         |          |           |               |
 |                         | extracted                    |         |          | &#10003;  |               |
 |                         | duration                     |         |          |           | &#10003;      |
 |                         | analyzers                    |         |          |           | &#10003;      |
@@ -126,23 +123,21 @@ Activity Types
 |                         | user                         | Legacy  | &#10003; | &#10003;  |               |
 |                         | extracted_size               |         |          | &#10003;  |               |
 |                         | object                       |         |          |           |               |
-| file-write              | app                          |         |          |           |               |
+| file-write              | src_port                     |         |          | &#10003;  |               |
+|                         | app                          |         |          |           |               |
+|                         | event_code                   |         |          | &#10003;  |               |
 |                         | mime                         |         |          |           |               |
-|                         | local_user_name              |         |          |           |               |
+|                         | dest_host                    | Legacy  |          | &#10003;  |               |
 |                         | session_id                   |         |          |           |               |
 |                         | src_host                     |         |          |           |               |
-|                         | share_path                   |         |          | &#10003;  |               |
-|                         | src_port                     |         |          | &#10003;  |               |
-|                         | event_code                   |         |          | &#10003;  |               |
-|                         | dest_host                    | Legacy  |          | &#10003;  |               |
 |                         | user                         | Legacy  | &#10003; | &#10003;  |               |
 |                         | operation                    |         |          |           |               |
 |                         | dest_port                    |         |          | &#10003;  |               |
+|                         | share_path                   |         |          | &#10003;  |               |
 |                         | object                       |         |          |           |               |
 | ftp-traffic             | app                          | Default |          |           | &#10003;      |
 |                         | src_port                     | Default |          |           | &#10003;      |
 |                         | mime                         | Default |          |           | &#10003;      |
-|                         | local_user_name              |         |          |           |               |
 |                         | dest_host                    | Default |          | &#10003;  |               |
 |                         | session_id                   | Default |          |           | &#10003;      |
 |                         | src_host                     | Default |          | &#10003;  |               |

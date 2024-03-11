@@ -22,7 +22,6 @@ Activity Types
 |               | domain               |        |          |           |               |
 |               | hash_md5             |        |          |           |               |
 |               | event_name           |        |          |           |               |
-|               | domain_user_name     |        |          |           |               |
 |               | process_command_line |        |          |           |               |
 |               | user                 | Legacy |          | &#10003;  |               |
 | file-write    | event_code           |        |          |           | &#10003;      |
@@ -30,7 +29,6 @@ Activity Types
 |               | dest_ip              |        | &#10003; | &#10003;  |               |
 |               | domain               |        |          |           | &#10003;      |
 |               | event_name           |        |          |           | &#10003;      |
-|               | domain_user_name     |        |          |           |               |
 |               | operation            |        |          |           | &#10003;      |
 |               | user                 | Legacy | &#10003; | &#10003;  |               |
 | http-session  |                      |        |          |           |               |

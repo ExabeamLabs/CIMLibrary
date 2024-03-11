@@ -20,7 +20,6 @@ Activity Types
 |                             | extension         |         |          |           |               |
 |                             | file_name         | Legacy  | &#10003; |           |               |
 |                             | last_name         |         |          |           |               |
-|                             | domain_user_name  |         |          |           |               |
 |                             | src_host          | Legacy  | &#10003; | &#10003;  |               |
 |                             | target_domain     |         |          |           |               |
 |                             | url               |         |          |           |               |

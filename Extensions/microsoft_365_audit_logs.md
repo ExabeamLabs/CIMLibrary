@@ -9,12 +9,11 @@ product = "m365 audit logs"
 Fields
 ------
 
-| Field            | Core | Detection | Informational |
-| ---------------- | ---- | --------- | ------------- |
-| domain           |      |           | &#10003;      |
-| domain_user_name |      |           |               |
-| user             |      |           | &#10003;      |
-| operation        |      |           | &#10003;      |
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| domain    |      |           | &#10003;      |
+| user      |      |           | &#10003;      |
+| operation |      |           | &#10003;      |
 
 Activity Types
 --------------

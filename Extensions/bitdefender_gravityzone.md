@@ -21,7 +21,6 @@ Activity Types
 |               | method                     |        |          |           |               |
 |               | count                      |        |          |           |               |
 |               | detection_level            |        |          |           |               |
-|               | domain_user_name           |        |          |           |               |
 |               | suid                       |        |          |           |               |
 |               | url                        |        |          |           |               |
 |               | result                     |        |          |           |               |

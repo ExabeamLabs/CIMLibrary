@@ -9,17 +9,16 @@ product = "postgresql"
 Fields
 ------
 
-| Field              | Core | Detection | Informational |
-| ------------------ | ---- | --------- | ------------- |
-| src_ip             |      |           | &#10003;      |
-| db_name            |      |           | &#10003;      |
-| additional_info    |      |           | &#10003;      |
-| db_user            |      |           | &#10003;      |
-| alert_id           |      |           | &#10003;      |
-| event_name         |      |           | &#10003;      |
-| src_host           |      |           | &#10003;      |
-| dtz                |      |           | &#10003;      |
-| database_user_name |      |           |               |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_ip          |      |           | &#10003;      |
+| db_name         |      |           | &#10003;      |
+| additional_info |      |           | &#10003;      |
+| db_user         |      |           | &#10003;      |
+| alert_id        |      |           | &#10003;      |
+| event_name      |      |           | &#10003;      |
+| src_host        |      |           | &#10003;      |
+| dtz             |      |           | &#10003;      |
 
 Activity Types
 --------------

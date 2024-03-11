@@ -4,7 +4,7 @@ sensormatik
 Expression
 ----------
 
-product = "sensormatik"
+product = sensormatik"
 
 Fields
 ------

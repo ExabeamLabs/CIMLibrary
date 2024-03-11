@@ -25,6 +25,5 @@ Activity Types
 |               | domain            |        |          |           |               |
 |               | file_dir          | Legacy |          |           | &#10003;      |
 |               | user_sid          |        |          |           |               |
-|               | domain_user_name  |        |          |           |               |
 |               | user              | Legacy |          | &#10003;  |               |
 

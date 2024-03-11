@@ -20,7 +20,6 @@ Activity Types
 |               | additional_info |        |          |           |               |
 |               | process_name    | Legacy |          | &#10003;  |               |
 |               | alert_id        | Legacy |          |           | &#10003;      |
-|               | local_user_name |        |          |           |               |
 |               | dest_host       | Legacy |          | &#10003;  |               |
 |               | malware_url     |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |

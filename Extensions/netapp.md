@@ -20,7 +20,6 @@ Activity Types
 |               | access           |        |          |           |               |
 |               | file_name        | Legacy | &#10003; |           |               |
 |               | file_dir         | Legacy |          |           | &#10003;      |
-|               | domain_user_name |        |          |           |               |
 |               | object_id        |        |          |           |               |
 |               | object_server    |        |          |           |               |
 |               | result           |        |          |           |               |

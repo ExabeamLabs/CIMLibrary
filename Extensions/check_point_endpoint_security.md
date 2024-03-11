@@ -21,7 +21,6 @@ Activity Types
 |               | malware_file_name |        |          |           |               |
 |               | additional_info   |        |          |           |               |
 |               | dest_ip           | Legacy | &#10003; | &#10003;  |               |
-|               | local_user_name   |        |          |           |               |
 |               | dest_host         | Legacy |          | &#10003;  |               |
 |               | malware_file_type |        |          |           |               |
 |               | src_host          | Legacy | &#10003; | &#10003;  |               |

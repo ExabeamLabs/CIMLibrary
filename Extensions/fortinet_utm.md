@@ -21,7 +21,6 @@ Activity Types
 |                         | protocol        | Legacy  |          | &#10003;  |               |
 |                         | additional_info |         |          |           |               |
 |                         | dest_ip         | Legacy  | &#10003; | &#10003;  |               |
-|                         | local_user_name |         |          |           |               |
 |                         | action          | Legacy  |          |           | &#10003;      |
 |                         | src_host        | Legacy  | &#10003; | &#10003;  |               |
 |                         | user            | Legacy  |          | &#10003;  |               |
