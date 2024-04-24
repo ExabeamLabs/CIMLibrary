@@ -23,6 +23,7 @@ Activity Types
 | app-activity         | additional_info  | Default |      |           | &#10003;      |
 |                      | domain           | Default |      |           | &#10003;      |
 |                      | event_name       | Default |      |           | &#10003;      |
+|                      | domain_user_name |         |      |           |               |
 |                      | category         | Default |      |           | &#10003;      |
 |                      | user             | Default |      | &#10003;  |               |
 |                      | user_agent       | Default |      |           | &#10003;      |

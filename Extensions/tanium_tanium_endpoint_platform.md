@@ -21,6 +21,7 @@ Activity Types
 |               | additional_info      |        |          |           |               |
 |               | process_name         | Legacy |          | &#10003;  |               |
 |               | alert_id             | Legacy |          |           | &#10003;      |
+|               | local_user_name      |        |          |           |               |
 |               | process_command_line |        |          |           |               |
 |               | src_host             | Legacy | &#10003; | &#10003;  |               |
 |               | user                 | Legacy |          | &#10003;  |               |

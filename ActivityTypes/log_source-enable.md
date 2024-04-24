@@ -9,7 +9,7 @@ Parameters
 ----------
 | Parameter     | Value             |
 | ------------- | ----------------- |
-| Subject       | log               |
+| Subject       | log_source        |
 | Activity      | enable            |
 | Activity Type | log_source-enable |
 | Pretty Name   | Log Source Enable |

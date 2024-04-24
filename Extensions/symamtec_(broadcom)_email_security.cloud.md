@@ -18,6 +18,7 @@ Activity Types
 | ------------- | ---------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | email_attachment |        |          |           |               |
 |               | process          |        |          |           |               |
+|               | local_user_name  |        |          |           |               |
 |               | src_host         | Legacy | &#10003; | &#10003;  |               |
 |               | result           |        |          |           |               |
 |               | src_ip           | Legacy | &#10003; | &#10003;  |               |

@@ -4,7 +4,7 @@ citrix web app firewall
 Expression
 ----------
 
-product = "citrix appfw"
+product = "citrix web app firewall"
 
 Fields
 ------

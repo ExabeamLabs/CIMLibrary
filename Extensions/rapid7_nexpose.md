@@ -22,6 +22,7 @@ Activity Types
 |               | additional_info |        |          |           |               |
 |               | process_name    | Legacy |          | &#10003;  |               |
 |               | hash_md5        |        |          |           |               |
+|               | local_user_name |        |          |           |               |
 |               | malware_url     |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | user            | Legacy |          | &#10003;  |               |

@@ -34,6 +34,8 @@ http-session:success
 | referrer           |      |           | &#10003;      |
 | method             |      | &#10003;  |               |
 | bytes_out          |      | &#10003;  |               |
+| is_net_storage     |      | &#10003;  |               |
+| is_job_search      |      | &#10003;  |               |
 | bytes_in           |      | &#10003;  |               |
 | mime               |      | &#10003;  |               |
 | action             |      |           | &#10003;      |

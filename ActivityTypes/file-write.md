@@ -29,9 +29,11 @@ The possible fields for this activity type will vary depending on whether the ac
 file-write:success
 ------------------
 
-| Field  | Core | Detection | Informational |
-| ------ | ---- | --------- | ------------- |
-| is_dok |      | &#10003;  |               |
+| Field                 | Core | Detection | Informational |
+| --------------------- | ---- | --------- | ------------- |
+| is_dok                |      | &#10003;  |               |
+| is_peripheral_storage |      | &#10003;  |               |
+| cid                   |      |           | &#10003;      |
 
 file-write:fail
 ---------------
@@ -41,3 +43,4 @@ file-write:fail
 | failure_code   |      | &#10003;  |               |
 | is_dok         |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| cid            |      |           | &#10003;      |

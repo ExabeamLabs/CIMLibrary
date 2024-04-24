@@ -29,13 +29,19 @@ The possible fields for this activity type will vary depending on whether the ac
 network-traffic:success
 -----------------------
 
-There are no fields for this activity type.
-
+| Field                 | Core | Detection | Informational |
+| --------------------- | ---- | --------- | ------------- |
+| dest_network_type     |      | &#10003;  |               |
+| dest_external_country |      | &#10003;  |               |
+| cid                   |      |           | &#10003;      |
 
 network-traffic:fail
 --------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
+| Field                 | Core | Detection | Informational |
+| --------------------- | ---- | --------- | ------------- |
+| failure_code          |      | &#10003;  |               |
+| dest_network_type     |      | &#10003;  |               |
+| dest_external_country |      | &#10003;  |               |
+| failure_reason        |      | &#10003;  |               |
+| cid                   |      |           | &#10003;      |

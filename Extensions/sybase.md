@@ -9,12 +9,13 @@ product = "sybase"
 Fields
 ------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| db_name         |      |           | &#10003;      |
-| additional_info |      |           | &#10003;      |
-| db_user         |      |           | &#10003;      |
-| db_object       |      |           | &#10003;      |
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| db_name            |      |           | &#10003;      |
+| additional_info    |      |           | &#10003;      |
+| db_user            |      |           | &#10003;      |
+| db_object          |      |           | &#10003;      |
+| database_user_name |      |           |               |
 
 Activity Types
 --------------

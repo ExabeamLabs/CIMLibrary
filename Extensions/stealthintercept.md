@@ -9,13 +9,14 @@ product = "stealthintercept"
 Fields
 ------
 
-| Field    | Core | Detection | Informational |
-| -------- | ---- | --------- | ------------- |
-| src_ip   |      | &#10003;  |               |
-| dest_ip  |      | &#10003;  |               |
-| domain   |      | &#10003;  |               |
-| src_host |      | &#10003;  |               |
-| user     |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| src_ip           |      | &#10003;  |               |
+| dest_ip          |      | &#10003;  |               |
+| domain           |      | &#10003;  |               |
+| domain_user_name |      |           |               |
+| src_host         |      | &#10003;  |               |
+| user             |      | &#10003;  |               |
 
 Activity Types
 --------------

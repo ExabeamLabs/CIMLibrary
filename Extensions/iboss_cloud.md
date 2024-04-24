@@ -4,7 +4,7 @@ iboss cloud
 Expression
 ----------
 
-product = iboss secure web gateway"
+product = "iboss cloud"
 
 Fields
 ------

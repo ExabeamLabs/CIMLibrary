@@ -29,9 +29,10 @@ The possible fields for this activity type will vary depending on whether the ac
 database-query:success
 ----------------------
 
-| Field    | Core | Detection | Informational |
-| -------- | ---- | --------- | ------------- |
-| db_query |      | &#10003;  |               |
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| db_query      |      | &#10003;  |               |
+| response_size |      | &#10003;  |               |
 
 database-query:fail
 -------------------
@@ -41,3 +42,4 @@ database-query:fail
 | failure_code   |      | &#10003;  |               |
 | db_query       |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| response_size  |      | &#10003;  |               |

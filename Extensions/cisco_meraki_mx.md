@@ -19,6 +19,7 @@ Activity Types
 | alert-trigger | app             |        |          |           |               |
 |               | src_mac         |        |          |           |               |
 |               | process         |        |          |           |               |
+|               | local_user_name |        |          |           |               |
 |               | event_subtype   |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | result          |        |          |           |               |

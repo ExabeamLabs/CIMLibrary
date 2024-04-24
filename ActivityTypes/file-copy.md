@@ -24,21 +24,23 @@ The possible fields for this activity type will vary depending on whether the ac
 file-copy:success
 -----------------
 
-| Field         | Core | Detection | Informational |
-| ------------- | ---- | --------- | ------------- |
-| src_file_name |      | &#10003;  |               |
-| src_file_ext  |      | &#10003;  |               |
-| src_file_dir  |      |           | &#10003;      |
-| src_file_path |      | &#10003;  |               |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_file_name   |      | &#10003;  |               |
+| src_file_ext    |      | &#10003;  |               |
+| src_file_dir    |      | &#10003;  | &#10003;      |
+| storage_account |      | &#10003;  |               |
+| src_file_path   |      | &#10003;  |               |
 
 file-copy:fail
 --------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| src_file_name  |      | &#10003;  |               |
-| failure_code   |      | &#10003;  |               |
-| src_file_ext   |      | &#10003;  |               |
-| src_file_dir   |      |           | &#10003;      |
-| failure_reason |      | &#10003;  |               |
-| src_file_path  |      | &#10003;  |               |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| src_file_name   |      | &#10003;  |               |
+| failure_code    |      | &#10003;  |               |
+| src_file_ext    |      | &#10003;  |               |
+| src_file_dir    |      | &#10003;  | &#10003;      |
+| failure_reason  |      | &#10003;  |               |
+| storage_account |      | &#10003;  |               |
+| src_file_path   |      | &#10003;  |               |

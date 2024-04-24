@@ -24,15 +24,19 @@ The possible fields for this activity type will vary depending on whether the ac
 app-logout:success
 ------------------
 
-| Field | Core     | Detection | Informational |
-| ----- | -------- | --------- | ------------- |
-| user  | &#10003; |           |               |
+| Field           | Core     | Detection | Informational |
+| --------------- | -------- | --------- | ------------- |
+| local_user_name |          |           |               |
+| user            | &#10003; |           |               |
+| cid             |          |           | &#10003;      |
 
 app-logout:fail
 ---------------
 
-| Field          | Core     | Detection | Informational |
-| -------------- | -------- | --------- | ------------- |
-| failure_code   |          | &#10003;  |               |
-| failure_reason |          | &#10003;  |               |
-| user           | &#10003; |           |               |
+| Field           | Core     | Detection | Informational |
+| --------------- | -------- | --------- | ------------- |
+| failure_code    |          | &#10003;  |               |
+| local_user_name |          |           |               |
+| failure_reason  |          | &#10003;  |               |
+| user            | &#10003; |           |               |
+| cid             |          |           | &#10003;      |

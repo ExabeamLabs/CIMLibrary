@@ -18,6 +18,7 @@ Activity Types
 | ------------- | --------------- | ------ | -------- | --------- | ------------- |
 | alert-trigger | file_name       | Legacy | &#10003; |           |               |
 |               | file_dir        | Legacy |          |           | &#10003;      |
+|               | local_user_name |        |          |           |               |
 |               | src_host        | Legacy | &#10003; | &#10003;  |               |
 |               | result          |        |          |           |               |
 |               | src_ip          | Legacy | &#10003; | &#10003;  |               |

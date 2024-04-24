@@ -19,6 +19,7 @@ Activity Types
 | alert-trigger | app                      |        |          |           |               |
 |               | event_name_hub_namespace |        |          |           |               |
 |               | azure_category           |        |          |           |               |
+|               | domain_user_name         |        |          |           |               |
 |               | src_host                 | Legacy | &#10003; | &#10003;  |               |
 |               | result                   |        |          |           |               |
 |               | src_ip                   | Legacy | &#10003; | &#10003;  |               |

@@ -4,7 +4,7 @@ symantec web security service
 Expression
 ----------
 
-product = "symantec wss"
+product = "symantec web security service"
 
 Fields
 ------

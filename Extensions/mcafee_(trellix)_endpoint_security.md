@@ -20,6 +20,7 @@ Activity Types
 |               | malware_file_name |        |          |           |               |
 |               | os                |        |          |           |               |
 |               | file_name         | Legacy | &#10003; |           |               |
+|               | local_user_name   |        |          |           |               |
 |               | src_host          | Legacy | &#10003; | &#10003;  |               |
 |               | result            |        |          |           |               |
 |               | file_ext          |        |          |           |               |

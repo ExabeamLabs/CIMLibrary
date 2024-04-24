@@ -29,13 +29,17 @@ The possible fields for this activity type will vary depending on whether the ac
 share-access:success
 --------------------
 
-There are no fields for this activity type.
-
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| src_port  |      | &#10003;  |               |
+| file_path |      | &#10003;  |               |
 
 share-access:fail
 -----------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| src_port       |      | &#10003;  |               |
+| file_path      |      | &#10003;  |               |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |

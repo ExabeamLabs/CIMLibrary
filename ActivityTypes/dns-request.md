@@ -29,8 +29,10 @@ The possible fields for this activity type will vary depending on whether the ac
 dns-request:success
 -------------------
 
-There are no fields for this activity type.
-
+| Field    | Core | Detection | Informational |
+| -------- | ---- | --------- | ------------- |
+| bytes    |      | &#10003;  |               |
+| src_host |      | &#10003;  |               |
 
 dns-request:fail
 ----------------
@@ -38,4 +40,6 @@ dns-request:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| bytes          |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| src_host       |      | &#10003;  |               |

@@ -29,7 +29,8 @@ The possible fields for this activity type will vary depending on whether the ac
 rdp-traffic:success
 -------------------
 
-There are no fields for this activity type.
-
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| tgs_service_name |      | &#10003;  |               |
 
 A failure activity is not currently supported for this activity-type.
