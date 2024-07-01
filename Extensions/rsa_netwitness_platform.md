@@ -14,7 +14,6 @@ Fields
 | role         |      |           | &#10003;      |
 | method       |      |           | &#10003;      |
 | group_name   |      |           | &#10003;      |
-| action_type  |      |           | &#10003;      |
 | service_name |      |           | &#10003;      |
 | session_id   |      |           | &#10003;      |
 | external_id  |      |           | &#10003;      |
@@ -23,6 +22,7 @@ Fields
 | src_port     |      |           | &#10003;      |
 | process_name |      |           | &#10003;      |
 | event_name   |      |           | &#10003;      |
+| operation    |      |           | &#10003;      |
 | user_agent   |      |           | &#10003;      |
 | query_string |      |           | &#10003;      |
 

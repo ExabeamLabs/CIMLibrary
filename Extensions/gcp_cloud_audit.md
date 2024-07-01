@@ -52,8 +52,10 @@ Activity Types
 |                        | added_keys             |         |      | &#10003;  |               |
 | endpoint-screenshot    |                        |         |      |           |               |
 | file-list              |                        |         |      |           |               |
-| file-permission-modify | added_role_name        |         |      |           | &#10003;      |
+| file-permission-modify | acl_content            |         |      | &#10003;  |               |
+|                        | added_role_name        |         |      |           | &#10003;      |
 |                        | added_member           |         |      |           | &#10003;      |
+|                        | bucket_name            |         |      | &#10003;  |               |
 |                        | added_member_type      |         |      |           | &#10003;      |
 |                        | policy_bindings        |         |      | &#10003;  |               |
 |                        | policy_delta           |         |      | &#10003;  |               |
@@ -66,6 +68,7 @@ Activity Types
 | file-write             |                        |         |      |           |               |
 | function-create        |                        |         |      |           |               |
 | image-create           | src_resource           | Default |      |           | &#10003;      |
+|                        | image_publisher        |         |      | &#10003;  |               |
 | policy-modify          | added_role_name        | Default |      |           | &#10003;      |
 |                        | added_member           | Default |      |           | &#10003;      |
 |                        | added_member_type      | Default |      |           | &#10003;      |

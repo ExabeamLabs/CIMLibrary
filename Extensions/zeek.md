@@ -28,6 +28,7 @@ Activity Types
 |                         | src_host                     | Legacy  | &#10003; | &#10003;  |               |
 |                         | dest_port                    | Legacy  |          | &#10003;  |               |
 | dhcp-session            | duration                     |         |          | &#10003;  |               |
+|                         | transaction_id               |         |          |           | &#10003;      |
 |                         | src_mac                      |         |          |           | &#10003;      |
 |                         | dhcp_type                    |         |          | &#10003;  |               |
 |                         | lease_time                   |         |          | &#10003;  |               |
@@ -36,15 +37,14 @@ Activity Types
 |                         | session_id                   |         |          |           | &#10003;      |
 |                         | user_uids                    |         |          |           | &#10003;      |
 |                         | domain_user_name             |         |          |           |               |
-|                         | trans_id                     |         |          |           | &#10003;      |
 |                         | user                         | Legacy  | &#10003; |           |               |
 | dns-request             | query_id                     |         |          |           | &#10003;      |
-| dns-response            | AA                           |         |          |           | &#10003;      |
+| dns-response            | transaction_id               |         |          |           | &#10003;      |
+|                         | AA                           |         |          |           | &#10003;      |
 |                         | TTLs                         |         |          |           | &#10003;      |
 |                         | qclass_name                  |         |          |           | &#10003;      |
 |                         | RD                           |         |          |           | &#10003;      |
 |                         | rtt                          |         |          |           | &#10003;      |
-|                         | trans_id                     |         |          |           | &#10003;      |
 |                         | Z                            |         |          |           | &#10003;      |
 |                         | qclass                       |         |          |           | &#10003;      |
 |                         | user_uid                     |         |          |           | &#10003;      |
@@ -195,12 +195,12 @@ Activity Types
 |                         | server                       |         |          | &#10003;  |               |
 |                         | host_key_alg                 |         |          | &#10003;  |               |
 |                         | remote_location_longitude    |         |          |           | &#10003;      |
-|                         | compression_alg              |         |          |           | &#10003;      |
 |                         | version                      |         |          | &#10003;  |               |
 |                         | remote_location_region       |         |          | &#10003;  |               |
 |                         | client_ssh_version           |         |          | &#10003;  |               |
 |                         | host_key                     |         |          | &#10003;  |               |
 |                         | server_ssh_version           |         |          | &#10003;  |               |
+|                         | compression_algotithm        |         |          |           | &#10003;      |
 |                         | remote_location_city         |         |          |           | &#10003;      |
 |                         | remote_location_country_code |         |          | &#10003;  |               |
 |                         | client                       |         |          | &#10003;  |               |

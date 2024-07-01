@@ -66,7 +66,6 @@ Activity Types
 |                           | detection_source_alias        |         |          |           |               |
 |                           | process_owner                 |         |          |           |               |
 |                           | url                           |         |          |           |               |
-|                           | actor                         |         |          |           |               |
 |                           | hash_sha256                   |         |          |           |               |
 |                           | bytes                         |         |          |           |               |
 |                           | file_exposure_changed_to      |         |          |           |               |
@@ -120,7 +119,6 @@ Activity Types
 |                           | detection_source_alias        |         |          |           |               |
 |                           | process_owner                 |         |          |           |               |
 |                           | url                           |         |          |           |               |
-|                           | actor                         |         |          |           |               |
 |                           | hash_sha256                   |         |          |           |               |
 |                           | bytes                         | Legacy  |          |           |               |
 |                           | file_exposure_changed_to      |         |          |           |               |
@@ -174,7 +172,6 @@ Activity Types
 |                           | detection_source_alias        |         |          |           |               |
 |                           | process_owner                 |         |          |           |               |
 |                           | url                           |         |          |           |               |
-|                           | actor                         |         |          |           |               |
 |                           | hash_sha256                   |         |          |           |               |
 |                           | bytes                         | Legacy  |          |           |               |
 |                           | file_exposure_changed_to      |         |          |           |               |
@@ -228,7 +225,6 @@ Activity Types
 |                           | detection_source_alias        |         |          |           |               |
 |                           | process_owner                 |         |          |           |               |
 |                           | url                           |         |          |           |               |
-|                           | actor                         |         |          |           |               |
 |                           | hash_sha256                   |         |          |           |               |
 |                           | bytes                         |         |          |           |               |
 |                           | file_exposure_changed_to      |         |          |           |               |
@@ -282,7 +278,6 @@ Activity Types
 |                           | detection_source_alias        |         |          |           |               |
 |                           | process_owner                 |         |          |           |               |
 |                           | url                           |         |          |           |               |
-|                           | actor                         |         |          |           |               |
 |                           | hash_sha256                   |         |          |           |               |
 |                           | bytes                         | Legacy  |          |           |               |
 |                           | file_exposure_changed_to      |         |          |           |               |

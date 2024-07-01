@@ -357,7 +357,6 @@ This secondary interface defines the activity type element. It describes the spe
  * [rule-disable](rule-disable.md)
  * [rule-enable](rule-enable.md)
  * [rule-modify](rule-modify.md)
- * [rule-trigger-beta](rule-trigger-beta.md)
  * [rule-trigger](rule-trigger.md)
  * [scheduled_task-create](scheduled_task-create.md)
  * [scheduled_task-delete](scheduled_task-delete.md)

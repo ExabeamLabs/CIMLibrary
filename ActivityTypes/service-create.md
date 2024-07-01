@@ -31,9 +31,11 @@ service-create:success
 
 | Field                | Core | Detection | Informational |
 | -------------------- | ---- | --------- | ------------- |
+| src_zone             |      |           |               |
 | local_user_name      |      |           |               |
 | process_path         |      | &#10003;  |               |
 | process_command_line |      | &#10003;  |               |
 | user                 |      | &#10003;  |               |
+| dest_zone            |      |           |               |
 
 A failure activity is not currently supported for this activity-type.

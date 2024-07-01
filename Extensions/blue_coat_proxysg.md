@@ -20,11 +20,11 @@ Activity Types
 | --------------- | ---------------- | ------- | ---- | --------- | ------------- |
 | http-session    | country          | Default |      |           | &#10003;      |
 |                 | protocol         | Default |      |           | &#10003;      |
-|                 | app_user         | Default |      |           | &#10003;      |
 |                 | additional_info  | Default |      |           | &#10003;      |
 |                 | domain           | Default |      |           | &#10003;      |
 |                 | browser          | Default |      |           | &#10003;      |
 |                 | resource_id      | Default |      |           | &#10003;      |
+|                 | dest_user        | Default |      |           | &#10003;      |
 |                 | categories       | Default |      |           | &#10003;      |
 |                 | proxy_action     | Default |      |           | &#10003;      |
 |                 | proxy_ip         | Default |      |           | &#10003;      |

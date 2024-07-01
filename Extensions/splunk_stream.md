@@ -22,11 +22,11 @@ Activity Types
 
 | Activity Type | Field          | Status | Core | Detection | Informational |
 | ------------- | -------------- | ------ | ---- | --------- | ------------- |
-| dhcp-session  | ip_lease_time  |        |      |           |               |
+| dhcp-session  | transaction_id |        |      |           |               |
+|               | ip_lease_time  |        |      |           |               |
 |               | domain         |        |      |           |               |
 |               | dns_ip_flow    |        |      |           |               |
 |               | event_name     |        |      |           |               |
-|               | trans_id       |        |      |           |               |
 |               | router_subnet  |        |      |           |               |
 |               | router_ip_flow |        |      |           |               |
 | dns-response  | response_ttl   |        |      |           |               |

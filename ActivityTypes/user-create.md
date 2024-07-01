@@ -31,9 +31,11 @@ user-create:success
 
 | Field           | Core | Detection | Informational |
 | --------------- | ---- | --------- | ------------- |
+| src_zone        |      |           |               |
 | local_user_name |      |           |               |
 | src_host        |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
+| dest_zone       |      |           |               |
 
 user-create:fail
 ----------------
@@ -41,7 +43,9 @@ user-create:fail
 | Field           | Core | Detection | Informational |
 | --------------- | ---- | --------- | ------------- |
 | failure_code    |      | &#10003;  |               |
+| src_zone        |      |           |               |
 | local_user_name |      |           |               |
 | failure_reason  |      | &#10003;  |               |
 | src_host        |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
+| dest_zone       |      |           |               |

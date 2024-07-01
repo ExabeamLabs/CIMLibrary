@@ -24,13 +24,15 @@ The possible fields for this activity type will vary depending on whether the ac
 image-create:success
 --------------------
 
-There are no fields for this activity type.
-
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| image_publisher |      |           | &#10003;      |
 
 image-create:fail
 -----------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
+| Field           | Core | Detection | Informational |
+| --------------- | ---- | --------- | ------------- |
+| failure_code    |      | &#10003;  |               |
+| image_publisher |      |           | &#10003;      |
+| failure_reason  |      | &#10003;  |               |

@@ -96,6 +96,8 @@ Activity Types
 | endpoint-login            | resource_id             | Default |          |           | &#10003;      |
 |                           | dest_user               | Default |          | &#10003;  |               |
 | endpoint-modify           | userdata                |         |          | &#10003;  |               |
+|                           | modified_keys           |         |          | &#10003;  |               |
+|                           | added_keys              |         |          | &#10003;  |               |
 |                           | resource_id             |         |          |           | &#10003;      |
 | endpoint-screenshot       | resource_id             | Default |          |           | &#10003;      |
 | file-copy                 | bucket_arn              | Default |          |           | &#10003;      |
@@ -107,14 +109,14 @@ Activity Types
 |                           | bucket_host             | Default |          |           | &#10003;      |
 |                           | src_file_arn            | Default |          |           | &#10003;      |
 | file-list                 |                         |         |          |           |               |
-| file-permission-modify    | acl_content             |         |          |           |               |
+| file-permission-modify    | acl_content             |         |          | &#10003;  |               |
 |                           | allowed_ids             |         |          |           |               |
 |                           | allowed_user_types      |         |          |           |               |
 |                           | bucket_arn              |         |          |           |               |
 |                           | bytes_out               |         |          |           |               |
 |                           | allowed_uris            |         |          |           |               |
 |                           | owner_id                |         |          |           |               |
-|                           | bucket_name             |         |          |           |               |
+|                           | bucket_name             |         |          | &#10003;  |               |
 |                           | file_arn                |         |          |           |               |
 |                           | bucket_host             |         |          |           |               |
 |                           | allowed_permissions     |         |          |           |               |
@@ -145,6 +147,7 @@ Activity Types
 | group-list                |                         |         |          |           |               |
 | group-member-add          |                         |         |          |           |               |
 | image-create              | src_resource            | Default |          |           | &#10003;      |
+|                           | image_publisher         |         |          | &#10003;  |               |
 |                           | description             | Default |          |           | &#10003;      |
 |                           | resource_id             | Default |          |           | &#10003;      |
 | image-list                |                         |         |          |           |               |

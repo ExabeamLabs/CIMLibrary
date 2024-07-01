@@ -29,14 +29,16 @@ The possible fields for this activity type will vary depending on whether the ac
 user-switch:success
 -------------------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| dest_user_type   |          | &#10003;  |               |
-| user_type        |          | &#10003;  |               |
-| domain           |          |           | &#10003;      |
-| domain_user_name |          |           |               |
-| src_host         |          | &#10003;  |               |
-| user             | &#10003; | &#10003;  |               |
+| Field                   | Core     | Detection | Informational |
+| ----------------------- | -------- | --------- | ------------- |
+| dest_user_type          |          | &#10003;  |               |
+| source_user_entity_id   |          |           |               |
+| user_type               |          | &#10003;  |               |
+| source_device_entity_id |          |           |               |
+| domain                  |          |           | &#10003;      |
+| domain_user_name        |          |           |               |
+| src_host                |          | &#10003;  |               |
+| user                    | &#10003; | &#10003;  |               |
 
 user-switch:fail
 ----------------

@@ -24,13 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 role-permission-modify:success
 ------------------------------
 
-There are no fields for this activity type.
-
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| policy_content |      | &#10003;  |               |
+| identities     |      | &#10003;  |               |
 
 role-permission-modify:fail
 ---------------------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| policy_content |      | &#10003;  |               |
 | failure_code   |      | &#10003;  |               |
+| identities     |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |

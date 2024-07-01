@@ -38,8 +38,10 @@ endpoint-login:success
 | src_host          |          | &#10003;  |               |
 | subject_sid       |          |           | &#10003;      |
 | logon_type        |          | &#10003;  |               |
+| dest_zone         |          |           |               |
 | src_ip            |          | &#10003;  |               |
 | account_user_name |          |           |               |
+| src_zone          |          |           |               |
 | domain            |          | &#10003;  |               |
 | dest_ip           |          | &#10003;  |               |
 | result_code       |          | &#10003;  |               |
@@ -61,8 +63,10 @@ endpoint-login:fail
 | src_host          |          | &#10003;  |               |
 | subject_sid       |          |           | &#10003;      |
 | logon_type        |          | &#10003;  |               |
+| dest_zone         |          |           |               |
 | src_ip            |          | &#10003;  |               |
 | account_user_name |          |           |               |
+| src_zone          |          |           |               |
 | domain            |          | &#10003;  |               |
 | dest_ip           |          | &#10003;  |               |
 | result_code       |          | &#10003;  |               |

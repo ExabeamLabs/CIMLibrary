@@ -34,17 +34,18 @@ Activity Types
 |                     | assigned_apps    | Default |      |           | &#10003;      |
 |                     | user_agent       | Default |      |           | &#10003;      |
 |                     | object           | Default |      |           | &#10003;      |
-| app-authentication  | object_type      | Default |      |           | &#10003;      |
-|                     | additional_info  | Default |      |           | &#10003;      |
+| app-authentication  | auth_type        |         |      | &#10003;  |               |
+|                     | object_type      | Default |      |           | &#10003;      |
 |                     | location_country | Default |      |           | &#10003;      |
-|                     | location_city    | Default |      |           | &#10003;      |
-|                     | event_name       | Default |      |           | &#10003;      |
 |                     | dest_user        | Default |      | &#10003;  |               |
 |                     | location_state   | Default |      |           | &#10003;      |
 |                     | uri              | Default |      |           | &#10003;      |
+|                     | url              | Default |      |           | &#10003;      |
+|                     | additional_info  | Default |      |           | &#10003;      |
+|                     | location_city    | Default |      |           | &#10003;      |
+|                     | event_name       | Default |      |           | &#10003;      |
 |                     | operation        | Default |      |           | &#10003;      |
 |                     | user_agent       | Default |      |           | &#10003;      |
-|                     | url              | Default |      |           | &#10003;      |
 |                     | object           | Default |      |           | &#10003;      |
 | app-login           | user_agent       | Default |      |           | &#10003;      |
 | group-member-add    | group_type       | Legacy  |      |           | &#10003;      |

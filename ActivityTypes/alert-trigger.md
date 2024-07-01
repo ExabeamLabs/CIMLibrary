@@ -33,17 +33,23 @@ alert-trigger:success
 | --------------- | -------- | --------- | ------------- |
 | alert_severity  | &#10003; |           |               |
 | local_user_name |          |           |               |
+| dest_local_host |          | &#10003;  |               |
 | alert_subject   |          | &#10003;  | &#10003;      |
 | src_host        |          | &#10003;  |               |
+| src_local_host  |          | &#10003;  |               |
+| dest_zone       |          | &#10003;  |               |
 | alert_type      | &#10003; |           |               |
 | protocol        |          | &#10003;  |               |
 | top_domain      |          | &#10003;  |               |
 | process_name    |          | &#10003;  |               |
 | bytes           |          | &#10003;  |               |
+| src_zone        |          | &#10003;  |               |
 | dest_ip         |          | &#10003;  |               |
 | local_zone      |          | &#10003;  |               |
 | alert_source    | &#10003; |           |               |
+| src_local_zone  |          | &#10003;  |               |
 | dest_host       |          | &#10003;  |               |
+| dest_local_zone |          | &#10003;  |               |
 | local_asset     |          | &#10003;  |               |
 | user            |          | &#10003;  |               |
 | dest_port       |          | &#10003;  |               |

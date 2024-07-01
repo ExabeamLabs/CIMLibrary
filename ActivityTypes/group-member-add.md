@@ -34,11 +34,13 @@ group-member-add:success
 | user_ou              |          | &#10003;  |               |
 | dest_local_user_name |          |           |               |
 | group_id             |          | &#10003;  |               |
+| src_zone             |          |           |               |
 | local_user_name      |          |           |               |
 | member               | &#10003; | &#10003;  |               |
 | dest_user            |          | &#10003;  |               |
 | src_host             |          | &#10003;  |               |
 | user                 |          | &#10003;  |               |
+| dest_zone            |          |           |               |
 
 group-member-add:fail
 ---------------------
@@ -49,9 +51,11 @@ group-member-add:fail
 | dest_local_user_name |          |           |               |
 | failure_code         |          | &#10003;  |               |
 | group_id             |          | &#10003;  |               |
+| src_zone             |          |           |               |
 | local_user_name      |          |           |               |
 | member               | &#10003; | &#10003;  |               |
 | dest_user            |          | &#10003;  |               |
 | failure_reason       |          | &#10003;  |               |
 | src_host             |          | &#10003;  |               |
 | user                 |          | &#10003;  |               |
+| dest_zone            |          |           |               |

@@ -38,10 +38,11 @@ Fields
 Activity Types
 --------------
 
-| Activity Type          | Field | Status | Core | Detection | Informational |
-| ---------------------- | ----- | ------ | ---- | --------- | ------------- |
-| file-list              |       |        |      |           |               |
-| file-permission-modify |       |        |      |           |               |
-| file-read              |       |        |      |           |               |
-| file-write             |       |        |      |           |               |
+| Activity Type          | Field       | Status | Core | Detection | Informational |
+| ---------------------- | ----------- | ------ | ---- | --------- | ------------- |
+| file-list              |             |        |      |           |               |
+| file-permission-modify | acl_content |        |      | &#10003;  |               |
+|                        | bucket_name |        |      | &#10003;  |               |
+| file-read              |             |        |      |           |               |
+| file-write             |             |        |      |           |               |
 

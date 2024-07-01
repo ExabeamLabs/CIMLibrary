@@ -36,7 +36,9 @@ app-login:success
 | mime             |          | &#10003;  |               |
 | domain_user_name |          |           |               |
 | src_host         |          | &#10003;  |               |
+| dest_zone        |          |           |               |
 | src_ip           |          | &#10003;  |               |
+| src_zone         |          |           |               |
 | browser          |          | &#10003;  |               |
 | dest_ip          |          | &#10003;  |               |
 | domain           |          | &#10003;  |               |
@@ -60,7 +62,9 @@ app-login:fail
 | domain_user_name |          |           |               |
 | failure_reason   |          | &#10003;  |               |
 | src_host         |          | &#10003;  |               |
+| dest_zone        |          |           |               |
 | src_ip           |          | &#10003;  |               |
+| src_zone         |          |           |               |
 | browser          |          | &#10003;  |               |
 | dest_ip          |          | &#10003;  |               |
 | domain           |          | &#10003;  |               |

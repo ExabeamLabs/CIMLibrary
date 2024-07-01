@@ -33,10 +33,12 @@ user-privilege-use:success
 | --------------- | ---- | --------- | ------------- |
 | privileges      |      |           |               |
 | process_name    |      | &#10003;  |               |
+| src_zone        |      |           |               |
 | local_user_name |      |           |               |
 | process_dir     |      | &#10003;  |               |
 | src_host        |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
+| dest_zone       |      |           |               |
 
 user-privilege-use:fail
 -----------------------
