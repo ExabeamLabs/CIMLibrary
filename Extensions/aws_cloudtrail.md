@@ -28,6 +28,7 @@ Fields
 | operation        |      | &#10003;  |               |
 | user             |      | &#10003;  |               |
 | user_agent       |      | &#10003;  |               |
+| policy           |      |           | &#10003;      |
 
 Activity Types
 --------------
@@ -153,6 +154,7 @@ Activity Types
 | image-list                |                         |         |          |           |               |
 | image-modify              | removed_users           | Default |          |           | &#10003;      |
 |                           | added_users             | Default |          |           | &#10003;      |
+|                           | resource                | Default |          |           | &#10003;      |
 |                           | resource_id             | Default |          |           | &#10003;      |
 | policy-attach             | policy_arn              | Default |          |           | &#10003;      |
 |                           | dest_role               | Default |          |           | &#10003;      |

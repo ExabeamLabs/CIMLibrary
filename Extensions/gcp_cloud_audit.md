@@ -79,6 +79,7 @@ Activity Types
 |                        | removed_role_name      | Default |      |           | &#10003;      |
 |                        | removed_member         | Default |      |           | &#10003;      |
 |                        | removed_member_type    | Default |      |           | &#10003;      |
+|                        | policy                 |         |      |           | &#10003;      |
 | role-create            | role_permissions       | Default |      |           | &#10003;      |
 |                        | removed_permissions    | Default |      |           | &#10003;      |
 |                        | added_permissions      | Default |      |           | &#10003;      |

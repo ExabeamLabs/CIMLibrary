@@ -31,6 +31,7 @@ endpoint-modify:success
 
 | Field         | Core | Detection | Informational |
 | ------------- | ---- | --------- | ------------- |
+| instance_id   |      |           | &#10003;      |
 | modified_keys |      |           | &#10003;      |
 | added_keys    |      |           | &#10003;      |
 
@@ -40,6 +41,7 @@ endpoint-modify:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| instance_id    |      |           | &#10003;      |
 | modified_keys  |      |           | &#10003;      |
 | added_keys     |      |           | &#10003;      |
 | failure_reason |      | &#10003;  |               |

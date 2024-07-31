@@ -24,8 +24,10 @@ The possible fields for this activity type will vary depending on whether the ac
 policy-modify:success
 ---------------------
 
-There are no fields for this activity type.
-
+| Field  | Core | Detection | Informational |
+| ------ | ---- | --------- | ------------- |
+| domain |      |           | &#10003;      |
+| policy |      |           | &#10003;      |
 
 policy-modify:fail
 ------------------
@@ -33,4 +35,6 @@ policy-modify:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| domain         |      |           | &#10003;      |
 | failure_reason |      | &#10003;  |               |
+| policy         |      |           | &#10003;      |

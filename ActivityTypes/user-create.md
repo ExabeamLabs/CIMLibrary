@@ -33,6 +33,7 @@ user-create:success
 | --------------- | ---- | --------- | ------------- |
 | src_zone        |      |           |               |
 | local_user_name |      |           |               |
+| dest_host       |      |           | &#10003;      |
 | src_host        |      | &#10003;  |               |
 | user            |      | &#10003;  |               |
 | dest_zone       |      |           |               |
@@ -45,6 +46,7 @@ user-create:fail
 | failure_code    |      | &#10003;  |               |
 | src_zone        |      |           |               |
 | local_user_name |      |           |               |
+| dest_host       |      |           | &#10003;      |
 | failure_reason  |      | &#10003;  |               |
 | src_host        |      | &#10003;  |               |
 | user            |      | &#10003;  |               |

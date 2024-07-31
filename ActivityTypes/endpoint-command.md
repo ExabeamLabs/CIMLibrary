@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 endpoint-command:success
 ------------------------
 
-There are no fields for this activity type.
-
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| instance_id |      |           | &#10003;      |
 
 endpoint-command:fail
 ---------------------
@@ -33,4 +34,5 @@ endpoint-command:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| instance_id    |      |           | &#10003;      |
 | failure_reason |      | &#10003;  |               |
