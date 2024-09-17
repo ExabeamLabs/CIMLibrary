@@ -94,16 +94,28 @@ Activity Types
 |                           | event_name                  | Default |      |           | &#10003;      |
 |                           | parent_process_guid         | Default |      |           | &#10003;      |
 |                           | process_path                | Default |      |           | &#10003;      |
-| peripheral_storage-insert | activity_details            |         |      |           | &#10003;      |
+| peripheral_storage-insert | device_product              |         |      |           | &#10003;      |
+|                           | activity_details            |         |      |           | &#10003;      |
+|                           | device_description          |         |      |           | &#10003;      |
+|                           | process_dir                 |         |      | &#10003;  |               |
 |                           | event_code                  |         |      |           | &#10003;      |
 |                           | process_name                | Legacy  |      |           | &#10003;      |
+|                           | device_pid                  |         |      |           | &#10003;      |
 |                           | dest_ip                     |         |      | &#10003;  |               |
 |                           | event_name                  |         |      |           | &#10003;      |
-|                           | process_dir                 |         |      | &#10003;  |               |
+|                           | device_class                |         |      |           | &#10003;      |
 |                           | process_path                | Legacy  |      |           | &#10003;      |
-| peripheral_storage-remove | activity_details            |         |      |           | &#10003;      |
+|                           | device_vendor               |         |      |           | &#10003;      |
+|                           | device_vid                  |         |      |           | &#10003;      |
+| peripheral_storage-remove | device_product              |         |      |           | &#10003;      |
+|                           | activity_details            |         |      |           | &#10003;      |
+|                           | device_pid                  |         |      |           | &#10003;      |
 |                           | dest_ip                     |         |      | &#10003;  |               |
+|                           | device_description          |         |      |           | &#10003;      |
 |                           | event_name                  |         |      |           | &#10003;      |
+|                           | device_class                |         |      |           | &#10003;      |
+|                           | device_vendor               |         |      |           | &#10003;      |
+|                           | device_vid                  |         |      |           | &#10003;      |
 | process-create            | sensor_id                   | Default |      |           | &#10003;      |
 |                           | file_path                   | Default |      |           | &#10003;      |
 |                           | process_guid                | Default |      |           | &#10003;      |

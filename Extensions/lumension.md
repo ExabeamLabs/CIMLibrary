@@ -24,14 +24,26 @@ Fields
 Activity Types
 --------------
 
-| Activity Type               | Field     | Status  | Core | Detection | Informational |
-| --------------------------- | --------- | ------- | ---- | --------- | ------------- |
-| file-read                   |           |         |      |           |               |
-| file-write                  |           |         |      |           |               |
-| peripheral_storage-activity | file_path | Default |      |           | &#10003;      |
-|                             | file_ext  | Default |      |           | &#10003;      |
-|                             | file_name | Default |      |           | &#10003;      |
-| peripheral_storage-insert   | file_path |         |      |           |               |
-|                             | file_ext  |         |      |           |               |
-|                             | file_name |         |      |           |               |
+| Activity Type               | Field              | Status  | Core | Detection | Informational |
+| --------------------------- | ------------------ | ------- | ---- | --------- | ------------- |
+| file-read                   |                    |         |      |           |               |
+| file-write                  |                    |         |      |           |               |
+| peripheral_storage-activity | file_path          | Default |      |           | &#10003;      |
+|                             | device_product     |         |      |           | &#10003;      |
+|                             | file_ext           | Default |      |           | &#10003;      |
+|                             | file_name          | Default |      |           | &#10003;      |
+|                             | device_pid         |         |      |           | &#10003;      |
+|                             | device_description |         |      |           | &#10003;      |
+|                             | device_class       |         |      |           | &#10003;      |
+|                             | device_vendor      |         |      |           | &#10003;      |
+|                             | device_vid         |         |      |           | &#10003;      |
+| peripheral_storage-insert   | file_path          |         |      |           |               |
+|                             | device_product     |         |      |           | &#10003;      |
+|                             | file_ext           |         |      |           |               |
+|                             | file_name          |         |      |           |               |
+|                             | device_pid         |         |      |           | &#10003;      |
+|                             | device_description |         |      |           | &#10003;      |
+|                             | device_class       |         |      |           | &#10003;      |
+|                             | device_vendor      |         |      |           | &#10003;      |
+|                             | device_vid         |         |      |           | &#10003;      |
 

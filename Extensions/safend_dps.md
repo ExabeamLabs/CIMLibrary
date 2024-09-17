@@ -19,15 +19,20 @@ Fields
 Activity Types
 --------------
 
-| Activity Type               | Field       | Status | Core | Detection | Informational |
-| --------------------------- | ----------- | ------ | ---- | --------- | ------------- |
-| file-read                   | device_id   | Legacy |      | &#10003;  |               |
-|                             | os          |        |      | &#10003;  |               |
-|                             | bytes_out   |        |      |           | &#10003;      |
-|                             | device_type | Legacy |      |           | &#10003;      |
-| file-write                  | device_id   | Legacy |      | &#10003;  |               |
-|                             | os          |        |      |           | &#10003;      |
-|                             | bytes_in    |        |      | &#10003;  |               |
-|                             | device_type | Legacy |      |           | &#10003;      |
-| peripheral_storage-activity |             |        |      |           |               |
+| Activity Type               | Field              | Status | Core | Detection | Informational |
+| --------------------------- | ------------------ | ------ | ---- | --------- | ------------- |
+| file-read                   | device_id          | Legacy |      | &#10003;  |               |
+|                             | os                 |        |      | &#10003;  |               |
+|                             | bytes_out          |        |      |           | &#10003;      |
+|                             | device_type        | Legacy |      |           | &#10003;      |
+| file-write                  | device_id          | Legacy |      | &#10003;  |               |
+|                             | os                 |        |      |           | &#10003;      |
+|                             | bytes_in           |        |      | &#10003;  |               |
+|                             | device_type        | Legacy |      |           | &#10003;      |
+| peripheral_storage-activity | device_product     |        |      |           | &#10003;      |
+|                             | device_pid         |        |      |           | &#10003;      |
+|                             | device_description |        |      |           | &#10003;      |
+|                             | device_class       |        |      |           | &#10003;      |
+|                             | device_vendor      |        |      |           | &#10003;      |
+|                             | device_vid         |        |      |           | &#10003;      |
 

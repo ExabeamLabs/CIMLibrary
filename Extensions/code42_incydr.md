@@ -286,14 +286,20 @@ Activity Types
 |                           | device_vendor                 |         |          |           |               |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |
 |                           | user_uid                      |         |          |           |               |
-| peripheral_storage-insert | src_translated_ip             |         |          |           |               |
+| peripheral_storage-insert | device_product                |         |          |           | &#10003;      |
+|                           | drive_letter                  |         |          |           |               |
+|                           | device_description            |         |          |           | &#10003;      |
+|                           | vendor_name                   |         |          |           |               |
+|                           | usb_serial_number             |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
 |                           | src_ip                        |         |          |           |               |
 |                           | device_name                   |         |          |           |               |
 |                           | usb_vendor                    |         |          |           |               |
-|                           | drive_letter                  |         |          |           |               |
 |                           | user_id                       |         |          |           |               |
-|                           | vendor_name                   |         |          |           |               |
-|                           | usb_serial_number             |         |          |           |               |
+|                           | device_pid                    |         |          |           | &#10003;      |
+|                           | device_class                  |         |          |           | &#10003;      |
+|                           | device_vendor                 |         |          |           | &#10003;      |
+|                           | device_vid                    |         |          |           | &#10003;      |
 |                           | operation                     |         |          |           |               |
 | printer-activity          | src_ip                        |         |          |           |               |
 |                           | device_id                     |         |          |           |               |

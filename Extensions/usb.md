@@ -19,7 +19,12 @@ Fields
 Activity Types
 --------------
 
-| Activity Type               | Field | Status | Core | Detection | Informational |
-| --------------------------- | ----- | ------ | ---- | --------- | ------------- |
-| peripheral_storage-activity |       |        |      |           |               |
+| Activity Type               | Field              | Status | Core | Detection | Informational |
+| --------------------------- | ------------------ | ------ | ---- | --------- | ------------- |
+| peripheral_storage-activity | device_product     |        |      |           | &#10003;      |
+|                             | device_pid         |        |      |           | &#10003;      |
+|                             | device_description |        |      |           | &#10003;      |
+|                             | device_class       |        |      |           | &#10003;      |
+|                             | device_vendor      |        |      |           | &#10003;      |
+|                             | device_vid         |        |      |           | &#10003;      |
 

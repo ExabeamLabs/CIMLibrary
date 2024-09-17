@@ -24,4 +24,14 @@ Activity Types
 |               | domain_user_name |        |          |           |               |
 |               | src_host         | Legacy | &#10003; | &#10003;  |               |
 |               | user             | Legacy |          | &#10003;  |               |
+| email-receive | connectors       |        |          |           |               |
+|               | dkim_result      |        |          |           |               |
+|               | spf_result       |        |          |           |               |
+|               | dmarc_result     |        |          |           |               |
+|               | compauth_result  |        |          |           |               |
+| email-send    | connectors       |        |          |           |               |
+|               | dkim_result      |        |          |           |               |
+|               | spf_result       |        |          |           |               |
+|               | dmarc_result     |        |          |           |               |
+|               | compauth_result  |        |          |           |               |
 

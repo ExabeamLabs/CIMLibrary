@@ -11,13 +11,17 @@ Fields
 
 | Field            | Core     | Detection | Informational |
 | ---------------- | -------- | --------- | ------------- |
+| cpu_percentile   |          |           |               |
+| edge_fleet       |          |           |               |
 | log_name         |          |           | &#10003;      |
 | event_code       |          |           | &#10003;      |
+| edge_host        |          |           |               |
 | domain           |          | &#10003;  |               |
 | event_name       |          |           | &#10003;      |
 | domain_user_name |          |           |               |
 | src_host         | &#10003; | &#10003;  |               |
 | user             | &#10003; | &#10003;  |               |
+| page_fault_count |          |           |               |
 
 Activity Types
 --------------

@@ -33,6 +33,7 @@ Activity Types
 |               | query            |        |          |           |               |
 |               | process_dir      |        |          |           |               |
 |               | src_host         | Legacy | &#10003; | &#10003;  |               |
+|               | incident_status  |        |          | &#10003;  |               |
 |               | src_net_status   |        |          |           |               |
 |               | src_port         | Legacy |          |           | &#10003;      |
 |               | bytes_out        |        |          |           |               |

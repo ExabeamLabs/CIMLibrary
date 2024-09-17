@@ -227,25 +227,37 @@ Activity Types
 |                           | category                        | Default |          |           | &#10003;      |
 |                           | alert_name                      | Default |          |           | &#10003;      |
 |                           | direction                       | Default |          |           | &#10003;      |
-| peripheral_storage-insert | src_ip                          |         |          |           |               |
-|                           | process_id                      |         |          |           |               |
+| peripheral_storage-insert | process_id                      |         |          |           |               |
 |                           | file_path                       |         |          |           |               |
-|                           | file_ext                        |         |          |           |               |
-|                           | event_code                      |         |          |           |               |
+|                           | device_product                  |         |          |           | &#10003;      |
 |                           | file_name                       |         |          |           |               |
 |                           | activity_details                |         |          |           |               |
-|                           | vendor_id                       |         |          |           |               |
 |                           | file_dir                        |         |          |           |               |
-|                           | alert_id                        |         |          |           |               |
-|                           | operation                       |         |          |           |               |
-| peripheral_storage-remove | src_ip                          |         |          |           |               |
-|                           | file_path                       |         |          |           |               |
+|                           | device_description              |         |          |           | &#10003;      |
+|                           | src_ip                          |         |          |           |               |
 |                           | file_ext                        |         |          |           |               |
-|                           | event_code                      | Legacy  |          |           | &#10003;      |
+|                           | event_code                      |         |          |           |               |
+|                           | device_pid                      |         |          |           | &#10003;      |
+|                           | vendor_id                       |         |          |           |               |
+|                           | alert_id                        |         |          |           |               |
+|                           | device_class                    |         |          |           | &#10003;      |
+|                           | device_vendor                   |         |          |           | &#10003;      |
+|                           | device_vid                      |         |          |           | &#10003;      |
+|                           | operation                       |         |          |           |               |
+| peripheral_storage-remove | file_path                       |         |          |           |               |
+|                           | device_product                  |         |          |           | &#10003;      |
 |                           | file_name                       | Legacy  | &#10003; |           |               |
 |                           | activity_details                |         |          |           |               |
 |                           | file_dir                        |         |          |           |               |
+|                           | device_description              |         |          |           | &#10003;      |
+|                           | src_ip                          |         |          |           |               |
+|                           | file_ext                        |         |          |           |               |
+|                           | event_code                      | Legacy  |          |           | &#10003;      |
+|                           | device_pid                      |         |          |           | &#10003;      |
 |                           | alert_id                        |         |          |           |               |
+|                           | device_class                    |         |          |           | &#10003;      |
+|                           | device_vendor                   |         |          |           | &#10003;      |
+|                           | device_vid                      |         |          |           | &#10003;      |
 |                           | operation                       |         |          |           |               |
 | process-create            | file_path                       | Default |          |           | &#10003;      |
 |                           | os                              | Default |          |           | &#10003;      |

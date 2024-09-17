@@ -41,6 +41,7 @@ endpoint-login:success
 | dest_zone         |          |           |               |
 | src_ip            |          | &#10003;  |               |
 | account_user_name |          |           |               |
+| login_type_text   |          |           | &#10003;      |
 | src_zone          |          |           |               |
 | domain            |          | &#10003;  |               |
 | dest_ip           |          | &#10003;  |               |
@@ -66,6 +67,7 @@ endpoint-login:fail
 | dest_zone         |          |           |               |
 | src_ip            |          | &#10003;  |               |
 | account_user_name |          |           |               |
+| login_type_text   |          |           | &#10003;      |
 | src_zone          |          |           |               |
 | domain            |          | &#10003;  |               |
 | dest_ip           |          | &#10003;  |               |

@@ -103,10 +103,16 @@ Activity Types
 |                           | process_dir            | Default |          |           | &#10003;      |
 |                           | process_path           | Default |          |           | &#10003;      |
 |                           | direction              | Default |          |           | &#10003;      |
-| peripheral_storage-insert | device_name            |         |          | &#10003;  |               |
+| peripheral_storage-insert | device_product         |         |          |           | &#10003;      |
+|                           | device_name            |         |          | &#10003;  |               |
 |                           | compatible_id          |         |          |           | &#10003;      |
+|                           | device_pid             |         |          |           | &#10003;      |
 |                           | class_id               |         |          |           | &#10003;      |
 |                           | vendor_id              |         |          |           | &#10003;      |
+|                           | device_description     |         |          |           | &#10003;      |
+|                           | device_class           |         |          |           | &#10003;      |
+|                           | device_vendor          |         |          |           | &#10003;      |
+|                           | device_vid             |         |          |           | &#10003;      |
 |                           | class_name             |         |          | &#10003;  | &#10003;      |
 |                           | location_information   |         |          |           | &#10003;      |
 | process-create            | process_integrity      | Default |          |           | &#10003;      |
@@ -186,6 +192,7 @@ Activity Types
 |                           | user_sid               |         |          |           |               |
 |                           | dest_host              | Legacy  | &#10003; | &#10003;  |               |
 | user-create               | dest_user_type         |         |          |           | &#10003;      |
+|                           | domain_controller      |         |          |           | &#10003;      |
 |                           | dest_user_id           |         |          |           | &#10003;      |
 | user-delete               | dest_user_id           |         |          |           | &#10003;      |
 | user-disable              | dest_user_id           |         |          |           | &#10003;      |
