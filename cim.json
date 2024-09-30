@@ -96,6 +96,18 @@
 			"description": "",
 			"fields": {}
 		},
+		"site_collector": {
+			"description": "",
+			"fields": {}
+		},
+		"collector": {
+			"description": "",
+			"fields": {}
+		},
+		"template": {
+			"description": "",
+			"fields": {}
+		},
 		"log_account": {
 			"description": "A log account represents a container of resources within a cloud vendor, and is used to connect and transfer logs into an application",
 			"fields": {}
@@ -153,6 +165,18 @@
 					"informational": "0"
 				},
 				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -427,6 +451,18 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -473,7 +509,7 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"device_type": {
+				"device_class": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -504,7 +540,7 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"device_type": {
+				"device_class": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -799,6 +835,18 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -839,6 +887,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dns_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			}
 		},
@@ -963,6 +1017,12 @@
 				"local_user_name": {
 					"core": "0",
 					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_external_country": {
+					"core": "0",
+					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
 				}
@@ -2263,6 +2323,435 @@
 			"titleTemplate": "Failed to disable a detection group rule by {event.user_info|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"site_collector-create:success": {
+			"subject": "site_collector",
+			"activity": "create",
+			"activity_type": "site_collector-create",
+			"outcome": "success",
+			"pretty_name": "Site Collector Create",
+			"description": "Site Collector Created",
+			"fields": {},
+			"titleTemplate": "Successfully created a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-create:fail": {
+			"subject": "site_collector",
+			"activity": "create",
+			"activity_type": "site_collector-create",
+			"outcome": "fail",
+			"pretty_name": "Site Collector Create",
+			"description": "Site Collector Create failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-modify:success": {
+			"subject": "site_collector",
+			"activity": "modify",
+			"activity_type": "site_collector-modify",
+			"outcome": "success",
+			"pretty_name": "Site Collector modify",
+			"description": "Site Collector modified",
+			"fields": {},
+			"titleTemplate": "Successfully updated a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-modify:fail": {
+			"subject": "site_collector",
+			"activity": "modify",
+			"activity_type": "site_collector-modify",
+			"outcome": "fail",
+			"pretty_name": "Site Collector modify",
+			"description": "Site Collector modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to update a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-delete:success": {
+			"subject": "site_collector",
+			"activity": "delete",
+			"activity_type": "site_collector-delete",
+			"outcome": "success",
+			"pretty_name": "Site Collector delete",
+			"description": "Site Collector was deleted",
+			"fields": {},
+			"titleTemplate": "Successfully deleted a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-delete:fail": {
+			"subject": "site_collector",
+			"activity": "delete",
+			"activity_type": "site_collector-delete",
+			"outcome": "fail",
+			"pretty_name": "Site Collector delete",
+			"description": "Site Collector delete failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-enable:success": {
+			"subject": "site_collector",
+			"activity": "enable",
+			"activity_type": "site_collector-enable",
+			"outcome": "success",
+			"pretty_name": "Site Collector enable",
+			"description": "Site Collector was enabled",
+			"fields": {},
+			"titleTemplate": "Successfully enabled a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-enable:fail": {
+			"subject": "site_collector",
+			"activity": "enable",
+			"activity_type": "site_collector-enable",
+			"outcome": "fail",
+			"pretty_name": "Site Collector enable",
+			"description": "Site Collector enable failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to enable a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-disable:success": {
+			"subject": "site_collector",
+			"activity": "disable",
+			"activity_type": "site_collector-disable",
+			"outcome": "success",
+			"pretty_name": "Site Collector disable",
+			"description": "Site Collector was disabled",
+			"fields": {},
+			"titleTemplate": "Successfully disabled a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"site_collector-disable:fail": {
+			"subject": "site_collector",
+			"activity": "disable",
+			"activity_type": "site_collector-disable",
+			"outcome": "fail",
+			"pretty_name": "Site Collector disable",
+			"description": "Site Collectordisable failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to disable a site collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-create:success": {
+			"subject": "collector",
+			"activity": "create",
+			"activity_type": "collector-create",
+			"outcome": "success",
+			"pretty_name": "Collector Create",
+			"description": "Collector Created",
+			"fields": {},
+			"titleTemplate": "Successfully created a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-create:fail": {
+			"subject": "collector",
+			"activity": "create",
+			"activity_type": "collector-create",
+			"outcome": "fail",
+			"pretty_name": "Collector Create",
+			"description": "Collector Creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-modify:success": {
+			"subject": "collector",
+			"activity": "modify",
+			"activity_type": "collector-modify",
+			"outcome": "success",
+			"pretty_name": "Collector modify",
+			"description": "Collector was modified",
+			"fields": {},
+			"titleTemplate": "Successfully updated a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-modify:fail": {
+			"subject": "collector",
+			"activity": "modify",
+			"activity_type": "collector-modify",
+			"outcome": "fail",
+			"pretty_name": "Collector modify",
+			"description": "Collector modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to update a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-delete:success": {
+			"subject": "collector",
+			"activity": "delete",
+			"activity_type": "collector-delete",
+			"outcome": "success",
+			"pretty_name": "Collector delete",
+			"description": "Collector was deleted",
+			"fields": {},
+			"titleTemplate": "Successfully deleted a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-delete:fail": {
+			"subject": "collector",
+			"activity": "delete",
+			"activity_type": "collector-delete",
+			"outcome": "fail",
+			"pretty_name": "Collector delete",
+			"description": "Collector delete failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-enable:success": {
+			"subject": "collector",
+			"activity": "enable",
+			"activity_type": "collector-enable",
+			"outcome": "success",
+			"pretty_name": "Collector enable",
+			"description": "Collector was enabled",
+			"fields": {},
+			"titleTemplate": "Successfully enabled a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-enable:fail": {
+			"subject": "collector",
+			"activity": "enable",
+			"activity_type": "collector-enable",
+			"outcome": "fail",
+			"pretty_name": "Collector enable",
+			"description": "Collector enable failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to enable a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-disable:success": {
+			"subject": "collector",
+			"activity": "disable",
+			"activity_type": "collector-disable",
+			"outcome": "success",
+			"pretty_name": "Collector disable",
+			"description": "Collector was disabled",
+			"fields": {},
+			"titleTemplate": "Successfully disabled a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"collector-disable:fail": {
+			"subject": "collector",
+			"activity": "disable",
+			"activity_type": "collector-disable",
+			"outcome": "fail",
+			"pretty_name": "Collector disable",
+			"description": "Collectordisable failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to disable a collector by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"template-create:success": {
+			"subject": "template",
+			"activity": "create",
+			"activity_type": "template-create",
+			"outcome": "success",
+			"pretty_name": "Template Create",
+			"description": "Template Created",
+			"fields": {},
+			"titleTemplate": "Successfully created a template by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"template-create:fail": {
+			"subject": "template",
+			"activity": "create",
+			"activity_type": "emplate-create",
+			"outcome": "fail",
+			"pretty_name": "Template Create",
+			"description": "Template Creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create a template by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"template-modify:success": {
+			"subject": "template",
+			"activity": "modify",
+			"activity_type": "template-modify",
+			"outcome": "success",
+			"pretty_name": "Template modify",
+			"description": "Template was modified",
+			"fields": {},
+			"titleTemplate": "Successfully updated a template by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"template-modify:fail": {
+			"subject": "template",
+			"activity": "modify",
+			"activity_type": "template-modify",
+			"outcome": "fail",
+			"pretty_name": "Template modify",
+			"description": "Template modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to update a template by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"template-delete:success": {
+			"subject": "template",
+			"activity": "delete",
+			"activity_type": "template-delete",
+			"outcome": "success",
+			"pretty_name": "Template delete",
+			"description": "Template was deleted",
+			"fields": {},
+			"titleTemplate": "Successfully deleted a template by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"template-delete:fail": {
+			"subject": "template",
+			"activity": "delete",
+			"activity_type": "template-delete",
+			"outcome": "fail",
+			"pretty_name": "Template delete",
+			"description": "Template delete failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a template by {event.user_info|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"file-write:success": {
 			"subject": "file",
 			"activity": "write",
@@ -2812,6 +3301,16 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"bucket_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"acl_content": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -2842,6 +3341,16 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"bucket_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"acl_content": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3414,7 +3923,24 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"dest_host": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -3460,6 +3986,23 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_host": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -3935,6 +4478,18 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"source_user_entity_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"source_device_entity_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_user_type": {
 					"core": "0",
@@ -4702,6 +5257,18 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"dest_device_entity_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_user_entity_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"hash_sha256": {
 					"core": "0",
 					"detection": "1",
@@ -4733,6 +5300,18 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"command_module": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"control_panel_item": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4830,6 +5409,12 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"control_panel_item": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5444,6 +6029,18 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5552,6 +6149,18 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6194,6 +6803,11 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"login_type_text": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"logon_type": {
 					"core": "0",
 					"detection": "1",
@@ -6263,6 +6877,18 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6302,6 +6928,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"login_type_text": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				},
 				"failure_reason": {
 					"core": "0",
@@ -6374,6 +7005,18 @@
 				"logon_type": {
 					"core": "0",
 					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
 				}
@@ -6707,7 +7350,23 @@
 			"outcome": "success",
 			"pretty_name": "Endpoint Modify",
 			"description": "An endpoint object or instance properties\\configuration were modified",
-			"fields": {},
+			"fields": {
+				"added_keys": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"modified_keys": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"instance_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"NA"
 			],
@@ -6731,6 +7390,21 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"added_keys": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"modified_keys": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"instance_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7082,7 +7756,13 @@
 			"outcome": "success",
 			"pretty_name": "Endpoint Command",
 			"description": "A virtual command was set to execute on an endpoint object. Only used in VMs. ",
-			"fields": {},
+			"fields": {
+				"instance_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"titleTemplate": "Successfully executed command on an endpoint object or instance",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -7103,6 +7783,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"instance_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"titleTemplate": "Failed to execute command on an endpoint object or instance",
@@ -7189,6 +7874,18 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7251,6 +7948,18 @@
 					"informational": "0"
 				},
 				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -7386,6 +8095,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7421,6 +8136,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7601,6 +8322,18 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7670,6 +8403,18 @@
 					"informational": "0"
 				},
 				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -8038,11 +8783,22 @@
 					"informational": "0",
 					"enriched": "1"
 				},
+				"external_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"stripped_email_subject": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"attachment_count": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -8189,11 +8945,22 @@
 					"informational": "0",
 					"enriched": "1"
 				},
+				"external_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"stripped_email_subject": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"attachment_count": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9071,6 +9838,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9106,6 +9885,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9203,10 +9994,10 @@
 			"description": "A representation of a single DNS packet",
 			"fields": {
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"titleTemplate": "Successful DNS traffic",
@@ -9231,10 +10022,10 @@
 					"informational": "0"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"titleTemplate": "Failed DNS resolution",
@@ -9630,6 +10421,18 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -9693,6 +10496,18 @@
 					"enriched": "1"
 				},
 				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -10400,16 +11215,16 @@
 					"informational": "1"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_network_type": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10443,16 +11258,16 @@
 					"informational": "1"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_network_type": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10476,16 +11291,16 @@
 					"informational": "1"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_network_type": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10515,16 +11330,16 @@
 					"informational": "0"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"dest_network_type": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10544,10 +11359,10 @@
 			"description": "A network session was initiated",
 			"fields": {
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"titleTemplate": "A network session was initiated successfully",
@@ -10572,10 +11387,10 @@
 					"informational": "0"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"titleTemplate": "A network session initiation was failed",
@@ -10590,10 +11405,10 @@
 			"description": "A network session was terminated",
 			"fields": {
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"titleTemplate": "A network session was terminated successfully",
@@ -10618,10 +11433,10 @@
 					"informational": "0"
 				},
 				"dest_external_country": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"titleTemplate": "A network session termination was failed",
@@ -11186,6 +12001,18 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -11430,6 +12257,18 @@
 					"informational": "0"
 				},
 				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -14868,7 +15707,13 @@
 			"outcome": "success",
 			"pretty_name": "Image Create",
 			"description": "A VM image was created",
-			"fields": {},
+			"fields": {
+				"image_publisher": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"titleTemplate": "Successfully created a VM image",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -14889,6 +15734,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"image_publisher": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"titleTemplate": "Failed to create a VM image",
@@ -16181,7 +17031,18 @@
 			"outcome": "success",
 			"pretty_name": "Policy Modify",
 			"description": "The content of a security policy document was changed",
-			"fields": {},
+			"fields": {
+				"policy": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"titleTemplate": "Successfully updated the content of a security policy document",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -16193,6 +17054,11 @@
 			"pretty_name": "Policy Modify",
 			"description": "The content of a security policy document was changed",
 			"fields": {
+				"policy": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -16202,6 +17068,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"titleTemplate": "Failed to update the content of a security policy document",
@@ -16972,7 +17843,19 @@
 			"outcome": "success",
 			"pretty_name": "Role Permission Modify",
 			"description": "The permissions associated with a security role were changed",
-			"fields": {},
+			"fields": {
+				"identities": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "0"
+				},
+				"policy_content": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully updated the permissions associated with a security role {event.role_name} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -16990,6 +17873,17 @@
 					"informational": "0"
 				},
 				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"identities": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "0"
+				},
+				"policy_content": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -17341,268 +18235,44 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"local_asset": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
-				},
-				"local_zone": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
-				}
-			},
-			"titleTemplate": "Successfully triggered a security rule {event.rule}",
-			"titleTemplateFormatVersion": "1.0"
-		},
-		"rule-trigger-beta:success": {
-			"subject": "rule",
-			"activity": "trigger-beta",
-			"activity_type": "rule-trigger-beta",
-			"outcome": "success",
-			"pretty_name": "Rule Trigger Beta",
-			"description": "A trigger of a security rule was recorded on a security product or program",
-			"fields": {
-				"src_host": {
-					"Status": "Default",
+				"src_local_zone": {
 					"core": "0",
 					"detection": "1",
-					"informational": "0"
-				},
-				"src_ip": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
-				"rule": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"dest_host": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
-				"dest_ip": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
-				"user": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
-				"trigger_time": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rule_reason": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"mitre_labels": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rule_usecases": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"asset_labels": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rule_severity": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"event_id": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"event_time": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"log_time": {
-					"Status": "Default",
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"local_user_name": {
-					"core": "0",
-					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
 				},
-				"observed_activity": {
+				"dest_local_zone": {
 					"core": "0",
-					"detection": "0",
-					"informational": "1"
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
-				"recoverability": {
+				"src_local_host": {
 					"core": "0",
-					"detection": "0",
-					"informational": "1"
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
-				"event_filter": {
+				"dest_local_host": {
 					"core": "0",
-					"detection": "0",
-					"informational": "1"
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
-				"event_from_time_millis": {
+				"local_asset": {
 					"core": "0",
-					"detection": "0",
-					"informational": "1"
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
-				"event_to_time_millis": {
+				"local_zone": {
 					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"previous_id": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"create_case": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"case_description": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rule_source": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"type": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"technique_key": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"technique": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"tactic": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"tactic_key": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"entity_type": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"entity_key": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"event_field": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"field_value": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rules": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"entities": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"event_url": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_percentile": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_raw_score": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_score": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"risk_score": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"src_product": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"src_vendor": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"subscription_code": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to trigger a security rule {event.rule}",
+			"titleTemplate": "Successfully triggered a security rule {event.rule}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"rule-trigger:fail": {
@@ -18773,17 +19443,53 @@
 					"informational": "1",
 					"enriched": "0"
 				},
+				"src_local_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_local_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_local_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_local_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"local_asset": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"local_zone": {
-					"core": 0,
-					"detection": 1,
-					"informational": 0,
-					"enriched": 1
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -21507,6 +22213,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"domain_controller": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1",
+							"enriched": "1"
 						}
 					}
 				},
@@ -22010,6 +22722,36 @@
 							"informational": "1"
 						},
 						"location_information": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -22879,7 +23621,7 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"app_user": {
+						"dest_user": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -23485,7 +24227,7 @@
 							"informational": "0",
 							"enriched": "1"
 						},
-						"trans_id": {
+						"transaction_id": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -23689,7 +24431,7 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"trans_id": {
+						"transaction_id": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -24207,7 +24949,7 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"compression_alg": {
+						"compression_algotithm": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -25004,6 +25746,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -25020,6 +25792,36 @@
 							"informational": "1"
 						},
 						"event_name": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -30685,6 +31487,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -30736,6 +31568,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -33804,7 +34666,38 @@
 			},
 			"activity_type": {
 				"peripheral_storage-activity": {
-					"fields": {}
+					"fields": {
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
 				}
 			}
 		},
@@ -35070,7 +35963,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"trans_id": {
+						"transaction_id": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -39208,7 +40101,7 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"action_type": {
+				"operation": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -44652,58 +45545,6 @@
 				}
 			}
 		},
-		"Imperva Web application Firewall": {
-			"expression": "product = imperva web application firewall",
-			"fields": {},
-			"activity_type": {
-				"alert-trigger": {
-					"fields": {
-						"email_attachments": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"bytes": {
-							"Status": "Legacy",
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
-						"external_address": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"recipient": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"recipients": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"sender": {
-							"Status": "Legacy",
-							"core": "1",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_subject": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_address": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						}
-					}
-				}
-			}
-		},
 		"inky anti-phishing": {
 			"expression": "product = inky anti-phishing",
 			"fields": {},
@@ -45064,6 +45905,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				}
@@ -46392,6 +47263,64 @@
 							"detection": "0",
 							"informational": "0",
 							"enriched": "1"
+						}
+					}
+				},
+				"email-receive": {
+					"fields": {
+						"spf_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"dkim_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"dmarc_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"compauth_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"connectors": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						}
+					}
+				},
+				"email-send": {
+					"fields": {
+						"spf_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"dkim_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"dmarc_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"compauth_result": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"connectors": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
 						}
 					}
 				}
@@ -48508,6 +49437,11 @@
 						"hash_md5": {
 							"core": "0",
 							"detection": "0",
+							"informational": "0"
+						},
+						"incident_status": {
+							"core": "0",
+							"detection": "1",
 							"informational": "0"
 						},
 						"process_dir": {
@@ -51345,6 +52279,26 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"edge_host": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0"
+				},
+				"edge_fleet": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0"
+				},
+				"cpu_percentile": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0"
+				},
+				"page_fault_count": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0"
 				}
 			},
 			"activity_type": {
@@ -52274,6 +53228,36 @@
 						},
 						"file_ext": {
 							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -53533,7 +54517,38 @@
 			"fields": {},
 			"activity_type": {
 				"peripheral_storage-activity": {
-					"fields": {}
+					"fields": {
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
 				},
 				"http-session": {
 					"fields": {
@@ -53603,7 +54618,38 @@
 			},
 			"activity_type": {
 				"peripheral_storage-activity": {
-					"fields": {}
+					"fields": {
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
 				},
 				"file-write": {
 					"fields": {
@@ -53836,6 +54882,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -53881,6 +54957,36 @@
 				"peripheral_storage-insert": {
 					"fields": {
 						"operation_details": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -54990,6 +56096,36 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -55002,6 +56138,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -56773,6 +57939,36 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -57339,6 +58535,36 @@
 							"core": "1",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -57728,6 +58954,12 @@
 				},
 				"app-authentication": {
 					"fields": {
+						"auth_type": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0",
+							"enriched": "1"
+						},
 						"location_city": {
 							"Status": "Default",
 							"core": "0",
@@ -58311,6 +59543,36 @@
 							"detection": "0",
 							"informational": "0",
 							"enriched": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -58438,6 +59700,36 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -63064,6 +64356,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -63829,6 +65151,36 @@
 							"informational": "1"
 						},
 						"vendor_id": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -68756,11 +70108,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"actor": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"sync_destination": {
 							"core": "0",
 							"detection": "0",
@@ -69033,11 +70380,6 @@
 							"informational": "0"
 						},
 						"access": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"actor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -69319,11 +70661,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"actor": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"sync_destination": {
 							"core": "0",
 							"detection": "0",
@@ -69600,11 +70937,6 @@
 							"Status": "Legacy",
 							"core": "0",
 							"detection": "1",
-							"informational": "0"
-						},
-						"actor": {
-							"core": "0",
-							"detection": "0",
 							"informational": "0"
 						},
 						"sync_destination": {
@@ -69884,11 +71216,6 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"actor": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"sync_destination": {
 							"core": "0",
 							"detection": "0",
@@ -70093,6 +71420,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -73511,6 +74868,11 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						},
+						"attachment_count": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
 						}
 					}
 				},
@@ -76580,6 +77942,36 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -76605,6 +77997,36 @@
 						},
 						"file_path": {
 							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_class": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_description": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_product": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_pid": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"device_vendor": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -86517,6 +87939,21 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"policy": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"aws_user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"aws_email_address": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"activity_type": {
@@ -87186,7 +88623,7 @@
 					"fields": {
 						"bucket_name": {
 							"core": "0",
-							"detection": "0",
+							"detection": "1",
 							"informational": "0"
 						},
 						"bucket_host": {
@@ -87211,7 +88648,7 @@
 						},
 						"acl_content": {
 							"core": "0",
-							"detection": "0",
+							"detection": "1",
 							"informational": "0"
 						},
 						"allowed_user_types": {
@@ -87367,6 +88804,16 @@
 							"informational": "1"
 						},
 						"userdata": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"added_keys": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"modified_keys": {
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
@@ -87557,6 +89004,11 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"image_publisher": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
 						}
 					}
 				},
@@ -87575,6 +89027,12 @@
 							"informational": "1"
 						},
 						"removed_users": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"resource": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -87843,6 +89301,11 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"image_publisher": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
 						}
 					}
 				},
@@ -87858,6 +89321,11 @@
 				},
 				"policy-modify": {
 					"fields": {
+						"policy": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
 						"policy_bindings": {
 							"Status": "Default",
 							"core": "0",
@@ -87971,6 +89439,16 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"bucket_name": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"acl_content": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
 						}
 					}
 				},
@@ -88523,7 +90001,18 @@
 					"fields": {}
 				},
 				"file-permission-modify": {
-					"fields": {}
+					"fields": {
+						"bucket_name": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"acl_content": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						}
+					}
 				},
 				"file-read": {
 					"fields": {}
@@ -88674,7 +90163,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"source_resource_type": {
+				"added_member_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_resource_type": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -88685,7 +90179,7 @@
 		"azure monitor": {
 			"expression": "product = \"azure monitor\"",
 			"fields": {
-				"source_resource_type": {
+				"src_resource_type": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"

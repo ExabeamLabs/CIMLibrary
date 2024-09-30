@@ -156,7 +156,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [file-read](FieldsMappings/file-read_fields.md) | [file-read:fail](ActivityTypes/file-read.md)|
 | [file-share](FieldsMappings/file-share_fields.md) | [file-share:success](ActivityTypes/file-share.md) |
 | [file-upload](FieldsMappings/file-upload_fields.md) | [file-share:success](ActivityTypes/file-share.md) |
-| [file-write](FieldsMappings/file-write_fields.md) | [file-create:success](ActivityTypes/file-create.md) |
+| [file-write](FieldsMappings/file-write_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
 | [gcp-bucket-create](FieldsMappings/gcp-bucket-create_fields.md) | [bucket-create:success](ActivityTypes/bucket-create.md) |
 | [gcp-compute-list](FieldsMappings/gcp-compute-list_fields.md) | [disk-list:success](ActivityTypes/disk-list.md) |
 | [gcp-disk-attach](FieldsMappings/gcp-disk-attach_fields.md) | [disk-attach:success](ActivityTypes/disk-attach.md) |
