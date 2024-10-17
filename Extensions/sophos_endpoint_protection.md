@@ -9,15 +9,16 @@ product = sophos endpoint protection
 Fields
 ------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| domain           |          | &#10003;  |               |
-| alert_id         |          |           | &#10003;      |
-| domain_user_name |          |           |               |
-| src_host         | &#10003; |           |               |
-| user             | &#10003; | &#10003;  |               |
-| alert_type       |          |           | &#10003;      |
-| alert_name       |          |           | &#10003;      |
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| domain             |          | &#10003;  |               |
+| alert_id           |          |           | &#10003;      |
+| fallback_user_name |          |           |               |
+| domain_user_name   |          |           |               |
+| src_host           | &#10003; |           |               |
+| user               | &#10003; | &#10003;  |               |
+| alert_type         |          |           | &#10003;      |
+| alert_name         |          |           | &#10003;      |
 
 Activity Types
 --------------

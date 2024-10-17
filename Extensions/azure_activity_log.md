@@ -15,6 +15,7 @@ Fields
 | resource            |      | &#10003;  |               |
 | service_name        |      | &#10003;  |               |
 | resource_type       |      |           | &#10003;      |
+| fallback_user_name  |      |           |               |
 | domain_user_name    |      |           |               |
 | operation_first     |      |           | &#10003;      |
 | event_category      |      |           | &#10003;      |

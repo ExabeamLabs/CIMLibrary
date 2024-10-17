@@ -14,6 +14,7 @@ Fields
 | additional_info    |      |           | &#10003;      |
 | dest_ip            |      |           | &#10003;      |
 | db_user            |      |           | &#10003;      |
+| fallback_user_name |      |           |               |
 | user               |      |           | &#10003;      |
 | database_user_name |      |           |               |
 | object             |      |           | &#10003;      |

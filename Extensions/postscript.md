@@ -9,13 +9,14 @@ product = "postscript"
 Fields
 ------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| local_user_name |      |           |               |
-| printer_name    |      |           | &#10003;      |
-| src_host        |      |           | &#10003;      |
-| user            |      |           | &#10003;      |
-| object          |      |           | &#10003;      |
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| local_user_name    |      |           |               |
+| fallback_user_name |      |           |               |
+| printer_name       |      |           | &#10003;      |
+| src_host           |      |           | &#10003;      |
+| user               |      |           | &#10003;      |
+| object             |      |           | &#10003;      |
 
 Activity Types
 --------------

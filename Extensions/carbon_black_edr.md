@@ -14,6 +14,7 @@ Fields
 | process_id           |          |           | &#10003;      |
 | device_id            |          |           | &#10003;      |
 | process_dir          |          | &#10003;  |               |
+| fallback_user_name   |          |           |               |
 | domain_user_name     |          |           |               |
 | src_host             |          | &#10003;  |               |
 | process_command_line |          | &#10003;  |               |

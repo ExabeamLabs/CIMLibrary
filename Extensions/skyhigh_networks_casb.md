@@ -9,12 +9,13 @@ product = "skyhigh networks casb"
 Fields
 ------
 
-| Field           | Core | Detection | Informational |
-| --------------- | ---- | --------- | ------------- |
-| additional_info |      |           | &#10003;      |
-| user            |      |           | &#10003;      |
-| operation       |      |           | &#10003;      |
-| object          |      |           | &#10003;      |
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| additional_info    |      |           | &#10003;      |
+| fallback_user_name |      |           |               |
+| user               |      |           | &#10003;      |
+| operation          |      |           | &#10003;      |
+| object             |      |           | &#10003;      |
 
 Activity Types
 --------------

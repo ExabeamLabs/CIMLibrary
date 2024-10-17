@@ -9,10 +9,12 @@ product = falcon
 Fields
 ------
 
-| Field | Core     | Detection | Informational |
-| ----- | -------- | --------- | ------------- |
-| user  | &#10003; | &#10003;  |               |
-| aid   |          |           | &#10003;      |
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| fallback_user_name |          |           |               |
+| user               | &#10003; | &#10003;  |               |
+| aid                |          |           | &#10003;      |
+| cid                |          |           | &#10003;      |
 
 Activity Types
 --------------

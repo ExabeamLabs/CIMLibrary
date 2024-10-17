@@ -13,6 +13,7 @@ Fields
 | --------------------- | -------- | --------- | ------------- |
 | service_name          |          |           | &#10003;      |
 | local_user_name       |          |           |               |
+| fallback_user_name    |          |           |               |
 | dest_user             |          | &#10003;  |               |
 | src_host              | &#10003; | &#10003;  |               |
 | src_ip                |          | &#10003;  |               |

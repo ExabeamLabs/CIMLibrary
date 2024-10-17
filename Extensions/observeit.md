@@ -9,15 +9,16 @@ product = "observeit"
 Fields
 ------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| src_ip           |          | &#10003;  |               |
-| os               |          |           | &#10003;      |
-| domain           |          | &#10003;  |               |
-| session_id       |          |           | &#10003;      |
-| dest_host        |          | &#10003;  |               |
-| domain_user_name |          |           |               |
-| user             | &#10003; | &#10003;  |               |
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| src_ip             |          | &#10003;  |               |
+| os                 |          |           | &#10003;      |
+| domain             |          | &#10003;  |               |
+| session_id         |          |           | &#10003;      |
+| dest_host          |          | &#10003;  |               |
+| fallback_user_name |          |           |               |
+| domain_user_name   |          |           |               |
+| user               | &#10003; | &#10003;  |               |
 
 Activity Types
 --------------

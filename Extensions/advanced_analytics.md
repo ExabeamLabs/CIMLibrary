@@ -19,17 +19,17 @@ Activity Types
 | alert-trigger | trigger_type           |        |          |           |               |
 |               | rule                   |        |          |           |               |
 |               | domain_user_name       |        |          |           |               |
-|               | rule_usecases          |        |          |           | &#10003;      |
+|               | rule_usecases          |        |          |           |               |
 |               | src_ip                 | Legacy | &#10003; | &#10003;  |               |
 |               | trigger_entity         |        |          |           |               |
 |               | rule_description       |        |          |           |               |
 |               | incident_creation_time |        |          |           |               |
-|               | session_id             |        |          |           |               |
+|               | session_id             |        |          |           | &#10003;      |
 |               | src_host               | Legacy | &#10003; | &#10003;  |               |
 |               | original_risk_score    |        |          |           |               |
 |               | event_category         |        |          |           |               |
 |               | log_time               |        |          |           |               |
-|               | url                    |        |          |           |               |
+|               | url                    |        |          |           | &#10003;      |
 |               | rule_id                |        |          |           |               |
 |               | base_risk_score        |        |          |           |               |
 |               | event_id               |        |          |           | &#10003;      |
@@ -37,8 +37,8 @@ Activity Types
 |               | domain                 |        |          |           |               |
 |               | dest_ip                | Legacy | &#10003; | &#10003;  |               |
 |               | dest_host              | Legacy |          | &#10003;  |               |
-|               | mitre_labels           |        |          |           | &#10003;      |
-|               | asset_labels           |        |          |           | &#10003;      |
+|               | mitre_labels           |        |          |           |               |
+|               | asset_labels           |        |          |           |               |
 |               | user                   | Legacy |          | &#10003;  |               |
 |               | event_time             |        |          |           | &#10003;      |
 |               | container_id           |        |          |           |               |

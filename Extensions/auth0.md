@@ -9,14 +9,15 @@ product = auth0
 Fields
 ------
 
-| Field            | Core     | Detection | Informational |
-| ---------------- | -------- | --------- | ------------- |
-| src_ip           |          | &#10003;  |               |
-| additional_info  |          |           | &#10003;      |
-| domain           |          |           | &#10003;      |
-| domain_user_name |          |           |               |
-| user             | &#10003; | &#10003;  |               |
-| user_agent       |          |           | &#10003;      |
+| Field              | Core     | Detection | Informational |
+| ------------------ | -------- | --------- | ------------- |
+| src_ip             |          | &#10003;  |               |
+| additional_info    |          |           | &#10003;      |
+| domain             |          |           | &#10003;      |
+| fallback_user_name |          |           |               |
+| domain_user_name   |          |           |               |
+| user               | &#10003; | &#10003;  |               |
+| user_agent         |          |           | &#10003;      |
 
 Activity Types
 --------------

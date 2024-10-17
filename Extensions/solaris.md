@@ -17,6 +17,7 @@ Fields
 | event_code         |      |           | &#10003;      |
 | src_zone           |      |           | &#10003;      |
 | event_name         |      |           | &#10003;      |
+| fallback_user_name |      |           |               |
 | operation          |      |           | &#10003;      |
 | user               |      |           | &#10003;      |
 

@@ -9,11 +9,12 @@ product = "emp"
 Fields
 ------
 
-| Field     | Core | Detection | Informational |
-| --------- | ---- | --------- | ------------- |
-| location  |      |           | &#10003;      |
-| user      |      | &#10003;  |               |
-| operation |      |           | &#10003;      |
+| Field              | Core | Detection | Informational |
+| ------------------ | ---- | --------- | ------------- |
+| fallback_user_name |      |           |               |
+| location           |      |           | &#10003;      |
+| user               |      | &#10003;  |               |
+| operation          |      |           | &#10003;      |
 
 Activity Types
 --------------
