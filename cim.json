@@ -1510,7 +1510,7 @@
 			}
 		},
 		"rule": {
-			"description": "A security rule represents an instace of a detection condition stored in an object on a security product, meant to trigger once the conditions are met.",
+			"description": "A security rule represents an instance of a detection condition stored in an object on a security product, meant to trigger once the conditions are met.",
 			"fields": {
 				"rule": {
 					"core": "1",
@@ -1520,7 +1520,7 @@
 			}
 		},
 		"secret": {
-			"description": "Secrets are a type of digital authenticaiton credentials used by accounts to identify against resources and applicatons.",
+			"description": "Secrets are a type of digital authentication credentials used by accounts to identify against resources and applicatons.",
 			"fields": {
 				"secret": {
 					"core": "1",
@@ -8804,7 +8804,7 @@
 			"legacy_event_name": [
 				"dlp-email-alert-out"
 			],
-			"titleTemplate": "{event.src_email_address} sent email {event.email_subject} to {event.dest_email_address}",
+			"titleTemplate": "{event.email_address} sent email {event.email_subject} to {event.dest_email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-send:fail": {
@@ -8966,7 +8966,7 @@
 			"legacy_event_name": [
 				"dlp-email-alert-out-failed"
 			],
-			"titleTemplate": "{event.src_email_address} failed to send email {event.email_subject} to {event.dest_email_address}",
+			"titleTemplate": "{event.email_address} failed to send email {event.email_subject} to {event.dest_email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-receive:success": {
@@ -9086,7 +9086,7 @@
 			"legacy_event_name": [
 				"dlp-email-alert-in"
 			],
-			"titleTemplate": "{event.dest_email_address} received email {event.email_subject} from {event.src_email_address}",
+			"titleTemplate": "{event.dest_email_address} received email {event.email_subject} from {event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-receive:fail": {
@@ -9216,7 +9216,7 @@
 			"legacy_event_name": [
 				"dlp-email-alert-in-failed"
 			],
-			"titleTemplate": "{event.dest_email_address} failed to receive email {event.email_subject} from {event.src_email_address}",
+			"titleTemplate": "{event.dest_email_address} failed to receive email {event.email_subject} from {event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-create:success": {
@@ -18200,21 +18200,6 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"rarity_percentile": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_raw_score": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_score": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"risk_score": {
 					"core": "0",
 					"detection": "0",
@@ -18474,11 +18459,6 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"field_value": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"rules": {
 					"core": "0",
 					"detection": "0",
@@ -18490,21 +18470,6 @@
 					"informational": "1"
 				},
 				"event_url": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_percentile": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_raw_score": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"rarity_score": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -19374,7 +19339,8 @@
 				"alert_subject": {
 					"core": "0",
 					"detection": "1",
-					"informational": "1"
+					"informational": "1",
+                    "enriched": "1"
 				},
 				"alert_severity": {
 					"core": "1",
@@ -19436,12 +19402,6 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
-				},
-				"cid": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1",
-					"enriched": "0"
 				},
 				"src_local_zone": {
 					"core": "0",
@@ -21724,6 +21684,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -22122,6 +22088,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -23412,6 +23384,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -23726,6 +23704,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_ip": {
 					"core": "0",
@@ -25159,6 +25143,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -25210,6 +25200,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain_user_name": {
 					"core": "0",
@@ -25920,6 +25916,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -26068,6 +26070,12 @@
 					"core": "1",
 					"detection": "0",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain_user_name": {
 					"core": "0",
@@ -26494,6 +26502,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_host": {
 					"core": "0",
@@ -28604,6 +28618,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -29419,6 +29439,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"user": {
 					"core": "0",
 					"detection": "1",
@@ -29762,6 +29788,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -29837,6 +29869,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -30111,6 +30149,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain_user_name": {
 					"core": "0",
@@ -30754,12 +30798,24 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"aid": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
-				}
-			},
+				},
+                "cid": {
+                      "core": "0",
+                      "detection": "0",
+                      "informational": "1",
+                      "enriched": "0"
+                }
+            },
 			"activity_type": {
 				"file-write": {
 					"fields": {
@@ -33554,6 +33610,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -33631,6 +33693,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain_user_name": {
 					"core": "0",
@@ -34304,6 +34372,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -34363,6 +34437,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -34653,6 +34733,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"file_name": {
 					"core": "0",
 					"detection": "0",
@@ -34932,6 +35018,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -34979,6 +35071,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"bytes": {
 					"core": "0",
@@ -35069,6 +35167,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -35195,6 +35299,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -35235,6 +35345,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -35835,6 +35951,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"hierarchy_code": {
 					"core": "0",
 					"detection": "0",
@@ -36339,6 +36461,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"process_permission": {
 					"core": "0",
@@ -37616,6 +37744,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -38141,6 +38275,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"process_name": {
 					"core": "0",
@@ -38768,6 +38908,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"activity_type": {
@@ -38981,6 +39127,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"full_name": {
 					"core": "0",
@@ -39864,6 +40016,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -40240,6 +40398,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"object": {
 					"core": "0",
@@ -40631,6 +40795,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_host": {
 					"core": "0",
 					"detection": "0",
@@ -40738,6 +40908,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_host": {
 					"core": "0",
@@ -41342,6 +41518,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"object": {
 					"core": "0",
@@ -41980,6 +42162,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -42287,6 +42475,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"additional_info": {
 					"core": "0",
 					"detection": "0",
@@ -42501,6 +42695,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -42658,6 +42858,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"object": {
 					"core": "0",
 					"detection": "0",
@@ -42741,6 +42947,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -43264,6 +43476,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -45083,6 +45301,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -52249,6 +52473,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -52368,6 +52598,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -52466,6 +52702,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"src_host": {
 					"core": "1",
@@ -52819,6 +53061,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -53134,6 +53382,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -53399,6 +53653,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -54599,6 +54859,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -54809,6 +55075,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -55500,6 +55772,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -55701,6 +55979,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -55929,6 +56213,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -56043,6 +56333,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -56291,6 +56587,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -56425,6 +56727,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -56948,6 +57256,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -57076,6 +57390,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -57257,6 +57577,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -57489,6 +57815,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -57624,6 +57956,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -58628,6 +58966,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -58923,6 +59267,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -59233,6 +59583,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -59347,6 +59703,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -59925,6 +60287,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -60479,6 +60847,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -60781,6 +61155,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -60857,6 +61237,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -61146,6 +61532,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -61247,6 +61639,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "1",
@@ -61272,6 +61670,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -63630,6 +64034,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -63799,6 +64209,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -64028,6 +64444,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -64465,6 +64887,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -65073,6 +65501,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -65259,6 +65693,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -65370,6 +65810,12 @@
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -67068,6 +67514,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -67129,6 +67581,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -69788,6 +70246,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "1",
@@ -71931,6 +72395,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_port": {
 					"core": "0",
 					"detection": "0",
@@ -72503,6 +72973,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"operation": {
 					"core": "0",
 					"detection": "0",
@@ -72984,17 +73460,17 @@
 						"mitre_labels": {
 							"core": "0",
 							"detection": "0",
-							"informational": "1"
+							"informational": "0"
 						},
 						"rule_usecases": {
 							"core": "0",
 							"detection": "0",
-							"informational": "1"
+							"informational": "0"
 						},
 						"asset_labels": {
 							"core": "0",
 							"detection": "0",
-							"informational": "1"
+							"informational": "0"
 						},
 						"event_id": {
 							"core": "0",
@@ -73029,7 +73505,7 @@
 						"session_id": {
 							"core": "0",
 							"detection": "0",
-							"informational": "0"
+							"informational": "1"
 						},
 						"domain": {
 							"core": "0",
@@ -73070,7 +73546,7 @@
 						"url": {
 							"core": "0",
 							"detection": "0",
-							"informational": "0"
+							"informational": "1"
 						},
 						"src_ip": {
 							"Status": "Legacy",
@@ -73190,7 +73666,31 @@
 							"enriched": "1"
 						}
 					}
-				}
+				},
+                "rule-trigger": {
+                    "fields": {
+                      "rarity_percentile": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      },
+                      "rarity_raw_score": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      },
+                      "rarity_score": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      },
+                      "field_value": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      }
+                    }
+                }
 			}
 		},
 		"NG Analytics": {
@@ -73280,7 +73780,31 @@
 							"enriched": "1"
 						}
 					}
-				}
+				},
+                 "rule-trigger": {
+                    "fields": {
+                      "rarity_percentile": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      },
+                      "rarity_raw_score": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      },
+                      "rarity_score": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      },
+                      "field_value": {
+                        "core": "0",
+                        "detection": "0",
+                        "informational": "1"
+                      }
+                    }
+                }
 			}
 		},
 		"search": {
@@ -76609,6 +77133,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"src_ip": {
 					"core": "0",
 					"detection": "0",
@@ -77883,6 +78413,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"bytes": {
 					"core": "0",
 					"detection": "0",
@@ -78296,6 +78832,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -78551,6 +79093,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -82779,6 +83327,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -87864,6 +88418,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -89087,6 +89647,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -89113,12 +89679,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"resource": {
+				"resource_path": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"resource_path": {
+				"resource_dir": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -89499,6 +90065,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"domain": {
 					"core": "0",
@@ -89984,6 +90556,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"domain": {
 					"core": "0",
 					"detection": "0",
@@ -90115,6 +90693,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"key_name": {
 					"core": "0",
 					"detection": "0",
@@ -90138,7 +90722,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
-				"resource": {
+				"resource_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"resource_dir": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -90147,6 +90736,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"fallback_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"policy_bindings": {
 					"core": "0",
