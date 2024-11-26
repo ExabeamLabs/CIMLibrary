@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 ds_object-read:success
 ----------------------
 
-There are no fields for this activity type.
-
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| object_type |      |           | &#10003;      |
 
 ds_object-read:fail
 -------------------
@@ -33,4 +34,5 @@ ds_object-read:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| object_type    |      |           | &#10003;      |
 | failure_reason |      | &#10003;  |               |

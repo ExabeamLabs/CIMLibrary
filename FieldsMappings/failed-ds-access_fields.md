@@ -12,11 +12,8 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | target_domain                                                      | dest_domain                 |
 | target_user_sid                                                    | dest_user_sid               |
 | service_name                                                       | ds_name                     |
-| object_class                                                       | ds_object_class             |
 | object_dn                                                          | ds_object_dn                |
-| object                                                             | ds_object_name              |
 | object_ou                                                          | ds_object_ou                |
-| object_type                                                        | ds_object_type              |
 | service_type                                                       | ds_type                     |
 | user_email                                                         | email_address               |
 | subject                                                            | email_subject               |
@@ -40,6 +37,7 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | m_origin_hostname                                                  | m_origin_hostname           |
 | m_siteid                                                           | m_siteid                    |
 | m_sitename                                                         | m_sitename                  |
+| object                                                             | object_name                 |
 | activity                                                           | operation                   |
 | activity_details                                                   | operation_details           |
 | activity_type                                                      | operation_type              |
@@ -60,9 +58,12 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | device_name,<br>device                                             | device_name                 |
 | sub_event_type,<br>event_subtype                                   | event_subtype               |
 | directory,<br>file_dir,<br>file_parent,<br>f_parent                | file_dir                    |
+| object_type,<br>file_type                                          | file_type                   |
 | md5,<br>md5_sum,<br>md5_hash                                       | hash_md5                    |
 | sha1,<br>sha1_sum                                                  | hash_sha1                   |
 | sha256,<br>sha256_sum                                              | hash_sha256                 |
+| object_class,<br>object_server                                     | object_server               |
+| object_class,<br>object_type                                       | object_type                 |
 | parent_process_cmd,<br>parent_command_line,<br>parent_cmd          | parent_process_command_line |
 | parent_directory,<br>parent_process_directory                      | parent_process_dir          |
 | process_directory,<br>directory                                    | process_dir                 |

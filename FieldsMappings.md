@@ -153,7 +153,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [file-download](FieldsMappings/file-download_fields.md) | [file-download:fail](ActivityTypes/file-download.md)|
 | [file-move](FieldsMappings/file-move_fields.md) | [file-move:success](ActivityTypes/file-move.md) |
 | [file-permission-change](FieldsMappings/file-permission-change_fields.md) | [file-permission-modify:success](ActivityTypes/file-permission-modify.md) |
-| [file-read](FieldsMappings/file-read_fields.md) | [file-read:fail](ActivityTypes/file-read.md)|
+| [file-read](FieldsMappings/file-read_fields.md) | [file-move:success](ActivityTypes/file-move.md) |
 | [file-share](FieldsMappings/file-share_fields.md) | [file-share:success](ActivityTypes/file-share.md) |
 | [file-upload](FieldsMappings/file-upload_fields.md) | [file-share:success](ActivityTypes/file-share.md) |
 | [file-write](FieldsMappings/file-write_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
@@ -236,10 +236,10 @@ This table maps old event types to their corresponding new-scale activity types.
 | [usb-activity](FieldsMappings/usb-activity_fields.md) | [peripheral_storage-activity:success](ActivityTypes/peripheral_storage-activity.md) |
 | [usb-insert](FieldsMappings/usb-insert_fields.md) | [peripheral_storage-insert:success](ActivityTypes/peripheral_storage-insert.md) |
 | [usb-read](FieldsMappings/usb-read_fields.md) | [file-read:success](ActivityTypes/file-read.md) |
-| [usb-write](FieldsMappings/usb-write_fields.md) | [file-write:success](ActivityTypes/file-write.md) |
+| [usb-write](FieldsMappings/usb-write_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
 | [user-role-assign](FieldsMappings/user-role-assign_fields.md) | [user-role-assign:success](ActivityTypes/user-role-assign.md) |
 | [user-role-revoke](FieldsMappings/user-role-revoke_fields.md) | [user-role-revoke:success](ActivityTypes/user-role-revoke.md) |
-| [vpn-connection](FieldsMappings/vpn-connection_fields.md) | [vpn-login:fail](ActivityTypes/vpn-login.md)|
+| [vpn-connection](FieldsMappings/vpn-connection_fields.md) | [vpn-login:success](ActivityTypes/vpn-login.md) |
 | [vpn-login](FieldsMappings/vpn-login_fields.md) | [vpn-login:success](ActivityTypes/vpn-login.md) |
 | [vpn-logout](FieldsMappings/vpn-logout_fields.md) | [vpn-logout:success](ActivityTypes/vpn-logout.md) |
 | [web-activity-allowed](FieldsMappings/web-activity-allowed_fields.md) | [http-request:success](ActivityTypes/http-request.md) |

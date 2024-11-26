@@ -31,6 +31,7 @@ ds_object-restore:success
 
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
+| object_type        |      |           | &#10003;      |
 | src_ds_object_ou   |      |           |               |
 | src_ds_object_name |      |           |               |
 | src_ds_object_dn   |      |           |               |

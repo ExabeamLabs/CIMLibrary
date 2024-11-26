@@ -77,7 +77,7 @@
 					"enriched": "1",
 					"reserved": "1"
 				},
-				"business_criticality": {
+				"security_criticality": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1",
@@ -392,7 +392,17 @@
 					"informational": "1"
 				},
 				"ds_object_class": {
-					"core": "1",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ds_object_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"object_type": {
+					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
@@ -402,11 +412,6 @@
 					"informational": "1"
 				},
 				"ds_object_dn": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
-				"ds_object_type": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -1484,6 +1489,14 @@
 				}
 			}
 		},
+        "dashboard": {
+            "description": "A dashboard is a collection of visualizations. Each dashboard brings together multiple insights that can provide a broad perspective about what's happening in a security operations center.",
+			"fields": {}
+        },
+        "visualization": {
+            "description": "A visualization is an individual chart or table that provides statistics and detailed information about specific aspects of the security operations center",
+			"fields": {}
+        },
 		"repository": {
 			"description": "A git repository is a folder containing all the changes to versions, commits and instances of a git project",
 			"fields": {
@@ -3179,7 +3192,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Fail to copy a file {event.file_name}",
+			"titleTemplate": "Failed to copy a file {event.file_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-move:success": {
@@ -3509,7 +3522,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to rename the file",
+			"titleTemplate": "Failed to rename a file",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-share:success": {
@@ -3763,7 +3776,7 @@
 			"pretty_name": "File Stream Create",
 			"description": "A file stream (windows) was created",
 			"fields": {},
-			"titleTemplate": "Successfully created file stream",
+			"titleTemplate": "Successfully created a file stream",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-stream-create:fail": {
@@ -3785,7 +3798,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create file stream",
+			"titleTemplate": "Failed to create a file stream",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-time-modify:success": {
@@ -3796,7 +3809,7 @@
 			"pretty_name": "File Time Modify",
 			"description": "The time properties of a file were modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified time of the file",
+			"titleTemplate": "Successfully modified time of a file",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-time-modify:fail": {
@@ -3818,7 +3831,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify time of the file",
+			"titleTemplate": "Failed to modify time of a file",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-unshare:success": {
@@ -3829,7 +3842,7 @@
 			"pretty_name": "File Unshare",
 			"description": "A share of a file was disabled",
 			"fields": {},
-			"titleTemplate": "Successfully disabled share of file",
+			"titleTemplate": "Successfully disabled share of a file",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-unshare:fail": {
@@ -3851,7 +3864,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to disable share of file",
+			"titleTemplate": "Failed to disable share of a file",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"file-create:success": {
@@ -4181,7 +4194,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed user list by {event.user|event.email_address}",
+			"titleTemplate": "Failed to list users by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-lock:success": {
@@ -4410,7 +4423,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to expire an account password for {event.user|event.email_address}",
+			"titleTemplate": "An account password expiration failed for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-password-read:success": {
@@ -4631,7 +4644,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Successfully modified an account attributes for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Successfully modified an account's attributes for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-modify:fail": {
@@ -4661,7 +4674,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Failed to modify an account attributes for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Failed to modify an account's attributes for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-permission-modify:success": {
@@ -4681,7 +4694,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Successfully updated an account permission for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Successfully updated an account's permission for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-permission-modify:fail": {
@@ -4711,7 +4724,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Failed to update an account permission for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Failed to update an account's permission for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-mfa-enable:success": {
@@ -4722,7 +4735,7 @@
 			"pretty_name": "User Mfa Enable",
 			"description": "The MFA configuration for a user account was set to enabled",
 			"fields": {},
-			"titleTemplate": "Successfully enabled the MFA configuration for {event.user|event.email_address}",
+			"titleTemplate": "Successfully enabled MFA configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-mfa-enable:fail": {
@@ -4744,7 +4757,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enable the MFA configuration for {event.user|event.email_address}",
+			"titleTemplate": "Failed to enable MFA configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-mfa-disable:success": {
@@ -4755,7 +4768,7 @@
 			"pretty_name": "User Mfa Disable",
 			"description": "The MFA configuration for a user account was set to disabled",
 			"fields": {},
-			"titleTemplate": "Successfully disabled the MFA configuration for {event.user|event.email_address}",
+			"titleTemplate": "Successfully disabled MFA configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-mfa-disable:fail": {
@@ -4777,7 +4790,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to disable the MFA configuration for {event.user|event.email_address}",
+			"titleTemplate": "Failed to disable MFA configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-role-assign:success": {
@@ -4838,7 +4851,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully revoked a security role of {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Successfully revoked a security role for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-role-revoke:fail": {
@@ -4865,7 +4878,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to revoke a security role of {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Failed to revoke a security role for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-role-modify:success": {
@@ -4882,7 +4895,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully modified a security role of {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Successfully modified a security role for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-role-modify:fail": {
@@ -4909,7 +4922,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify a security role of {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Failed to modify a security role for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-device-remember:success": {
@@ -4920,7 +4933,7 @@
 			"pretty_name": "User Device Remember",
 			"description": "A user has requested that his device configuration will be remembered on future usage in this system",
 			"fields": {},
-			"titleTemplate": "Successful device remember activity by {event.user|event.email_address}",
+			"titleTemplate": "Successful remember device activity by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-device-remember:fail": {
@@ -4942,7 +4955,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed device remember activity by {event.user|event.email_address}",
+			"titleTemplate": "Failed remember device activity by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-invite:success": {
@@ -4975,7 +4988,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed an account invitation to workspace for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
+			"titleTemplate": "Failed to invite account to workspace for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-invite-cancel:success": {
@@ -5184,7 +5197,7 @@
 			"pretty_name": "User Read",
 			"description": "A request to read the properties or configuration of a user was made",
 			"fields": {},
-			"titleTemplate": "Successfully read an account properties or configuration of {event.user|event.email_address}",
+			"titleTemplate": "Successfully read an account properties or configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-read:fail": {
@@ -5206,7 +5219,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to read an account properties or configuration of {event.user|event.email_address}",
+			"titleTemplate": "Failed to read an account properties or configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-create:success": {
@@ -5420,7 +5433,7 @@
 			"legacy_event_name": [
 				"process-created-failed"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed execution process {event.process_name} on {event.src_host|event.src_ip}",
+			"titleTemplate": "{event.user|event.email_address} failed to execute process {event.process_name} on {event.src_host|event.src_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-close:success": {
@@ -5513,7 +5526,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully allocated the virtual memory in an endpoint process {event.process_name}",
+			"titleTemplate": "Successfully allocated the virtual memory to an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-memory-allocate:fail": {
@@ -5550,7 +5563,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to allocate the virtual memory in an endpoint process {event.process_name}",
+			"titleTemplate": "Failed to allocate the virtual memory to an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-memory-read:success": {
@@ -5641,7 +5654,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully protected the virtual memory in an endpoint process {event.process_name}",
+			"titleTemplate": "Successfully protected the virtual memory of an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-memory-protect:fail": {
@@ -5678,7 +5691,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to protect the virtual memory in an endpoint process {event.process_name}",
+			"titleTemplate": "Failed to protect the virtual memory of an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-open:success": {
@@ -5728,7 +5741,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Successfully created a thread in an endpoint process {event.process_name}",
+			"titleTemplate": "Successfully created a thread on an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-thread-create:fail": {
@@ -5755,7 +5768,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create a thread in an endpoint process {event.process_name}",
+			"titleTemplate": "Failed to create a thread on an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-token-assign:success": {
@@ -5799,7 +5812,7 @@
 			"pretty_name": "Process Token Modify",
 			"description": "A process token was changed in a process",
 			"fields": {},
-			"titleTemplate": "Successfully changed a token in an endpoint process {event.process_name}",
+			"titleTemplate": "Successfully changed a token for an endpoint process {event.process_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"process-token-modify:fail": {
@@ -5915,7 +5928,7 @@
 			"pretty_name": "Dll Unload",
 			"description": "A dll module was unloaded from a process",
 			"fields": {},
-			"titleTemplate": "Successfully unloaded dll module from a process",
+			"titleTemplate": "Successfully unloaded a dll module from a process",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dll-unload:fail": {
@@ -5937,7 +5950,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to unload dll module from a process",
+			"titleTemplate": "Failed to unload a dll module from a process",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-login:success": {
@@ -5977,6 +5990,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"mime": {
 					"core": "0",
@@ -6047,7 +6066,7 @@
 				"app-login",
 				"webconference-login"
 			],
-			"titleTemplate": "{event.user|event.email_address} login to application {event.app} from {event.src_host|event.src_ip}",
+			"titleTemplate": "{event.user|event.email_address} logged in to application {event.app} from {event.src_host|event.src_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-login:fail": {
@@ -6097,6 +6116,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"mime": {
 					"core": "0",
@@ -6167,7 +6192,7 @@
 				"failed-app-login",
 				"webconference-login"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed login to application {event.app} from {event.src_host|event.src_ip}",
+			"titleTemplate": "{event.user|event.email_address} failed to login to application {event.app} from {event.src_host|event.src_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-logout:success": {
@@ -6299,6 +6324,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"mime": {
 					"core": "0",
 					"detection": "1",
@@ -6392,6 +6423,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"mime": {
 					"core": "0",
@@ -6494,6 +6531,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"mime": {
 					"core": "0",
 					"detection": "1",
@@ -6591,6 +6634,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"mime": {
 					"core": "0",
 					"detection": "1",
@@ -6645,7 +6694,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successful registration with an application {event.app} by user {event.user|event.email_address}",
+			"titleTemplate": "Successful registration with application {event.app} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-register:fail": {
@@ -6678,7 +6727,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to register with an application {event.app} by user {event.user|event.email_address}",
+			"titleTemplate": "Failed to register with application {event.app} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-scan:success": {
@@ -6689,7 +6738,7 @@
 			"pretty_name": "App Scan",
 			"description": "A scan that targeted apps took place",
 			"fields": {},
-			"titleTemplate": "Successful application scan",
+			"titleTemplate": "Successfully scanned an application",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-scan:fail": {
@@ -6711,7 +6760,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to scan application",
+			"titleTemplate": "Failed to scan an application",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-start:success": {
@@ -6755,7 +6804,7 @@
 			"pretty_name": "App Time Modify",
 			"description": "The internal time of the application was updated",
 			"fields": {},
-			"titleTemplate": "Successful modification of time of application",
+			"titleTemplate": "Successful time modification of an application",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-time-modify:fail": {
@@ -6777,7 +6826,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify time of application",
+			"titleTemplate": "Failed to modify time of an application",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-login:success": {
@@ -7057,7 +7106,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Successfully endpoint added to the domain",
+			"titleTemplate": "Successfully added an endpoint to a domain",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-domain-join:fail": {
@@ -7090,7 +7139,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to add endpoint into the domain",
+			"titleTemplate": "Failed to add an endpoint to a domain",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-authentication:success": {
@@ -7189,7 +7238,7 @@
 				"kerberos-logon",
 				"nac-failed-logon"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed authentication to endpoint {event.dest_host|event.dest_ip}",
+			"titleTemplate": "{event.user|event.email_address} failed to authenticate to endpoint {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-logout:success": {
@@ -7243,7 +7292,7 @@
 			"pretty_name": "Endpoint List",
 			"description": "Multiple endpoint objects have been enumerated",
 			"fields": {},
-			"titleTemplate": "Successfully enumerated endpoint object",
+			"titleTemplate": "Successfully enumerated an endpoint object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-list:fail": {
@@ -7265,7 +7314,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enumerate endpoint object",
+			"titleTemplate": "Failed to enumerate an endpoint object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-lock:success": {
@@ -7293,7 +7342,7 @@
 			"legacy_event_name": [
 				"workstation-unlocked"
 			],
-			"titleTemplate": "Workstation {event.dest_host|event.dest_ip}unlocked",
+			"titleTemplate": "Workstation {event.dest_host|event.dest_ip} unlocked",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-create:success": {
@@ -7304,7 +7353,7 @@
 			"pretty_name": "Endpoint Create",
 			"description": "An endpoint object or instance was create",
 			"fields": {},
-			"titleTemplate": "An endpoint instance or object created successfully",
+			"titleTemplate": "Successfully created an endpoint instance or object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-create:fail": {
@@ -7340,7 +7389,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "An endpoint instance or object {event.dest_host|event.dest_ip} successfully deleted",
+			"titleTemplate": "Successfully deleted an endpoint instance or object {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-modify:success": {
@@ -7370,7 +7419,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Successfully configured/modified properties of the endpoint instance or object",
+			"titleTemplate": "Successfully configured/modified properties of an endpoint instance or object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-modify:fail": {
@@ -7410,7 +7459,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "configuration/properties of the endpoint instance or object failed",
+			"titleTemplate": "Configuration/Properties of an endpoint instance or object failed",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-start:success": {
@@ -7454,7 +7503,7 @@
 			"pretty_name": "Endpoint Stop",
 			"description": "An endpoint was shutdown",
 			"fields": {},
-			"titleTemplate": "Successfully shut down and endpoint {event.dest_host|event.dest_ip}",
+			"titleTemplate": "Successfully shut down endpoint {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-stop:fail": {
@@ -7476,7 +7525,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to shut down an endpoint {event.dest_host|event.dest_ip}",
+			"titleTemplate": "Failed to shut down endpoint {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-notification:success": {
@@ -7487,7 +7536,7 @@
 			"pretty_name": "Endpoint Notification",
 			"description": "An endpoint notification is an entirely informational notification that has popped up on an endpoint. This activity only represents informational events that are not \"activities\".",
 			"fields": {},
-			"titleTemplate": "The endpoint notification popped up successfully",
+			"titleTemplate": "Notification on an endpoint popped up successfully",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-policy-verify:success": {
@@ -7507,7 +7556,7 @@
 			"legacy_event_name": [
 				"nac-logon"
 			],
-			"titleTemplate": "Successfully verified policy of an endpoint",
+			"titleTemplate": "Successfully verified policy on an endpoint",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-policy-verify:fail": {
@@ -7537,7 +7586,7 @@
 			"legacy_event_name": [
 				"nac-failed-logon"
 			],
-			"titleTemplate": "Failed to verify policy of an endpoint",
+			"titleTemplate": "Failed to verify policy on an endpoint",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-scan:success": {
@@ -7587,7 +7636,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successful executed activity on the endpoint {event.dest_host|event.dest_ip}",
+			"titleTemplate": "Successfully executed an activity on endpoint {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-activity:fail": {
@@ -7614,7 +7663,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to execute activity on the endpoint {event.dest_host|event.dest_ip}",
+			"titleTemplate": "Failed to execute an activity on endpoint {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-enable:success": {
@@ -7625,7 +7674,7 @@
 			"pretty_name": "Endpoint Enable",
 			"description": "An endpoint was enabled and is ready for use",
 			"fields": {},
-			"titleTemplate": "Successfully enabled endpoint access for the user {event.user|event.email_address}",
+			"titleTemplate": "Successfully enabled an endpoint access for user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-enable:fail": {
@@ -7647,7 +7696,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enable endpoint access for the user {event.user|event.email_address}",
+			"titleTemplate": "Failed to enable an endpoint access for user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-name-modify:success": {
@@ -7658,7 +7707,7 @@
 			"pretty_name": "Endpoint Name Modify",
 			"description": "The host name of an endpoint was changed",
 			"fields": {},
-			"titleTemplate": "Successfully modified name of an endpoint",
+			"titleTemplate": "Successfully modified the name of an endpoint",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-name-modify:fail": {
@@ -7680,7 +7729,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify name of an endpoint",
+			"titleTemplate": "Failed to modify the name of an endpoint",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-password-modify:success": {
@@ -7763,7 +7812,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully executed command on an endpoint object or instance",
+			"titleTemplate": "Successfully executed a command on an endpoint object or instance",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-command:fail": {
@@ -7790,7 +7839,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Failed to execute command on an endpoint object or instance",
+			"titleTemplate": "Failed to execute a command on an endpoint object or instance",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-time-modify:success": {
@@ -7891,7 +7940,7 @@
 			"legacy_event_name": [
 				"database-login"
 			],
-			"titleTemplate": "Successful login to the database by {event.db_user}",
+			"titleTemplate": "Successful login to database by {event.db_user}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-login:fail": {
@@ -7992,7 +8041,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successfully logged out the database by the user {event.db_user}",
+			"titleTemplate": "Successfully logged out of a database by user {event.db_user}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-logout:fail": {
@@ -8025,7 +8074,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "User failed to log out of the database",
+			"titleTemplate": "User failed to log out of a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-activity:success": {
@@ -8045,7 +8094,7 @@
 			"legacy_event_name": [
 				"database-access"
 			],
-			"titleTemplate": "Successful activity in the database",
+			"titleTemplate": "Successful activity in a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-activity:fail": {
@@ -8075,7 +8124,7 @@
 			"legacy_event_name": [
 				"database-activity-failed"
 			],
-			"titleTemplate": "A database activity that failed",
+			"titleTemplate": "Failed activity in a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-query:success": {
@@ -8106,7 +8155,7 @@
 			"legacy_event_name": [
 				"database-query"
 			],
-			"titleTemplate": "Sucessfully database resource queried {event.db_query}",
+			"titleTemplate": "Sucessfully queried {event.db_query} a database resource",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-query:fail": {
@@ -8147,7 +8196,7 @@
 			"legacy_event_name": [
 				"database-query"
 			],
-			"titleTemplate": "Failed to query the database resource",
+			"titleTemplate": "Failed to query a database resource",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-modify:success": {
@@ -8161,7 +8210,7 @@
 			"legacy_event_name": [
 				"database-update"
 			],
-			"titleTemplate": "Successfully modified the database {event.db_name} by user {event.db_user}",
+			"titleTemplate": "Successfully modified database {event.db_name} by user {event.db_user}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-delete:success": {
@@ -8211,7 +8260,7 @@
 			"pretty_name": "Database Create",
 			"description": "A database resource was created",
 			"fields": {},
-			"titleTemplate": "Successfully created database",
+			"titleTemplate": "Successfully created a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-create:fail": {
@@ -8233,7 +8282,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create database",
+			"titleTemplate": "Failed to create a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-list:success": {
@@ -8244,7 +8293,7 @@
 			"pretty_name": "Database List",
 			"description": "Database resources were enumerated on the database",
 			"fields": {},
-			"titleTemplate": "Successfully enumerated resources in the database",
+			"titleTemplate": "Successfully enumerated resources in a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-list:fail": {
@@ -8266,7 +8315,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enumerate the resources in the database",
+			"titleTemplate": "Failed to enumerate the resources in a database",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vpn-login:success": {
@@ -9471,7 +9520,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successfully added email recipient",
+			"titleTemplate": "Successfully added an email recipient",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-recipient-add:fail": {
@@ -9539,7 +9588,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to add email recipient",
+			"titleTemplate": "Failed to add an email recipient",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-recipient-remove:success": {
@@ -9597,7 +9646,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successfully removed recipient from an email",
+			"titleTemplate": "Successfully removed a recipient from an email",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email-recipient-remove:fail": {
@@ -9665,7 +9714,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to remove recipient from an email",
+			"titleTemplate": "Failed to remove a recipient from an email",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"email_rule-create:success": {
@@ -10038,11 +10087,18 @@
 			"outcome": "success",
 			"pretty_name": "Ds_object Activity",
 			"description": "An activity on a directory service object",
-			"fields": {},
+			"fields": {
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+
+			},
 			"legacy_event_name": [
 				"ds-access"
 			],
-			"titleTemplate": "Successfully performed an activity on directory service object",
+			"titleTemplate": "Successfully performed an activity on a directory service object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-activity:fail": {
@@ -10062,12 +10118,17 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
 				"failed-ds-access"
 			],
-			"titleTemplate": "Failed to perform activity on directory service object",
+			"titleTemplate": "Failed to perform an activity on a directory service object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-create:success": {
@@ -10077,11 +10138,18 @@
 			"outcome": "success",
 			"pretty_name": "Ds_object Create",
 			"description": "A directory service object was created",
-			"fields": {},
+			"fields": {
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+
+			},
 			"legacy_event_name": [
 				"ds-access"
 			],
-			"titleTemplate": "Successfully created directory service object by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully created a directory service object by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-modify:success": {
@@ -10091,11 +10159,17 @@
 			"outcome": "success",
 			"pretty_name": "Ds_object Modify",
 			"description": "A directory service object was modified",
-			"fields": {},
+			"fields": {
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"ds-access"
 			],
-			"titleTemplate": "Successfully modified directory service object by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully modified a directory service object by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-delete:success": {
@@ -10105,11 +10179,17 @@
 			"outcome": "success",
 			"pretty_name": "Ds_object Delete",
 			"description": "A directory service object was deleted",
-			"fields": {},
+			"fields": {
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"legacy_event_name": [
 				"ds-access"
 			],
-			"titleTemplate": "Successfully deleted directory service object by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully deleted a directory service object by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-move:success": {
@@ -10134,12 +10214,17 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
 				"ds-access"
 			],
-			"titleTemplate": "Successfully moved directory service object to another location",
+			"titleTemplate": "Successfully moved a directory service object to another location",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-restore:success": {
@@ -10164,12 +10249,17 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "0"
+				},
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
 				"ds-access"
 			],
-			"titleTemplate": "Successfully restored directory service object",
+			"titleTemplate": "Successfully restored a directory service object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds_object-read:success": {
@@ -10179,7 +10269,13 @@
 			"outcome": "success",
 			"pretty_name": "Ds_object Read",
 			"description": "A request was made to read the information of a directory service object ",
-			"fields": {},
+			"fields": {
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"titleTemplate": "Successfully read information of directory service object",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10200,9 +10296,14 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"object_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
-			"titleTemplate": "Failed to read information of directory service object",
+			"titleTemplate": "Failed to read information on a directory service object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"peripheral_device-enable:success": {
@@ -10256,7 +10357,7 @@
 			"legacy_event_name": [
 				"usb-activity"
 			],
-			"titleTemplate": "Successfully performed activity on a peripheral storage device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplate": "Successfully performed an activity on a peripheral storage device {event.device_name|event.device_id} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"peripheral_storage-activity:fail": {
@@ -10438,7 +10539,7 @@
 			"legacy_event_name": [
 				"member-added"
 			],
-			"titleTemplate": "{event.user|event.email_address}added {event.dest_user} to group {event.group_name}",
+			"titleTemplate": "{event.user|event.email_address} added {event.dest_user} to group {event.group_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-member-add:fail": {
@@ -10570,7 +10671,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully moved a from one group to another",
+			"titleTemplate": "Successfully moved a member from one group to another",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-member-move:fail": {
@@ -10708,7 +10809,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Failed to create a group {event.group_name} by user {event.user|event.email_address}",
+			"titleTemplate": "Failed to create group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-read:success": {
@@ -10719,7 +10820,7 @@
 			"pretty_name": "Group Read",
 			"description": "A request was made to read the content of a group",
 			"fields": {},
-			"titleTemplate": "Successfully requested and read the content of group",
+			"titleTemplate": "Successfully requested and read the content of a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-read:fail": {
@@ -10741,7 +10842,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Request to read the content of the group failed",
+			"titleTemplate": "Request to read the content of a group failed",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-modify:success": {
@@ -10755,7 +10856,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Successfully modified group",
+			"titleTemplate": "Successfully modified a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-modify:fail": {
@@ -10780,7 +10881,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Failed to modify group",
+			"titleTemplate": "Failed to modify a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-permission-modify:success": {
@@ -10813,7 +10914,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify permission of group",
+			"titleTemplate": "Failed to modify permission of a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-policy-attach:success": {
@@ -10863,7 +10964,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully assigned role to group",
+			"titleTemplate": "Successfully assigned a role to group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-role-assign:fail": {
@@ -10890,7 +10991,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to assign role to group",
+			"titleTemplate": "Failed to assign a role to group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-role-revoke:success": {
@@ -10907,7 +11008,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully revoked the security role associated with the group object",
+			"titleTemplate": "Successfully revoked a security role associated with a group object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-role-revoke:fail": {
@@ -10934,7 +11035,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to revoke the security role associated with the group object",
+			"titleTemplate": "Failed to revoke a security role associated with a group object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-role-modify:success": {
@@ -10951,7 +11052,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully modified security role associated with the group",
+			"titleTemplate": "Successfully modified a security role associated with a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-role-modify:fail": {
@@ -10978,7 +11079,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify security role associated with the group",
+			"titleTemplate": "Failed to modify a security role associated with a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-repository-add:success": {
@@ -10995,7 +11096,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully added repository to a group",
+			"titleTemplate": "Successfully added a repository to a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-repository-add:fail": {
@@ -11022,7 +11123,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to add repository to a group",
+			"titleTemplate": "Failed to add a repository to a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-repository-remove:success": {
@@ -11039,7 +11140,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully removed repository from a group",
+			"titleTemplate": "Successfully removed a repository from a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-repository-remove:fail": {
@@ -11066,7 +11167,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to remove repository from a group",
+			"titleTemplate": "Failed to remove a repository from a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"repository-read:success": {
@@ -11176,7 +11277,7 @@
 			"pretty_name": "Group List",
 			"description": "An enumeration of multiple groups took place",
 			"fields": {},
-			"titleTemplate": "Successfully enumerated group",
+			"titleTemplate": "Successfully enumerated a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-list:fail": {
@@ -11198,7 +11299,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enumerate group",
+			"titleTemplate": "Failed to enumerate a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"network-traffic:success": {
@@ -11510,6 +11611,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"referrer": {
 					"core": "0",
 					"detection": "0",
@@ -11582,6 +11689,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"referrer": {
 					"core": "0",
 					"detection": "0",
@@ -11652,6 +11765,12 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"referrer": {
 					"core": "0",
 					"detection": "0",
@@ -11678,7 +11797,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Successful initiated web query using HTTP protocol {event.method}",
+			"titleTemplate": "Successfully initiated a web query using HTTP protocol {event.method}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"http-request:fail": {
@@ -11693,6 +11812,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"referrer": {
 					"core": "0",
@@ -11730,7 +11855,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to initiate web query using HTTP protocol {event.method}",
+			"titleTemplate": "Failed to initiate a web query using HTTP protocol {event.method}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"http-response:success": {
@@ -11745,6 +11870,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"referrer": {
 					"core": "0",
@@ -11787,6 +11918,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"user_agent_client": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"referrer": {
 					"core": "0",
@@ -11835,7 +11972,7 @@
 			"pretty_name": "Http Close",
 			"description": "A HTTP session was closed",
 			"fields": {},
-			"titleTemplate": "Closed HTTP session",
+			"titleTemplate": "Closed an HTTP session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"http-close:fail": {
@@ -11857,7 +11994,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to close HTTP session",
+			"titleTemplate": "Failed to close an HTTP session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"http-traffic:success": {
@@ -11890,7 +12027,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "HTTP request failed",
+			"titleTemplate": "An HTTP request failed",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-privilege-assign:success": {
@@ -11910,7 +12047,7 @@
 			"legacy_event_name": [
 				"privileged-access"
 			],
-			"titleTemplate": "Successfully assigned privileges {event.privileges} to a user account {event.user|event.email_address}",
+			"titleTemplate": "Successfully assigned privileges {event.privileges} to user account {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-privilege-modify:success": {
@@ -12019,7 +12156,7 @@
 				"privileged-access",
 				"privileged-object-access"
 			],
-			"titleTemplate": "Successfully used an account privileges {event.privileges} by {event.user|event.email_address}",
+			"titleTemplate": "Successfully used account privileges {event.privileges} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-privilege-use:fail": {
@@ -12042,7 +12179,7 @@
 				}
 			},
 			"legacy_event_name": [],
-			"titleTemplate": "Failed to use an account privileges {event.privileges} by {event.user|event.email_address}",
+			"titleTemplate": "Failed to use account privileges {event.privileges} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"registry-create:success": {
@@ -12311,7 +12448,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to execute the service {event.service_name}",
+			"titleTemplate": "Failed to execute service {event.service_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"service-state-modify:success": {
@@ -12388,7 +12525,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to stop the service {event.service_name}",
+			"titleTemplate": "Failed to stop service {event.service_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"service-modify:success": {
@@ -12481,7 +12618,7 @@
 			"legacy_event_name": [
 				"share-access-denied"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed access network share {event.share_name} on {event.dest_host|event.dest_ip}",
+			"titleTemplate": "{event.user|event.email_address} failed to access network share {event.share_name} on {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"share-create:success": {
@@ -12799,7 +12936,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully updated the configuration of a scheduled task {event.task_name}",
+			"titleTemplate": "Successfully updated the configuration of scheduled task {event.task_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"scheduled_task-modify:fail": {
@@ -12826,7 +12963,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Failed to update the configuration of a scheduled task {event.task_name}",
+			"titleTemplate": "Failed to update the configuration of scheduled task {event.task_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"scheduled_task-start:success": {
@@ -12837,7 +12974,7 @@
 			"pretty_name": "Scheduled_task Start",
 			"description": "A scheduled task was configured to start, marking the moment where it would start searching for its triggers.",
 			"fields": {},
-			"titleTemplate": "Successfully started a scheduled task {event.task_name}",
+			"titleTemplate": "Successfully started scheduled task {event.task_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"scheduled_task-start:fail": {
@@ -12859,7 +12996,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to start a scheduled task {event.task_name}",
+			"titleTemplate": "Failed to start scheduled task {event.task_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"scheduled_task-trigger:success": {
@@ -12870,7 +13007,7 @@
 			"pretty_name": "Scheduled_task Trigger",
 			"description": "An occurance of a scheduled task was executed",
 			"fields": {},
-			"titleTemplate": "Successfully executed an occurrence of a scheduled task {event.task_name}",
+			"titleTemplate": "Successfully executed an occurrence of scheduled task {event.task_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"scheduled_task-trigger:fail": {
@@ -12892,7 +13029,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to execute an occurrence of a scheduled task {event.task_name}",
+			"titleTemplate": "Failed to execute an occurrence of scheduled task {event.task_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"meeting-create:success": {
@@ -13043,7 +13180,7 @@
 			"pretty_name": "Log Backup",
 			"description": "An audit log was backed up",
 			"fields": {},
-			"titleTemplate": "Successfully backed up the audit log by {event.user|event.email_address}",
+			"titleTemplate": "Successfully took a backup of audit logs by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-backup:fail": {
@@ -13065,7 +13202,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to backup the audit log by {event.user|event.email_address}",
+			"titleTemplate": "Failed to take a backup of audit logs by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-clear:success": {
@@ -13096,7 +13233,7 @@
 			"legacy_event_name": [
 				"audit-log-clear"
 			],
-			"titleTemplate": "Successfully cleared the audit log by {event.user|event.email_address}",
+			"titleTemplate": "Successfully cleared audit logs by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-clear:fail": {
@@ -13137,7 +13274,7 @@
 			"legacy_event_name": [
 				"audit-log-clear"
 			],
-			"titleTemplate": "Failed to clear the audit log by {event.user|event.email_address}",
+			"titleTemplate": "Failed to clear the audit logs by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-disable:success": {
@@ -13148,7 +13285,7 @@
 			"pretty_name": "Log Disable",
 			"description": "The audit log generation from a log was disabled",
 			"fields": {},
-			"titleTemplate": "Successfully disabled the audit log generation",
+			"titleTemplate": "Successfully disabled audit log generation",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-disable:fail": {
@@ -13170,7 +13307,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to disable the audit log generation",
+			"titleTemplate": "Failed to disable audit log generation",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-download:success": {
@@ -13181,7 +13318,7 @@
 			"pretty_name": "Log Download",
 			"description": "An audit log was downloaded from a remote site",
 			"fields": {},
-			"titleTemplate": "Successfully downloaded an audit log from a remote site by {event.user|event.email_address}",
+			"titleTemplate": "Successfully downloaded audit logs from a remote site by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-download:fail": {
@@ -13203,7 +13340,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to download an audit log from a remote site by {event.user|event.email_address}",
+			"titleTemplate": "Failed to download audit logs from a remote site by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-export:success": {
@@ -13214,7 +13351,7 @@
 			"pretty_name": "Log Export",
 			"description": "An audit log was exported from a remote site",
 			"fields": {},
-			"titleTemplate": "Successfully exported an audit log from a remote site by {event.user|event.email_address}",
+			"titleTemplate": "Successfully exported audit logs from a remote site by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-export:fail": {
@@ -13236,7 +13373,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to export an audit log from a remote site by {event.user|event.email_address}",
+			"titleTemplate": "Failed to export audit logs from a remote site by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-enable:success": {
@@ -13247,7 +13384,7 @@
 			"pretty_name": "Log Enable",
 			"description": "The audit log generation from a log was enabled",
 			"fields": {},
-			"titleTemplate": "Successfully enabled the audit log generation",
+			"titleTemplate": "Successfully enabled audit log generation",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-enable:fail": {
@@ -13269,7 +13406,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enable the audit log generation",
+			"titleTemplate": "Failed to enable audit log generation",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log-read:success": {
@@ -13349,7 +13486,7 @@
 			"legacy_event_name": [
 				"audit-policy-change"
 			],
-			"titleTemplate": "Successful modification of audit policy",
+			"titleTemplate": "Successful modification of an audit policy",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"audit_policy-modify:fail": {
@@ -13374,7 +13511,7 @@
 			"legacy_event_name": [
 				"audit-policy-change"
 			],
-			"titleTemplate": "Failed to modify audit policy",
+			"titleTemplate": "Failed to modify an audit policy",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-modify:success": {
@@ -13394,7 +13531,7 @@
 			"legacy_event_name": [
 				"config-change"
 			],
-			"titleTemplate": "Successfully modify configuration of the Application/Program",
+			"titleTemplate": "Successfully modified configuration of an application/program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-modify:fail": {
@@ -13424,7 +13561,7 @@
 			"legacy_event_name": [
 				"config-change"
 			],
-			"titleTemplate": "Failed to modify the configuration of the Application/Program",
+			"titleTemplate": "Failed to modify configuration of an application/program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-mfa-enable:success": {
@@ -13435,7 +13572,7 @@
 			"pretty_name": "Configuration Mfa Enable",
 			"description": "The global mfa configuration of an application was changed to enabled",
 			"fields": {},
-			"titleTemplate": "Successfully enabled MFA configuration by the user {event.user|event.email_address}",
+			"titleTemplate": "Successfully enabled MFA configuration by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-mfa-enable:fail": {
@@ -13457,7 +13594,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enable MFA configuration by the user {event.user|event.email_address}",
+			"titleTemplate": "Failed to enable MFA configuration by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-mfa-disable:success": {
@@ -13468,7 +13605,7 @@
 			"pretty_name": "Configuration Mfa Disable",
 			"description": "The global mfa configuration of an application was changed to disabled",
 			"fields": {},
-			"titleTemplate": "Successfully disabled MFA configuration by the user {event.user|event.email_address}",
+			"titleTemplate": "Successfully disabled MFA configuration by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-mfa-disable:fail": {
@@ -13490,7 +13627,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to disable MFA configuration by the user {event.user|event.email_address}",
+			"titleTemplate": "Failed to disable MFA configuration by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-routing-modify:success": {
@@ -13501,7 +13638,7 @@
 			"pretty_name": "Configuration Routing Modify",
 			"description": "The global routing configuration of an application or a program was modified",
 			"fields": {},
-			"titleTemplate": "Successfully modify routing configuration of the application or Program",
+			"titleTemplate": "Successfully modified routing configuration of an application or program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-routing-modify:fail": {
@@ -13523,7 +13660,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify routing configuration of application or program",
+			"titleTemplate": "Failed to modify routing configuration of an application or program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-download:success": {
@@ -13534,7 +13671,7 @@
 			"pretty_name": "Configuration Download",
 			"description": "The global configuration of an application or a program was downloaded",
 			"fields": {},
-			"titleTemplate": "Successfully downloaded configuration",
+			"titleTemplate": "Successfully downloaded a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-download:fail": {
@@ -13556,7 +13693,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to download configuration",
+			"titleTemplate": "Failed to download a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-read:success": {
@@ -13567,7 +13704,7 @@
 			"pretty_name": "Configuration Read",
 			"description": "The global configuration of an application or a program was read",
 			"fields": {},
-			"titleTemplate": "Successfully read the configuration of theApplication/Program",
+			"titleTemplate": "Successfully read the configuration of an application/program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-read:fail": {
@@ -13589,7 +13726,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to read configuration of the Application/Program",
+			"titleTemplate": "Failed to read configuration of an application/program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-delete:success": {
@@ -13600,7 +13737,7 @@
 			"pretty_name": "Configuration Delete",
 			"description": "The global configuration of an application or a program was deleted",
 			"fields": {},
-			"titleTemplate": "Successfully deleted configuration",
+			"titleTemplate": "Successfully deleted a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-delete:fail": {
@@ -13622,7 +13759,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete configuration",
+			"titleTemplate": "Failed to delete a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-create:success": {
@@ -13633,7 +13770,7 @@
 			"pretty_name": "Configuration Create",
 			"description": "A global configuration definition was created",
 			"fields": {},
-			"titleTemplate": "Successfully created configuration",
+			"titleTemplate": "Successfully created a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-create:fail": {
@@ -13655,7 +13792,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create configuration",
+			"titleTemplate": "Failed to create a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-save:success": {
@@ -13666,7 +13803,7 @@
 			"pretty_name": "Configuration Save",
 			"description": "Changes to the global configuration of an application or a program were saved",
 			"fields": {},
-			"titleTemplate": "Successfully save configuration of application or program",
+			"titleTemplate": "Successfully saved a configuration of an application or program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-save:fail": {
@@ -13688,7 +13825,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to save configuration of application or program",
+			"titleTemplate": "Failed to save a configuration of an application or program",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-load:success": {
@@ -13699,7 +13836,7 @@
 			"pretty_name": "Configuration Load",
 			"description": "A global configuration definition was loaded into the app, replacing the current definition if it exists",
 			"fields": {},
-			"titleTemplate": "The configuration loaded successfully",
+			"titleTemplate": "Successfully loaded a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"configuration-load:fail": {
@@ -13721,7 +13858,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to load configuration",
+			"titleTemplate": "Failed to load a configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dcom-activate:success": {
@@ -13735,7 +13872,7 @@
 			"legacy_event_name": [
 				"NA"
 			],
-			"titleTemplate": "Successfully activated DCOM application",
+			"titleTemplate": "Successfully activated a DCOM application",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dcom-activate:fail": {
@@ -13760,7 +13897,7 @@
 			"legacy_event_name": [
 				"dcom-activation-failed"
 			],
-			"titleTemplate": "Failed to activate DCOM application",
+			"titleTemplate": "Failed to activate a DCOM application",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"physical_location-access:success": {
@@ -13822,7 +13959,7 @@
 			"legacy_event_name": [
 				"failed-physical-access"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed access physical location {event.location_door} ",
+			"titleTemplate": "{event.user|event.email_address} failed to access physical location {event.location_door} ",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"physical_location-modify:success": {
@@ -13833,7 +13970,7 @@
 			"pretty_name": "Physical_location Modify",
 			"description": "The properties of the digital representation of the door, gate, or any other physical location were changed",
 			"fields": {},
-			"titleTemplate": "Successfully updated the properties of the physical location",
+			"titleTemplate": "Successfully updated the properties of a physical location",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"physical_location-modify:fail": {
@@ -13855,7 +13992,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to update the properties of the physical location",
+			"titleTemplate": "Failed to update the properties of a physical location",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"printer-activity:success": {
@@ -13912,7 +14049,7 @@
 			"pretty_name": "Dhcp Acknowledge",
 			"description": "A DHCP ack packet",
 			"fields": {},
-			"titleTemplate": "Successfully acknowledged DHCP packet",
+			"titleTemplate": "Successfully acknowledged a DHCP packet",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-acknowledge:fail": {
@@ -13934,7 +14071,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to acknowledge DHCP packet",
+			"titleTemplate": "Failed to acknowledge a DHCP packet",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-discover:success": {
@@ -13945,7 +14082,7 @@
 			"pretty_name": "Dhcp Discover",
 			"description": "A DHCP discover packet",
 			"fields": {},
-			"titleTemplate": "Successfully discovered DHCP packet",
+			"titleTemplate": "Successfully discovered a DHCP packet",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-discover:fail": {
@@ -13967,7 +14104,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to discover DHCP packet",
+			"titleTemplate": "Failed to discover a DHCP packet",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-offer:success": {
@@ -13978,7 +14115,7 @@
 			"pretty_name": "Dhcp Offer",
 			"description": "A DHCP offer packet",
 			"fields": {},
-			"titleTemplate": "Successfully offered IP address from DHCP server",
+			"titleTemplate": "Successfully offered an IP address from a DHCP server",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-offer:fail": {
@@ -14000,7 +14137,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to offer IP from DHCP server",
+			"titleTemplate": "Failed to offer an IP address from a DHCP server",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-session:success": {
@@ -14014,7 +14151,7 @@
 			"legacy_event_name": [
 				"computer-logon"
 			],
-			"titleTemplate": "DHCP session successfully summarized",
+			"titleTemplate": "A DHCP session successfully summarized",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-session:fail": {
@@ -14039,7 +14176,7 @@
 			"legacy_event_name": [
 				"computer-logon"
 			],
-			"titleTemplate": "Failed to summarize DHCP session",
+			"titleTemplate": "Failed to summarize a DHCP session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dhcp-traffic:success": {
@@ -14241,7 +14378,7 @@
 			"pretty_name": "Branch Create",
 			"description": "A git branch was created",
 			"fields": {},
-			"titleTemplate": "Successfully branch created by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully created a branch by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-create:fail": {
@@ -14263,7 +14400,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create branch",
+			"titleTemplate": "Failed to create a branch",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-modify:success": {
@@ -14274,7 +14411,7 @@
 			"pretty_name": "Branch Modify",
 			"description": "A git branch properties were modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified branch by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully modified a branch by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-modify:fail": {
@@ -14296,7 +14433,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify branch by user {event.user|event.email_address}",
+			"titleTemplate": "Failed to modify a branch by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-protection-disable:success": {
@@ -14329,7 +14466,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to disable branch protection",
+			"titleTemplate": "Failed to disable a branch protection",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-protection-enable:success": {
@@ -14340,7 +14477,7 @@
 			"pretty_name": "Branch Protection Enable",
 			"description": "The protection status of a git branch was changed to enabled",
 			"fields": {},
-			"titleTemplate": "Successfully enabled branch protection",
+			"titleTemplate": "Successfully enabled a branch protection",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-protection-enable:fail": {
@@ -14362,7 +14499,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enable branch protection",
+			"titleTemplate": "Failed to enable a branch protection",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-protection-modify:success": {
@@ -14373,7 +14510,7 @@
 			"pretty_name": "Branch Protection Modify",
 			"description": "The protection configuration of a git branch was changed",
 			"fields": {},
-			"titleTemplate": "Successfully modified branch protection",
+			"titleTemplate": "Successfully modified a branch protection",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"branch-protection-modify:fail": {
@@ -14395,7 +14532,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify branch protection",
+			"titleTemplate": "Failed to modify a branch protection",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"call-receive:success": {
@@ -14413,7 +14550,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successfully received the call",
+			"titleTemplate": "Successfully received a call",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"call-receive:fail": {
@@ -14441,7 +14578,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to receive call",
+			"titleTemplate": "Failed to receive a call",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"call-send:success": {
@@ -14459,7 +14596,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successfully call sent",
+			"titleTemplate": "Successfully sent a call",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"call-send:fail": {
@@ -14498,7 +14635,7 @@
 			"pretty_name": "Channel Create",
 			"description": "A communication channel was created",
 			"fields": {},
-			"titleTemplate": "Successfully created communication channel",
+			"titleTemplate": "Successfully created a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-create:fail": {
@@ -14520,7 +14657,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create communication channel",
+			"titleTemplate": "Failed to create a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-delete:success": {
@@ -14531,7 +14668,7 @@
 			"pretty_name": "Channel Delete",
 			"description": "A communication channel was deleted",
 			"fields": {},
-			"titleTemplate": "Successfully deleted communication channel",
+			"titleTemplate": "Successfully deleted a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-delete:fail": {
@@ -14553,7 +14690,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete communication channel",
+			"titleTemplate": "Failed to delete a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-member-join:success": {
@@ -14586,7 +14723,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to join or add a member into communication channel",
+			"titleTemplate": "Failed to join or add a member to a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-member-leave:success": {
@@ -14597,7 +14734,7 @@
 			"pretty_name": "Channel Member Leave",
 			"description": "A member has left or was removed from a communication channel",
 			"fields": {},
-			"titleTemplate": "Successfully removed or left a member from communication channel",
+			"titleTemplate": "Successfully removed or left a member from a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-member-leave:fail": {
@@ -14619,7 +14756,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to remove or leave a member from communication channel",
+			"titleTemplate": "Failed to remove or leave a member from a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-modify:success": {
@@ -14630,7 +14767,7 @@
 			"pretty_name": "Channel Modify",
 			"description": "The properties of a communication channel were changed",
 			"fields": {},
-			"titleTemplate": "Successfully modified the properties of communication of channel",
+			"titleTemplate": "Successfully modified the properties of a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-modify:fail": {
@@ -14652,7 +14789,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify the properties of communication channel",
+			"titleTemplate": "Failed to modify the properties of a communication channel",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"cluster-modify:success": {
@@ -14663,7 +14800,7 @@
 			"pretty_name": "Cluster Modify",
 			"description": "The properties or configuration of a virtualization cluster were modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified/configured of cluster",
+			"titleTemplate": "Successfully modified properties/configuration of a cluster",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"cluster-modify:fail": {
@@ -14685,7 +14822,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify/configuration of cluster",
+			"titleTemplate": "Failed to modify properties/configuration of a cluster",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datacenter-modify:success": {
@@ -14696,7 +14833,7 @@
 			"pretty_name": "Datacenter Modify",
 			"description": "The properties or configuration of a virtualization datacenter were modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified configuration of virtualization datacenter",
+			"titleTemplate": "Successfully modified configuration of a virtualization datacenter",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datacenter-modify:fail": {
@@ -14718,7 +14855,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify configuration of virtualization datacenter",
+			"titleTemplate": "Failed to modify configuration of a virtualization datacenter",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-create:success": {
@@ -14729,7 +14866,7 @@
 			"pretty_name": "Datastore Create",
 			"description": "A virtualization datastore was created",
 			"fields": {},
-			"titleTemplate": "Successfully created virtualisation of datastore",
+			"titleTemplate": "Successfully created virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-create:fail": {
@@ -14751,7 +14888,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create virtualisation of datastore",
+			"titleTemplate": "Failed to create virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-delete:success": {
@@ -14762,7 +14899,7 @@
 			"pretty_name": "Datastore Delete",
 			"description": "A virtualization datastore was deleted",
 			"fields": {},
-			"titleTemplate": "Successfully deleted virtualisation of datastore",
+			"titleTemplate": "Successfully deleted virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-delete:fail": {
@@ -14784,7 +14921,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete virtualisation of datastore",
+			"titleTemplate": "Failed to delete virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-enable:success": {
@@ -14795,7 +14932,7 @@
 			"pretty_name": "Datastore Enable",
 			"description": "The status of a virtualization datastore was set to enable",
 			"fields": {},
-			"titleTemplate": "Successfully set the enabled status of virtualisation of datastore",
+			"titleTemplate": "Successfully set the enabled status of virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-enable:fail": {
@@ -14817,7 +14954,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to set the enable status of virtualisation of datastore",
+			"titleTemplate": "Failed to set the enable status of virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-disable:success": {
@@ -14828,7 +14965,7 @@
 			"pretty_name": "Datastore Disable",
 			"description": "The status of a virtualization datastore was set to disable",
 			"fields": {},
-			"titleTemplate": "Successfully set the disable status of virtualisation of datastore",
+			"titleTemplate": "Successfully set the disable status of virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-disable:fail": {
@@ -14850,7 +14987,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to set the disable status of virtualisation of datastore",
+			"titleTemplate": "Failed to set the disable status of virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-modify:success": {
@@ -14861,7 +14998,7 @@
 			"pretty_name": "Datastore Modify",
 			"description": "The properties or configuration of a virtualization datastore were modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified configuration of virtualisation of datastore",
+			"titleTemplate": "Successfully modified configuration of virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"datastore-modify:fail": {
@@ -14883,7 +15020,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify configuration of virtualisation of datastore",
+			"titleTemplate": "Failed to modify configuration of virtualization of a datastore",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-attach:success": {
@@ -14894,7 +15031,7 @@
 			"pretty_name": "Disk Attach",
 			"description": "A disk volume was attached to a machine",
 			"fields": {},
-			"titleTemplate": "Successfully attached disk volume {event.volume_device} to machine",
+			"titleTemplate": "Successfully attached disk volume {event.volume_device} to a machine",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-attach:fail": {
@@ -14916,7 +15053,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to attach disk volume {event.volume_device} to machine",
+			"titleTemplate": "Failed to attach disk volume {event.volume_device} to a machine",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-remove:success": {
@@ -14927,7 +15064,7 @@
 			"pretty_name": "Disk Remove",
 			"description": "A disk attachment was reversed and a disk was removed from a machine",
 			"fields": {},
-			"titleTemplate": "Successfully removed disk from a machine",
+			"titleTemplate": "Successfully removed a disk from a machine",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-remove:fail": {
@@ -14949,7 +15086,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to remove disk from a machine",
+			"titleTemplate": "Failed to remove a disk from a machine",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-modify:success": {
@@ -14960,7 +15097,7 @@
 			"pretty_name": "Disk Modify",
 			"description": "The properties of a disk were changed",
 			"fields": {},
-			"titleTemplate": "Successfully modified properties of disk",
+			"titleTemplate": "Successfully modified properties of a disk",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-modify:fail": {
@@ -14982,7 +15119,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify properties of disk",
+			"titleTemplate": "Failed to modify properties of a disk",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-scan:success": {
@@ -14993,7 +15130,7 @@
 			"pretty_name": "Disk Scan",
 			"description": "A scan that targeted disk objecs took place",
 			"fields": {},
-			"titleTemplate": "Successfully disk scan",
+			"titleTemplate": "Successfully performed a disk scan",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-scan:fail": {
@@ -15015,7 +15152,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to scan disk",
+			"titleTemplate": "Failed to perform a disk scan",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-create:success": {
@@ -15026,7 +15163,7 @@
 			"pretty_name": "Disk Create",
 			"description": "A disk volume object was created",
 			"fields": {},
-			"titleTemplate": "Successfully created disk volume",
+			"titleTemplate": "Successfully created a disk volume",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-create:fail": {
@@ -15048,7 +15185,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create disk volume",
+			"titleTemplate": "Failed to create a disk volume",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-delete:success": {
@@ -15059,7 +15196,7 @@
 			"pretty_name": "Disk Delete",
 			"description": "A disk volume object was deleted",
 			"fields": {},
-			"titleTemplate": "Successfully deleted disk volume",
+			"titleTemplate": "Successfully deleted a disk volume",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-delete:fail": {
@@ -15081,7 +15218,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete disk volume",
+			"titleTemplate": "Failed to delete a disk volume",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-list:success": {
@@ -15158,7 +15295,7 @@
 			"pretty_name": "Vm_pool Create",
 			"description": "A VM pool was created",
 			"fields": {},
-			"titleTemplate": "Successfully created a VM pool {event.vm_pool_name}",
+			"titleTemplate": "Successfully created VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-create:fail": {
@@ -15191,7 +15328,7 @@
 			"pretty_name": "Vm_pool Delete",
 			"description": "A VM pool was deleted",
 			"fields": {},
-			"titleTemplate": "Successfully deleted a VM pool {event.vm_pool_name}",
+			"titleTemplate": "Successfully deleted VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-delete:fail": {
@@ -15213,7 +15350,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete a VM pool {event.vm_pool_name}",
+			"titleTemplate": "Failed to delete VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-modify:success": {
@@ -15224,7 +15361,7 @@
 			"pretty_name": "Vm_pool Modify",
 			"description": "The properties or configuration of a VM pool were modified",
 			"fields": {},
-			"titleTemplate": "Successfully updated a VM pool {event.vm_pool_name} configuration",
+			"titleTemplate": "Successfully updated VM pool {event.vm_pool_name} configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-modify:fail": {
@@ -15246,7 +15383,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to update a VM pool {event.vm_pool_name} configuration",
+			"titleTemplate": "Failed to update VM pool {event.vm_pool_name} configuration",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-endpoint-add:success": {
@@ -15263,7 +15400,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully added a {event.dest_host|event.dest_ip} instance to the VM pool {event.vm_pool_name}",
+			"titleTemplate": "Successfully added {event.dest_host|event.dest_ip} instance to the VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-endpoint-add:fail": {
@@ -15290,7 +15427,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to add a {event.dest_host|event.dest_ip} instance to the VM pool {event.vm_pool_name}",
+			"titleTemplate": "Failed to add {event.dest_host|event.dest_ip} instance to the VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-endpoint-remove:success": {
@@ -15307,7 +15444,7 @@
 					"informational": "1"
 				}
 			},
-			"titleTemplate": "Successfully removed a {event.dest_host|event.dest_ip} instance from the VM pool {event.vm_pool_name}",
+			"titleTemplate": "Successfully removed {event.dest_host|event.dest_ip} instance from the VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_pool-endpoint-remove:fail": {
@@ -15334,7 +15471,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to remove a {event.dest_host|event.dest_ip} instance from the VM pool {event.vm_pool_name}",
+			"titleTemplate": "Failed to remove {event.dest_host|event.dest_ip} instance from the VM pool {event.vm_pool_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_template-create:success": {
@@ -15345,7 +15482,7 @@
 			"pretty_name": "Vm_template Create",
 			"description": "A VM template was created",
 			"fields": {},
-			"titleTemplate": "Successfully created a VM template {event.vm_template_name}",
+			"titleTemplate": "Successfully created VM template {event.vm_template_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_template-create:fail": {
@@ -15444,7 +15581,7 @@
 			"pretty_name": "Folder Delete",
 			"description": "A folder was deleted on an app",
 			"fields": {},
-			"titleTemplate": "Successfully deleted folder",
+			"titleTemplate": "Successfully deleted a folder",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"folder-delete:fail": {
@@ -15466,7 +15603,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete folder",
+			"titleTemplate": "Failed to delete a folder",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"folder-modify:success": {
@@ -15477,7 +15614,7 @@
 			"pretty_name": "Folder Modify",
 			"description": "A folder properties or configuration were modified on an app",
 			"fields": {},
-			"titleTemplate": "Successfully modified configuration/properties of folder",
+			"titleTemplate": "Successfully modified configuration/properties of a folder",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"folder-modify:fail": {
@@ -15499,7 +15636,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify configuration/properties of folder",
+			"titleTemplate": "Failed to modify configuration/properties of a folder",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ftp-traffic:success": {
@@ -15543,7 +15680,7 @@
 			"pretty_name": "Ftp Close",
 			"description": "A FTP network session was closed",
 			"fields": {},
-			"titleTemplate": "Successfully closed FTP network session",
+			"titleTemplate": "Successfully closed an FTP network session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ftp-close:fail": {
@@ -15565,7 +15702,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to close FTP network session",
+			"titleTemplate": "Failed to close an FTP network session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ftp-start:success": {
@@ -15574,9 +15711,9 @@
 			"activity_type": "ftp-start",
 			"outcome": "success",
 			"pretty_name": "Ftp Start",
-			"description": "A FTP network session was initiated",
+			"description": "An FTP network session was initiated",
 			"fields": {},
-			"titleTemplate": "Successfully initiated FTP network session",
+			"titleTemplate": "Successfully initiated an FTP network session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ftp-start:fail": {
@@ -15585,7 +15722,7 @@
 			"activity_type": "ftp-start",
 			"outcome": "fail",
 			"pretty_name": "Ftp Start",
-			"description": "A FTP network session was initiated",
+			"description": "An FTP network session was initiated",
 			"fields": {
 				"failure_reason": {
 					"core": "0",
@@ -15598,7 +15735,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to initiate FTP network session",
+			"titleTemplate": "Failed to initiate an FTP network session",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"hook-create:success": {
@@ -15851,7 +15988,7 @@
 			"pretty_name": "Image List",
 			"description": "An enumeration of VM image objects took place",
 			"fields": {},
-			"titleTemplate": "Successfully enumerated of a VM image objects",
+			"titleTemplate": "Successfully enumerated a VM image object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"image-list:fail": {
@@ -15873,7 +16010,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enumerate of a VM image objects",
+			"titleTemplate": "Failed to enumerate a VM image object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-create:success": {
@@ -15884,7 +16021,7 @@
 			"pretty_name": "Case Create",
 			"description": "A security incident was created on a security product",
 			"fields": {},
-			"titleTemplate": "Successfully created incident on vendor {event.vendor}",
+			"titleTemplate": "Successfully created an incident on vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-create:fail": {
@@ -15906,7 +16043,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create incident on vendor {event.vendor}",
+			"titleTemplate": "Failed to create an incident on vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-delete:success": {
@@ -15917,7 +16054,7 @@
 			"pretty_name": "Case Delete",
 			"description": "A security incident was deleted on a security product",
 			"fields": {},
-			"titleTemplate": "Successfully deleted incident on vendor {event.vendor}",
+			"titleTemplate": "Successfully deleted an incident on vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-delete:fail": {
@@ -15939,7 +16076,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete incident on vendor {event.vendor}",
+			"titleTemplate": "Failed to delete an incident on vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-modify:success": {
@@ -15950,7 +16087,7 @@
 			"pretty_name": "Case Modify",
 			"description": "The properties or content of a security incident were changed on a security product",
 			"fields": {},
-			"titleTemplate": "Successfully modified incident on vendor {event.vendor}",
+			"titleTemplate": "Successfully modified an incident on vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-modify:fail": {
@@ -15972,7 +16109,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify incident on vendor {event.vendor}",
+			"titleTemplate": "Failed to modify an incident on vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"log_source-add:success": {
@@ -16201,7 +16338,7 @@
 			"legacy_event_name": [
 				"app-activity"
 			],
-			"titleTemplate": "Successfully updated the permissions that apply to an email mailbox",
+			"titleTemplate": "Successfully updated the permissions on an email mailbox",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"mailbox-permission-modify:fail": {
@@ -16239,7 +16376,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to update the permissions that apply to an email mailbox",
+			"titleTemplate": "Failed to update the permissions on an email mailbox",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"mailbox-item-create:success": {
@@ -17086,7 +17223,7 @@
 			"pretty_name": "Policy Enable",
 			"description": "The enforcement status of a security policy was changed to enabled",
 			"fields": {},
-			"titleTemplate": "Successfully updated the enforcement status of a security policy to enabled",
+			"titleTemplate": "Successfully updated a security policy's enforcement status to enabled",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"policy-enable:fail": {
@@ -17108,7 +17245,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to update the enforcement status of a security policy to enabled",
+			"titleTemplate": "Failed to update a security policy's enforcement status to enabled",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"policy-disable:success": {
@@ -17119,7 +17256,7 @@
 			"pretty_name": "Policy Disable",
 			"description": "The enforcement status of a security policy was changed to disabled",
 			"fields": {},
-			"titleTemplate": "Successfully updated the enforcement status of a security policy to disabled",
+			"titleTemplate": "Successfully updated a security policy's enforcement status to disabled",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"policy-disable:fail": {
@@ -17141,7 +17278,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to update the enforcement status of a security policy to disabled",
+			"titleTemplate": "Failed to update a security policy's enforcement status to disabled",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"policy-apply:success": {
@@ -17371,7 +17508,7 @@
 			"pretty_name": "Report Export",
 			"description": "An export process for a report was initiated in the app",
 			"fields": {},
-			"titleTemplate": "Successfully initiated an export process for a report in the app",
+			"titleTemplate": "Successfully initiated an export process for a report in an app",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"report-export:fail": {
@@ -17393,7 +17530,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to initiate an export process for a report in the app",
+			"titleTemplate": "Failed to initiate an export process for a report in an app",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"report-read:success": {
@@ -17451,6 +17588,510 @@
 			"titleTemplate": "Failed to execute a report on an app",
 			"titleTemplateFormatVersion": "1.0"
 		},
+        "dashboard-create:success": {
+            "subject": "dashboard",
+            "activity": "create",
+            "activity_type": "dashboard-create",
+            "outcome": "success",
+            "pretty_name": "Dashboard Created",
+            "description": "A Dashboard was created ",
+            "fields": {},
+            "titleTemplate": "Successfully created a dashboard ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-create:fail": {
+            "subject": "dashboard",
+            "activity": "create",
+            "activity_type": "dashboard-create",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Created",
+            "description": "A Dashboard was created",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to create a Dashboard ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-delete:success": {
+            "subject": "report",
+            "activity": "delete",
+            "activity_type": "dashboard-delete",
+            "outcome": "success",
+            "pretty_name": "Dashboard Delete",
+            "description": "A dashboard was deleted ",
+            "fields": {},
+            "titleTemplate": "Successfully deleted a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-delete:fail": {
+            "subject": "dashboard",
+            "activity": "delete",
+            "activity_type": "dashboard-delete",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Delete",
+            "description": "A dashboard was delete",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to delete a dashboard ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-download:success": {
+            "subject": "dashboard",
+            "activity": "download",
+            "activity_type": "dashboard-download",
+            "outcome": "success",
+            "pretty_name": "Dashboard Download",
+            "description": "A dashboard was downloaded",
+            "fields": {
+                "file_name": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                },
+                "file_ext": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                }
+            },
+            "titleTemplate": "Successfully downloaded dashboard ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-download:fail": {
+            "subject": "dashboard",
+            "activity": "download",
+            "activity_type": "dashboard-download",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Download",
+            "description": "A dashboard was downloaded",
+            "fields": {
+                "file_name": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                },
+                "file_ext": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                },
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to download a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-export:success": {
+            "subject": "dashboard",
+            "activity": "export",
+            "activity_type": "dashboard-export",
+            "outcome": "success",
+            "pretty_name": "Dashboard Export",
+            "description": "An export process for a dashboard was initiated",
+            "fields": {},
+            "titleTemplate": "Successfully initiated an export process for dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-export:fail": {
+            "subject": "dashboard",
+            "activity": "export",
+            "activity_type": "dashboard-export",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Export",
+            "description": "An export process for a dashboard was initiated ",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to initiate an export process for dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-schedule:success": {
+            "subject": "dashboard",
+            "activity": "schedule",
+            "activity_type": "dashboard-schedule",
+            "outcome": "success",
+            "pretty_name": "Dashboard Schedule",
+            "description": "A request to schedule a dashboard was made",
+            "fields": {},
+            "titleTemplate": "Successfully schedule a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-schedule:fail": {
+            "subject": "dashboard",
+            "activity": "schedule",
+            "activity_type": "dashboard-schedule",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Schedule",
+            "description": "A request to schedule a dashboard was made",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to schedule a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-publish:success": {
+            "subject": "dashboard",
+            "activity": "publish",
+            "activity_type": "dashboard-publish",
+            "outcome": "success",
+            "pretty_name": "Dashboard Publish",
+            "description": "A request to publish a dashboard was made",
+            "fields": {},
+            "titleTemplate": "Successfully publish a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-publish:fail": {
+            "subject": "dashboard",
+            "activity": "publish",
+            "activity_type": "dashboard-publish",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Publish",
+            "description": "A request to publish a dashboard was made",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to publish a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-modify:success": {
+            "subject": "dashboard",
+            "activity": "modify",
+            "activity_type": "dashboard-modify",
+            "outcome": "success",
+            "pretty_name": "Dashboard Modify",
+            "description": "A request to modify a dashboard was made",
+            "fields": {},
+            "titleTemplate": "Successfully modify a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "dashboard-modify:fail": {
+            "subject": "dashboard",
+            "activity": "modify",
+            "activity_type": "dashboard-modify",
+            "outcome": "fail",
+            "pretty_name": "Dashboard Modify",
+            "description": "A request to modify a dashboard was made",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to modify a dashboard",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-create:success": {
+            "subject": "visualization",
+            "activity": "create",
+            "activity_type": "visualization-create",
+            "outcome": "success",
+            "pretty_name": "Visualization Created",
+            "description": "A Visualization was created ",
+            "fields": {},
+            "titleTemplate": "Successfully created a visualization ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-create:fail": {
+            "subject": "visualization",
+            "activity": "create",
+            "activity_type": "visualization-create",
+            "outcome": "fail",
+            "pretty_name": "Visualization Created",
+            "description": "A Visualization was created",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to create a Visualization ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-delete:success": {
+            "subject": "report",
+            "activity": "delete",
+            "activity_type": "visualization-delete",
+            "outcome": "success",
+            "pretty_name": "Visualization Delete",
+            "description": "A visualization was deleted ",
+            "fields": {},
+            "titleTemplate": "Successfully deleted a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-delete:fail": {
+            "subject": "visualization",
+            "activity": "delete",
+            "activity_type": "visualization-delete",
+            "outcome": "fail",
+            "pretty_name": "Visualization Delete",
+            "description": "A visualization was delete",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to delete a visualization ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-download:success": {
+            "subject": "visualization",
+            "activity": "download",
+            "activity_type": "visualization-download",
+            "outcome": "success",
+            "pretty_name": "Visualization Download",
+            "description": "A visualization was downloaded",
+            "fields": {
+                "file_name": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                },
+                "file_ext": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                }
+            },
+            "titleTemplate": "Successfully downloaded visualization ",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-download:fail": {
+            "subject": "visualization",
+            "activity": "download",
+            "activity_type": "visualization-download",
+            "outcome": "fail",
+            "pretty_name": "Visualization Download",
+            "description": "A visualization was downloaded",
+            "fields": {
+                "file_name": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                },
+                "file_ext": {
+                    "core": "0",
+                    "detection": "0",
+                    "informational": "1"
+                },
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to download a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-export:success": {
+            "subject": "visualization",
+            "activity": "export",
+            "activity_type": "visualization-export",
+            "outcome": "success",
+            "pretty_name": "Visualization Export",
+            "description": "An export process for a visualization was initiated",
+            "fields": {},
+            "titleTemplate": "Successfully initiated an export process for visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-export:fail": {
+            "subject": "visualization",
+            "activity": "export",
+            "activity_type": "visualization-export",
+            "outcome": "fail",
+            "pretty_name": "Visualization Export",
+            "description": "An export process for a visualization was initiated ",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to initiate an export process for visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-schedule:success": {
+            "subject": "visualization",
+            "activity": "schedule",
+            "activity_type": "visualization-schedule",
+            "outcome": "success",
+            "pretty_name": "Visualization Schedule",
+            "description": "A request to schedule a visualization was made",
+            "fields": {},
+            "titleTemplate": "Successfully schedule a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-schedule:fail": {
+            "subject": "visualization",
+            "activity": "schedule",
+            "activity_type": "visualization-schedule",
+            "outcome": "fail",
+            "pretty_name": "Visualization Schedule",
+            "description": "A request to schedule a visualization was made",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to schedule a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-publish:success": {
+            "subject": "visualization",
+            "activity": "publish",
+            "activity_type": "visualization-publish",
+            "outcome": "success",
+            "pretty_name": "Visualization Publish",
+            "description": "A request to publish a visualization was made",
+            "fields": {},
+            "titleTemplate": "Successfully publish a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-publish:fail": {
+            "subject": "visualization",
+            "activity": "publish",
+            "activity_type": "visualization-publish",
+            "outcome": "fail",
+            "pretty_name": "Visualization Publish",
+            "description": "A request to publish a visualization was made",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to publish a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-modify:success": {
+            "subject": "visualization",
+            "activity": "modify",
+            "activity_type": "visualization-modify",
+            "outcome": "success",
+            "pretty_name": "Visualization Modify",
+            "description": "A request to modify a visualization was made",
+            "fields": {},
+            "titleTemplate": "Successfully modify a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
+        "visualization-modify:fail": {
+            "subject": "visualization",
+            "activity": "modify",
+            "activity_type": "visualization-modify",
+            "outcome": "fail",
+            "pretty_name": "Visualization Modify",
+            "description": "A request to modify a visualization was made",
+            "fields": {
+                "failure_reason": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                },
+                "failure_code": {
+                    "core": "0",
+                    "detection": "1",
+                    "informational": "0"
+                }
+            },
+            "titleTemplate": "Failed to modify a visualization",
+            "titleTemplateFormatVersion": "1.0"
+        },
 		"repository-create:success": {
 			"subject": "repository",
 			"activity": "create",
@@ -18924,7 +19565,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to read the content of the secret credentials object",
+			"titleTemplate": "Failed to read the content of a secret credentials object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"share_link-open:success": {
@@ -19265,7 +19906,7 @@
 			"pretty_name": "Driver Load",
 			"description": "A driver object was loaded into the systems' kernel",
 			"fields": {},
-			"titleTemplate": "Successfully loaded driver object",
+			"titleTemplate": "Successfully loaded a driver object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"driver-load:fail": {
@@ -19287,7 +19928,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Driver object failed to be loaded",
+			"titleTemplate": "Failed to load a driver object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"driver-unload:success": {
@@ -19298,7 +19939,7 @@
 			"pretty_name": "Driver Unload",
 			"description": "A driver object was unloaded from the system's kernel",
 			"fields": {},
-			"titleTemplate": "Successfully unloaded driver object",
+			"titleTemplate": "Successfully unloaded a driver object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"driver-unload:fail": {
@@ -19320,7 +19961,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Driver object failed to unload",
+			"titleTemplate": "Failed to unload a driver object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-trigger:success": {
@@ -19472,7 +20113,7 @@
 			"pretty_name": "Alert Modify",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Alert modified successfully",
+			"titleTemplate": "Successfully modified an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-modify:fail": {
@@ -19483,7 +20124,7 @@
 			"pretty_name": "Alert Modify",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Failed to modify alert",
+			"titleTemplate": "Failed to modify an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-create:success": {
@@ -19494,7 +20135,7 @@
 			"pretty_name": "Alert Create",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Alert created successfully",
+			"titleTemplate": "Successfully created an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-create:fail": {
@@ -19505,7 +20146,7 @@
 			"pretty_name": "Alert Create",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Failed to create alert",
+			"titleTemplate": "Failed to create an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-read:success": {
@@ -19516,7 +20157,7 @@
 			"pretty_name": "Alert Read",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Alert read successfully",
+			"titleTemplate": "Successfully read an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-read:fail": {
@@ -19527,7 +20168,7 @@
 			"pretty_name": "Alert Read",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Failed to read alert",
+			"titleTemplate": "Failed to read an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-delete:success": {
@@ -19538,7 +20179,7 @@
 			"pretty_name": "Alert Delete",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Alert deleted successfully",
+			"titleTemplate": "Successfully deleted an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"alert-delete:fail": {
@@ -19549,7 +20190,7 @@
 			"pretty_name": "Alert Delete",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Failed to delete alert",
+			"titleTemplate": "Failed to delete an alert",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-read:success": {
@@ -19560,7 +20201,7 @@
 			"pretty_name": "Case Read",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Successfully read incident by vendor {event.vendor}",
+			"titleTemplate": "Successfully read an incident by vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"case-read:fail": {
@@ -19571,7 +20212,7 @@
 			"pretty_name": "Case Read",
 			"description": "",
 			"fields": {},
-			"titleTemplate": "Failed to read incident by vendor {event.vendor}",
+			"titleTemplate": "Failed to read an incident by vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"arp-traffic:success": {
@@ -19648,7 +20289,7 @@
 			"pretty_name": "Bucket List",
 			"description": "Buckets were enumerated on the application",
 			"fields": {},
-			"titleTemplate": "Successfully created bucket list",
+			"titleTemplate": "Successfully created a bucket list",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-list:fail": {
@@ -19670,7 +20311,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create bucket list",
+			"titleTemplate": "Failed to create a bucket list",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-policy-modify:success": {
@@ -19687,7 +20328,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Successfully modified bucket policy by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully modified a bucket policy by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-policy-modify:fail": {
@@ -19714,7 +20355,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify bucket policy by user {event.user|event.email_address}",
+			"titleTemplate": "Failed to modify a bucket policy by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-permission-modify:success": {
@@ -19725,7 +20366,7 @@
 			"pretty_name": "Bucket Permission Modify",
 			"description": "The ACL or any other passive permission configuration applied to the bucket was updated",
 			"fields": {},
-			"titleTemplate": "Successfully modified bucket permission by user {event.user|event.email_address}",
+			"titleTemplate": "Successfully modified a bucket permission by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-permission-modify:fail": {
@@ -19747,7 +20388,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify bucket permission by user {event.user|event.email_address}",
+			"titleTemplate": "Failed to modify a bucket permission by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-accessblock-modify:success": {
@@ -19758,7 +20399,7 @@
 			"pretty_name": "Bucket Accessblock Modify",
 			"description": "The public access block configuration of a bucket was changed",
 			"fields": {},
-			"titleTemplate": "Successfully modified bucket access block",
+			"titleTemplate": "Successfully modified a bucket access block",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-accessblock-modify:fail": {
@@ -19780,7 +20421,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify bucket access block",
+			"titleTemplate": "Failed to modify a bucket access block",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-create:success": {
@@ -19791,7 +20432,7 @@
 			"pretty_name": "Certificate Create",
 			"description": "A digital certificate object was created",
 			"fields": {},
-			"titleTemplate": "Successfully created digital certificate",
+			"titleTemplate": "Successfully created a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-create:fail": {
@@ -19813,7 +20454,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create digital certificate",
+			"titleTemplate": "Failed to create a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-exchange:success": {
@@ -19824,7 +20465,7 @@
 			"pretty_name": "Certificate Exchange",
 			"description": "A digital certificate was exchanged with another in the process of an end to end authenticity check",
 			"fields": {},
-			"titleTemplate": "Successfully exchanged digital certificate",
+			"titleTemplate": "Successfully exchanged a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-exchange:fail": {
@@ -19846,7 +20487,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to exchange digital certificate",
+			"titleTemplate": "Failed to exchange a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-expire:success": {
@@ -19857,7 +20498,7 @@
 			"pretty_name": "Certificate Expire",
 			"description": "A digital certificate has timed out and expired",
 			"fields": {},
-			"titleTemplate": "Digital certificate expired",
+			"titleTemplate": "A digital certificate expired",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-expire:fail": {
@@ -19890,7 +20531,7 @@
 			"pretty_name": "Certificate Modify",
 			"description": "A digital certificate has modified",
 			"fields": {},
-			"titleTemplate": "Digital certificate modified",
+			"titleTemplate": "A digital certificate modified",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-request:success": {
@@ -19901,7 +20542,7 @@
 			"pretty_name": "Certificate Request",
 			"description": "A digital certificate enrollment or creation was requested by an entity",
 			"fields": {},
-			"titleTemplate": "Successfully requested digital certificate enrollment/creation",
+			"titleTemplate": "Successfully requested a digital certificate enrollment/creation",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-request:fail": {
@@ -19923,7 +20564,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to request digital certificate enrollment/creation",
+			"titleTemplate": "Failed to request a digital certificate enrollment/creation",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-validate:success": {
@@ -19934,7 +20575,7 @@
 			"pretty_name": "Certificate Validate",
 			"description": "The authenticity of a digital certificate was validated",
 			"fields": {},
-			"titleTemplate": "Successfully validated digital certificate",
+			"titleTemplate": "Successfully validated a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"certificate-validate:fail": {
@@ -19956,7 +20597,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to validate digital certificate",
+			"titleTemplate": "Failed to validate a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dns_record-create:success": {
@@ -19967,7 +20608,7 @@
 			"pretty_name": "Dns_record Create",
 			"description": "A DNS record was created",
 			"fields": {},
-			"titleTemplate": "Successfully create dns record in DNS server",
+			"titleTemplate": "Successfully created a dns record in DNS server",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dns_record-create:fail": {
@@ -19989,7 +20630,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create dns record in DNS server",
+			"titleTemplate": "Failed to create a dns record in DNS server",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dns_record-delete:success": {
@@ -20000,7 +20641,7 @@
 			"pretty_name": "Dns_record Delete",
 			"description": "A DNS record was deleted",
 			"fields": {},
-			"titleTemplate": "Successfully deleted DNS record from DNS server",
+			"titleTemplate": "Successfully deleted a dns record from DNS server",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dns_record-delete:fail": {
@@ -20022,7 +20663,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to delete DNS record from DNS server",
+			"titleTemplate": "Failed to delete a dns record from DNS server",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dns_record-modify:success": {
@@ -20033,7 +20674,7 @@
 			"pretty_name": "Dns_record Modify",
 			"description": "The content of a DNS record was modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified content of DNS record",
+			"titleTemplate": "Successfully modified content of a dns record",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"dns_record-modify:fail": {
@@ -20055,7 +20696,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify content of DNS record",
+			"titleTemplate": "Failed to modify content of a dns record",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-close:success": {
@@ -20066,7 +20707,7 @@
 			"pretty_name": "Handle Close",
 			"description": "A windows handle was closed",
 			"fields": {},
-			"titleTemplate": "Successfully closed window handle",
+			"titleTemplate": "Successfully closed a window handle",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-close:fail": {
@@ -20088,7 +20729,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to close window handle",
+			"titleTemplate": "Failed to close a window handle",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-copy:success": {
@@ -20099,7 +20740,7 @@
 			"pretty_name": "Handle Copy",
 			"description": "A windows handle was copied",
 			"fields": {},
-			"titleTemplate": "Successfully copied window handle",
+			"titleTemplate": "Successfully copied a window handle",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-copy:fail": {
@@ -20121,7 +20762,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to copy window handle",
+			"titleTemplate": "Failed to copy a window handle",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-open:success": {
@@ -20132,7 +20773,7 @@
 			"pretty_name": "Handle Open",
 			"description": "A windows handle was opened, giving access to the linked object",
 			"fields": {},
-			"titleTemplate": "Successfully handle opened, providing access the linked object",
+			"titleTemplate": "Successfully opened a handle for providing access to a linked object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-open:fail": {
@@ -20154,7 +20795,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to open handle for providing access to the linked object",
+			"titleTemplate": "Failed to open a handle for providing access to a linked object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-request:success": {
@@ -20165,7 +20806,7 @@
 			"pretty_name": "Handle Request",
 			"description": "A request was made to get access to a windows handle",
 			"fields": {},
-			"titleTemplate": "Successfully initiated request for accessing the window handle",
+			"titleTemplate": "Successfully initiated a request for accessing a window handle",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"handle-request:fail": {
@@ -20187,7 +20828,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed initiate the request for window handle access",
+			"titleTemplate": "Failed to initiate a request for a window handle access",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ip-assign:success": {
@@ -20198,7 +20839,7 @@
 			"pretty_name": "Ip Assign",
 			"description": "An IP was dispensed and is in use",
 			"fields": {},
-			"titleTemplate": "Successfully assigned IP",
+			"titleTemplate": "Successfully assigned an IP address",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ip-assign:fail": {
@@ -20220,7 +20861,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to assign IP",
+			"titleTemplate": "Failed to assign an IP address",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ip-free:success": {
@@ -20231,7 +20872,7 @@
 			"pretty_name": "Ip Free",
 			"description": "An IP was freed from use and is now available to reassign",
 			"fields": {},
-			"titleTemplate": "Successfully released IP",
+			"titleTemplate": "Successfully released an IP address",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ip-free:fail": {
@@ -20253,7 +20894,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to release IP",
+			"titleTemplate": "Failed to release an IP address",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"key-create:success": {
@@ -20330,7 +20971,7 @@
 			"pretty_name": "Key Migrate",
 			"description": "A global key object was migrated between vaults",
 			"fields": {},
-			"titleTemplate": "Successfully migrated a global key object between vault",
+			"titleTemplate": "Successfully migrated a global key object between vaults",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"key-migrate:fail": {
@@ -20352,7 +20993,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to migrate a global key object between vault",
+			"titleTemplate": "Failed to migrate a global key object between vaults",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"key-read:success": {
@@ -20396,7 +21037,7 @@
 			"pretty_name": "Port Block",
 			"description": "A port was blocked, dropping traffic that comes throug",
 			"fields": {},
-			"titleTemplate": "Successfully blocked endpoint port",
+			"titleTemplate": "Successfully blocked an endpoint port",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"port-block:fail": {
@@ -20418,7 +21059,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to block endpoint port",
+			"titleTemplate": "Failed to block an endpoint port",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"port-disable:success": {
@@ -20429,7 +21070,7 @@
 			"pretty_name": "Port Disable",
 			"description": "A port was disabled",
 			"fields": {},
-			"titleTemplate": "Successfully disabled endpoint port",
+			"titleTemplate": "Successfully disabled an endpoint port",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"port-disable:fail": {
@@ -20451,7 +21092,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to disable endpoint port",
+			"titleTemplate": "Failed to disable an endpoint port",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"port-enable:success": {
@@ -20462,7 +21103,7 @@
 			"pretty_name": "Port Enable",
 			"description": "A port was enabled",
 			"fields": {},
-			"titleTemplate": "Successfully enabled endpoint port",
+			"titleTemplate": "Successfully enabled an endpoint port",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"port-enable:fail": {
@@ -20484,7 +21125,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to enable endpoint port",
+			"titleTemplate": "Failed to enable an endpoint port",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"smtp-close:success": {
@@ -20594,7 +21235,7 @@
 			"pretty_name": "Snapshot List",
 			"description": "An enumeration of snapshot resources took place",
 			"fields": {},
-			"titleTemplate": "Successfully listed a snapshot resources",
+			"titleTemplate": "Successfully listed a snapshot resource",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"snapshot-list:fail": {
@@ -20616,7 +21257,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to list a snapshot resources",
+			"titleTemplate": "Failed to list a snapshot resource",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"snapshot-modify:success": {
@@ -20693,7 +21334,7 @@
 			"pretty_name": "Clipboard Read",
 			"description": "A request was made to read the content of the clipboard",
 			"fields": {},
-			"titleTemplate": "Successfully read the content of the clipboard",
+			"titleTemplate": "Successfully read the content of a clipboard",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"clipboard-read:fail": {
@@ -20715,7 +21356,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to read the content of the clipboard",
+			"titleTemplate": "Failed to read the content of a clipboard",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication:success": {
@@ -20726,7 +21367,7 @@
 			"pretty_name": "Ds Replication",
 			"description": "A part of a directory service replication process is taking place",
 			"fields": {},
-			"titleTemplate": "Successfully participated in the directory service replication",
+			"titleTemplate": "Successfully participated in a directory service replication",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication:fail": {
@@ -20748,7 +21389,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to participate in the directory service replication",
+			"titleTemplate": "Failed to participate in a directory service replication",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication-modify:success": {
@@ -20759,7 +21400,7 @@
 			"pretty_name": "Ds Replication Modify",
 			"description": "The configuration of the replication process of the directory service was modified",
 			"fields": {},
-			"titleTemplate": "Successfully modified configuration of the replication process of the directory service",
+			"titleTemplate": "Successfully modified configuration of a replication process of a directory service",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication-modify:fail": {
@@ -20781,7 +21422,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to modify configuration of the replication process of the directory service",
+			"titleTemplate": "Failed to modify configuration of a replication process of a directory service",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication-start:success": {
@@ -20792,7 +21433,7 @@
 			"pretty_name": "Ds Replication Start",
 			"description": "A directory service replication has started",
 			"fields": {},
-			"titleTemplate": "Successfully started to replicating the directory service",
+			"titleTemplate": "Successfully started a directory service replication",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication-start:fail": {
@@ -20814,7 +21455,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to start directory service replication",
+			"titleTemplate": "Failed to start a directory service replication",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication-stop:success": {
@@ -20825,7 +21466,7 @@
 			"pretty_name": "Ds Replication Stop",
 			"description": "A directory service replication has ended",
 			"fields": {},
-			"titleTemplate": "Successfully replication of directory service has ended",
+			"titleTemplate": "Successful replication of a directory service has ended",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ds-replication-stop:fail": {
@@ -20847,7 +21488,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to replicating directory service",
+			"titleTemplate": "Failed to to replicate a directory service",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"script-execute:success": {
@@ -20881,7 +21522,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Successfully executed script commands on the system",
+			"titleTemplate": "Successfully executed script commands on a system",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"script-execute:fail": {
@@ -20925,7 +21566,7 @@
 					"enriched": "1"
 				}
 			},
-			"titleTemplate": "Failed to execute script commands on the system",
+			"titleTemplate": "Failed to execute script commands on a system",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"ssl-start:success": {
@@ -21101,7 +21742,7 @@
 			"pretty_name": "Endpoint Key Create",
 			"description": "An endpoint security key was created",
 			"fields": {},
-			"titleTemplate": "Successfully created endpoint security key",
+			"titleTemplate": "Successfully created an endpoint security key",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-key-create:fail": {
@@ -21123,7 +21764,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create endpoint security key",
+			"titleTemplate": "Failed to create an endpoint security key",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-key-write:success": {
@@ -21134,7 +21775,7 @@
 			"pretty_name": "Endpoint Key Write",
 			"description": "An endpoint security key was created or modified, only used as a catch all if create or modify cannot be determined",
 			"fields": {},
-			"titleTemplate": "Successfully created/modified endpoint security key",
+			"titleTemplate": "Successfully created/modified an endpoint security key",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-key-write:fail": {
@@ -21156,7 +21797,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create/modify endpoint security key",
+			"titleTemplate": "Failed to create/modify an endpoint security key",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-key-create:success": {
@@ -21398,7 +22039,7 @@
 			"pretty_name": "Bucket Write",
 			"description": "A cloud bucket was created or modified, only used as a catch all if create or modify cannot be determined",
 			"fields": {},
-			"titleTemplate": "Successfully created/modified cloud bucket",
+			"titleTemplate": "Successfully created/modified a cloud bucket",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-write:fail": {
@@ -21420,7 +22061,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create/modify cloud bucket",
+			"titleTemplate": "Failed to create/modify a cloud bucket",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-write:success": {
@@ -21431,7 +22072,7 @@
 			"pretty_name": "Disk Write",
 			"description": "A disk volume object was created or modified, only used as a catch all if create or modify cannot be determined",
 			"fields": {},
-			"titleTemplate": "Successfully created/modifed disk",
+			"titleTemplate": "Successfully created/modifed a disk",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"disk-write:fail": {
@@ -21453,7 +22094,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create/modify disk",
+			"titleTemplate": "Failed to create/modify a disk",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-write:success": {
@@ -21464,7 +22105,7 @@
 			"pretty_name": "Endpoint Write",
 			"description": "An endpoint object was created or modified, only used as a catch all if create or modify cannot be determined",
 			"fields": {},
-			"titleTemplate": "Successfully created/modified of an endpoint object",
+			"titleTemplate": "Successfully created/modified an endpoint object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"endpoint-write:fail": {
@@ -21486,7 +22127,7 @@
 					"informational": "0"
 				}
 			},
-			"titleTemplate": "Failed to create/modify of an endpoint object",
+			"titleTemplate": "Failed to create/modify an endpoint object",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"image-write:success": {

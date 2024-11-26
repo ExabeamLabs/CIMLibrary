@@ -32,6 +32,7 @@ app-activity:success
 | Field                | Core | Detection | Informational |
 | -------------------- | ---- | --------- | ------------- |
 | os                   |      | &#10003;  |               |
+| user_agent_client    |      |           |               |
 | src_external_country |      | &#10003;  |               |
 | mime                 |      | &#10003;  |               |
 | local_user_name      |      |           |               |
@@ -52,6 +53,7 @@ app-activity:fail
 | -------------------- | ---- | --------- | ------------- |
 | failure_code         |      | &#10003;  |               |
 | os                   |      | &#10003;  |               |
+| user_agent_client    |      |           |               |
 | src_external_country |      | &#10003;  |               |
 | mime                 |      | &#10003;  |               |
 | local_user_name      |      |           |               |

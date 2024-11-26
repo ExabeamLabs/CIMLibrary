@@ -3,7 +3,7 @@ ftp-start
 
 Description
 -----------
-A FTP network session was initiated
+An FTP network session was initiated
 
 Parameters
 ----------

@@ -32,6 +32,7 @@ http-session:success
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
 | referrer           |      |           | &#10003;      |
+| user_agent_client  |      |           |               |
 | method             |      | &#10003;  |               |
 | bytes_out          |      | &#10003;  |               |
 | is_net_storage     |      | &#10003;  |               |
@@ -50,6 +51,7 @@ http-session:fail
 | ------------------ | ---- | --------- | ------------- |
 | referrer           |      |           | &#10003;      |
 | failure_code       |      | &#10003;  |               |
+| user_agent_client  |      |           |               |
 | method             |      | &#10003;  |               |
 | bytes_out          |      | &#10003;  |               |
 | bytes_in           |      | &#10003;  |               |

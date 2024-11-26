@@ -12,7 +12,7 @@ This table maps old fields to the new-scale fields that comply with the Common I
 | target_domain                                                      | dest_domain                 |
 | external_domain_recipient                                          | dest_email_domain           |
 | target_user_sid                                                    | dest_user_sid               |
-| user_email                                                         | email_address               |
+| sender                                                             | email_address               |
 | attachment                                                         | email_attachment            |
 | attachments                                                        | email_attachments           |
 | recipients                                                         | email_recipients            |

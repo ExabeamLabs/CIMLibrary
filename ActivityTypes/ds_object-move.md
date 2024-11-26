@@ -31,6 +31,7 @@ ds_object-move:success
 
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
+| object_type        |      |           | &#10003;      |
 | src_ds_object_ou   |      | &#10003;  |               |
 | src_ds_object_name |      |           | &#10003;      |
 | src_ds_object_dn   |      | &#10003;  |               |
