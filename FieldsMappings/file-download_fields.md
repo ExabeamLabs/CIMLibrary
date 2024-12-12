@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: file-download
-### New-Scale Activity Type: file-download:fail
+### New-Scale Activity Type: file-download:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

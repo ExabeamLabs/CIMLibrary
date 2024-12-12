@@ -8,12 +8,12 @@ This table maps old event types to their corresponding new-scale activity types.
 
 | Old Event Type| New-Scale Activity Type |
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [account-creation](FieldsMappings/account-creation_fields.md) | [user-create:success](ActivityTypes/user-create.md) |
+| [account-creation](FieldsMappings/account-creation_fields.md) | [user-create:fail](ActivityTypes/user-create.md)|
 | [account-deleted](FieldsMappings/account-deleted_fields.md) | [user-delete:fail](ActivityTypes/user-delete.md)|
 | [account-disabled](FieldsMappings/account-disabled_fields.md) | [user-disable:success](ActivityTypes/user-disable.md) |
 | [account-enabled](FieldsMappings/account-enabled_fields.md) | [user-enable:success](ActivityTypes/user-enable.md) |
 | [account-lockout](FieldsMappings/account-lockout_fields.md) | [user-lock:fail](ActivityTypes/user-lock.md)|
-| [account-password-change](FieldsMappings/account-password-change_fields.md) | [user-password-modify:success](ActivityTypes/user-password-modify.md) |
+| [account-password-change](FieldsMappings/account-password-change_fields.md) | [user-password-modify:fail](ActivityTypes/user-password-modify.md)|
 | [account-password-change-failed](FieldsMappings/account-password-change-failed_fields.md) | [password-modify:fail](ActivityTypes/password-modify.md)|
 | [account-password-reset](FieldsMappings/account-password-reset_fields.md) | [user-password-reset:fail](ActivityTypes/user-password-reset.md)|
 | [account-switch](FieldsMappings/account-switch_fields.md) | [user-switch:success](ActivityTypes/user-switch.md) |
@@ -150,7 +150,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [file-alert](FieldsMappings/file-alert_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [file-close](FieldsMappings/file-close_fields.md) | [file-close:success](ActivityTypes/file-close.md) |
 | [file-delete](FieldsMappings/file-delete_fields.md) | [file-delete:fail](ActivityTypes/file-delete.md)|
-| [file-download](FieldsMappings/file-download_fields.md) | [file-download:fail](ActivityTypes/file-download.md)|
+| [file-download](FieldsMappings/file-download_fields.md) | [file-download:success](ActivityTypes/file-download.md) |
 | [file-move](FieldsMappings/file-move_fields.md) | [file-move:success](ActivityTypes/file-move.md) |
 | [file-permission-change](FieldsMappings/file-permission-change_fields.md) | [file-permission-modify:success](ActivityTypes/file-permission-modify.md) |
 | [file-read](FieldsMappings/file-read_fields.md) | [file-move:success](ActivityTypes/file-move.md) |
@@ -200,6 +200,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [mailbox-item-delete](FieldsMappings/mailbox-item-delete_fields.md) | [mailbox-item-delete:success](ActivityTypes/mailbox-item-delete.md) |
 | [mailbox-item-read](FieldsMappings/mailbox-item-read_fields.md) | [mailbox-item-read:success](ActivityTypes/mailbox-item-read.md) |
 | [mailbox-modify](FieldsMappings/mailbox-modify_fields.md) | [mailbox-modify:success](ActivityTypes/mailbox-modify.md) |
+| [mailbox-permission-modify](FieldsMappings/mailbox-permission-modify_fields.md) | [mailbox-permission-modify:success](ActivityTypes/mailbox-permission-modify.md) |
 | [member-added](FieldsMappings/member-added_fields.md) | [group-member-add:success](ActivityTypes/group-member-add.md) |
 | [member-removed](FieldsMappings/member-removed_fields.md) | [group-member-remove:success](ActivityTypes/group-member-remove.md) |
 | [nac-failed-logon](FieldsMappings/nac-failed-logon_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
