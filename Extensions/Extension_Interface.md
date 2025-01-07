@@ -317,6 +317,7 @@ This interface defines any additional context elements that help describe the ac
 * [microsoft cloud app security](microsoft_cloud_app_security.md)
 * [microsoft defender advanced threat protection](microsoft_defender_advanced_threat_protection.md)
 * [microsoft defender antivirus](microsoft_defender_antivirus.md)
+* [microsoft defender for endpoint](microsoft_defender_for_endpoint.md)
 * [microsoft exchange](microsoft_exchange.md)
 * [microsoft graph](microsoft_graph.md)
 * [microsoft iis](microsoft_iis.md)

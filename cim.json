@@ -1489,14 +1489,14 @@
 				}
 			}
 		},
-        "dashboard": {
-            "description": "A dashboard is a collection of visualizations. Each dashboard brings together multiple insights that can provide a broad perspective about what's happening in a security operations center.",
+		"dashboard": {
+			"description": "A dashboard is a collection of visualizations. Each dashboard brings together multiple insights that can provide a broad perspective about what's happening in a security operations center.",
 			"fields": {}
-        },
-        "visualization": {
-            "description": "A visualization is an individual chart or table that provides statistics and detailed information about specific aspects of the security operations center",
+		},
+		"visualization": {
+			"description": "A visualization is an individual chart or table that provides statistics and detailed information about specific aspects of the security operations center",
 			"fields": {}
-        },
+		},
 		"repository": {
 			"description": "A git repository is a folder containing all the changes to versions, commits and instances of a git project",
 			"fields": {
@@ -10093,7 +10093,6 @@
 					"detection": "0",
 					"informational": "1"
 				}
-
 			},
 			"legacy_event_name": [
 				"ds-access"
@@ -10144,7 +10143,6 @@
 					"detection": "0",
 					"informational": "1"
 				}
-
 			},
 			"legacy_event_name": [
 				"ds-access"
@@ -17588,510 +17586,510 @@
 			"titleTemplate": "Failed to execute a report on an app",
 			"titleTemplateFormatVersion": "1.0"
 		},
-        "dashboard-create:success": {
-            "subject": "dashboard",
-            "activity": "create",
-            "activity_type": "dashboard-create",
-            "outcome": "success",
-            "pretty_name": "Dashboard Created",
-            "description": "A Dashboard was created ",
-            "fields": {},
-            "titleTemplate": "Successfully created a dashboard ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-create:fail": {
-            "subject": "dashboard",
-            "activity": "create",
-            "activity_type": "dashboard-create",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Created",
-            "description": "A Dashboard was created",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to create a Dashboard ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-delete:success": {
-            "subject": "report",
-            "activity": "delete",
-            "activity_type": "dashboard-delete",
-            "outcome": "success",
-            "pretty_name": "Dashboard Delete",
-            "description": "A dashboard was deleted ",
-            "fields": {},
-            "titleTemplate": "Successfully deleted a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-delete:fail": {
-            "subject": "dashboard",
-            "activity": "delete",
-            "activity_type": "dashboard-delete",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Delete",
-            "description": "A dashboard was delete",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to delete a dashboard ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-download:success": {
-            "subject": "dashboard",
-            "activity": "download",
-            "activity_type": "dashboard-download",
-            "outcome": "success",
-            "pretty_name": "Dashboard Download",
-            "description": "A dashboard was downloaded",
-            "fields": {
-                "file_name": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                },
-                "file_ext": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                }
-            },
-            "titleTemplate": "Successfully downloaded dashboard ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-download:fail": {
-            "subject": "dashboard",
-            "activity": "download",
-            "activity_type": "dashboard-download",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Download",
-            "description": "A dashboard was downloaded",
-            "fields": {
-                "file_name": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                },
-                "file_ext": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                },
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to download a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-export:success": {
-            "subject": "dashboard",
-            "activity": "export",
-            "activity_type": "dashboard-export",
-            "outcome": "success",
-            "pretty_name": "Dashboard Export",
-            "description": "An export process for a dashboard was initiated",
-            "fields": {},
-            "titleTemplate": "Successfully initiated an export process for dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-export:fail": {
-            "subject": "dashboard",
-            "activity": "export",
-            "activity_type": "dashboard-export",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Export",
-            "description": "An export process for a dashboard was initiated ",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to initiate an export process for dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-schedule:success": {
-            "subject": "dashboard",
-            "activity": "schedule",
-            "activity_type": "dashboard-schedule",
-            "outcome": "success",
-            "pretty_name": "Dashboard Schedule",
-            "description": "A request to schedule a dashboard was made",
-            "fields": {},
-            "titleTemplate": "Successfully schedule a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-schedule:fail": {
-            "subject": "dashboard",
-            "activity": "schedule",
-            "activity_type": "dashboard-schedule",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Schedule",
-            "description": "A request to schedule a dashboard was made",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to schedule a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-publish:success": {
-            "subject": "dashboard",
-            "activity": "publish",
-            "activity_type": "dashboard-publish",
-            "outcome": "success",
-            "pretty_name": "Dashboard Publish",
-            "description": "A request to publish a dashboard was made",
-            "fields": {},
-            "titleTemplate": "Successfully publish a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-publish:fail": {
-            "subject": "dashboard",
-            "activity": "publish",
-            "activity_type": "dashboard-publish",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Publish",
-            "description": "A request to publish a dashboard was made",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to publish a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-modify:success": {
-            "subject": "dashboard",
-            "activity": "modify",
-            "activity_type": "dashboard-modify",
-            "outcome": "success",
-            "pretty_name": "Dashboard Modify",
-            "description": "A request to modify a dashboard was made",
-            "fields": {},
-            "titleTemplate": "Successfully modify a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "dashboard-modify:fail": {
-            "subject": "dashboard",
-            "activity": "modify",
-            "activity_type": "dashboard-modify",
-            "outcome": "fail",
-            "pretty_name": "Dashboard Modify",
-            "description": "A request to modify a dashboard was made",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to modify a dashboard",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-create:success": {
-            "subject": "visualization",
-            "activity": "create",
-            "activity_type": "visualization-create",
-            "outcome": "success",
-            "pretty_name": "Visualization Created",
-            "description": "A Visualization was created ",
-            "fields": {},
-            "titleTemplate": "Successfully created a visualization ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-create:fail": {
-            "subject": "visualization",
-            "activity": "create",
-            "activity_type": "visualization-create",
-            "outcome": "fail",
-            "pretty_name": "Visualization Created",
-            "description": "A Visualization was created",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to create a Visualization ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-delete:success": {
-            "subject": "report",
-            "activity": "delete",
-            "activity_type": "visualization-delete",
-            "outcome": "success",
-            "pretty_name": "Visualization Delete",
-            "description": "A visualization was deleted ",
-            "fields": {},
-            "titleTemplate": "Successfully deleted a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-delete:fail": {
-            "subject": "visualization",
-            "activity": "delete",
-            "activity_type": "visualization-delete",
-            "outcome": "fail",
-            "pretty_name": "Visualization Delete",
-            "description": "A visualization was delete",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to delete a visualization ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-download:success": {
-            "subject": "visualization",
-            "activity": "download",
-            "activity_type": "visualization-download",
-            "outcome": "success",
-            "pretty_name": "Visualization Download",
-            "description": "A visualization was downloaded",
-            "fields": {
-                "file_name": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                },
-                "file_ext": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                }
-            },
-            "titleTemplate": "Successfully downloaded visualization ",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-download:fail": {
-            "subject": "visualization",
-            "activity": "download",
-            "activity_type": "visualization-download",
-            "outcome": "fail",
-            "pretty_name": "Visualization Download",
-            "description": "A visualization was downloaded",
-            "fields": {
-                "file_name": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                },
-                "file_ext": {
-                    "core": "0",
-                    "detection": "0",
-                    "informational": "1"
-                },
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to download a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-export:success": {
-            "subject": "visualization",
-            "activity": "export",
-            "activity_type": "visualization-export",
-            "outcome": "success",
-            "pretty_name": "Visualization Export",
-            "description": "An export process for a visualization was initiated",
-            "fields": {},
-            "titleTemplate": "Successfully initiated an export process for visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-export:fail": {
-            "subject": "visualization",
-            "activity": "export",
-            "activity_type": "visualization-export",
-            "outcome": "fail",
-            "pretty_name": "Visualization Export",
-            "description": "An export process for a visualization was initiated ",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to initiate an export process for visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-schedule:success": {
-            "subject": "visualization",
-            "activity": "schedule",
-            "activity_type": "visualization-schedule",
-            "outcome": "success",
-            "pretty_name": "Visualization Schedule",
-            "description": "A request to schedule a visualization was made",
-            "fields": {},
-            "titleTemplate": "Successfully schedule a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-schedule:fail": {
-            "subject": "visualization",
-            "activity": "schedule",
-            "activity_type": "visualization-schedule",
-            "outcome": "fail",
-            "pretty_name": "Visualization Schedule",
-            "description": "A request to schedule a visualization was made",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to schedule a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-publish:success": {
-            "subject": "visualization",
-            "activity": "publish",
-            "activity_type": "visualization-publish",
-            "outcome": "success",
-            "pretty_name": "Visualization Publish",
-            "description": "A request to publish a visualization was made",
-            "fields": {},
-            "titleTemplate": "Successfully publish a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-publish:fail": {
-            "subject": "visualization",
-            "activity": "publish",
-            "activity_type": "visualization-publish",
-            "outcome": "fail",
-            "pretty_name": "Visualization Publish",
-            "description": "A request to publish a visualization was made",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to publish a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-modify:success": {
-            "subject": "visualization",
-            "activity": "modify",
-            "activity_type": "visualization-modify",
-            "outcome": "success",
-            "pretty_name": "Visualization Modify",
-            "description": "A request to modify a visualization was made",
-            "fields": {},
-            "titleTemplate": "Successfully modify a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
-        "visualization-modify:fail": {
-            "subject": "visualization",
-            "activity": "modify",
-            "activity_type": "visualization-modify",
-            "outcome": "fail",
-            "pretty_name": "Visualization Modify",
-            "description": "A request to modify a visualization was made",
-            "fields": {
-                "failure_reason": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                },
-                "failure_code": {
-                    "core": "0",
-                    "detection": "1",
-                    "informational": "0"
-                }
-            },
-            "titleTemplate": "Failed to modify a visualization",
-            "titleTemplateFormatVersion": "1.0"
-        },
+		"dashboard-create:success": {
+			"subject": "dashboard",
+			"activity": "create",
+			"activity_type": "dashboard-create",
+			"outcome": "success",
+			"pretty_name": "Dashboard Created",
+			"description": "A Dashboard was created ",
+			"fields": {},
+			"titleTemplate": "Successfully created a dashboard ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-create:fail": {
+			"subject": "dashboard",
+			"activity": "create",
+			"activity_type": "dashboard-create",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Created",
+			"description": "A Dashboard was created",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create a Dashboard ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-delete:success": {
+			"subject": "report",
+			"activity": "delete",
+			"activity_type": "dashboard-delete",
+			"outcome": "success",
+			"pretty_name": "Dashboard Delete",
+			"description": "A dashboard was deleted ",
+			"fields": {},
+			"titleTemplate": "Successfully deleted a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-delete:fail": {
+			"subject": "dashboard",
+			"activity": "delete",
+			"activity_type": "dashboard-delete",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Delete",
+			"description": "A dashboard was delete",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a dashboard ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-download:success": {
+			"subject": "dashboard",
+			"activity": "download",
+			"activity_type": "dashboard-download",
+			"outcome": "success",
+			"pretty_name": "Dashboard Download",
+			"description": "A dashboard was downloaded",
+			"fields": {
+				"file_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"file_ext": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Successfully downloaded dashboard ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-download:fail": {
+			"subject": "dashboard",
+			"activity": "download",
+			"activity_type": "dashboard-download",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Download",
+			"description": "A dashboard was downloaded",
+			"fields": {
+				"file_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"file_ext": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to download a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-export:success": {
+			"subject": "dashboard",
+			"activity": "export",
+			"activity_type": "dashboard-export",
+			"outcome": "success",
+			"pretty_name": "Dashboard Export",
+			"description": "An export process for a dashboard was initiated",
+			"fields": {},
+			"titleTemplate": "Successfully initiated an export process for dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-export:fail": {
+			"subject": "dashboard",
+			"activity": "export",
+			"activity_type": "dashboard-export",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Export",
+			"description": "An export process for a dashboard was initiated ",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to initiate an export process for dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-schedule:success": {
+			"subject": "dashboard",
+			"activity": "schedule",
+			"activity_type": "dashboard-schedule",
+			"outcome": "success",
+			"pretty_name": "Dashboard Schedule",
+			"description": "A request to schedule a dashboard was made",
+			"fields": {},
+			"titleTemplate": "Successfully schedule a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-schedule:fail": {
+			"subject": "dashboard",
+			"activity": "schedule",
+			"activity_type": "dashboard-schedule",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Schedule",
+			"description": "A request to schedule a dashboard was made",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to schedule a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-publish:success": {
+			"subject": "dashboard",
+			"activity": "publish",
+			"activity_type": "dashboard-publish",
+			"outcome": "success",
+			"pretty_name": "Dashboard Publish",
+			"description": "A request to publish a dashboard was made",
+			"fields": {},
+			"titleTemplate": "Successfully publish a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-publish:fail": {
+			"subject": "dashboard",
+			"activity": "publish",
+			"activity_type": "dashboard-publish",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Publish",
+			"description": "A request to publish a dashboard was made",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to publish a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-modify:success": {
+			"subject": "dashboard",
+			"activity": "modify",
+			"activity_type": "dashboard-modify",
+			"outcome": "success",
+			"pretty_name": "Dashboard Modify",
+			"description": "A request to modify a dashboard was made",
+			"fields": {},
+			"titleTemplate": "Successfully modify a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"dashboard-modify:fail": {
+			"subject": "dashboard",
+			"activity": "modify",
+			"activity_type": "dashboard-modify",
+			"outcome": "fail",
+			"pretty_name": "Dashboard Modify",
+			"description": "A request to modify a dashboard was made",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to modify a dashboard",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-create:success": {
+			"subject": "visualization",
+			"activity": "create",
+			"activity_type": "visualization-create",
+			"outcome": "success",
+			"pretty_name": "Visualization Created",
+			"description": "A Visualization was created ",
+			"fields": {},
+			"titleTemplate": "Successfully created a visualization ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-create:fail": {
+			"subject": "visualization",
+			"activity": "create",
+			"activity_type": "visualization-create",
+			"outcome": "fail",
+			"pretty_name": "Visualization Created",
+			"description": "A Visualization was created",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create a Visualization ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-delete:success": {
+			"subject": "report",
+			"activity": "delete",
+			"activity_type": "visualization-delete",
+			"outcome": "success",
+			"pretty_name": "Visualization Delete",
+			"description": "A visualization was deleted ",
+			"fields": {},
+			"titleTemplate": "Successfully deleted a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-delete:fail": {
+			"subject": "visualization",
+			"activity": "delete",
+			"activity_type": "visualization-delete",
+			"outcome": "fail",
+			"pretty_name": "Visualization Delete",
+			"description": "A visualization was delete",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a visualization ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-download:success": {
+			"subject": "visualization",
+			"activity": "download",
+			"activity_type": "visualization-download",
+			"outcome": "success",
+			"pretty_name": "Visualization Download",
+			"description": "A visualization was downloaded",
+			"fields": {
+				"file_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"file_ext": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Successfully downloaded visualization ",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-download:fail": {
+			"subject": "visualization",
+			"activity": "download",
+			"activity_type": "visualization-download",
+			"outcome": "fail",
+			"pretty_name": "Visualization Download",
+			"description": "A visualization was downloaded",
+			"fields": {
+				"file_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"file_ext": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to download a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-export:success": {
+			"subject": "visualization",
+			"activity": "export",
+			"activity_type": "visualization-export",
+			"outcome": "success",
+			"pretty_name": "Visualization Export",
+			"description": "An export process for a visualization was initiated",
+			"fields": {},
+			"titleTemplate": "Successfully initiated an export process for visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-export:fail": {
+			"subject": "visualization",
+			"activity": "export",
+			"activity_type": "visualization-export",
+			"outcome": "fail",
+			"pretty_name": "Visualization Export",
+			"description": "An export process for a visualization was initiated ",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to initiate an export process for visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-schedule:success": {
+			"subject": "visualization",
+			"activity": "schedule",
+			"activity_type": "visualization-schedule",
+			"outcome": "success",
+			"pretty_name": "Visualization Schedule",
+			"description": "A request to schedule a visualization was made",
+			"fields": {},
+			"titleTemplate": "Successfully schedule a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-schedule:fail": {
+			"subject": "visualization",
+			"activity": "schedule",
+			"activity_type": "visualization-schedule",
+			"outcome": "fail",
+			"pretty_name": "Visualization Schedule",
+			"description": "A request to schedule a visualization was made",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to schedule a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-publish:success": {
+			"subject": "visualization",
+			"activity": "publish",
+			"activity_type": "visualization-publish",
+			"outcome": "success",
+			"pretty_name": "Visualization Publish",
+			"description": "A request to publish a visualization was made",
+			"fields": {},
+			"titleTemplate": "Successfully publish a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-publish:fail": {
+			"subject": "visualization",
+			"activity": "publish",
+			"activity_type": "visualization-publish",
+			"outcome": "fail",
+			"pretty_name": "Visualization Publish",
+			"description": "A request to publish a visualization was made",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to publish a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-modify:success": {
+			"subject": "visualization",
+			"activity": "modify",
+			"activity_type": "visualization-modify",
+			"outcome": "success",
+			"pretty_name": "Visualization Modify",
+			"description": "A request to modify a visualization was made",
+			"fields": {},
+			"titleTemplate": "Successfully modify a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"visualization-modify:fail": {
+			"subject": "visualization",
+			"activity": "modify",
+			"activity_type": "visualization-modify",
+			"outcome": "fail",
+			"pretty_name": "Visualization Modify",
+			"description": "A request to modify a visualization was made",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to modify a visualization",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"repository-create:success": {
 			"subject": "repository",
 			"activity": "create",
@@ -19139,6 +19137,275 @@
 			"titleTemplate": "Failed to trigger a security rule {event.rule}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"rule-trigger-test:success": {
+			"subject": "rule",
+			"activity": "trigger-test",
+			"activity_type": "rule-trigger-test",
+			"outcome": "success",
+			"pretty_name": "Rule Trigger Test",
+			"description": "A test trigger of a security rule was recorded on a security product or program",
+			"fields": {
+				"src_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"src_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"rule": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"dest_host": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_ip": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"user": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"trigger_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_reason": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"mitre_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_usecases": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"asset_labels": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_severity": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_id": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"log_time": {
+					"Status": "Default",
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"local_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"observed_activity": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"recoverability": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_filter": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_from_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_to_time_millis": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"previous_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"create_case": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"case_description": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rule_source": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"technique": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"tactic_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entity_key": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_field": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"field_value": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"rules": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"entities": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"event_url": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"risk_score": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_product": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_vendor": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"subscription_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"src_local_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_local_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_local_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_local_host": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"local_asset": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"local_zone": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Successfully test triggered a security rule {event.rule}",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"rule-enable:success": {
 			"subject": "rule",
 			"activity": "enable",
@@ -19981,7 +20248,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "1",
-                    "enriched": "1"
+					"enriched": "1"
 				},
 				"alert_severity": {
 					"core": "1",
@@ -20358,6 +20625,94 @@
 			"titleTemplate": "Failed to modify a bucket policy by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"bucket-policy-read:success": {
+			"subject": "bucket",
+			"activity": "policy-read",
+			"activity_type": "bucket-policy-read",
+			"outcome": "success",
+			"pretty_name": "Bucket Policy Read",
+			"description": "The security policy linked to the bucket was read",
+			"fields": {
+				"policy_content": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully read a bucket policy by user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"bucket-policy-read:fail": {
+			"subject": "bucket",
+			"activity": "policy-read",
+			"activity_type": "bucket-policy-read",
+			"outcome": "fail",
+			"pretty_name": "Bucket Policy Read",
+			"description": "The security policy linked to the bucket was read",
+			"fields": {
+				"policy_content": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to read a bucket policy by user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"bucket-property-read:success": {
+			"subject": "bucket",
+			"activity": "property-read",
+			"activity_type": "bucket-property-read",
+			"outcome": "success",
+			"pretty_name": "Bucket Property Read",
+			"description": "The property linked to the bucket was read",
+			"fields": {
+				"policy_content": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully read a bucket property by user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"bucket-property-read:fail": {
+			"subject": "bucket",
+			"activity": "property-read",
+			"activity_type": "bucket-property-read",
+			"outcome": "fail",
+			"pretty_name": "Bucket Property Read",
+			"description": "The property linked to the bucket was read",
+			"fields": {
+				"policy_content": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to read a bucket property by user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"bucket-permission-modify:success": {
 			"subject": "bucket",
 			"activity": "permission-modify",
@@ -20389,6 +20744,39 @@
 				}
 			},
 			"titleTemplate": "Failed to modify a bucket permission by user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"bucket-permission-read:success": {
+			"subject": "bucket",
+			"activity": "permission-read",
+			"activity_type": "bucket-permission-read",
+			"outcome": "success",
+			"pretty_name": "Bucket Permission Read",
+			"description": "The ACL or any other passive permission configuration applied to the bucket was read",
+			"fields": {},
+			"titleTemplate": "Successfully read a bucket permission by user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"bucket-permission-read:fail": {
+			"subject": "bucket",
+			"activity": "permission-read",
+			"activity_type": "bucket-permission-read",
+			"outcome": "fail",
+			"pretty_name": "Bucket Permission Read",
+			"description": "The ACL or any other passive permission configuration applied to the bucket was read",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to read a bucket permission by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"bucket-accessblock-modify:success": {
@@ -31450,13 +31838,13 @@
 					"detection": "0",
 					"informational": "1"
 				},
-                "cid": {
-                      "core": "0",
-                      "detection": "0",
-                      "informational": "1",
-                      "enriched": "0"
-                }
-            },
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "0"
+				}
+			},
 			"activity_type": {
 				"file-write": {
 					"fields": {
@@ -46906,6 +47294,40 @@
 							"detection": "0",
 							"informational": "0",
 							"enriched": "1"
+						}
+					}
+				}
+			}
+		},
+		"microsoft defender for endpoint": {
+			"expression": "product = microsoft defender for endpoint",
+			"fields": {},
+			"activity_type": {
+				"email-send": {
+					"fields": {
+						"url_count": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"email_urls": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"email-receive": {
+					"fields": {
+						"url_count": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"email_urls": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				}
@@ -74308,30 +74730,30 @@
 						}
 					}
 				},
-                "rule-trigger": {
-                    "fields": {
-                      "rarity_percentile": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      },
-                      "rarity_raw_score": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      },
-                      "rarity_score": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      },
-                      "field_value": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      }
-                    }
-                }
+				"rule-trigger": {
+					"fields": {
+						"rarity_percentile": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"rarity_raw_score": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"rarity_score": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"field_value": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				}
 			}
 		},
 		"NG Analytics": {
@@ -74422,30 +74844,30 @@
 						}
 					}
 				},
-                 "rule-trigger": {
-                    "fields": {
-                      "rarity_percentile": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      },
-                      "rarity_raw_score": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      },
-                      "rarity_score": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      },
-                      "field_value": {
-                        "core": "0",
-                        "detection": "0",
-                        "informational": "1"
-                      }
-                    }
-                }
+				"rule-trigger": {
+					"fields": {
+						"rarity_percentile": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"rarity_raw_score": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"rarity_score": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"field_value": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				}
 			}
 		},
 		"search": {
@@ -89618,6 +90040,38 @@
 						}
 					}
 				},
+				"bucket-policy-read": {
+					"fields": {
+						"bucket_host": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"bucket_arn": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"bucket-property-read": {
+					"fields": {
+						"bucket_host": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"bucket_arn": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
 				"bucket-accessblock-modify": {
 					"fields": {
 						"restrict_public_buckets": {
@@ -89691,6 +90145,34 @@
 							"informational": "1"
 						},
 						"allowed_permissions": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"owner_id": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"bucket_arn": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"bucket-permission-read": {
+					"fields": {
+						"acl_content": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"bucket_host": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",

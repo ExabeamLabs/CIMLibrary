@@ -58,6 +58,10 @@ Activity Types
 |                           | owner_id                | Default |          |           | &#10003;      |
 |                           | bucket_host             | Default |          |           | &#10003;      |
 |                           | allowed_permissions     | Default |          |           | &#10003;      |
+| bucket-permission-read    | acl_content             | Default |          |           | &#10003;      |
+|                           | bucket_arn              | Default |          |           | &#10003;      |
+|                           | owner_id                | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
 | bucket-policy-modify      | allowed_users           | Default |          |           | &#10003;      |
 |                           | bucket_arn              | Default |          |           | &#10003;      |
 |                           | bucket_host             | Default |          |           | &#10003;      |
@@ -66,6 +70,10 @@ Activity Types
 |                           | allowed_permissions     | Default |          |           | &#10003;      |
 |                           | allowed_resources       | Default |          |           | &#10003;      |
 |                           | denied_resources        | Default |          |           | &#10003;      |
+| bucket-policy-read        | bucket_arn              | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
+| bucket-property-read      | bucket_arn              | Default |          |           | &#10003;      |
+|                           | bucket_host             | Default |          |           | &#10003;      |
 | disk-attach               | instance_id             | Default |          |           | &#10003;      |
 |                           | volume_device           | Default |          |           | &#10003;      |
 |                           | resource_id             | Default |          |           | &#10003;      |
