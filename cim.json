@@ -6066,7 +6066,7 @@
 				"app-login",
 				"webconference-login"
 			],
-			"titleTemplate": "{event.user|event.email_address} logged in to application {event.app} from {event.src_host|event.src_ip}",
+			"titleTemplate": "{event.user|event.email_address} logged in to {event.dest_host|event.dest_ip|event.app} from {event.src_host|event.src_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-login:fail": {
@@ -6192,7 +6192,7 @@
 				"failed-app-login",
 				"webconference-login"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed to login to application {event.app} from {event.src_host|event.src_ip}",
+			"titleTemplate": "{event.user|event.email_address} failed to login to {event.dest_host|event.dest_ip|event.app} from {event.src_host|event.src_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"app-logout:success": {
@@ -48503,6 +48503,34 @@
 			"expression": "product = microsoft office 365",
 			"fields": {},
 			"activity_type": {
+				"app-activity": {
+					"fields": {
+						"sensitivity_label": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"old_sensitivity_label": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"encrypted": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"label_id": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
 				"alert-trigger": {
 					"fields": {
 						"additional_info": {
