@@ -14,11 +14,6 @@ Parameters
 | Activity Type | endpoint-delete |
 | Pretty Name   | Endpoint Delete |
 
-Legacy Names
-------------
-| Success | Fail |
-| ------- | ---- |
-| NA<br>  |      |
 
 Fields
 ------

@@ -16,13 +16,13 @@ This table maps old event types to their corresponding new-scale activity types.
 | [account-password-change](FieldsMappings/account-password-change_fields.md) | [user-password-modify:fail](ActivityTypes/user-password-modify.md)|
 | [account-password-change-failed](FieldsMappings/account-password-change-failed_fields.md) | [password-modify:fail](ActivityTypes/password-modify.md)|
 | [account-password-reset](FieldsMappings/account-password-reset_fields.md) | [user-password-reset:fail](ActivityTypes/user-password-reset.md)|
-| [account-switch](FieldsMappings/account-switch_fields.md) | [password-checkout:success](ActivityTypes/password-checkout.md) |
+| [account-switch](FieldsMappings/account-switch_fields.md) | [endpoint-login:success](ActivityTypes/endpoint-login.md) |
 | [account-unlocked](FieldsMappings/account-unlocked_fields.md) | [user-unlock:success](ActivityTypes/user-unlock.md) |
 | [alert-iot](FieldsMappings/alert-iot_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [app-activity-failed](FieldsMappings/app-activity-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [app-login](FieldsMappings/app-login_fields.md) | [app-authentication:success](ActivityTypes/app-authentication.md) |
-| [audit-log-clear](FieldsMappings/audit-log-clear_fields.md) | [endpoint-notification:success](ActivityTypes/endpoint-notification.md) |
+| [audit-log-clear](FieldsMappings/audit-log-clear_fields.md) | [log-clear:success](ActivityTypes/log-clear.md) |
 | [audit-policy-change](FieldsMappings/audit-policy-change_fields.md) | [audit_policy-modify:success](ActivityTypes/audit_policy-modify.md) |
 | [authentication-failed](FieldsMappings/authentication-failed_fields.md) | [app-authentication:fail](ActivityTypes/app-authentication.md)|
 | [authentication-successful](FieldsMappings/authentication-successful_fields.md) | [app-authentication:success](ActivityTypes/app-authentication.md) |
@@ -201,11 +201,11 @@ This table maps old event types to their corresponding new-scale activity types.
 | [mailbox-item-read](FieldsMappings/mailbox-item-read_fields.md) | [mailbox-item-read:success](ActivityTypes/mailbox-item-read.md) |
 | [mailbox-modify](FieldsMappings/mailbox-modify_fields.md) | [mailbox-modify:success](ActivityTypes/mailbox-modify.md) |
 | [mailbox-permission-modify](FieldsMappings/mailbox-permission-modify_fields.md) | [mailbox-permission-modify:success](ActivityTypes/mailbox-permission-modify.md) |
-| [member-added](FieldsMappings/member-added_fields.md) | [group-member-add:success](ActivityTypes/group-member-add.md) |
+| [member-added](FieldsMappings/member-added_fields.md) | [group-member-add:fail](ActivityTypes/group-member-add.md)|
 | [member-removed](FieldsMappings/member-removed_fields.md) | [group-member-remove:success](ActivityTypes/group-member-remove.md) |
 | [nac-failed-logon](FieldsMappings/nac-failed-logon_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
 | [nac-logon](FieldsMappings/nac-logon_fields.md) | [endpoint-authentication:success](ActivityTypes/endpoint-authentication.md) |
-| [netflow-connection](FieldsMappings/netflow-connection_fields.md) | [network-session:success](ActivityTypes/network-session.md) |
+| [netflow-connection](FieldsMappings/netflow-connection_fields.md) | [network-traffic:success](ActivityTypes/network-traffic.md) |
 | [network-alert](FieldsMappings/network-alert_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [network-connection-failed](FieldsMappings/network-connection-failed_fields.md) | [network-close:success](ActivityTypes/network-close.md) |
 | [network-connection-successful](FieldsMappings/network-connection-successful_fields.md) | [dns-traffic:success](ActivityTypes/dns-traffic.md) |
@@ -213,7 +213,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [ntlm-logon](FieldsMappings/ntlm-logon_fields.md) | [endpoint-authentication:success](ActivityTypes/endpoint-authentication.md) |
 | [physical-access](FieldsMappings/physical-access_fields.md) | [physical_location-access:success](ActivityTypes/physical_location-access.md) |
 | [print-activity](FieldsMappings/print-activity_fields.md) | [printer-activity:success](ActivityTypes/printer-activity.md) |
-| [privileged-access](FieldsMappings/privileged-access_fields.md) | [user-privilege-assign:success](ActivityTypes/user-privilege-assign.md) |
+| [privileged-access](FieldsMappings/privileged-access_fields.md) | [user-privilege-assign:fail](ActivityTypes/user-privilege-assign.md)|
 | [privileged-object-access](FieldsMappings/privileged-object-access_fields.md) | [user-privilege-use:success](ActivityTypes/user-privilege-use.md) |
 | [process-alert](FieldsMappings/process-alert_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [process-created](FieldsMappings/process-created_fields.md) | [process-create:success](ActivityTypes/process-create.md) |
@@ -235,7 +235,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [system-info](FieldsMappings/system-info_fields.md) | [certificate-request:success](ActivityTypes/certificate-request.md) |
 | [task-created](FieldsMappings/task-created_fields.md) | [scheduled_task-create:fail](ActivityTypes/scheduled_task-create.md)|
 | [usb-activity](FieldsMappings/usb-activity_fields.md) | [peripheral_storage-activity:success](ActivityTypes/peripheral_storage-activity.md) |
-| [usb-insert](FieldsMappings/usb-insert_fields.md) | [peripheral_storage-insert:success](ActivityTypes/peripheral_storage-insert.md) |
+| [usb-insert](FieldsMappings/usb-insert_fields.md) | [peripheral_storage-insert:fail](ActivityTypes/peripheral_storage-insert.md)|
 | [usb-read](FieldsMappings/usb-read_fields.md) | [file-read:success](ActivityTypes/file-read.md) |
 | [usb-write](FieldsMappings/usb-write_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
 | [user-role-assign](FieldsMappings/user-role-assign_fields.md) | [user-role-assign:success](ActivityTypes/user-role-assign.md) |

@@ -14,11 +14,6 @@ Parameters
 | Activity Type | endpoint-modify |
 | Pretty Name   | Endpoint Modify |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

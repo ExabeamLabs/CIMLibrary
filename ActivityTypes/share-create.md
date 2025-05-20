@@ -16,9 +16,9 @@ Parameters
 
 Legacy Names
 ------------
-| Success          | Fail |
-| ---------------- | ---- |
-| share-access<br> |      |
+| Success          | Fail             |
+| ---------------- | ---------------- |
+| share-access<br> | share-access<br> |
 
 Fields
 ------
@@ -32,4 +32,7 @@ share-create:success
 There are no fields for this activity type.
 
 
-A failure activity is not currently supported for this activity-type.
+share-create:fail
+-----------------
+
+There are no fields for this activity type.

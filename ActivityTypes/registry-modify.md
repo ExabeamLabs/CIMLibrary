@@ -29,15 +29,19 @@ The possible fields for this activity type will vary depending on whether the ac
 registry-modify:success
 -----------------------
 
-| Field | Core | Detection | Informational |
-| ----- | ---- | --------- | ------------- |
-| cid   |      |           | &#10003;      |
+| Field                     | Core | Detection | Informational |
+| ------------------------- | ---- | --------- | ------------- |
+| old_registry_details_type |      | &#10003;  |               |
+| old_registry_details      |      | &#10003;  |               |
+| cid                       |      |           | &#10003;      |
 
 registry-modify:fail
 --------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
-| cid            |      |           | &#10003;      |
+| Field                     | Core | Detection | Informational |
+| ------------------------- | ---- | --------- | ------------- |
+| failure_code              |      | &#10003;  |               |
+| old_registry_details_type |      | &#10003;  |               |
+| failure_reason            |      | &#10003;  |               |
+| old_registry_details      |      | &#10003;  |               |
+| cid                       |      |           | &#10003;      |

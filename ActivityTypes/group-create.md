@@ -14,11 +14,6 @@ Parameters
 | Activity Type | group-create |
 | Pretty Name   | Group Create |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

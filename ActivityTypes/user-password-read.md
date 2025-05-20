@@ -14,11 +14,6 @@ Parameters
 | Activity Type | user-password-read |
 | Pretty Name   | User Password Read |
 
-Legacy Names
-------------
-| Success | Fail |
-| ------- | ---- |
-| NA<br>  |      |
 
 Fields
 ------

@@ -264,6 +264,7 @@ Activity Types
 |                        | additional_info   | Default |          |           | &#10003;      |
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | src_host          | Default |          | &#10003;  |               |
+|                        | category_ids      | Default |          |           | &#10003;      |
 | log-search             | os                | Default |          |           | &#10003;      |
 |                        | domain_user_name  |         |          |           |               |
 |                        | src_host          | Default |          | &#10003;  |               |

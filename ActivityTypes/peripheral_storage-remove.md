@@ -14,11 +14,6 @@ Parameters
 | Activity Type | peripheral_storage-remove |
 | Pretty Name   | Peripheral_storage Remove |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

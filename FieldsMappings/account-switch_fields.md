@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: account-switch
-### New-Scale Activity Type: password-checkout:success
+### New-Scale Activity Type: endpoint-login:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

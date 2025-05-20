@@ -14,11 +14,6 @@ Parameters
 | Activity Type | group-delete |
 | Pretty Name   | Group Delete |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

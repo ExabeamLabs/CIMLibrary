@@ -14,11 +14,6 @@ Parameters
 | Activity Type | user-permission-modify |
 | Pretty Name   | User Permission Modify |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

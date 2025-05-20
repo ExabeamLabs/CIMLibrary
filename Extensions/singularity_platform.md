@@ -96,6 +96,7 @@ Activity Types
 |                       | alert_type           | Default |          |           | &#10003;      |
 | process-create        | src_ip               | Default |          | &#10003;  |               |
 |                       | hash_sha256          | Default |          |           | &#10003;      |
+|                       | process_signed       | Default |          |           |               |
 |                       | agent_id             | Default |          |           | &#10003;      |
 |                       | dest_ip              | Default |          | &#10003;  |               |
 |                       | object               | Default |          |           | &#10003;      |

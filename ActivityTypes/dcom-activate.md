@@ -18,7 +18,7 @@ Legacy Names
 ------------
 | Success | Fail                       |
 | ------- | -------------------------- |
-| NA<br>  | dcom-activation-failed<br> |
+|         | dcom-activation-failed<br> |
 
 Fields
 ------

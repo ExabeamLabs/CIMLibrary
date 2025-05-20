@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: audit-log-clear
-### New-Scale Activity Type: endpoint-notification:success
+### New-Scale Activity Type: log-clear:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

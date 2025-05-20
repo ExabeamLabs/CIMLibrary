@@ -11,6 +11,7 @@ Fields
 
 | Field              | Core     | Detection | Informational |
 | ------------------ | -------- | --------- | ------------- |
+| web_content_type   |          |           | &#10003;      |
 | fallback_user_name |          |           |               |
 | user               | &#10003; | &#10003;  |               |
 | aid                |          |           | &#10003;      |

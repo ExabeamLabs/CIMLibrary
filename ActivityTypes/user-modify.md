@@ -14,11 +14,6 @@ Parameters
 | Activity Type | user-modify |
 | Pretty Name   | User Modify |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

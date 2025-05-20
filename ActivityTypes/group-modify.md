@@ -14,11 +14,6 @@ Parameters
 | Activity Type | group-modify |
 | Pretty Name   | Group Modify |
 
-Legacy Names
-------------
-| Success | Fail   |
-| ------- | ------ |
-| NA<br>  | NA<br> |
 
 Fields
 ------

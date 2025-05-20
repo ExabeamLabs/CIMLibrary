@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: member-added
-### New-Scale Activity Type: group-member-add:success
+### New-Scale Activity Type: group-member-add:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

@@ -16,9 +16,9 @@ Parameters
 
 Legacy Names
 ------------
-| Success               | Fail |
-| --------------------- | ---- |
-| privileged-access<br> |      |
+| Success               | Fail                  |
+| --------------------- | --------------------- |
+| privileged-access<br> | privileged-access<br> |
 
 Fields
 ------
@@ -33,4 +33,9 @@ user-privilege-assign:success
 | ---------- | ---- | --------- | ------------- |
 | privileges |      |           |               |
 
-A failure activity is not currently supported for this activity-type.
+user-privilege-assign:fail
+--------------------------
+
+| Field      | Core | Detection | Informational |
+| ---------- | ---- | --------- | ------------- |
+| privileges |      |           |               |
