@@ -16,7 +16,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [account-password-change](FieldsMappings/account-password-change_fields.md) | [user-password-modify:fail](ActivityTypes/user-password-modify.md)|
 | [account-password-change-failed](FieldsMappings/account-password-change-failed_fields.md) | [password-modify:fail](ActivityTypes/password-modify.md)|
 | [account-password-reset](FieldsMappings/account-password-reset_fields.md) | [user-password-reset:fail](ActivityTypes/user-password-reset.md)|
-| [account-switch](FieldsMappings/account-switch_fields.md) | [endpoint-login:success](ActivityTypes/endpoint-login.md) |
+| [account-switch](FieldsMappings/account-switch_fields.md) | [password-checkout:success](ActivityTypes/password-checkout.md) |
 | [account-unlocked](FieldsMappings/account-unlocked_fields.md) | [user-unlock:success](ActivityTypes/user-unlock.md) |
 | [alert-iot](FieldsMappings/alert-iot_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [app-activity](FieldsMappings/app-activity_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|

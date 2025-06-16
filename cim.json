@@ -2680,7 +2680,7 @@
 		"template-create:fail": {
 			"subject": "template",
 			"activity": "create",
-			"activity_type": "emplate-create",
+			"activity_type": "template-create",
 			"outcome": "fail",
 			"pretty_name": "Template Create",
 			"description": "Template Creation failed",
@@ -4332,7 +4332,7 @@
 			"legacy_event_name": [
 				"account-password-reset"
 			],
-			"titleTemplate": "{event.user|event.email_address} reset account password for {event.dest_user}",
+			"titleTemplate": "{event.user|event.email_address} reset account password for {event.dest_user|event.dest_email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-password-reset:fail": {
@@ -4357,7 +4357,7 @@
 			"legacy_event_name": [
 				"account-password-reset"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed to reset account password for {event.dest_user}",
+			"titleTemplate": "{event.user|event.email_address} failed to reset account password for {event.dest_user|event.dest_email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-password-forget:success": {
@@ -4434,9 +4434,7 @@
 			"pretty_name": "User Password Read",
 			"description": "A user accounts' password was read\\retrieved ",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully read an account password for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -4529,7 +4527,7 @@
 			"legacy_event_name": [
 				"account-switch"
 			],
-			"titleTemplate": "{event.user|event.email_address} switched to user {event.dest_user}",
+			"titleTemplate": "{event.user|event.email_address} switched to user {event.dest_user|event.dest_email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-switch:fail": {
@@ -4585,7 +4583,7 @@
 			"legacy_event_name": [
 				"account-switch"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed to switch to user {event.dest_user}",
+			"titleTemplate": "{event.user|event.email_address} failed to switch to user {event.dest_user|event.dest_email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-unlock:success": {
@@ -4641,9 +4639,7 @@
 					"informational": "1"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully modified an account's attributes for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -4671,9 +4667,7 @@
 					"informational": "0"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Failed to modify an account's attributes for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -4691,9 +4685,7 @@
 					"informational": "1"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully updated an account's permission for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -4721,9 +4713,7 @@
 					"informational": "0"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Failed to update an account's permission for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -5187,6 +5177,72 @@
 				}
 			},
 			"titleTemplate": "Failed to create a token for {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"user-token-modify:success": {
+			"subject": "user",
+			"activity": "token-modify",
+			"activity_type": "user-token-modify",
+			"outcome": "success",
+			"pretty_name": "User Token Modify",
+			"description": "A user token was changed in a process",
+			"fields": {},
+			"titleTemplate": "Successfully changed a user token for {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"user-token-modify:fail": {
+			"subject": "user",
+			"activity": "token-modify",
+			"activity_type": "user-token-modify",
+			"outcome": "fail",
+			"pretty_name": "User Token Modify",
+			"description": "A user token was changed in a process",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to change a user token for {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"user-token-revoke:success": {
+			"subject": "user",
+			"activity": "token-revoke",
+			"activity_type": "user-token-revoke",
+			"outcome": "success",
+			"pretty_name": "User Token Revoke",
+			"description": "A user token was revoked in a process",
+			"fields": {},
+			"titleTemplate": "Successfully revoked a user token for {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"user-token-revoke:fail": {
+			"subject": "user",
+			"activity": "token-revoke",
+			"activity_type": "user-token-revoke",
+			"outcome": "fail",
+			"pretty_name": "User Token Revoke",
+			"description": "A user token was revoked in a process",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to revoke a user token for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"user-read:success": {
@@ -7386,9 +7442,7 @@
 			"pretty_name": "Endpoint Delete",
 			"description": "An endpoint object or instance was deleted",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully deleted an endpoint instance or object {event.dest_host|event.dest_ip}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -7416,9 +7470,7 @@
 					"informational": "1"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully configured/modified properties of an endpoint instance or object",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -7456,9 +7508,7 @@
 					"informational": "1"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Configuration/Properties of an endpoint instance or object failed",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10440,9 +10490,7 @@
 			"pretty_name": "Peripheral_storage Remove",
 			"description": "A peripheral storage device was removed",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully disconnected a peripheral storage device {event.device_name|event.device_id} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10465,9 +10513,7 @@
 					"informational": "0"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Failed to disconnect a peripheral storage device {event.device_name|event.device_id} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10537,7 +10583,7 @@
 			"legacy_event_name": [
 				"member-added"
 			],
-			"titleTemplate": "{event.user|event.email_address} added {event.dest_user} to group {event.group_name}",
+			"titleTemplate": "{event.user|event.email_address} added {event.dest_user|event.dest_email_address|event.member} to group {event.group_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-member-add:fail": {
@@ -10616,7 +10662,7 @@
 			"legacy_event_name": [
 				"member-added"
 			],
-			"titleTemplate": "{event.user|event.email_address} failed to add {event.dest_user} to group {event.group_name}",
+			"titleTemplate": "{event.user|event.email_address} failed to add {event.dest_user|event.dest_email_address|event.member} to group {event.group_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-member-remove:success": {
@@ -10652,7 +10698,7 @@
 			"legacy_event_name": [
 				"member-removed"
 			],
-			"titleTemplate": "{event.user|event.email_address} removed {event.dest_user} from group {event.group_name}",
+			"titleTemplate": "{event.user|event.email_address} removed {event.dest_user|event.dest_email_address|event.member} from group {event.group_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"group-member-move:success": {
@@ -10740,9 +10786,7 @@
 			"pretty_name": "Group Delete",
 			"description": "A group was deleted",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully deleted group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10765,9 +10809,7 @@
 					"informational": "0"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Failed to delete group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10779,9 +10821,7 @@
 			"pretty_name": "Group Create",
 			"description": "A group was created",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully created group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10804,9 +10844,7 @@
 					"informational": "0"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Failed to create group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10851,9 +10889,7 @@
 			"pretty_name": "Group Modify",
 			"description": "A group was modified",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully modified a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -10876,9 +10912,7 @@
 					"informational": "0"
 				}
 			},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Failed to modify a group",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -12048,6 +12082,26 @@
 			"titleTemplate": "Successfully assigned privileges {event.privileges} to user account {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"user-privilege-assign:fail": {
+			"subject": "user",
+			"activity": "privilege-assign",
+			"activity_type": "user-privilege-assign",
+			"outcome": "fail",
+			"pretty_name": "User Privilege Assign",
+			"description": "Privillege assigned to a user",
+			"fields": {
+				"privileges": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0"
+				}
+			},
+			"legacy_event_name": [
+				"privileged-access"
+			],
+			"titleTemplate": "Failed to assign privileges {event.privileges} to user account {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},		
 		"user-privilege-modify:success": {
 			"subject": "user",
 			"activity": "privilege-modify",
@@ -12225,7 +12279,7 @@
 			"activity_type": "registry-delete",
 			"outcome": "success",
 			"pretty_name": "Registry Delete",
-			"description": "A registry object wa deleted",
+			"description": "A registry object was deleted",
 			"fields": {},
 			"titleTemplate": "Successfully deleted a registry object",
 			"titleTemplateFormatVersion": "1.0"
@@ -12236,7 +12290,7 @@
 			"activity_type": "registry-delete",
 			"outcome": "fail",
 			"pretty_name": "Registry Delete",
-			"description": "A registry object wa deleted",
+			"description": "A registry object was deleted",
 			"fields": {
 				"failure_reason": {
 					"core": "0",
@@ -12264,6 +12318,16 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"old_registry_details": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"old_registry_details_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -12294,6 +12358,16 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"old_registry_details": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"old_registry_details_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -12368,6 +12442,39 @@
 			"titleTemplate": "Failed to read a registry key or value",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"registry-export:success": {
+			"subject": "registry",
+			"activity": "export",
+			"activity_type": "registry-export",
+			"outcome": "success",
+			"pretty_name": "Registry Export",
+			"description": "A registry key or value were exported",
+			"fields": {},
+			"titleTemplate": "Successfully exported a registry key or value",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"registry-export:fail": {
+			"subject": "registry",
+			"activity": "export",
+			"activity_type": "registry-export",
+			"outcome": "fail",
+			"pretty_name": "Registry Export",
+			"description": "A registry key or value were exported",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to export a registry key or value",
+			"titleTemplateFormatVersion": "1.0"
+		},		
 		"service-create:success": {
 			"subject": "service",
 			"activity": "create",
@@ -12633,6 +12740,20 @@
 			"titleTemplate": "Successfully created a network share {event.share_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"share-create:fail": {
+			"subject": "share",
+			"activity": "create",
+			"activity_type": "share-create",
+			"outcome": "fail",
+			"pretty_name": "Share Create",
+			"description": "A network share was created",
+			"fields": {},
+			"legacy_event_name": [
+				"share-access"
+			],
+			"titleTemplate": "Failed to create a network share {event.share_name}",
+			"titleTemplateFormatVersion": "1.0"
+		},		
 		"share-modify:success": {
 			"subject": "share",
 			"activity": "modify",
@@ -12647,6 +12768,20 @@
 			"titleTemplate": "Successfully modified a network share {event.share_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"share-modify:fail": {
+			"subject": "share",
+			"activity": "modify",
+			"activity_type": "share-modify",
+			"outcome": "fail",
+			"pretty_name": "Share Modify",
+			"description": "A network share was modified",
+			"fields": {},
+			"legacy_event_name": [
+				"share-access-denied"
+			],
+			"titleTemplate": "Failed to modify a network share {event.share_name}",
+			"titleTemplateFormatVersion": "1.0"
+		},		
 		"share-delete:success": {
 			"subject": "share",
 			"activity": "delete",
@@ -13867,9 +14002,7 @@
 			"pretty_name": "Dcom Activate",
 			"description": "An activation of DCOM application",
 			"fields": {},
-			"legacy_event_name": [
-				"NA"
-			],
+			"legacy_event_name": [],
 			"titleTemplate": "Successfully activated a DCOM application",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -31843,6 +31976,11 @@
 					"detection": "0",
 					"informational": "1",
 					"enriched": "0"
+				},
+				"web_content_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"activity_type": {
@@ -39559,6 +39697,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"process_signed": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
 						}
 					}
 				},
@@ -43879,8 +44023,8 @@
 				}
 			}
 		},
-		"skyhigh networks casb": {
-			"expression": "product = \"skyhigh networks casb\"",
+		"skyhigh casb": {
+			"expression": "product = \"skyhigh casb\"",
 			"fields": {
 				"user": {
 					"core": "0",
@@ -46040,8 +46184,8 @@
 				}
 			}
 		},
-		"fireeye (trellix) email security (ex)": {
-			"expression": "product = fireeye (trellix) email security (ex)",
+		"trellix email security (ex)": {
+			"expression": "product = trellix email security (ex)",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -46091,8 +46235,8 @@
 				}
 			}
 		},
-		"fireeye (trellix) helix": {
-			"expression": "product = fireeye (trellix) helix",
+		"trellix helix": {
+			"expression": "product = trellix helix",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -46269,8 +46413,8 @@
 				}
 			}
 		},
-		"fireeye (trellix) network security (nx)": {
-			"expression": "product = fireeye (trellix) network security (nx)",
+		"trellix network security (nx)": {
+			"expression": "product = trellix network security (nx)",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -53211,8 +53355,8 @@
 				}
 			}
 		},
-		"vectra cognito": {
-			"expression": "product = vectra cognito",
+		"vectra cognito detect": {
+			"expression": "product = vectra cognito detect",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -53234,6 +53378,36 @@
 							"core": "1",
 							"detection": "1",
 							"informational": "0"
+						},
+						"start_time": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"user_privilege_level": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user_privilege_category": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user_threat_certainty": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user_threat_level": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"user_url": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				}
@@ -54170,6 +54344,11 @@
 					"enriched": "1"
 				},
 				"result": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"web_content_type": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -64243,8 +64422,8 @@
 				}
 			}
 		},
-		"fireeye endpoint security (hx)": {
-			"expression": "product = \"fireeye endpoint security (hx)\"",
+		"trellix endpoint security (hx)": {
+			"expression": "product = \"trellix endpoint security (hx)\"",
 			"fields": {},
 			"activity_type": {
 				"file-write": {
@@ -81123,6 +81302,12 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"category_ids": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -85845,8 +86030,8 @@
 				}
 			}
 		},
-		"mcafee advanced threat defense": {
-			"expression": "product = \"mcafee advanced threat defense\"",
+		"trellix intelligent sandbox": {
+			"expression": "product = \"trellix intelligent sandbox\"",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -86068,8 +86253,8 @@
 				}
 			}
 		},
-		"mcafee skyhigh networks casb": {
-			"expression": "product = \"mcafee skyhigh networks casb\"",
+		"mcafee skyhigh casb": {
+			"expression": "product = \"mcafee skyhigh casb\"",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -89112,8 +89297,8 @@
 				}
 			}
 		},
-		"fireeye (trellix) endpoint security (helix)": {
-			"expression": "product = fireeye (trellix) endpoint security (helix)",
+		"trellix endpoint security (helix)": {
+			"expression": "product = trellix endpoint security (helix)",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -89324,8 +89509,8 @@
 				}
 			}
 		},
-		"mcafee enterprise security manager": {
-			"expression": "product = mcafee enterprise security manager",
+		"trellix enterprise security manager": {
+			"expression": "product = trellix enterprise security manager",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
@@ -89379,8 +89564,8 @@
 				}
 			}
 		},
-		"mcafee network security platform (ips)": {
-			"expression": "product = mcafee network security platform (ips)",
+		"trellix network security platform (ips)": {
+			"expression": "product = trellix network security platform (ips)",
 			"fields": {},
 			"activity_type": {
 				"alert-trigger": {
