@@ -31,6 +31,7 @@ group-member-remove:success
 
 | Field           | Core     | Detection | Informational |
 | --------------- | -------- | --------- | ------------- |
+| event_locality  |          |           | &#10003;      |
 | local_user_name |          |           |               |
 | member          | &#10003; | &#10003;  |               |
 | dest_user       |          | &#10003;  |               |

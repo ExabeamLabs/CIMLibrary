@@ -24,9 +24,10 @@ The possible fields for this activity type will vary depending on whether the ac
 user-modify:success
 -------------------
 
-| Field      | Core | Detection | Informational |
-| ---------- | ---- | --------- | ------------- |
-| properties |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
+| properties     |      |           | &#10003;      |
 
 user-modify:fail
 ----------------

@@ -101,10 +101,13 @@ This table maps old event types to their corresponding new-scale activity types.
 | [aws-volume-create-failed](FieldsMappings/aws-volume-create-failed_fields.md) | [disk-create:fail](ActivityTypes/disk-create.md)|
 | [aws-volume-modify](FieldsMappings/aws-volume-modify_fields.md) | [disk-modify:success](ActivityTypes/disk-modify.md) |
 | [aws-volume-modify-failed](FieldsMappings/aws-volume-modify-failed_fields.md) | [disk-modify:fail](ActivityTypes/disk-modify.md)|
+| [azure-blob-delete](FieldsMappings/azure-blob-delete_fields.md) | [file-delete:fail](ActivityTypes/file-delete.md)|
 | [azure-blob-read](FieldsMappings/azure-blob-read_fields.md) | [file-read:fail](ActivityTypes/file-read.md)|
 | [azure-blob-write](FieldsMappings/azure-blob-write_fields.md) | [file-write:fail](ActivityTypes/file-write.md)|
 | [azure-container-acl](FieldsMappings/azure-container-acl_fields.md) | [file-permission-modify:fail](ActivityTypes/file-permission-modify.md)|
+| [azure-container-write](FieldsMappings/azure-container-write_fields.md) | [file-write:fail](ActivityTypes/file-write.md)|
 | [azure-disk-write](FieldsMappings/azure-disk-write_fields.md) | [disk-write:success](ActivityTypes/disk-write.md) |
+| [azure-general-activity](FieldsMappings/azure-general-activity_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [azure-image-write](FieldsMappings/azure-image-write_fields.md) | [image-write:success](ActivityTypes/image-write.md) |
 | [azure-instance-creds-write](FieldsMappings/azure-instance-creds-write_fields.md) | [key-write:success](ActivityTypes/key-write.md) |
 | [azure-instance-write](FieldsMappings/azure-instance-write_fields.md) | [image-write:success](ActivityTypes/image-write.md) |
@@ -114,7 +117,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [azure-role-write](FieldsMappings/azure-role-write_fields.md) | [role-write:success](ActivityTypes/role-write.md) |
 | [azure-snapshot-write](FieldsMappings/azure-snapshot-write_fields.md) | [snapshot-write:success](ActivityTypes/snapshot-write.md) |
 | [azure-storage-list](FieldsMappings/azure-storage-list_fields.md) | [file-list:fail](ActivityTypes/file-list.md)|
-| [batch-logon](FieldsMappings/batch-logon_fields.md) | [endpoint-login:fail](ActivityTypes/endpoint-login.md)|
+| [batch-logon](FieldsMappings/batch-logon_fields.md) | [endpoint-login:success](ActivityTypes/endpoint-login.md) |
 | [cloud-admin-activity](FieldsMappings/cloud-admin-activity_fields.md) | [app-activity:success](ActivityTypes/app-activity.md) |
 | [cloud-admin-activity-failed](FieldsMappings/cloud-admin-activity-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [computer-logon](FieldsMappings/computer-logon_fields.md) | [dhcp-session:success](ActivityTypes/dhcp-session.md) |
@@ -125,7 +128,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [database-delete](FieldsMappings/database-delete_fields.md) | [database-delete:success](ActivityTypes/database-delete.md) |
 | [database-failed-login](FieldsMappings/database-failed-login_fields.md) | [database-login:fail](ActivityTypes/database-login.md)|
 | [database-login](FieldsMappings/database-login_fields.md) | [database-login:success](ActivityTypes/database-login.md) |
-| [database-query](FieldsMappings/database-query_fields.md) | [database-query:fail](ActivityTypes/database-query.md)|
+| [database-query](FieldsMappings/database-query_fields.md) | [database-query:success](ActivityTypes/database-query.md) |
 | [database-update](FieldsMappings/database-update_fields.md) | [database-modify:success](ActivityTypes/database-modify.md) |
 | [dcom-activation-failed](FieldsMappings/dcom-activation-failed_fields.md) | [dcom-activate:fail](ActivityTypes/dcom-activate.md)|
 | [dlp-alert](FieldsMappings/dlp-alert_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |

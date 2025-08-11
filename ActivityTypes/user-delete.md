@@ -31,6 +31,7 @@ user-delete:success
 
 | Field           | Core | Detection | Informational |
 | --------------- | ---- | --------- | ------------- |
+| event_locality  |      |           | &#10003;      |
 | local_user_name |      |           |               |
 | user            |      | &#10003;  |               |
 

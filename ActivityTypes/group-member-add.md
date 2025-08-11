@@ -33,6 +33,7 @@ group-member-add:success
 | -------------------- | -------- | --------- | ------------- |
 | user_ou              |          | &#10003;  |               |
 | dest_local_user_name |          |           |               |
+| event_locality       |          |           | &#10003;      |
 | group_id             |          | &#10003;  |               |
 | src_zone             |          |           |               |
 | local_user_name      |          |           |               |

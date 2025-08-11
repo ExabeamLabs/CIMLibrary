@@ -31,6 +31,7 @@ user-password-modify:success
 
 | Field           | Core | Detection | Informational |
 | --------------- | ---- | --------- | ------------- |
+| event_locality  |      |           | &#10003;      |
 | local_user_name |      |           |               |
 | user            |      | &#10003;  |               |
 
@@ -39,6 +40,7 @@ user-password-modify:fail
 
 | Field           | Core | Detection | Informational |
 | --------------- | ---- | --------- | ------------- |
+| event_locality  |      |           | &#10003;      |
 | failure_code    |      | &#10003;  |               |
 | local_user_name |      |           |               |
 | failure_reason  |      | &#10003;  |               |

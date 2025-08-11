@@ -45,6 +45,7 @@ app-login:success
 | domain            |          | &#10003;  |               |
 | fingerprint       |          | &#10003;  |               |
 | dest_host         |          | &#10003;  |               |
+| email_domain      |          |           |               |
 | user              | &#10003; | &#10003;  |               |
 | operation         |          | &#10003;  |               |
 | user_agent        |          | &#10003;  |               |
@@ -72,6 +73,7 @@ app-login:fail
 | domain            |          | &#10003;  |               |
 | fingerprint       |          | &#10003;  |               |
 | dest_host         |          | &#10003;  |               |
+| email_domain      |          |           |               |
 | user              | &#10003; | &#10003;  |               |
 | operation         |          | &#10003;  |               |
 | user_agent        |          | &#10003;  |               |

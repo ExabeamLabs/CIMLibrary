@@ -29,8 +29,9 @@ The possible fields for this activity type will vary depending on whether the ac
 ds_object-modify:success
 ------------------------
 
-| Field       | Core | Detection | Informational |
-| ----------- | ---- | --------- | ------------- |
-| object_type |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
+| object_type    |      |           | &#10003;      |
 
 A failure activity is not currently supported for this activity-type.

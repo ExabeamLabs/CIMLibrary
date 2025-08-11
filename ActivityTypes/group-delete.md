@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 group-delete:success
 --------------------
 
-There are no fields for this activity type.
-
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
 
 group-delete:fail
 -----------------

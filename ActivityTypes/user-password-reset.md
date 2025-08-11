@@ -29,13 +29,15 @@ The possible fields for this activity type will vary depending on whether the ac
 user-password-reset:success
 ---------------------------
 
-There are no fields for this activity type.
-
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
 
 user-password-reset:fail
 ------------------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |

@@ -31,6 +31,7 @@ user-create:success
 
 | Field           | Core | Detection | Informational |
 | --------------- | ---- | --------- | ------------- |
+| event_locality  |      |           | &#10003;      |
 | src_zone        |      |           |               |
 | local_user_name |      |           |               |
 | dest_host       |      |           | &#10003;      |

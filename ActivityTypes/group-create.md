@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 group-create:success
 --------------------
 
-There are no fields for this activity type.
-
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
 
 group-create:fail
 -----------------

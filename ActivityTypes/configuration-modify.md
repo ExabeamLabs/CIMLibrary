@@ -29,9 +29,10 @@ The possible fields for this activity type will vary depending on whether the ac
 configuration-modify:success
 ----------------------------
 
-| Field | Core | Detection | Informational |
-| ----- | ---- | --------- | ------------- |
-| cid   |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| event_locality |      |           | &#10003;      |
+| cid            |      |           | &#10003;      |
 
 configuration-modify:fail
 -------------------------
