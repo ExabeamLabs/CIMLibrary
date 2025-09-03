@@ -33,6 +33,8 @@ share-access:success
 | --------- | ---- | --------- | ------------- |
 | src_port  |      | &#10003;  |               |
 | file_path |      | &#10003;  |               |
+| src_zone  |      |           |               |
+| dest_zone |      |           |               |
 
 share-access:fail
 -----------------
@@ -42,4 +44,6 @@ share-access:fail
 | src_port       |      | &#10003;  |               |
 | file_path      |      | &#10003;  |               |
 | failure_code   |      | &#10003;  |               |
+| src_zone       |      |           |               |
 | failure_reason |      | &#10003;  |               |
+| dest_zone      |      |           |               |

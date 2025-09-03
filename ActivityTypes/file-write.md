@@ -33,6 +33,8 @@ file-write:success
 | --------------------- | ---- | --------- | ------------- |
 | is_dok                |      | &#10003;  |               |
 | is_peripheral_storage |      | &#10003;  |               |
+| device_pid            |      | &#10003;  |               |
+| device_vid            |      | &#10003;  |               |
 | cid                   |      |           | &#10003;      |
 
 file-write:fail

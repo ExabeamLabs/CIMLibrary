@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: usb-activity
-### New-Scale Activity Type: peripheral_storage-activity:success
+### New-Scale Activity Type: peripheral_device-activity:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

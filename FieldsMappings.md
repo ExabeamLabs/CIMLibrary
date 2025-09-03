@@ -7,7 +7,7 @@ This table maps old event types to their corresponding new-scale activity types.
  - Click a new-scale activity type link to open a page that provides parameters and CDI information for the selected activity type.
 
 | Old Event Type| New-Scale Activity Type |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | [account-creation](FieldsMappings/account-creation_fields.md) | [user-create:fail](ActivityTypes/user-create.md)|
 | [account-deleted](FieldsMappings/account-deleted_fields.md) | [user-delete:fail](ActivityTypes/user-delete.md)|
 | [account-disabled](FieldsMappings/account-disabled_fields.md) | [user-disable:success](ActivityTypes/user-disable.md) |
@@ -118,7 +118,6 @@ This table maps old event types to their corresponding new-scale activity types.
 | [azure-snapshot-write](FieldsMappings/azure-snapshot-write_fields.md) | [snapshot-write:success](ActivityTypes/snapshot-write.md) |
 | [azure-storage-list](FieldsMappings/azure-storage-list_fields.md) | [file-list:fail](ActivityTypes/file-list.md)|
 | [batch-logon](FieldsMappings/batch-logon_fields.md) | [endpoint-login:success](ActivityTypes/endpoint-login.md) |
-| [cloud-admin-activity](FieldsMappings/cloud-admin-activity_fields.md) | [app-activity:success](ActivityTypes/app-activity.md) |
 | [cloud-admin-activity-failed](FieldsMappings/cloud-admin-activity-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
 | [computer-logon](FieldsMappings/computer-logon_fields.md) | [dhcp-session:success](ActivityTypes/dhcp-session.md) |
 | [config-change](FieldsMappings/config-change_fields.md) | [configuration-modify:fail](ActivityTypes/configuration-modify.md)|
@@ -148,7 +147,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [failed-ds-access](FieldsMappings/failed-ds-access_fields.md) | [ds_object-activity:fail](ActivityTypes/ds_object-activity.md)|
 | [failed-logon](FieldsMappings/failed-logon_fields.md) | [endpoint-authentication:fail](ActivityTypes/endpoint-authentication.md)|
 | [failed-physical-access](FieldsMappings/failed-physical-access_fields.md) | [physical_location-access:fail](ActivityTypes/physical_location-access.md)|
-| [failed-usb-activity](FieldsMappings/failed-usb-activity_fields.md) | [peripheral_storage-activity:fail](ActivityTypes/peripheral_storage-activity.md)|
+| [failed-usb-activity](FieldsMappings/failed-usb-activity_fields.md) | [peripheral_device-activity:fail](ActivityTypes/peripheral_device-activity.md)|
 | [failed-vpn-login](FieldsMappings/failed-vpn-login_fields.md) | [vpn-login:fail](ActivityTypes/vpn-login.md)|
 | [file-alert](FieldsMappings/file-alert_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [file-close](FieldsMappings/file-close_fields.md) | [file-close:success](ActivityTypes/file-close.md) |
@@ -237,8 +236,8 @@ This table maps old event types to their corresponding new-scale activity types.
 | [share_link-use](FieldsMappings/share_link-use_fields.md) | [share_link-open:success](ActivityTypes/share_link-open.md) |
 | [system-info](FieldsMappings/system-info_fields.md) | [certificate-request:success](ActivityTypes/certificate-request.md) |
 | [task-created](FieldsMappings/task-created_fields.md) | [scheduled_task-create:fail](ActivityTypes/scheduled_task-create.md)|
-| [usb-activity](FieldsMappings/usb-activity_fields.md) | [peripheral_storage-activity:success](ActivityTypes/peripheral_storage-activity.md) |
-| [usb-insert](FieldsMappings/usb-insert_fields.md) | [peripheral_storage-insert:fail](ActivityTypes/peripheral_storage-insert.md)|
+| [usb-activity](FieldsMappings/usb-activity_fields.md) | [peripheral_device-activity:success](ActivityTypes/peripheral_device-activity.md) |
+| [usb-insert](FieldsMappings/usb-insert_fields.md) | [peripheral_device-insert:success](ActivityTypes/peripheral_device-insert.md) |
 | [usb-read](FieldsMappings/usb-read_fields.md) | [file-read:success](ActivityTypes/file-read.md) |
 | [usb-write](FieldsMappings/usb-write_fields.md) | [file-copy:success](ActivityTypes/file-copy.md) |
 | [user-role-assign](FieldsMappings/user-role-assign_fields.md) | [user-role-assign:success](ActivityTypes/user-role-assign.md) |

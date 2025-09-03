@@ -200,8 +200,11 @@ Activity Types
 | user-enable               | dest_user_id           |         |          |           | &#10003;      |
 | user-lock                 | dest_user_id           |         |          |           | &#10003;      |
 | user-modify               | old_attribute          |         |          | &#10003;  |               |
+|                           | operation_type         |         |          | &#10003;  |               |
 |                           | new_attribute          |         |          | &#10003;  |               |
+|                           | uac_status             |         |          | &#10003;  |               |
 |                           | attribute              |         |          | &#10003;  |               |
+|                           | attribute_value        |         |          | &#10003;  |               |
 | user-name-modify          | old_user_name          | Default |          |           | &#10003;      |
 |                           | new_user_name          | Default |          |           | &#10003;      |
 | user-password-modify      | dest_user_id           | Default |          |           | &#10003;      |

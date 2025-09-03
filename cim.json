@@ -2790,6 +2790,16 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"device_vid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"device_pid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -2867,6 +2877,16 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"device_vid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"device_pid": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -3958,6 +3978,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4042,6 +4068,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4093,7 +4125,14 @@
 			"outcome": "success",
 			"pretty_name": "User Disable",
 			"description": "A user account was disabled",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [
 				"account-disabled"
 			],
@@ -4132,7 +4171,14 @@
 			"outcome": "success",
 			"pretty_name": "User Enable",
 			"description": "A user account was enabled",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [
 				"account-enabled"
 			],
@@ -4215,6 +4261,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4251,6 +4303,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4276,6 +4334,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
+					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
 					"enriched": "1"
 				}
 			},
@@ -4313,6 +4377,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4328,7 +4398,14 @@
 			"outcome": "success",
 			"pretty_name": "User Password Reset",
 			"description": "A user accounts' password was reset",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [
 				"account-password-reset"
 			],
@@ -4352,6 +4429,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -4593,7 +4676,14 @@
 			"outcome": "success",
 			"pretty_name": "User Unlock",
 			"description": "A user account was unlocked",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [
 				"account-unlocked"
 			],
@@ -4637,6 +4727,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [],
@@ -5381,6 +5477,18 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -5482,6 +5590,18 @@
 				"control_panel_item": {
 					"core": "0",
 					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
 				}
@@ -6088,6 +6208,12 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"login_type": {
 					"core": "0",
 					"detection": "1",
@@ -6213,6 +6339,12 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"email_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				},
 				"login_type": {
 					"core": "0",
@@ -10212,6 +10344,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10383,6 +10521,45 @@
 				}
 			}
 		},
+		"peripheral_device-insert:success": {
+			"subject": "peripheral_device",
+			"activity": "insert",
+			"activity_type": "peripheral_device-insert",
+			"outcome": "success",
+			"pretty_name": "Peripheral_device Insert",
+			"description": "A peripheral device was inserted",
+			"fields": {},
+			"legacy_event_name": [
+				"usb-insert"
+			],
+			"titleTemplate": "Successfully connected a peripheral device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"peripheral_device-insert:fail": {
+			"subject": "peripheral_device",
+			"activity": "insert",
+			"activity_type": "peripheral_device-insert",
+			"outcome": "fail",
+			"pretty_name": "Peripheral_device Insert",
+			"description": "A peripheral device was inserted",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"legacy_event_name": [
+				"usb-insert"
+			],
+			"titleTemplate": "Failed to connect a peripheral device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"peripheral_storage-activity:success": {
 			"subject": "peripheral_storage",
 			"activity": "activity",
@@ -10441,6 +10618,66 @@
 				"failed-usb-activity"
 			],
 			"titleTemplate": "Failed to perform an activity on a peripheral storage device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"peripheral_device-activity:success": {
+			"subject": "peripheral_device",
+			"activity": "activity",
+			"activity_type": "peripheral_device-activity",
+			"outcome": "success",
+			"pretty_name": "Peripheral_device Activity",
+			"description": "An activity on a peripheral device",
+			"fields": {
+				"operation": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"legacy_event_name": [
+				"usb-activity"
+			],
+			"titleTemplate": "Successfully performed an activity on a peripheral device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"peripheral_device-activity:fail": {
+			"subject": "peripheral_device",
+			"activity": "activity",
+			"activity_type": "peripheral_device-activity",
+			"outcome": "fail",
+			"pretty_name": "Peripheral_device Activity",
+			"description": "An activity on a peripheral device",
+			"fields": {
+				"operation": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"cid": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"legacy_event_name": [
+				"failed-usb-activity"
+			],
+			"titleTemplate": "Failed to perform an activity on a peripheral device {event.device_name|event.device_id} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"peripheral_storage-insert:success": {
@@ -10517,6 +10754,41 @@
 			"titleTemplate": "Failed to disconnect a peripheral storage device {event.device_name|event.device_id} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"peripheral_device-remove:success": {
+			"subject": "peripheral_device",
+			"activity": "remove",
+			"activity_type": "peripheral_device-remove",
+			"outcome": "success",
+			"pretty_name": "Peripheral_device Remove",
+			"description": "A peripheral device device was removed",
+			"fields": {},
+			"legacy_event_name": [],
+			"titleTemplate": "Successfully disconnected a peripheral device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"peripheral_device-remove:fail": {
+			"subject": "peripheral_device",
+			"activity": "remove",
+			"activity_type": "peripheral_device-remove",
+			"outcome": "fail",
+			"pretty_name": "Peripheral_device Remove",
+			"description": "A peripheral device was removed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"legacy_event_name": [],
+			"titleTemplate": "Failed to disconnect a peripheral device {event.device_name|event.device_id} by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"group-member-add:success": {
 			"subject": "group",
 			"activity": "member-add",
@@ -10577,6 +10849,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
+					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
 					"enriched": "1"
 				}
 			},
@@ -10693,6 +10971,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -10785,7 +11069,14 @@
 			"outcome": "success",
 			"pretty_name": "Group Delete",
 			"description": "A group was deleted",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [],
 			"titleTemplate": "Successfully deleted group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
@@ -10820,7 +11111,14 @@
 			"outcome": "success",
 			"pretty_name": "Group Create",
 			"description": "A group was created",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [],
 			"titleTemplate": "Successfully created group {event.group_name} by user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
@@ -10888,7 +11186,14 @@
 			"outcome": "success",
 			"pretty_name": "Group Modify",
 			"description": "A group was modified",
-			"fields": {},
+			"fields": {
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				}
+			},
 			"legacy_event_name": [],
 			"titleTemplate": "Successfully modified a group",
 			"titleTemplateFormatVersion": "1.0"
@@ -12101,7 +12406,7 @@
 			],
 			"titleTemplate": "Failed to assign privileges {event.privileges} to user account {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
-		},		
+		},
 		"user-privilege-modify:success": {
 			"subject": "user",
 			"activity": "privilege-modify",
@@ -12474,7 +12779,7 @@
 			},
 			"titleTemplate": "Failed to export a registry key or value",
 			"titleTemplateFormatVersion": "1.0"
-		},		
+		},
 		"service-create:success": {
 			"subject": "service",
 			"activity": "create",
@@ -12683,6 +12988,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -12718,6 +13035,18 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"dest_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -12753,7 +13082,7 @@
 			],
 			"titleTemplate": "Failed to create a network share {event.share_name}",
 			"titleTemplateFormatVersion": "1.0"
-		},		
+		},
 		"share-modify:success": {
 			"subject": "share",
 			"activity": "modify",
@@ -12781,7 +13110,7 @@
 			],
 			"titleTemplate": "Failed to modify a network share {event.share_name}",
 			"titleTemplateFormatVersion": "1.0"
-		},		
+		},
 		"share-delete:success": {
 			"subject": "share",
 			"activity": "delete",
@@ -13659,6 +13988,12 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"event_locality": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -23822,6 +24157,21 @@
 							"informational": "0"
 						},
 						"attribute": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"uac_status": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"operation_type": {
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"attribute_value": {
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
@@ -36678,6 +37028,30 @@
 				},
 				"email-send": {
 					"fields": {}
+				}
+			}
+		},
+		"microsoft defender": {
+			"expression": "product = \"microsoft defender\"",
+			"fields": {},
+			"activity_type": {
+				"email-receive": {
+					"fields": {
+						"email_attachments_bytes": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				},
+				"email-send": {
+					"fields": {
+						"email_attachments_bytes": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
 				}
 			}
 		},
@@ -52554,6 +52928,24 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
+						},
+						"current_working_dir": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"process_relative_path": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"process_relative_dir": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				},
@@ -53296,6 +53688,28 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
+						}
+					}
+				},
+				"user-switch": {
+					"fields": {
+						"current_working_dir": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"process_relative_path": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						},
+						"process_relative_dir": {
+							"Status": "Default",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				}

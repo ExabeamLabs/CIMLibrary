@@ -37,9 +37,11 @@ process-create:success
 | parent_process_name         |      | &#10003;  |               |
 | domain_user_name            |      |           |               |
 | parent_process_dir          |      | &#10003;  |               |
+| dest_zone                   |      |           |               |
 | hash_sha256                 |      | &#10003;  |               |
 | dest_user_entity_id         |      |           |               |
 | process_guid                |      | &#10003;  |               |
+| src_zone                    |      |           |               |
 | domain                      |      | &#10003;  |               |
 | process_integrity           |      | &#10003;  |               |
 | dest_host                   |      | &#10003;  |               |
@@ -62,8 +64,10 @@ process-create:fail
 | domain_user_name            |      |           |               |
 | failure_reason              |      | &#10003;  |               |
 | parent_process_dir          |      | &#10003;  |               |
+| dest_zone                   |      |           |               |
 | hash_sha256                 |      | &#10003;  |               |
 | process_guid                |      | &#10003;  |               |
+| src_zone                    |      |           |               |
 | domain                      |      | &#10003;  |               |
 | process_integrity           |      | &#10003;  |               |
 | dest_host                   |      | &#10003;  |               |
