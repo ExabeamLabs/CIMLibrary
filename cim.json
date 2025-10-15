@@ -83,6 +83,13 @@
 					"informational": "1",
 					"enriched": "1",
 					"reserved": "1"
+				},
+				"site_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1",
+					"reserved": "1"
 				}
 			}
 		}
@@ -1771,6 +1778,14 @@
 		},
 		"parser": {
 			"description": "A parser is an Exabeam configuration that defines log value extractions and mappings.",
+			"fields": {}
+		},
+		"syscall": {
+			"description": "A syscall is a mechanism by which a program requests a service from the operating system's kernel.",
+			"fields": {}
+		},
+		"ai_agent": {
+			"description": "The AI agent represents an instance of an application that leverages AI to process natural language, provide information and perform tasks.",
 			"fields": {}
 		}
 	},
@@ -4577,13 +4592,15 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
-					"enriched": "1"
+					"enriched": "1",
+					"reserved": "1"
 				},
 				"source_device_entity_id": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
-					"enriched": "1"
+					"enriched": "1",
+					"reserved": "1"
 				},
 				"dest_user_type": {
 					"core": "0",
@@ -5426,13 +5443,15 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
-					"enriched": "1"
+					"enriched": "1",
+					"reserved": "1"
 				},
 				"dest_user_entity_id": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
-					"enriched": "1"
+					"enriched": "1",
+					"reserved": "1"
 				},
 				"hash_sha256": {
 					"core": "0",
@@ -22376,6 +22395,11 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"command_module": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Successfully executed script commands on a system",
@@ -22420,6 +22444,11 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"command_module": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Failed to execute script commands on a system",
@@ -22522,6 +22551,60 @@
 				}
 			},
 			"titleTemplate": "Failed to terminate an SSL session from {event.dest_host|event.dest_ip} by {event.src_host|event.src_ip}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"syscall-execute:success": {
+			"subject": "syscall",
+			"activity": "execute",
+			"activity_type": "syscall-execute",
+			"outcome": "success",
+			"pretty_name": "Syscall Execute",
+			"description": "Syscall commands were executed on the system",
+			"fields": {
+				"syscall_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"syscall_number": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"system_architecture": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Successfully executed syscall commands on a system",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"syscall-execute:fail": {
+			"subject": "syscall",
+			"activity": "execute",
+			"activity_type": "syscall-execute",
+			"outcome": "fail",
+			"pretty_name": "Syscall Execute",
+			"description": "Syscall commands were executed on the system",
+			"fields": {
+				"syscall_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"syscall_number": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"system_architecture": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to execute syscall commands on a system",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"link-create:success": {
@@ -23149,6 +23232,17 @@
 				}
 			},
 			"titleTemplate": "Failed to disable a log source in a program or an app by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-request:success": {
+			"subject": "ai_agent",
+			"activity": "request",
+			"activity_type": "ai_agent-request",
+			"outcome": "success",
+			"pretty_name": "AI Agent Request",
+			"description": "A request or prompt was made to an AI agent",
+			"fields": {},
+			"titleTemplate": "Successfully initiated a request or prompt to an AI agent",
 			"titleTemplateFormatVersion": "1.0"
 		}
 	},
@@ -36732,11 +36826,6 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"site_id": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"src_ip": {
 					"core": "0",
 					"detection": "0",
@@ -41912,11 +42001,6 @@
 					"informational": "1"
 				},
 				"area_classification": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"site_id": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"

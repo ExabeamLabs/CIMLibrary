@@ -15,7 +15,6 @@ Fields
 | site_name           |      |           | &#10003;      |
 | badge_reader        |      |           | &#10003;      |
 | event_code          |      |           | &#10003;      |
-| site_id             |      |           | &#10003;      |
 | badge_status        |      |           | &#10003;      |
 | event_name          |      |           | &#10003;      |
 | last_name           |      |           | &#10003;      |

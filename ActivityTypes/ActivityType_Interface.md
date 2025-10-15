@@ -6,6 +6,7 @@
 This secondary interface defines the activity type element. It describes the specific fields required for a given activity when it's performed on the subject. This interface is also minimalist by design.
 
 
+ * [ai_agent-request](ai_agent-request.md)
  * [alert-create](alert-create.md)
  * [alert-delete](alert-delete.md)
  * [alert-modify](alert-modify.md)
@@ -421,6 +422,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [ssl-close](ssl-close.md)
  * [ssl-start](ssl-start.md)
  * [ssl-traffic](ssl-traffic.md)
+ * [syscall-execute](syscall-execute.md)
  * [template-create](template-create.md)
  * [template-delete](template-delete.md)
  * [template-modify](template-modify.md)

@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: network-info
-### New-Scale Activity Type: network-notification:success
+### New-Scale Activity Type: certificate-expire:success
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

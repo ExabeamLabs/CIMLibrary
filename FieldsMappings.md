@@ -211,7 +211,7 @@ This table maps old event types to their corresponding new-scale activity types.
 | [network-alert](FieldsMappings/network-alert_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
 | [network-connection-failed](FieldsMappings/network-connection-failed_fields.md) | [network-close:success](ActivityTypes/network-close.md) |
 | [network-connection-successful](FieldsMappings/network-connection-successful_fields.md) | [dns-traffic:success](ActivityTypes/dns-traffic.md) |
-| [network-info](FieldsMappings/network-info_fields.md) | [network-notification:success](ActivityTypes/network-notification.md) |
+| [network-info](FieldsMappings/network-info_fields.md) | [certificate-expire:success](ActivityTypes/certificate-expire.md) |
 | [ntlm-logon](FieldsMappings/ntlm-logon_fields.md) | [endpoint-authentication:success](ActivityTypes/endpoint-authentication.md) |
 | [physical-access](FieldsMappings/physical-access_fields.md) | [physical_location-access:success](ActivityTypes/physical_location-access.md) |
 | [print-activity](FieldsMappings/print-activity_fields.md) | [printer-activity:success](ActivityTypes/printer-activity.md) |

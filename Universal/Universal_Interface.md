@@ -19,6 +19,7 @@ The universal interface defines a set of global fields. These are fields that ar
 | product              | &#10003; |           |               |
 | product_category     |          | &#10003;  |               |
 | security_criticality |          |           | &#10003;      |
+| site_id              |          |           | &#10003;      |
 | subject              | &#10003; |           |               |
 | time                 | &#10003; |           |               |
 | vendor               | &#10003; |           |               |
