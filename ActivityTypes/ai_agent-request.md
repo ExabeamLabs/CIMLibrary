@@ -24,7 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 ai_agent-request:success
 ------------------------
 
-There are no fields for this activity type.
+| Field         | Core | Detection | Informational |
+| ------------- | ---- | --------- | ------------- |
+| categories    |      |           | &#10003;      |
+| result_reason |      |           | &#10003;      |
 
+ai_agent-request:fail
+---------------------
 
-A failure activity is not currently supported for this activity-type.
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      |           | &#10003;      |
+| failure_reason |      |           | &#10003;      |
+| categories     |      |           | &#10003;      |
+| result_reason  |      |           | &#10003;      |

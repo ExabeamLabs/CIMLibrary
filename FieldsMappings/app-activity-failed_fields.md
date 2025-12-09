@@ -2,7 +2,7 @@ Old to New-scale Field Mapping for a Specific Event
 ===================================================
 
 ### Old Event Type: app-activity-failed
-### New-Scale Activity Type: app-activity:fail
+### New-Scale Activity Type: ai_agent-request:fail
 
 This table maps old fields to the new-scale fields that comply with the Common Information Model.
 

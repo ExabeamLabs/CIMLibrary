@@ -19,8 +19,8 @@ This table maps old event types to their corresponding new-scale activity types.
 | [account-switch](FieldsMappings/account-switch_fields.md) | [password-checkout:success](ActivityTypes/password-checkout.md) |
 | [account-unlocked](FieldsMappings/account-unlocked_fields.md) | [user-unlock:success](ActivityTypes/user-unlock.md) |
 | [alert-iot](FieldsMappings/alert-iot_fields.md) | [alert-trigger:success](ActivityTypes/alert-trigger.md) |
-| [app-activity](FieldsMappings/app-activity_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
-| [app-activity-failed](FieldsMappings/app-activity-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
+| [app-activity](FieldsMappings/app-activity_fields.md) | [ai_agent-request:success](ActivityTypes/ai_agent-request.md) |
+| [app-activity-failed](FieldsMappings/app-activity-failed_fields.md) | [ai_agent-request:fail](ActivityTypes/ai_agent-request.md)|
 | [app-login](FieldsMappings/app-login_fields.md) | [app-authentication:success](ActivityTypes/app-authentication.md) |
 | [audit-log-clear](FieldsMappings/audit-log-clear_fields.md) | [log-clear:success](ActivityTypes/log-clear.md) |
 | [audit-policy-change](FieldsMappings/audit-policy-change_fields.md) | [audit_policy-modify:success](ActivityTypes/audit_policy-modify.md) |
@@ -68,8 +68,8 @@ This table maps old event types to their corresponding new-scale activity types.
 | [aws-instance-modify-failed](FieldsMappings/aws-instance-modify-failed_fields.md) | [endpoint-modify:fail](ActivityTypes/endpoint-modify.md)|
 | [aws-instance-screenshot](FieldsMappings/aws-instance-screenshot_fields.md) | [app-activity:success](ActivityTypes/app-activity.md) |
 | [aws-instance-screenshot-failed](FieldsMappings/aws-instance-screenshot-failed_fields.md) | [app-activity:fail](ActivityTypes/app-activity.md)|
-| [aws-login](FieldsMappings/aws-login_fields.md) | [app-login:success](ActivityTypes/app-login.md) |
-| [aws-login-failed](FieldsMappings/aws-login-failed_fields.md) | [app-login:fail](ActivityTypes/app-login.md)|
+| [aws-login](FieldsMappings/aws-login_fields.md) | [endpoint-login:success](ActivityTypes/endpoint-login.md) |
+| [aws-login-failed](FieldsMappings/aws-login-failed_fields.md) | [endpoint-login:fail](ActivityTypes/endpoint-login.md)|
 | [aws-policy-attach](FieldsMappings/aws-policy-attach_fields.md) | [group-policy-attach:success](ActivityTypes/group-policy-attach.md) |
 | [aws-policy-list](FieldsMappings/aws-policy-list_fields.md) | [policy-list:success](ActivityTypes/policy-list.md) |
 | [aws-policy-list-failed](FieldsMappings/aws-policy-list-failed_fields.md) | [policy-list:fail](ActivityTypes/policy-list.md)|

@@ -12822,6 +12822,11 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"service_type_text": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"local_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -23241,8 +23246,53 @@
 			"outcome": "success",
 			"pretty_name": "AI Agent Request",
 			"description": "A request or prompt was made to an AI agent",
-			"fields": {},
+			"fields": {
+				"categories": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				},
+				"result_reason":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"titleTemplate": "Successfully initiated a request or prompt to an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-request:fail": {
+			"subject": "ai_agent",
+			"activity": "request",
+			"activity_type": "ai_agent-request",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Request",
+			"description": "A request or prompt was made to an AI agent",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"categories": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				},
+				"result_reason":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to initiate a request or prompt to an AI agent",
 			"titleTemplateFormatVersion": "1.0"
 		}
 	},
@@ -49341,6 +49391,11 @@
 							"detection": "0",
 							"informational": "0",
 							"enriched": "1"
+						},
+						"service_type_text": {
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
 						}
 					}
 				}

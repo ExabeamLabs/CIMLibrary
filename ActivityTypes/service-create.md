@@ -31,6 +31,7 @@ service-create:success
 
 | Field                | Core | Detection | Informational |
 | -------------------- | ---- | --------- | ------------- |
+| service_type_text    |      |           | &#10003;      |
 | src_zone             |      |           |               |
 | local_user_name      |      |           |               |
 | process_path         |      | &#10003;  |               |
