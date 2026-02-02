@@ -7145,6 +7145,12 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"source_user_entity_id": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7271,6 +7277,12 @@
 					"enriched": "1"
 				},
 				"src_zone": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"source_user_entity_id": {
 					"core": "0",
 					"detection": "0",
 					"informational": "0",
@@ -18655,7 +18667,18 @@
 			"outcome": "success",
 			"pretty_name": "Repository Modify",
 			"description": "The properties or configuration of a git repository were modified",
-			"fields": {},
+			"fields": {
+				"access_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"uri_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+            },
 			"titleTemplate": "Successfully updated the properties or configuration of a git repository",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -18667,6 +18690,16 @@
 			"pretty_name": "Repository Modify",
 			"description": "The properties or configuration of a git repository were modified",
 			"fields": {
+				"access_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"uri_path": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -23257,6 +23290,11 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"result":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"titleTemplate": "Successfully initiated a request or prompt to an AI agent",
@@ -23287,6 +23325,11 @@
 					"enriched": "1"
 				},
 				"result_reason":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"result":{
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -26589,7 +26632,7 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"compression_algotithm": {
+						"compression_algorithm": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -36311,7 +36354,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"compression_algotithm": {
+						"compression_algorithm": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"

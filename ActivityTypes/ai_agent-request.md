@@ -26,6 +26,7 @@ ai_agent-request:success
 
 | Field         | Core | Detection | Informational |
 | ------------- | ---- | --------- | ------------- |
+| result        |      |           | &#10003;      |
 | categories    |      |           | &#10003;      |
 | result_reason |      |           | &#10003;      |
 
@@ -34,6 +35,7 @@ ai_agent-request:fail
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| result         |      |           | &#10003;      |
 | failure_code   |      |           | &#10003;      |
 | failure_reason |      |           | &#10003;      |
 | categories     |      |           | &#10003;      |

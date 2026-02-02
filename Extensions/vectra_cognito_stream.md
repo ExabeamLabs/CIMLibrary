@@ -25,7 +25,7 @@ Activity Types
 |               | dest_ip               | Default |      | &#10003;  |               |
 | rdp-traffic   |                       |         |      |           |               |
 | ssh-traffic   | cipher_algorithm      |         |      |           |               |
-|               | compression_algotithm |         |      |           |               |
+|               | compression_algorithm |         |      |           |               |
 |               | server_version        |         |      |           |               |
 |               | client_version        |         |      |           |               |
 

@@ -24,13 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 repository-modify:success
 -------------------------
 
-There are no fields for this activity type.
-
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| access_type |      | &#10003;  |               |
+| uri_path    |      | &#10003;  |               |
 
 repository-modify:fail
 ----------------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| access_type    |      | &#10003;  |               |
 | failure_code   |      | &#10003;  |               |
+| uri_path       |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |

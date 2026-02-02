@@ -193,6 +193,7 @@ Activity Types
 |                         | kex_alg                      |         |          |           | &#10003;      |
 |                         | mac_alg                      |         |          |           | &#10003;      |
 |                         | server                       |         |          | &#10003;  |               |
+|                         | compression_algorithm        |         |          |           | &#10003;      |
 |                         | host_key_alg                 |         |          | &#10003;  |               |
 |                         | remote_location_longitude    |         |          |           | &#10003;      |
 |                         | version                      |         |          | &#10003;  |               |
@@ -200,7 +201,6 @@ Activity Types
 |                         | client_ssh_version           |         |          | &#10003;  |               |
 |                         | host_key                     |         |          | &#10003;  |               |
 |                         | server_ssh_version           |         |          | &#10003;  |               |
-|                         | compression_algotithm        |         |          |           | &#10003;      |
 |                         | remote_location_city         |         |          |           | &#10003;      |
 |                         | remote_location_country_code |         |          | &#10003;  |               |
 |                         | client                       |         |          | &#10003;  |               |
