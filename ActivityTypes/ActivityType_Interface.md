@@ -6,7 +6,14 @@
 This secondary interface defines the activity type element. It describes the specific fields required for a given activity when it's performed on the subject. This interface is also minimalist by design.
 
 
+ * [ai_agent-create](ai_agent-create.md)
+ * [ai_agent-delete](ai_agent-delete.md)
+ * [ai_agent-modify](ai_agent-modify.md)
+ * [ai_agent-publish](ai_agent-publish.md)
  * [ai_agent-request](ai_agent-request.md)
+ * [ai_agent-share](ai_agent-share.md)
+ * [ai_conversation-delete](ai_conversation-delete.md)
+ * [ai_conversation-share](ai_conversation-share.md)
  * [alert-create](alert-create.md)
  * [alert-delete](alert-delete.md)
  * [alert-modify](alert-modify.md)

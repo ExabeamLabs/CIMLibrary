@@ -34,6 +34,8 @@ file-permission-modify:success
 | acl_content |      |           | &#10003;      |
 | permissions |      | &#10003;  |               |
 | bucket_name |      |           | &#10003;      |
+| added_role  |      | &#10003;  |               |
+| operation   |      | &#10003;  |               |
 
 file-permission-modify:fail
 ---------------------------
@@ -45,3 +47,5 @@ file-permission-modify:fail
 | permissions    |      | &#10003;  |               |
 | bucket_name    |      |           | &#10003;      |
 | failure_reason |      | &#10003;  |               |
+| added_role     |      | &#10003;  |               |
+| operation      |      | &#10003;  |               |

@@ -31,14 +31,15 @@ http-session:success
 
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
-| referrer           |      |           | &#10003;      |
+| app                |      | &#10003;  |               |
 | user_agent_client  |      |           |               |
 | method             |      | &#10003;  |               |
-| bytes_out          |      | &#10003;  |               |
 | is_net_storage     |      | &#10003;  |               |
 | is_job_search      |      | &#10003;  |               |
 | bytes_in           |      | &#10003;  |               |
 | mime               |      | &#10003;  |               |
+| referrer           |      |           | &#10003;      |
+| bytes_out          |      | &#10003;  |               |
 | action             |      |           | &#10003;      |
 | category           |      | &#10003;  |               |
 | user_agent         |      |           | &#10003;      |
@@ -49,15 +50,16 @@ http-session:fail
 
 | Field              | Core | Detection | Informational |
 | ------------------ | ---- | --------- | ------------- |
-| referrer           |      |           | &#10003;      |
+| app                |      | &#10003;  |               |
 | failure_code       |      | &#10003;  |               |
 | user_agent_client  |      |           |               |
 | method             |      | &#10003;  |               |
-| bytes_out          |      | &#10003;  |               |
 | bytes_in           |      | &#10003;  |               |
 | mime               |      | &#10003;  |               |
-| action             |      |           | &#10003;      |
 | failure_reason     |      | &#10003;  |               |
+| referrer           |      |           | &#10003;      |
+| bytes_out          |      | &#10003;  |               |
+| action             |      |           | &#10003;      |
 | category           |      | &#10003;  |               |
 | user_agent         |      |           | &#10003;      |
 | http_response_code |      | &#10003;  |               |

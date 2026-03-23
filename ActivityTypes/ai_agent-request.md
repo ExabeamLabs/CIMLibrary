@@ -24,19 +24,29 @@ The possible fields for this activity type will vary depending on whether the ac
 ai_agent-request:success
 ------------------------
 
-| Field         | Core | Detection | Informational |
-| ------------- | ---- | --------- | ------------- |
-| result        |      |           | &#10003;      |
-| categories    |      |           | &#10003;      |
-| result_reason |      |           | &#10003;      |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| result           |      |           | &#10003;      |
+| workspace_id     |      | &#10003;  |               |
+| ai_tool_name     |      | &#10003;  |               |
+| llm_request      |      | &#10003;  |               |
+| categories       |      |           | &#10003;      |
+| ai_token_count   |      | &#10003;  |               |
+| ai_function_name |      | &#10003;  |               |
+| result_reason    |      |           | &#10003;      |
 
 ai_agent-request:fail
 ---------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| result         |      |           | &#10003;      |
-| failure_code   |      |           | &#10003;      |
-| failure_reason |      |           | &#10003;      |
-| categories     |      |           | &#10003;      |
-| result_reason  |      |           | &#10003;      |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| result           |      |           | &#10003;      |
+| workspace_id     |      | &#10003;  |               |
+| failure_code     |      |           | &#10003;      |
+| ai_tool_name     |      | &#10003;  |               |
+| llm_request      |      | &#10003;  |               |
+| failure_reason   |      |           | &#10003;      |
+| categories       |      |           | &#10003;      |
+| ai_token_count   |      | &#10003;  |               |
+| ai_function_name |      | &#10003;  |               |
+| result_reason    |      |           | &#10003;      |
