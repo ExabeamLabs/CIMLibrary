@@ -1787,6 +1787,10 @@
 		"ai_agent": {
 			"description": "The AI agent represents an instance of an application that leverages AI to process natural language, provide information and perform tasks.",
 			"fields": {}
+		},
+		"ai_conversation": {
+			"description": "The detailed, chronological records of interactions between users and AI agents, tracking every utterance, response, and backend event",
+			"fields": {}
 		}
 	},
 	"EventTypes": {
@@ -3359,6 +3363,16 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"added_role": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -3399,6 +3413,16 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"added_role": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -3567,7 +3591,13 @@
 			"outcome": "success",
 			"pretty_name": "File Share",
 			"description": "The share of a file was created, allowing it to be shared with other users or endpoints",
-			"fields": {},
+			"fields": {
+				"file_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully shared a file {event.file_name}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -3579,6 +3609,11 @@
 			"pretty_name": "File Share",
 			"description": "The share of a file was created, allowing it to be shared with other users or endpoints",
 			"fields": {
+				"file_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -4896,6 +4931,28 @@
 			"titleTemplate": "Failed to disable MFA configuration for {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"user-mfa-modify:success": {
+			"subject": "user",
+			"activity": "mfa-modify",
+			"activity_type": "user-mfa-modify",
+			"outcome": "success",
+			"pretty_name": "User MFA Modified",
+			"description": "The MFA configuration for a user account was updated",
+			"fields": {},
+			"titleTemplate": "Successfully modified user MFA settings",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"user-mfa-modify:fail": {
+			"subject": "user",
+			"activity": "mfa-modify",
+			"activity_type": "user-mfa-modify",
+			"outcome": "fail",
+			"pretty_name": "User MFA Modification Failed",
+			"description": "Failed to update the MFA configuration for a user account",
+			"fields": {},
+			"titleTemplate": "Failed to modify user MFA settings",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"user-role-assign:success": {
 			"subject": "user",
 			"activity": "role-assign",
@@ -5068,7 +5125,23 @@
 			"outcome": "success",
 			"pretty_name": "User Invite",
 			"description": "A user account was invited to a workspace",
-			"fields": {},
+			"fields": {
+				"email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully invited an account to workspace for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -5080,6 +5153,21 @@
 			"pretty_name": "User Invite",
 			"description": "A user account was invited to a workspace",
 			"fields": {
+				"email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"dest_email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -6881,6 +6969,39 @@
 			"titleTemplate": "Failed to authenticate to application {event.app} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"app-consent-grant:success": {
+			"subject": "app",
+			"activity": "consent-grant",
+			"activity_type": "app-consent-grant",
+			"outcome": "success",
+			"pretty_name": "App Consent Granted",
+			"description": "Consent was granted to an application",
+			"fields": {
+				"app": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"permission": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully granted consent to an application",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"app-modify:success": {
+			"subject": "app",
+			"activity": "modify",
+			"activity_type": "app-modify",
+			"outcome": "success",
+			"pretty_name": "App Modified",
+			"description": "An application was updated",
+			"fields": {},
+			"titleTemplate": "Successfully modified an application",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"app-register:success": {
 			"subject": "app",
 			"activity": "register",
@@ -8368,7 +8489,7 @@
 			"legacy_event_name": [
 				"database-query"
 			],
-			"titleTemplate": "Sucessfully queried {event.db_query} a database resource",
+			"titleTemplate": "Successfully queried {event.db_query} a database resource",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"database-query:fail": {
@@ -12036,6 +12157,11 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"app": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -12099,6 +12225,11 @@
 					"informational": "0"
 				},
 				"http_response_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"app": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -18875,7 +19006,13 @@
 			"outcome": "success",
 			"pretty_name": "Role Create",
 			"description": "A security role was created",
-			"fields": {},
+			"fields": {
+				"permissions": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully created a security role {event.role_name} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -18887,6 +19024,11 @@
 			"pretty_name": "Role Create",
 			"description": "A security role was created",
 			"fields": {
+				"permissions": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -20424,6 +20566,204 @@
 				}
 			},
 			"titleTemplate": "Failed to open a shared link that was sent to a user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"share_link-create:success": {
+			"subject": "share_link",
+			"activity": "create",
+			"activity_type": "share_link-create",
+			"outcome": "success",
+			"pretty_name": "Share_link Create",
+			"description": "A shared link that was sent to a user was created",
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Successfully created a shared link that was sent to a user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"share_link-create:fail": {
+			"subject": "share_link",
+			"activity": "create",
+			"activity_type": "share_link-create",
+			"outcome": "fail",
+			"pretty_name": "Share_link Create",
+			"description": "A shared link that was sent to a user was created",
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Failed to create a shared link that was sent to a user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"share_link-modify:success": {
+			"subject": "share_link",
+			"activity": "modify",
+			"activity_type": "share_link-modify",
+			"outcome": "success",
+			"pretty_name": "Share_link Modify",
+			"description": "A shared link that was sent to a user was modified",
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Successfully modified a shared link that was sent to a user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"share_link-modify:fail": {
+			"subject": "share_link",
+			"activity": "modify",
+			"activity_type": "share_link-modify",
+			"outcome": "fail",
+			"pretty_name": "Share_link Modify",
+			"description": "A shared link that was sent to a user was modified",
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Failed to modify a shared link that was sent to a user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"share_link-member-add:success": {
+			"subject": "share_link",
+			"activity": "member-add",
+			"activity_type": "share_link-member-add",
+			"outcome": "success",
+			"pretty_name": "Share_link Member Add",
+			"description": "A shared link member was added to a shared link that was sent to a user",
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Successfully a shared link member added that was sent to a user {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"share_link-member-add:fail": {
+			"subject": "share_link",
+			"activity": "member-add",
+			"activity_type": "share_link-member-add",
+			"outcome": "fail",
+			"pretty_name": "Share_link Member Add",
+			"description": "A shared link member was added to a shared link that was sent to a user",
+			"fields": {
+				"user": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"domain_user_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				}
+			},
+			"titleTemplate": "Failed to add a shared link member that was sent to a user {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"vm_host-create:success": {
@@ -23295,6 +23635,31 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"llm_request":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_function_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_tool_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"workspace_id":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Successfully initiated a request or prompt to an AI agent",
@@ -23333,9 +23698,276 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"llm_request":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_function_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_tool_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"workspace_id":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Failed to initiate a request or prompt to an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-create:success": {
+			"subject": "ai_agent",
+			"activity": "create",
+			"activity_type": "ai_agent-create",
+			"outcome": "success",
+			"pretty_name": "AI Agent Created",
+			"description": "An AI agent was created",
+			"fields": {},
+			"titleTemplate": "Successfully created an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-create:fail": {
+			"subject": "ai_agent",
+			"activity": "create",
+			"activity_type": "ai_agent-create",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Creation Failed",
+			"description": "An AI agent creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to create an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-modify:success": {
+			"subject": "ai_agent",
+			"activity": "modify",
+			"activity_type": "ai_agent-modify",
+			"outcome": "success",
+			"pretty_name": "AI Agent Modified",
+			"description": "An AI agent was modified",
+			"fields": {
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully modified an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-modify:fail": {
+			"subject": "ai_agent",
+			"activity": "modify",
+			"activity_type": "ai_agent-modify",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Modification Failed",
+			"description": "An AI agent modification failed",
+			"fields": {
+				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to modify an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-share:success": {
+			"subject": "ai_agent",
+			"activity": "share",
+			"activity_type": "ai_agent-share",
+			"outcome": "success",
+			"pretty_name": "AI Agent Shared",
+			"description": "An AI agent was shared",
+			"fields": {},
+			"titleTemplate": "Successfully shared an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-share:fail": {
+			"subject": "ai_agent",
+			"activity": "share",
+			"activity_type": "ai_agent-share",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Sharing Failed",
+			"description": "An AI agent sharing failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to share an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-publish:success": {
+			"subject": "ai_agent",
+			"activity": "publish",
+			"activity_type": "ai_agent-publish",
+			"outcome": "success",
+			"pretty_name": "AI Agent Published",
+			"description": "An AI agent was published",
+			"fields": {},
+			"titleTemplate": "Successfully published an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-publish:fail": {
+			"subject": "ai_agent",
+			"activity": "publish",
+			"activity_type": "ai_agent-publish",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Publishing Failed",
+			"description": "An AI agent publishing failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to publish an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-delete:success": {
+			"subject": "ai_agent",
+			"activity": "delete",
+			"activity_type": "ai_agent-delete",
+			"outcome": "success",
+			"pretty_name": "AI Agent Deleted",
+			"description": "An AI agent was deleted",
+			"fields": {},
+			"titleTemplate": "Successfully deleted an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-delete:fail": {
+			"subject": "ai_agent",
+			"activity": "delete",
+			"activity_type": "ai_agent-delete",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Deletion Failed",
+			"description": "An AI agent deletion failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to delete an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_conversation-share:success": {
+			"subject": "ai_conversation",
+			"activity": "share",
+			"activity_type": "ai_conversation-share",
+			"outcome": "success",
+			"pretty_name": "AI Conversation Shared",
+			"description": "An AI conversation was shared",
+			"fields": {},
+			"titleTemplate": "Successfully shared an AI conversation",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_conversation-share:fail": {
+			"subject": "ai_conversation",
+			"activity": "share",
+			"activity_type": "ai_conversation-share",
+			"outcome": "fail",
+			"pretty_name": "AI Conversation Sharing Failed",
+			"description": "An AI conversation sharing failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to share an AI conversation",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_conversation-delete:success": {
+			"subject": "ai_conversation",
+			"activity": "delete",
+			"activity_type": "ai_conversation-delete",
+			"outcome": "success",
+			"pretty_name": "AI Conversation Deleted",
+			"description": "An AI conversation was deleted",
+			"fields": {},
+			"titleTemplate": "Successfully deleted an AI conversation",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_conversation-delete:fail": {
+			"subject": "ai_conversation",
+			"activity": "delete",
+			"activity_type": "ai_conversation-delete",
+			"outcome": "fail",
+			"pretty_name": "AI Conversation Deletion Failed",
+			"description": "An AI conversation deletion failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to delete an AI conversation",
 			"titleTemplateFormatVersion": "1.0"
 		}
 	},

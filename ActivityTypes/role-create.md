@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 role-create:success
 -------------------
 
-There are no fields for this activity type.
-
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| permissions |      | &#10003;  |               |
 
 role-create:fail
 ----------------
@@ -33,4 +34,5 @@ role-create:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| permissions    |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
