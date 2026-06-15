@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 mailbox-item-read:success
 -------------------------
 
-There are no fields for this activity type.
-
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| count |      | &#10003;  |               |
 
 mailbox-item-read:fail
 ----------------------
@@ -33,4 +34,5 @@ mailbox-item-read:fail
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
 | failure_code   |      | &#10003;  |               |
+| count          |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |

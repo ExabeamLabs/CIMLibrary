@@ -32,6 +32,7 @@ email_rule-create:success
 | Field               | Core | Detection | Informational |
 | ------------------- | ---- | --------- | ------------- |
 | dest_email_domain   |      | &#10003;  |               |
+| email_recipients    |      | &#10003;  |               |
 | dest_user_full_name |      |           | &#10003;      |
 | email_domain        |      | &#10003;  |               |
 | src_email_domain    |      |           | &#10003;      |
@@ -43,6 +44,7 @@ email_rule-create:fail
 | Field               | Core | Detection | Informational |
 | ------------------- | ---- | --------- | ------------- |
 | dest_email_domain   |      | &#10003;  |               |
+| email_recipients    |      | &#10003;  |               |
 | failure_code        |      | &#10003;  |               |
 | dest_user_full_name |      |           | &#10003;      |
 | email_domain        |      | &#10003;  |               |

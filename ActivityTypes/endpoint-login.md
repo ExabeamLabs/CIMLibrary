@@ -34,6 +34,7 @@ endpoint-login:success
 | tgs_service_name      |          | &#10003;  |               |
 | src_mac               |          | &#10003;  |               |
 | source_user_entity_id |          |           |               |
+| account_domain        |          |           | &#10003;      |
 | login_type            |          | &#10003;  |               |
 | domain_user_name      |          |           |               |
 | src_host              |          | &#10003;  |               |
@@ -60,6 +61,7 @@ endpoint-login:fail
 | src_mac               |          | &#10003;  |               |
 | failure_code          |          | &#10003;  |               |
 | source_user_entity_id |          |           |               |
+| account_domain        |          |           | &#10003;      |
 | login_type            |          | &#10003;  |               |
 | domain_user_name      |          |           |               |
 | failure_reason        |          | &#10003;  |               |

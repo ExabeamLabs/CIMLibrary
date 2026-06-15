@@ -28,6 +28,7 @@ ai_agent-request:success
 | ---------------- | ---- | --------- | ------------- |
 | result           |      |           | &#10003;      |
 | workspace_id     |      | &#10003;  |               |
+| src_ip           |      | &#10003;  |               |
 | ai_tool_name     |      | &#10003;  |               |
 | llm_request      |      | &#10003;  |               |
 | categories       |      |           | &#10003;      |
@@ -42,6 +43,7 @@ ai_agent-request:fail
 | ---------------- | ---- | --------- | ------------- |
 | result           |      |           | &#10003;      |
 | workspace_id     |      | &#10003;  |               |
+| src_ip           |      | &#10003;  |               |
 | failure_code     |      |           | &#10003;      |
 | ai_tool_name     |      | &#10003;  |               |
 | llm_request      |      | &#10003;  |               |

@@ -1791,6 +1791,50 @@
 		"ai_conversation": {
 			"description": "The detailed, chronological records of interactions between users and AI agents, tracking every utterance, response, and backend event",
 			"fields": {}
+		},
+		"api_key": {
+			"description": "An API key is a unique identifier used to authenticate requests associated with a project or application, allowing access to specific resources or services.",
+			"fields": {
+				"key_id":{
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"key_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"project": {
+			"description": "A project is a collection of resources, users, and activities that are grouped together to achieve a specific goal or outcome. Projects are commonly used in various domains, including software development, research, and business initiatives.",
+			"fields": {
+				"project_name": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_id": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"tool": {
+			"description": "A tool is a structured interface that lets a system interact with data, services, or functions to extend its capabilities.",
+			"fields": {
+				"ai_tool_name": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
+		"audit": {
+			"description": "An audit represents an audit event or audit log entry that records actions taken within a system or application.",
+			"fields": {}
 		}
 	},
 	"EventTypes": {
@@ -5182,6 +5226,39 @@
 			"titleTemplate": "Failed to invite account to workspace for {event.dest_user|event.dest_email_address} by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"user-invite-accept:success": {
+			"subject": "user",
+			"activity": "invite-accept",
+			"activity_type": "user-invite-accept",
+			"outcome": "success",
+			"pretty_name": "User Invite Accept",
+			"description": "A user account invitation to workspace was accepted",
+			"fields": {},
+			"titleTemplate": "Successfully accepted an account invitation to workspace for {event.dest_user|event.dest_email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"user-invite-accept:fail": {
+			"subject": "user",
+			"activity": "invite-accept",
+			"activity_type": "user-invite-accept",
+			"outcome": "fail",
+			"pretty_name": "User Invite Accept",
+			"description": "A user account invitation to workspace was accepted",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to accept an account invitation to workspace for {event.dest_user|event.dest_email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"user-invite-cancel:success": {
 			"subject": "user",
 			"activity": "invite-cancel",
@@ -6657,6 +6734,16 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"access_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"repository_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -6763,6 +6850,16 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"access_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"repository_name": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -7002,6 +7099,28 @@
 			"titleTemplate": "Successfully modified an application",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"app-modify:fail": {
+			"subject": "app",
+			"activity": "modify",
+			"activity_type": "app-modify",
+			"outcome": "fail",
+			"pretty_name": "App Modified",
+			"description": "An application was updated",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to modify an application",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"app-register:success": {
 			"subject": "app",
 			"activity": "register",
@@ -7211,6 +7330,11 @@
 					"detection": "1",
 					"informational": "0"
 				},
+				"account_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
 				"location": {
 					"core": "0",
 					"detection": "1",
@@ -7346,6 +7470,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"account_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
 				},
 				"location": {
 					"core": "0",
@@ -10083,6 +10212,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"email_recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"legacy_event_name": [
@@ -10130,6 +10264,11 @@
 					"informational": "1"
 				},
 				"operation": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"email_recipients": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -17172,7 +17311,13 @@
 			"outcome": "success",
 			"pretty_name": "Mailbox Item Read",
 			"description": "The content of an item contained in an email mailbox was read",
-			"fields": {},
+			"fields": {
+				"count": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully read the content of an item contained in an email mailbox",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -17184,6 +17329,11 @@
 			"pretty_name": "Mailbox Item Read",
 			"description": "The content of an item contained in an email mailbox was read",
 			"fields": {
+				"count": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -21853,6 +22003,39 @@
 			"titleTemplate": "Failed to validate a digital certificate",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"certificate-delete:success": {
+			"subject": "certificate",
+			"activity": "delete",
+			"activity_type": "certificate-delete",
+			"outcome": "success",
+			"pretty_name": "Certificate Delete",
+			"description": "A digital certificate object was deleted",
+			"fields": {},
+			"titleTemplate": "Successfully deleted a digital certificate",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"certificate-delete:fail": {
+			"subject": "certificate",
+			"activity": "delete",
+			"activity_type": "certificate-delete",
+			"outcome": "fail",
+			"pretty_name": "Certificate Delete",
+			"description": "A digital certificate object was deleted",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a digital certificate",
+			"titleTemplateFormatVersion": "1.0"
+		},
 		"dns_record-create:success": {
 			"subject": "dns_record",
 			"activity": "create",
@@ -23660,6 +23843,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_ip":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Successfully initiated a request or prompt to an AI agent",
@@ -23723,11 +23911,152 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"src_ip":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Failed to initiate a request or prompt to an AI agent",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"ai_agent-response:success": {
+			"subject": "ai_agent",
+			"activity": "response",
+			"activity_type": "ai_agent-response",
+			"outcome": "success",
+			"pretty_name": "AI Agent Response",
+			"description": "An AI agent successfully responded to a request or prompt",
+			"fields": {
+				"categories": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				},
+				"result_reason":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"result":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"llm_response":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_function_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_tool_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_in_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_out_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"workspace_id":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully received a response to a request or prompt to an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_agent-response:fail": {
+			"subject": "ai_agent",
+			"activity": "response",
+			"activity_type": "ai_agent-response",
+			"outcome": "fail",
+			"pretty_name": "AI Agent Response",
+			"description": "An AI agent failed to respond to a request or prompt",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"categories": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1",
+					"enriched": "1"
+				},
+				"result_reason":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"result":{
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"llm_response":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_function_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_tool_name":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_in_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"ai_token_out_count":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"workspace_id":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to receive a response to a request or prompt to an AI agent",
+			"titleTemplateFormatVersion": "1.0"
+		}, 
 		"ai_agent-create:success": {
 			"subject": "ai_agent",
 			"activity": "create",
@@ -23968,6 +24297,312 @@
 				}
 			},
 			"titleTemplate": "Failed to delete an AI conversation",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"api_key-create:success": {
+			"subject": "api_key",
+			"activity": "create",
+			"activity_type": "api_key-create",
+			"outcome": "success",
+			"pretty_name": "API Key Created",
+			"description": "An API key was created",
+			"fields": {
+				"key_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}	
+			},
+			"titleTemplate": "Successfully created an API key by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"api_key-create:fail": {
+			"subject": "api_key",
+			"activity": "create",
+			"activity_type": "api_key-create",
+			"outcome": "fail",
+			"pretty_name": "API Key Creation Failed",
+			"description": "An API key creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"key_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create an API key by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"api_key-delete:success": {
+			"subject": "api_key",
+			"activity": "delete",
+			"activity_type": "api_key-delete",
+			"outcome": "success",
+			"pretty_name": "API Key Deleted",
+			"description": "An API key was deleted",
+			"fields": {
+				"key_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}	
+			},
+			"titleTemplate": "Successfully deleted an API key by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"	
+		},
+		"api_key-delete:fail": {
+			"subject": "api_key",	
+			"activity": "delete",
+			"activity_type": "api_key-delete",
+			"outcome": "fail",
+			"pretty_name": "API Key Deletion Failed",
+			"description": "An API key deletion failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"key_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete an API key by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"api_key-modify:success": {
+			"subject": "api_key",
+			"activity": "modify",
+			"activity_type": "api_key-modify",
+			"outcome": "success",
+			"pretty_name": "API Key Modified",
+			"description": "An API key was modified",
+			"fields": {
+				"key_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"key_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully modified an API key by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"api_key-modify:fail": {
+			"subject": "api_key",
+			"activity": "modify",
+			"activity_type": "api_key-modify",
+			"outcome": "fail",
+			"pretty_name": "API Key Modification Failed",
+			"description": "An API key modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"key_id": {
+					"core": "0",
+					"detection": "1",
+					"informational":"0"
+				}
+			},
+			"titleTemplate": "Failed to modify an API key by {event.user|event.email_address}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"project-create:success": {
+			"subject": "project",
+			"activity": "create",
+			"activity_type": "project-create",
+			"outcome": "success",
+			"pretty_name": "Project Created",
+			"description": "A project was created",
+			"fields": {
+				"project_id": {	
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}	
+			},
+			"titleTemplate": "Successfully created a project",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"project-create:fail": {
+			"subject": "project",
+			"activity": "create",
+			"activity_type": "project-create",
+			"outcome": "fail",
+			"pretty_name": "Project Creation Failed",
+			"description": "A project creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"project_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}							
+			},
+			"titleTemplate": "Failed to create a project",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"project-modify:success": {
+			"subject": "project",
+			"activity": "modify",
+			"activity_type": "project-modify",
+			"outcome": "success",
+			"pretty_name": "Project Modified",
+			"description": "A project was modified",
+			"fields": {
+				"project_id": {	
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}	
+			},
+			"titleTemplate": "Successfully modified/updated a project",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"project-modify:fail": {
+			"subject": "project",
+			"activity": "modify",
+			"activity_type": "project-modify",
+			"outcome": "fail",
+			"pretty_name": "Project Modification Failed",
+			"description": "A project modification failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"project_id": {	
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}	
+			},
+			"titleTemplate": "Failed to modify/update a project",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"tool-call:success": {
+			"subject": "tool",
+			"activity": "call",
+			"activity_type": "tool-call",
+			"outcome": "success",
+			"pretty_name": "Tool Call",
+			"description": "A request or a declaration for a tool invocation.",
+			"fields": {
+				"src_ip":{
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully called a tool {event.ai_tool_name}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"tool-return:success": {
+			"subject": "tool",
+			"activity": "return",
+			"activity_type": "tool-return",
+			"outcome": "success",
+			"pretty_name": "Tool Return",
+			"description": "The conclusion of a tool call.",
+			"fields": {},
+			"titleTemplate": "Successfully received a return from a tool {event.ai_tool_name}",
+			"titleTemplateFormatVersion": "1.0"
+		},	
+		"audit-log:success": {
+			"subject": "audit",
+			"activity": "log",
+			"activity_type": "audit-log",
+			"outcome": "success",
+			"pretty_name": "Audit Log",
+			"description": "An audit log entry was created on a security product or program",
+			"fields": {},
+			"titleTemplate": "Successfully created an audit log entry on a security product or program",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"audit-log:fail": {
+			"subject": "audit",
+			"activity": "log",
+			"activity_type": "audit-log",
+			"outcome": "fail",
+			"pretty_name": "Audit Log",
+			"description": "An audit log entry creation failed on a security product or program",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create an audit log entry on a security product or program",
 			"titleTemplateFormatVersion": "1.0"
 		}
 	},
@@ -89695,6 +90330,61 @@
 				}
 			}
 		},
+		"ordr ai protect": {
+			"expression": "product = ordr ai protect",
+			"fields": {},
+			"activity_type": {
+				"alert-trigger": {
+					"fields": {
+						"dest_ip": {
+							"Status": "Legacy",
+							"core": "1",
+							"detection": "1",
+							"informational": "0"
+						},
+						"dest_mac": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"dest_port": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"hash_md5": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"protocol": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "1",
+							"informational": "0"
+						},
+						"src_ip": {
+							"Status": "Legacy",
+							"core": "1",
+							"detection": "1",
+							"informational": "0"
+						},
+						"src_mac": {
+							"core": "0",
+							"detection": "0",
+							"informational": "0"
+						},
+						"src_port": {
+							"Status": "Legacy",
+							"core": "0",
+							"detection": "0",
+							"informational": "1"
+						}
+					}
+				}
+			}
+		},		
 		"sonicwall firewall": {
 			"expression": "product = sonicwall firewall",
 			"fields": {},

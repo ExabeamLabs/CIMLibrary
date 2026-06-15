@@ -31,6 +31,7 @@ app-activity:success
 
 | Field                | Core | Detection | Informational |
 | -------------------- | ---- | --------- | ------------- |
+| access_type          |      |           | &#10003;      |
 | os                   |      | &#10003;  |               |
 | user_agent_client    |      |           |               |
 | src_external_country |      | &#10003;  |               |
@@ -43,6 +44,7 @@ app-activity:success
 | operation            |      | &#10003;  |               |
 | user                 |      | &#10003;  |               |
 | user_agent           |      | &#10003;  |               |
+| repository_name      |      |           | &#10003;      |
 | object               |      | &#10003;  |               |
 | cid                  |      |           | &#10003;      |
 
@@ -52,6 +54,7 @@ app-activity:fail
 | Field                | Core | Detection | Informational |
 | -------------------- | ---- | --------- | ------------- |
 | failure_code         |      | &#10003;  |               |
+| access_type          |      |           | &#10003;      |
 | os                   |      | &#10003;  |               |
 | user_agent_client    |      |           |               |
 | src_external_country |      | &#10003;  |               |
@@ -66,5 +69,6 @@ app-activity:fail
 | operation            |      | &#10003;  |               |
 | user                 |      | &#10003;  |               |
 | user_agent           |      | &#10003;  |               |
+| repository_name      |      |           | &#10003;      |
 | object               |      | &#10003;  |               |
 | cid                  |      |           | &#10003;      |

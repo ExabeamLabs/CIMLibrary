@@ -27,4 +27,10 @@ app-modify:success
 There are no fields for this activity type.
 
 
-A failure activity is not currently supported for this activity-type.
+app-modify:fail
+---------------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
