@@ -53,7 +53,6 @@ Activity Types
 |                 | hash_sha1                   |         |      | &#10003;  |               |
 |                 | is_executable               |         |      | &#10003;  |               |
 |                 | process_guid                |         |      |           | &#10003;      |
-|                 | is_archived                 |         |      |           | &#10003;      |
 |                 | process_name                | Legacy  |      |           | &#10003;      |
 |                 | hash_md5                    |         |      | &#10003;  |               |
 |                 | process_dir                 | Legacy  |      |           | &#10003;      |

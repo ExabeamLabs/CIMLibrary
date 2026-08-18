@@ -24,13 +24,15 @@ The possible fields for this activity type will vary depending on whether the ac
 mailbox-item-create:success
 ---------------------------
 
-There are no fields for this activity type.
-
+| Field | Core | Detection | Informational |
+| ----- | ---- | --------- | ------------- |
+| owner |      | &#10003;  |               |
 
 mailbox-item-create:fail
 ------------------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| owner          |      | &#10003;  |               |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |

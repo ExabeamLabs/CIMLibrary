@@ -26,6 +26,7 @@ share_link-create:success
 
 | Field            | Core | Detection | Informational |
 | ---------------- | ---- | --------- | ------------- |
+| share_type       |      | &#10003;  |               |
 | domain           |      |           | &#10003;      |
 | domain_user_name |      |           |               |
 | user             |      |           | &#10003;      |
@@ -36,6 +37,7 @@ share_link-create:fail
 | Field            | Core | Detection | Informational |
 | ---------------- | ---- | --------- | ------------- |
 | failure_code     |      | &#10003;  |               |
+| share_type       |      | &#10003;  |               |
 | domain           |      |           | &#10003;      |
 | domain_user_name |      |           |               |
 | failure_reason   |      | &#10003;  |               |

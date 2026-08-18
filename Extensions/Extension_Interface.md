@@ -537,7 +537,6 @@ This interface defines any additional context elements that help describe the ac
 * [vormetric](vormetric.md)
 * [watchguard](watchguard.md)
 * [wazuh siem](wazuh_siem.md)
-* [weblogin](weblogin.md)
 * [webmail owa](webmail_owa.md)
 * [websense security gateway](websense_security_gateway.md)
 * [windows defender](windows_defender.md)

@@ -936,6 +936,12 @@
 					"detection": "1",
 					"informational": "1"
 				},
+				"sub_domain": {
+					"core": "0",
+					"detection": "0",
+					"informational": "0",
+					"enriched": "1"
+				},
 				"uri_path": {
 					"core": "0",
 					"detection": "1",
@@ -1795,12 +1801,12 @@
 		"api_key": {
 			"description": "An API key is a unique identifier used to authenticate requests associated with a project or application, allowing access to specific resources or services.",
 			"fields": {
-				"key_id":{
+				"key_id": {
 					"core": "1",
 					"detection": "1",
 					"informational": "0"
 				},
-				"key_name":{
+				"key_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -5870,17 +5876,7 @@
 			"pretty_name": "Process Memory Allocate",
 			"description": "Virtual memory was allocated in a process",
 			"fields": {
-				"memory_address": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"memory_size": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"memory_protection": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -5897,17 +5893,7 @@
 			"pretty_name": "Process Memory Allocate",
 			"description": "Virtual memory was allocated in a process",
 			"fields": {
-				"memory_address": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"memory_size": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"memory_protection": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -5934,17 +5920,7 @@
 			"pretty_name": "Process Memory Read",
 			"description": "Virtual memory was read from a process",
 			"fields": {
-				"memory_address": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"memory_size": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"memory_protection": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -5961,17 +5937,7 @@
 			"pretty_name": "Process Memory Read",
 			"description": "Virtual memory was read from a process",
 			"fields": {
-				"memory_address": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"memory_size": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"memory_protection": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -5998,17 +5964,7 @@
 			"pretty_name": "Process Memory Protect",
 			"description": "Virtual memory was protected",
 			"fields": {
-				"memory_address": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"memory_size": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"memory_protection": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -6025,17 +5981,7 @@
 			"pretty_name": "Process Memory Protect",
 			"description": "Virtual memory was protected",
 			"fields": {
-				"memory_address": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"memory_size": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"memory_protection": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -17056,7 +17002,18 @@
 			"outcome": "success",
 			"pretty_name": "Mailbox Modify",
 			"description": "The properties or configuration of an email mailbox were changed",
-			"fields": {},
+			"fields": {
+				"email_recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully updated the properties or configuration of an email mailbox",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -17068,6 +17025,16 @@
 			"pretty_name": "Mailbox Modify",
 			"description": "The properties or configuration of an email mailbox were changed",
 			"fields": {
+				"email_recipients": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"email_domain": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -17158,7 +17125,13 @@
 			"outcome": "success",
 			"pretty_name": "Mailbox Item Create",
 			"description": "An item contained in an email mailbox was created",
-			"fields": {},
+			"fields": {
+				"owner": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
 			"titleTemplate": "Successfully created an email mailbox item",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -17170,6 +17143,11 @@
 			"pretty_name": "Mailbox Item Create",
 			"description": "An item contained in an email mailbox was created",
 			"fields": {
+				"owner": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"failure_reason": {
 					"core": "0",
 					"detection": "1",
@@ -17316,6 +17294,11 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
+				},
+				"throttled": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Successfully read the content of an item contained in an email mailbox",
@@ -17330,6 +17313,11 @@
 			"description": "The content of an item contained in an email mailbox was read",
 			"fields": {
 				"count": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"throttled": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -18882,7 +18870,13 @@
 			"outcome": "success",
 			"pretty_name": "Repository Create",
 			"description": "A git repository was created",
-			"fields": {},
+			"fields": {
+				"user_type": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
 			"titleTemplate": "Successfully created a git repository",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -18959,7 +18953,7 @@
 					"detection": "1",
 					"informational": "0"
 				}
-            },
+			},
 			"titleTemplate": "Successfully updated the properties or configuration of a git repository",
 			"titleTemplateFormatVersion": "1.0"
 		},
@@ -19586,17 +19580,7 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"case_description": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"rule_source": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"type": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -19865,17 +19849,7 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"case_description": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"rule_source": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"type": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -20093,17 +20067,7 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"case_description": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"rule_source": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"type": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -20736,6 +20700,11 @@
 					"detection": "0",
 					"informational": "1"
 				},
+				"share_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
 				"domain_user_name": {
 					"core": "0",
 					"detection": "0",
@@ -20763,6 +20732,11 @@
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
+				},
+				"share_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
 				},
 				"failure_reason": {
 					"core": "0",
@@ -23809,42 +23783,42 @@
 					"informational": "1",
 					"enriched": "1"
 				},
-				"result_reason":{
+				"result_reason": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"result":{
+				"result": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"llm_request":{
+				"llm_request": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_function_name":{
+				"ai_function_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_tool_name":{
+				"ai_tool_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_count":{
+				"ai_token_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"workspace_id":{
+				"workspace_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"src_ip":{
+				"src_ip": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -23877,42 +23851,42 @@
 					"informational": "1",
 					"enriched": "1"
 				},
-				"result_reason":{
+				"result_reason": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"result":{
+				"result": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"llm_request":{
+				"llm_request": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_function_name":{
+				"ai_function_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_tool_name":{
+				"ai_tool_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_count":{
+				"ai_token_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"workspace_id":{
+				"workspace_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"src_ip":{
+				"src_ip": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -23935,47 +23909,47 @@
 					"informational": "1",
 					"enriched": "1"
 				},
-				"result_reason":{
+				"result_reason": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"result":{
+				"result": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"llm_response":{
+				"llm_response": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_function_name":{
+				"ai_function_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_tool_name":{
+				"ai_tool_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_count":{
+				"ai_token_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_in_count":{
+				"ai_token_in_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_out_count":{
+				"ai_token_out_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"workspace_id":{
+				"workspace_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -24008,47 +23982,47 @@
 					"informational": "1",
 					"enriched": "1"
 				},
-				"result_reason":{
+				"result_reason": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"result":{
+				"result": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
-				"llm_response":{
+				"llm_response": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_function_name":{
+				"ai_function_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_tool_name":{
+				"ai_tool_name": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_count":{
+				"ai_token_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_in_count":{
+				"ai_token_in_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"ai_token_out_count":{
+				"ai_token_out_count": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
 				},
-				"workspace_id":{
+				"workspace_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -24056,7 +24030,7 @@
 			},
 			"titleTemplate": "Failed to receive a response to a request or prompt to an AI agent",
 			"titleTemplateFormatVersion": "1.0"
-		}, 
+		},
 		"ai_agent-create:success": {
 			"subject": "ai_agent",
 			"activity": "create",
@@ -24233,6 +24207,39 @@
 			"titleTemplate": "Failed to delete an AI agent",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"ai_conversation-create:success": {
+			"subject": "ai_conversation",
+			"activity": "create",
+			"activity_type": "ai_conversation-create",
+			"outcome": "success",
+			"pretty_name": "AI Conversation Created",
+			"description": "An AI conversation was created",
+			"fields": {},
+			"titleTemplate": "Successfully created an AI conversation",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"ai_conversation-create:fail": {
+			"subject": "ai_conversation",
+			"activity": "create",
+			"activity_type": "ai_conversation-create",
+			"outcome": "fail",
+			"pretty_name": "AI Conversation Creation Failed",
+			"description": "An AI conversation creation failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				}
+			},
+			"titleTemplate": "Failed to create an AI conversation",
+			"titleTemplateFormatVersion": "1.0"
+		},		
 		"ai_conversation-share:success": {
 			"subject": "ai_conversation",
 			"activity": "share",
@@ -24311,7 +24318,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}	
+				}
 			},
 			"titleTemplate": "Successfully created an API key by {event.user|event.email_address}",
 			"titleTemplateFormatVersion": "1.0"
@@ -24355,13 +24362,13 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}	
+				}
 			},
 			"titleTemplate": "Successfully deleted an API key by {event.user|event.email_address}",
-			"titleTemplateFormatVersion": "1.0"	
+			"titleTemplateFormatVersion": "1.0"
 		},
 		"api_key-delete:fail": {
-			"subject": "api_key",	
+			"subject": "api_key",
 			"activity": "delete",
 			"activity_type": "api_key-delete",
 			"outcome": "fail",
@@ -24430,7 +24437,7 @@
 				"key_id": {
 					"core": "0",
 					"detection": "1",
-					"informational":"0"
+					"informational": "0"
 				}
 			},
 			"titleTemplate": "Failed to modify an API key by {event.user|event.email_address}",
@@ -24444,7 +24451,7 @@
 			"pretty_name": "Project Created",
 			"description": "A project was created",
 			"fields": {
-				"project_id": {	
+				"project_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -24453,7 +24460,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}	
+				}
 			},
 			"titleTemplate": "Successfully created a project",
 			"titleTemplateFormatVersion": "1.0"
@@ -24485,7 +24492,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}							
+				}
 			},
 			"titleTemplate": "Failed to create a project",
 			"titleTemplateFormatVersion": "1.0"
@@ -24498,7 +24505,7 @@
 			"pretty_name": "Project Modified",
 			"description": "A project was modified",
 			"fields": {
-				"project_id": {	
+				"project_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -24507,7 +24514,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}	
+				}
 			},
 			"titleTemplate": "Successfully modified/updated a project",
 			"titleTemplateFormatVersion": "1.0"
@@ -24530,7 +24537,7 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"project_id": {	
+				"project_id": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -24539,7 +24546,7 @@
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
-				}	
+				}
 			},
 			"titleTemplate": "Failed to modify/update a project",
 			"titleTemplateFormatVersion": "1.0"
@@ -24552,7 +24559,7 @@
 			"pretty_name": "Tool Call",
 			"description": "A request or a declaration for a tool invocation.",
 			"fields": {
-				"src_ip":{
+				"src_ip": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -24571,7 +24578,7 @@
 			"fields": {},
 			"titleTemplate": "Successfully received a return from a tool {event.ai_tool_name}",
 			"titleTemplateFormatVersion": "1.0"
-		},	
+		},
 		"audit-log:success": {
 			"subject": "audit",
 			"activity": "log",
@@ -24941,11 +24948,6 @@
 							"core": "0",
 							"detection": "1",
 							"informational": "0"
-						},
-						"is_archived": {
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
 						}
 					}
 				},
@@ -27150,11 +27152,6 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"user_uids": {
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"dest_host": {
 							"core": "0",
 							"detection": "1",
@@ -27262,12 +27259,6 @@
 							"informational": "1"
 						},
 						"operation": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"mbps": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -27848,12 +27839,6 @@
 				"share-access": {
 					"fields": {
 						"service_name": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"native_file_system": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -29132,11 +29117,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"selected_hash_sha256": {
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "1",
@@ -29229,11 +29209,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"selected_hash_sha256": {
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "1",
@@ -29297,12 +29272,6 @@
 							"informational": "1"
 						},
 						"selected_md5hash": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"selected_hash_sha256": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -29421,12 +29390,6 @@
 							"informational": "1"
 						},
 						"selected_md5hash": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"selected_hash_sha256": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -32554,12 +32517,6 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"module_hash_names": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"virtual_station_name": {
 							"Status": "Default",
 							"core": "0",
@@ -33645,11 +33602,6 @@
 					"informational": "0"
 				},
 				"login_type_text": {
-					"core": "0",
-					"detection": "1",
-					"informational": "0"
-				},
-				"catalog": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0"
@@ -36739,36 +36691,6 @@
 				}
 			}
 		},
-		"weblogin": {
-			"expression": "product = \"weblogin\"",
-			"fields": {
-				"action": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"sub_status": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"request_cookie": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"private_cookie": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				}
-			},
-			"activity_type": {
-				"http-session": {
-					"fields": {}
-				}
-			}
-		},
 		"microsoft web application proxy": {
 			"expression": "product = \"microsoft web Application proxy\"",
 			"fields": {
@@ -38094,22 +38016,12 @@
 		"timelox": {
 			"expression": "product = \"timelox\"",
 			"fields": {
-				"door_group_name": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"registration_no": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
 				},
 				"user_id": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
-				"blocking_group_name": {
 					"core": "0",
 					"detection": "0",
 					"informational": "1"
@@ -38485,22 +38397,10 @@
 			"fields": {},
 			"activity_type": {
 				"email-receive": {
-					"fields": {
-						"email_attachments_bytes": {
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
+					"fields": {}
 				},
 				"email-send": {
-					"fields": {
-						"email_attachments_bytes": {
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						}
-					}
+					"fields": {}
 				}
 			}
 		},
@@ -39457,11 +39357,6 @@
 					"detection": "0",
 					"informational": "0",
 					"enriched": "1"
-				},
-				"process_permission": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
 				},
 				"src_zone": {
 					"core": "0",
@@ -43155,11 +43050,6 @@
 					"detection": "0",
 					"informational": "1"
 				},
-				"num_internal_recipients": {
-					"core": "0",
-					"detection": "0",
-					"informational": "1"
-				},
 				"num_external_recipients": {
 					"core": "0",
 					"detection": "0",
@@ -46624,11 +46514,6 @@
 				"alert-trigger": {
 					"fields": {
 						"operation": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"bitdefender_operation_type": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -50283,16 +50168,6 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"event_name_hub_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"event_name_hub_namespace": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"last_known_ip": {
 							"core": "0",
 							"detection": "0",
@@ -51234,11 +51109,6 @@
 							"informational": "0"
 						},
 						"result": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"result_at": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -53096,11 +52966,6 @@
 							"informational": "1"
 						},
 						"bytes_to_client": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"bytes_to_server": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -55794,11 +55659,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"printer_port": {
-							"core": "0",
-							"detection": "1",
-							"informational": "0"
-						},
 						"bytes_out": {
 							"core": "0",
 							"detection": "1",
@@ -56302,18 +56162,6 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"src_zen_code": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"host_zen_code": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"host_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -56357,12 +56205,6 @@
 							"informational": "1"
 						},
 						"host_bytes_in": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"host_bytes_out": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -59444,12 +59286,6 @@
 				"endpoint-login": {
 					"fields": {
 						"auth_method": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"ds_object_out": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -67403,11 +67239,6 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"file_dir_uri": {
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"src_file_name": {
 							"Status": "Legacy",
 							"core": "0",
@@ -67440,11 +67271,6 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"file_dir_uri": {
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"src_file_name": {
 							"core": "0",
 							"detection": "0",
@@ -67472,11 +67298,6 @@
 						},
 						"file_type": {
 							"Status": "Legacy",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"file_dir_uri": {
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
@@ -71678,12 +71499,6 @@
 							"core": "0",
 							"detection": "0",
 							"informational": "1"
-						},
-						"door_name": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
 						}
 					}
 				},
@@ -73610,17 +73425,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"device_size": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"removable_media_serial_number": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"shared": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -73636,11 +73441,6 @@
 							"informational": "0"
 						},
 						"url": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_dlp_policy_names": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -73705,11 +73505,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"sync_destination": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "0",
@@ -73730,27 +73525,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_capacity": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"device_name": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_volume_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"process_owner": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"removable_media_bus_type": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -73837,11 +73617,6 @@
 							"informational": "0"
 						},
 						"file_id": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"file_exposure_changed_to": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -73887,17 +73662,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"device_size": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"removable_media_serial_number": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"shared": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -73913,11 +73678,6 @@
 							"informational": "0"
 						},
 						"url": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_dlp_policy_names": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -73981,11 +73741,6 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"sync_destination": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "0",
@@ -74006,27 +73761,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_capacity": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"device_name": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_volume_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"process_owner": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"removable_media_bus_type": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74113,11 +73853,6 @@
 							"informational": "0"
 						},
 						"file_id": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"file_exposure_changed_to": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74163,17 +73898,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"device_size": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"removable_media_serial_number": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"shared": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74189,11 +73914,6 @@
 							"informational": "0"
 						},
 						"url": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_dlp_policy_names": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74258,11 +73978,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"sync_destination": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "0",
@@ -74284,27 +73999,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"removable_media_capacity": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"device_name": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_volume_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"process_owner": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"removable_media_bus_type": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74391,11 +74091,6 @@
 							"informational": "0"
 						},
 						"file_id": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"file_exposure_changed_to": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74442,17 +74137,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"device_size": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"removable_media_serial_number": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"shared": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74468,11 +74153,6 @@
 							"informational": "0"
 						},
 						"url": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_dlp_policy_names": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74536,11 +74216,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"sync_destination": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "0",
@@ -74562,27 +74237,12 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"removable_media_capacity": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"device_name": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_volume_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"process_owner": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"removable_media_bus_type": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74669,11 +74329,6 @@
 							"informational": "0"
 						},
 						"file_id": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"file_exposure_changed_to": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74719,17 +74374,7 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"device_size": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"removable_media_serial_number": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"shared": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74745,11 +74390,6 @@
 							"informational": "0"
 						},
 						"url": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"email_dlp_policy_names": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74813,11 +74453,6 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"sync_destination": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"hash_sha256": {
 							"core": "0",
 							"detection": "0",
@@ -74838,27 +74473,12 @@
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_capacity": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"device_name": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
 						},
-						"removable_media_volume_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"process_owner": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"removable_media_bus_type": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -74945,11 +74565,6 @@
 							"informational": "0"
 						},
 						"file_id": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"file_exposure_changed_to": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"
@@ -79361,18 +78976,6 @@
 			"activity_type": {
 				"physical_location-access": {
 					"fields": {
-						"door_side_id": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"src_location_id": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"location_door_id": {
 							"Status": "Default",
 							"core": "0",
@@ -81311,12 +80914,6 @@
 							"detection": "0",
 							"informational": "1"
 						},
-						"secondary_key": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"dest_ip": {
 							"Status": "Default",
 							"core": "0",
@@ -82641,12 +82238,6 @@
 							"informational": "0",
 							"enriched": "1"
 						},
-						"cabinet_name": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
 						"corp_client": {
 							"Status": "Default",
 							"core": "0",
@@ -82717,11 +82308,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"cabinet_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"corp_client": {
 							"core": "0",
 							"detection": "0",
@@ -82778,11 +82364,6 @@
 							"Status": "Legacy",
 							"core": "1",
 							"detection": "1",
-							"informational": "0"
-						},
-						"cabinet_name": {
-							"core": "0",
-							"detection": "0",
 							"informational": "0"
 						},
 						"corp_client": {
@@ -82843,11 +82424,6 @@
 							"detection": "1",
 							"informational": "0"
 						},
-						"cabinet_name": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
 						"corp_client": {
 							"core": "0",
 							"detection": "0",
@@ -82903,11 +82479,6 @@
 							"Status": "Legacy",
 							"core": "1",
 							"detection": "1",
-							"informational": "0"
-						},
-						"cabinet_name": {
-							"core": "0",
-							"detection": "0",
 							"informational": "0"
 						},
 						"corp_client": {
@@ -86593,12 +86164,6 @@
 				"physical_location-access": {
 					"fields": {
 						"location_full": {
-							"Status": "Default",
-							"core": "0",
-							"detection": "0",
-							"informational": "1"
-						},
-						"ssno": {
 							"Status": "Default",
 							"core": "0",
 							"detection": "0",
@@ -90384,7 +89949,7 @@
 					}
 				}
 			}
-		},		
+		},
 		"sonicwall firewall": {
 			"expression": "product = sonicwall firewall",
 			"fields": {},
@@ -90767,11 +90332,6 @@
 				"alert-trigger": {
 					"fields": {
 						"category_behavior": {
-							"core": "0",
-							"detection": "0",
-							"informational": "0"
-						},
-						"category_significance": {
 							"core": "0",
 							"detection": "0",
 							"informational": "0"

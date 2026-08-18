@@ -13,6 +13,7 @@ This secondary interface defines the activity type element. It describes the spe
  * [ai_agent-request](ai_agent-request.md)
  * [ai_agent-response](ai_agent-response.md)
  * [ai_agent-share](ai_agent-share.md)
+ * [ai_conversation-create](ai_conversation-create.md)
  * [ai_conversation-delete](ai_conversation-delete.md)
  * [ai_conversation-share](ai_conversation-share.md)
  * [alert-create](alert-create.md)

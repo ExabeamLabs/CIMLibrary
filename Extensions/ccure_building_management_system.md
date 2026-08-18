@@ -21,7 +21,6 @@ Activity Types
 |                          | object          | Default |      |           | &#10003;      |
 | app-login                | event_name      | Default |      |           | &#10003;      |
 | physical_location-access | employee_type   | Default |      |           | &#10003;      |
-|                          | door_name       | Default |      |           | &#10003;      |
 |                          | event_name      | Default |      |           | &#10003;      |
 |                          | company         | Default |      |           | &#10003;      |
 |                          | employee_status | Default |      |           | &#10003;      |

@@ -24,9 +24,10 @@ The possible fields for this activity type will vary depending on whether the ac
 mailbox-item-read:success
 -------------------------
 
-| Field | Core | Detection | Informational |
-| ----- | ---- | --------- | ------------- |
-| count |      | &#10003;  |               |
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| count     |      | &#10003;  |               |
+| throttled |      | &#10003;  |               |
 
 mailbox-item-read:fail
 ----------------------
@@ -36,3 +37,4 @@ mailbox-item-read:fail
 | failure_code   |      | &#10003;  |               |
 | count          |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| throttled      |      | &#10003;  |               |

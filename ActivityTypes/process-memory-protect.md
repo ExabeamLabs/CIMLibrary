@@ -24,19 +24,15 @@ The possible fields for this activity type will vary depending on whether the ac
 process-memory-protect:success
 ------------------------------
 
-| Field             | Core | Detection | Informational |
-| ----------------- | ---- | --------- | ------------- |
-| memory_address    |      |           | &#10003;      |
-| memory_size       |      |           | &#10003;      |
-| memory_protection |      |           | &#10003;      |
+| Field       | Core | Detection | Informational |
+| ----------- | ---- | --------- | ------------- |
+| memory_size |      |           | &#10003;      |
 
 process-memory-protect:fail
 ---------------------------
 
-| Field             | Core | Detection | Informational |
-| ----------------- | ---- | --------- | ------------- |
-| failure_code      |      | &#10003;  |               |
-| memory_address    |      |           | &#10003;      |
-| failure_reason    |      | &#10003;  |               |
-| memory_size       |      |           | &#10003;      |
-| memory_protection |      |           | &#10003;      |
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| failure_reason |      | &#10003;  |               |
+| memory_size    |      |           | &#10003;      |

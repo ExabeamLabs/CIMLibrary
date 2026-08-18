@@ -27,7 +27,6 @@ Activity Types
 | ds_object-modify       | old_attribute | Default |      |           | &#10003;      |
 |                        | new_attribute | Default |      |           | &#10003;      |
 | endpoint-login         | auth_method   | Default |      |           | &#10003;      |
-|                        | ds_object_out | Default |      |           | &#10003;      |
 | file-permission-modify | access        | Legacy  |      | &#10003;  |               |
 |                        | process_name  | Legacy  |      |           | &#10003;      |
 | file-read              | access        | Legacy  |      | &#10003;  |               |

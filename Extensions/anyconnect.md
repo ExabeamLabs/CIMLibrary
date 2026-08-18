@@ -21,7 +21,6 @@ Activity Types
 | network-session | system_manufacturer  | Default |      |           | &#10003;      |
 |                 | os                   | Default |      |           | &#10003;      |
 |                 | bytes_in             | Default |      |           | &#10003;      |
-|                 | module_hash_names    | Default |      |           | &#10003;      |
 |                 | parent_process_name  | Default |      |           | &#10003;      |
 |                 | parent_process_hash  | Default |      |           | &#10003;      |
 |                 | os_version           | Default |      |           | &#10003;      |

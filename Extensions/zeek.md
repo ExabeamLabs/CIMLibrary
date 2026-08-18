@@ -35,7 +35,6 @@ Activity Types
 |                         | domain                       |         |          | &#10003;  |               |
 |                         | dest_host                    |         |          | &#10003;  |               |
 |                         | session_id                   |         |          |           | &#10003;      |
-|                         | user_uids                    |         |          |           | &#10003;      |
 |                         | domain_user_name             |         |          |           |               |
 |                         | user                         | Legacy  | &#10003; |           |               |
 | dns-request             | query_id                     |         |          |           | &#10003;      |
@@ -166,7 +165,6 @@ Activity Types
 |                         | local_orig                   | Default |          |           | &#10003;      |
 |                         | orig_pkts                    | Default |          |           | &#10003;      |
 |                         | orig_cc                      | Default |          |           | &#10003;      |
-|                         | mbps                         | Default |          |           | &#10003;      |
 |                         | missed_bytes                 | Default |          |           | &#10003;      |
 |                         | history                      | Default |          |           | &#10003;      |
 |                         | tunnel_parents               | Default |          |           | &#10003;      |
@@ -188,7 +186,6 @@ Activity Types
 |                         | framed_addr                  | Default |          |           | &#10003;      |
 | share-access            | share_type                   | Default |          |           | &#10003;      |
 |                         | service_name                 | Default |          |           | &#10003;      |
-|                         | native_file_system           | Default |          |           | &#10003;      |
 | ssh-traffic             | cipher                       |         |          | &#10003;  |               |
 |                         | kex_alg                      |         |          |           | &#10003;      |
 |                         | mac_alg                      |         |          |           | &#10003;      |

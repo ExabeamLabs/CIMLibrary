@@ -24,8 +24,9 @@ The possible fields for this activity type will vary depending on whether the ac
 repository-create:success
 -------------------------
 
-There are no fields for this activity type.
-
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| user_type |      |           | &#10003;      |
 
 repository-create:fail
 ----------------------

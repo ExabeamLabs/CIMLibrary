@@ -33,7 +33,6 @@ rule-trigger-test:success
 | technique              |      |           | &#10003;      |
 | rules                  |      |           | &#10003;      |
 | rule_usecases          |      |           | &#10003;      |
-| type                   |      |           | &#10003;      |
 | src_local_host         |      | &#10003;  |               |
 | tactic                 |      |           | &#10003;      |
 | src_ip                 |      | &#10003;  |               |
@@ -54,7 +53,6 @@ rule-trigger-test:success
 | previous_id            |      |           | &#10003;      |
 | event_to_time_millis   |      |           | &#10003;      |
 | src_host               |      | &#10003;  |               |
-| case_description       |      |           | &#10003;      |
 | log_time               |      |           | &#10003;      |
 | event_url              |      |           | &#10003;      |
 | tactic_key             |      |           | &#10003;      |

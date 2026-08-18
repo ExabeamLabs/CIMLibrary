@@ -31,6 +31,5 @@ Activity Types
 |                  | file_name    | Legacy | &#10003; | &#10003;  |               |
 |                  | file_dir     |        |          | &#10003;  |               |
 |                  | num_pages    | Legacy |          | &#10003;  |               |
-|                  | printer_port |        |          | &#10003;  |               |
 |                  | printer_name | Legacy | &#10003; | &#10003;  |               |
 

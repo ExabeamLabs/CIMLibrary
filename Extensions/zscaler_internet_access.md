@@ -54,14 +54,11 @@ Activity Types
 | network-session | app              | Default |          |           | &#10003;      |
 |                 | ca_runtime       | Default |          |           | &#10003;      |
 |                 | host_ip          | Default |          |           | &#10003;      |
-|                 | host_bytes_out   | Default |          |           | &#10003;      |
 |                 | bytes_in         | Default |          |           | &#10003;      |
 |                 | policy_name      | Default |          |           | &#10003;      |
 |                 | session_id       | Default |          |           | &#10003;      |
 |                 | app_group        | Default |          |           | &#10003;      |
-|                 | host_zen_code    | Default |          |           | &#10003;      |
 |                 | session_start    | Default |          |           | &#10003;      |
-|                 | src_zen_code     | Default |          |           | &#10003;      |
 |                 | bytes_out        | Default |          |           | &#10003;      |
 |                 | connection_id    | Default |          |           | &#10003;      |
 |                 | src_country      | Default |          |           | &#10003;      |

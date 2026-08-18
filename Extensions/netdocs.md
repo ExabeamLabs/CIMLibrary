@@ -20,7 +20,6 @@ Activity Types
 |               | corp_client      | Default |          |           | &#10003;      |
 |               | domain_user_name |         |          |           |               |
 |               | doc_id           | Default |          |           | &#10003;      |
-|               | cabinet_name     | Default |          |           | &#10003;      |
 |               | file_ext         | Default |          |           | &#10003;      |
 |               | corp_matter      | Default |          |           | &#10003;      |
 |               | user_id          | Default |          |           | &#10003;      |
@@ -30,8 +29,7 @@ Activity Types
 |               | dest_host        | Default |          | &#10003;  |               |
 |               | user             | Default |          | &#10003;  |               |
 |               | object           | Default |          |           | &#10003;      |
-| file-delete   | cabinet_name     |         |          |           |               |
-|               | access           | Legacy  |          | &#10003;  |               |
+| file-delete   | access           | Legacy  |          | &#10003;  |               |
 |               | corp_matter      |         |          |           |               |
 |               | user_id          |         |          |           |               |
 |               | additional_info  |         |          |           |               |
@@ -41,8 +39,7 @@ Activity Types
 |               | user             | Legacy  | &#10003; | &#10003;  |               |
 |               | doc_id           |         |          |           |               |
 |               | object           |         |          |           |               |
-| file-read     | cabinet_name     |         |          |           |               |
-|               | access           | Legacy  |          | &#10003;  |               |
+| file-read     | access           | Legacy  |          | &#10003;  |               |
 |               | corp_matter      |         |          |           |               |
 |               | user_id          |         |          |           |               |
 |               | additional_info  |         |          |           |               |
@@ -52,8 +49,7 @@ Activity Types
 |               | user             | Legacy  | &#10003; | &#10003;  |               |
 |               | doc_id           |         |          |           |               |
 |               | object           |         |          |           |               |
-| file-upload   | cabinet_name     |         |          |           |               |
-|               | access           |         |          |           |               |
+| file-upload   | access           |         |          |           |               |
 |               | corp_matter      |         |          |           |               |
 |               | user_id          |         |          |           |               |
 |               | additional_info  |         |          |           |               |
@@ -63,8 +59,7 @@ Activity Types
 |               | user             | Legacy  | &#10003; | &#10003;  |               |
 |               | doc_id           |         |          |           |               |
 |               | object           |         |          |           |               |
-| file-write    | cabinet_name     |         |          |           |               |
-|               | access           | Legacy  |          | &#10003;  |               |
+| file-write    | access           | Legacy  |          | &#10003;  |               |
 |               | corp_matter      |         |          |           |               |
 |               | user_id          |         |          |           |               |
 |               | additional_info  |         |          |           |               |

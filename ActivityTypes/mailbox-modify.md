@@ -24,13 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 mailbox-modify:success
 ----------------------
 
-There are no fields for this activity type.
-
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| email_recipients |      | &#10003;  |               |
+| email_domain     |      | &#10003;  |               |
 
 mailbox-modify:fail
 -------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| failure_reason |      | &#10003;  |               |
+| Field            | Core | Detection | Informational |
+| ---------------- | ---- | --------- | ------------- |
+| email_recipients |      | &#10003;  |               |
+| failure_code     |      | &#10003;  |               |
+| email_domain     |      | &#10003;  |               |
+| failure_reason   |      | &#10003;  |               |

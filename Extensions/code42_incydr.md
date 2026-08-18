@@ -21,270 +21,230 @@ Activity Types
 |                           | event_code                    | Default |          |           | &#10003;      |
 |                           | log_source                    | Default |          |           | &#10003;      |
 |                           | src_host                      | Default |          | &#10003;  |               |
-| file-delete               | mime                          |         |          |           |               |
+| file-delete               | access                        | Legacy  |          | &#10003;  |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
 |                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   |         |          |           |               |
-|                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
 |                           | file_category                 |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
 |                           | process_name                  | Legacy  |          |           | &#10003;      |
 |                           | file_type                     | Legacy  |          |           | &#10003;      |
-|                           | removable_media_volume_name   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
 |                           | hash_md5                      |         |          |           |               |
 |                           | time_created                  |         |          |           |               |
 |                           | directory_id                  |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
 |                           | device_id                     |         |          |           |               |
 |                           | service_name                  |         |          |           |               |
 |                           | exposure_type                 |         |          |           |               |
 |                           | file_owner                    |         |          |           |               |
 |                           | src_host                      | Legacy  |          | &#10003;  |               |
+|                           | url                           |         |          |           |               |
 |                           | tab_url                       |         |          |           |               |
-|                           | removable_media_capacity      |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
 |                           | removable_media_partition_id  |         |          |           |               |
 |                           | time_modified                 |         |          |           |               |
 |                           | additional_info               |         |          |           |               |
 |                           | sender                        |         |          |           |               |
+|                           | bytes                         |         |          |           |               |
 |                           | removable_media_vendor        |         |          |           |               |
 |                           | domain                        |         |          |           |               |
-|                           | removable_media_bus_type      |         |          |           |               |
 |                           | log_source                    |         |          |           |               |
 |                           | file_id                       |         |          |           |               |
-|                           | email_dlp_policy_names        |         |          |           |               |
 |                           | removable_media_serial_number |         |          |           |               |
-|                           | cloud_drive_id                |         |          |           |               |
-|                           | shared                        |         |          |           |               |
-|                           | device_size                   |         |          |           |               |
-|                           | access                        | Legacy  |          | &#10003;  |               |
-|                           | removable_media_name          |         |          |           |               |
-|                           | private_ip                    |         |          |           |               |
-|                           | src_ip                        |         |          |           |               |
-|                           | src_translated_ip             |         |          |           |               |
-|                           | shared_with                   |         |          |           |               |
-|                           | device_name                   |         |          |           |               |
-|                           | event_code                    |         |          |           |               |
-|                           | detection_source_alias        |         |          |           |               |
-|                           | process_owner                 |         |          |           |               |
-|                           | url                           |         |          |           |               |
-|                           | hash_sha256                   |         |          |           |               |
-|                           | bytes                         |         |          |           |               |
-|                           | file_exposure_changed_to      |         |          |           |               |
 |                           | dest_host                     | Legacy  |          | &#10003;  |               |
 |                           | removable_media_media_name    |         |          |           |               |
 |                           | device_vendor                 |         |          |           |               |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | cloud_drive_id                |         |          |           |               |
 |                           | user_uid                      |         |          |           |               |
-| file-download             | mime                          |         |          |           |               |
+| file-download             | access                        |         |          |           |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
 |                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   |         |          |           |               |
-|                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
 |                           | file_category                 |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
 |                           | process_name                  | Legacy  |          |           | &#10003;      |
 |                           | file_type                     | Legacy  |          |           | &#10003;      |
-|                           | removable_media_volume_name   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
 |                           | hash_md5                      |         |          |           |               |
 |                           | time_created                  |         |          |           |               |
 |                           | directory_id                  |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
 |                           | device_id                     |         |          |           |               |
 |                           | service_name                  |         |          |           |               |
 |                           | exposure_type                 |         |          |           |               |
 |                           | file_owner                    |         |          |           |               |
 |                           | src_host                      | Legacy  |          |           | &#10003;      |
+|                           | url                           |         |          |           |               |
 |                           | tab_url                       |         |          |           |               |
-|                           | removable_media_capacity      |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
 |                           | removable_media_partition_id  |         |          |           |               |
 |                           | time_modified                 |         |          |           |               |
 |                           | additional_info               |         |          |           |               |
 |                           | sender                        |         |          |           |               |
+|                           | bytes                         | Legacy  |          |           |               |
 |                           | removable_media_vendor        |         |          |           |               |
 |                           | domain                        |         |          |           |               |
-|                           | removable_media_bus_type      |         |          |           |               |
 |                           | log_source                    |         |          |           |               |
 |                           | file_id                       |         |          |           |               |
-|                           | email_dlp_policy_names        |         |          |           |               |
 |                           | removable_media_serial_number |         |          |           |               |
-|                           | cloud_drive_id                |         |          |           |               |
-|                           | shared                        |         |          |           |               |
-|                           | device_size                   |         |          |           |               |
-|                           | access                        |         |          |           |               |
-|                           | removable_media_name          |         |          |           |               |
-|                           | private_ip                    |         |          |           |               |
-|                           | src_ip                        |         |          |           |               |
-|                           | src_translated_ip             |         |          |           |               |
-|                           | shared_with                   |         |          |           |               |
-|                           | device_name                   |         |          |           |               |
-|                           | event_code                    |         |          |           |               |
-|                           | detection_source_alias        |         |          |           |               |
-|                           | process_owner                 |         |          |           |               |
-|                           | url                           |         |          |           |               |
-|                           | hash_sha256                   |         |          |           |               |
-|                           | bytes                         | Legacy  |          |           |               |
-|                           | file_exposure_changed_to      |         |          |           |               |
 |                           | dest_host                     | Legacy  |          |           | &#10003;      |
 |                           | removable_media_media_name    |         |          |           |               |
 |                           | device_vendor                 |         |          |           |               |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | cloud_drive_id                |         |          |           |               |
 |                           | user_uid                      |         |          |           |               |
-| file-read                 | mime                          |         |          |           |               |
+| file-read                 | access                        | Legacy  |          | &#10003;  |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
 |                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   | Legacy  |          |           | &#10003;      |
-|                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
 |                           | file_category                 |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
 |                           | process_name                  | Legacy  |          |           | &#10003;      |
 |                           | file_type                     | Legacy  |          |           | &#10003;      |
-|                           | removable_media_volume_name   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
 |                           | hash_md5                      |         |          |           |               |
 |                           | time_created                  |         |          |           |               |
 |                           | directory_id                  |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
 |                           | device_id                     | Legacy  |          | &#10003;  |               |
 |                           | service_name                  |         |          |           |               |
 |                           | exposure_type                 |         |          |           |               |
 |                           | file_owner                    |         |          |           |               |
 |                           | src_host                      | Legacy  |          | &#10003;  |               |
+|                           | url                           |         |          |           |               |
 |                           | tab_url                       |         |          |           |               |
-|                           | removable_media_capacity      |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
 |                           | removable_media_partition_id  |         |          |           |               |
 |                           | time_modified                 |         |          |           |               |
 |                           | additional_info               |         |          |           |               |
 |                           | sender                        |         |          |           |               |
+|                           | bytes                         | Legacy  |          |           |               |
 |                           | removable_media_vendor        |         |          |           |               |
 |                           | domain                        |         |          |           |               |
-|                           | removable_media_bus_type      |         |          |           |               |
 |                           | log_source                    |         |          |           |               |
 |                           | file_id                       |         |          |           |               |
-|                           | email_dlp_policy_names        |         |          |           |               |
 |                           | removable_media_serial_number |         |          |           |               |
-|                           | cloud_drive_id                |         |          |           |               |
-|                           | shared                        |         |          |           |               |
-|                           | device_size                   |         |          |           |               |
-|                           | access                        | Legacy  |          | &#10003;  |               |
-|                           | removable_media_name          |         |          |           |               |
-|                           | private_ip                    |         |          |           |               |
-|                           | src_ip                        |         |          |           |               |
-|                           | src_translated_ip             |         |          |           |               |
-|                           | shared_with                   |         |          |           |               |
-|                           | device_name                   |         |          |           |               |
-|                           | event_code                    |         |          |           |               |
-|                           | detection_source_alias        |         |          |           |               |
-|                           | process_owner                 |         |          |           |               |
-|                           | url                           |         |          |           |               |
-|                           | hash_sha256                   |         |          |           |               |
-|                           | bytes                         | Legacy  |          |           |               |
-|                           | file_exposure_changed_to      |         |          |           |               |
 |                           | dest_host                     | Legacy  |          | &#10003;  |               |
 |                           | removable_media_media_name    |         |          |           |               |
 |                           | device_vendor                 |         |          |           |               |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | cloud_drive_id                |         |          |           |               |
 |                           | user_uid                      |         |          |           |               |
-| file-upload               | mime                          |         |          |           |               |
+| file-upload               | access                        |         |          |           |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
 |                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   |         |          |           |               |
-|                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
 |                           | file_category                 |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
 |                           | process_name                  | Legacy  |          |           | &#10003;      |
 |                           | file_type                     | Legacy  |          |           | &#10003;      |
-|                           | removable_media_volume_name   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
 |                           | hash_md5                      |         |          |           |               |
 |                           | time_created                  |         |          |           |               |
 |                           | directory_id                  |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
 |                           | device_id                     |         |          |           |               |
 |                           | service_name                  |         |          |           |               |
 |                           | exposure_type                 |         |          |           |               |
 |                           | file_owner                    |         |          |           |               |
 |                           | src_host                      | Legacy  |          |           | &#10003;      |
+|                           | url                           |         |          |           |               |
 |                           | tab_url                       |         |          |           |               |
-|                           | removable_media_capacity      |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
 |                           | removable_media_partition_id  |         |          |           |               |
 |                           | time_modified                 |         |          |           |               |
 |                           | additional_info               |         |          |           |               |
 |                           | sender                        |         |          |           |               |
+|                           | bytes                         |         |          |           |               |
 |                           | removable_media_vendor        |         |          |           |               |
 |                           | domain                        |         |          |           |               |
-|                           | removable_media_bus_type      |         |          |           |               |
 |                           | log_source                    |         |          |           |               |
 |                           | file_id                       |         |          |           |               |
-|                           | email_dlp_policy_names        |         |          |           |               |
 |                           | removable_media_serial_number |         |          |           |               |
-|                           | cloud_drive_id                |         |          |           |               |
-|                           | shared                        |         |          |           |               |
-|                           | device_size                   |         |          |           |               |
-|                           | access                        |         |          |           |               |
-|                           | removable_media_name          |         |          |           |               |
-|                           | private_ip                    |         |          |           |               |
-|                           | src_ip                        |         |          |           |               |
-|                           | src_translated_ip             |         |          |           |               |
-|                           | shared_with                   |         |          |           |               |
-|                           | device_name                   |         |          |           |               |
-|                           | event_code                    |         |          |           |               |
-|                           | detection_source_alias        |         |          |           |               |
-|                           | process_owner                 |         |          |           |               |
-|                           | url                           |         |          |           |               |
-|                           | hash_sha256                   |         |          |           |               |
-|                           | bytes                         |         |          |           |               |
-|                           | file_exposure_changed_to      |         |          |           |               |
 |                           | dest_host                     | Legacy  |          |           | &#10003;      |
 |                           | removable_media_media_name    |         |          |           |               |
 |                           | device_vendor                 |         |          |           |               |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | cloud_drive_id                |         |          |           |               |
 |                           | user_uid                      |         |          |           |               |
-| file-write                | mime                          |         |          |           |               |
+| file-write                | access                        | Legacy  |          | &#10003;  |               |
+|                           | removable_media_name          |         |          |           |               |
+|                           | mime                          |         |          |           |               |
 |                           | tab_title                     |         |          |           |               |
 |                           | domain_user_name              |         |          |           |               |
 |                           | device_type                   | Legacy  |          |           | &#10003;      |
-|                           | sync_destination              |         |          |           |               |
 |                           | email_dlp_from                |         |          |           |               |
+|                           | private_ip                    |         |          |           |               |
 |                           | file_category                 |         |          |           |               |
+|                           | src_ip                        |         |          |           |               |
+|                           | src_translated_ip             |         |          |           |               |
+|                           | shared_with                   |         |          |           |               |
+|                           | device_name                   |         |          |           |               |
 |                           | process_name                  | Legacy  |          |           | &#10003;      |
 |                           | file_type                     | Legacy  |          |           | &#10003;      |
-|                           | removable_media_volume_name   |         |          |           |               |
+|                           | event_code                    |         |          |           |               |
 |                           | hash_md5                      |         |          |           |               |
 |                           | time_created                  |         |          |           |               |
 |                           | directory_id                  |         |          |           |               |
+|                           | detection_source_alias        |         |          |           |               |
+|                           | process_owner                 |         |          |           |               |
 |                           | device_id                     | Legacy  |          | &#10003;  |               |
 |                           | service_name                  |         |          |           |               |
 |                           | exposure_type                 |         |          |           |               |
 |                           | file_owner                    |         |          |           |               |
 |                           | src_host                      |         |          |           |               |
+|                           | url                           |         |          |           |               |
 |                           | tab_url                       |         |          |           |               |
-|                           | removable_media_capacity      |         |          |           |               |
+|                           | hash_sha256                   |         |          |           |               |
 |                           | removable_media_partition_id  |         |          |           |               |
 |                           | time_modified                 |         |          |           |               |
 |                           | additional_info               |         |          |           |               |
 |                           | sender                        |         |          |           |               |
+|                           | bytes                         | Legacy  |          |           |               |
 |                           | removable_media_vendor        |         |          |           |               |
 |                           | domain                        |         |          |           |               |
-|                           | removable_media_bus_type      |         |          |           |               |
 |                           | log_source                    |         |          |           |               |
 |                           | file_id                       |         |          |           |               |
-|                           | email_dlp_policy_names        |         |          |           |               |
 |                           | removable_media_serial_number |         |          |           |               |
-|                           | cloud_drive_id                |         |          |           |               |
-|                           | shared                        |         |          |           |               |
-|                           | device_size                   |         |          |           |               |
-|                           | access                        | Legacy  |          | &#10003;  |               |
-|                           | removable_media_name          |         |          |           |               |
-|                           | private_ip                    |         |          |           |               |
-|                           | src_ip                        |         |          |           |               |
-|                           | src_translated_ip             |         |          |           |               |
-|                           | shared_with                   |         |          |           |               |
-|                           | device_name                   |         |          |           |               |
-|                           | event_code                    |         |          |           |               |
-|                           | detection_source_alias        |         |          |           |               |
-|                           | process_owner                 |         |          |           |               |
-|                           | url                           |         |          |           |               |
-|                           | hash_sha256                   |         |          |           |               |
-|                           | bytes                         | Legacy  |          |           |               |
-|                           | file_exposure_changed_to      |         |          |           |               |
 |                           | dest_host                     | Legacy  |          | &#10003;  |               |
 |                           | removable_media_media_name    |         |          |           |               |
 |                           | device_vendor                 |         |          |           |               |
 |                           | user                          | Legacy  | &#10003; | &#10003;  |               |
+|                           | cloud_drive_id                |         |          |           |               |
 |                           | user_uid                      |         |          |           |               |
 | peripheral_storage-insert | device_product                |         |          |           | &#10003;      |
 |                           | drive_letter                  |         |          |           |               |

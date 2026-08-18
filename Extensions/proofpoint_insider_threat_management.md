@@ -30,7 +30,6 @@ Activity Types
 |               | state           |        |          |           |               |
 |               | user            | Legacy |          | &#10003;  |               |
 |               | first_name      |        |          |           |               |
-|               | result_at       |        |          |           |               |
 |               | user_agent      |        |          |           |               |
 |               | object          |        |          |           |               |
 
