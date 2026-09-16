@@ -265,20 +265,6 @@ Activity Types
 |                        | domain            | Default |          |           | &#10003;      |
 |                        | src_host          | Default |          | &#10003;  |               |
 |                        | category_ids      | Default |          |           | &#10003;      |
-| log-search             | os                | Default |          |           | &#10003;      |
-|                        | domain_user_name  |         |          |           |               |
-|                        | src_host          | Default |          | &#10003;  |               |
-|                        | url               | Default |          |           | &#10003;      |
-|                        | src_ip            | Default |          | &#10003;  |               |
-|                        | web_domain        | Default |          |           | &#10003;      |
-|                        | bytes             | Default |          |           | &#10003;      |
-|                        | browser           | Default |          |           | &#10003;      |
-|                        | domain            | Default |          |           | &#10003;      |
-|                        | action            | Default |          |           | &#10003;      |
-|                        | location          | Default |          |           | &#10003;      |
-|                        | operation         | Default |          |           | &#10003;      |
-|                        | user              | Default |          | &#10003;  |               |
-|                        | dest_port         | Default |          |           | &#10003;      |
 | message-send           | src_ip            | Default |          | &#10003;  |               |
 |                        | os                | Default |          |           | &#10003;      |
 |                        | web_domain        | Default |          |           | &#10003;      |

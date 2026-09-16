@@ -29,6 +29,7 @@ user-invite:success
 | dest_email_domain |      | &#10003;  |               |
 | recipients        |      | &#10003;  |               |
 | email_domain      |      | &#10003;  |               |
+| external_domain   |      | &#10003;  |               |
 
 user-invite:fail
 ----------------
@@ -39,4 +40,5 @@ user-invite:fail
 | failure_code      |      | &#10003;  |               |
 | recipients        |      | &#10003;  |               |
 | email_domain      |      | &#10003;  |               |
+| external_domain   |      | &#10003;  |               |
 | failure_reason    |      | &#10003;  |               |

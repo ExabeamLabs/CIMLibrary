@@ -52,20 +52,6 @@ Activity Types
 |                        | domain_user_name    |         |          |           |               |
 |                        | user                | Legacy  | &#10003; |           |               |
 |                        | operation           |         |          |           |               |
-| log_source-add         | src_ip              | Default |          | &#10003;  |               |
-|                        | app                 | Default |          |           | &#10003;      |
-|                        | additional_info     | Default |          |           | &#10003;      |
-|                        | domain              | Default |          |           | &#10003;      |
-|                        | domain_user_name    |         |          |           |               |
-|                        | user                | Default |          | &#10003;  |               |
-|                        | operation           | Default |          |           | &#10003;      |
-| log_source-modify      | src_ip              | Default |          | &#10003;  |               |
-|                        | app                 | Default |          |           | &#10003;      |
-|                        | additional_info     | Default |          |           | &#10003;      |
-|                        | domain              | Default |          |           | &#10003;      |
-|                        | domain_user_name    |         |          |           |               |
-|                        | user                | Default |          | &#10003;  |               |
-|                        | operation           | Default |          |           | &#10003;      |
 | role-delete            | src_ip              | Default |          | &#10003;  |               |
 |                        | app                 | Default |          |           | &#10003;      |
 |                        | additional_info     | Default |          |           | &#10003;      |

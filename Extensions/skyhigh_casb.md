@@ -27,7 +27,6 @@ Activity Types
 |                  | user             | Default |      | &#10003;  |               |
 |                  | object           | Default |      |           | &#10003;      |
 | app-notification |                  |         |      |           |               |
-| case-modify      |                  |         |      |           |               |
 | file-download    |                  |         |      |           |               |
 | report-create    |                  |         |      |           |               |
 | report-download  |                  |         |      |           |               |

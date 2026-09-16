@@ -31,6 +31,7 @@ network-session:success
 
 | Field                 | Core | Detection | Informational |
 | --------------------- | ---- | --------- | ------------- |
+| src_network_type      |      | &#10003;  |               |
 | dest_network_type     |      | &#10003;  |               |
 | dest_external_country |      | &#10003;  |               |
 | cid                   |      |           | &#10003;      |
@@ -40,6 +41,7 @@ network-session:fail
 
 | Field                 | Core | Detection | Informational |
 | --------------------- | ---- | --------- | ------------- |
+| src_network_type      |      | &#10003;  |               |
 | failure_code          |      | &#10003;  |               |
 | dest_network_type     |      | &#10003;  |               |
 | dest_external_country |      | &#10003;  |               |

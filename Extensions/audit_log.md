@@ -71,48 +71,4 @@ Activity Types
 |               | user          |        |          |           |               |
 |               | new_value     |        | &#10003; |           |               |
 |               | url           |        |          |           |               |
-| case-create   | app           |        |          |           |               |
-|               | src_ip        |        |          |           |               |
-|               | email_address |        |          |           |               |
-|               | method        |        |          |           |               |
-|               | object_name   |        |          |           |               |
-|               | old_value     |        | &#10003; |           |               |
-|               | object_id     |        |          |           |               |
-|               | operation     |        |          |           |               |
-|               | user          |        |          |           |               |
-|               | new_value     |        | &#10003; |           |               |
-|               | url           |        |          |           |               |
-| case-delete   | app           |        |          |           |               |
-|               | src_ip        |        |          |           |               |
-|               | email_address |        |          |           |               |
-|               | method        |        |          |           |               |
-|               | object_name   |        |          |           |               |
-|               | old_value     |        | &#10003; |           |               |
-|               | object_id     |        |          |           |               |
-|               | operation     |        |          |           |               |
-|               | user          |        |          |           |               |
-|               | new_value     |        | &#10003; |           |               |
-|               | url           |        |          |           |               |
-| case-modify   | app           |        |          |           |               |
-|               | src_ip        |        |          |           |               |
-|               | email_address |        |          |           |               |
-|               | method        |        |          |           |               |
-|               | object_name   |        |          |           |               |
-|               | old_value     |        | &#10003; |           |               |
-|               | object_id     |        |          |           |               |
-|               | operation     |        |          |           |               |
-|               | user          |        |          |           |               |
-|               | new_value     |        | &#10003; |           |               |
-|               | url           |        |          |           |               |
-| case-read     | app           |        |          |           |               |
-|               | src_ip        |        |          |           |               |
-|               | email_address |        |          |           |               |
-|               | method        |        |          |           |               |
-|               | object_name   |        |          |           |               |
-|               | old_value     |        | &#10003; |           |               |
-|               | object_id     |        |          |           |               |
-|               | operation     |        |          |           |               |
-|               | user          |        |          |           |               |
-|               | new_value     |        | &#10003; |           |               |
-|               | url           |        |          |           |               |
 

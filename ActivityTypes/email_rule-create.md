@@ -35,6 +35,7 @@ email_rule-create:success
 | email_recipients    |      | &#10003;  |               |
 | dest_user_full_name |      |           | &#10003;      |
 | email_domain        |      | &#10003;  |               |
+| external_domain     |      | &#10003;  |               |
 | src_email_domain    |      |           | &#10003;      |
 | operation           |      | &#10003;  |               |
 
@@ -49,5 +50,6 @@ email_rule-create:fail
 | dest_user_full_name |      |           | &#10003;      |
 | email_domain        |      | &#10003;  |               |
 | failure_reason      |      | &#10003;  |               |
+| external_domain     |      | &#10003;  |               |
 | src_email_domain    |      |           | &#10003;      |
 | operation           |      | &#10003;  |               |

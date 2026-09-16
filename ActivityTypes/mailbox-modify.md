@@ -28,6 +28,7 @@ mailbox-modify:success
 | ---------------- | ---- | --------- | ------------- |
 | email_recipients |      | &#10003;  |               |
 | email_domain     |      | &#10003;  |               |
+| external_domain  |      | &#10003;  |               |
 
 mailbox-modify:fail
 -------------------
@@ -37,4 +38,5 @@ mailbox-modify:fail
 | email_recipients |      | &#10003;  |               |
 | failure_code     |      | &#10003;  |               |
 | email_domain     |      | &#10003;  |               |
+| external_domain  |      | &#10003;  |               |
 | failure_reason   |      | &#10003;  |               |
