@@ -35,6 +35,7 @@ network-session:success
 | dest_network_type     |      | &#10003;  |               |
 | dest_external_country |      | &#10003;  |               |
 | cid                   |      |           | &#10003;      |
+| network_direction     |      | &#10003;  |               |
 
 network-session:fail
 --------------------
@@ -46,3 +47,4 @@ network-session:fail
 | dest_network_type     |      | &#10003;  |               |
 | dest_external_country |      | &#10003;  |               |
 | failure_reason        |      | &#10003;  |               |
+| network_direction     |      | &#10003;  |               |
