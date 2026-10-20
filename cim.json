@@ -1282,6 +1282,16 @@
 				}
 			}
 		},
+		"case": {
+			"description": "A security incident represents an open case in security products, which are interacted on and expanded by users.",
+			"fields": {
+				"case_name": {
+					"core": "1",
+					"detection": "1",
+					"informational": "0"
+				}
+			}
+		},
 		"channel": {
 			"description": "A channel is a conversation space in communication apps, dedicated to a specific topic of interest. A channel contains multiple people and allows them to share messages and calls. For example - Slack channels, Team teams channels...",
 			"fields": {
@@ -11158,6 +11168,12 @@
 					"detection": "1",
 					"informational": "0",
 					"enriched": "1"
+				},
+				"network_direction": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
 				}
 			},
 			"legacy_event_name": [
@@ -11199,6 +11215,12 @@
 					"enriched": "1"
 				},
 				"dest_network_type": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0",
+					"enriched": "1"
+				},
+				"network_direction": {
 					"core": "0",
 					"detection": "1",
 					"informational": "0",
@@ -14432,6 +14454,127 @@
 				}
 			},
 			"titleTemplate": "Failed to make a call",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-create:success": {
+			"subject": "case",
+			"activity": "create",
+			"activity_type": "case-create",
+			"outcome": "success",
+			"pretty_name": "Case Create",
+			"description": "A security incident was created on a security product",
+			"fields": {},
+			"titleTemplate": "Successfully created an incident on vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-create:fail": {
+			"subject": "case",
+			"activity": "create",
+			"activity_type": "case-create",
+			"outcome": "fail",
+			"pretty_name": "Case Create",
+			"description": "A security incident was created on a security product",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to create an incident on vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-delete:success": {
+			"subject": "case",
+			"activity": "delete",
+			"activity_type": "case-delete",
+			"outcome": "success",
+			"pretty_name": "Case Delete",
+			"description": "A security incident was deleted on a security product",
+			"fields": {},
+			"titleTemplate": "Successfully deleted an incident on vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-delete:fail": {
+			"subject": "case",
+			"activity": "delete",
+			"activity_type": "case-delete",
+			"outcome": "fail",
+			"pretty_name": "Case Delete",
+			"description": "A security incident was deleted on a security product",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete an incident on vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-modify:success": {
+			"subject": "case",
+			"activity": "modify",
+			"activity_type": "case-modify",
+			"outcome": "success",
+			"pretty_name": "Case Modify",
+			"description": "The properties or content of a security incident were changed on a security product",
+			"fields": {},
+			"titleTemplate": "Successfully modified an incident on vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-modify:fail": {
+			"subject": "case",
+			"activity": "modify",
+			"activity_type": "case-modify",
+			"outcome": "fail",
+			"pretty_name": "Case Modify",
+			"description": "The properties or content of a security incident were changed on a security product",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to modify an incident on vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-read:success": {
+			"subject": "case",
+			"activity": "read",
+			"activity_type": "case-read",
+			"outcome": "success",
+			"pretty_name": "Case Read",
+			"description": "",
+			"fields": {},
+			"titleTemplate": "Successfully read an incident by vendor {event.vendor}",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"case-read:fail": {
+			"subject": "case",
+			"activity": "read",
+			"activity_type": "case-read",
+			"outcome": "fail",
+			"pretty_name": "Case Read",
+			"description": "",
+			"fields": {},
+			"titleTemplate": "Failed to read an incident by vendor {event.vendor}",
 			"titleTemplateFormatVersion": "1.0"
 		},
 		"channel-create:success": {
@@ -22664,6 +22807,60 @@
 			"titleTemplate": "Failed to modify/update a project",
 			"titleTemplateFormatVersion": "1.0"
 		},
+		"project-delete:success": {
+			"subject": "project",
+			"activity": "delete",
+			"activity_type": "project-delete",
+			"outcome": "success",
+			"pretty_name": "Project Deleted",
+			"description": "A project was deleted",
+			"fields": {
+				"project_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Successfully deleted a project",
+			"titleTemplateFormatVersion": "1.0"
+		},
+		"project-delete:fail": {
+			"subject": "project",
+			"activity": "delete",
+			"activity_type": "project-delete",
+			"outcome": "fail",
+			"pretty_name": "Project Deletion Failed",
+			"description": "A project deletion failed",
+			"fields": {
+				"failure_reason": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"failure_code": {
+					"core": "0",
+					"detection": "0",
+					"informational": "1"
+				},
+				"project_id": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				},
+				"project_name": {
+					"core": "0",
+					"detection": "1",
+					"informational": "0"
+				}
+			},
+			"titleTemplate": "Failed to delete a project",
+			"titleTemplateFormatVersion": "1.0"
+		},		
 		"tool-call:success": {
 			"subject": "tool",
 			"activity": "call",
