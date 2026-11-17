@@ -3,7 +3,7 @@ playbook-modify
 
 Description
 -----------
-Playbook was Modified
+Playbook was modified
 
 Parameters
 ----------

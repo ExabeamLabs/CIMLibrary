@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_pool        |
 | Activity      | create         |
 | Activity Type | vm_pool-create |
-| Pretty Name   | Vm_pool Create |
+| Pretty Name   | VM Pool Create |
 
 
 Fields

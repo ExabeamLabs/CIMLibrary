@@ -12,7 +12,7 @@ Parameters
 | Subject       | ssh         |
 | Activity      | traffic     |
 | Activity Type | ssh-traffic |
-| Pretty Name   | Ssh Traffic |
+| Pretty Name   | SSH Traffic |
 
 Legacy Names
 ------------

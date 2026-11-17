@@ -24,13 +24,17 @@ The possible fields for this activity type will vary depending on whether the ac
 app-modify:success
 ------------------
 
-There are no fields for this activity type.
-
+| Field     | Core | Detection | Informational |
+| --------- | ---- | --------- | ------------- |
+| owner     |      | &#10003;  |               |
+| operation |      | &#10003;  |               |
 
 app-modify:fail
 ---------------
 
 | Field          | Core | Detection | Informational |
 | -------------- | ---- | --------- | ------------- |
+| owner          |      | &#10003;  |               |
 | failure_code   |      | &#10003;  |               |
 | failure_reason |      | &#10003;  |               |
+| operation      |      | &#10003;  |               |

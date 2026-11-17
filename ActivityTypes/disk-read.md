@@ -3,7 +3,7 @@ disk-read
 
 Description
 -----------
-The content of a disk\volume object was read
+The content of a disk or volume object was read
 
 Parameters
 ----------

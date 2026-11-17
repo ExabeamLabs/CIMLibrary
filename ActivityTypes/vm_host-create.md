@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_host        |
 | Activity      | create         |
 | Activity Type | vm_host-create |
-| Pretty Name   | Vm_host Create |
+| Pretty Name   | VM Host Create |
 
 
 Fields

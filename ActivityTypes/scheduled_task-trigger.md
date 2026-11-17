@@ -3,7 +3,7 @@ scheduled_task-trigger
 
 Description
 -----------
-An occurance of a scheduled task was executed
+An occurrence of a scheduled task was executed
 
 Parameters
 ----------

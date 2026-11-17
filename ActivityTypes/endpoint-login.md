@@ -47,6 +47,7 @@ endpoint-login:success
 | src_zone              |          |           |               |
 | domain                |          | &#10003;  |               |
 | dest_ip               |          | &#10003;  |               |
+| msg_type              | &#10003; |           |               |
 | result_code           |          | &#10003;  |               |
 | location              |          | &#10003;  |               |
 | user                  | &#10003; | &#10003;  |               |
@@ -75,6 +76,7 @@ endpoint-login:fail
 | src_zone              |          |           |               |
 | domain                |          | &#10003;  |               |
 | dest_ip               |          | &#10003;  |               |
+| msg_type              | &#10003; |           |               |
 | result_code           |          | &#10003;  |               |
 | location              |          | &#10003;  |               |
 | user                  | &#10003; | &#10003;  |               |

@@ -12,7 +12,7 @@ Parameters
 | Subject       | rdp         |
 | Activity      | traffic     |
 | Activity Type | rdp-traffic |
-| Pretty Name   | Rdp Traffic |
+| Pretty Name   | RDP Traffic |
 
 Legacy Names
 ------------

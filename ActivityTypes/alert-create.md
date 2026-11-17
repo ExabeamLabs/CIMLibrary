@@ -3,7 +3,7 @@ alert-create
 
 Description
 -----------
-
+An alert was created
 
 Parameters
 ----------

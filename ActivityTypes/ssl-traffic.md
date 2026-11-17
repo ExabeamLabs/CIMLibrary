@@ -12,7 +12,7 @@ Parameters
 | Subject       | ssl         |
 | Activity      | traffic     |
 | Activity Type | ssl-traffic |
-| Pretty Name   | Ssl Traffic |
+| Pretty Name   | SSL Traffic |
 
 
 Fields

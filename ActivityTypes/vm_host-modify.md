@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_host        |
 | Activity      | modify         |
 | Activity Type | vm_host-modify |
-| Pretty Name   | Vm_host Modify |
+| Pretty Name   | VM Host Modify |
 
 
 Fields

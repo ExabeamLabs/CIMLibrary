@@ -3,7 +3,7 @@ dns-response
 
 Description
 -----------
-A DNS response was recevied
+A DNS response was received
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | dns          |
 | Activity      | response     |
 | Activity Type | dns-response |
-| Pretty Name   | Dns Response |
+| Pretty Name   | DNS Response |
 
 Legacy Names
 ------------

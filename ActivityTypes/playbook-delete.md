@@ -3,7 +3,7 @@ playbook-delete
 
 Description
 -----------
-Playbook was Deleted
+Playbook was deleted
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | playbook        |
 | Activity      | delete          |
 | Activity Type | playbook-delete |
-| Pretty Name   | Playbook delete |
+| Pretty Name   | Playbook Delete |
 
 
 Fields

@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_host          |
 | Activity      | disabled         |
 | Activity Type | vm_host-disabled |
-| Pretty Name   | Vm_host Disabled |
+| Pretty Name   | VM Host Disabled |
 
 
 Fields

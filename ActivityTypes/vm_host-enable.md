@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_host        |
 | Activity      | enable         |
 | Activity Type | vm_host-enable |
-| Pretty Name   | Vm_host Enable |
+| Pretty Name   | VM Host Enable |
 
 
 Fields

@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_pool        |
 | Activity      | delete         |
 | Activity Type | vm_pool-delete |
-| Pretty Name   | Vm_pool Delete |
+| Pretty Name   | VM Pool Delete |
 
 
 Fields

@@ -3,7 +3,7 @@ http-close
 
 Description
 -----------
-A HTTP session was closed
+An HTTP session was closed
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | http       |
 | Activity      | close      |
 | Activity Type | http-close |
-| Pretty Name   | Http Close |
+| Pretty Name   | HTTP Close |
 
 
 Fields

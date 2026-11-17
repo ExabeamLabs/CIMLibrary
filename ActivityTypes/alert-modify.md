@@ -3,7 +3,7 @@ alert-modify
 
 Description
 -----------
-
+An alert was modified
 
 Parameters
 ----------

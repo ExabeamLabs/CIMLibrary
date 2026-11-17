@@ -12,7 +12,7 @@ Parameters
 | Subject       | dns         |
 | Activity      | traffic     |
 | Activity Type | dns-traffic |
-| Pretty Name   | Dns Traffic |
+| Pretty Name   | DNS Traffic |
 
 
 Fields

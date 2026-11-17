@@ -12,7 +12,7 @@ Parameters
 | Subject       | vpn                |
 | Activity      | authentication     |
 | Activity Type | vpn-authentication |
-| Pretty Name   | Vpn Authentication |
+| Pretty Name   | VPN Authentication |
 
 Legacy Names
 ------------

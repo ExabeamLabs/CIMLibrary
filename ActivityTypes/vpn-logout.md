@@ -12,7 +12,7 @@ Parameters
 | Subject       | vpn        |
 | Activity      | logout     |
 | Activity Type | vpn-logout |
-| Pretty Name   | Vpn Logout |
+| Pretty Name   | VPN Logout |
 
 Legacy Names
 ------------

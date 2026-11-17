@@ -3,7 +3,7 @@ user-password-read
 
 Description
 -----------
-A user accounts' password was read\retrieved 
+A user accounts' password was read or retrieved
 
 Parameters
 ----------

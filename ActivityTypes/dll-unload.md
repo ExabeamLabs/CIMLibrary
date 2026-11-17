@@ -3,7 +3,7 @@ dll-unload
 
 Description
 -----------
-A dll module was unloaded from a process
+A DLL module was unloaded from a process
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | dll        |
 | Activity      | unload     |
 | Activity Type | dll-unload |
-| Pretty Name   | Dll Unload |
+| Pretty Name   | DLL Unload |
 
 
 Fields

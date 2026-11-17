@@ -3,7 +3,7 @@ folder-modify
 
 Description
 -----------
-A folder properties or configuration were modified on an app
+A folder properties or configuration were modified
 
 Parameters
 ----------

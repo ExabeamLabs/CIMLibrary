@@ -3,7 +3,7 @@ user-device-remember
 
 Description
 -----------
-A user has requested that his device configuration will be remembered on future usage in this system
+A user has requested that their device configuration will be remembered on future usage in this system
 
 Parameters
 ----------

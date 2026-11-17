@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_pool        |
 | Activity      | modify         |
 | Activity Type | vm_pool-modify |
-| Pretty Name   | Vm_pool Modify |
+| Pretty Name   | VM Pool Modify |
 
 
 Fields

@@ -12,7 +12,7 @@ Parameters
 | Subject       | http         |
 | Activity      | session      |
 | Activity Type | http-session |
-| Pretty Name   | Http Session |
+| Pretty Name   | HTTP Session |
 
 Legacy Names
 ------------
@@ -38,6 +38,7 @@ http-session:success
 | is_job_search      |      | &#10003;  |               |
 | bytes_in           |      | &#10003;  |               |
 | mime               |      | &#10003;  |               |
+| session_id         |      | &#10003;  |               |
 | referrer           |      |           | &#10003;      |
 | bytes_out          |      | &#10003;  |               |
 | action             |      |           | &#10003;      |
@@ -56,6 +57,7 @@ http-session:fail
 | method             |      | &#10003;  |               |
 | bytes_in           |      | &#10003;  |               |
 | mime               |      | &#10003;  |               |
+| session_id         |      | &#10003;  |               |
 | failure_reason     |      | &#10003;  |               |
 | referrer           |      |           | &#10003;      |
 | bytes_out          |      | &#10003;  |               |

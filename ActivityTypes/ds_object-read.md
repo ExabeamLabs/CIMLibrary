@@ -3,7 +3,7 @@ ds_object-read
 
 Description
 -----------
-A request was made to read the information of a directory service object 
+A request was made to read the information of a directory service object
 
 Parameters
 ----------

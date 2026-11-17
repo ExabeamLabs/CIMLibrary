@@ -3,7 +3,7 @@ app-start
 
 Description
 -----------
-The application was initiazlied
+The application was initialized
 
 Parameters
 ----------

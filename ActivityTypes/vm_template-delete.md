@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_template        |
 | Activity      | delete             |
 | Activity Type | vm_template-delete |
-| Pretty Name   | Vm_template Delete |
+| Pretty Name   | VM Template Delete |
 
 
 Fields

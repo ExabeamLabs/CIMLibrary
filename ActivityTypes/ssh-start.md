@@ -3,7 +3,7 @@ ssh-start
 
 Description
 -----------
-A SSH sesssion was initiated
+An SSH sesssion was initiated
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | ssh       |
 | Activity      | start     |
 | Activity Type | ssh-start |
-| Pretty Name   | Ssh Start |
+| Pretty Name   | SSH Start |
 
 
 Fields

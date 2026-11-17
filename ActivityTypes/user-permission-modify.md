@@ -24,15 +24,21 @@ The possible fields for this activity type will vary depending on whether the ac
 user-permission-modify:success
 ------------------------------
 
-| Field       | Core | Detection | Informational |
-| ----------- | ---- | --------- | ------------- |
-| permissions |      |           | &#10003;      |
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| dest_user_type    |      | &#10003;  |               |
+| permissions       |      |           | &#10003;      |
+| operation         |      | &#10003;  |               |
+| added_permissions |      | &#10003;  |               |
 
 user-permission-modify:fail
 ---------------------------
 
-| Field          | Core | Detection | Informational |
-| -------------- | ---- | --------- | ------------- |
-| failure_code   |      | &#10003;  |               |
-| permissions    |      |           | &#10003;      |
-| failure_reason |      | &#10003;  |               |
+| Field             | Core | Detection | Informational |
+| ----------------- | ---- | --------- | ------------- |
+| dest_user_type    |      | &#10003;  |               |
+| failure_code      |      | &#10003;  |               |
+| permissions       |      |           | &#10003;      |
+| failure_reason    |      | &#10003;  |               |
+| operation         |      | &#10003;  |               |
+| added_permissions |      | &#10003;  |               |

@@ -3,7 +3,7 @@ peripheral_device-remove
 
 Description
 -----------
-A peripheral device device was removed
+A peripheral device was removed
 
 Parameters
 ----------

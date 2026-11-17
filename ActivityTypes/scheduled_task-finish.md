@@ -3,7 +3,7 @@ scheduled_task-finish
 
 Description
 -----------
-An occurance of a scheduled task was done executing
+An occurrence of a scheduled task was done executing
 
 Parameters
 ----------

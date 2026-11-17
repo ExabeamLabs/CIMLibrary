@@ -3,7 +3,7 @@ endpoint-command
 
 Description
 -----------
-A virtual command was set to execute on an endpoint object. Only used in VMs. 
+A virtual command was set to execute on an endpoint object. Only used in VMs.
 
 Parameters
 ----------

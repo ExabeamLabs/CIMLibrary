@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_host        |
 | Activity      | delete         |
 | Activity Type | vm_host-delete |
-| Pretty Name   | Vm_host Delete |
+| Pretty Name   | VM Host Delete |
 
 
 Fields

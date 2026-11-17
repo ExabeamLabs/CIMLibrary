@@ -12,7 +12,7 @@ Parameters
 | Subject       | http         |
 | Activity      | request      |
 | Activity Type | http-request |
-| Pretty Name   | Http Request |
+| Pretty Name   | HTTP Request |
 
 
 Fields

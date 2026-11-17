@@ -12,7 +12,7 @@ Parameters
 | Subject       | ip      |
 | Activity      | free    |
 | Activity Type | ip-free |
-| Pretty Name   | Ip Free |
+| Pretty Name   | IP Free |
 
 
 Fields

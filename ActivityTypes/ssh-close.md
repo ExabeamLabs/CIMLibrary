@@ -3,7 +3,7 @@ ssh-close
 
 Description
 -----------
-A SSH session was terminated
+An SSH session was terminated
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | ssh       |
 | Activity      | close     |
 | Activity Type | ssh-close |
-| Pretty Name   | Ssh Close |
+| Pretty Name   | SSH Close |
 
 
 Fields

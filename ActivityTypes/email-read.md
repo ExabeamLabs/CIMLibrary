@@ -3,7 +3,7 @@ email-read
 
 Description
 -----------
-An email in an inbox was deleted and read
+An email in an inbox was read
 
 Parameters
 ----------

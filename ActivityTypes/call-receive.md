@@ -3,7 +3,7 @@ call-receive
 
 Description
 -----------
-A user has recived a call from another user
+A user has received a call from another user
 
 Parameters
 ----------

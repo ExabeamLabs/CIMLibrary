@@ -3,7 +3,7 @@ ssl-close
 
 Description
 -----------
-A SSL session was terminated
+An SSL session was terminated
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | ssl       |
 | Activity      | close     |
 | Activity Type | ssl-close |
-| Pretty Name   | Ssl Close |
+| Pretty Name   | SSL Close |
 
 
 Fields

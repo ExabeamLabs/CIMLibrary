@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_pool              |
 | Activity      | endpoint-add         |
 | Activity Type | vm_pool-endpoint-add |
-| Pretty Name   | Vm_pool Endpoint Add |
+| Pretty Name   | VM Pool Endpoint Add |
 
 
 Fields

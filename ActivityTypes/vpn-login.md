@@ -12,7 +12,7 @@ Parameters
 | Subject       | vpn       |
 | Activity      | login     |
 | Activity Type | vpn-login |
-| Pretty Name   | Vpn Login |
+| Pretty Name   | VPN Login |
 
 Legacy Names
 ------------

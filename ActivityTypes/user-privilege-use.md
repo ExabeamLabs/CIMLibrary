@@ -3,7 +3,7 @@ user-privilege-use
 
 Description
 -----------
-A user called his privilege to access to an object
+A user called their privilege to access an object
 
 Parameters
 ----------

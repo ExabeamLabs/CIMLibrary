@@ -3,7 +3,7 @@ endpoint-modify
 
 Description
 -----------
-An endpoint object or instance properties\configuration were modified
+An endpoint object or instance properties or configuration were modified
 
 Parameters
 ----------

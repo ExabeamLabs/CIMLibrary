@@ -12,7 +12,7 @@ Parameters
 | Subject       | http         |
 | Activity      | traffic      |
 | Activity Type | http-traffic |
-| Pretty Name   | Http Traffic |
+| Pretty Name   | HTTP Traffic |
 
 
 Fields

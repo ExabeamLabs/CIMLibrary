@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_pool                 |
 | Activity      | endpoint-remove         |
 | Activity Type | vm_pool-endpoint-remove |
-| Pretty Name   | Vm_pool Endpoint Remove |
+| Pretty Name   | VM Pool Endpoint Remove |
 
 
 Fields

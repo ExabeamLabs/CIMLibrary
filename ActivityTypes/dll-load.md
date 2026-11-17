@@ -3,7 +3,7 @@ dll-load
 
 Description
 -----------
-A dll module was loaded into a process
+A DLL module was loaded into a process
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | dll      |
 | Activity      | load     |
 | Activity Type | dll-load |
-| Pretty Name   | Dll Load |
+| Pretty Name   | DLL Load |
 
 Legacy Names
 ------------

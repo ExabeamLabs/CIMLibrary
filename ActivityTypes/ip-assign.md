@@ -12,7 +12,7 @@ Parameters
 | Subject       | ip        |
 | Activity      | assign    |
 | Activity Type | ip-assign |
-| Pretty Name   | Ip Assign |
+| Pretty Name   | IP Assign |
 
 
 Fields

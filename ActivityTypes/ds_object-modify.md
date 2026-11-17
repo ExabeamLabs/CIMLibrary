@@ -16,9 +16,9 @@ Parameters
 
 Legacy Names
 ------------
-| Success       | Fail |
-| ------------- | ---- |
-| ds-access<br> |      |
+| Success       | Fail                 |
+| ------------- | -------------------- |
+| ds-access<br> | failed-ds-access<br> |
 
 Fields
 ------
@@ -34,4 +34,11 @@ ds_object-modify:success
 | event_locality |      |           | &#10003;      |
 | object_type    |      |           | &#10003;      |
 
-A failure activity is not currently supported for this activity-type.
+ds_object-modify:fail
+---------------------
+
+| Field          | Core | Detection | Informational |
+| -------------- | ---- | --------- | ------------- |
+| failure_code   |      | &#10003;  |               |
+| object_type    |      |           | &#10003;      |
+| failure_reason |      | &#10003;  |               |

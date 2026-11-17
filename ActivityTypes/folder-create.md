@@ -3,7 +3,7 @@ folder-create
 
 Description
 -----------
-A folder was created on a an app
+A folder was created
 
 Parameters
 ----------

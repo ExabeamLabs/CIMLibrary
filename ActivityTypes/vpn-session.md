@@ -12,7 +12,7 @@ Parameters
 | Subject       | vpn         |
 | Activity      | session     |
 | Activity Type | vpn-session |
-| Pretty Name   | Vpn Session |
+| Pretty Name   | VPN Session |
 
 Legacy Names
 ------------

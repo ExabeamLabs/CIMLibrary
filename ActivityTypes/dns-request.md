@@ -12,7 +12,7 @@ Parameters
 | Subject       | dns         |
 | Activity      | request     |
 | Activity Type | dns-request |
-| Pretty Name   | Dns Request |
+| Pretty Name   | DNS Request |
 
 Legacy Names
 ------------

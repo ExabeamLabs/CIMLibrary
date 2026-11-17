@@ -3,7 +3,7 @@ ssl-start
 
 Description
 -----------
-A SSL session was initiated
+An SSL session was initiated
 
 Parameters
 ----------
@@ -12,7 +12,7 @@ Parameters
 | Subject       | ssl       |
 | Activity      | start     |
 | Activity Type | ssl-start |
-| Pretty Name   | Ssl Start |
+| Pretty Name   | SSL Start |
 
 
 Fields

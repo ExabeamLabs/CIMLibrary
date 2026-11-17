@@ -12,7 +12,7 @@ Parameters
 | Subject       | vm_template        |
 | Activity      | create             |
 | Activity Type | vm_template-create |
-| Pretty Name   | Vm_template Create |
+| Pretty Name   | VM Template Create |
 
 
 Fields
